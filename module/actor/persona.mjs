@@ -10,7 +10,9 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       esp: attributeField(),
       mv: new SchemaField({
         walk: new NumberField({ initial: 4, integer: true, min: 0 }),
-        sprint: new NumberField({ initial: 6, integer: true, min: 0 })
+        override: new NumberField({ initial: null, integer: true, nullable: true }),
+        sprint: new NumberField({ initial: 6, integer: true, min: 0 }),
+        sprintOverride: new NumberField({ initial: null, integer: true, nullable: true })
       }),
       pv: new SchemaField({
         value: new NumberField({ integer: true, min: 0 }),
@@ -38,7 +40,6 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     this.pe.max = 25 + cogDerived + 2 * espDerived;
 
     // Works current pv and pe **MAKE THIS INTO A FUNCTION**
-    // Needs to also increase the PV|PE value when they are increased by attribute | skill increments
     const pvDerived = Number(this.pv?.value ?? 0)
     this.pv.value = Math.min(Math.max(pvDerived, 0), this.pv.max);
     const peDerived = Number(this.pe?.value ?? 0)

@@ -1,0 +1,16 @@
+{
+    "PC": {
+        "attribute": {
+            "fis": {
+                "label": "Físico",
+                "abv": "FIS"
+            }
+        },
+        "subattribute": {
+            "pv": {
+                "label": "Pontos de Vida",
+                "abv": "PV"
+            }
+        }
+    }
+}

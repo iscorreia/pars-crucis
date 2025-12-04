@@ -1,8 +1,11 @@
+import { PC } from "./module/config.mjs";
 import { PersonaModel } from "./module/actor/persona.mjs";
 import { PersonaSheet } from "./module/actor/persona-sheet.mjs";
 
 Hooks.once("init", () => {
   console.log("PARS CRUCIS | Initializing system");
+
+  CONFIG.PC = PC;
 
   // Register the data model for the Actor subtype.
   Object.assign(CONFIG.Actor.dataModels, {
