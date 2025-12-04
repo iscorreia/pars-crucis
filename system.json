@@ -1,0 +1,31 @@
+{
+  "id": "pars-crucis",
+  "title": "Pars Crucis",
+  "description": "Adaptação do sistema Pars Crucis",
+  "version": "2.12.0",
+  "compatibility": {
+    "minimum": 13,
+    "verified": 13
+  },
+  "authors": {
+    "name": "Ismael Augusto Avila Correia",
+    "url": "https://github.com/iscorreia"
+  },
+  "esmodules": ["parscrucis.mjs"],
+  "styles": ["styles/styles.css"],
+  "packs": [],
+  "documentTypes": {
+    "Actor": {
+      "persona": {
+        "htmlFields": []
+      }
+    },
+    "Item": {}
+  },
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "manifest": "",
+  "download": ""
+}
