@@ -4,12 +4,32 @@
             "fis": {
                 "label": "Físico",
                 "abv": "FIS"
+            },
+            "des": {
+                "label": "Destreza",
+                "abv": "DES"
+            },
+            "ego": {
+                "label": "Ego",
+                "abv": "EGO"
+            },
+            "cog": {
+                "label": "Cognição",
+                "abv": "COG"
+            },
+            "esp": {
+                "label": "Espírito",
+                "abv": "ESP"
             }
         },
         "subattribute": {
             "pv": {
                 "label": "Pontos de Vida",
                 "abv": "PV"
+            },
+            "pe": {
+                "label": "Pontos de Essência",
+                "abv": "PE"
             }
         }
     }

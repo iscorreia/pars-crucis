@@ -1,0 +1,21 @@
+<section class="attributes flexrow">
+    {{#each config.attribute as |attribute obj|}}
+    {{#with (lookup @root.actor.system.attributes obj) as |att|}}
+    <div>
+        <h3 class="att-name">
+            {{#if att.disabled}}
+            {{else}}
+            <a>{{localize attribute.abv}}</a>
+            {{/if}}
+        </h3>
+        <div class="att-field">
+            <input class="att-value" type="number" name="system.attributes.{{@key}}.override" value="{{att.override}}"
+                placeholder="{{att.base}}" data-dtype="Number" />
+            +
+            <input class="att-modifier" type="number" name="system.attributes.{{@key}}.mod" value="{{att.mod}}"
+                data-dtype="Number" />
+        </div>
+    </div>
+    {{/with}}
+    {{/each}}
+</section>

@@ -61,24 +61,24 @@ PC.persona = {
 
 PC.attribute = {
     fis: {
-        label: "PC.attribute.label.fis",
-        abv: "PC.attribute.abv.fis"
+        label: "PC.attribute.fis.label",
+        abv: "PC.attribute.fis.abv"
     },
     des: {
-        label: "PC.attribute.label.des",
-        abv: "PC.attribute.abv.des"
+        label: "PC.attribute.des.label",
+        abv: "PC.attribute.des.abv"
     },
     ego: {
-        label: "PC.attribute.label.ego",
-        abv: "PC.attribute.abv.ego"
+        label: "PC.attribute.ego.label",
+        abv: "PC.attribute.ego.abv"
     },
     cog: {
-        label: "PC.attribute.label.cog",
-        abv: "PC.attribute.abv.cog"
+        label: "PC.attribute.cog.label",
+        abv: "PC.attribute.cog.abv"
     },
     esp: {
-        label: "PC.attribute.label.esp",
-        abv: "PC.attribute.abv.esp"
+        label: "PC.attribute.esp.label",
+        abv: "PC.attribute.esp.abv"
     },
 };
 
@@ -87,27 +87,27 @@ PC.def = { label: "PC.def" };
 
 PC.subattribute = {
     pv: {
-        label: "PC.subattribute.label.pv",
-        abv: "PC.subattribute.abv.pv"
+        label: "PC.subattribute.pv.label",
+        abv: "PC.subattribute.pv.abv"
     },
     pe: {
-        label: "PC.subattribute.label.pe",
-        abv: "PC.subattribute.abv.pe"
+        label: "PC.subattribute.pe.label",
+        abv: "PC.subattribute.pe.abv"
     }
 }
 
 PC.minor = {
     sau: {
-        label: "PC.minor.label.sau",
-        abv: "PC.minor.abv.sau"
+        label: "PC.minor.sa.labelu",
+        abv: "PC.minor.sau.abv"
     },
     ref: {
-        label: "PC.minor.label.ref",
-        abv: "PC.minor.abv.ref"
+        label: "PC.minor.re.labelf",
+        abv: "PC.minor.ref.abv"
     },
     von: {
-        label: "PC.minor.label.von",
-        abv: "PC.minor.abv.von"
+        label: "PC.minor.vo.labeln",
+        abv: "PC.minor.von.abv"
     }
 };
 
