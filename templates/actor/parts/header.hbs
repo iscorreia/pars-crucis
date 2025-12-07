@@ -1,3 +1,13 @@
+{{!-- Sheet header --}}
+
 <header class="sheet-header">
-  <h2>HEADER-PNAME<input type="text" name="name" value="{{document.name}}" placeholder="Name" /></h2>
+  <img class="profile-img" src="{{actor.img}}" data-action="editImage" data-edit="img" height="100" width="100">
+  <div>
+    <h2>
+      <input type="text" name="name" value="{{actor.name}}" placeholder="Name" />
+    </h2>
+    <div>
+      {{> systems/pars-crucis/templates/actor/blocks/attributes.hbs}}
+    </div>
+  </div>
 </header>

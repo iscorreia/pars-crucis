@@ -2,6 +2,14 @@ import { PC } from "./module/config.mjs";
 import { PersonaModel } from "./module/actor/persona.mjs";
 import { PersonaSheet } from "./module/actor/persona-sheet.mjs";
 
+async function preloadHandlebarsTemplates() {
+  const templatePaths = [
+    "systems/pars-crucis/templates/actor/blocks/attributes.hbs"
+  ];
+
+  return foundry.applications.handlebars.loadTemplates(templatePaths)
+}
+
 Hooks.once("init", () => {
   console.log("PARS CRUCIS | Initializing system");
 
@@ -13,7 +21,7 @@ Hooks.once("init", () => {
   });
 
   // Register the V2 sheet for 'persona'
-  DocumentSheetConfig.registerSheet(
+  foundry.applications.apps.DocumentSheetConfig.registerSheet(
     foundry.documents.Actor,
     "parscrucis",
     PersonaSheet,
@@ -23,4 +31,6 @@ Hooks.once("init", () => {
       label: "Persona Sheet",
     }
   );
+
+  preloadHandlebarsTemplates();
 });

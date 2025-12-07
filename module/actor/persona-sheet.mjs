@@ -15,13 +15,23 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     form: {
       submitOnChange: true,
     },
+    position: {
+      width: 800,
+      height: 680
+    },
+    tag: "form", // Default is div in case we don't want to define a tag
+    window: {
+      icon: "fa fa-address-card"
+    }
   };
 
   async _prepareContext(options) {
-    console.log("PREPARE_CONTEXT");
-    // context = await super._prepareContext(options);
-    context.document = this.document;
+    // const context = await super._prepareContext() // is this still necessary?
+
+    context.actor = this.document;
     context.system = this.document.system;
+    context.config = CONFIG.PC;
+
     return context;
   }
 }
