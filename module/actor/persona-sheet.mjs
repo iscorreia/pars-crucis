@@ -31,6 +31,13 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
       skills: "skills",
       gear: "gear",
     },
+    tag: "form", // Default is div in case we don't want to define a tag
+    window: {
+      icon: "fa fa-address-card",
+    },
+    actions: {
+      clickAttribute: this.onAttributeClick,
+    },
   };
 
   async _prepareContext(options) {
@@ -42,41 +49,16 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
 
     return context;
   }
+
+  /**
+   * @param {PointerEvent} event - The originating click event
+   * @param {HTMLElement} target - the capturing HTML element which defined a [data-action]
+   */
+  static onAttributeClick(event, target) {
+    console.log("Attribute:", target.dataset.attribute);
+    event.preventDefault();
+  }
 }
 
-/** Some reference, might be VERY WRONG */
-// export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
-//   sheets.ActorSheetV2
-// ) {
-//   static get defaultOptions() {
-//     return mergeObject(super.defaultOptions, {
-//       classes: ["parscrucis", "sheet", "actor"],
-//       template: "templates/actor/actor-sheet.hbs",
-//       width: 400,
-//       height: 300,
-//     });
-//   }
-
-//   getData() {
-//     const data = super.getData();
-//     data.system = this.actor.system;
-//     data.PV = this.actor.PV; // dynamic PV
-//     return data;
-//   }
-
-//   activateListeners(html) {
-//     super.activateListeners(html);
-
-//     html.find(".increment").click((ev) => {
-//       const attr = ev.currentTarget.dataset.attr;
-//       const current = getProperty(this.actor.system, attr) || 0;
-//       this.actor.update({ [`system.${attr}`]: current + 1 });
-//     });
-
-//     html.find(".decrement").click((ev) => {
-//       const attr = ev.currentTarget.dataset.attr;
-//       const current = getProperty(this.actor.system, attr) || 0;
-//       if (current > 0) this.actor.update({ [`system.${attr}`]: current - 1 });
-//     });
-//   }
-// }
+// how to make a roll
+// on click roll a d6 for clicked attribute
