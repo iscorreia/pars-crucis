@@ -4,10 +4,12 @@ import { PersonaSheet } from "./module/actor/persona-sheet.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
-    "systems/pars-crucis/templates/actor/blocks/attributes.hbs"
+    "systems/pars-crucis/templates/actor/blocks/attributes.hbs",
+    "systems/pars-crucis/templates/actor/blocks/minors.hbs",
+    "systems/pars-crucis/templates/actor/parts/skills.hbs",
   ];
 
-  return foundry.applications.handlebars.loadTemplates(templatePaths)
+  return foundry.applications.handlebars.loadTemplates(templatePaths);
 }
 
 Hooks.once("init", () => {

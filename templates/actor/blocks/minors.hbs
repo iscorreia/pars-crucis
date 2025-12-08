@@ -1,0 +1,9 @@
+<section class="minors flexcol">
+  {{#each config.minor as |minor obj|}}
+    {{#with (lookup @root.actor.system.minors obj) as |min|}}
+      <div>
+        {{#if att.disabled}}{{else}}<a>{{localize minor.label}}</a>{{/if}}
+      </div>
+    {{/with}}
+  {{/each}}
+</section>

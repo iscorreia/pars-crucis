@@ -1,0 +1,17 @@
+.sheet-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.attribute {
+  margin-bottom: 10px;
+}
+
+.attribute label {
+  display: inline-block;
+  width: 100px;
+}
+
+.attribute button {
+  margin-left: 5px;
+}

@@ -3,6 +3,20 @@ const { api, sheets } = foundry.applications;
 export class PersonaSheet extends foundry.applications.api.HandlebarsApplicationMixin(
   foundry.applications.sheets.ActorSheetV2
 ) {
+  static DEFAULT_OPTIONS = {
+    form: {
+      submitOnChange: true,
+    },
+    position: {
+      width: 800,
+      height: 680,
+    },
+    tag: "form", // Default is div in case we don't want to define a tag
+    window: {
+      icon: "fa fa-address-card",
+    },
+  };
+
   /** Defines where are the template PARTS */
   static PARTS = {
     header: {
@@ -11,18 +25,12 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     main: { template: "systems/pars-crucis/templates/actor/parts/main.hbs" },
   };
 
-  static DEFAULT_OPTIONS = {
-    form: {
-      submitOnChange: true,
+  static TABS = {
+    initial: "skills",
+    tabs: {
+      skills: "skills",
+      gear: "gear",
     },
-    position: {
-      width: 800,
-      height: 680
-    },
-    tag: "form", // Default is div in case we don't want to define a tag
-    window: {
-      icon: "fa fa-address-card"
-    }
   };
 
   async _prepareContext(options) {
@@ -35,7 +43,6 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     return context;
   }
 }
-
 
 /** Some reference, might be VERY WRONG */
 // export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(

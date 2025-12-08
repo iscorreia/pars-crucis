@@ -2,4 +2,17 @@
 
 <section class="sheet-body">
   <h2>MAIN</h3>
+  <!-- Navigation tab -->
+  <nav class="navigation">
+    <a class="tab-name" data-tab="skills">{{localize "PC.skills"}}</a>
+    <div class="space">/</div>
+    <a class="tab-name" data-tab="gear">{{localize "PC.gear"}}</a>
+  </nav>
+
+  <!-- Tab content -->
+  <div class="tab-content">
+    <div class="tab" data-tab="skills">
+      {{> systems/pars-crucis/templates/actor/parts/skills.hbs}}
+    </div>
+  </div>
 </section>
