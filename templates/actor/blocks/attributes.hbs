@@ -5,7 +5,7 @@
         <h3 class="att-name">
             {{#if att.disabled}}
             {{else}}
-            <a>{{localize attribute.abv}}</a>
+            <a data-action="clickAttribute" data-attribute="{{@key}}">{{localize attribute.abv}}</a>
             {{/if}}
         </h3>
         <div class="att-field">
