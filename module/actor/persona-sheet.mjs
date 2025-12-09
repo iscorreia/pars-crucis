@@ -3,14 +3,6 @@ const { api, sheets } = foundry.applications;
 export class PersonaSheet extends foundry.applications.api.HandlebarsApplicationMixin(
   foundry.applications.sheets.ActorSheetV2
 ) {
-  /** Defines where are the template PARTS */
-  static PARTS = {
-    header: {
-      template: "systems/pars-crucis/templates/actor/parts/header.hbs",
-    },
-    main: { template: "systems/pars-crucis/templates/actor/parts/main.hbs" },
-  };
-
   static DEFAULT_OPTIONS = {
     form: {
       submitOnChange: true,
@@ -28,18 +20,88 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     },
   };
 
-  async _prepareContext(options) {
-    //const context = await super._prepareContext(options);
+  /** Defines where are the template PARTS */
+  static PARTS = {
+    header: {
+      template: "systems/pars-crucis/templates/actor/parts/header.hbs",
+    },
+    tabs: {
+      // Foundry-provided generic template
+      template: "templates/generic/tab-navigation.hbs",
+      // classes: ['sysclass'], // Optionally add extra classes to the part for extra customization
+    },
+    skills: {
+      template: "systems/pars-crucis/templates/actor/parts/skills.hbs",
+    },
+    abilities: {
+      template: "systems/pars-crucis/templates/actor/parts/abilities.hbs",
+    },
+    gear: {
+      template: "systems/pars-crucis/templates/actor/parts/gear.hbs",
+    },
+    passives: {
+      template: "systems/pars-crucis/templates/actor/parts/passives.hbs",
+    },
+    details: {
+      template: "systems/pars-crucis/templates/actor/parts/details.hbs",
+    },
+  };
 
-    context.actor = this.document;
-    context.system = this.document.system;
-    context.config = CONFIG.PC;
+  static TABS = {
+    primary: {
+      initial: "skills",
+      tabs: [
+        {
+          id: "skills",
+          label: "PC.skills",
+        },
+        {
+          id: "abilities",
+          label: "PC.abilities",
+        },
+        {
+          id: "gear",
+          label: "PC.gear",
+        },
+        {
+          id: "passives",
+          label: "PC.passives",
+        },
+        {
+          id: "details",
+          label: "PC.details",
+        },
+      ],
+    },
+  };
+
+  async _prepareContext() {
+    const context = {
+      actor: this.document,
+      documento: this.document,
+      system: this.document.system,
+      config: CONFIG.PC,
+      tabs: this._prepareTabs("primary"),
+    };
+
+    console.log(context.tabs);
 
     return context;
   }
 
-  // find how to implement listeners
-  // use Handlebars and Action
+  async _preparePartContext(partId, context) {
+    switch (partId) {
+      case "skills":
+      case "abilities":
+      case "gear":
+      case "passives":
+      case "details":
+        context.tab = context.tabs[partId];
+        break;
+      default:
+    }
+    return context;
+  }
 
   /**
    * Handle attribute roll clicks
@@ -72,14 +134,11 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     // Get attribute data directly
     const attributeData = actor.system.attributes[attributeKey];
 
-    const baseValue = attributeData.override ?? attributeData.base ?? 0;
-    const modValue = attributeData.mod ?? 0;
-
     // Check if Shift or Ctrl is pressed.
     const isShiftPressed = event.shiftKey;
     const isCtrlPressed = event.ctrlKey || event.metaKey;
 
-    // Create formula based on key pressed
+    // Create dice formula based on key pressed
     let diceFormula;
     if (isShiftPressed) {
       // with Shift
@@ -93,14 +152,14 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     }
 
     // Create roll formula
-    const formula = `${diceFormula} + ${baseValue} + ${modValue}`;
+    const formula = `${diceFormula} + ${attributeData.derived} + ${attributeData.mod}`;
 
     // Create the roll with flavor
     const roll = await Roll.create(
       formula,
       {},
       {
-        flavor: attributeKey.toUpperCase(), // Shows the attribute "FIS", "DES", "EGO"...
+        flavor: `${game.i18n.localize(PC.attribute[attributeKey].abv)}`,
       }
     );
 
@@ -113,26 +172,3 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     return roll;
   }
 }
-
-// how to make a roll
-// on click roll a d6 for clicked attribute
-
-/** Some reference, might be VERY WRONG */
-// export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
-//   sheets.ActorSheetV2
-// ) {
-//   static get defaultOptions() {
-//     return mergeObject(super.defaultOptions, {
-//       classes: ["parscrucis", "sheet", "actor"],
-//       template: "templates/actor/actor-sheet.hbs",
-//       width: 400,
-//       height: 300,
-//     });
-//   }
-
-//   getData() {
-//     const data = super.getData();
-//     data.system = this.actor.system;
-//     data.PV = this.actor.PV; // dynamic PV
-//     return data;
-//   }

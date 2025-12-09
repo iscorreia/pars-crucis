@@ -1,13 +1,29 @@
-{{!-- Sheet header --}}
+{{! Sheet header }}
 
 <header class="sheet-header">
-  <img class="profile-img" src="{{actor.img}}" data-action="editImage" data-edit="img" height="100" width="100">
+  <img
+    class="profile-img"
+    src="{{actor.img}}"
+    data-action="editImage"
+    data-edit="img"
+    height="100"
+    width="100"
+  />
   <div>
-    <h2>
-      <input type="text" name="name" value="{{actor.name}}" placeholder="Name" />
+    <h2 class="actor-name">
+      <input
+        class="actor-name_input"
+        type="text"
+        name="name"
+        value="{{actor.name}}"
+        placeholder="Nameless"
+      />
     </h2>
     <div>
       {{> systems/pars-crucis/templates/actor/blocks/attributes.hbs}}
     </div>
+  </div>
+  <div>
+    {{> systems/pars-crucis/templates/actor/blocks/minors.hbs}}
   </div>
 </header>
