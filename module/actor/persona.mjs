@@ -10,7 +10,12 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     }
 
     return {
-      // attributes: new field.EmbeddedDataField(),
+      experience: new SchemaField({
+        current: new NumberField({ initial: 50, integer: true }),
+        reserved: new NumberField({ initial: 0, integer: true, min: 0 }),
+        total: new NumberField({ initial: 50, integer: true, min: 0 }),
+      }),
+
       attributes: new SchemaField({
         fis: attributeField(),
         des: attributeField(),
@@ -65,6 +70,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
   /** Do derived attribute calculations */
   prepareDerivedData() {
     const attributesData = this.attributes;
+    const xpData = this.experience;
     const skillsData = this.skills;
     const skillsExp = [];
 
@@ -115,6 +121,10 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       Math.max(peDerived, 0),
       this.subattributes.pe.max
     );
+
+    // EXPERIENCE handling!
+    xpData.skillsExpSum = skillsExp.reduce((acc, value) => acc + value, 0);
+    xpData.current = xpData.total - xpData.skillsExpSum;
 
     // console.log(this)
   }
