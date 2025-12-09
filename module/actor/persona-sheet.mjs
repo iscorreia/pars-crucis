@@ -1,4 +1,5 @@
 const { api, sheets } = foundry.applications;
+import { PC } from "../config.mjs";
 
 export class PersonaSheet extends foundry.applications.api.HandlebarsApplicationMixin(
   foundry.applications.sheets.ActorSheetV2
@@ -104,14 +105,71 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
   }
 
   /**
+   * Handle attribute roll clicks
    * @param {PointerEvent} event - The originating click event
    * @param {HTMLElement} target - the capturing HTML element which defined a [data-action]
    */
-  static onAttributeClick(event, target) {
-    console.log("Attribute:", target.dataset.attribute);
+  static async onAttributeClick(event, target) {
     event.preventDefault();
+
+    // Get actor ID from data attribute
+    const actorId = target.dataset.actorId;
+    if (!actorId) {
+      console.error("Actor ID not found");
+      return;
+    }
+
+    // Get the actor from the game
+    const actor = game.actors.get(actorId);
+    if (!actor) {
+      console.error("Actor not found for roll", actorId);
+      return;
+    }
+
+    const attributeKey = target.dataset.attribute;
+    if (!attributeKey) {
+      console.error("Attribute key not found");
+      return;
+    }
+
+    // Get attribute data directly
+    const attributeData = actor.system.attributes[attributeKey];
+
+    // Check if Shift or Ctrl is pressed.
+    const isShiftPressed = event.shiftKey;
+    const isCtrlPressed = event.ctrlKey || event.metaKey;
+
+    // Create dice formula based on key pressed
+    let diceFormula;
+    if (isShiftPressed) {
+      // with Shift
+      diceFormula = "3d10kh2";
+    } else if (isCtrlPressed) {
+      // with Ctrl
+      diceFormula = "3d10kl2";
+    } else {
+      // Normal roll
+      diceFormula = "2d10";
+    }
+
+    // Create roll formula
+    const formula = `${diceFormula} + ${attributeData.derived} + ${attributeData.mod}`;
+
+    // Create the roll with flavor
+    const roll = await Roll.create(
+      formula,
+      {},
+      {
+        flavor: `${game.i18n.localize(PC.attribute[attributeKey].abv)}`,
+      }
+    );
+
+    // Send to chat (toMessage)
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: actor }),
+      rollMode: game.settings.get("core", "rollMode"),
+    });
+
+    return roll;
   }
 }
-
-// how to make a roll
-// on click roll a d6 for clicked attribute

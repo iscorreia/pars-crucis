@@ -4,9 +4,11 @@
       <div>
         <h3 class="att-name">
           {{#if att.disabled}}{{else}}
-            <a data-action="clickAttribute" data-attribute="{{@key}}">
-              {{localize attribute.abv}}
-            </a>
+            <a
+              data-action="clickAttribute"
+              data-attribute="{{@key}}"
+              data-actor-id="{{@root.actor.id}}"
+            >{{localize attribute.abv}}</a>
           {{/if}}
         </h3>
         <div class="att-field">
