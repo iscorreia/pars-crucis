@@ -1,8 +1,22 @@
 {{! Skill tab }}
 
-<section class="skill-tab">
-  WE HAVE SKILLS HERE YOU'RE JUST NOT SEEING IT
-  {{#each config.categories as |categories objs|}}
-    {{log objs}}
-  {{/each}}
+<section class="tab {{tab.cssClass}}" data-group="primary" data-tab="skills">
+  <div class="skill-tab">
+    {{#each config.category as |category objs|}}
+      <div>
+        <ul class="skill-category">
+          <h5 class="category-title">
+            {{localize category.label}}
+          </h5>
+          {{#each (lookup @root.config objs) as |sk obj|}}
+            {{#with (lookup @root.actor.system.skills obj) as |skill|}}
+              <li class="skill">
+                <a>{{localize sk.label}}</a>
+              </li>
+            {{/with}}
+          {{/each}}
+        </ul>
+      </div>
+    {{/each}}
+  </div>
 </section>

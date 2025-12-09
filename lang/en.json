@@ -38,13 +38,69 @@
         "abv": "Sau"
       },
       "ref": {
-        "label": "Vontade",
+        "label": "Reflexo",
         "abv": "Ref"
       },
       "von": {
         "label": "Vontade",
         "abv": "Von"
       }
+    },
+    "skills": "Perícias",
+    "abilities": "Habilidades",
+    "gear": "Inventário",
+    "passives": "Passivas",
+    "details": "Detalhes",
+    "category": {
+      "corporais": "Corporais",
+      "subterfugios": "Subterfúgios",
+      "conhecimentos": "Conhecimentos",
+      "oficios": "Ofícios",
+      "sociais": "Sociais",
+      "espirituais": "Espirituais"
+    },
+    "skill": {
+      "atlet": "Atletismo",
+      "briga": "Briga",
+      "esgri": "Esgrima",
+      "hasta": "Hasta",
+      "malha": "Malha",
+      "resis": "Resistência",
+
+      "agili": "Agilidade",
+      "arque": "Arqueria",
+      "balis": "Balística",
+      "furti": "Furtividade",
+      "ladin": "Ladinagem",
+      "perce": "Percepção",
+
+      "arcan": "Arcanismo",
+      "crono": "Cronociência",
+      "erudi": "Erudição",
+      "medic": "Medicina",
+      "orien": "Orientação",
+      "sobre": "Sobrevivência",
+
+      "alqui": "Alquimia",
+      "armei": "Armeiro",
+      "artes": "Artesão",
+      "condu": "Condução",
+      "engen": "Engenharia",
+      "extra": "Extração",
+
+      "artim": "Artimanha",
+      "bardi": "Bardismo",
+      "domar": "Domar",
+      "expre": "Expressão",
+      "impos": "Imposição",
+      "seduc": "Sedução",
+
+      "amago": "Âmago",
+      "aoism": "Aoismo",
+      "druid": "Druidismo",
+      "eleme": "Elementalismo",
+      "ontol": "Ontologia",
+      "sabak": "Sabakismo"
     }
   }
 }
