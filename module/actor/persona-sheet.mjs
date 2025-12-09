@@ -1,4 +1,5 @@
 const { api, sheets } = foundry.applications;
+import { PC } from "../config.mjs";
 
 export class PersonaSheet extends foundry.applications.api.HandlebarsApplicationMixin(
   foundry.applications.sheets.ActorSheetV2
