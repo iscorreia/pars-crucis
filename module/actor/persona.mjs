@@ -169,7 +169,10 @@ function eachAttribute(objectMap, callback) {
   }
 }
 
-function deriveAttribute(attribute) {
-  const deviredAttribute = Number(attribute.override ?? attribute.base ?? null);
-  return (attribute.derived = deviredAttribute);
+function deriveAttribute(att) {
+  const derivedAtt = Number(att.override ?? att.base ?? null);
+  att.derived = derivedAtt;
+  if (att.mod !== "number") att.mod = 0;
+
+  return att;
 }
