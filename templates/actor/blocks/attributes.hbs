@@ -20,9 +20,9 @@
           />
           <input
             class="att-modifier"
-            type="number"
+            type="String"
             name="system.attributes.{{@key}}.mod"
-            value="{{att.mod}}"
+            value="{{numberFormat att.mod sign=true}}"
             data-dtype="Number"
           />
         </div>

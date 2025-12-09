@@ -84,8 +84,6 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
       tabs: this._prepareTabs("primary"),
     };
 
-    console.log(context.tabs);
-
     return context;
   }
 
@@ -100,6 +98,7 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
         break;
       default:
     }
+
     return context;
   }
 
