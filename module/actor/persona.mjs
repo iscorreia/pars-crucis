@@ -18,6 +18,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
         cog: attributeField(),
         esp: attributeField(),
       }),
+
       mv: new SchemaField({
         walk: new NumberField({ initial: 4, integer: true, min: 0 }),
         override: new NumberField({
@@ -32,22 +33,26 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
           nullable: true,
         }),
       }),
-      pv: new SchemaField({
-        value: new NumberField({ integer: true, min: 0 }),
-        override: new NumberField({
-          initial: null,
-          integer: true,
-          nullable: true,
+
+      subattributes: new SchemaField({
+        pv: new SchemaField({
+          value: new NumberField({ integer: true, min: 0 }),
+          override: new NumberField({
+            initial: null,
+            integer: true,
+            nullable: true,
+          }),
+        }),
+        pe: new SchemaField({
+          value: new NumberField({ integer: true, min: 0 }),
+          override: new NumberField({
+            initial: null,
+            integer: true,
+            nullable: true,
+          }),
         }),
       }),
-      pe: new SchemaField({
-        value: new NumberField({ integer: true, min: 0 }),
-        override: new NumberField({
-          initial: null,
-          integer: true,
-          nullable: true,
-        }),
-      }),
+
       minors: new SchemaField({
         sau: attributeField({ minBase: 0 }),
         ref: attributeField({ minBase: 0 }),
@@ -87,16 +92,29 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
     eachAttribute(attributesData, deriveAttribute);
     eachAttribute(this.minors, deriveAttribute);
-    const att = attributesData;
 
-    this.pv.max = 25 + 2 * att.fis.derived + att.ego.derived;
-    this.pe.max = 25 + att.cog.derived + 2 * att.esp.derived;
+    this.subattributes.pv.max =
+      25 +
+      2 * attributesData.fis.derived +
+      attributesData.ego.derived +
+      2 * skillsData.resis.level;
+    this.subattributes.pe.max =
+      25 +
+      attributesData.cog.derived +
+      2 * attributesData.esp.derived +
+      2 * skillsData.amago.level;
 
     // Works current pv and pe **MAKE THIS INTO A FUNCTION**
-    const pvDerived = Number(this.pv?.value ?? 0);
-    this.pv.value = Math.min(Math.max(pvDerived, 0), this.pv.max);
-    const peDerived = Number(this.pe?.value ?? 0);
-    this.pe.value = Math.min(Math.max(peDerived, 0), this.pe.max);
+    const pvDerived = Number(this.subattributes.pv?.value ?? 0);
+    this.subattributes.pv.value = Math.min(
+      Math.max(pvDerived, 0),
+      this.subattributes.pv.max
+    );
+    const peDerived = Number(this.subattributes.pe?.value ?? 0);
+    this.subattributes.pe.value = Math.min(
+      Math.max(peDerived, 0),
+      this.subattributes.pe.max
+    );
 
     // console.log(this)
   }

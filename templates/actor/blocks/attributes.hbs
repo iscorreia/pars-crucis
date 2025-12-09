@@ -33,6 +33,38 @@
   {{/each}}
 </section>
 <section class="subattributes flexrow">
-  <div>{{localize "PC.subattribute.pv.label"}}</div>
-  <div>{{localize "PC.subattribute.pe.label"}}</div>
+  <div class="flexrow">
+    {{localize "PC.subattribute.pv.label"}}
+    <input
+      class="subatt-value"
+      type="Number"
+      name="system.subattributes.pv.value"
+      value="{{system.subattributes.pv.value}}"
+      data-dtype="Number"
+    />/<input
+      class="att-value"
+      type="number"
+      name="system.subattributes.pv.override"
+      value="{{system.subattributes.pv.override}}"
+      placeholder="{{system.subattributes.pv.max}}"
+      data-dtype="Number"
+    />
+  </div>
+  <div class="flexrow">
+    {{localize "PC.subattribute.pe.label"}}
+    <input
+      class="subatt-value"
+      type="Number"
+      name="system.subattributes.pe.value"
+      value="{{system.subattributes.pe.value}}"
+      data-dtype="Number"
+    />/<input
+      class="att-value"
+      type="number"
+      name="system.subattributes.pe.override"
+      value="{{system.subattributes.pe.override}}"
+      placeholder="{{system.subattributes.pe.max}}"
+      data-dtype="Number"
+    />
+  </div>
 </section>
