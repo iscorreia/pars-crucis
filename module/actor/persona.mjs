@@ -172,7 +172,7 @@ function eachAttribute(objectMap, callback) {
 function deriveAttribute(att) {
   const derivedAtt = Number(att.override ?? att.base ?? null);
   att.derived = derivedAtt;
-  if (att.mod !== "number") att.mod = 0;
+  if (typeof att.mod !== "number") att.mod = 0;
 
   return att;
 }
