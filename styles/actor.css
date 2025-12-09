@@ -16,9 +16,36 @@
   margin-left: 5px;
 }
 
+.att-field {
+  input {
+    width: 100%;
+  }
+}
+
+.minor-row {
+  height: 25px;
+  h4 {
+    margin: 0;
+  }
+  input {
+    width: 25%;
+    height: 20px;
+  }
+}
+
 .skill-tab {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 400px;
+}
+
+.skill-level {
+  height: 20px;
+  width: 25px;
+}
+
+.skill-mod {
+  height: 20px;
+  width: 25px;
 }

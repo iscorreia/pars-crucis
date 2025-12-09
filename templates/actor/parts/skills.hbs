@@ -10,8 +10,26 @@
           </h5>
           {{#each (lookup @root.config objs) as |sk obj|}}
             {{#with (lookup @root.actor.system.skills obj) as |skill|}}
-              <li class="skill">
+              <li class="skill flexrow">
                 <a>{{localize sk.label}}</a>
+                <span>
+                  ({{localize
+                    (concat "PC.attribute." skill.attribute ".abv")
+                  }}{{#if (gte skill.growth 2)}}/{{skill.growth}}{{/if}})
+                </span>
+                <input
+                  class="skill-level"
+                  name="system.skills.{{@key}}.level"
+                  type="Number"
+                  value="{{skill.level}}"
+                  data-dtype="Number"
+                />
+                <input
+                  class="skill-mod"
+                  name="system.skills.{{@key}}.mod"
+                  value="{{numberFormat skill.mod sign=true}}"
+                  data-dtype="Number"
+                />
               </li>
             {{/with}}
           {{/each}}

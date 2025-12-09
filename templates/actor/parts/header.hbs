@@ -6,8 +6,8 @@
     src="{{actor.img}}"
     data-action="editImage"
     data-edit="img"
-    height="100"
-    width="100"
+    height="155"
+    width="155"
   />
   <div>
     <h2 class="actor-name">
@@ -24,6 +24,9 @@
     </div>
   </div>
   <div>
+    {{> systems/pars-crucis/templates/actor/blocks/experience.hbs}}
+    luck!!!
     {{> systems/pars-crucis/templates/actor/blocks/minors.hbs}}
+    {{> systems/pars-crucis/templates/actor/blocks/mitigation.hbs}}
   </div>
 </header>

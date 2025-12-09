@@ -1,3 +1,5 @@
+{{! Attributes central block }}
+
 <section class="attributes flexrow">
   {{#each config.attribute as |attribute obj|}}
     {{#with (lookup @root.actor.system.attributes obj) as |att|}}
@@ -11,10 +13,10 @@
             >{{localize attribute.abv}}</a>
           {{/if}}
         </h3>
-        <div class="att-field">
+        <div class="att-field flexrow">
           <input
             class="att-value"
-            type="number"
+            type="Number"
             name="system.attributes.{{@key}}.override"
             value="{{att.override}}"
             placeholder="{{att.base}}"
@@ -22,13 +24,49 @@
           />
           <input
             class="att-modifier"
-            type="number"
+            type="String"
             name="system.attributes.{{@key}}.mod"
-            value="{{att.mod}}"
+            value="{{numberFormat att.mod sign=true}}"
             data-dtype="Number"
           />
         </div>
       </div>
     {{/with}}
   {{/each}}
+</section>
+<section class="subattributes flexrow">
+  <div class="flexrow">
+    {{localize "PC.subattribute.pv.label"}}
+    <input
+      class="subatt-value"
+      type="Number"
+      name="system.subattributes.pv.value"
+      value="{{system.subattributes.pv.value}}"
+      data-dtype="Number"
+    />/<input
+      class="att-value"
+      type="number"
+      name="system.subattributes.pv.override"
+      value="{{system.subattributes.pv.override}}"
+      placeholder="{{system.subattributes.pv.max}}"
+      data-dtype="Number"
+    />
+  </div>
+  <div class="flexrow">
+    {{localize "PC.subattribute.pe.label"}}
+    <input
+      class="subatt-value"
+      type="Number"
+      name="system.subattributes.pe.value"
+      value="{{system.subattributes.pe.value}}"
+      data-dtype="Number"
+    />/<input
+      class="att-value"
+      type="number"
+      name="system.subattributes.pe.override"
+      value="{{system.subattributes.pe.override}}"
+      placeholder="{{system.subattributes.pe.max}}"
+      data-dtype="Number"
+    />
+  </div>
 </section>

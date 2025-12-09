@@ -1,7 +1,9 @@
+{{! Minors block }}
+
 <section class="minors flexcol">
   {{#each config.minor as |minor obj|}}
     {{#with (lookup @root.actor.system.minors obj) as |min|}}
-      <div class="flexrow">
+      <div class="minor-row flexrow">
         <h4 class="minor-name">
           {{#if att.disabled}}{{else}}
             <a>{{localize minor.label}}</a>
@@ -9,7 +11,7 @@
         </h4>
         <input
           class="minor-value"
-          type="number"
+          type="Number"
           name="system.minors.{{@key}}.override"
           value="{{min.override}}"
           placeholder="{{min.base}}"
@@ -17,9 +19,9 @@
         />
         <input
           class="minor-modifier"
-          type="number"
+          type="String"
           name="system.minors.{{@key}}.mod"
-          value="{{min.mod}}"
+          value="{{numberFormat min.mod sign=true}}"
           data-dtype="Number"
         />
       </div>

@@ -10,7 +10,12 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     }
 
     return {
-      // attributes: new field.EmbeddedDataField(),
+      experience: new SchemaField({
+        current: new NumberField({ initial: 50, integer: true }),
+        reserved: new NumberField({ initial: 0, integer: true, min: 0 }),
+        total: new NumberField({ initial: 50, integer: true, min: 0 }),
+      }),
+
       attributes: new SchemaField({
         fis: attributeField(),
         des: attributeField(),
@@ -18,6 +23,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
         cog: attributeField(),
         esp: attributeField(),
       }),
+
       mv: new SchemaField({
         walk: new NumberField({ initial: 4, integer: true, min: 0 }),
         override: new NumberField({
@@ -32,22 +38,26 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
           nullable: true,
         }),
       }),
-      pv: new SchemaField({
-        value: new NumberField({ integer: true, min: 0 }),
-        override: new NumberField({
-          initial: null,
-          integer: true,
-          nullable: true,
+
+      subattributes: new SchemaField({
+        pv: new SchemaField({
+          value: new NumberField({ integer: true, min: 0 }),
+          override: new NumberField({
+            initial: null,
+            integer: true,
+            nullable: true,
+          }),
+        }),
+        pe: new SchemaField({
+          value: new NumberField({ integer: true, min: 0 }),
+          override: new NumberField({
+            initial: null,
+            integer: true,
+            nullable: true,
+          }),
         }),
       }),
-      pe: new SchemaField({
-        value: new NumberField({ integer: true, min: 0 }),
-        override: new NumberField({
-          initial: null,
-          integer: true,
-          nullable: true,
-        }),
-      }),
+
       minors: new SchemaField({
         sau: attributeField({ minBase: 0 }),
         ref: attributeField({ minBase: 0 }),
@@ -59,18 +69,62 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
   /** Do derived attribute calculations */
   prepareDerivedData() {
-    eachAttribute(this.attributes, deriveAttribute);
-    eachAttribute(this.minors, deriveAttribute);
-    const att = this.attributes;
+    const attributesData = this.attributes;
+    const xpData = this.experience;
+    const skillsData = this.skills;
+    const skillsExp = [];
 
-    this.pv.max = 25 + 2 * att.fis.derived + att.ego.derived;
-    this.pe.max = 25 + att.cog.derived + 2 * att.esp.derived;
+    // SKILLS handling!
+    for (let [_, sk] of Object.entries(skillsData)) {
+      // Calculates the attribute value based on a specific skill level.
+      sk.attValue = Math.ceil(sk.level / sk.growth);
+
+      // Calculates the XP spent on a specific skill base on its level.
+      sk.expSpent = 0;
+      for (let e = sk.learning; e < sk.level + sk.learning; e++) {
+        sk.expSpent += e - (sk.favored ? 1 : 0);
+        skillsExp.push(sk.expSpent);
+      }
+    }
+
+    // ATTRIBUTES handling!
+    for (let [key, att] of Object.entries(attributesData)) {
+      const attValueArray = [];
+      for (let [_, sk] of Object.entries(skillsData)) {
+        if (sk.attribute === key) attValueArray.push(sk.attValue);
+      }
+      att.base = Math.max(...attValueArray);
+    }
+
+    eachAttribute(attributesData, deriveAttribute);
+    eachAttribute(this.minors, deriveAttribute);
+
+    this.subattributes.pv.max =
+      25 +
+      2 * attributesData.fis.derived +
+      attributesData.ego.derived +
+      2 * skillsData.resis.level;
+    this.subattributes.pe.max =
+      25 +
+      attributesData.cog.derived +
+      2 * attributesData.esp.derived +
+      2 * skillsData.amago.level;
 
     // Works current pv and pe **MAKE THIS INTO A FUNCTION**
-    const pvDerived = Number(this.pv?.value ?? 0);
-    this.pv.value = Math.min(Math.max(pvDerived, 0), this.pv.max);
-    const peDerived = Number(this.pe?.value ?? 0);
-    this.pe.value = Math.min(Math.max(peDerived, 0), this.pe.max);
+    const pvDerived = Number(this.subattributes.pv?.value ?? 0);
+    this.subattributes.pv.value = Math.min(
+      Math.max(pvDerived, 0),
+      this.subattributes.pv.max
+    );
+    const peDerived = Number(this.subattributes.pe?.value ?? 0);
+    this.subattributes.pe.value = Math.min(
+      Math.max(peDerived, 0),
+      this.subattributes.pe.max
+    );
+
+    // EXPERIENCE handling!
+    xpData.skillsExpSum = skillsExp.reduce((acc, value) => acc + value, 0);
+    xpData.current = xpData.total - xpData.skillsExpSum;
 
     // console.log(this)
   }
@@ -136,12 +190,15 @@ function skillField(skill, { nullableSkill = false } = {}) {
 }
 
 function eachAttribute(objectMap, callback) {
-  for (let [_, attribute] of Object.entries(objectMap)) {
-    callback(attribute);
+  for (let [key, attribute] of Object.entries(objectMap)) {
+    callback(attribute, key);
   }
 }
 
-function deriveAttribute(attribute) {
-  const deviredAttribute = Number(attribute.override ?? attribute.base ?? null);
-  return (attribute.derived = deviredAttribute);
+function deriveAttribute(att) {
+  const derivedAtt = Number(att.override ?? att.base ?? null);
+  att.derived = derivedAtt;
+  if (typeof att.mod !== "number") att.mod = 0;
+
+  return att;
 }
