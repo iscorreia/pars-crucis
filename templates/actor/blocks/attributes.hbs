@@ -1,3 +1,5 @@
+{{! Attributes central block }}
+
 <section class="attributes flexrow">
   {{#each config.attribute as |attribute obj|}}
     {{#with (lookup @root.actor.system.attributes obj) as |att|}}
@@ -9,7 +11,7 @@
             </a>
           {{/if}}
         </h3>
-        <div class="att-field">
+        <div class="att-field flexrow">
           <input
             class="att-value"
             type="number"
@@ -29,4 +31,8 @@
       </div>
     {{/with}}
   {{/each}}
+</section>
+<section class="subattributes flexrow">
+  <div>{{localize "PC.subattribute.pv.label"}}</div>
+  <div>{{localize "PC.subattribute.pe.label"}}</div>
 </section>

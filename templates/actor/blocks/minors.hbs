@@ -1,3 +1,5 @@
+{{! Minors block }}
+
 <section class="minors flexcol">
   {{#each config.minor as |minor obj|}}
     {{#with (lookup @root.actor.system.minors obj) as |min|}}

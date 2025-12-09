@@ -59,9 +59,35 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
   /** Do derived attribute calculations */
   prepareDerivedData() {
-    eachAttribute(this.attributes, deriveAttribute);
+    const attributesData = this.attributes;
+    const skillsData = this.skills;
+    const skillsExp = [];
+
+    // SKILLS handling!
+    for (let [_, sk] of Object.entries(skillsData)) {
+      // Calculates the attribute value based on a specific skill level.
+      sk.attValue = Math.ceil(sk.level / sk.growth);
+
+      // Calculates the XP spent on a specific skill base on its level.
+      sk.expSpent = 0;
+      for (let e = sk.learning; e < sk.level + sk.learning; e++) {
+        sk.expSpent += e - (sk.favored ? 1 : 0);
+        skillsExp.push(sk.expSpent);
+      }
+    }
+
+    // ATTRIBUTES handling!
+    for (let [key, att] of Object.entries(attributesData)) {
+      const attValueArray = [];
+      for (let [_, sk] of Object.entries(skillsData)) {
+        if (sk.attribute === key) attValueArray.push(sk.attValue);
+      }
+      att.base = Math.max(...attValueArray);
+    }
+
+    eachAttribute(attributesData, deriveAttribute);
     eachAttribute(this.minors, deriveAttribute);
-    const att = this.attributes;
+    const att = attributesData;
 
     this.pv.max = 25 + 2 * att.fis.derived + att.ego.derived;
     this.pe.max = 25 + att.cog.derived + 2 * att.esp.derived;
@@ -110,8 +136,8 @@ function skillField(skill, { nullableSkill = false } = {}) {
 }
 
 function eachAttribute(objectMap, callback) {
-  for (let [_, attribute] of Object.entries(objectMap)) {
-    callback(attribute);
+  for (let [key, attribute] of Object.entries(objectMap)) {
+    callback(attribute, key);
   }
 }
 
