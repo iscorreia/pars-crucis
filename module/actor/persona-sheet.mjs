@@ -133,17 +133,12 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     // Create roll formula
     const formula = `${diceFormula} + ${attData.derived} + ${attData.mod}`;
 
-    let flavor = "";
-    if (attType == "minors") {
-      flavor = `${game.i18n.localize(PC[attType][attKey].label)}`;
-    } else flavor = `${game.i18n.localize(PC[attType][attKey].abv)}`;
-
     // Create the roll with flavor
     const roll = await Roll.create(
       formula,
       {},
       {
-        flavor: flavor,
+        flavor: `${game.i18n.localize(PC[attType][attKey].label)}`,
       }
     );
 
