@@ -2,7 +2,7 @@ import { PC } from "../config.mjs";
 
 export class PersonaModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
-    const { ArrayField, NumberField, SchemaField, StringField } =
+    const { ArrayField, BooleanField, NumberField, SchemaField, StringField } =
       foundry.data.fields;
     const skills = {};
 
@@ -42,7 +42,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
       subattributes: new SchemaField({
         pv: new SchemaField({
-          value: new NumberField({ integer: true, min: 0 }),
+          current: new NumberField({ integer: true, min: 0 }),
           override: new NumberField({
             initial: null,
             integer: true,
@@ -50,13 +50,19 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
           }),
         }),
         pe: new SchemaField({
-          value: new NumberField({ integer: true, min: 0 }),
+          current: new NumberField({ integer: true, min: 0 }),
           override: new NumberField({
             initial: null,
             integer: true,
             nullable: true,
           }),
         }),
+      }),
+
+      luck: new SchemaField({
+        current: new NumberField({ initial: 2, integer: true, min: 0 }),
+        max: new NumberField({ initial: 2, integer: true }),
+        booleans: new ArrayField(new BooleanField(), { initial: [true, true] }),
       }),
 
       minors: new SchemaField({
@@ -92,6 +98,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
   /** Do derived attribute calculations */
   prepareDerivedData() {
     const attributesData = this.attributes;
+    const luckData = this.luck;
     const minorsData = this.minors;
     const skillsData = this.skills;
     const skillsExp = [];
@@ -145,13 +152,13 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       2 * skillsData.amago.level;
 
     // Works current pv and pe **MAKE THIS INTO A FUNCTION**
-    const pvDerived = Number(this.subattributes.pv?.value ?? 0);
-    this.subattributes.pv.value = Math.min(
+    const pvDerived = Number(this.subattributes.pv?.current ?? 0);
+    this.subattributes.pv.current = Math.min(
       Math.max(pvDerived, 0),
       this.subattributes.pv.max
     );
-    const peDerived = Number(this.subattributes.pe?.value ?? 0);
-    this.subattributes.pe.value = Math.min(
+    const peDerived = Number(this.subattributes.pe?.current ?? 0);
+    this.subattributes.pe.current = Math.min(
       Math.max(peDerived, 0),
       this.subattributes.pe.max
     );
@@ -159,6 +166,9 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     // EXPERIENCE handling!
     xpData.skillsExpSum = skillsExp.reduce((acc, value) => acc + value, 0);
     xpData.current = xpData.total - xpData.skillsExpSum - xpData.reserved;
+
+    // LUCK handling!
+    luckBooleans(luckData);
 
     // console.log(this)
   }
@@ -188,6 +198,24 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
     return data;
   }
+}
+
+function luckBooleans(luck) {
+  let luckBooleans = luck.booleans.length;
+
+  if (luck.max > luckBooleans) {
+    for (let i = luckBooleans; i < luck.max; i++) luck.booleans.push(true);
+  } else if (luck.max < luckBooleans) {
+    for (let i = luckBooleans; i > luck.max; i--) {
+      let idx = luck.booleans.indexOf(true);
+      if (idx === -1) idx = luck.booleans.indexOf(false);
+      if (idx !== -1) luck.booleans.splice(idx, 1);
+    }
+  }
+
+  luck.current = luck.booleans.filter(Boolean).length;
+
+  return luck;
 }
 
 function attributeField({
