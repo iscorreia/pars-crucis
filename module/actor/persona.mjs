@@ -158,7 +158,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
     // EXPERIENCE handling!
     xpData.skillsExpSum = skillsExp.reduce((acc, value) => acc + value, 0);
-    xpData.current = xpData.total - xpData.skillsExpSum;
+    xpData.current = xpData.total - xpData.skillsExpSum - xpData.reserved;
 
     // console.log(this)
   }
