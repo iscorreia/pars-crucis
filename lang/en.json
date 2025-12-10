@@ -1,6 +1,6 @@
 {
   "PC": {
-    "attribute": {
+    "attributes": {
       "fis": {
         "label": "Físico",
         "abv": "FIS"
@@ -22,7 +22,7 @@
         "abv": "ESP"
       }
     },
-    "subattribute": {
+    "subattributes": {
       "pv": {
         "label": "Pontos de Vida",
         "abv": "PV"
@@ -32,7 +32,7 @@
         "abv": "PE"
       }
     },
-    "minor": {
+    "minors": {
       "sau": {
         "label": "Saúde",
         "abv": "Sau"
@@ -46,12 +46,14 @@
         "abv": "Von"
       }
     },
-    "skills": "Perícias",
-    "abilities": "Habilidades",
-    "gear": "Inventário",
-    "passives": "Passivas",
-    "details": "Detalhes",
-    "category": {
+    "tabs": {
+      "skills": "Perícias",
+      "abilities": "Habilidades",
+      "gear": "Inventário",
+      "passives": "Passivas",
+      "details": "Detalhes"
+    },
+    "categories": {
       "corporais": "Corporais",
       "subterfugios": "Subterfúgios",
       "conhecimentos": "Conhecimentos",
@@ -59,7 +61,7 @@
       "sociais": "Sociais",
       "espirituais": "Espirituais"
     },
-    "skill": {
+    "skills": {
       "atlet": "Atletismo",
       "briga": "Briga",
       "esgri": "Esgrima",

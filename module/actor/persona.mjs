@@ -2,10 +2,11 @@ import { PC } from "../config.mjs";
 
 export class PersonaModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
-    const { NumberField, SchemaField } = foundry.data.fields;
+    const { ArrayField, NumberField, SchemaField, StringField } =
+      foundry.data.fields;
     const skills = {};
 
-    for (let [key, skill] of Object.entries(PC.skill)) {
+    for (let [key, skill] of Object.entries(PC.skills)) {
       skills[key] = skillField(skill);
     }
 
@@ -59,9 +60,30 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       }),
 
       minors: new SchemaField({
-        sau: attributeField({ minBase: 0 }),
-        ref: attributeField({ minBase: 0 }),
-        von: attributeField({ minBase: 0 }),
+        sau: attributeField({
+          minBase: 0,
+          extraFields: {
+            attributes: new ArrayField(new StringField(), {
+              initial: ["fis", "ego"],
+            }),
+          },
+        }),
+        ref: attributeField({
+          minBase: 0,
+          extraFields: {
+            attributes: new ArrayField(new StringField(), {
+              initial: ["des", "cog"],
+            }),
+          },
+        }),
+        von: attributeField({
+          minBase: 0,
+          extraFields: {
+            attributes: new ArrayField(new StringField(), {
+              initial: ["ego", "esp"],
+            }),
+          },
+        }),
       }),
       skills: new SchemaField(skills),
     };
@@ -70,9 +92,10 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
   /** Do derived attribute calculations */
   prepareDerivedData() {
     const attributesData = this.attributes;
-    const xpData = this.experience;
+    const minorsData = this.minors;
     const skillsData = this.skills;
     const skillsExp = [];
+    const xpData = this.experience;
 
     // SKILLS handling!
     for (let [_, sk] of Object.entries(skillsData)) {
@@ -83,8 +106,8 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       sk.expSpent = 0;
       for (let e = sk.learning; e < sk.level + sk.learning; e++) {
         sk.expSpent += e - (sk.favored ? 1 : 0);
-        skillsExp.push(sk.expSpent);
       }
+      skillsExp.push(sk.expSpent);
     }
 
     // ATTRIBUTES handling!
@@ -97,7 +120,18 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     }
 
     eachAttribute(attributesData, deriveAttribute);
-    eachAttribute(this.minors, deriveAttribute);
+
+    // MINORS handling!
+    for (let [_, minor] of Object.entries(minorsData)) {
+      const attributes = minor.attributes;
+      const minorBase =
+        ((attributesData[attributes[0]].derived || 0) +
+          (attributesData[attributes[0]].derived || 0)) /
+        2;
+      minor.base = Math.ceil(minorBase);
+    }
+
+    eachAttribute(minorsData, deriveAttribute);
 
     this.subattributes.pv.max =
       25 +
@@ -135,31 +169,35 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
    */
   getRollData() {
     const data = {};
-    
+
     // Add attribute values to roll data
-    Object.keys(this.attributes).forEach(key => {
+    Object.keys(this.attributes).forEach((key) => {
       const attr = this.attributes[key];
       const base = attr.override ?? attr.base ?? 0;
       const mod = attr.mod ?? 0;
       data[`attr_${key}`] = base + mod;
     });
-    
+
     // Add minor attributes
-    Object.keys(this.minors).forEach(key => {
+    Object.keys(this.minors).forEach((key) => {
       const minor = this.minors[key];
       const base = minor.override ?? minor.base ?? 0;
       const mod = minor.mod ?? 0;
       data[`minor_${key}`] = base + mod;
     });
-    
+
     return data;
   }
 }
 
-function attributeField({ initialBase = 0, minBase = -3 } = {}) {
+function attributeField({
+  initialBase = 0,
+  minBase = -3,
+  extraFields = null,
+} = {}) {
   const { NumberField, SchemaField } = foundry.data.fields;
 
-  return new SchemaField({
+  const fields = {
     base: new NumberField({
       initial: initialBase,
       integer: true,
@@ -167,7 +205,13 @@ function attributeField({ initialBase = 0, minBase = -3 } = {}) {
     }),
     mod: new NumberField({ initial: 0, integer: true }),
     override: new NumberField({ initial: null, integer: true, nullable: true }),
-  });
+  };
+
+  if (extraFields && typeof extraFields === "object") {
+    Object.assign(fields, extraFields);
+  }
+
+  return new SchemaField(fields);
 }
 
 function skillField(skill, { nullableSkill = false } = {}) {
@@ -198,7 +242,11 @@ function eachAttribute(objectMap, callback) {
 function deriveAttribute(att) {
   const derivedAtt = Number(att.override ?? att.base ?? null);
   att.derived = derivedAtt;
-  if (typeof att.mod !== "number") att.mod = 0;
+
+  // It's not working as intended, need to revise
+  if (typeof att.mod !== "number") {
+    att.mod = 0;
+  }
 
   return att;
 }
