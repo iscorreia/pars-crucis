@@ -1,12 +1,16 @@
 {{! Minors block }}
 
 <section class="minors flexcol">
-  {{#each config.minor as |minor obj|}}
+  {{#each config.minors as |minor obj|}}
     {{#with (lookup @root.actor.system.minors obj) as |min|}}
       <div class="minor-row flexrow">
         <h4 class="minor-name">
           {{#if att.disabled}}{{else}}
-            <a>{{localize minor.label}}</a>
+            <a
+              data-action="clickAttribute"
+              data-attribute="{{@key}}"
+              data-type="minors"
+            >{{localize minor.label}}</a>
           {{/if}}
         </h4>
         <input

@@ -1,7 +1,7 @@
 {{! Attributes central block }}
 
 <section class="attributes flexrow">
-  {{#each config.attribute as |attribute obj|}}
+  {{#each config.attributes as |attribute obj|}}
     {{#with (lookup @root.actor.system.attributes obj) as |att|}}
       <div>
         <h3 class="att-name">
@@ -9,7 +9,7 @@
             <a
               data-action="clickAttribute"
               data-attribute="{{@key}}"
-              data-actor-id="{{@root.actor.id}}"
+              data-type="attributes"
             >{{localize attribute.abv}}</a>
           {{/if}}
         </h3>
@@ -36,7 +36,7 @@
 </section>
 <section class="subattributes flexrow">
   <div class="flexrow">
-    {{localize "PC.subattribute.pv.label"}}
+    {{localize "PC.subattributes.pv.label"}}
     <input
       class="subatt-value"
       type="Number"
@@ -53,7 +53,7 @@
     />
   </div>
   <div class="flexrow">
-    {{localize "PC.subattribute.pe.label"}}
+    {{localize "PC.subattributes.pe.label"}}
     <input
       class="subatt-value"
       type="Number"

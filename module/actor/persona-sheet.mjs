@@ -54,23 +54,23 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
       tabs: [
         {
           id: "skills",
-          label: "PC.skills",
+          label: "PC.tabs.skills",
         },
         {
           id: "abilities",
-          label: "PC.abilities",
+          label: "PC.tabs.abilities",
         },
         {
           id: "gear",
-          label: "PC.gear",
+          label: "PC.tabs.gear",
         },
         {
           id: "passives",
-          label: "PC.passives",
+          label: "PC.tabs.passives",
         },
         {
           id: "details",
-          label: "PC.details",
+          label: "PC.tabs.details",
         },
       ],
     },
@@ -104,62 +104,46 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
   }
 
   /**
-   * Handle attribute roll clicks
+   * Handle attribute and skill roll clicks
    * @param {PointerEvent} event - The originating click event
-   * @param {HTMLElement} target - the capturing HTML element which defined a [data-action]
+   * @param {HTMLElement} target - The capturing HTML element which defined a [data-action]
    */
   static async onAttributeClick(event, target) {
     event.preventDefault();
+    const dataset = target.dataset;
+    const attKey = dataset.attribute;
+    const attType = dataset.type;
+    const actor = this.actor;
+    const attData = actor.system[attType][attKey];
 
-    // Get actor ID from data attribute
-    const actorId = target.dataset.actorId;
-    if (!actorId) {
-      console.error("Actor ID not found");
-      return;
-    }
-
-    // Get the actor from the game
-    const actor = game.actors.get(actorId);
-    if (!actor) {
-      console.error("Actor not found for roll", actorId);
-      return;
-    }
-
-    const attributeKey = target.dataset.attribute;
-    if (!attributeKey) {
-      console.error("Attribute key not found");
-      return;
-    }
-
-    // Get attribute data directly
-    const attributeData = actor.system.attributes[attributeKey];
-
-    // Check if Shift or Ctrl is pressed.
+    // Checks if Shift or Ctrl is pressed.
     const isShiftPressed = event.shiftKey;
     const isCtrlPressed = event.ctrlKey || event.metaKey;
 
-    // Create dice formula based on key pressed
+    // Creates dice formula taking into account Shit and Ctrl
     let diceFormula;
     if (isShiftPressed) {
-      // with Shift
       diceFormula = "3d10kh2";
     } else if (isCtrlPressed) {
-      // with Ctrl
       diceFormula = "3d10kl2";
     } else {
-      // Normal roll
       diceFormula = "2d10";
     }
 
     // Create roll formula
-    const formula = `${diceFormula} + ${attributeData.derived} + ${attributeData.mod}`;
+    const formula = `${diceFormula} + ${attData.derived} + ${attData.mod}`;
+
+    let flavor = "";
+    if (attType == "minors") {
+      flavor = `${game.i18n.localize(PC[attType][attKey].label)}`;
+    } else flavor = `${game.i18n.localize(PC[attType][attKey].abv)}`;
 
     // Create the roll with flavor
     const roll = await Roll.create(
       formula,
       {},
       {
-        flavor: `${game.i18n.localize(PC.attribute[attributeKey].abv)}`,
+        flavor: flavor,
       }
     );
 
