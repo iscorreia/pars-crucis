@@ -170,7 +170,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     // LUCK handling!
     luckBooleans(luckData);
 
-    // console.log(this)
+    console.log(this);
   }
 
   /**
@@ -202,7 +202,9 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
 function luckBooleans(luck) {
   let luckBooleans = luck.booleans.length;
+  luck.max < 0 ? (luck.max = 0) : luck.max;
 
+  // Increments or decrements luck based on changes to {luck.max}
   if (luck.max > luckBooleans) {
     for (let i = luckBooleans; i < luck.max; i++) luck.booleans.push(true);
   } else if (luck.max < luckBooleans) {
@@ -213,6 +215,7 @@ function luckBooleans(luck) {
     }
   }
 
+  // Updates the current luck value
   luck.current = luck.booleans.filter(Boolean).length;
 
   return luck;

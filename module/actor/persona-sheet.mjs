@@ -18,6 +18,7 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     },
     actions: {
       clickAttribute: this.onAttributeClick,
+      clickLuck: this.onLuckClick,
     },
   };
 
@@ -149,5 +150,16 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     });
 
     return roll;
+  }
+
+  static async onLuckClick(event, target) {
+    event.preventDefault();
+    const dataset = target.dataset;
+    const luckBooleans = this.actor.system.luck.booleans;
+    const index = dataset.luckIndex;
+
+    luckBooleans[index] = !luckBooleans[index];
+
+    this.actor.update({ "system.luck.booleans": luckBooleans });
   }
 }
