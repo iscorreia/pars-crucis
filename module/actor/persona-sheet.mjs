@@ -132,7 +132,9 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     }
 
     // Create roll formula
-    const formula = `${diceFormula} + ${attData.derived} + ${attData.mod}`;
+    const formula = `${diceFormula} + ${attData.derived || attData.level} + ${
+      attData.mod
+    }`;
 
     // Create the roll with flavor
     const roll = await Roll.create(

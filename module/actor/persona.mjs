@@ -169,8 +169,6 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
     // LUCK handling!
     luckBooleans(luckData);
-
-    console.log(this);
   }
 
   /**
