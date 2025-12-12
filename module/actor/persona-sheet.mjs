@@ -100,8 +100,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       tabs: this._prepareTabs("primary"),
     };
 
-    console.log(context);
-
     return context;
   }
 

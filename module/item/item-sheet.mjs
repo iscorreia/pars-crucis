@@ -56,7 +56,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
       config: CONFIG.PC,
       tabs: this._prepareTabs("primary"),
     };
-    console.log(context);
+
     return context;
   }
 
@@ -85,5 +85,3 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     });
   }
 }
-
-

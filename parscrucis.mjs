@@ -40,7 +40,7 @@ Hooks.once("init", () => {
     passive: PassiveModel,
     weapon: WeaponModel,
   });
-  
+
   // Register the V2 sheet for 'persona'
   foundry.applications.apps.DocumentSheetConfig.registerSheet(
     foundry.documents.Actor,
