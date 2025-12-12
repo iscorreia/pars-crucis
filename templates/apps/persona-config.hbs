@@ -1,0 +1,74 @@
+{{! Persona configuration window }}
+
+<section class="persona-config">
+  <h3>{{localize "PC.configPersona"}}</h3>
+  <p>MESSAGE HERE</p>
+  <div class="flexrow">
+    Origem
+    <select name="system.info.origin">
+      {{selectOptions config.origins selected=system.info.origin localize=true}}
+    </select>
+    / cultura
+    <select name="system.info.culture">
+      {{selectOptions
+        config.cultures
+        selected=system.info.culture
+        localize=true
+      }}
+    </select>
+    / persona
+    <select name="system.info.persona">
+      {{selectOptions
+        config.personas
+        selected=system.info.persona
+        localize=true
+      }}
+    </select>
+  </div>
+  <div class="flexrow">
+    {{#each system.attributes as |attribute obj|}}
+      <div class="flexcol"><h4>{{localize
+            (concat "PC.attributes." obj ".abv")
+          }}</h4>
+        <input
+          type="String"
+          data-dtype="Number"
+          name="system.attributes.{{@key}}.adjust"
+          value="{{attribute.adjust}}"
+        /></div>
+    {{/each}}
+  </div>
+  <div class="flexrow">
+    {{#each system.subattributes as |sub obj|}}
+      <div class="flexcol">
+        <h4>{{localize (concat "PC.subattributes." obj ".abv")}}</h4>
+        <input
+          type="String"
+          data-dtype="Number"
+          name="system.subattributes.{{@key}}.adjust"
+          value="{{sub.adjust}}"
+        />
+      </div>
+    {{/each}}
+    {{#each system.minors as |minor obj|}}
+      <div class="flexcol">
+        <h4>{{localize (concat "PC.minors." obj ".abv")}}</h4>
+        <input
+          type="String"
+          data-dtype="Number"
+          name="system.minors.{{@key}}.adjust"
+          value="{{minor.adjust}}"
+        />
+      </div>
+    {{/each}}
+  </div>
+  <div class="flexrow">
+    {{#each config.categories as |category objs|}}
+      <ul class="flexcol">
+        {{#each (lookup @root.config objs) as |sk obj|}}
+          <li>sk</li>
+        {{/each}}
+      </ul>
+    {{/each}}
+  </div>
+</section>

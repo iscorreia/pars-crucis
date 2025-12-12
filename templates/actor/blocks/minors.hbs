@@ -1,6 +1,38 @@
 {{! Minors block }}
 
 <section class="minors flexcol">
+  <div class="flexrow">
+    <h4 class="luck-name">
+      {{#if system.luck.disabled}}{{else}}
+        <div>{{localize "PC.luck"}}</div>
+      {{/if}}
+    </h4>
+    <div class="luck-num flexrow">
+      {{#each system.luck.booleans as |boolean obj|}}
+        {{#if boolean}}
+          <a
+            class="luck-mark"
+            data-action="clickLuck"
+            data-luck-index={{@key}}
+          ><div>O</div></a>
+        {{else}}
+          <a
+            class="luck-mark"
+            data-action="clickLuck"
+            data-luck-index={{@key}}
+          ><div>X</div></a>
+        {{/if}}
+      {{/each}}
+    </div>
+    <input
+      class="luck-max"
+      name="system.luck.max"
+      type="Number"
+      value="{{system.luck.max}}"
+      data-dtype="Number"
+    />
+  </div>
+
   {{#each config.minors as |minor obj|}}
     {{#with (lookup @root.actor.system.minors obj) as |min|}}
       <div class="minor-row flexrow">

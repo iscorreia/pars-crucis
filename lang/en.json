@@ -1,5 +1,61 @@
 {
   "PC": {
+    "origins": {
+      "capri": "Capríaco",
+      "carne": "Carneador",
+      "guara": "Guará",
+      "human": "Humano",
+      "ligno": "Ligno",
+      "orcin": "Orcino",
+      "queza": "Quezal",
+      "stran": "Estranho"
+    },
+    "cultures": {
+      "adv": "Ádvena",
+      "ana": "Anama",
+      "ank": "Ankhairo",
+      "art": "Artífice",
+      "ast": "Astraio",
+      "azi": "Azírio",
+      "ban": "Bandeiro",
+      "cam": "Campeador",
+      "gua": "Guará",
+      "orc": "Orcai",
+      "reb": "Rebelde",
+      "est": "Estricário",
+      "sab": "Sabak",
+      "sal": "Salutário",
+      "vag": "Vagante",
+      "vel": "Veleiro"
+    },
+    "personas": {
+      "aven": "Aventureiro",
+      "itin": "Itinerante",
+      "esco": "Escolar",
+      "escu": "Escultor",
+      "visi": "Visionário",
+      "cura": "Curador",
+      "prot": "Protetor",
+      "vang": "Vanguarda",
+      "arau": "Arauto",
+      "asse": "Assecla",
+      "domi": "Dominador",
+      "juiz": "Juiz",
+      "pers": "Perscrutor",
+      "here": "Herege",
+      "dest": "Destruidor",
+      "mart": "Mártir",
+      "zelo": "Zelote",
+      "asce": "Ascendente",
+      "gran": "Grandioso",
+      "perd": "Perdulário",
+      "ermi": "Ermitão",
+      "usur": "Usurpador",
+      "queb": "Quebrado",
+      "ment": "Mentecapto",
+      "miri": "Miríada",
+      "sabi": "Sábio"
+    },
     "attributes": {
       "fis": {
         "label": "Físico",
@@ -46,6 +102,7 @@
         "abv": "Von"
       }
     },
+    "luck": "Sorte",
     "tabs": {
       "skills": "Perícias",
       "abilities": "Habilidades",
@@ -111,6 +168,7 @@
         "passive": "Passiva",
         "weapon": "Armamento"
       }
-    }
+    },
+    "configPersona": "Configuração de Persona"
   }
 }

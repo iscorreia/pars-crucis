@@ -19,13 +19,17 @@
         placeholder="Nameless"
       />
     </h2>
+    <div class="flexrow">
+     <span>{{localize (concat "PC.origins." system.info.origin)}}</span>
+     <span>{{localize (concat "PC.cultures." system.info.culture)}}</span>
+     <span>{{localize (concat "PC.personas." system.info.persona)}}</span>
+    </div>
     <div>
       {{> systems/pars-crucis/templates/actor/blocks/attributes.hbs}}
     </div>
   </div>
   <div>
     {{> systems/pars-crucis/templates/actor/blocks/experience.hbs}}
-    luck!!!
     {{> systems/pars-crucis/templates/actor/blocks/minors.hbs}}
     {{> systems/pars-crucis/templates/actor/blocks/mitigation.hbs}}
   </div>

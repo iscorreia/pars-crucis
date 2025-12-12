@@ -11,7 +11,11 @@
           {{#each (lookup @root.config objs) as |sk obj|}}
             {{#with (lookup @root.actor.system.skills obj) as |skill|}}
               <li class="skill flexrow">
-                <a>{{localize sk.label}}</a>
+                <a
+                  data-action="clickAttribute"
+                  data-attribute="{{@key}}"
+                  data-type="skills"
+                >{{localize sk.label}}</a>
                 <span>
                   ({{localize
                     (concat "PC.attributes." skill.attribute ".abv")

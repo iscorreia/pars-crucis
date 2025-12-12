@@ -1,9 +1,10 @@
 import { PC } from "../config.mjs";
+import { ORIGINS } from "../data/origins.mjs";
+const { ArrayField, BooleanField, NumberField, SchemaField, StringField } =
+  foundry.data.fields;
 
 export class PersonaModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
-    const { ArrayField, NumberField, SchemaField, StringField } =
-      foundry.data.fields;
     const skills = {};
 
     for (let [key, skill] of Object.entries(PC.skills)) {
@@ -11,6 +12,12 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     }
 
     return {
+      info: new SchemaField({
+        origin: new StringField({ initial: "human" }),
+        culture: new StringField({ initial: "adv" }),
+        persona: new StringField({ initial: "aven" }),
+      }),
+
       experience: new SchemaField({
         current: new NumberField({ initial: 50, integer: true }),
         reserved: new NumberField({ initial: 0, integer: true, min: 0 }),
@@ -41,22 +48,14 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       }),
 
       subattributes: new SchemaField({
-        pv: new SchemaField({
-          value: new NumberField({ integer: true, min: 0 }),
-          override: new NumberField({
-            initial: null,
-            integer: true,
-            nullable: true,
-          }),
-        }),
-        pe: new SchemaField({
-          value: new NumberField({ integer: true, min: 0 }),
-          override: new NumberField({
-            initial: null,
-            integer: true,
-            nullable: true,
-          }),
-        }),
+        pv: subField(),
+        pe: subField(),
+      }),
+
+      luck: new SchemaField({
+        current: new NumberField({ initial: 2, integer: true, min: 0 }),
+        max: new NumberField({ initial: 2, integer: true }),
+        booleans: new ArrayField(new BooleanField(), { initial: [true, true] }),
       }),
 
       minors: new SchemaField({
@@ -92,9 +91,12 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
   /** Do derived attribute calculations */
   prepareDerivedData() {
     const attributesData = this.attributes;
+    const infoData = this.info;
+    const luckData = this.luck;
     const minorsData = this.minors;
     const skillsData = this.skills;
     const skillsExp = [];
+    const subData = this.subattributes;
     const xpData = this.experience;
 
     // SKILLS handling!
@@ -116,7 +118,10 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       for (let [_, sk] of Object.entries(skillsData)) {
         if (sk.attribute === key) attValueArray.push(sk.attValue);
       }
-      att.base = Math.max(...attValueArray);
+      att.base =
+        Math.max(...attValueArray) +
+        att.adjust +
+        (ORIGINS[infoData.origin].attributes[key] || 0);
     }
 
     eachAttribute(attributesData, deriveAttribute);
@@ -128,66 +133,84 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
         ((attributesData[attributes[0]].derived || 0) +
           (attributesData[attributes[0]].derived || 0)) /
         2;
-      minor.base = Math.ceil(minorBase);
+      minor.base = Math.ceil(minorBase) + minor.adjust;
     }
 
     eachAttribute(minorsData, deriveAttribute);
 
-    this.subattributes.pv.max =
+    subData.pv.max =
       25 +
       2 * attributesData.fis.derived +
       attributesData.ego.derived +
-      2 * skillsData.resis.level;
-    this.subattributes.pe.max =
+      2 * skillsData.resis.level +
+      subData.pv.adjust;
+    subData.pe.max =
       25 +
       attributesData.cog.derived +
       2 * attributesData.esp.derived +
-      2 * skillsData.amago.level;
+      2 * skillsData.amago.level +
+      subData.pe.adjust;
 
     // Works current pv and pe **MAKE THIS INTO A FUNCTION**
-    const pvDerived = Number(this.subattributes.pv?.value ?? 0);
-    this.subattributes.pv.value = Math.min(
-      Math.max(pvDerived, 0),
-      this.subattributes.pv.max
-    );
-    const peDerived = Number(this.subattributes.pe?.value ?? 0);
-    this.subattributes.pe.value = Math.min(
-      Math.max(peDerived, 0),
-      this.subattributes.pe.max
-    );
+    const pvDerived = Number(subData.pv?.current ?? 0);
+    subData.pv.current = Math.min(Math.max(pvDerived, 0), subData.pv.max);
+    const peDerived = Number(subData.pe?.current ?? 0);
+    subData.pe.current = Math.min(Math.max(peDerived, 0), subData.pe.max);
 
     // EXPERIENCE handling!
     xpData.skillsExpSum = skillsExp.reduce((acc, value) => acc + value, 0);
-    xpData.current = xpData.total - xpData.skillsExpSum;
+    xpData.current = xpData.total - xpData.skillsExpSum - xpData.reserved;
 
-    // console.log(this)
+    // LUCK handling!
+    luckBooleans(luckData);
   }
 
   /**
    * Prepare data for dice rolls
    * @returns {Object} Data object for use in roll formulas
    */
+
+  // DOESN'T SEEM TO BE CALLED ANYWHERE
   getRollData() {
     const data = {};
 
     // Add attribute values to roll data
     Object.keys(this.attributes).forEach((key) => {
-      const attr = this.attributes[key];
-      const base = attr.override ?? attr.base ?? 0;
-      const mod = attr.mod ?? 0;
-      data[`attr_${key}`] = base + mod;
+      const att = this.attributes[key];
+      const mod = att.mod ?? 0;
+      data[`att_${key}`] = att.derived + mod;
     });
 
     // Add minor attributes
     Object.keys(this.minors).forEach((key) => {
       const minor = this.minors[key];
-      const base = minor.override ?? minor.base ?? 0;
       const mod = minor.mod ?? 0;
-      data[`minor_${key}`] = base + mod;
+      data[`minor_${key}`] = minor.derived + mod;
     });
 
     return data;
   }
+}
+
+function luckBooleans(luck) {
+  let luckBooleans = luck.booleans.length;
+  luck.max < 0 ? (luck.max = 0) : luck.max;
+
+  // Increments or decrements luck based on changes to {luck.max}
+  if (luck.max > luckBooleans) {
+    for (let i = luckBooleans; i < luck.max; i++) luck.booleans.push(true);
+  } else if (luck.max < luckBooleans) {
+    for (let i = luckBooleans; i > luck.max; i--) {
+      let idx = luck.booleans.indexOf(true);
+      if (idx === -1) idx = luck.booleans.indexOf(false);
+      if (idx !== -1) luck.booleans.splice(idx, 1);
+    }
+  }
+
+  // Updates the current luck value
+  luck.current = luck.booleans.filter(Boolean).length;
+
+  return luck;
 }
 
 function attributeField({
@@ -195,8 +218,6 @@ function attributeField({
   minBase = -3,
   extraFields = null,
 } = {}) {
-  const { NumberField, SchemaField } = foundry.data.fields;
-
   const fields = {
     base: new NumberField({
       initial: initialBase,
@@ -205,6 +226,7 @@ function attributeField({
     }),
     mod: new NumberField({ initial: 0, integer: true }),
     override: new NumberField({ initial: null, integer: true, nullable: true }),
+    adjust: new NumberField({ initial: 0, integer: true }),
   };
 
   if (extraFields && typeof extraFields === "object") {
@@ -214,10 +236,15 @@ function attributeField({
   return new SchemaField(fields);
 }
 
-function skillField(skill, { nullableSkill = false } = {}) {
-  const { BooleanField, NumberField, SchemaField, StringField } =
-    foundry.data.fields;
+function subField() {
+  return new SchemaField({
+    current: new NumberField({ integer: true, min: 0 }),
+    override: new NumberField({ initial: null, integer: true, nullable: true }),
+    adjust: new NumberField({ initial: 0, integer: true }),
+  });
+}
 
+function skillField(skill, { nullableSkill = false } = {}) {
   return new SchemaField({
     level: new NumberField({
       initial: 0,

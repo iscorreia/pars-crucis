@@ -1,8 +1,9 @@
 const { api, sheets } = foundry.applications;
 import { PC } from "../config.mjs";
+import PersonaConfig from "../apps/persona-config.mjs";
 
-export class PersonaSheet extends foundry.applications.api.HandlebarsApplicationMixin(
-  foundry.applications.sheets.ActorSheetV2
+export class PersonaSheet extends api.HandlebarsApplicationMixin(
+  sheets.ActorSheetV2
 ) {
   static DEFAULT_OPTIONS = {
     form: {
@@ -18,10 +19,12 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     },
     actions: {
       clickAttribute: this.onAttributeClick,
+      clickLuck: this.onLuckClick,
+      configurePersona: this.configurePersona,
     },
   };
 
-  /** Defines where are the template PARTS */
+  /** @inheritdoc Defines where are the template PARTS */
   static PARTS = {
     header: {
       template: "systems/pars-crucis/templates/actor/parts/header.hbs",
@@ -76,10 +79,22 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     },
   };
 
+  _getHeaderControls() {
+    let controls = super._getHeaderControls();
+    if (this.actor.isOwner) {
+      controls.unshift({
+        label: "PC.configPersona",
+        icon: "fas fa-wrench",
+        action: "configurePersona",
+      });
+    }
+    return controls;
+  }
+
   async _prepareContext() {
     const context = {
       actor: this.document,
-      documento: this.document,
+      document: this.document,
       system: this.document.system,
       config: CONFIG.PC,
       tabs: this._prepareTabs("primary"),
@@ -131,19 +146,16 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     }
 
     // Create roll formula
-    const formula = `${diceFormula} + ${attData.derived} + ${attData.mod}`;
-
-    let flavor = "";
-    if (attType == "minors") {
-      flavor = `${game.i18n.localize(PC[attType][attKey].label)}`;
-    } else flavor = `${game.i18n.localize(PC[attType][attKey].abv)}`;
+    const formula = `${diceFormula} + ${attData.derived || attData.level} + ${
+      attData.mod
+    }`;
 
     // Create the roll with flavor
     const roll = await Roll.create(
       formula,
       {},
       {
-        flavor: flavor,
+        flavor: `${game.i18n.localize(PC[attType][attKey].label)}`,
       }
     );
 
@@ -154,5 +166,23 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
     });
 
     return roll;
+  }
+
+  static async onLuckClick(event, target) {
+    event.preventDefault();
+    const dataset = target.dataset;
+    const luckBooleans = this.actor.system.luck.booleans;
+    const index = dataset.luckIndex;
+
+    luckBooleans[index] = !luckBooleans[index];
+
+    this.actor.update({ "system.luck.booleans": luckBooleans });
+  }
+
+  static async configurePersona(event) {
+    event.preventDefault();
+    new PersonaConfig({ actor: this.actor, system: this.actor.system }).render(
+      true
+    );
   }
 }
