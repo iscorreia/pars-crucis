@@ -161,6 +161,14 @@
       "ontol": "Ontologia",
       "sabak": "Sabakismo"
     },
+    "types": {
+      "item": {
+        "ability": "Habilidade",
+        "gear": "Equipamento",
+        "passive": "Passiva",
+        "weapon": "Armamento"
+      }
+    },
     "configPersona": "Configuração de Persona"
   }
 }
