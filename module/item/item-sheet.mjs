@@ -51,13 +51,12 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   async _prepareContext() {
     const context = {
       item: this.document,
-      documento: this.document,
+      document: this.document,
       system: this.document.system,
       config: CONFIG.PC,
       tabs: this._prepareTabs("primary"),
-      itemType: this.document.type, // Add item type for template logic
     };
-
+    console.log(context);
     return context;
   }
 
@@ -87,5 +86,4 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   }
 }
 
-
-// create fields that contain image, name and a simple text 
+// create fields that contain image, name and a simple text
