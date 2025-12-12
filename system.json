@@ -27,7 +27,20 @@
         "htmlFields": []
       }
     },
-    "Item": {}
+    "Item": {
+      "ability": {
+        "htmlFields": []
+      },
+      "gear": {
+        "htmlFields": []
+      },
+      "passive": {
+        "htmlFields": []
+      },
+      "weapon": {
+        "htmlFields": []
+      }
+    }
   },
   "grid": {
     "distance": 1,
