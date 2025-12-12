@@ -81,6 +81,7 @@ export class PersonaSheet extends foundry.applications.api.HandlebarsApplication
       actor: this.document,
       documento: this.document,
       system: this.document.system,
+      config: CONFIG.PC,
       tabs: this._prepareTabs("primary"),
     };
 

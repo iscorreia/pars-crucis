@@ -86,4 +86,4 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   }
 }
 
-// create fields that contain image, name and a simple text
+
