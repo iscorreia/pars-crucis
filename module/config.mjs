@@ -31,90 +31,54 @@ PC.cultures = {
 };
 
 PC.personas = {
-  aven: {
-    label: "PC.personas.aven",
-    favorable: ["atlet", "agili", "sobre"],
-  },
-  itin: {
-    label: "PC.personas.itin",
-    favorable: ["condu", "orien", "expre"],
-  },
-  esco: { label: "PC.personas.esco", favorable: [] },
-  escu: { label: "PC.personas.escu", favorable: [] },
-  visi: { label: "PC.personas.visi", favorable: [] },
-  cura: { label: "PC.personas.cura", favorable: [] },
-  prot: { label: "PC.personas.prot", favorable: [] },
-  vang: { label: "PC.personas.vang", favorable: [] },
-  arau: { label: "PC.personas.arau", favorable: [] },
-  asse: { label: "PC.personas.asse", favorable: [] },
-  domi: { label: "PC.personas.domi", favorable: [] },
-  juiz: { label: "PC.personas.juiz", favorable: [] },
-  pers: { label: "PC.personas.pers", favorable: [] },
-  here: { label: "PC.personas.here", favorable: [] },
-  dest: { label: "PC.personas.dest", favorable: [] },
-  mart: { label: "PC.personas.mart", favorable: [] },
-  zelo: { label: "PC.personas.zelo", favorable: [] },
-  asce: { label: "PC.personas.asce", favorable: [] },
-  gran: { label: "PC.personas.gran", favorable: [] },
-  perd: { label: "PC.personas.perd", favorable: [] },
-  ermi: { label: "PC.personas.ermi", favorable: [] },
-  usur: { label: "PC.personas.usur", favorable: [] },
-  queb: { label: "PC.personas.queb", favorable: [] },
-  ment: { label: "PC.personas.ment", favorable: [] },
-  miri: { label: "PC.personas.miri", favorable: [] },
-  sabi: { label: "PC.personas.sabi", favorable: [] },
+  aven: { label: "PC.personas.aven", favorables: ["atlet", "agili", "sobre"] },
+  itin: { label: "PC.personas.itin", favorables: ["condu", "orien", "expre"] },
+  esco: { label: "PC.personas.esco", favorables: ["crono", "erudi", "alqui"] },
+  sabi: { label: "PC.personas.sabi", favorables: ["erudi", "expre", "ontol"] },
+  escu: { label: "PC.personas.escu", favorables: ["armei", "artes", "expre"] },
+  visi: { label: "PC.personas.visi", favorables: ["perce", "engen", "seduc"] },
+  cura: { label: "PC.personas.cura", favorables: ["artes", "medic", "domar"] },
+  prot: { label: "PC.personas.prot", favorables: ["atlet", "resis", "armei"] },
+  vang: { label: "PC.personas.vang", favorables: ["esgri", "orien", "impos"] },
+  arau: { label: "PC.personas.arau", favorables: ["expre", "seduc", "ontol"] },
+  asse: { label: "PC.personas.asse", favorables: ["furti", "erudi", "artim"] },
+  domi: { label: "PC.personas.domi", favorables: ["domar", "impos", "seduc"] },
+  juiz: { label: "PC.personas.juiz", favorables: ["perce", "balis", "impos"] },
+  pers: { label: "PC.personas.pers", favorables: ["perce", "arcan", "ontol"] },
+  here: { label: "PC.personas.here", favorables: ["alqui", "engen", "artim"] },
+  dest: { label: "PC.personas.dest", favorables: ["briga", "malha", "extra"] },
+  mart: { label: "PC.personas.mart", favorables: ["resis", "medic", "amago"] },
+  zelo: { label: "PC.personas.zelo", favorables: ["armei", "expre", "amago"] },
+  asce: { label: "PC.personas.asce", favorables: ["amago", "aoism", "ontol"] },
+  gran: { label: "PC.personas.gran", favorables: ["ladin", "impos", "seduc"] },
+  perd: { label: "PC.personas.perd", favorables: ["agili", "ladin", "artim"] },
+  ermi: { label: "PC.personas.ermi", favorables: ["furti", "sobre", "artes"] },
+  usur: { label: "PC.personas.usur", favorables: ["ladin", "artim", "seduc"] },
+  queb: { label: "PC.personas.queb", favorables: ["briga", "extra", "sabak"] },
+  ment: { label: "PC.personas.ment", favorables: ["engen", "domar", "eleme"] },
+  miri: { label: "PC.personas.miri", favorables: ["agili", "furti", "druid"] },
 };
 
 PC.attributes = {
-  fis: {
-    label: "PC.attributes.fis.label",
-    abv: "PC.attributes.fis.abv",
-  },
-  des: {
-    label: "PC.attributes.des.label",
-    abv: "PC.attributes.des.abv",
-  },
-  ego: {
-    label: "PC.attributes.ego.label",
-    abv: "PC.attributes.ego.abv",
-  },
-  cog: {
-    label: "PC.attributes.cog.label",
-    abv: "PC.attributes.cog.abv",
-  },
-  esp: {
-    label: "PC.attributes.esp.label",
-    abv: "PC.attributes.esp.abv",
-  },
+  fis: { label: "PC.attributes.fis.label", abv: "PC.attributes.fis.abv" },
+  des: { label: "PC.attributes.des.label", abv: "PC.attributes.des.abv" },
+  ego: { label: "PC.attributes.ego.label", abv: "PC.attributes.ego.abv" },
+  cog: { label: "PC.attributes.cog.label", abv: "PC.attributes.cog.abv" },
+  esp: { label: "PC.attributes.esp.label", abv: "PC.attributes.esp.abv" },
 };
 
 PC.mv = { label: "PC.mv" };
 PC.def = { label: "PC.def" };
 
 PC.subattributes = {
-  pv: {
-    label: "PC.subattributes.pv.label",
-    abv: "PC.subattributes.pv.abv",
-  },
-  pe: {
-    label: "PC.subattributes.pe.label",
-    abv: "PC.subattributes.pe.abv",
-  },
+  pv: { label: "PC.subattributes.pv.label", abv: "PC.subattributes.pv.abv" },
+  pe: { label: "PC.subattributes.pe.label", abv: "PC.subattributes.pe.abv" },
 };
 
 PC.minors = {
-  sau: {
-    label: "PC.minors.sau.label",
-    abv: "PC.minors.sau.abv",
-  },
-  ref: {
-    label: "PC.minors.ref.label",
-    abv: "PC.minors.ref.abv",
-  },
-  von: {
-    label: "PC.minors.von.label",
-    abv: "PC.minors.von.abv",
-  },
+  sau: { label: "PC.minors.sau.label", abv: "PC.minors.sau.abv" },
+  ref: { label: "PC.minors.ref.label", abv: "PC.minors.ref.abv" },
+  von: { label: "PC.minors.von.label", abv: "PC.minors.von.abv" },
 };
 
 PC.categories = {

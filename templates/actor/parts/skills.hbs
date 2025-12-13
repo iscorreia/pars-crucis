@@ -15,7 +15,11 @@
                   data-action="clickAttribute"
                   data-attribute="{{@key}}"
                   data-type="skills"
-                >{{localize sk.label}}</a>
+                >
+                  {{localize sk.label}}{{#if skill.favorable}}!{{/if}}{{#if
+                    skill.favored
+                  }}!{{/if}}
+                </a>
                 <span>
                   ({{localize
                     (concat "PC.attributes." skill.attribute ".abv")
