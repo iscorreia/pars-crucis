@@ -181,8 +181,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static async configurePersona(event) {
     event.preventDefault();
-    new PersonaConfig({ actor: this.actor, system: this.actor.system }).render(
-      true
-    );
+    new PersonaConfig({ document: this.actor })?.render(true);
   }
 }

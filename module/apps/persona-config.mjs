@@ -7,7 +7,7 @@ const { api } = foundry.applications;
 import { PC } from "../config.mjs";
 
 export default class PersonaConfig extends api.HandlebarsApplicationMixin(
-  api.ApplicationV2
+  api.DocumentSheetV2
 ) {
   static DEFAULT_OPTIONS = {
     form: {
@@ -20,7 +20,6 @@ export default class PersonaConfig extends api.HandlebarsApplicationMixin(
       height: 500,
     },
     tag: "form",
-    action: {},
     window: {
       icon: "fas fa-wrench",
       title: "PC.configPersona",
@@ -36,14 +35,14 @@ export default class PersonaConfig extends api.HandlebarsApplicationMixin(
 
   async _prepareContext() {
     const options = this.options;
-    const system = options.actor.system;
+    const system = options.document.system;
     const context = { system: system, config: PC };
 
     return context;
   }
 
   static async #handleChanges(event, form, formData) {
-    const actor = this.options.actor;
+    const actor = this.options.document;
     const upData = formData.object;
 
     await actor.update(upData);

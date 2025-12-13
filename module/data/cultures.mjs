@@ -1,13 +1,13 @@
 export const CULTURES = {
   adv: {
-    favorable: ["free"],
+    favorables: ["free"],
     finance: 24,
     grouping: "any",
     tech: "any",
     races: ["every"],
   },
   ana: {
-    favorable: [
+    favorables: [
       "briga",
       "agili",
       "arque",
@@ -24,7 +24,7 @@ export const CULTURES = {
     races: ["guara", "ligno", "orcin", "queza"],
   },
   ank: {
-    favorable: [
+    favorables: [
       "agili",
       "ladin",
       "medic",
@@ -41,7 +41,7 @@ export const CULTURES = {
     races: ["carne", "human", "ligno", "queza"],
   },
   art: {
-    favorable: [
+    favorables: [
       "malha",
       "ladin",
       "arcan",
@@ -58,7 +58,7 @@ export const CULTURES = {
     races: ["capri", "human", "orcin"],
   },
   ast: {
-    favorable: [
+    favorables: [
       "hasta",
       "agili",
       "crono",
@@ -75,7 +75,7 @@ export const CULTURES = {
     races: ["carne", "human", "ligno", "queza"],
   },
   azi: {
-    favorable: [
+    favorables: [
       "esgri",
       "resis",
       "erudi",
@@ -92,7 +92,7 @@ export const CULTURES = {
     races: ["carne", "guara", "human", "queza"],
   },
   ban: {
-    favorable: [
+    favorables: [
       "atlet",
       "malha",
       "resis",
@@ -109,7 +109,7 @@ export const CULTURES = {
     races: ["capri", "carne", "guara", "human", "orcin"],
   },
   cam: {
-    favorable: [
+    favorables: [
       "atlet",
       "resis",
       "arque",
@@ -126,7 +126,7 @@ export const CULTURES = {
     races: ["capri", "human", "ligno", "queza"],
   },
   est: {
-    favorable: [
+    favorables: [
       "esgri",
       "balis",
       "arcan",
@@ -143,7 +143,7 @@ export const CULTURES = {
     races: ["capri", "carne", "human"],
   },
   gua: {
-    favorable: [
+    favorables: [
       "atlet",
       "furti",
       "crono",
@@ -160,7 +160,7 @@ export const CULTURES = {
     races: ["capri", "guara", "ligno", "orcin"],
   },
   orc: {
-    favorable: [
+    favorables: [
       "atlet",
       "hasta",
       "furti",
@@ -177,7 +177,7 @@ export const CULTURES = {
     races: ["capri", "carne", "ligno", "orcin"],
   },
   reb: {
-    favorable: [
+    favorables: [
       "briga",
       "balis",
       "furti",
@@ -194,7 +194,7 @@ export const CULTURES = {
     races: ["capri", "carne", "guara", "human", "orcin", "queza"],
   },
   sab: {
-    favorable: [
+    favorables: [
       "esgri",
       "resis",
       "arque",
@@ -211,7 +211,7 @@ export const CULTURES = {
     races: ["carne", "ligno", "queza"],
   },
   sal: {
-    favorable: [
+    favorables: [
       "perce",
       "arcan",
       "condu",
@@ -228,7 +228,7 @@ export const CULTURES = {
     races: ["capri", "guara", "human"],
   },
   vag: {
-    favorable: [
+    favorables: [
       "hasta",
       "resis",
       "condu",
@@ -245,7 +245,7 @@ export const CULTURES = {
     races: ["guara", "ligno", "orcin", "queza"],
   },
   vel: {
-    favorable: [
+    favorables: [
       "atlet",
       "agili",
       "balis",

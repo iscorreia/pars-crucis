@@ -1,5 +1,7 @@
 import { PC } from "../config.mjs";
 import { ORIGINS } from "../data/origins.mjs";
+import { CULTURES } from "../data/cultures.mjs";
+
 const { ArrayField, BooleanField, NumberField, SchemaField, StringField } =
   foundry.data.fields;
 
@@ -99,8 +101,14 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const subData = this.subattributes;
     const xpData = this.experience;
 
+    // Gets a the favorables skills from culture and persona and creates a set
+    const cultureFav = CULTURES[infoData.culture].favorables ?? [];
+    const personaFav = PC.personas[infoData.persona].favorables ?? [];
+    const mergedFav = new Set([...cultureFav, ...personaFav]);
+    // const favorables = Array.from(mergedFav); // In case an Array is needed
+
     // SKILLS handling!
-    for (let [_, sk] of Object.entries(skillsData)) {
+    for (let [key, sk] of Object.entries(skillsData)) {
       // Calculates the attribute value based on a specific skill level.
       sk.attValue = Math.ceil(sk.level / sk.growth);
 
@@ -110,6 +118,9 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
         sk.expSpent += e - (sk.favored ? 1 : 0);
       }
       skillsExp.push(sk.expSpent);
+
+      // Flags skills as favorable
+      sk.favorable = mergedFav.has(key);
     }
 
     // ATTRIBUTES handling!
