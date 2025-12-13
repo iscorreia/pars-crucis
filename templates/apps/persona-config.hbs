@@ -38,9 +38,9 @@
         /></div>
     {{/each}}
   </div>
-  <div class="flexrow">
+  <div class="sub-config">
     {{#each system.subattributes as |sub obj|}}
-      <div class="flexcol">
+      <div class="sub-config-item">
         <h4>{{localize (concat "PC.subattributes." obj ".abv")}}</h4>
         <input
           type="String"
@@ -50,8 +50,18 @@
         />
       </div>
     {{/each}}
+    <div class="sub-config-item">
+      <h4>{{localize "PC.luck"}}</h4>
+      <input
+        class="luck-max"
+        name="system.luck.max"
+        type="Number"
+        value="{{system.luck.max}}"
+        data-dtype="Number"
+      />
+    </div>
     {{#each system.minors as |minor obj|}}
-      <div class="flexcol">
+      <div class="sub-config-item">
         <h4>{{localize (concat "PC.minors." obj ".abv")}}</h4>
         <input
           type="String"
