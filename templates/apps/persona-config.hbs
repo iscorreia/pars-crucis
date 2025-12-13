@@ -25,11 +25,10 @@
       }}
     </select>
   </div>
-  <div class="flexrow">
+  <div class="att-config">
     {{#each system.attributes as |attribute obj|}}
-      <div class="flexcol"><h4>{{localize
-            (concat "PC.attributes." obj ".abv")
-          }}</h4>
+      <div class="att-config-item">
+        <h4>{{localize (concat "PC.attributes." obj ".abv")}}</h4>
         <input
           type="String"
           data-dtype="Number"

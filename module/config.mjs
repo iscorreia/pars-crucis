@@ -65,6 +65,7 @@ PC.attributes = {
   ego: { label: "PC.attributes.ego.label", abv: "PC.attributes.ego.abv" },
   cog: { label: "PC.attributes.cog.label", abv: "PC.attributes.cog.abv" },
   esp: { label: "PC.attributes.esp.label", abv: "PC.attributes.esp.abv" },
+  def: { label: "PC.attributes.def.label", abv: "PC.attributes.def.abv" },
 };
 
 PC.mv = { label: "PC.mv" };

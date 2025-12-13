@@ -57,6 +57,7 @@
   width: 25px;
 }
 
+.att-config,
 .sub-config {
   display: flex;
   flex-direction: row;
@@ -64,6 +65,7 @@
   width: 100%;
 }
 
+.att-config-item,
 .sub-config-item {
   display: flex;
   flex-direction: column;
