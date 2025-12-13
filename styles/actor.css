@@ -56,3 +56,19 @@
   height: 20px;
   width: 25px;
 }
+
+.sub-config {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sub-config-item {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  input {
+    width: 100%;
+  }
+}
