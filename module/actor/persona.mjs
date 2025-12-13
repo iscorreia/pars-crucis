@@ -32,6 +32,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
         ego: attributeField(),
         cog: attributeField(),
         esp: attributeField(),
+        def: attributeField(),
       }),
 
       mv: new SchemaField({
@@ -93,6 +94,9 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
   /** Do derived attribute calculations */
   prepareDerivedData() {
     const attributesData = this.attributes;
+    const attValues = { fis: [], des: [], ego: [], cog: [], esp: [] };
+    const combatSkills = ["briga", "esgri", "hasta", "malha"];
+    const combatValue = [];
     const infoData = this.info;
     const luckData = this.luck;
     const minorsData = this.minors;
@@ -111,6 +115,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     for (let [key, sk] of Object.entries(skillsData)) {
       // Calculates the attribute value based on a specific skill level.
       sk.attValue = Math.ceil(sk.level / sk.growth);
+      attValues[sk.attribute].push(sk.attValue);
 
       // Calculates the XP spent on a specific skill base on its level.
       sk.expSpent = 0;
@@ -125,14 +130,19 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
     // ATTRIBUTES handling!
     for (let [key, att] of Object.entries(attributesData)) {
-      const attValueArray = [];
-      for (let [_, sk] of Object.entries(skillsData)) {
-        if (sk.attribute === key) attValueArray.push(sk.attValue);
+      if (key !== "def") {
+        att.base =
+          Math.max(...attValues[key]) +
+          att.adjust +
+          (ORIGINS[infoData.origin].attributes[key] || 0);
       }
-      att.base =
-        Math.max(...attValueArray) +
-        att.adjust +
-        (ORIGINS[infoData.origin].attributes[key] || 0);
+      if (key === "def") {
+        for (let csk of combatSkills) {
+          const combatSk = skillsData[csk];
+          const combatSkValue = combatSk.level + combatSk.mod;
+          combatValue.push(combatSkValue);
+        }
+      }
     }
 
     eachAttribute(attributesData, deriveAttribute);
@@ -149,6 +159,14 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
     eachAttribute(minorsData, deriveAttribute);
 
+    // Sets DEFENSE value
+    const refDef = minorsData.ref.derived + minorsData.ref.mod;
+    attributesData.def.base =
+      Math.max(...combatValue, refDef) +
+      attributesData.def.adjust +
+      (ORIGINS[infoData.origin].attributes.def || 0);
+
+    // Sets PV and PE maximum values
     subData.pv.max =
       25 +
       2 * attributesData.fis.derived +
@@ -162,7 +180,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       2 * skillsData.amago.level +
       subData.pe.adjust;
 
-    // Works current pv and pe **MAKE THIS INTO A FUNCTION**
+    // Works current PV and PE **MAKE THIS INTO A FUNCTION**
     const pvDerived = Number(subData.pv?.current ?? 0);
     subData.pv.current = Math.min(Math.max(pvDerived, 0), subData.pv.max);
     const peDerived = Number(subData.pe?.current ?? 0);
@@ -180,7 +198,6 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
    * Prepare data for dice rolls
    * @returns {Object} Data object for use in roll formulas
    */
-
   // DOESN'T SEEM TO BE CALLED ANYWHERE
   getRollData() {
     const data = {};

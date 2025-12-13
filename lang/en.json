@@ -76,6 +76,10 @@
       "esp": {
         "label": "Espírito",
         "abv": "ESP"
+      },
+      "def": {
+        "label": "Defesa",
+        "abv": "DEF"
       }
     },
     "subattributes": {
