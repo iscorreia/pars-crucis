@@ -18,31 +18,6 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     },
   };
 
-  /** Defines where are the template PARTS */
-  static PARTS = {
-    header: {
-      template: "systems/pars-crucis/templates/item/parts/header.hbs",
-    },
-    tabs: {
-      template: "templates/generic/tab-navigation.hbs",
-    },
-    description: {
-      template: "systems/pars-crucis/templates/item/parts/description.hbs",
-    },
-  };
-
-  static TABS = {
-    primary: {
-      initial: "description",
-      tabs: [
-        {
-          id: "description",
-          label: "Descrição",
-        },
-      ],
-    },
-  };
-
   getTitle() {
     // Retorna apenas o nome do item, sem o tipo
     return this.document.name || "Novo Item";
@@ -69,19 +44,5 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     }
 
     return context;
-  }
-
-  activateListeners(html) {
-    super.activateListeners(html);
-
-    if (!this.options.editable) return;
-
-    // Delete Self
-    html.find(".self-destruct").click((ev) => {
-      const id = $(ev.currentTarget).attr("self");
-      if (this.document.actor != null) {
-        this.document.actor.items.get(id)?.delete();
-      }
-    });
   }
 }

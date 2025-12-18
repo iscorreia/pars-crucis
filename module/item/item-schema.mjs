@@ -1,9 +1,9 @@
-const field = foundry.data.fields;
+const { NumberField, SchemaField, StringField } = foundry.data.fields;
 
 export class AbilityModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      description: new field.StringField({ initial: "" }),
+      details: details(),
     };
   }
 }
@@ -11,7 +11,7 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
 export class GearModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      description: new field.StringField({ initial: "" }),
+      details: details(),
     };
   }
 }
@@ -19,7 +19,23 @@ export class GearModel extends foundry.abstract.TypeDataModel {
 export class PassiveModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      description: new field.StringField({ initial: "" }),
+      info: new SchemaField({
+        subtype: new StringField({ initial: "benefit" }),
+        acquirement: new StringField({ initial: "natural" }),
+      }),
+      cost: new SchemaField({
+        experience: new NumberField({
+          initial: null,
+          integer: true,
+          nullable: true,
+        }),
+        points: new NumberField({
+          initial: null,
+          integer: true,
+          nullable: true,
+        }),
+      }),
+      details: details(),
     };
   }
 }
@@ -27,9 +43,14 @@ export class PassiveModel extends foundry.abstract.TypeDataModel {
 export class WeaponModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      description: new field.StringField({ initial: "" }),
+      details: details(),
     };
   }
 }
 
-
+function details() {
+  return new SchemaField({
+    description: new StringField({ initial: "" }),
+    shortDescription: new StringField({ initial: "" }),
+  });
+}

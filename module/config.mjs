@@ -404,3 +404,15 @@ PC.espirituais = {
   ontol: { label: "PC.skills.ontol" },
   sabak: { label: "PC.skills.sabak" },
 };
+
+PC.passiveSubtypes = {
+  benefit: { label: "PC.benefit" },
+  drawback: { label: "PC.drawback" },
+};
+
+PC.passiveAcquirement = {
+  original: { label: "PC.original" },
+  natural: { label: "PC.natural" },
+  learned: { label: "PC.learned" },
+  suffered: { label: "PC.suffered" },
+};
