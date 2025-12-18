@@ -186,6 +186,16 @@
       "common": "Comum",
       "hard": "Difícil"
     },
-    "configPersona": "Configuração de Persona"
+    "configPersona": "Configuração de Persona",
+    "benefit": "Benefício",
+    "benefits": "Benefícios",
+    "drawback": "Malefício",
+    "drawbacks": "Malefícios",
+    "passive": "Passiva",
+    "passives": "Passivas",
+    "suffered": "Sofrida",
+    "learned": "Aprendida",
+    "original": "original",
+    "natural": "Natural"
   }
 }
