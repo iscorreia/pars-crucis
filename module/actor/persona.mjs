@@ -87,6 +87,14 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
           },
         }),
       }),
+      categoryModifiers: new SchemaField({
+        corporais: new NumberField({ initial: 0, integer: true }),
+        subterfugios: new NumberField({ initial: 0, integer: true }),
+        conhecimentos: new NumberField({ initial: 0, integer: true }),
+        oficios: new NumberField({ initial: 0, integer: true }),
+        sociais: new NumberField({ initial: 0, integer: true }),
+        espirituais: new NumberField({ initial: 0, integer: true }),
+      }),
       skills: new SchemaField(skills),
     };
   }
@@ -101,7 +109,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const luckData = this.luck;
     const minorsData = this.minors;
     const skillsData = this.skills;
-    const skillsExp = [];
+    const skillsXp = [];
     const subData = this.subattributes;
     const xpData = this.experience;
 
@@ -118,11 +126,12 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       attValues[sk.attribute].push(sk.attValue);
 
       // Calculates the XP spent on a specific skill base on its level.
-      sk.expSpent = 0;
+      sk.xpSpent = 0;
       for (let e = sk.learning; e < sk.level + sk.learning; e++) {
-        sk.expSpent += e - (sk.favored ? 1 : 0);
+        sk.xpSpent += e - (sk.favored ? 1 : 0);
       }
-      skillsExp.push(sk.expSpent);
+      sk.favored && (sk.xpDiscount = sk.level);
+      skillsXp.push(sk.xpSpent);
 
       // Flags skills as favorable
       sk.favorable = mergedFav.has(key);
@@ -166,6 +175,8 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       attributesData.def.adjust +
       (ORIGINS[infoData.origin].attributes.def || 0);
 
+    deriveAttribute(attributesData.def);
+
     // Sets PV and PE maximum values
     subData.pv.max =
       25 +
@@ -187,8 +198,8 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     subData.pe.current = Math.min(Math.max(peDerived, 0), subData.pe.max);
 
     // EXPERIENCE handling!
-    xpData.skillsExpSum = skillsExp.reduce((acc, value) => acc + value, 0);
-    xpData.current = xpData.total - xpData.skillsExpSum - xpData.reserved;
+    xpData.skillsXpSum = skillsXp.reduce((acc, value) => acc + value, 0);
+    xpData.current = xpData.total - xpData.skillsXpSum - xpData.reserved;
 
     // LUCK handling!
     luckBooleans(luckData);
@@ -285,6 +296,7 @@ function skillField(skill, { nullableSkill = false } = {}) {
     learning: new NumberField({ initial: skill.learning }),
     growth: new NumberField({ initial: skill.growth }),
     attribute: new StringField({ initial: skill.att }),
+    category: new StringField({ initial: skill.cat }),
   });
 }
 

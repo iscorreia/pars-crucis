@@ -114,6 +114,14 @@
       "passives": "Passivas",
       "details": "Detalhes"
     },
+    "level": {
+      "label": "Nível",
+      "abv": "N"
+    },
+    "modifier": {
+      "label": "Modificador",
+      "abv": "MOD"
+    },
     "categories": {
       "corporais": "Corporais",
       "subterfugios": "Subterfúgios",
@@ -172,6 +180,11 @@
         "passive": "Passiva",
         "weapon": "Armamento"
       }
+    },
+    "learning": {
+      "label": "Aprendizado",
+      "common": "Comum",
+      "hard": "Difícil"
     },
     "configPersona": "Configuração de Persona"
   }

@@ -85,6 +85,12 @@
                 {{checked skill.favored}}
               />
               {{localize sk.label}}{{#if skill.favorable}}!{{/if}}
+              {{#if skill.favored}}
+                <span>{{skill.xpSpent}}</span>
+                <span>(-{{skill.xpDiscount}})</span>
+              {{else}}
+                <span>{{skill.xpSpent}}</span>
+              {{/if}}
             </li>
           {{/with}}
         {{/each}}

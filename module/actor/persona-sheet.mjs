@@ -20,6 +20,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     actions: {
       clickAttribute: this.onAttributeClick,
       clickLuck: this.onLuckClick,
+      clickSkill: this.onSkillClick,
       configurePersona: this.configurePersona,
     },
   };
@@ -118,6 +119,17 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     return context;
   }
 
+  dice(event) {
+    let dice = "2d10";
+    // Checks if Shift or Ctrl is pressed and adjusts formula.
+    if (event.shiftKey) {
+      dice = "3d10kh2"; // Keep 2 highest out of 3d10
+    } else if (event.ctrlKey || event.metaKey) {
+      dice = "3d10kl2"; // Keep 2 lowest out of 3d10
+    }
+    return dice;
+  }
+
   /**
    * Handle attribute and skill roll clicks
    * @param {PointerEvent} event - The originating click event
@@ -130,25 +142,10 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const attType = dataset.type;
     const actor = this.actor;
     const attData = actor.system[attType][attKey];
-
-    // Checks if Shift or Ctrl is pressed.
-    const isShiftPressed = event.shiftKey;
-    const isCtrlPressed = event.ctrlKey || event.metaKey;
-
-    // Creates dice formula taking into account Shit and Ctrl
-    let diceFormula;
-    if (isShiftPressed) {
-      diceFormula = "3d10kh2";
-    } else if (isCtrlPressed) {
-      diceFormula = "3d10kl2";
-    } else {
-      diceFormula = "2d10";
-    }
+    const diceFormula = this.dice(event);
 
     // Create roll formula
-    const formula = `${diceFormula} + ${attData.derived || attData.level} + ${
-      attData.mod
-    }`;
+    const formula = `${diceFormula} + ${attData.derived} + ${attData.mod}`;
 
     // Create the roll with flavor
     const roll = await Roll.create(
@@ -177,6 +174,34 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     luckBooleans[index] = !luckBooleans[index];
 
     this.actor.update({ "system.luck.booleans": luckBooleans });
+  }
+
+  static async onSkillClick(event, target) {
+    event.preventDefault();
+    const dataset = target.dataset;
+    const skKey = dataset.skill;
+    const skType = dataset.type;
+    const actor = this.actor;
+    const skData = actor.system[skType][skKey];
+    const catMod = actor.system.categoryModifiers[skData.category];
+    const diceFormula = this.dice(event);
+
+    const formula = `${diceFormula} + ${skData.level} + ${skData.mod + catMod}`;
+
+    const roll = await Roll.create(
+      formula,
+      {},
+      {
+        flavor: `${game.i18n.localize(PC[skType][skKey].label)}`,
+      }
+    );
+
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: actor }),
+      rollMode: game.settings.get("core", "rollMode"),
+    });
+
+    return roll;
   }
 
   static async configurePersona(event) {
