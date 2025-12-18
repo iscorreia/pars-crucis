@@ -47,6 +47,39 @@
   height: 400px;
 }
 
+.skill-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.skill-category {
+  width: 32%;
+  align-content: space-between;
+}
+
+.category-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  input {
+    font-size: 14px;
+    width: 35px;
+    height: 20px;
+  }
+}
+
+.skill-hard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  height: 20px;
+}
+
 .skill-level {
   height: 20px;
   width: 25px;
