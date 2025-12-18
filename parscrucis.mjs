@@ -1,7 +1,10 @@
 import { PC } from "./module/config.mjs";
 import { PersonaModel } from "./module/actor/persona.mjs";
 import { PersonaSheet } from "./module/actor/persona-sheet.mjs";
-import { ParsCrucisItemSheet } from "./module/item/item-sheet.mjs";
+import PassiveSheet from "./module/item/passive-sheet.mjs";
+import AbilitySheet from "./module/item/ability-sheet.mjs";
+import WeaponSheet from "./module/item/weapon-sheet.mjs";
+import GearSheet from "./module/item/gear-sheet.mjs";
 import {
   AbilityModel,
   GearModel,
@@ -15,7 +18,6 @@ async function preloadHandlebarsTemplates() {
     "systems/pars-crucis/templates/actor/blocks/experience.hbs",
     "systems/pars-crucis/templates/actor/blocks/minors.hbs",
     "systems/pars-crucis/templates/actor/blocks/mitigation.hbs",
-    "systems/pars-crucis/templates/item/parts/header.hbs",
     "systems/pars-crucis/templates/item/parts/description.hbs",
     "systems/pars-crucis/templates/item/parts/details.hbs",
   ];
@@ -46,23 +48,33 @@ Hooks.once("init", () => {
     foundry.documents.Actor,
     "parscrucis",
     PersonaSheet,
-    {
-      types: ["persona"],
-      makeDefault: true,
-      label: "Persona Sheet",
-    }
+    { types: ["persona"], makeDefault: true, label: "Persona Sheet" }
   );
 
   // Register the V2 sheet for all item types
   foundry.applications.apps.DocumentSheetConfig.registerSheet(
     foundry.documents.Item,
     "parscrucis",
-    ParsCrucisItemSheet,
-    {
-      types: ["ability", "gear", "passive", "weapon"],
-      makeDefault: true,
-      label: "Item Sheet",
-    }
+    AbilitySheet,
+    { types: ["ability"], makeDefault: true, label: "Ability Item Sheet" }
+  );
+  foundry.applications.apps.DocumentSheetConfig.registerSheet(
+    foundry.documents.Item,
+    "parscrucis",
+    GearSheet,
+    { types: ["gear"], makeDefault: true, label: "Gear Item Sheet" }
+  );
+  foundry.applications.apps.DocumentSheetConfig.registerSheet(
+    foundry.documents.Item,
+    "parscrucis",
+    PassiveSheet,
+    { types: ["passive"], makeDefault: true, label: "Passive Item Sheet" }
+  );
+  foundry.applications.apps.DocumentSheetConfig.registerSheet(
+    foundry.documents.Item,
+    "parscrucis",
+    WeaponSheet,
+    { types: ["weapon"], makeDefault: true, label: "Weapon Item Sheet" }
   );
 
   preloadHandlebarsTemplates();
