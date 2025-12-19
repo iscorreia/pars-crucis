@@ -416,3 +416,37 @@ PC.passiveAcquirement = {
   learned: { label: "PC.learned" },
   suffered: { label: "PC.suffered" },
 };
+
+PC.gearSubtypes = {
+  wear: { label: "PC.vest" },
+  item: { label: "PC.item" },
+};
+
+PC.wearGroups = {
+  vest: { label: "PC.vest" },
+  accessory: { label: "PC.accessory" },
+  gadget: { label: "PC.gadget" },
+};
+
+PC.itemGroups = {
+  alchemical: { label: "PC.alchemical" },
+  trap: { label: "PC.trap" },
+  artifact: { label: "PC.artifact" },
+  matrix: { label: "PC.matrix" },
+  herbal: { label: "PC.herbal" },
+  instrument: { label: "PC.instrument" },
+  utility: { label: "PC.utility" },
+};
+
+PC.itemSubgroups = {
+  potion: { label: "PC.potion" },
+  elixir: { label: "PC.elixir" },
+  poison: { label: "PC.poison" },
+  agent: { label: "PC.agent" },
+  grenade: { label: "PC.grenade" },
+};
+
+PC.currency = {
+  silver: { label: "PC.currency.silver.label", abv: "PC.currency.silver.abv" },
+  copper: { label: "PC.currency.copper.label", abv: "PC.currency.copper.abv" },
+};

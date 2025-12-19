@@ -191,12 +191,47 @@
     "armament": "Armamento",
     "gear": "Equipamentos",
     "equipment": "Equipamento",
-    "accessories": "Acessórios",
-    "accessory": "Acessório",
     "wear": "Vestimentas",
-    "vest": "Vestimenta",
     "item": "Item",
     "items": "Itens",
+
+    "accessories": "Acessórios",
+    "accessory": "Acessório",
+    "vest": "Vestimenta",
+    "gadget": "Engenhoca",
+    "gadgets": "Engenhocas",
+
+    "alchemical": "Alquímico",
+    "alchemicals": "Alquímicos",
+    "trap": "Armadilha",
+    "traps": "Armadilhas",
+    "artifact": "Artefato bélico",
+    "artifacts": "Artefatos bélicos",
+    "matrix": "Matriz",
+    "matrixes": "Matrizes",
+    "herbal": "Herbal",
+    "herbals": "Herbais",
+    "instrument": "Instrumento",
+    "instruments": "Instrumentos",
+    "utility": "Utilidade",
+    "utilities": "Utilidades",
+
+    "potion": "Poção",
+    "elixir": "Elixir",
+    "poison": "Veneno",
+    "agent": "Agente",
+    "grenade": "Granada",
+
+    "currency": {
+      "silver": {
+        "label": "Prata",
+        "abv": "P"
+      },
+      "copper": {
+        "label": "Cobre",
+        "abv": "C"
+      }
+    },
     "benefit": "Benefício",
     "benefits": "Benefícios",
     "drawback": "Malefício",
