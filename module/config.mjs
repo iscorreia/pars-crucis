@@ -449,4 +449,8 @@ PC.itemSubgroups = {
 PC.currency = {
   silver: { label: "PC.currency.silver.label", abv: "PC.currency.silver.abv" },
   copper: { label: "PC.currency.copper.label", abv: "PC.currency.copper.abv" },
+  unknown: {
+    label: "PC.currency.unknown.label",
+    abv: "PC.currency.unknown.abv",
+  },
 };

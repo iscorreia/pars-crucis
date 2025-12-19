@@ -230,6 +230,10 @@
       "copper": {
         "label": "Cobre",
         "abv": "C"
+      },
+      "unknown": {
+        "label": "Desconhecido",
+        "abv": "Ø"
       }
     },
     "benefit": "Benefício",

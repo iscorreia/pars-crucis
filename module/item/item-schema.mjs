@@ -13,9 +13,9 @@ export class GearModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       info: new SchemaField({
-        subtype: new StringField({}),
-        group: new StringField({}),
-        subgroup: new StringField({}),
+        subtype: new StringField({ initial: "item" }),
+        group: new StringField({ initial: "utility" }),
+        subgroup: new StringField({ initial: null, nullable: true }),
         quality: new StringField({ initial: "common" }),
       }),
       cost: new SchemaField({
@@ -61,10 +61,15 @@ export class WeaponModel extends foundry.abstract.TypeDataModel {
   }
 }
 
-function details({ stackable = false, equippable = false, stack = 1 } = {}) {
+function details({
+  stackable = false,
+  equippable = false,
+  stack = 1,
+  extraFields = null,
+} = {}) {
   const fields = {
     load: new NumberField({ initial: 1 }),
-    stack: new SchemaField({ initial: stack }),
+    stack: new NumberField({ initial: stack }),
     stackable: new BooleanField({ initial: stackable }),
     equippable: new BooleanField({ initial: equippable }),
     equipped: new BooleanField({ initial: false }),
