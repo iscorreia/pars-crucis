@@ -247,6 +247,16 @@
     "original": "Original",
     "natural": "Natural",
     "xp": "XP",
-    "pts": "PTS"
+    "pts": "PTS",
+
+    "equip": "Equipar",
+    "edit": "Alterar",
+    "delete": "Destruir",
+
+    "description": "Descrição",
+    "equippable": "Equipável",
+    "stackable": "Agrupável",
+    "equipped": "Equipado",
+    "config": "Configurações"
   }
 }

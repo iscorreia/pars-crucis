@@ -11,6 +11,40 @@
   </div>
   <div>
     <h4>{{localize "PC.items"}}</h4>
-    <ol></ol>
+    <ol>
+      {{#each system.gear as |gear obj|}}
+        {{log gear}}
+        <li class="item-line">
+          <img src="{{gear.img}}" width="24" height="24" />
+          <h5>{{gear.name}}</h5>
+
+          <div>
+            {{#if gear.system.details.equippable}}
+              <a
+                data-action="clickEquip"
+                data-item-id="{{gear._id}}"
+                title="{{localize 'PC.equip'}}"
+              >
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </a>
+            {{/if}}
+            <a
+              data-action="clickEdit"
+              data-item-id="{{gear._id}}"
+              title="{{localize 'PC.edit'}}"
+            >
+              <i class="fas fa-edit"></i>
+            </a>
+            <a
+              data-action="clickDelete"
+              data-item-id="{{gear._id}}"
+              title="{{localize 'PC.delete'}}"
+            >
+              <i class="fa-solid fa-trash-can"></i>
+            </a>
+          </div>
+        </li>
+      {{/each}}
+    </ol>
   </div>
 </section>

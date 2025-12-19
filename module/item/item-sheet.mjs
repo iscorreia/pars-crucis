@@ -29,19 +29,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
       document: this.document,
       system: this.document.system,
       config: CONFIG.PC,
-      tabs: this._prepareTabs("primary"),
     };
-
-    return context;
-  }
-
-  async _preparePartContext(partId, context) {
-    switch (partId) {
-      case "description":
-        context.tab = context.tabs[partId];
-        break;
-      default:
-    }
 
     return context;
   }

@@ -26,7 +26,6 @@
           localize=true
         }}
       </select>
-      {{log system.info}}
       <select name="system.info.group">
         {{selectOptions
           (lookup config (concat system.info.subtype "Groups"))
@@ -35,7 +34,7 @@
         }}
       </select>
       <input
-        name="system.info.subGroup"
+        name="system.info.subgroup"
         type="String"
         value="{{system.info.subgroup}}"
         data-dtype="String"
@@ -64,7 +63,6 @@
       <div>
         <h4>PRICE</h4>
         <div class="flexrow">
-          {{log system}}
           {{#unless (eq system.cost.currency "unknown")}}
             <input
               name="system.cost.price"
