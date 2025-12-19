@@ -117,6 +117,13 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     // Sets items by group, uses the help actor#itemTypes
     this.passives = parent.itemTypes.passive;
 
+    // console.log(parent.itemTypes);
+
+    this.gear = parent.itemTypes.gear;
+    this.weaponry = [];
+    this.vest = [];
+    this.accessories = [];
+
     // Gets a the favorables skills from culture and persona and creates a set
     const cultureFav = CULTURES[infoData.culture].favorables ?? [];
     const personaFav = PC.personas[infoData.persona].favorables ?? [];

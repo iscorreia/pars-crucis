@@ -1,6 +1,7 @@
 const { api, sheets } = foundry.applications;
 import { PC } from "../config.mjs";
 
+//This is the basic class for Pars Crucis Items and should be extended
 export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   sheets.ItemSheetV2
 ) {
