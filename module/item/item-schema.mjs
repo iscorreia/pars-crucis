@@ -52,5 +52,6 @@ function details() {
   return new SchemaField({
     description: new StringField({ initial: "" }),
     shortDescription: new StringField({ initial: "" }),
+    notes: new StringField({ initial: "" }),
   });
 }

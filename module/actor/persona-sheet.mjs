@@ -19,6 +19,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     },
     actions: {
       clickAttribute: this.onAttributeClick,
+      clickDelete: this.deleteItemOnClick,
       clickLuck: this.onLuckClick,
       clickSkill: this.onSkillClick,
       configurePersona: this.configurePersona,
@@ -202,6 +203,41 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     });
 
     return roll;
+  }
+
+  static async deleteItemOnClick(_, target) {
+    const dataset = target.dataset;
+    const itemId = dataset.itemId;
+    console.log(dataset);
+    const item = this.actor.items.get(itemId);
+    console.log(item);
+
+    if (this.actor.isOwner) {
+      api.Dialog.wait({
+        window: { title: "DELETE ITEM" },
+        content: `<p>WILL DELETE-> ${item.name}</p>`,
+        buttons: [
+          {
+            action: "delete",
+            icon: '<i class="fa-solid fa-trash-can"></i>',
+            label: "DELETE",
+            callback: () => item.delete(),
+            default: true,
+          },
+          {
+            action: "edit",
+            icon: '<i class="fas fa-edit"></i>',
+            label: "EDIT",
+            callback: () => item.sheet.render(true),
+          },
+          {
+            action: "cancel",
+            icon: '<i class="fas fa-times"></i>',
+            label: "CANCEL",
+          },
+        ],
+      });
+    }
   }
 
   static async configurePersona(event) {
