@@ -1,6 +1,6 @@
 {{! Passive sheat header }}
 
-<header class="sheet-header passive-header">
+<header class="sheet-header item-header passive-header">
   <img
     class="item-img"
     src="{{item.img}}"
@@ -18,5 +18,45 @@
         placeholder="Nameless Passive"
       />
     </h2>
+    <div class="flexrow">
+      <select name="system.info.subtype">
+        {{selectOptions
+          config.passiveSubtypes
+          selected=system.info.subtype
+          localize=true
+        }}
+      </select>
+      <select name="system.info.acquirement">
+        {{selectOptions
+          config.passiveAcquirement
+          selected=system.info.acquirement
+          localize=true
+        }}
+      </select>
+    </div>
+    <div class="flexrow">
+      <div>
+        <h4>{{localize "PC.pts"}}</h4>
+        <input
+          class="item-input"
+          type="Number"
+          name="system.cost.points"
+          value="{{system.cost.points}}"
+          placeholder="Zeroed"
+          data-dtype="Number"
+        />
+      </div>
+      <div>
+        <h4>{{localize "PC.xp"}}</h4>
+        <input
+          class="item-input"
+          type="Number"
+          name="system.cost.experience"
+          value="{{system.cost.experience}}"
+          placeholder="Zeroed"
+          data-dtype="Number"
+        />
+      </div>
+    </div>
   </div>
 </header>

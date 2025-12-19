@@ -19,6 +19,8 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     },
     actions: {
       clickAttribute: this.onAttributeClick,
+      clickDelete: this.deleteItemOnClick,
+      clickEdit: this.editItemOnClick,
       clickLuck: this.onLuckClick,
       clickSkill: this.onSkillClick,
       configurePersona: this.configurePersona,
@@ -56,26 +58,11 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     primary: {
       initial: "skills",
       tabs: [
-        {
-          id: "skills",
-          label: "PC.tabs.skills",
-        },
-        {
-          id: "abilities",
-          label: "PC.tabs.abilities",
-        },
-        {
-          id: "gear",
-          label: "PC.tabs.gear",
-        },
-        {
-          id: "passives",
-          label: "PC.tabs.passives",
-        },
-        {
-          id: "details",
-          label: "PC.tabs.details",
-        },
+        { id: "skills", label: "PC.tabs.skills" },
+        { id: "abilities", label: "PC.tabs.abilities" },
+        { id: "gear", label: "PC.tabs.gear" },
+        { id: "passives", label: "PC.tabs.passives" },
+        { id: "details", label: "PC.tabs.details" },
       ],
     },
   };
@@ -202,6 +189,54 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     });
 
     return roll;
+  }
+
+  // Open a Dialog box with options to Delete, Edit or Cancel
+  static async deleteItemOnClick(event, target) {
+    event.preventDefault();
+    const itemId = target.dataset.itemId;
+    const item = this.actor.items.get(itemId);
+
+    if (this.actor.isOwner) {
+      // Skips Dialog and immediatelly Deletes the item
+      if (event.ctrlKey) {
+        item.delete();
+        return;
+      }
+
+      api.Dialog.wait({
+        window: { title: "DELETE ITEM" },
+        content: `<p>WILL DELETE-> ${item.name}</p>`,
+        buttons: [
+          {
+            action: "delete",
+            icon: '<i class="fa-solid fa-trash-can"></i>',
+            label: "DELETE",
+            callback: () => item.delete(),
+            default: true,
+          },
+          {
+            action: "edit",
+            icon: '<i class="fas fa-edit"></i>',
+            label: "EDIT",
+            callback: () => item.sheet.render(true),
+          },
+          {
+            action: "cancel",
+            icon: '<i class="fas fa-times"></i>',
+            label: "CANCEL",
+          },
+        ],
+      });
+    }
+  }
+
+  // Renders item sheet if owner
+  static async editItemOnClick(event, target) {
+    event.preventDefault();
+    const itemId = target.dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (this.actor.isOwner) item.sheet.render(true);
   }
 
   static async configurePersona(event) {

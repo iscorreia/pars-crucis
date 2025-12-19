@@ -10,6 +10,24 @@
   flex-direction: row;
 }
 
+.att-config,
+.sub-config {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.att-config-item,
+.sub-config-item {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  input {
+    width: 100%;
+  }
+}
+
 .attribute {
   margin-bottom: 10px;
 }
@@ -90,20 +108,9 @@
   width: 25px;
 }
 
-.att-config,
-.sub-config {
+.item-line {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.att-config-item,
-.sub-config-item {
-  display: flex;
-  flex-direction: column;
-  width: 16%;
-  input {
-    width: 100%;
-  }
+  justify-content: center;
+  align-items: center;
 }

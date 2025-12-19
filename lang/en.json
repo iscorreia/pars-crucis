@@ -195,7 +195,9 @@
     "passives": "Passivas",
     "suffered": "Sofrida",
     "learned": "Aprendida",
-    "original": "original",
-    "natural": "Natural"
+    "original": "Original",
+    "natural": "Natural",
+    "xp": "XP",
+    "pts": "PTS"
   }
 }
