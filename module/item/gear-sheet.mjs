@@ -42,7 +42,6 @@ export default class GearSheet extends ParsCrucisItemSheet {
   };
 
   async _preparePartContext(partId, context) {
-    console.log(partId, context);
     switch (partId) {
       case "description":
       case "config":

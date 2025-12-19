@@ -21,6 +21,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       clickAttribute: this.onAttributeClick,
       clickDelete: this.deleteItemOnClick,
       clickEdit: this.editItemOnClick,
+      clickEquip: this.equipItemOnClick,
       clickLuck: this.onLuckClick,
       clickSkill: this.onSkillClick,
       configurePersona: this.configurePersona,
@@ -237,6 +238,15 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const itemId = target.dataset.itemId;
     const item = this.actor.items.get(itemId);
     if (this.actor.isOwner) item.sheet.render(true);
+  }
+
+  static async equipItemOnClick(event, target) {
+    event.preventDefault();
+    const dataset = target.dataset;
+    const itemId = dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (this.actor.isOwner)
+      return item.update({ ["system.details.equipped"]: dataset.equip });
   }
 
   static async configurePersona(event) {
