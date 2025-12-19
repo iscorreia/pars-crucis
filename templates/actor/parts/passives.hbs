@@ -2,10 +2,12 @@
 
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="passives">
   <div class="passives-tab">
+    <h4>
+      <div>{{localize "PC.passives"}}</div>
+    </h4>
     <ol>
       {{#each system.passives as |passive obj|}}
-        <li class="item-line" data-item-id="{{passive._id}}">
-          {{log passive}}
+        <li class="item-line">
           <img src="{{passive.img}}" width="24" height="24" />
           <h5>{{passive.name}}</h5>
           <span>{{passive.system.info.acquirement}}</span>
@@ -19,7 +21,7 @@
           </div>
 
           <div>
-            <a>
+            <a data-action="clickEdit" data-item-id="{{passive._id}}">
               <i class="fas fa-edit"></i>
             </a>
             <a data-action="clickDelete" data-item-id="{{passive._id}}">
