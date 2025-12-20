@@ -207,6 +207,10 @@
       "unknown": {
         "label": "Desconhecido",
         "abv": "Ø"
+      },
+      "priceless": {
+        "label": "Sem preço",
+        "abv": "ꝏ"
       }
     },
     "price": "Preço",
@@ -238,6 +242,8 @@
     "shield": "Escudo",
     "ranged": "À distância",
     "ammo": "Munição",
+
+    "exotic": "Exótico",
 
     "unarmed": "Desarmado",
     "light": "Arma leve",

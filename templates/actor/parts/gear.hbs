@@ -3,10 +3,79 @@
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="gear">
   <div>
     <h4>{{localize "PC.weaponry"}}</h4>
-    <ol></ol>
+    <ol>
+      {{#each system.weaponry as |weapon obj|}}
+        <li class="item-line">
+          <img src="{{weapon.img}}" width="24" height="24" />
+          <h5>{{weapon.name}}</h5>
+
+          <div>
+            {{#if weapon.system.details.equippable}}
+              <a
+                data-action="clickEquip"
+                data-item-id="{{weapon._id}}"
+                data-equip="false"
+                title="{{localize 'PC.equip'}}"
+              >
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </a>
+            {{/if}}
+            <a
+              data-action="clickEdit"
+              data-item-id="{{weapon._id}}"
+              title="{{localize 'PC.edit'}}"
+            >
+              <i class="fas fa-edit"></i>
+            </a>
+            <a
+              data-action="clickDelete"
+              data-item-id="{{weapon._id}}"
+              title="{{localize 'PC.delete'}}"
+            >
+              <i class="fa-solid fa-trash-can"></i>
+            </a>
+          </div>
+        </li>
+      {{/each}}
+    </ol>
   </div>
   <div>
     <h4>{{localize "PC.wear"}}</h4>
+    <ol>
+      {{#each system.vest as |vest obj|}}
+        <li class="item-line">
+          <img src="{{vest.img}}" width="24" height="24" />
+          <h5>{{vest.name}}</h5>
+
+          <div>
+            {{#if vest.system.details.equippable}}
+              <a
+                data-action="clickEquip"
+                data-item-id="{{vest._id}}"
+                data-equip="false"
+                title="{{localize 'PC.equip'}}"
+              >
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </a>
+            {{/if}}
+            <a
+              data-action="clickEdit"
+              data-item-id="{{vest._id}}"
+              title="{{localize 'PC.edit'}}"
+            >
+              <i class="fas fa-edit"></i>
+            </a>
+            <a
+              data-action="clickDelete"
+              data-item-id="{{vest._id}}"
+              title="{{localize 'PC.delete'}}"
+            >
+              <i class="fa-solid fa-trash-can"></i>
+            </a>
+          </div>
+        </li>
+      {{/each}}
+    </ol>
     <ol>
       {{#each system.accessories as |acc obj|}}
         <li class="item-line">

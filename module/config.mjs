@@ -424,12 +424,14 @@ PC.meleeGroups = {
   hammer: { label: "PC.hammer" },
   mace: { label: "PC.mace" },
   flail: { label: "PC.flail" },
+  exotic: { label: "PC.exotic" },
 };
 
 PC.shieldGroups = {
   buckler: { label: "PC.buckler" },
   shield: { label: "PC.shield" },
   cover: { label: "PC.cover" },
+  exotic: { label: "PC.exotic" },
 };
 
 PC.rangedGroups = {
@@ -440,6 +442,7 @@ PC.rangedGroups = {
   rifle: { label: "PC.rifle" },
   shotgun: { label: "PC.shotgun" },
   cannon: { label: "PC.cannon" },
+  exotic: { label: "PC.exotic" },
 };
 
 PC.ammoGroups = {
@@ -452,6 +455,7 @@ PC.ammoGroups = {
   cartridge: { label: "PC.cartridge" },
   bullet: { label: "PC.bullet" },
   cannonball: { label: "PC.cannonball" },
+  exotic: { label: "PC.exotic" },
 };
 
 PC.gearSubtypes = {
@@ -489,6 +493,10 @@ PC.currency = {
   unknown: {
     label: "PC.currency.unknown.label",
     abv: "PC.currency.unknown.abv",
+  },
+  priceless: {
+    label: "PC.currency.priceless.label",
+    abv: "PC.currency.priceless.abv",
   },
 };
 

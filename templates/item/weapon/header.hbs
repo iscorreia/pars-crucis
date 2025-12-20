@@ -63,7 +63,12 @@
       <div>
         <h4>{{localize "PC.price"}}</h4>
         <div class="flexrow">
-          {{#unless (eq system.cost.currency "unknown")}}
+          {{#unless
+            (or
+              (eq system.cost.currency "unknown")
+              (eq system.cost.currency "priceless")
+            )
+          }}
             <input
               name="system.cost.price"
               type="Number"
