@@ -1,9 +1,10 @@
-const { NumberField, SchemaField, StringField } = foundry.data.fields;
+const { BooleanField, NumberField, SchemaField, StringField } =
+  foundry.data.fields;
 
 export class AbilityModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      details: details(),
+      description: description(),
     };
   }
 }
@@ -11,7 +12,10 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
 export class GearModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
+      info: information(),
+      cost: itemCost(),
       details: details(),
+      description: description(),
     };
   }
 }
@@ -35,7 +39,7 @@ export class PassiveModel extends foundry.abstract.TypeDataModel {
           nullable: true,
         }),
       }),
-      details: details(),
+      description: description(),
     };
   }
 }
@@ -43,12 +47,60 @@ export class PassiveModel extends foundry.abstract.TypeDataModel {
 export class WeaponModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      details: details(),
+      info: information({ subtype: "melee", group: "light" }),
+      cost: itemCost(),
+      details: details({ equippable: true }),
+      description: description(),
     };
   }
 }
 
-function details() {
+function itemCost() {
+  const fields = {
+    price: new NumberField({ initial: 0, integer: true, nullable: true }),
+    currency: new StringField({ initial: "silver" }),
+  };
+
+  return new SchemaField(fields);
+}
+
+function information({
+  subtype = "item",
+  group = "utility",
+  quality = "common",
+} = {}) {
+  const fields = {
+    subtype: new StringField({ initial: subtype }),
+    group: new StringField({ initial: group }),
+    subgroup: new StringField({ initial: null, nullable: true }),
+    quality: new StringField({ initial: quality }),
+  };
+
+  return new SchemaField(fields);
+}
+
+function details({
+  stackable = false,
+  equippable = false,
+  stack = 1,
+  extraFields = null,
+} = {}) {
+  const fields = {
+    load: new NumberField({ initial: 1 }),
+    stack: new NumberField({ initial: stack }),
+    stackable: new BooleanField({ initial: stackable }),
+    equippable: new BooleanField({ initial: equippable }),
+    equipped: new BooleanField({ initial: false }),
+  };
+
+  if (extraFields && typeof extraFields === "object") {
+    Object.assign(fields, extraFields);
+  }
+
+  return new SchemaField(fields);
+}
+
+function description() {
   return new SchemaField({
     description: new StringField({ initial: "" }),
     shortDescription: new StringField({ initial: "" }),

@@ -187,6 +187,33 @@
       "hard": "Difícil"
     },
     "configPersona": "Configuração de Persona",
+    "weaponry": "Armamentos",
+    "armament": "Armamento",
+    "gear": "Equipamentos",
+    "equipment": "Equipamento",
+    "wear": "Vestimentas",
+    "item": "Item",
+    "items": "Itens",
+
+    "currency": {
+      "silver": {
+        "label": "Prata",
+        "abv": "P"
+      },
+      "copper": {
+        "label": "Cobre",
+        "abv": "C"
+      },
+      "unknown": {
+        "label": "Desconhecido",
+        "abv": "Ø"
+      },
+      "priceless": {
+        "label": "Sem preço",
+        "abv": "ꝏ"
+      }
+    },
+    "price": "Preço",
     "benefit": "Benefício",
     "benefits": "Benefícios",
     "drawback": "Malefício",
@@ -198,6 +225,84 @@
     "original": "Original",
     "natural": "Natural",
     "xp": "XP",
-    "pts": "PTS"
+    "pts": "PTS",
+
+    "equip": "Equipar",
+    "edit": "Alterar",
+    "delete": "Destruir",
+    "cancel": "Fechar",
+
+    "description": "Descrição",
+    "equippable": "Equipável",
+    "stackable": "Agrupável",
+    "equipped": "Equipado",
+    "config": "Configurações",
+
+    "melee": "Corpo a corpo",
+    "shield": "Escudo",
+    "ranged": "À distância",
+    "ammo": "Munição",
+
+    "exotic": "Exótico",
+
+    "unarmed": "Desarmado",
+    "light": "Arma leve",
+    "throwing": "Arremessável",
+    "sword": "Espada",
+    "javelin": "Azagaia",
+    "spear": "Lança",
+    "polearm": "Arma de haste",
+    "ax": "Machado",
+    "hammer": "Martelo",
+    "mace": "Maça",
+    "flail": "Mangual",
+
+    "buckler": "Broquel",
+    "cover": "Cobertura",
+
+    "bow": "Arco",
+    "sling": "Estilingue",
+    "crossbow": "Bestra",
+    "pistol": "Pistola",
+    "rifle": "Rifle",
+    "shotgun": "Escopeta",
+    "cannon": "Canhão",
+
+    "pebble": "Calhau",
+    "arrow": "Flecha",
+    "bolt": "Virote",
+    "gasoil": "Gasóleo",
+    "harpoon": "Arpão",
+    "lead": "Chumbo e pólvora",
+    "cartridge": "Cartucho",
+    "bullet": "Bala",
+    "cannonball": "Pelouro",
+
+    "accessories": "Acessórios",
+    "accessory": "Acessório",
+    "vest": "Vestimenta",
+    "gadget": "Engenhoca",
+    "gadgets": "Engenhocas",
+
+    "alchemical": "Alquímico",
+    "alchemicals": "Alquímicos",
+    "trap": "Armadilha",
+    "traps": "Armadilhas",
+    "artifact": "Artefato bélico",
+    "artifacts": "Artefatos bélicos",
+    "matrix": "Matriz",
+    "matrixes": "Matrizes",
+    "herbal": "Herbal",
+    "herbals": "Herbais",
+    "instrument": "Instrumento",
+    "instruments": "Instrumentos",
+    "utility": "Utilidade",
+    "utilities": "Utilidades",
+
+    "potion": "Poção",
+    "elixir": "Elixir",
+    "poison": "Veneno",
+    "agent": "Agente",
+    "grenade": "Granada"
   }
 }

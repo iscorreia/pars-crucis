@@ -1,6 +1,7 @@
 const { api, sheets } = foundry.applications;
 import { PC } from "../config.mjs";
 
+//This is the basic class for Pars Crucis Items and should be extended
 export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   sheets.ItemSheetV2
 ) {
@@ -29,19 +30,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
       document: this.document,
       system: this.document.system,
       config: CONFIG.PC,
-      tabs: this._prepareTabs("primary"),
     };
-
-    return context;
-  }
-
-  async _preparePartContext(partId, context) {
-    switch (partId) {
-      case "description":
-        context.tab = context.tabs[partId];
-        break;
-      default:
-    }
 
     return context;
   }

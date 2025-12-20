@@ -405,6 +405,101 @@ PC.espirituais = {
   sabak: { label: "PC.skills.sabak" },
 };
 
+PC.weaponSubtypes = {
+  melee: { label: "PC.melee" },
+  shield: { label: "PC.shield" },
+  ranged: { label: "PC.ranged" },
+  ammo: { label: "PC.ammo" },
+};
+
+PC.meleeGroups = {
+  unarmed: { label: "PC.unarmed" },
+  light: { label: "PC.light" },
+  throwing: { label: "PC.throwing" },
+  sword: { label: "PC.sword" },
+  javelin: { label: "PC.javelin" },
+  spear: { label: "PC.spear" },
+  polearm: { label: "PC.polearm" },
+  ax: { label: "PC.ax" },
+  hammer: { label: "PC.hammer" },
+  mace: { label: "PC.mace" },
+  flail: { label: "PC.flail" },
+  exotic: { label: "PC.exotic" },
+};
+
+PC.shieldGroups = {
+  buckler: { label: "PC.buckler" },
+  shield: { label: "PC.shield" },
+  cover: { label: "PC.cover" },
+  exotic: { label: "PC.exotic" },
+};
+
+PC.rangedGroups = {
+  bow: { label: "PC.bow" },
+  sling: { label: "PC.sling" },
+  crossbow: { label: "PC.crossbow" },
+  pistol: { label: "PC.pistol" },
+  rifle: { label: "PC.rifle" },
+  shotgun: { label: "PC.shotgun" },
+  cannon: { label: "PC.cannon" },
+  exotic: { label: "PC.exotic" },
+};
+
+PC.ammoGroups = {
+  pebble: { label: "PC.pebble" },
+  arrow: { label: "PC.arrow" },
+  bolt: { label: "PC.bolt" },
+  gasoil: { label: "PC.gasoil" },
+  harpoon: { label: "PC.harpoon" },
+  lead: { label: "PC.lead" },
+  cartridge: { label: "PC.cartridge" },
+  bullet: { label: "PC.bullet" },
+  cannonball: { label: "PC.cannonball" },
+  exotic: { label: "PC.exotic" },
+};
+
+PC.gearSubtypes = {
+  wear: { label: "PC.vest" },
+  item: { label: "PC.item" },
+};
+
+PC.wearGroups = {
+  vest: { label: "PC.vest" },
+  accessory: { label: "PC.accessory" },
+  gadget: { label: "PC.gadget" },
+};
+
+PC.itemGroups = {
+  alchemical: { label: "PC.alchemical" },
+  trap: { label: "PC.trap" },
+  artifact: { label: "PC.artifact" },
+  matrix: { label: "PC.matrix" },
+  herbal: { label: "PC.herbal" },
+  instrument: { label: "PC.instrument" },
+  utility: { label: "PC.utility" },
+};
+
+PC.itemSubgroups = {
+  potion: { label: "PC.potion" },
+  elixir: { label: "PC.elixir" },
+  poison: { label: "PC.poison" },
+  agent: { label: "PC.agent" },
+  grenade: { label: "PC.grenade" },
+};
+
+PC.currency = {
+  silver: { label: "PC.currency.silver.label", abv: "PC.currency.silver.abv" },
+  copper: { label: "PC.currency.copper.label", abv: "PC.currency.copper.abv" },
+  unknown: {
+    label: "PC.currency.unknown.label",
+    abv: "PC.currency.unknown.abv",
+  },
+  priceless: {
+    label: "PC.currency.priceless.label",
+    abv: "PC.currency.priceless.abv",
+  },
+};
+
 PC.passiveSubtypes = {
   benefit: { label: "PC.benefit" },
   drawback: { label: "PC.drawback" },

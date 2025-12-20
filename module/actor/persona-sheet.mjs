@@ -21,6 +21,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       clickAttribute: this.onAttributeClick,
       clickDelete: this.deleteItemOnClick,
       clickEdit: this.editItemOnClick,
+      clickEquip: this.equipItemOnClick,
       clickLuck: this.onLuckClick,
       clickSkill: this.onSkillClick,
       configurePersona: this.configurePersona,
@@ -205,26 +206,26 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       }
 
       api.Dialog.wait({
-        window: { title: "DELETE ITEM" },
-        content: `<p>WILL DELETE-> ${item.name}</p>`,
+        window: { title: "Destruir item" },
+        content: `<p>Deseja destruir o item: ${item.name}</p>`,
         buttons: [
           {
             action: "delete",
             icon: '<i class="fa-solid fa-trash-can"></i>',
-            label: "DELETE",
+            label: "PC.delete",
             callback: () => item.delete(),
             default: true,
           },
           {
             action: "edit",
             icon: '<i class="fas fa-edit"></i>',
-            label: "EDIT",
+            label: "PC.edit",
             callback: () => item.sheet.render(true),
           },
           {
             action: "cancel",
             icon: '<i class="fas fa-times"></i>',
-            label: "CANCEL",
+            label: "PC.cancel",
           },
         ],
       });
@@ -237,6 +238,15 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const itemId = target.dataset.itemId;
     const item = this.actor.items.get(itemId);
     if (this.actor.isOwner) item.sheet.render(true);
+  }
+
+  static async equipItemOnClick(event, target) {
+    event.preventDefault();
+    const dataset = target.dataset;
+    const itemId = dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (this.actor.isOwner)
+      return item.update({ ["system.details.equipped"]: dataset.equip });
   }
 
   static async configurePersona(event) {
