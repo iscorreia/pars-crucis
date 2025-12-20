@@ -114,11 +114,10 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const xpData = this.experience;
     const parent = this.parent;
 
-    // Sets items by group, uses the help actor#itemTypes
-    this.passives = parent.itemTypes.passive;
-
-    // Items are set into their specific groups once equipped
+    // Filter items by group, uses the helper actor#itemTypes
+    // Gear|Weapon items are set into their specific groups once equipped
     // Otherwise they're assigned to [gear]
+    this.passives = parent.itemTypes.passive;
     const accGroup = ["accessory", "gadget"];
     const inventoryGroup = ["weapon", "gear"];
     this.weaponry = parent.itemTypes.weapon.filter(
