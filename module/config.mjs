@@ -405,16 +405,53 @@ PC.espirituais = {
   sabak: { label: "PC.skills.sabak" },
 };
 
-PC.passiveSubtypes = {
-  benefit: { label: "PC.benefit" },
-  drawback: { label: "PC.drawback" },
+PC.weaponSubtypes = {
+  melee: { label: "PC.melee" },
+  shield: { label: "PC.shield" },
+  ranged: { label: "PC.ranged" },
+  ammo: { label: "PC.ammo" },
 };
 
-PC.passiveAcquirement = {
-  original: { label: "PC.original" },
-  natural: { label: "PC.natural" },
-  learned: { label: "PC.learned" },
-  suffered: { label: "PC.suffered" },
+PC.meleeGroups = {
+  unarmed: { label: "PC.unarmed" },
+  light: { label: "PC.light" },
+  throwing: { label: "PC.throwing" },
+  sword: { label: "PC.sword" },
+  javelin: { label: "PC.javelin" },
+  spear: { label: "PC.spear" },
+  polearm: { label: "PC.polearm" },
+  ax: { label: "PC.ax" },
+  hammer: { label: "PC.hammer" },
+  mace: { label: "PC.mace" },
+  flail: { label: "PC.flail" },
+};
+
+PC.shieldGroups = {
+  buckler: { label: "PC.buckler" },
+  shield: { label: "PC.shield" },
+  cover: { label: "PC.cover" },
+};
+
+PC.rangedGroups = {
+  bow: { label: "PC.bow" },
+  sling: { label: "PC.sling" },
+  crossbow: { label: "PC.crossbow" },
+  pistol: { label: "PC.pistol" },
+  rifle: { label: "PC.rifle" },
+  shotgun: { label: "PC.shotgun" },
+  cannon: { label: "PC.cannon" },
+};
+
+PC.ammoGroups = {
+  pebble: { label: "PC.pebble" },
+  arrow: { label: "PC.arrow" },
+  bolt: { label: "PC.bolt" },
+  gasoil: { label: "PC.gasoil" },
+  harpoon: { label: "PC.harpoon" },
+  lead: { label: "PC.lead" },
+  cartridge: { label: "PC.cartridge" },
+  bullet: { label: "PC.bullet" },
+  cannonball: { label: "PC.cannonball" },
 };
 
 PC.gearSubtypes = {
@@ -453,4 +490,16 @@ PC.currency = {
     label: "PC.currency.unknown.label",
     abv: "PC.currency.unknown.abv",
   },
+};
+
+PC.passiveSubtypes = {
+  benefit: { label: "PC.benefit" },
+  drawback: { label: "PC.drawback" },
+};
+
+PC.passiveAcquirement = {
+  original: { label: "PC.original" },
+  natural: { label: "PC.natural" },
+  learned: { label: "PC.learned" },
+  suffered: { label: "PC.suffered" },
 };

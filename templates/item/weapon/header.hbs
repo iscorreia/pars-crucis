@@ -1,4 +1,4 @@
-{{! Weapon sheat header }}
+{{! Weapon sheet header }}
 
 <header class="sheet-header weapon-header">
   <img
@@ -18,5 +18,68 @@
         placeholder="Nameless Weapon"
       />
     </h2>
+    <div class="flexrow">
+      <select name="system.info.subtype">
+        {{selectOptions
+          config.weaponSubtypes
+          selected=system.info.subtype
+          localize=true
+        }}
+      </select>
+      <select name="system.info.group">
+        {{selectOptions
+          (lookup config (concat system.info.subtype "Groups"))
+          selected=system.info.group
+          localize=true
+        }}
+      </select>
+      <input
+        name="system.info.subgroup"
+        type="String"
+        value="{{system.info.subgroup}}"
+        data-dtype="String"
+      />
+    </div>
+    <div class="flexrow">
+      <div>
+        <h4>LOAD/STACK</h4>
+        <div class="flexrow">
+          <input
+            name="system.details.load"
+            type="Number"
+            value="{{system.details.load}}"
+            data-dtype="Number"
+          />
+          {{#if system.details.stackable}}
+            <input
+              name="system.details.stack"
+              type="Number"
+              value="{{system.details.stack}}"
+              data-dtype="Number"
+            />
+          {{/if}}
+        </div>
+      </div>
+      <div>
+        <h4>{{localize "PC.price"}}</h4>
+        <div class="flexrow">
+          {{#unless (eq system.cost.currency "unknown")}}
+            <input
+              name="system.cost.price"
+              type="Number"
+              value="{{system.cost.price}}"
+              data-dtype="Number"
+            />
+          {{/unless}}
+          <select name="system.cost.currency">
+            {{selectOptions
+              config.currency
+              selected=system.cost.currency
+              localize=true
+            }}
+          </select>
+        </div>
+      </div>
+    </div>
   </div>
 </header>

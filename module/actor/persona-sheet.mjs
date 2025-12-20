@@ -206,26 +206,26 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       }
 
       api.Dialog.wait({
-        window: { title: "DELETE ITEM" },
-        content: `<p>WILL DELETE-> ${item.name}</p>`,
+        window: { title: "Destruir item" },
+        content: `<p>Deseja destruir o item: ${item.name}</p>`,
         buttons: [
           {
             action: "delete",
             icon: '<i class="fa-solid fa-trash-can"></i>',
-            label: "DELETE",
+            label: "PC.delete",
             callback: () => item.delete(),
             default: true,
           },
           {
             action: "edit",
             icon: '<i class="fas fa-edit"></i>',
-            label: "EDIT",
+            label: "PC.edit",
             callback: () => item.sheet.render(true),
           },
           {
             action: "cancel",
             icon: '<i class="fas fa-times"></i>',
-            label: "CANCEL",
+            label: "PC.cancel",
           },
         ],
       });

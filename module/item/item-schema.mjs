@@ -12,16 +12,8 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
 export class GearModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      info: new SchemaField({
-        subtype: new StringField({ initial: "item" }),
-        group: new StringField({ initial: "utility" }),
-        subgroup: new StringField({ initial: null, nullable: true }),
-        quality: new StringField({ initial: "common" }),
-      }),
-      cost: new SchemaField({
-        price: new NumberField({ initial: 0, integer: true, nullable: true }),
-        currency: new StringField({ initial: "silver" }),
-      }),
+      info: information(),
+      cost: itemCost(),
       details: details(),
       description: description(),
     };
@@ -55,10 +47,36 @@ export class PassiveModel extends foundry.abstract.TypeDataModel {
 export class WeaponModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      details: details(),
+      info: information({ subtype: "melee", group: "light" }),
+      cost: itemCost(),
+      details: details({ equippable: true }),
       description: description(),
     };
   }
+}
+
+function itemCost() {
+  const fields = {
+    price: new NumberField({ initial: 0, integer: true, nullable: true }),
+    currency: new StringField({ initial: "silver" }),
+  };
+
+  return new SchemaField(fields);
+}
+
+function information({
+  subtype = "item",
+  group = "utility",
+  quality = "common",
+} = {}) {
+  const fields = {
+    subtype: new StringField({ initial: subtype }),
+    group: new StringField({ initial: group }),
+    subgroup: new StringField({ initial: null, nullable: true }),
+    quality: new StringField({ initial: quality }),
+  };
+
+  return new SchemaField(fields);
 }
 
 function details({

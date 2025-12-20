@@ -27,7 +27,7 @@ export default class GearSheet extends ParsCrucisItemSheet {
       template: "systems/pars-crucis/templates/item/parts/description.hbs",
     },
     config: {
-      template: "systems/pars-crucis/templates/item/parts/details.hbs",
+      template: "systems/pars-crucis/templates/item/gear/details.hbs",
     },
   };
 
@@ -35,8 +35,8 @@ export default class GearSheet extends ParsCrucisItemSheet {
     primary: {
       initial: "description",
       tabs: [
-        { id: "description", label: "Descrição" },
-        { id: "config", label: "Configuração" },
+        { id: "description", label: "PC.description" },
+        { id: "config", label: "PC.config" },
       ],
     },
   };

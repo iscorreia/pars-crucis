@@ -19,7 +19,8 @@ async function preloadHandlebarsTemplates() {
     "systems/pars-crucis/templates/actor/blocks/minors.hbs",
     "systems/pars-crucis/templates/actor/blocks/mitigation.hbs",
     "systems/pars-crucis/templates/item/parts/description.hbs",
-    "systems/pars-crucis/templates/item/parts/details.hbs",
+    "systems/pars-crucis/templates/item/gear/details.hbs",
+    "systems/pars-crucis/templates/item/weapon/details.hbs",
   ];
 
   return foundry.applications.handlebars.loadTemplates(templatePaths);

@@ -195,6 +195,83 @@
     "item": "Item",
     "items": "Itens",
 
+    "currency": {
+      "silver": {
+        "label": "Prata",
+        "abv": "P"
+      },
+      "copper": {
+        "label": "Cobre",
+        "abv": "C"
+      },
+      "unknown": {
+        "label": "Desconhecido",
+        "abv": "Ø"
+      }
+    },
+    "price": "Preço",
+    "benefit": "Benefício",
+    "benefits": "Benefícios",
+    "drawback": "Malefício",
+    "drawbacks": "Malefícios",
+    "passive": "Passiva",
+    "passives": "Passivas",
+    "suffered": "Sofrida",
+    "learned": "Aprendida",
+    "original": "Original",
+    "natural": "Natural",
+    "xp": "XP",
+    "pts": "PTS",
+
+    "equip": "Equipar",
+    "edit": "Alterar",
+    "delete": "Destruir",
+    "cancel": "Fechar",
+
+    "description": "Descrição",
+    "equippable": "Equipável",
+    "stackable": "Agrupável",
+    "equipped": "Equipado",
+    "config": "Configurações",
+
+    "melee": "Corpo a corpo",
+    "shield": "Escudo",
+    "ranged": "À distância",
+    "ammo": "Munição",
+
+    "unarmed": "Desarmado",
+    "light": "Arma leve",
+    "throwing": "Arremessável",
+    "sword": "Espada",
+    "javelin": "Azagaia",
+    "spear": "Lança",
+    "polearm": "Arma de haste",
+    "ax": "Machado",
+    "hammer": "Martelo",
+    "mace": "Maça",
+    "flail": "Mangual",
+
+    "buckler": "Broquel",
+    "cover": "Cobertura",
+
+    "bow": "Arco",
+    "sling": "Estilingue",
+    "crossbow": "Bestra",
+    "pistol": "Pistola",
+    "rifle": "Rifle",
+    "shotgun": "Escopeta",
+    "cannon": "Canhão",
+
+    "pebble": "Calhau",
+    "arrow": "Flecha",
+    "bolt": "Virote",
+    "gasoil": "Gasóleo",
+    "harpoon": "Arpão",
+    "lead": "Chumbo e pólvora",
+    "cartridge": "Cartucho",
+    "bullet": "Bala",
+    "cannonball": "Pelouro",
+
     "accessories": "Acessórios",
     "accessory": "Acessório",
     "vest": "Vestimenta",
@@ -220,43 +297,6 @@
     "elixir": "Elixir",
     "poison": "Veneno",
     "agent": "Agente",
-    "grenade": "Granada",
-
-    "currency": {
-      "silver": {
-        "label": "Prata",
-        "abv": "P"
-      },
-      "copper": {
-        "label": "Cobre",
-        "abv": "C"
-      },
-      "unknown": {
-        "label": "Desconhecido",
-        "abv": "Ø"
-      }
-    },
-    "benefit": "Benefício",
-    "benefits": "Benefícios",
-    "drawback": "Malefício",
-    "drawbacks": "Malefícios",
-    "passive": "Passiva",
-    "passives": "Passivas",
-    "suffered": "Sofrida",
-    "learned": "Aprendida",
-    "original": "Original",
-    "natural": "Natural",
-    "xp": "XP",
-    "pts": "PTS",
-
-    "equip": "Equipar",
-    "edit": "Alterar",
-    "delete": "Destruir",
-
-    "description": "Descrição",
-    "equippable": "Equipável",
-    "stackable": "Agrupável",
-    "equipped": "Equipado",
-    "config": "Configurações"
+    "grenade": "Granada"
   }
 }
