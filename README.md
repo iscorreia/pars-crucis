@@ -11,6 +11,9 @@ check under PC
 To get an actor data by name
 game.actors.getName('name')
 
+To get an item data by id
+game.items.get('\_itemId')
+
 ## on Handlebars
 
 {{log actor}}

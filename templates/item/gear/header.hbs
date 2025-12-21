@@ -21,14 +21,14 @@
     <div class="flexrow">
       <select name="system.info.subtype">
         {{selectOptions
-          config.gearSubtypes
+          config.gear.subtypes
           selected=system.info.subtype
           localize=true
         }}
       </select>
       <select name="system.info.group">
         {{selectOptions
-          (lookup config (concat system.info.subtype "Groups"))
+          (lookup (lookup config.gear.subtypes system.info.subtype) "groups")
           selected=system.info.group
           localize=true
         }}

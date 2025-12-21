@@ -7,7 +7,7 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       info: new SchemaField({
-        subtypes: new StringField({ initial: "" }),
+        subtypes: new StringField({ initial: "power" }),
         art: new StringField({ initial: null, nullable: true }),
         category: new StringField({ initial: null, nullable: true }),
       }),
