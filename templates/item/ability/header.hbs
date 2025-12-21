@@ -19,12 +19,13 @@
       />
     </h2>
     <div class="flexrow">
-      <input
-        name="system.info.subtypes"
-        type="String"
-        value="{{system.info.subtypes}}"
-        data-dtype="String"
-      />
+      <select name="system.info.subtype">
+        {{selectOptions
+          config.ability.subtypes
+          selected=system.info.subtype
+          localize=true
+        }}
+      </select>
       <input
         name="system.info.art"
         type="String"

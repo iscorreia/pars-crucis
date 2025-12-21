@@ -7,7 +7,7 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       info: new SchemaField({
-        subtypes: new StringField({ initial: "power" }),
+        subtype: new StringField({ initial: "power" }),
         art: new StringField({ initial: null, nullable: true }),
         category: new StringField({ initial: null, nullable: true }),
       }),
@@ -89,9 +89,9 @@ function action() {
     }),
 
     // ATTACK-only
-    attackType: new StringField({
+    subtype: new StringField({
       nullable: true,
-      choices: () => Object.keys(PC.attackTypes),
+      choices: () => Object.keys(PC.action.types.attack.subtypes),
     }),
 
     // TEST-only

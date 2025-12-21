@@ -407,8 +407,28 @@ PC.espirituais = {
 
 PC.ability = {
   subtypes: {
-    technique: { label: "PC.ability.suptypes.technique" },
-    power: { label: "PC.ability.subtypes.power" },
+    technique: { label: "PC.ability.subtypes.technique.label" },
+    power: { label: "PC.ability.subtypes.power.label" },
+  },
+};
+
+PC.action = {
+  types: {
+    attack: {
+      label: "PC.action.types.attack.label",
+      subtypes: {
+        melee: { label: "PC.action.types.attack.subtype.melee" },
+        throw: { label: "PC.action.types.attack.subtype.throw" },
+        projectile: { label: "PC.action.types.attack.subtype.projectile" },
+        jet: { label: "PC.action.types.attack.subtype.jet" },
+        aoe: { label: "PC.action.types.attack.subtype.aoe" },
+        affliction: { label: "PC.action.types.attack.subtype.affliction" },
+        mind: { label: "PC.action.types.attack.subtype.mind" },
+        social: { label: "PC.action.types.attack.subtype.social" },
+      },
+    },
+    direct: { label: "PC.action.types.direct.label" },
+    test: { label: "PC.action.types.test.label" },
   },
 };
 
@@ -533,15 +553,4 @@ PC.passive = {
     learned: { label: "PC.passive.acquirement.learned" },
     suffered: { label: "PC.passive.acquirement.suffered" },
   },
-};
-
-PC.attackTypes = {
-  melee: { label: "PC.melee" },
-  throw: { label: "PC.throw" },
-  projectile: { label: "PC.projectile" },
-  jet: { label: "PC.jet" },
-  aoe: { label: "PC.aoe" },
-  affliction: { label: "PC.affliction" },
-  mind: { label: "PC.mind" },
-  social: { label: "PC.social" },
 };
