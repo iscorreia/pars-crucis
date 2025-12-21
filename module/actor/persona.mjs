@@ -117,9 +117,9 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     // Filter items by group, uses the helper actor#itemTypes
     // Gear|Weapon items are set into their specific groups once equipped
     // Otherwise they're assigned to [gear]
-    this.passives = parent.itemTypes.passive;
     const accGroup = ["accessory", "gadget"];
     const inventoryGroup = ["weapon", "gear"];
+    this.abilities = parent.itemTypes.ability;
     this.weaponry = parent.itemTypes.weapon.filter(
       (i) => i.system.details.equipped || i.system.info.group === "unarmed"
     );
@@ -132,6 +132,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     this.gear = parent.items.filter((i) => {
       return inventoryGroup.includes(i.type) && !i.system.details.equipped;
     });
+    this.passives = parent.itemTypes.passive;
 
     // Gets a the favorables skills from culture and persona and creates a set
     const cultureFav = CULTURES[infoData.culture].favorables ?? [];
