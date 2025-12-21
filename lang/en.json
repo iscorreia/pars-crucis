@@ -1,5 +1,6 @@
 {
   "PC": {
+    "configPersona": "Configuração de Persona",
     "origins": {
       "capri": "Capríaco",
       "carne": "Carneador",
@@ -173,6 +174,11 @@
       "ontol": "Ontologia",
       "sabak": "Sabakismo"
     },
+    "learning": {
+      "label": "Aprendizado",
+      "common": "Comum",
+      "hard": "Difícil"
+    },
     "types": {
       "item": {
         "ability": "Habilidade",
@@ -181,20 +187,157 @@
         "weapon": "Armamento"
       }
     },
-    "learning": {
-      "label": "Aprendizado",
-      "common": "Comum",
-      "hard": "Difícil"
+    "ability": {
+      "label": "Habilidade",
+      "subtypes": {
+        "technique": { "label": "Técnica" },
+        "power": { "label": "Poder" }
+      }
     },
-    "configPersona": "Configuração de Persona",
+    "action": {
+      "label": "Ação",
+      "types": {
+        "attack": {
+          "label": "Ataque",
+          "subtype": {
+            "throw": "Arremesso",
+            "projectile": "Projétil",
+            "jet": "Jato",
+            "aoe": "Área",
+            "affliction": "Aflição",
+            "mind": "Mental",
+            "social": "Social"
+          }
+        },
+        "direct": { "label": "Uso direto" },
+        "test": { "label": "Teste" }
+      }
+    },
     "weaponry": "Armamentos",
-    "armament": "Armamento",
-    "gear": "Equipamentos",
+    "weapon": {
+      "label": "Armamento",
+      "subtypes": {
+        "melee": {
+          "label": "Corpo a corpo",
+          "groups": {
+            "unarmed": "Desarmado",
+            "light": "Arma leve",
+            "throwing": "Arremessável",
+            "sword": "Espada",
+            "javelin": "Azagaia",
+            "spear": "Lança",
+            "polearm": "Arma de haste",
+            "ax": "Machado",
+            "hammer": "Martelo",
+            "mace": "Maça",
+            "flail": "Mangual",
+            "exotic": "Exótico"
+          }
+        },
+        "shield": {
+          "label": "Escudo",
+          "groups": {
+            "shield": "Escudo",
+            "buckler": "Broquel",
+            "cover": "Cobertura",
+            "exotic": "Exótico"
+          }
+        },
+        "ranged": {
+          "label": "À distância",
+          "groups": {
+            "bow": "Arco",
+            "sling": "Estilingue",
+            "crossbow": "Bestra",
+            "pistol": "Pistola",
+            "rifle": "Rifle",
+            "shotgun": "Escopeta",
+            "cannon": "Canhão",
+            "exotic": "Exótico"
+          }
+        },
+        "ammo": {
+          "label": "Munição",
+          "groups": {
+            "pebble": "Calhau",
+            "arrow": "Flecha",
+            "bolt": "Virote",
+            "gasoil": "Gasóleo",
+            "harpoon": "Arpão",
+            "lead": "Chumbo e pólvora",
+            "cartridge": "Cartucho",
+            "bullet": "Bala",
+            "cannonball": "Pelouro",
+            "exotic": "Exótico"
+          }
+        },
+        "exotic": {
+          "label": "Exótico",
+          "groups": {
+            "exotic": "Exótico"
+          }
+        }
+      }
+    },
+    "gear": {
+      "label": "Equipamentos",
+      "subtypes": {
+        "wear": {
+          "label": "Vestimenta",
+          "groups": {
+            "vest": "Vestimenta",
+            "accessory": "Acessório",
+            "gadget": "Engenhoca"
+          }
+        },
+        "item": {
+          "label": "Item",
+          "groups": {
+            "alchemical": "Alquímico",
+            "trap": "Armadilha",
+            "artifact": "Artefato bélico",
+            "matrix": "Matriz",
+            "herbal": "Herbal",
+            "instrument": "Instrumento",
+            "utility": "Utilidade"
+          },
+          "subgroups": {
+            "potion": "Poção",
+            "elixir": "Elixir",
+            "poison": "Veneno",
+            "agent": "Agente",
+            "grenade": "Granada"
+          }
+        }
+      }
+    },
+    "accessories": "Acessórios",
+    "gadgets": "Engenhocas",
+    "alchemicals": "Alquímicos",
+    "traps": "Armadilhas",
+    "artifacts": "Artefatos bélicos",
+    "matrixes": "Matrizes",
+    "herbals": "Herbais",
+    "instruments": "Instrumentos",
+    "utilities": "Utilidades",
+    "passive": {
+      "label": "Passiva",
+      "subtypes": {
+        "benefit": "Benefício",
+        "drawback": "Malefício"
+      },
+      "acquirement": {
+        "suffered": "Sofrida",
+        "learned": "Aprendida",
+        "original": "Original",
+        "natural": "Natural"
+      }
+    },
+    "benefits": "Benefícios",
+    "drawbacks": "Malefícios",
     "equipment": "Equipamento",
     "wear": "Vestimentas",
-    "item": "Item",
     "items": "Itens",
-
     "currency": {
       "silver": {
         "label": "Prata",
@@ -214,16 +357,6 @@
       }
     },
     "price": "Preço",
-    "benefit": "Benefício",
-    "benefits": "Benefícios",
-    "drawback": "Malefício",
-    "drawbacks": "Malefícios",
-    "passive": "Passiva",
-    "passives": "Passivas",
-    "suffered": "Sofrida",
-    "learned": "Aprendida",
-    "original": "Original",
-    "natural": "Natural",
     "xp": "XP",
     "pts": "PTS",
 
@@ -236,73 +369,6 @@
     "equippable": "Equipável",
     "stackable": "Agrupável",
     "equipped": "Equipado",
-    "config": "Configurações",
-
-    "melee": "Corpo a corpo",
-    "shield": "Escudo",
-    "ranged": "À distância",
-    "ammo": "Munição",
-
-    "exotic": "Exótico",
-
-    "unarmed": "Desarmado",
-    "light": "Arma leve",
-    "throwing": "Arremessável",
-    "sword": "Espada",
-    "javelin": "Azagaia",
-    "spear": "Lança",
-    "polearm": "Arma de haste",
-    "ax": "Machado",
-    "hammer": "Martelo",
-    "mace": "Maça",
-    "flail": "Mangual",
-
-    "buckler": "Broquel",
-    "cover": "Cobertura",
-
-    "bow": "Arco",
-    "sling": "Estilingue",
-    "crossbow": "Bestra",
-    "pistol": "Pistola",
-    "rifle": "Rifle",
-    "shotgun": "Escopeta",
-    "cannon": "Canhão",
-
-    "pebble": "Calhau",
-    "arrow": "Flecha",
-    "bolt": "Virote",
-    "gasoil": "Gasóleo",
-    "harpoon": "Arpão",
-    "lead": "Chumbo e pólvora",
-    "cartridge": "Cartucho",
-    "bullet": "Bala",
-    "cannonball": "Pelouro",
-
-    "accessories": "Acessórios",
-    "accessory": "Acessório",
-    "vest": "Vestimenta",
-    "gadget": "Engenhoca",
-    "gadgets": "Engenhocas",
-
-    "alchemical": "Alquímico",
-    "alchemicals": "Alquímicos",
-    "trap": "Armadilha",
-    "traps": "Armadilhas",
-    "artifact": "Artefato bélico",
-    "artifacts": "Artefatos bélicos",
-    "matrix": "Matriz",
-    "matrixes": "Matrizes",
-    "herbal": "Herbal",
-    "herbals": "Herbais",
-    "instrument": "Instrumento",
-    "instruments": "Instrumentos",
-    "utility": "Utilidade",
-    "utilities": "Utilidades",
-
-    "potion": "Poção",
-    "elixir": "Elixir",
-    "poison": "Veneno",
-    "agent": "Agente",
-    "grenade": "Granada"
+    "config": "Configurações"
   }
 }

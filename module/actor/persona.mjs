@@ -101,6 +101,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
   /** Do derived attribute calculations */
   prepareDerivedData() {
+    const abilitiesXp = [];
     const attributesData = this.attributes;
     const attValues = { fis: [], des: [], ego: [], cog: [], esp: [] };
     const combatSkills = ["briga", "esgri", "hasta", "malha"];
@@ -108,18 +109,19 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const infoData = this.info;
     const luckData = this.luck;
     const minorsData = this.minors;
+    const parent = this.parent;
     const skillsData = this.skills;
     const skillsXp = [];
     const subData = this.subattributes;
     const xpData = this.experience;
-    const parent = this.parent;
 
     // Filter items by group, uses the helper actor#itemTypes
     // Gear|Weapon items are set into their specific groups once equipped
     // Otherwise they're assigned to [gear]
-    this.passives = parent.itemTypes.passive;
     const accGroup = ["accessory", "gadget"];
     const inventoryGroup = ["weapon", "gear"];
+    this.abilities = parent.itemTypes.ability;
+    const abilitiesData = this.abilities;
     this.weaponry = parent.itemTypes.weapon.filter(
       (i) => i.system.details.equipped || i.system.info.group === "unarmed"
     );
@@ -132,6 +134,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     this.gear = parent.items.filter((i) => {
       return inventoryGroup.includes(i.type) && !i.system.details.equipped;
     });
+    this.passives = parent.itemTypes.passive;
 
     // Gets a the favorables skills from culture and persona and creates a set
     const cultureFav = CULTURES[infoData.culture].favorables ?? [];
@@ -217,9 +220,19 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const peDerived = Number(subData.pe?.current ?? 0);
     subData.pe.current = Math.min(Math.max(peDerived, 0), subData.pe.max);
 
+    // ABILITIES handling!
+    for (let ability of abilitiesData) {
+      abilitiesXp.push(ability.system.details.experience);
+    }
+
     // EXPERIENCE handling!
+    xpData.abilitiesXpSum = abilitiesXp.reduce((acc, value) => acc + value, 0);
     xpData.skillsXpSum = skillsXp.reduce((acc, value) => acc + value, 0);
-    xpData.current = xpData.total - xpData.skillsXpSum - xpData.reserved;
+    xpData.current =
+      xpData.total -
+      xpData.skillsXpSum -
+      xpData.abilitiesXpSum -
+      xpData.reserved;
 
     // LUCK handling!
     luckBooleans(luckData);

@@ -405,86 +405,128 @@ PC.espirituais = {
   sabak: { label: "PC.skills.sabak" },
 };
 
-PC.weaponSubtypes = {
-  melee: { label: "PC.melee" },
-  shield: { label: "PC.shield" },
-  ranged: { label: "PC.ranged" },
-  ammo: { label: "PC.ammo" },
+PC.ability = {
+  subtypes: {
+    technique: { label: "PC.ability.subtypes.technique.label" },
+    power: { label: "PC.ability.subtypes.power.label" },
+  },
 };
 
-PC.meleeGroups = {
-  unarmed: { label: "PC.unarmed" },
-  light: { label: "PC.light" },
-  throwing: { label: "PC.throwing" },
-  sword: { label: "PC.sword" },
-  javelin: { label: "PC.javelin" },
-  spear: { label: "PC.spear" },
-  polearm: { label: "PC.polearm" },
-  ax: { label: "PC.ax" },
-  hammer: { label: "PC.hammer" },
-  mace: { label: "PC.mace" },
-  flail: { label: "PC.flail" },
-  exotic: { label: "PC.exotic" },
+PC.action = {
+  types: {
+    attack: {
+      label: "PC.action.types.attack.label",
+      subtypes: {
+        melee: { label: "PC.action.types.attack.subtype.melee" },
+        throw: { label: "PC.action.types.attack.subtype.throw" },
+        projectile: { label: "PC.action.types.attack.subtype.projectile" },
+        jet: { label: "PC.action.types.attack.subtype.jet" },
+        aoe: { label: "PC.action.types.attack.subtype.aoe" },
+        affliction: { label: "PC.action.types.attack.subtype.affliction" },
+        mind: { label: "PC.action.types.attack.subtype.mind" },
+        social: { label: "PC.action.types.attack.subtype.social" },
+      },
+    },
+    direct: { label: "PC.action.types.direct.label" },
+    test: { label: "PC.action.types.test.label" },
+  },
 };
 
-PC.shieldGroups = {
-  buckler: { label: "PC.buckler" },
-  shield: { label: "PC.shield" },
-  cover: { label: "PC.cover" },
-  exotic: { label: "PC.exotic" },
+PC.weapon = {
+  subtypes: {
+    melee: {
+      label: "PC.weapon.subtypes.melee.label",
+      groups: {
+        unarmed: { label: "PC.weapon.subtypes.melee.groups.unarmed" },
+        light: { label: "PC.weapon.subtypes.melee.groups.light" },
+        throwing: { label: "PC.weapon.subtypes.melee.groups.throwing" },
+        sword: { label: "PC.weapon.subtypes.melee.groups.sword" },
+        javelin: { label: "PC.weapon.subtypes.melee.groups.javelin" },
+        spear: { label: "PC.weapon.subtypes.melee.groups.spear" },
+        polearm: { label: "PC.weapon.subtypes.melee.groups.polearm" },
+        ax: { label: "PC.weapon.subtypes.melee.groups.ax" },
+        hammer: { label: "PC.weapon.subtypes.melee.groups.hammer" },
+        mace: { label: "PC.weapon.subtypes.melee.groups.mace" },
+        flail: { label: "PC.weapon.subtypes.melee.groups.flail" },
+        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
+      },
+    },
+    shield: {
+      label: "PC.weapon.subtypes.shield.label",
+      groups: {
+        buckler: { label: "PC.weapon.subtypes.shield.groups.buckler" },
+        shield: { label: "PC.weapon.subtypes.shield.groups.shield" },
+        cover: { label: "PC.weapon.subtypes.shield.groups.cover" },
+        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
+      },
+    },
+    ranged: {
+      label: "PC.weapon.subtypes.ranged.label",
+      groups: {
+        bow: { label: "PC.weapon.subtypes.ranged.groups.bow" },
+        sling: { label: "PC.weapon.subtypes.ranged.groups.sling" },
+        crossbow: { label: "PC.weapon.subtypes.ranged.groups.crossbow" },
+        pistol: { label: "PC.weapon.subtypes.ranged.groups.pistol" },
+        rifle: { label: "PC.weapon.subtypes.ranged.groups.rifle" },
+        shotgun: { label: "PC.weapon.subtypes.ranged.groups.shotgun" },
+        cannon: { label: "PC.weapon.subtypes.ranged.groups.cannon" },
+        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
+      },
+    },
+    ammo: {
+      label: "PC.weapon.subtypes.ammo.label",
+      groups: {
+        pebble: { label: "PC.weapon.subtypes.ammo.groups.pebble" },
+        arrow: { label: "PC.weapon.subtypes.ammo.groups.arrow" },
+        bolt: { label: "PC.weapon.subtypes.ammo.groups.bolt" },
+        gasoil: { label: "PC.weapon.subtypes.ammo.groups.gasoil" },
+        harpoon: { label: "PC.weapon.subtypes.ammo.groups.harpoon" },
+        lead: { label: "PC.weapon.subtypes.ammo.groups.lead" },
+        cartridge: { label: "PC.weapon.subtypes.ammo.groups.cartridge" },
+        bullet: { label: "PC.weapon.subtypes.ammo.groups.bullet" },
+        cannonball: { label: "PC.weapon.subtypes.ammo.groups.cannonball" },
+        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
+      },
+    },
+    exotic: {
+      label: "PC.weapon.subtypes.exotic.label",
+      groups: {
+        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
+      },
+    },
+  },
 };
 
-PC.rangedGroups = {
-  bow: { label: "PC.bow" },
-  sling: { label: "PC.sling" },
-  crossbow: { label: "PC.crossbow" },
-  pistol: { label: "PC.pistol" },
-  rifle: { label: "PC.rifle" },
-  shotgun: { label: "PC.shotgun" },
-  cannon: { label: "PC.cannon" },
-  exotic: { label: "PC.exotic" },
-};
-
-PC.ammoGroups = {
-  pebble: { label: "PC.pebble" },
-  arrow: { label: "PC.arrow" },
-  bolt: { label: "PC.bolt" },
-  gasoil: { label: "PC.gasoil" },
-  harpoon: { label: "PC.harpoon" },
-  lead: { label: "PC.lead" },
-  cartridge: { label: "PC.cartridge" },
-  bullet: { label: "PC.bullet" },
-  cannonball: { label: "PC.cannonball" },
-  exotic: { label: "PC.exotic" },
-};
-
-PC.gearSubtypes = {
-  wear: { label: "PC.vest" },
-  item: { label: "PC.item" },
-};
-
-PC.wearGroups = {
-  vest: { label: "PC.vest" },
-  accessory: { label: "PC.accessory" },
-  gadget: { label: "PC.gadget" },
-};
-
-PC.itemGroups = {
-  alchemical: { label: "PC.alchemical" },
-  trap: { label: "PC.trap" },
-  artifact: { label: "PC.artifact" },
-  matrix: { label: "PC.matrix" },
-  herbal: { label: "PC.herbal" },
-  instrument: { label: "PC.instrument" },
-  utility: { label: "PC.utility" },
-};
-
-PC.itemSubgroups = {
-  potion: { label: "PC.potion" },
-  elixir: { label: "PC.elixir" },
-  poison: { label: "PC.poison" },
-  agent: { label: "PC.agent" },
-  grenade: { label: "PC.grenade" },
+PC.gear = {
+  subtypes: {
+    wear: {
+      label: "PC.gear.subtypes.wear.label",
+      groups: {
+        vest: { label: "PC.gear.subtypes.wear.groups.vest" },
+        accessory: { label: "PC.gear.subtypes.wear.groups.accessory" },
+        gadget: { label: "PC.gear.subtypes.wear.groups.gadget" },
+      },
+    },
+    item: {
+      label: "PC.gear.subtypes.item.label",
+      groups: {
+        alchemical: { label: "PC.gear.subtypes.item.groups.alchemical" },
+        trap: { label: "PC.gear.subtypes.item.groups.trap" },
+        artifact: { label: "PC.gear.subtypes.item.groups.artifact" },
+        matrix: { label: "PC.gear.subtypes.item.groups.matrix" },
+        herbal: { label: "PC.gear.subtypes.item.groups.herbal" },
+        instrument: { label: "PC.gear.subtypes.item.groups.instrument" },
+        utility: { label: "PC.gear.subtypes.item.groups.utility" },
+      },
+      subgroups: {
+        potion: { label: "PC.gear.subtypes.item.subgroups.potion" },
+        elixir: { label: "PC.gear.subtypes.item.subgroups.elixir" },
+        poison: { label: "PC.gear.subtypes.item.subgroups.poison" },
+        agent: { label: "PC.gear.subtypes.item.subgroups.agent" },
+        grenade: { label: "PC.gear.subtypes.item.subgroups.grenade" },
+      },
+    },
+  },
 };
 
 PC.currency = {
@@ -500,14 +542,15 @@ PC.currency = {
   },
 };
 
-PC.passiveSubtypes = {
-  benefit: { label: "PC.benefit" },
-  drawback: { label: "PC.drawback" },
-};
-
-PC.passiveAcquirement = {
-  original: { label: "PC.original" },
-  natural: { label: "PC.natural" },
-  learned: { label: "PC.learned" },
-  suffered: { label: "PC.suffered" },
+PC.passive = {
+  subtypes: {
+    benefit: { label: "PC.passive.subtypes.benefit" },
+    drawback: { label: "PC.passive.subtypes.drawback" },
+  },
+  acquirement: {
+    original: { label: "PC.passive.acquirement.original" },
+    natural: { label: "PC.passive.acquirement.natural" },
+    learned: { label: "PC.passive.acquirement.learned" },
+    suffered: { label: "PC.passive.acquirement.suffered" },
+  },
 };

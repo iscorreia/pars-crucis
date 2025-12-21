@@ -1,5 +1,35 @@
 {{! Abilities tab }}
 
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="abilities">
-  <div class="abilities-tab">Äbilities HERE</div>
+  <div class="abilities-tab">
+    <h4>
+      <div>{{localize "PC.tabs.abilities"}}</div>
+    </h4>
+    <ol>
+      {{#each system.abilities as |ability obj|}}
+        <li class="item-line">
+          <img src="{{ability.img}}" width="24" height="24" />
+          <h5>{{ability.name}}</h5>
+          <span>{{ability.system.details.experience}}</span>
+
+          <div>
+            <a
+              data-action="clickEdit"
+              data-item-id="{{ability._id}}"
+              title="{{localize 'PC.edit'}}"
+            >
+              <i class="fas fa-edit"></i>
+            </a>
+            <a
+              data-action="clickDelete"
+              data-item-id="{{ability._id}}"
+              title="{{localize 'PC.delete'}}"
+            >
+              <i class="fa-solid fa-trash-can"></i>
+            </a>
+          </div>
+        </li>
+      {{/each}}
+    </ol>
+  </div>
 </section>

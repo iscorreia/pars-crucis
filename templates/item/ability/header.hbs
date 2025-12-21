@@ -18,5 +18,37 @@
         placeholder="Nameless Ability"
       />
     </h2>
+    <div class="flexrow">
+      <select name="system.info.subtype">
+        {{selectOptions
+          config.ability.subtypes
+          selected=system.info.subtype
+          localize=true
+        }}
+      </select>
+      <input
+        name="system.info.art"
+        type="String"
+        value="{{system.info.art}}"
+        data-dtype="String"
+      />
+      <input
+        name="system.info.category"
+        type="String"
+        value="{{system.info.category}}"
+        data-dtype="String"
+      />
+    </div>
+    <div class="flexrow">
+      <div>
+        <h4>{{localize "PC.xp"}}</h4>
+        <input
+          name="system.details.experience"
+          type="Number"
+          value="{{system.details.experience}}"
+          data-dtype="Number"
+        />
+      </div>
+    </div>
   </div>
 </header>
