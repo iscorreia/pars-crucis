@@ -1,9 +1,23 @@
-const { BooleanField, NumberField, SchemaField, StringField } =
+import { PC } from "../config.mjs";
+
+const { ArrayField, BooleanField, NumberField, SchemaField, StringField } =
   foundry.data.fields;
 
 export class AbilityModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
+      info: new SchemaField({
+        subtypes: new StringField({ initial: "" }),
+        art: new StringField({ initial: null, nullable: true }),
+        category: new StringField({ initial: null, nullable: true }),
+      }),
+      actions: new ArrayField(action(), { initial: [] }),
+      details: new SchemaField({
+        experience: new NumberField({ initial: 2, integer: true }),
+        preRequisites: new StringField({ initial: "" }),
+        esoteric: new BooleanField({ initial: false }),
+        properties: new ArrayField(property(), { initial: [] }),
+      }),
       description: description(),
     };
   }
@@ -48,11 +62,48 @@ export class WeaponModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       info: information({ subtype: "melee", group: "light" }),
+      actions: new ArrayField(action(), { initial: [] }),
       cost: itemCost(),
       details: details({ equippable: true }),
       description: description(),
     };
   }
+}
+
+function action() {
+  return new SchemaField({
+    label: new StringField({ initial: "" }),
+    type: new StringField({
+      initial: "test",
+      choices: ["attack", "direct", "test"], // create EXECUTION LOGIC FOR THE TYPE
+      required: true,
+    }),
+    effect: new StringField({ initial: "" }),
+    range: new StringField({ initial: "" }),
+    effort: new StringField({ initial: 0 }),
+    duration: new StringField({ initial: "" }),
+    properties: new ArrayField(property(), { initial: [] }),
+    skill: new StringField({
+      nullable: true,
+      choices: () => Object.keys(PC.skills),
+    }),
+
+    // ATTACK-only
+    attackType: new StringField({
+      nullable: true,
+      choices: () => Object.keys(PC.attackTypes),
+    }),
+
+    // TEST-only
+    difficulty: new NumberField({ nullable: true }),
+  });
+}
+
+function property() {
+  return new SchemaField({
+    key: new StringField({ required: true }),
+    value: new NumberField({ initial: null, nullable: true }),
+  });
 }
 
 function itemCost() {

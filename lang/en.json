@@ -302,6 +302,14 @@
     "elixir": "Elixir",
     "poison": "Veneno",
     "agent": "Agente",
-    "grenade": "Granada"
+    "grenade": "Granada",
+
+    "throw": "Arremesso",
+    "projectile": "Projétil",
+    "jet": "Jato",
+    "aoe": "Área",
+    "affliction": "Aflição",
+    "mind": "Mental",
+    "social": "Social"
   }
 }

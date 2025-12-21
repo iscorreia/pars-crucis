@@ -511,3 +511,14 @@ PC.passiveAcquirement = {
   learned: { label: "PC.learned" },
   suffered: { label: "PC.suffered" },
 };
+
+PC.attackTypes = {
+  melee: { label: "PC.melee" },
+  throw: { label: "PC.throw" },
+  projectile: { label: "PC.projectile" },
+  jet: { label: "PC.jet" },
+  aoe: { label: "PC.aoe" },
+  affliction: { label: "PC.affliction" },
+  mind: { label: "PC.mind" },
+  social: { label: "PC.social" },
+};
