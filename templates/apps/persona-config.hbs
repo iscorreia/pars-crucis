@@ -33,7 +33,7 @@
           type="String"
           data-dtype="Number"
           name="system.attributes.{{@key}}.adjust"
-          value="{{attribute.adjust}}"
+          value="{{numberFormat attribute.adjust sign=true}}"
         /></div>
     {{/each}}
   </div>
@@ -45,10 +45,26 @@
           type="String"
           data-dtype="Number"
           name="system.subattributes.{{@key}}.adjust"
-          value="{{sub.adjust}}"
+          value="{{numberFormat sub.adjust sign=true}}"
         />
       </div>
     {{/each}}
+    <div class="sub-config-item">
+      <h4>{{localize "PC.movement.abv"}}</h4>
+      <div class="flexrow">
+        <input
+          name="system.movement.walk.adjust"
+          type="String"
+          value="{{numberFormat system.movement.walk.adjust sign=true}}"
+          data-dtype="Number"
+        />>
+        <input
+          name="system.movement.sprint.adjust"
+          type="String"
+          value="{{numberFormat system.movement.sprint.adjust sign=true}}"
+          data-dtype="Number"
+        /></div>
+    </div>
     <div class="sub-config-item">
       <h4>{{localize "PC.luck"}}</h4>
       <input
@@ -66,7 +82,7 @@
           type="String"
           data-dtype="Number"
           name="system.minors.{{@key}}.adjust"
-          value="{{minor.adjust}}"
+          value="{{numberFormat minor.adjust sign=true}}"
         />
       </div>
     {{/each}}

@@ -35,19 +35,9 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
         def: attributeField(),
       }),
 
-      mv: new SchemaField({
-        walk: new NumberField({ initial: 4, integer: true, min: 0 }),
-        override: new NumberField({
-          initial: null,
-          integer: true,
-          nullable: true,
-        }),
-        sprint: new NumberField({ initial: 6, integer: true, min: 0 }),
-        sprintOverride: new NumberField({
-          initial: null,
-          integer: true,
-          nullable: true,
-        }),
+      movement: new SchemaField({
+        walk: attributeField({ initialBase: 4, minBase: 0 }),
+        sprint: attributeField({ initialBase: 4, minBase: 0 }),
       }),
 
       subattributes: new SchemaField({
@@ -109,6 +99,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const infoData = this.info;
     const luckData = this.luck;
     const minorsData = this.minors;
+    const mvData = this.movement;
     const parent = this.parent;
     const skillsData = this.skills;
     const skillsXp = [];
@@ -161,12 +152,13 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     }
 
     // ATTRIBUTES handling!
+    const origin = ORIGINS[infoData.origin];
     for (let [key, att] of Object.entries(attributesData)) {
       if (key !== "def") {
         att.base =
           Math.max(...attValues[key]) +
           att.adjust +
-          (ORIGINS[infoData.origin].attributes[key] || 0);
+          (origin.attributes[key] || 0);
       }
       if (key === "def") {
         for (let csk of combatSkills) {
@@ -196,23 +188,19 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     attributesData.def.base =
       Math.max(...combatValue, refDef) +
       attributesData.def.adjust +
-      (ORIGINS[infoData.origin].attributes.def || 0);
+      (origin.attributes.def || 0);
 
     deriveAttribute(attributesData.def);
 
-    // Sets PV and PE maximum values
-    subData.pv.max =
-      25 +
-      2 * attributesData.fis.derived +
-      attributesData.ego.derived +
-      2 * skillsData.resis.level +
-      subData.pv.adjust;
-    subData.pe.max =
-      25 +
-      attributesData.cog.derived +
-      2 * attributesData.esp.derived +
-      2 * skillsData.amago.level +
-      subData.pe.adjust;
+    // SUBATTRIBUTES handling
+    subData.pv.max = this.maxStatus("pv", "fis", "ego", "resis");
+    subData.pe.max = this.maxStatus("pe", "esp", "cog", "amago");
+    mvData.walk.base = origin.attributes.mv + mvData.walk.adjust || 4;
+    mvData.sprint.base =
+      (mvData.walk.override || mvData.walk.base) +
+      mvData.sprint.adjust +
+      2 +
+      Math.ceil(Math.max(skillsData.atlet.level, skillsData.agili.level) / 2);
 
     // Works current PV and PE **MAKE THIS INTO A FUNCTION**
     const pvDerived = Number(subData.pv?.current ?? 0);
@@ -261,6 +249,17 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     });
 
     return data;
+  }
+
+  maxStatus(subatt, mainAtt, secAtt, skill) {
+    const max =
+      25 +
+      2 * this.attributes[mainAtt].derived +
+      this.attributes[secAtt].derived +
+      2 * this.skills[skill].level +
+      this.subattributes[subatt].adjust;
+
+    return max;
   }
 }
 

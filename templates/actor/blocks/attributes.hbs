@@ -35,38 +35,61 @@
   {{/each}}
 </section>
 <section class="subattributes flexrow">
-  <div class="flexrow">
-    {{localize "PC.subattributes.pv.label"}}
-    <input
-      class="subatt-value"
-      type="Number"
-      name="system.subattributes.pv.current"
-      value="{{system.subattributes.pv.current}}"
-      data-dtype="Number"
-    />/<input
-      class="att-value"
-      type="number"
-      name="system.subattributes.pv.override"
-      value="{{system.subattributes.pv.override}}"
-      placeholder="{{system.subattributes.pv.max}}"
-      data-dtype="Number"
-    />
+  <div>
+    <h4>{{localize "PC.subattributes.pv.label"}}</h4>
+    <div class="flexrow">
+      <input
+        class="subatt-value"
+        type="Number"
+        name="system.subattributes.pv.current"
+        value="{{system.subattributes.pv.current}}"
+        data-dtype="Number"
+      />/<input
+        class="att-value"
+        type="Number"
+        name="system.subattributes.pv.override"
+        value="{{system.subattributes.pv.override}}"
+        placeholder="{{system.subattributes.pv.max}}"
+        data-dtype="Number"
+      />
+    </div>
   </div>
-  <div class="flexrow">
-    {{localize "PC.subattributes.pe.label"}}
-    <input
-      class="subatt-value"
-      type="Number"
-      name="system.subattributes.pe.current"
-      value="{{system.subattributes.pe.current}}"
-      data-dtype="Number"
-    />/<input
-      class="att-value"
-      type="number"
-      name="system.subattributes.pe.override"
-      value="{{system.subattributes.pe.override}}"
-      placeholder="{{system.subattributes.pe.max}}"
-      data-dtype="Number"
-    />
+  <div>
+    <h4>{{localize "PC.subattributes.pe.label"}}</h4>
+    <div class="flexrow">
+      <input
+        class="subatt-value"
+        type="Number"
+        name="system.subattributes.pe.current"
+        value="{{system.subattributes.pe.current}}"
+        data-dtype="Number"
+      />/<input
+        class="att-value"
+        type="Number"
+        name="system.subattributes.pe.override"
+        value="{{system.subattributes.pe.override}}"
+        placeholder="{{system.subattributes.pe.max}}"
+        data-dtype="Number"
+      />
+    </div>
+  </div>
+  <div>
+    <h4>{{localize "PC.movement.label"}}</h4>
+    <div class="flexrow">
+      <input
+        type="Number"
+        name="system.movement.walk.override"
+        value="{{system.movement.walk.override}}"
+        placeholder="{{system.movement.walk.base}}"
+        data-dtype="Number"
+      />>>
+      <input
+        type="Number"
+        name="system.movement.sprint.override"
+        value="{{system.movement.sprint.override}}"
+        placeholder="{{system.movement.sprint.base}}"
+        data-dtype="Number"
+      />
+    </div>
   </div>
 </section>

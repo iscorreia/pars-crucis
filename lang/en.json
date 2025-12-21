@@ -93,6 +93,10 @@
         "abv": "PE"
       }
     },
+    "movement": {
+      "label": "Movimentação",
+      "abv": "MV"
+    },
     "minors": {
       "sau": {
         "label": "Saúde",
