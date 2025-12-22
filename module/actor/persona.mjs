@@ -195,7 +195,9 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
     // SUBATTRIBUTES handling
     subData.pv.max = this.maxStatus("pv", "fis", "ego", "resis");
+    subData.pv.percent = (100 * subData.pv.current) / subData.pv.max;
     subData.pe.max = this.maxStatus("pe", "esp", "cog", "amago");
+    subData.pe.percent = (100 * subData.pe.current) / subData.pe.max;
     mvData.walk.base = origin.attributes.mv + mvData.walk.adjust || 4;
     mvData.sprint.base =
       (mvData.walk.override || mvData.walk.base) +

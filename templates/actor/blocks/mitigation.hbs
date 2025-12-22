@@ -1,24 +1,29 @@
 {{! Mitigation block }}
 
-<section class="mitigation flexrow">
-  <div class="flexcol">
-    <div class="flexrow">
-      <h4>AR</h4>
-      <div>5</div>
+<section class="mitigation">
+  <div class="mitigation-aux">Robustez</div>
+  <div class="mitigation-mainline">
+    <div class="mitigation-field ar-field">
+      <h4 class="ar-title">AR</h4>
+      <input class="mitigation-value ar-value" placeholder="86" />
+      <input class="mitigation-mod ar-mod" />
     </div>
-    <div class="flexrow">
-      <h4>AB</h4>
-      <div>4</div>
+
+    <div class="mitigation-aux-col">
+      <div class="aux-line">
+        <input class="aux-value" placeholder="+88" />
+      </div>
+      <div class="aux-line">
+        <input class="aux-value" placeholder="+5" />
+      </div>
+    </div>
+
+    {{! <div class="separator"></div> }}
+    <div class="mitigation-field ab-field">
+      <input class="mitigation-value ab-value" placeholder="6" />
+      <input class="mitigation-mod ab-mod" />
+      <h4 class="ab-title">AB</h4>
     </div>
   </div>
-  <div class="flexcol">
-    <div class="flexrow">
-      <div>+1</div>
-      <div>Robustez</div>
-    </div>
-    <div class="flexrow">
-      <div>+0</div>
-      <div>Isolante</div>
-    </div>
-  </div>
+  <div class="mitigation-aux">Isolante</div>
 </section>
