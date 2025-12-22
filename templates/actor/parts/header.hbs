@@ -6,29 +6,19 @@
     src="{{actor.img}}"
     data-action="editImage"
     data-edit="img"
-    height="155"
-    width="155"
+    height="160"
+    width="160"
   />
-  <div>
-    <h2 class="actor-name">
-      <input
-        class="actor-name_input"
-        type="text"
-        name="name"
-        value="{{actor.name}}"
-        placeholder="Nameless"
-      />
-    </h2>
-    <div class="flexrow">
-     <span>{{localize (concat "PC.origins." system.info.origin)}}</span>
-     <span>{{localize (concat "PC.cultures." system.info.culture)}}</span>
-     <span>{{localize (concat "PC.personas." system.info.persona)}}</span>
+  <div class="header-center-block">
+    <h1 class="actor-name">{{actor.name}}</h1>
+    <div class="actor-info flexrow">
+     <span>{{localize (concat "PC.origins." system.info.origin)}} · {{localize (concat "PC.cultures." system.info.culture)}} {{system.info.subculture}} · {{localize (concat "PC.personas." system.info.persona)}}</span>
     </div>
     <div>
       {{> systems/pars-crucis/templates/actor/blocks/attributes.hbs}}
     </div>
   </div>
-  <div>
+  <div class="header-right-block">
     {{> systems/pars-crucis/templates/actor/blocks/experience.hbs}}
     {{> systems/pars-crucis/templates/actor/blocks/minors.hbs}}
     {{> systems/pars-crucis/templates/actor/blocks/mitigation.hbs}}

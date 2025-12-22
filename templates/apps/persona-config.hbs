@@ -3,12 +3,22 @@
 <section class="persona-config">
   <h3>{{localize "PC.configPersona"}}</h3>
   <p>MESSAGE HERE</p>
+  <h2>
+    {{log system.parent}}
+    <input
+      class="actor-name_input"
+      type="text"
+      name="name"
+      value="{{system.parent.name}}"
+      placeholder="Nameless"
+    />
+  </h2>
   <div class="flexrow">
-    Origem
+    Origem:
     <select name="system.info.origin">
       {{selectOptions config.origins selected=system.info.origin localize=true}}
     </select>
-    / cultura
+    / cultura:
     <select name="system.info.culture">
       {{selectOptions
         config.cultures
@@ -16,7 +26,14 @@
         localize=true
       }}
     </select>
-    / persona
+    / subcultura:
+    <input
+      type="String"
+      data-dtype="String"
+      name="system.info.subculture"
+      value="{{system.info.subculture}}"
+    />
+    / persona:
     <select name="system.info.persona">
       {{selectOptions
         config.personas

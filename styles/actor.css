@@ -3,16 +3,150 @@
   ul {
     padding: 0;
   }
-  h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding: 0;
     margin: 0;
+  }
+  h3 {
+    height: 24px;
+    line-height: 24px;
+    font-size: 26px;
+  }
+  h4 {
+    font-size: var(--font-size-20);
+  }
+  input {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: var(--color-cool-4);
+    border: none;
   }
 }
 
+/* ACTOR SHEET HEADER */
 .sheet-header {
   display: flex;
   flex-direction: row;
+  height: 150px;
+}
+.profile-img {
+  margin: -5px;
+  position: relative;
+}
+.actor-name {
+  font-size: 40px;
+  height: 26px;
+  line-height: 20px;
+  font-weight: normal;
+  margin-left: -50px;
+  padding-left: 50px;
+  border-color: var(--color-light-6);
+  border-style: solid;
+  border-width: 0 0 1px 0;
+}
+.header-center-block {
+  width: 70%;
+  margin-right: 3px;
+  .actor-info {
+    line-height: 14px;
+  }
+}
+.header-right-block {
+  width: 30%;
+}
+.attributes,
+.subattributes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.attributes {
+  margin-bottom: 5px;
+}
+.attribute-block,
+.subattribute-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.separator {
+  margin: auto 1px;
+  height: 40px;
+  border-width: 0px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: var(--color-light-6);
+}
+.att-name {
+  font-family: Cambria;
+}
+.att-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "SR";
+  line-height: 24px;
+  width: 100%;
+  .att-value {
+    font-size: 42px;
+    padding-top: 1px;
+    height: 36px;
+    width: 60%;
+  }
+  .att-add {
+    display: flex;
+    flex-direction: column;
+    height: 36px;
+    width: 40%;
+    .att-modifier,
+    .att-static {
+      font-size: 24px;
+      height: 50%;
+    }
+    .att-static {
+      line-height: 20px;
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+}
+.subattributes {
+  .separator {
+    height: 30px;
+  }
+  > .subattribute-block {
+    flex: 1 1 0;
+  }
 }
 
+.subattribute-name {
+  height: 18px;
+}
+.subattribute-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 22px;
+  input {
+    height: 100%;
+  }
+  .subatt-value {
+    font-family: "Cambria";
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+/* Persona config */
 .att-config,
 .sub-config {
   display: flex;
@@ -29,6 +163,10 @@
   input {
     width: 100%;
   }
+}
+
+input.favor-box {
+  background-color: transparent;
 }
 
 .attribute {

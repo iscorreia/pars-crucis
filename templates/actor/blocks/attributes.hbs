@@ -1,9 +1,9 @@
 {{! Attributes central block }}
 
-<section class="attributes flexrow">
+<section class="attributes">
   {{#each config.attributes as |attribute obj|}}
     {{#with (lookup @root.actor.system.attributes obj) as |att|}}
-      <div>
+      <div class="attribute-block">
         <h3 class="att-name">
           {{#if att.disabled}}{{else}}
             <a
@@ -13,7 +13,7 @@
             >{{localize attribute.abv}}</a>
           {{/if}}
         </h3>
-        <div class="att-field flexrow">
+        <div class="att-field">
           <input
             class="att-value"
             type="Number"
@@ -22,22 +22,28 @@
             placeholder="{{att.base}}"
             data-dtype="Number"
           />
-          <input
-            class="att-modifier"
-            type="String"
-            name="system.attributes.{{@key}}.mod"
-            value="{{numberFormat att.mod sign=true}}"
-            data-dtype="Number"
-          />
+          <div class="att-add">
+            <input
+              class="att-modifier"
+              type="String"
+              name="system.attributes.{{@key}}.mod"
+              value="{{numberFormat att.mod sign=true}}"
+              data-dtype="Number"
+            />
+            <div class="att-static">{{att.static}}</div>
+          </div>
         </div>
       </div>
+      {{#unless @last}}
+        <div class="separator"></div>
+      {{/unless}}
     {{/with}}
   {{/each}}
 </section>
-<section class="subattributes flexrow">
-  <div>
-    <h4>{{localize "PC.subattributes.pv.label"}}</h4>
-    <div class="flexrow">
+<section class="subattributes">
+  <div class="subattribute-block">
+    <h4 class="subattribute-name">{{localize "PC.subattributes.pv.label"}}</h4>
+    <div class="subattribute-field">
       <input
         class="subatt-value"
         type="Number"
@@ -45,7 +51,7 @@
         value="{{system.subattributes.pv.current}}"
         data-dtype="Number"
       />/<input
-        class="att-value"
+        class="subatt-value"
         type="Number"
         name="system.subattributes.pv.override"
         value="{{system.subattributes.pv.override}}"
@@ -54,9 +60,10 @@
       />
     </div>
   </div>
-  <div>
-    <h4>{{localize "PC.subattributes.pe.label"}}</h4>
-    <div class="flexrow">
+  <div class="separator"></div>
+  <div class="subattribute-block">
+    <h4 class="subattribute-name">{{localize "PC.subattributes.pe.label"}}</h4>
+    <div class="subattribute-field">
       <input
         class="subatt-value"
         type="Number"
@@ -64,7 +71,7 @@
         value="{{system.subattributes.pe.current}}"
         data-dtype="Number"
       />/<input
-        class="att-value"
+        class="subatt-value"
         type="Number"
         name="system.subattributes.pe.override"
         value="{{system.subattributes.pe.override}}"
@@ -73,9 +80,10 @@
       />
     </div>
   </div>
-  <div>
-    <h4>{{localize "PC.movement.label"}}</h4>
-    <div class="flexrow">
+  <div class="separator"></div>
+  <div class="subattribute-block">
+    <h4 class="subattribute-name">{{localize "PC.movement.label"}}</h4>
+    <div class="subattribute-field">
       <input
         type="Number"
         name="system.movement.walk.override"

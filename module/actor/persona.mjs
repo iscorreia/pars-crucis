@@ -17,6 +17,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       info: new SchemaField({
         origin: new StringField({ initial: "human" }),
         culture: new StringField({ initial: "adv" }),
+        subculture: new StringField({ initial: null, nullable: true }),
         persona: new StringField({ initial: "aven" }),
       }),
 
@@ -341,6 +342,7 @@ function eachAttribute(objectMap, callback) {
 function deriveAttribute(att) {
   const derivedAtt = Number(att.override ?? att.base ?? null);
   att.derived = derivedAtt;
+  att.static = Math.max(10 + att.derived + att.mod, 10);
 
   // It's not working as intended, need to revise
   if (typeof att.mod !== "number") {
