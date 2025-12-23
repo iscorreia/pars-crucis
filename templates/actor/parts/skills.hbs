@@ -1,0 +1,73 @@
+{{! Skill tab }}
+
+<section class="tab {{tab.cssClass}}" data-group="primary" data-tab="skills">
+  <div class="skill-tab">
+    {{#each config.categories as |category objs|}}
+      <ul class="skill-category">
+        <div class="category-line">
+          <h5 class="category-title">{{localize category.label}}</h5>
+          <div class="category-level">{{localize "PC.level.abv"}}</div>
+          <input
+            class="category-modifier"
+            name="system.categoryModifiers.{{@key}}"
+            type="String"
+            value="{{numberFormat
+              (lookup @root.actor.system.categoryModifiers objs)
+              sign=true
+            }}"
+            data-dtype="Number"
+          />
+        </div>
+        {{#each (lookup @root.config objs) as |sk obj|}}
+          {{#with (lookup @root.actor.system.skills obj) as |skill|}}
+            <li class="skill skill-line">
+              <div class="skill-title">
+                <a
+                  data-action="clickSkill"
+                  data-skill="{{@key}}"
+                  data-type="skills"
+                >
+                  {{localize sk.label}}
+                </a>
+                <div class="skill-exp">{{skill.xpSpent}}{{#if skill.favored}}
+                    ({{skill.xpDiscount}}){{/if}}</div>
+              </div>
+              {{#if (gte skill.learning 2)}}
+                <div class="skill-att skill-hard">
+                  <span class="shrunk-att">
+                    {{localize
+                      (concat "PC.attributes." skill.attribute ".abv")
+                    }}{{#if (gte skill.growth 2)}}/{{skill.growth}}{{/if}}
+                  </span>
+                  <span>
+                    {{localize "PC.learning.hard"}}
+                  </span>
+                </div>
+              {{else}}
+                <div class="skill-att">
+                  {{localize
+                    (concat "PC.attributes." skill.attribute ".abv")
+                  }}{{#if (gte skill.growth 2)}}/{{skill.growth}}{{/if}}
+                </div>
+              {{/if}}
+              <input
+                class="skill-level"
+                name="system.skills.{{@key}}.level"
+                type="Number"
+                value="{{skill.level}}"
+                data-dtype="Number"
+              />
+              <input
+                class="skill-mod"
+                type="String"
+                name="system.skills.{{@key}}.mod"
+                value="{{numberFormat skill.mod sign=true}}"
+                data-dtype="Number"
+              />
+            </li>
+          {{/with}}
+        {{/each}}
+      </ul>
+    {{/each}}
+  </div>
+</section>

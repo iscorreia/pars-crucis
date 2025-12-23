@@ -1,16 +1,383 @@
 {
-    "PC": {
-        "attribute": {
-            "fis": {
-                "label": "Físico",
-                "abv": "FIS"
-            }
+  "PC": {
+    "configPersona": "Configuração de Persona",
+    "name": "Nome",
+    "origins": {
+      "capri": "Capríaco",
+      "carne": "Carneador",
+      "guara": "Guará",
+      "human": "Humano",
+      "ligno": "Ligno",
+      "orcin": "Orcino",
+      "queza": "Quezal",
+      "stran": "Estranho"
+    },
+    "origin": "Origem",
+    "cultures": {
+      "adv": "Ádvena",
+      "ana": "Anama",
+      "ank": "Ankhairo",
+      "art": "Artífice",
+      "ast": "Astraio",
+      "azi": "Azírio",
+      "ban": "Bandeiro",
+      "cam": "Campeador",
+      "gua": "Guará",
+      "orc": "Orcai",
+      "reb": "Rebelde",
+      "est": "Estricário",
+      "sab": "Sabak",
+      "sal": "Salutário",
+      "vag": "Vagante",
+      "vel": "Veleiro"
+    },
+    "culture": "Cultura",
+    "subculture": "Subcultura",
+    "personas": {
+      "aven": "Aventureiro",
+      "itin": "Itinerante",
+      "esco": "Escolar",
+      "escu": "Escultor",
+      "visi": "Visionário",
+      "cura": "Curador",
+      "prot": "Protetor",
+      "vang": "Vanguarda",
+      "arau": "Arauto",
+      "asse": "Assecla",
+      "domi": "Dominador",
+      "juiz": "Juiz",
+      "pers": "Perscrutor",
+      "here": "Herege",
+      "dest": "Destruidor",
+      "mart": "Mártir",
+      "zelo": "Zelote",
+      "asce": "Ascendente",
+      "gran": "Grandioso",
+      "perd": "Perdulário",
+      "ermi": "Ermitão",
+      "usur": "Usurpador",
+      "queb": "Quebrado",
+      "ment": "Mentecapto",
+      "miri": "Miríada",
+      "sabi": "Sábio"
+    },
+    "persona": "Persona",
+    "attributes": {
+      "fis": {
+        "label": "Físico",
+        "abv": "FIS"
+      },
+      "des": {
+        "label": "Destreza",
+        "abv": "DES"
+      },
+      "ego": {
+        "label": "Ego",
+        "abv": "EGO"
+      },
+      "cog": {
+        "label": "Cognição",
+        "abv": "COG"
+      },
+      "esp": {
+        "label": "Espírito",
+        "abv": "ESP"
+      },
+      "def": {
+        "label": "Defesa",
+        "abv": "DEF"
+      }
+    },
+    "subattributes": {
+      "pv": {
+        "label": "Pontos de Vida",
+        "abv": "PV"
+      },
+      "pe": {
+        "label": "Pontos de Essência",
+        "abv": "PE"
+      }
+    },
+    "movement": {
+      "label": "Movimentação",
+      "abv": "MV"
+    },
+    "minors": {
+      "sau": {
+        "label": "Saúde",
+        "abv": "Sau"
+      },
+      "ref": {
+        "label": "Reflexo",
+        "abv": "Ref"
+      },
+      "von": {
+        "label": "Vontade",
+        "abv": "Von"
+      }
+    },
+    "luck": "Sorte",
+    "tabs": {
+      "skills": "Perícias",
+      "abilities": "Habilidades",
+      "gear": "Inventário",
+      "passives": "Passivas",
+      "details": "Detalhes"
+    },
+    "level": {
+      "label": "Nível",
+      "abv": "N"
+    },
+    "modifier": {
+      "label": "Modificador",
+      "abv": "MOD"
+    },
+    "categories": {
+      "corporais": "Corporais",
+      "subterfugios": "Subterfúgios",
+      "conhecimentos": "Conhecimentos",
+      "oficios": "Ofícios",
+      "sociais": "Sociais",
+      "espirituais": "Espirituais"
+    },
+    "skills": {
+      "atlet": "Atletismo",
+      "briga": "Briga",
+      "esgri": "Esgrima",
+      "hasta": "Hasta",
+      "malha": "Malha",
+      "resis": "Resistência",
+
+      "agili": "Agilidade",
+      "arque": "Arqueria",
+      "balis": "Balística",
+      "furti": "Furtividade",
+      "ladin": "Ladinagem",
+      "perce": "Percepção",
+
+      "arcan": "Arcanismo",
+      "crono": "Cronociência",
+      "erudi": "Erudição",
+      "medic": "Medicina",
+      "orien": "Orientação",
+      "sobre": "Sobrevivência",
+
+      "alqui": "Alquimia",
+      "armei": "Armeiro",
+      "artes": "Artesão",
+      "condu": "Condução",
+      "engen": "Engenharia",
+      "extra": "Extração",
+
+      "artim": "Artimanha",
+      "bardi": "Bardismo",
+      "domar": "Domar",
+      "expre": "Expressão",
+      "impos": "Imposição",
+      "seduc": "Sedução",
+
+      "amago": "Âmago",
+      "aoism": "Aoismo",
+      "druid": "Druidismo",
+      "eleme": "Elementalismo",
+      "ontol": "Ontologia",
+      "sabak": "Sabakismo"
+    },
+    "learning": {
+      "label": "Aprendizado",
+      "common": "Comum",
+      "hard": "Difícil"
+    },
+    "types": {
+      "item": {
+        "ability": "Habilidade",
+        "gear": "Equipamento",
+        "passive": "Passiva",
+        "weapon": "Armamento"
+      }
+    },
+    "ability": {
+      "label": "Habilidade",
+      "subtypes": {
+        "technique": { "label": "Técnica" },
+        "power": { "label": "Poder" }
+      }
+    },
+    "action": {
+      "label": "Ação",
+      "types": {
+        "attack": {
+          "label": "Ataque",
+          "subtype": {
+            "throw": "Arremesso",
+            "projectile": "Projétil",
+            "jet": "Jato",
+            "aoe": "Área",
+            "affliction": "Aflição",
+            "mind": "Mental",
+            "social": "Social"
+          }
         },
-        "subattribute": {
-            "pv": {
-                "label": "Pontos de Vida",
-                "abv": "PV"
-            }
+        "direct": { "label": "Uso direto" },
+        "test": { "label": "Teste" }
+      }
+    },
+    "weaponry": "Armamentos",
+    "weapon": {
+      "label": "Armamento",
+      "subtypes": {
+        "melee": {
+          "label": "Corpo a corpo",
+          "groups": {
+            "unarmed": "Desarmado",
+            "light": "Arma leve",
+            "throwing": "Arremessável",
+            "sword": "Espada",
+            "javelin": "Azagaia",
+            "spear": "Lança",
+            "polearm": "Arma de haste",
+            "ax": "Machado",
+            "hammer": "Martelo",
+            "mace": "Maça",
+            "flail": "Mangual",
+            "exotic": "Exótico"
+          }
+        },
+        "shield": {
+          "label": "Escudo",
+          "groups": {
+            "shield": "Escudo",
+            "buckler": "Broquel",
+            "cover": "Cobertura",
+            "exotic": "Exótico"
+          }
+        },
+        "ranged": {
+          "label": "À distância",
+          "groups": {
+            "bow": "Arco",
+            "sling": "Estilingue",
+            "crossbow": "Bestra",
+            "pistol": "Pistola",
+            "rifle": "Rifle",
+            "shotgun": "Escopeta",
+            "cannon": "Canhão",
+            "exotic": "Exótico"
+          }
+        },
+        "ammo": {
+          "label": "Munição",
+          "groups": {
+            "pebble": "Calhau",
+            "arrow": "Flecha",
+            "bolt": "Virote",
+            "gasoil": "Gasóleo",
+            "harpoon": "Arpão",
+            "lead": "Chumbo e pólvora",
+            "cartridge": "Cartucho",
+            "bullet": "Bala",
+            "cannonball": "Pelouro",
+            "exotic": "Exótico"
+          }
+        },
+        "exotic": {
+          "label": "Exótico",
+          "groups": {
+            "exotic": "Exótico"
+          }
         }
-    }
+      }
+    },
+    "gear": {
+      "label": "Equipamentos",
+      "subtypes": {
+        "wear": {
+          "label": "Vestimenta",
+          "groups": {
+            "vest": "Vestimenta",
+            "accessory": "Acessório",
+            "gadget": "Engenhoca"
+          }
+        },
+        "item": {
+          "label": "Item",
+          "groups": {
+            "alchemical": "Alquímico",
+            "trap": "Armadilha",
+            "artifact": "Artefato bélico",
+            "matrix": "Matriz",
+            "herbal": "Herbal",
+            "instrument": "Instrumento",
+            "utility": "Utilidade"
+          },
+          "subgroups": {
+            "potion": "Poção",
+            "elixir": "Elixir",
+            "poison": "Veneno",
+            "agent": "Agente",
+            "grenade": "Granada"
+          }
+        }
+      }
+    },
+    "accessories": "Acessórios",
+    "gadgets": "Engenhocas",
+    "alchemicals": "Alquímicos",
+    "traps": "Armadilhas",
+    "artifacts": "Artefatos bélicos",
+    "matrixes": "Matrizes",
+    "herbals": "Herbais",
+    "instruments": "Instrumentos",
+    "utilities": "Utilidades",
+    "passive": {
+      "label": "Passiva",
+      "subtypes": {
+        "benefit": "Benefício",
+        "drawback": "Malefício"
+      },
+      "acquirement": {
+        "suffered": "Sofrida",
+        "learned": "Aprendida",
+        "original": "Original",
+        "natural": "Natural"
+      }
+    },
+    "benefits": "Benefícios",
+    "drawbacks": "Malefícios",
+    "equipment": "Equipamento",
+    "wear": "Vestimentas",
+    "items": "Itens",
+    "currency": {
+      "silver": {
+        "label": "Prata",
+        "abv": "P"
+      },
+      "copper": {
+        "label": "Cobre",
+        "abv": "C"
+      },
+      "unknown": {
+        "label": "Desconhecido",
+        "abv": "Ø"
+      },
+      "priceless": {
+        "label": "Sem preço",
+        "abv": "ꝏ"
+      }
+    },
+    "price": "Preço",
+    "xp": "XP",
+    "pts": "PTS",
+
+    "equip": "Equipar",
+    "edit": "Alterar",
+    "delete": "Destruir",
+    "cancel": "Fechar",
+
+    "description": "Descrição",
+    "equippable": "Equipável",
+    "stackable": "Agrupável",
+    "equipped": "Equipado",
+    "config": "Configurações"
+  }
 }

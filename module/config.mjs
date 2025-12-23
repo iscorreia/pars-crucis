@@ -1,165 +1,556 @@
 export const PC = {};
 
-PC.origin = {
-    humano: { label: "PC.origin.humano" },
-    carneador: { label: "PC.origin.carneador" },
-    capriaco: { label: "PC.origin.capriaco" },
-    guara: { label: "PC.origin.guara" },
-    ligno: { label: "PC.origin.ligno" },
-    orcino: { label: "PC.origin.orcino" },
-    quezal: { label: "PC.origin.quezal" },
-    stranger: { label: "PC.origin.stranger" },
+PC.origins = {
+  human: { label: "PC.origins.human" },
+  carne: { label: "PC.origins.carne" },
+  capri: { label: "PC.origins.capri" },
+  guara: { label: "PC.origins.guara" },
+  ligno: { label: "PC.origins.ligno" },
+  orcin: { label: "PC.origins.orcin" },
+  queza: { label: "PC.origins.queza" },
+  stran: { label: "PC.origins.stran" },
 };
 
-PC.culture = {
-    adv: { label: "PC.culture.adv" },
-    ana: { label: "PC.culture.ana" },
-    ank: { label: "PC.culture.ank" },
-    art: { label: "PC.culture.art" },
-    ast: { label: "PC.culture.ast" },
-    azi: { label: "PC.culture.azi" },
-    ban: { label: "PC.culture.ban" },
-    cam: { label: "PC.culture.cam" },
-    gua: { label: "PC.culture.gua" },
-    orc: { label: "PC.culture.orc" },
-    reb: { label: "PC.culture.reb" },
-    est: { label: "PC.culture.est" },
-    sab: { label: "PC.culture.sab" },
-    sal: { label: "PC.culture.sal" },
-    vag: { label: "PC.culture.vag" },
-    vel: { label: "PC.culture.vel" },
+PC.cultures = {
+  adv: { label: "PC.cultures.adv" },
+  ana: { label: "PC.cultures.ana" },
+  ank: { label: "PC.cultures.ank" },
+  art: { label: "PC.cultures.art" },
+  ast: { label: "PC.cultures.ast" },
+  azi: { label: "PC.cultures.azi" },
+  ban: { label: "PC.cultures.ban" },
+  cam: { label: "PC.cultures.cam" },
+  gua: { label: "PC.cultures.gua" },
+  orc: { label: "PC.cultures.orc" },
+  reb: { label: "PC.cultures.reb" },
+  est: { label: "PC.cultures.est" },
+  sab: { label: "PC.cultures.sab" },
+  sal: { label: "PC.cultures.sal" },
+  vag: { label: "PC.cultures.vag" },
+  vel: { label: "PC.cultures.vel" },
 };
 
-PC.persona = {
-    aven: { label: "PC.persona.aven" },
-    itin: { label: "PC.persona.itin" },
-    esco: { label: "PC.persona.esco" },
-    escu: { label: "PC.persona.escu" },
-    visi: { label: "PC.persona.visi" },
-    cura: { label: "PC.persona.cura" },
-    prot: { label: "PC.persona.prot" },
-    vang: { label: "PC.persona.vang" },
-    arau: { label: "PC.persona.arau" },
-    asse: { label: "PC.persona.asse" },
-    domi: { label: "PC.persona.domi" },
-    juiz: { label: "PC.persona.juiz" },
-    pers: { label: "PC.persona.pers" },
-    here: { label: "PC.persona.here" },
-    dest: { label: "PC.persona.dest" },
-    mart: { label: "PC.persona.mart" },
-    zelo: { label: "PC.persona.zelo" },
-    asce: { label: "PC.persona.asce" },
-    gran: { label: "PC.persona.gran" },
-    perd: { label: "PC.persona.perd" },
-    ermi: { label: "PC.persona.ermi" },
-    usur: { label: "PC.persona.usur" },
-    queb: { label: "PC.persona.queb" },
-    ment: { label: "PC.persona.ment" },
-    miri: { label: "PC.persona.miri" },
-    sabi: { label: "PC.persona.sabi" },
+PC.personas = {
+  aven: { label: "PC.personas.aven", favorables: ["atlet", "agili", "sobre"] },
+  itin: { label: "PC.personas.itin", favorables: ["condu", "orien", "expre"] },
+  esco: { label: "PC.personas.esco", favorables: ["crono", "erudi", "alqui"] },
+  sabi: { label: "PC.personas.sabi", favorables: ["erudi", "expre", "ontol"] },
+  escu: { label: "PC.personas.escu", favorables: ["armei", "artes", "expre"] },
+  visi: { label: "PC.personas.visi", favorables: ["perce", "engen", "seduc"] },
+  cura: { label: "PC.personas.cura", favorables: ["artes", "medic", "domar"] },
+  prot: { label: "PC.personas.prot", favorables: ["atlet", "resis", "armei"] },
+  vang: { label: "PC.personas.vang", favorables: ["esgri", "orien", "impos"] },
+  arau: { label: "PC.personas.arau", favorables: ["expre", "seduc", "ontol"] },
+  asse: { label: "PC.personas.asse", favorables: ["furti", "erudi", "artim"] },
+  domi: { label: "PC.personas.domi", favorables: ["domar", "impos", "seduc"] },
+  juiz: { label: "PC.personas.juiz", favorables: ["perce", "balis", "impos"] },
+  pers: { label: "PC.personas.pers", favorables: ["perce", "arcan", "ontol"] },
+  here: { label: "PC.personas.here", favorables: ["alqui", "engen", "artim"] },
+  dest: { label: "PC.personas.dest", favorables: ["briga", "malha", "extra"] },
+  mart: { label: "PC.personas.mart", favorables: ["resis", "medic", "amago"] },
+  zelo: { label: "PC.personas.zelo", favorables: ["armei", "expre", "amago"] },
+  asce: { label: "PC.personas.asce", favorables: ["amago", "aoism", "ontol"] },
+  gran: { label: "PC.personas.gran", favorables: ["ladin", "impos", "seduc"] },
+  perd: { label: "PC.personas.perd", favorables: ["agili", "ladin", "artim"] },
+  ermi: { label: "PC.personas.ermi", favorables: ["furti", "sobre", "artes"] },
+  usur: { label: "PC.personas.usur", favorables: ["ladin", "artim", "seduc"] },
+  queb: { label: "PC.personas.queb", favorables: ["briga", "extra", "sabak"] },
+  ment: { label: "PC.personas.ment", favorables: ["engen", "domar", "eleme"] },
+  miri: { label: "PC.personas.miri", favorables: ["agili", "furti", "druid"] },
 };
 
-PC.attribute = {
-    fis: {
-        label: "PC.attribute.label.fis",
-        abv: "PC.attribute.abv.fis"
-    },
-    des: {
-        label: "PC.attribute.label.des",
-        abv: "PC.attribute.abv.des"
-    },
-    ego: {
-        label: "PC.attribute.label.ego",
-        abv: "PC.attribute.abv.ego"
-    },
-    cog: {
-        label: "PC.attribute.label.cog",
-        abv: "PC.attribute.abv.cog"
-    },
-    esp: {
-        label: "PC.attribute.label.esp",
-        abv: "PC.attribute.abv.esp"
-    },
+PC.attributes = {
+  fis: { label: "PC.attributes.fis.label", abv: "PC.attributes.fis.abv" },
+  des: { label: "PC.attributes.des.label", abv: "PC.attributes.des.abv" },
+  ego: { label: "PC.attributes.ego.label", abv: "PC.attributes.ego.abv" },
+  cog: { label: "PC.attributes.cog.label", abv: "PC.attributes.cog.abv" },
+  esp: { label: "PC.attributes.esp.label", abv: "PC.attributes.esp.abv" },
+  def: { label: "PC.attributes.def.label", abv: "PC.attributes.def.abv" },
 };
 
-PC.mv = { label: "PC.mv" };
+PC.movement = { label: "PC.movement" };
 PC.def = { label: "PC.def" };
 
-PC.subattribute = {
-    pv: {
-        label: "PC.subattribute.label.pv",
-        abv: "PC.subattribute.abv.pv"
-    },
-    pe: {
-        label: "PC.subattribute.label.pe",
-        abv: "PC.subattribute.abv.pe"
-    }
-}
-
-PC.minor = {
-    sau: {
-        label: "PC.minor.label.sau",
-        abv: "PC.minor.abv.sau"
-    },
-    ref: {
-        label: "PC.minor.label.ref",
-        abv: "PC.minor.abv.ref"
-    },
-    von: {
-        label: "PC.minor.label.von",
-        abv: "PC.minor.abv.von"
-    }
+PC.subattributes = {
+  pv: { label: "PC.subattributes.pv.label", abv: "PC.subattributes.pv.abv" },
+  pe: { label: "PC.subattributes.pe.label", abv: "PC.subattributes.pe.abv" },
 };
 
-PC.category = {
-    corporais: { label: "PC.category.corporais" },
-    subterfugios: { label: "PC.category.subterfugios" },
-    conhecimentos: { label: "PC.category.conhecimentos" },
-    oficios: { label: "PC.category.oficios" },
-    sociais: { label: "PC.category.sociais" },
-    espirituais: { label: "PC.category.espirituais" }
+PC.minors = {
+  sau: { label: "PC.minors.sau.label", abv: "PC.minors.sau.abv" },
+  ref: { label: "PC.minors.ref.label", abv: "PC.minors.ref.abv" },
+  von: { label: "PC.minors.von.label", abv: "PC.minors.von.abv" },
 };
 
-PC.skill = {
-    atlet: { label: "PC.skill.atlet" },
-    briga: { label: "PC.skill.briga" },
-    esgri: { label: "PC.skill.esgri" },
-    hasta: { label: "PC.skill.hasta" },
-    malha: { label: "PC.skill.malha" },
-    resis: { label: "PC.skill.resis" },
+PC.categories = {
+  corporais: { label: "PC.categories.corporais" },
+  subterfugios: { label: "PC.categories.subterfugios" },
+  conhecimentos: { label: "PC.categories.conhecimentos" },
+  oficios: { label: "PC.categories.oficios" },
+  sociais: { label: "PC.categories.sociais" },
+  espirituais: { label: "PC.categories.espirituais" },
+};
 
-    agili: { label: "PC.skill.agili" },
-    arque: { label: "PC.skill.arque" },
-    balis: { label: "PC.skill.balis" },
-    furti: { label: "PC.skill.furti" },
-    ladin: { label: "PC.skill.ladin" },
-    perce: { label: "PC.skill.perce" },
+PC.skills = {
+  atlet: {
+    label: "PC.skills.atlet",
+    att: "fis",
+    cat: "corporais",
+    learning: 1,
+    growth: 1,
+  },
+  briga: {
+    label: "PC.skills.briga",
+    att: "des",
+    cat: "corporais",
+    learning: 1,
+    growth: 1,
+  },
+  esgri: {
+    label: "PC.skills.esgri",
+    att: "des",
+    cat: "corporais",
+    learning: 1,
+    growth: 1,
+  },
+  hasta: {
+    label: "PC.skills.hasta",
+    att: "des",
+    cat: "corporais",
+    learning: 1,
+    growth: 1,
+  },
+  malha: {
+    label: "PC.skills.malha",
+    att: "fis",
+    cat: "corporais",
+    learning: 1,
+    growth: 1,
+  },
+  resis: {
+    label: "PC.skills.resis",
+    att: "fis",
+    cat: "corporais",
+    learning: 2,
+    growth: 2,
+  },
 
-    arcan: { label: "PC.skill.arcan" },
-    crono: { label: "PC.skill.crono" },
-    erudi: { label: "PC.skill.erudi" },
-    medic: { label: "PC.skill.medic" },
-    orien: { label: "PC.skill.orien" },
-    sobre: { label: "PC.skill.sobre" },
+  agili: {
+    label: "PC.skills.agili",
+    att: "des",
+    cat: "subterfugios",
+    learning: 1,
+    growth: 1,
+  },
+  arque: {
+    label: "PC.skills.arque",
+    att: "des",
+    cat: "subterfugios",
+    learning: 1,
+    growth: 2,
+  },
+  balis: {
+    label: "PC.skills.balis",
+    att: "des",
+    cat: "subterfugios",
+    learning: 1,
+    growth: 2,
+  },
+  furti: {
+    label: "PC.skills.furti",
+    att: "des",
+    cat: "subterfugios",
+    learning: 1,
+    growth: 1,
+  },
+  ladin: {
+    label: "PC.skills.ladin",
+    att: "des",
+    cat: "subterfugios",
+    learning: 1,
+    growth: 1,
+  },
+  perce: {
+    label: "PC.skills.perce",
+    att: "des",
+    cat: "subterfugios",
+    learning: 1,
+    growth: 1,
+  },
 
-    alqui: { label: "PC.skill.alqui" },
-    armei: { label: "PC.skill.armei" },
-    artes: { label: "PC.skill.artes" },
-    condu: { label: "PC.skill.condu" },
-    engen: { label: "PC.skill.engen" },
-    extra: { label: "PC.skill.extra" },
+  arcan: {
+    label: "PC.skills.arcan",
+    att: "cog",
+    cat: "conhecimentos",
+    learning: 2,
+    growth: 1,
+  },
+  crono: {
+    label: "PC.skills.crono",
+    att: "cog",
+    cat: "conhecimentos",
+    learning: 2,
+    growth: 1,
+  },
+  erudi: {
+    label: "PC.skills.erudi",
+    att: "cog",
+    cat: "conhecimentos",
+    learning: 1,
+    growth: 1,
+  },
+  medic: {
+    label: "PC.skills.medic",
+    att: "cog",
+    cat: "conhecimentos",
+    learning: 1,
+    growth: 1,
+  },
+  orien: {
+    label: "PC.skills.orien",
+    att: "cog",
+    cat: "conhecimentos",
+    learning: 1,
+    growth: 1,
+  },
+  sobre: {
+    label: "PC.skills.sobre",
+    att: "cog",
+    cat: "conhecimentos",
+    learning: 1,
+    growth: 2,
+  },
 
-    artim: { label: "PC.skill.artim" },
-    bardi: { label: "PC.skill.bardi" },
-    domar: { label: "PC.skill.domar" },
-    expre: { label: "PC.skill.expre" },
-    impos: { label: "PC.skill.impos" },
-    seduc: { label: "PC.skill.seduc" },
+  alqui: {
+    label: "PC.skills.alqui",
+    att: "cog",
+    cat: "oficios",
+    learning: 2,
+    growth: 1,
+  },
+  armei: {
+    label: "PC.skills.armei",
+    att: "fis",
+    cat: "oficios",
+    learning: 2,
+    growth: 1,
+  },
+  artes: {
+    label: "PC.skills.artes",
+    att: "fis",
+    cat: "oficios",
+    learning: 1,
+    growth: 1,
+  },
+  condu: {
+    label: "PC.skills.condu",
+    att: "fis",
+    cat: "oficios",
+    learning: 1,
+    growth: 1,
+  },
+  engen: {
+    label: "PC.skills.engen",
+    att: "cog",
+    cat: "oficios",
+    learning: 2,
+    growth: 1,
+  },
+  extra: {
+    label: "PC.skills.extra",
+    att: "fis",
+    cat: "oficios",
+    learning: 1,
+    growth: 1,
+  },
 
-    amago: { label: "PC.skill.amago" },
-    aoism: { label: "PC.skill.aoism" },
-    druid: { label: "PC.skill.druid" },
-    eleme: { label: "PC.skill.eleme" },
-    ontol: { label: "PC.skill.ontol" },
-    sabak: { label: "PC.skill.sabak" }
-}
+  artim: {
+    label: "PC.skills.artim",
+    att: "ego",
+    cat: "sociais",
+    learning: 1,
+    growth: 1,
+  },
+  bardi: {
+    label: "PC.skills.bardi",
+    att: "ego",
+    cat: "sociais",
+    learning: 2,
+    growth: 1,
+  },
+  domar: {
+    label: "PC.skills.domar",
+    att: "ego",
+    cat: "sociais",
+    learning: 1,
+    growth: 1,
+  },
+  expre: {
+    label: "PC.skills.expre",
+    att: "ego",
+    cat: "sociais",
+    learning: 1,
+    growth: 1,
+  },
+  impos: {
+    label: "PC.skills.impos",
+    att: "ego",
+    cat: "sociais",
+    learning: 1,
+    growth: 1,
+  },
+  seduc: {
+    label: "PC.skills.seduc",
+    att: "ego",
+    cat: "sociais",
+    learning: 1,
+    growth: 1,
+  },
+
+  amago: {
+    label: "PC.skills.amago",
+    att: "esp",
+    cat: "espirituais",
+    learning: 2,
+    growth: 2,
+  },
+  aoism: {
+    label: "PC.skills.aoism",
+    att: "esp",
+    cat: "espirituais",
+    learning: 2,
+    growth: 1,
+  },
+  druid: {
+    label: "PC.skills.druid",
+    att: "esp",
+    cat: "espirituais",
+    learning: 2,
+    growth: 1,
+  },
+  eleme: {
+    label: "PC.skills.eleme",
+    att: "esp",
+    cat: "espirituais",
+    learning: 2,
+    growth: 1,
+  },
+  ontol: {
+    label: "PC.skills.ontol",
+    att: "esp",
+    cat: "espirituais",
+    learning: 1,
+    growth: 1,
+  },
+  sabak: {
+    label: "PC.skills.sabak",
+    att: "esp",
+    cat: "espirituais",
+    learning: 2,
+    growth: 1,
+  },
+};
+
+PC.corporais = {
+  atlet: { label: "PC.skills.atlet" },
+  briga: { label: "PC.skills.briga" },
+  esgri: { label: "PC.skills.esgri" },
+  hasta: { label: "PC.skills.hasta" },
+  malha: { label: "PC.skills.malha" },
+  resis: { label: "PC.skills.resis" },
+};
+
+PC.subterfugios = {
+  agili: { label: "PC.skills.agili" },
+  arque: { label: "PC.skills.arque" },
+  balis: { label: "PC.skills.balis" },
+  furti: { label: "PC.skills.furti" },
+  ladin: { label: "PC.skills.ladin" },
+  perce: { label: "PC.skills.perce" },
+};
+
+PC.conhecimentos = {
+  arcan: { label: "PC.skills.arcan" },
+  crono: { label: "PC.skills.crono" },
+  erudi: { label: "PC.skills.erudi" },
+  medic: { label: "PC.skills.medic" },
+  orien: { label: "PC.skills.orien" },
+  sobre: { label: "PC.skills.sobre" },
+};
+
+PC.oficios = {
+  alqui: { label: "PC.skills.alqui" },
+  armei: { label: "PC.skills.armei" },
+  artes: { label: "PC.skills.artes" },
+  condu: { label: "PC.skills.condu" },
+  engen: { label: "PC.skills.engen" },
+  extra: { label: "PC.skills.extra" },
+};
+
+PC.sociais = {
+  artim: { label: "PC.skills.artim" },
+  bardi: { label: "PC.skills.bardi" },
+  domar: { label: "PC.skills.domar" },
+  expre: { label: "PC.skills.expre" },
+  impos: { label: "PC.skills.impos" },
+  seduc: { label: "PC.skills.seduc" },
+};
+
+PC.espirituais = {
+  amago: { label: "PC.skills.amago" },
+  aoism: { label: "PC.skills.aoism" },
+  druid: { label: "PC.skills.druid" },
+  eleme: { label: "PC.skills.eleme" },
+  ontol: { label: "PC.skills.ontol" },
+  sabak: { label: "PC.skills.sabak" },
+};
+
+PC.ability = {
+  subtypes: {
+    technique: { label: "PC.ability.subtypes.technique.label" },
+    power: { label: "PC.ability.subtypes.power.label" },
+  },
+};
+
+PC.action = {
+  types: {
+    attack: {
+      label: "PC.action.types.attack.label",
+      subtypes: {
+        melee: { label: "PC.action.types.attack.subtype.melee" },
+        throw: { label: "PC.action.types.attack.subtype.throw" },
+        projectile: { label: "PC.action.types.attack.subtype.projectile" },
+        jet: { label: "PC.action.types.attack.subtype.jet" },
+        aoe: { label: "PC.action.types.attack.subtype.aoe" },
+        affliction: { label: "PC.action.types.attack.subtype.affliction" },
+        mind: { label: "PC.action.types.attack.subtype.mind" },
+        social: { label: "PC.action.types.attack.subtype.social" },
+      },
+    },
+    direct: { label: "PC.action.types.direct.label" },
+    test: { label: "PC.action.types.test.label" },
+  },
+};
+
+PC.weapon = {
+  subtypes: {
+    melee: {
+      label: "PC.weapon.subtypes.melee.label",
+      groups: {
+        unarmed: { label: "PC.weapon.subtypes.melee.groups.unarmed" },
+        light: { label: "PC.weapon.subtypes.melee.groups.light" },
+        throwing: { label: "PC.weapon.subtypes.melee.groups.throwing" },
+        sword: { label: "PC.weapon.subtypes.melee.groups.sword" },
+        javelin: { label: "PC.weapon.subtypes.melee.groups.javelin" },
+        spear: { label: "PC.weapon.subtypes.melee.groups.spear" },
+        polearm: { label: "PC.weapon.subtypes.melee.groups.polearm" },
+        ax: { label: "PC.weapon.subtypes.melee.groups.ax" },
+        hammer: { label: "PC.weapon.subtypes.melee.groups.hammer" },
+        mace: { label: "PC.weapon.subtypes.melee.groups.mace" },
+        flail: { label: "PC.weapon.subtypes.melee.groups.flail" },
+        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
+      },
+    },
+    shield: {
+      label: "PC.weapon.subtypes.shield.label",
+      groups: {
+        buckler: { label: "PC.weapon.subtypes.shield.groups.buckler" },
+        shield: { label: "PC.weapon.subtypes.shield.groups.shield" },
+        cover: { label: "PC.weapon.subtypes.shield.groups.cover" },
+        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
+      },
+    },
+    ranged: {
+      label: "PC.weapon.subtypes.ranged.label",
+      groups: {
+        bow: { label: "PC.weapon.subtypes.ranged.groups.bow" },
+        sling: { label: "PC.weapon.subtypes.ranged.groups.sling" },
+        crossbow: { label: "PC.weapon.subtypes.ranged.groups.crossbow" },
+        pistol: { label: "PC.weapon.subtypes.ranged.groups.pistol" },
+        rifle: { label: "PC.weapon.subtypes.ranged.groups.rifle" },
+        shotgun: { label: "PC.weapon.subtypes.ranged.groups.shotgun" },
+        cannon: { label: "PC.weapon.subtypes.ranged.groups.cannon" },
+        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
+      },
+    },
+    ammo: {
+      label: "PC.weapon.subtypes.ammo.label",
+      groups: {
+        pebble: { label: "PC.weapon.subtypes.ammo.groups.pebble" },
+        arrow: { label: "PC.weapon.subtypes.ammo.groups.arrow" },
+        bolt: { label: "PC.weapon.subtypes.ammo.groups.bolt" },
+        gasoil: { label: "PC.weapon.subtypes.ammo.groups.gasoil" },
+        harpoon: { label: "PC.weapon.subtypes.ammo.groups.harpoon" },
+        lead: { label: "PC.weapon.subtypes.ammo.groups.lead" },
+        cartridge: { label: "PC.weapon.subtypes.ammo.groups.cartridge" },
+        bullet: { label: "PC.weapon.subtypes.ammo.groups.bullet" },
+        cannonball: { label: "PC.weapon.subtypes.ammo.groups.cannonball" },
+        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
+      },
+    },
+    exotic: {
+      label: "PC.weapon.subtypes.exotic.label",
+      groups: {
+        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
+      },
+    },
+  },
+};
+
+PC.gear = {
+  subtypes: {
+    wear: {
+      label: "PC.gear.subtypes.wear.label",
+      groups: {
+        vest: { label: "PC.gear.subtypes.wear.groups.vest" },
+        accessory: { label: "PC.gear.subtypes.wear.groups.accessory" },
+        gadget: { label: "PC.gear.subtypes.wear.groups.gadget" },
+      },
+    },
+    item: {
+      label: "PC.gear.subtypes.item.label",
+      groups: {
+        alchemical: { label: "PC.gear.subtypes.item.groups.alchemical" },
+        trap: { label: "PC.gear.subtypes.item.groups.trap" },
+        artifact: { label: "PC.gear.subtypes.item.groups.artifact" },
+        matrix: { label: "PC.gear.subtypes.item.groups.matrix" },
+        herbal: { label: "PC.gear.subtypes.item.groups.herbal" },
+        instrument: { label: "PC.gear.subtypes.item.groups.instrument" },
+        utility: { label: "PC.gear.subtypes.item.groups.utility" },
+      },
+      subgroups: {
+        potion: { label: "PC.gear.subtypes.item.subgroups.potion" },
+        elixir: { label: "PC.gear.subtypes.item.subgroups.elixir" },
+        poison: { label: "PC.gear.subtypes.item.subgroups.poison" },
+        agent: { label: "PC.gear.subtypes.item.subgroups.agent" },
+        grenade: { label: "PC.gear.subtypes.item.subgroups.grenade" },
+      },
+    },
+  },
+};
+
+PC.currency = {
+  silver: { label: "PC.currency.silver.label", abv: "PC.currency.silver.abv" },
+  copper: { label: "PC.currency.copper.label", abv: "PC.currency.copper.abv" },
+  unknown: {
+    label: "PC.currency.unknown.label",
+    abv: "PC.currency.unknown.abv",
+  },
+  priceless: {
+    label: "PC.currency.priceless.label",
+    abv: "PC.currency.priceless.abv",
+  },
+};
+
+PC.passive = {
+  subtypes: {
+    benefit: { label: "PC.passive.subtypes.benefit" },
+    drawback: { label: "PC.passive.subtypes.drawback" },
+  },
+  acquirement: {
+    original: { label: "PC.passive.acquirement.original" },
+    natural: { label: "PC.passive.acquirement.natural" },
+    learned: { label: "PC.passive.acquirement.learned" },
+    suffered: { label: "PC.passive.acquirement.suffered" },
+  },
+};

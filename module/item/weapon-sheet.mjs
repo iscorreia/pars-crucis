@@ -1,0 +1,55 @@
+import { ParsCrucisItemSheet } from "./item-sheet.mjs";
+
+export default class WeaponSheet extends ParsCrucisItemSheet {
+  static DEFAULT_OPTIONS = {
+    window: {
+      icon: "fa fa-address-card",
+    },
+  };
+
+  async _prepareContext() {
+    const context = await super._prepareContext();
+
+    context.tabs = this._prepareTabs("primary");
+
+    return context;
+  }
+
+  /** @inheritdoc Defines where are the template PARTS */
+  static PARTS = {
+    header: {
+      template: `systems/pars-crucis/templates/item/weapon/header.hbs`,
+    },
+    tabs: {
+      template: "templates/generic/tab-navigation.hbs",
+    },
+    description: {
+      template: "systems/pars-crucis/templates/item/parts/description.hbs",
+    },
+    config: {
+      template: "systems/pars-crucis/templates/item/weapon/details.hbs",
+    },
+  };
+
+  static TABS = {
+    primary: {
+      initial: "description",
+      tabs: [
+        { id: "description", label: "Descrição" },
+        { id: "config", label: "Configuração" },
+      ],
+    },
+  };
+
+  async _preparePartContext(partId, context) {
+    switch (partId) {
+      case "description":
+      case "config":
+        context.tab = context.tabs[partId];
+        break;
+      default:
+    }
+
+    return context;
+  }
+}

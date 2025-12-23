@@ -1,3 +1,26 @@
+{{! Sheet header }}
+
 <header class="sheet-header">
-  <h2>HEADER-PNAME<input type="text" name="name" value="{{document.name}}" placeholder="Name" /></h2>
+  <img
+    class="profile-img"
+    src="{{actor.img}}"
+    data-action="editImage"
+    data-edit="img"
+    height="160"
+    width="160"
+  />
+  <div class="header-center-block">
+    <h1 class="actor-name">{{actor.name}}</h1>
+    <div class="actor-info flexrow">
+     <span>{{localize (concat "PC.origins." system.info.origin)}} · {{localize (concat "PC.cultures." system.info.culture)}} {{system.info.subculture}} · {{localize (concat "PC.personas." system.info.persona)}}</span>
+    </div>
+    <div>
+      {{> systems/pars-crucis/templates/actor/blocks/attributes.hbs}}
+    </div>
+  </div>
+  <div class="header-right-block">
+    {{> systems/pars-crucis/templates/actor/blocks/experience.hbs}}
+    {{> systems/pars-crucis/templates/actor/blocks/minors.hbs}}
+    {{> systems/pars-crucis/templates/actor/blocks/mitigation.hbs}}
+  </div>
 </header>
