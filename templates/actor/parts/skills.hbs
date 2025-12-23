@@ -29,8 +29,8 @@
                 >
                   {{localize sk.label}}
                 </a>
-                <span class="skill-exp">{{skill.xpSpent}}{{#if skill.favored}}
-                    ({{skill.xpDiscount}}){{/if}}</span>
+                <div class="skill-exp">{{skill.xpSpent}}{{#if skill.favored}}
+                    ({{skill.xpDiscount}}){{/if}}</div>
               </div>
               {{#if (gte skill.learning 2)}}
                 <div class="skill-att skill-hard">

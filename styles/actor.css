@@ -477,11 +477,18 @@ h1.actor-name {
       font-size: 22px;
     }
     .skill-title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       width: calc(
         100% - 70px - var(--skill-value-width) - var(--skill-value-width)
       );
-    }
-    .skill-exp {
+      .skill-exp {
+        margin: 0 0 3px 3px;
+        font-size: 14px;
+        font-family: "Modesto Condensed";
+        color: var(--color-light-4);
+      }
     }
     .skill-att {
       width: 70px;
