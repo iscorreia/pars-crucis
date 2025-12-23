@@ -1,46 +1,58 @@
 {{! Persona configuration window }}
 
 <section class="persona-config">
-  <h3>{{localize "PC.configPersona"}}</h3>
-  <p>MESSAGE HERE</p>
-  <h2>
+  <p class="info-desc">{{localize "PC.configPersona"}}: defina aqui sua origem,
+    cultura, persona e ajuste os atributos necessários</p>
+  <div class="info-config">
     {{log system.parent}}
-    <input
-      class="actor-name_input"
-      type="text"
-      name="name"
-      value="{{system.parent.name}}"
-      placeholder="Nameless"
-    />
-  </h2>
-  <div class="flexrow">
-    Origem:
-    <select name="system.info.origin">
-      {{selectOptions config.origins selected=system.info.origin localize=true}}
-    </select>
-    / cultura:
-    <select name="system.info.culture">
-      {{selectOptions
-        config.cultures
-        selected=system.info.culture
-        localize=true
-      }}
-    </select>
-    / subcultura:
-    <input
-      type="String"
-      data-dtype="String"
-      name="system.info.subculture"
-      value="{{system.info.subculture}}"
-    />
-    / persona:
-    <select name="system.info.persona">
-      {{selectOptions
-        config.personas
-        selected=system.info.persona
-        localize=true
-      }}
-    </select>
+    <h1>
+      <input
+        class="actor-name_input"
+        type="text"
+        name="name"
+        value="{{system.parent.name}}"
+        placeholder="Nameless"
+      />
+    </h1>
+    <div class="info-item">
+      <h5>{{localize "PC.origin"}}</h5>
+      <select name="system.info.origin">
+        {{selectOptions
+          config.origins
+          selected=system.info.origin
+          localize=true
+        }}
+      </select>
+    </div>
+    <div class="info-item">
+      <h5>{{localize "PC.culture"}}</h5>
+      <select name="system.info.culture">
+        {{selectOptions
+          config.cultures
+          selected=system.info.culture
+          localize=true
+        }}
+      </select>
+    </div>
+    <div class="info-item">
+      <h5>{{localize "PC.subculture"}}</h5>
+      <input
+        type="String"
+        data-dtype="String"
+        name="system.info.subculture"
+        value="{{system.info.subculture}}"
+      />
+    </div>
+    <div class="info-item">
+      <h5>{{localize "PC.persona"}}</h5>
+      <select name="system.info.persona">
+        {{selectOptions
+          config.personas
+          selected=system.info.persona
+          localize=true
+        }}
+      </select>
+    </div>
   </div>
   <div class="att-config">
     {{#each system.attributes as |attribute obj|}}
@@ -52,9 +64,8 @@
           name="system.attributes.{{@key}}.adjust"
           value="{{numberFormat attribute.adjust sign=true}}"
         /></div>
+      <div class="separator"></div>
     {{/each}}
-  </div>
-  <div class="sub-config">
     {{#each system.subattributes as |sub obj|}}
       <div class="sub-config-item">
         <h4>{{localize (concat "PC.subattributes." obj ".abv")}}</h4>
@@ -63,8 +74,8 @@
           data-dtype="Number"
           name="system.subattributes.{{@key}}.adjust"
           value="{{numberFormat sub.adjust sign=true}}"
-        />
-      </div>
+        /></div>
+      <div class="separator"></div>
     {{/each}}
     <div class="sub-config-item">
       <h4>{{localize "PC.movement.abv"}}</h4>
@@ -74,7 +85,7 @@
           type="String"
           value="{{numberFormat system.movement.walk.adjust sign=true}}"
           data-dtype="Number"
-        />>
+        />|
         <input
           name="system.movement.sprint.adjust"
           type="String"
@@ -82,6 +93,7 @@
           data-dtype="Number"
         /></div>
     </div>
+    <div class="separator"></div>
     <div class="sub-config-item">
       <h4>{{localize "PC.luck"}}</h4>
       <input
@@ -92,6 +104,7 @@
         data-dtype="Number"
       />
     </div>
+    <div class="separator"></div>
     {{#each system.minors as |minor obj|}}
       <div class="sub-config-item">
         <h4>{{localize (concat "PC.minors." obj ".abv")}}</h4>
@@ -102,14 +115,18 @@
           value="{{numberFormat minor.adjust sign=true}}"
         />
       </div>
+      {{#unless @last}}
+        <div class="separator"></div>
+      {{/unless}}
     {{/each}}
   </div>
-  <div class="flexrow">
+  <div class="favor-desc">Escolha quais perícias deseja favorecer</div>
+  <div class="favor-block">
     {{#each config.categories as |category objs|}}
-      <ul class="flexcol">
+      <ul class="favor-col">
         {{#each (lookup @root.config objs) as |sk obj|}}
           {{#with (lookup @root.system.skills obj) as |skill|}}
-            <li class="flexrow">
+            <li class="favor-line">
               <input
                 class="favor-box"
                 type="checkbox"
@@ -117,17 +134,17 @@
                 name="system.skills.{{obj}}.favored"
                 {{checked skill.favored}}
               />
-              {{localize sk.label}}{{#if skill.favorable}}!{{/if}}
-              {{#if skill.favored}}
-                <span>{{skill.xpSpent}}</span>
-                <span>(-{{skill.xpDiscount}})</span>
-              {{else}}
-                <span>{{skill.xpSpent}}</span>
-              {{/if}}
+              <div class="skill-label {{#if skill.favorable}}skill-favorable{{/if}}">
+                {{localize sk.label}}
+              </div>
+              <div class="skill-level">{{skill.level}}</div>
             </li>
           {{/with}}
         {{/each}}
       </ul>
+      {{#unless @last}}
+        <div class="separator"></div>
+      {{/unless}}
     {{/each}}
   </div>
 </section>

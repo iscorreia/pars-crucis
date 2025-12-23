@@ -17,7 +17,7 @@ export default class PersonaConfig extends api.HandlebarsApplicationMixin(
     },
     position: {
       width: 800,
-      height: 440,
+      height: 350,
     },
     tag: "form",
     window: {

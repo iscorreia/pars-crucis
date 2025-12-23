@@ -1,6 +1,7 @@
 {
   "PC": {
     "configPersona": "Configuração de Persona",
+    "name": "Nome",
     "origins": {
       "capri": "Capríaco",
       "carne": "Carneador",
@@ -11,6 +12,7 @@
       "queza": "Quezal",
       "stran": "Estranho"
     },
+    "origin": "Origem",
     "cultures": {
       "adv": "Ádvena",
       "ana": "Anama",
@@ -29,6 +31,8 @@
       "vag": "Vagante",
       "vel": "Veleiro"
     },
+    "culture": "Cultura",
+    "subculture": "Subcultura",
     "personas": {
       "aven": "Aventureiro",
       "itin": "Itinerante",
@@ -57,6 +61,7 @@
       "miri": "Miríada",
       "sabi": "Sábio"
     },
+    "persona": "Persona",
     "attributes": {
       "fis": {
         "label": "Físico",

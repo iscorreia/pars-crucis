@@ -12,7 +12,12 @@
     "url": "https://github.com/iscorreia"
   },
   "esmodules": ["parscrucis.mjs"],
-  "styles": ["styles/config.css", "styles/styles.css", "styles/actor.css"],
+  "styles": [
+    "styles/config.css",
+    "styles/styles.css",
+    "styles/actor.css",
+    "styles/persona-config.css"
+  ],
   "packs": [],
   "languages": [
     {
