@@ -25,6 +25,7 @@ p.info-desc {
     line-height: 20px;
     font-weight: normal;
     input {
+      font-size: 32px;
       color: inherit;
       height: 100%;
       padding-top: 2px;

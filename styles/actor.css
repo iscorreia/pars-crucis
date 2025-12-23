@@ -35,6 +35,7 @@
   display: flex;
   flex-direction: row;
   height: 150px;
+  margin-bottom: 5px;
 }
 .profile-img {
   margin: -5px;
@@ -53,7 +54,7 @@ h1.actor-name {
 }
 .header-center-block {
   width: 70%;
-  margin-right: 3px;
+  margin-right: 5px;
   .actor-info {
     line-height: 14px;
   }
@@ -70,7 +71,7 @@ h1.actor-name {
   align-items: center;
 }
 .attributes {
-  margin-bottom: 5px;
+  margin: 3px 0 7px;
 }
 .attribute-block,
 .subattribute-block {
@@ -174,24 +175,35 @@ h1.actor-name {
     background-color: transparent;
     .subatt-current {
       text-align: right;
+      padding-right: 2px;
       background-color: inherit;
     }
     .subatt-max {
       text-align: left;
+      padding-left: 2px;
       background-color: inherit;
     }
   }
 }
 /* PERSONA SHEET HEADER RIGHT BLOCK */
 .experience {
+  width: 100%;
+  height: 26px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 20px;
-  margin: 3px 0;
-  background: var(--color-cool-4);
+  .xp-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 20px;
+    background: var(--color-cool-4);
+    border-radius: 5px;
+    font-family: "Cambria";
+    font-size: 20px;
+  }
   .separator {
     margin-top: -3px;
     border-color: var(--color-warm-3);
@@ -200,11 +212,16 @@ h1.actor-name {
   input {
     background: transparent;
     height: 26px;
+    line-height: 20px;
   }
   .xp-current {
     text-align: center;
     height: 20px;
     width: 30%;
+    line-height: 20px;
+  }
+  .xp-negative {
+    color: var(--color-level-warning);
   }
   .xp-total {
     width: 35%;
@@ -214,7 +231,9 @@ h1.actor-name {
   }
   .xp-name {
     text-align: center;
+    padding-top: 1px;
     width: 20%;
+    font-size: 23px;
   }
 }
 .minors {
@@ -289,10 +308,18 @@ h1.actor-name {
     flex-direction: row;
     align-items: center;
     height: 32px;
+    /* background-color: var(--color-cool-4); */
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--color-cool-4) 25%,
+      var(--color-cool-4) 75%,
+      transparent 100%
+    );
     input {
       font-family: "SR";
-      background-color: var(--color-cool-4);
-      /* background-color: transparent; */
+      /* background-color: var(--color-cool-4); */
+      background-color: transparent;
     }
     .mitigation-field {
       display: flex;
@@ -304,8 +331,10 @@ h1.actor-name {
         font-size: 30px;
         width: 27px;
       }
-      .ar-title {
+      .ar-title,
+      .ab-title {
         width: 27px;
+        padding-top: 2px;
       }
       .ar-value,
       .ar-mod {
@@ -313,14 +342,15 @@ h1.actor-name {
       }
       .ar-value {
         text-align: right;
-      }
-      .ab-title {
-        width: 27px;
+        padding-top: 2px;
       }
       .ab-value,
       .ab-mod {
         text-align: right;
         background-color: transparent;
+      }
+      .ab-value {
+        padding-top: 2px;
       }
     }
     .ar-field {
@@ -329,12 +359,11 @@ h1.actor-name {
     .ab-field {
       width: 45%;
       margin-left: 5px;
-      padding: 4px 0;
+      padding: 2px 0;
       border-style: solid;
       border-width: 0 0 0 2px;
       border-color: var(--color-light-6);
       border-radius: 45px 0 0 45px;
-      /* background: linear-gradient(to right, var(--color-cool-4), transparent); */
       background: linear-gradient(to right, #19367770, transparent);
     }
     .mitigation-aux-col {
@@ -344,11 +373,11 @@ h1.actor-name {
         flex-direction: row;
         align-items: center;
         .aux-value {
-          padding-top: 3px;
+          padding-top: 4px;
           width: 100%;
           height: 16px;
           font-size: 19px;
-          text-align: left;
+          text-align: center;
         }
         /* .aux-mod {
           width: 50%;
@@ -375,13 +404,125 @@ h1.actor-name {
 }
 
 /* TABS */
-.skill-tab {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 400px;
+.persona-nav {
+  height: 26px;
+  margin-bottom: 5px;
+  .active {
+    margin-top: 1px;
+    font-size: calc(var(--font-size-15) + 1px);
+    font-weight: bold;
+  }
+  a {
+    width: 75px;
+  }
 }
 
+/* SKILLS TAB */
+.skill-tab {
+  display: grid;
+  position: relative;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, auto);
+  column-gap: 10px;
+  grid-auto-columns: 1fr;
+  /* height: 400px; */
+  --skill-value-width: 25px;
+  input {
+    font-family: "SR";
+  }
+  ul {
+    width: 100%;
+    margin: 0;
+  }
+  .category-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+    margin-bottom: 5px;
+    .category-title {
+      width: calc(100% - var(--skill-value-width) - var(--skill-value-width));
+      line-height: 20px;
+      font-size: 23px;
+      font-family: "Cambria";
+      font-weight: normal;
+    }
+    .category-level {
+      height: inherit;
+      padding-top: 1px;
+      line-height: 20px;
+      width: var(--skill-value-width);
+      color: var(--color-light-3);
+      font-size: 22px;
+      font-weight: normal;
+      font-family: "SR";
+      text-align: center;
+    }
+    .category-modifier {
+      height: inherit;
+      line-height: 20px;
+      width: var(--skill-value-width);
+      font-size: 19px;
+      border-radius: 0 5px 0 5px;
+    }
+  }
+  .skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 28px;
+    margin: 0;
+    a {
+      font-family: "Modesto Condensed";
+      font-size: 22px;
+    }
+    .skill-title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: calc(
+        100% - 70px - var(--skill-value-width) - var(--skill-value-width)
+      );
+      .skill-exp {
+        margin: 0 0 3px 3px;
+        font-size: 14px;
+        font-family: "Modesto Condensed";
+        color: var(--color-light-4);
+      }
+    }
+    .skill-att {
+      width: 70px;
+      text-align: center;
+    }
+    .skill-hard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      height: 100%;
+      .shrunk-att {
+        font-size: 12px;
+      }
+      span {
+        height: 12px;
+      }
+    }
+    .skill-level {
+      width: var(--skill-value-width);
+      height: 24px;
+      font-size: 24px;
+    }
+    .skill-mod {
+      width: var(--skill-value-width);
+      height: 20px;
+      font-size: 19px;
+      padding-top: 2px;
+      border-radius: 5px 0 5px 0;
+    }
+  }
+}
 .skill-line {
   display: flex;
   flex-direction: row;
@@ -389,42 +530,44 @@ h1.actor-name {
   align-items: center;
   width: 100%;
 }
+/* SKILL TAB SEPARATORS */
+.skill-tab > .skill-category:nth-child(odd)::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 3px;
+  margin-bottom: 6px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
 
+    var(--color-light-6) 50%,
+    transparent 100%
+  );
+}
 .skill-category {
-  width: 32%;
-  align-content: space-between;
+  position: relative;
 }
-
-.category-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  input {
-    font-size: 14px;
-    width: 35px;
-    height: 20px;
-  }
+.skill-tab > .skill-category:nth-child(n + 3):nth-child(-n + 6)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 1px;
+  height: 95%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--color-light-6) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 1;
 }
+/* SKILL TAB currently uses 396 pixels of height from 424 available, what to do with the remaining 28 pixels?  */
 
-.skill-hard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 10px;
-  height: 20px;
-}
-
-.skill-level {
-  height: 20px;
-  width: 25px;
-}
-
-.skill-mod {
-  height: 20px;
-  width: 25px;
-}
-
+/* INVENTORY TAB */
 .item-line {
   display: flex;
   flex-direction: row;

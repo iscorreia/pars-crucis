@@ -1,23 +1,24 @@
 {{! Experience block }}
 
 <section class="experience">
-  <div class="xp-current">{{system.experience.current}}</div>
-  <div class="separator"></div>
-  <input
-    class="xp-total"
-    name="system.experience.total"
-    type="Number"
-    value="{{system.experience.total}}"
-    data-dtype="Number"
-  />
-  <div class="separator"></div>
-  <input
-    class="xp-reserved"
-    name="system.experience.reserved"
-    type="Number"
-    value="{{system.experience.reserved}}"
-    data-dtype="Number"
-  />
-  <div class="separator"></div>
-  <div class="xp-name">{{localize "PC.xp"}}</div>
+  <div class="xp-line">
+    <div class="xp-current {{#if (lt system.experience.current 0)}} xp-negative{{/if}}">{{system.experience.current}}</div>
+    <div class="separator"></div>
+    <input
+      class="xp-total"
+      name="system.experience.total"
+      type="Number"
+      value="{{system.experience.total}}"
+      data-dtype="Number"
+    />
+    <div class="separator"></div>
+    <input
+      class="xp-reserved"
+      name="system.experience.reserved"
+      type="Number"
+      value="{{system.experience.reserved}}"
+      data-dtype="Number"
+    />
+    <div class="separator"></div>
+    <div class="xp-name">{{localize "PC.xp"}}</div></div>
 </section>

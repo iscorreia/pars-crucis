@@ -4,9 +4,9 @@
   <div class="skill-tab">
     {{#each config.categories as |category objs|}}
       <ul class="skill-category">
-        <h5 class="category-title">
-          {{localize category.label}}
-          <span>{{localize "PC.level.abv"}}</span>
+        <div class="category-line">
+          <h5 class="category-title">{{localize category.label}}</h5>
+          <div class="category-level">{{localize "PC.level.abv"}}</div>
           <input
             class="category-modifier"
             name="system.categoryModifiers.{{@key}}"
@@ -17,23 +17,24 @@
             }}"
             data-dtype="Number"
           />
-        </h5>
+        </div>
         {{#each (lookup @root.config objs) as |sk obj|}}
           {{#with (lookup @root.actor.system.skills obj) as |skill|}}
             <li class="skill skill-line">
-              <a
-                data-action="clickSkill"
-                data-skill="{{@key}}"
-                data-type="skills"
-              >
-                {{localize sk.label}}{{#if skill.favorable}}!{{/if}}{{#if
-                  skill.favored
-                }}!{{/if}}
-              </a>
-              <span>{{skill.xpSpent}}</span>
+              <div class="skill-title">
+                <a
+                  data-action="clickSkill"
+                  data-skill="{{@key}}"
+                  data-type="skills"
+                >
+                  {{localize sk.label}}
+                </a>
+                <div class="skill-exp">{{skill.xpSpent}}{{#if skill.favored}}
+                    ({{skill.xpDiscount}}){{/if}}</div>
+              </div>
               {{#if (gte skill.learning 2)}}
-                <div class="skill-hard">
-                  <span>
+                <div class="skill-att skill-hard">
+                  <span class="shrunk-att">
                     {{localize
                       (concat "PC.attributes." skill.attribute ".abv")
                     }}{{#if (gte skill.growth 2)}}/{{skill.growth}}{{/if}}
@@ -43,11 +44,11 @@
                   </span>
                 </div>
               {{else}}
-                <span>
+                <div class="skill-att">
                   {{localize
                     (concat "PC.attributes." skill.attribute ".abv")
                   }}{{#if (gte skill.growth 2)}}/{{skill.growth}}{{/if}}
-                </span>
+                </div>
               {{/if}}
               <input
                 class="skill-level"

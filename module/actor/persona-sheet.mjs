@@ -36,7 +36,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     tabs: {
       // Foundry-provided generic template
       template: "templates/generic/tab-navigation.hbs",
-      // classes: ['sysclass'], // Optionally add extra classes to the part for extra customization
+      classes: ["persona-nav"], // Optionally add extra classes to the part for extra customization
     },
     skills: {
       template: "systems/pars-crucis/templates/actor/parts/skills.hbs",
