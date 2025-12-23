@@ -177,7 +177,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       const attributes = minor.attributes;
       const minorBase =
         ((attributesData[attributes[0]].derived || 0) +
-          (attributesData[attributes[0]].derived || 0)) /
+          (attributesData[attributes[1]].derived || 0)) /
         2;
       minor.base = Math.ceil(minorBase) + minor.adjust;
     }
