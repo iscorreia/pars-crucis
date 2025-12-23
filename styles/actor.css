@@ -54,7 +54,7 @@ h1.actor-name {
 }
 .header-center-block {
   width: 70%;
-  margin-right: 3px;
+  margin-right: 5px;
   .actor-info {
     line-height: 14px;
   }
@@ -405,6 +405,7 @@ h1.actor-name {
 /* TABS */
 .persona-nav {
   height: 26px;
+  margin-bottom: 5px;
   .active {
     margin-top: 1px;
     font-size: calc(var(--font-size-15) + 1px);
@@ -417,12 +418,103 @@ h1.actor-name {
 
 /* SKILLS TAB */
 .skill-tab {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 400px;
+  display: grid;
+  position: relative;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, auto);
+  column-gap: 10px;
+  grid-auto-columns: 1fr;
+  /* height: 400px; */
+  --skill-value-width: 25px;
+  input {
+    font-family: "SR";
+  }
+  ul {
+    width: 100%;
+    margin: 0;
+  }
+  .category-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+    margin-bottom: 5px;
+    .category-title {
+      width: calc(100% - var(--skill-value-width) - var(--skill-value-width));
+      line-height: 20px;
+      font-size: 23px;
+      font-family: "Cambria";
+      font-weight: normal;
+    }
+    .category-level {
+      height: inherit;
+      padding-top: 1px;
+      line-height: 20px;
+      width: var(--skill-value-width);
+      color: var(--color-light-3);
+      font-size: 22px;
+      font-weight: normal;
+      font-family: "SR";
+      text-align: center;
+    }
+    .category-modifier {
+      height: inherit;
+      line-height: 20px;
+      width: var(--skill-value-width);
+      font-size: 19px;
+      border-radius: 0 5px 0 5px;
+    }
+  }
+  .skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 28px;
+    margin: 0;
+    a {
+      font-family: "Modesto Condensed";
+      font-size: 22px;
+    }
+    .skill-title {
+      width: calc(
+        100% - 70px - var(--skill-value-width) - var(--skill-value-width)
+      );
+    }
+    .skill-exp {
+    }
+    .skill-att {
+      width: 70px;
+      text-align: center;
+    }
+    .skill-hard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      height: 100%;
+      .shrunk-att {
+        font-size: 12px;
+      }
+      span {
+        height: 12px;
+      }
+    }
+    .skill-level {
+      width: var(--skill-value-width);
+      height: 24px;
+      font-size: 24px;
+    }
+    .skill-mod {
+      width: var(--skill-value-width);
+      height: 20px;
+      font-size: 19px;
+      padding-top: 2px;
+      border-radius: 5px 0 5px 0;
+    }
+  }
 }
-
 .skill-line {
   display: flex;
   flex-direction: row;
@@ -430,41 +522,42 @@ h1.actor-name {
   align-items: center;
   width: 100%;
 }
+/* SKILL TAB SEPARATORS */
+.skill-tab > .skill-category:nth-child(odd)::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 3px;
+  margin-bottom: 6px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
 
+    var(--color-light-6) 50%,
+    transparent 100%
+  );
+}
 .skill-category {
-  width: 32%;
-  align-content: space-between;
+  position: relative;
 }
-
-.category-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  input {
-    font-size: 14px;
-    width: 35px;
-    height: 20px;
-  }
+.skill-tab > .skill-category:nth-child(n + 3):nth-child(-n + 6)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 1px;
+  height: 95%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--color-light-6) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 1;
 }
-
-.skill-hard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 10px;
-  height: 20px;
-}
-
-.skill-level {
-  height: 20px;
-  width: 25px;
-}
-
-.skill-mod {
-  height: 20px;
-  width: 25px;
-}
+/* SKILL TAB currently uses 396 pixels of height from 424 available, what to do with the remaining 28 pixels?  */
 
 /* INVENTORY TAB */
 .item-line {
