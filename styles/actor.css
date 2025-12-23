@@ -218,6 +218,9 @@ h1.actor-name {
     width: 30%;
     line-height: 20px;
   }
+  .xp-negative {
+    color: var(--color-level-warning);
+  }
   .xp-total {
     width: 35%;
   }
@@ -463,6 +466,7 @@ h1.actor-name {
   width: 25px;
 }
 
+/* INVENTORY TAB */
 .item-line {
   display: flex;
   flex-direction: row;
