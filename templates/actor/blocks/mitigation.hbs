@@ -5,22 +5,47 @@
   <div class="mitigation-mainline">
     <div class="mitigation-field ar-field">
       <h4 class="ar-title">AR</h4>
-      <input class="mitigation-value ar-value" placeholder="86" />
+      <input
+        class="mitigation-value ar-value"
+        name="system.mitigation.ar.override"
+        value="{{system.mitigation.ar.override}}"
+        type="Number"
+        placeholder="{{system.mitigation.ar.base}}"
+        data-dtype="Number"
+      />
       <input class="mitigation-mod ar-mod" />
     </div>
 
     <div class="mitigation-aux-col">
       <div class="aux-line">
-        <input class="aux-value" placeholder="+88" />
+        <input
+          class="aux-value"
+          name="system.mitigation.robust.base"
+          value="{{numberFormat system.mitigation.robust.base sign=true}}"
+          type="String"
+          data-dtype="Number"
+        />
       </div>
       <div class="aux-line">
-        <input class="aux-value" placeholder="+5" />
+        <input
+          class="aux-value"
+          name="system.mitigation.insulant.base"
+          value="{{numberFormat system.mitigation.insulant.base sign=true}}"
+          type="String"
+          data-dtype="Number"
+        />
       </div>
     </div>
 
-    {{! <div class="separator"></div> }}
     <div class="mitigation-field ab-field">
-      <input class="mitigation-value ab-value" placeholder="6" />
+      <input
+        class="mitigation-value ab-value"
+        name="system.mitigation.ab.override"
+        value="{{system.mitigation.ab.override}}"
+        type="Number"
+        placeholder="{{system.mitigation.ab.base}}"
+        data-dtype="Number"
+      />
       <input class="mitigation-mod ab-mod" />
       <h4 class="ab-title">AB</h4>
     </div>

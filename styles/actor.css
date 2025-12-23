@@ -303,10 +303,18 @@ h1.actor-name {
     flex-direction: row;
     align-items: center;
     height: 32px;
+    /* background-color: var(--color-cool-4); */
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--color-cool-4) 25%,
+      var(--color-cool-4) 75%,
+      transparent 100%
+    );
     input {
       font-family: "SR";
-      background-color: var(--color-cool-4);
-      /* background-color: transparent; */
+      /* background-color: var(--color-cool-4); */
+      background-color: transparent;
     }
     .mitigation-field {
       display: flex;
@@ -318,8 +326,10 @@ h1.actor-name {
         font-size: 30px;
         width: 27px;
       }
-      .ar-title {
+      .ar-title,
+      .ab-title {
         width: 27px;
+        padding-top: 2px;
       }
       .ar-value,
       .ar-mod {
@@ -327,14 +337,15 @@ h1.actor-name {
       }
       .ar-value {
         text-align: right;
-      }
-      .ab-title {
-        width: 27px;
+        padding-top: 2px;
       }
       .ab-value,
       .ab-mod {
         text-align: right;
         background-color: transparent;
+      }
+      .ab-value {
+        padding-top: 2px;
       }
     }
     .ar-field {
@@ -343,7 +354,7 @@ h1.actor-name {
     .ab-field {
       width: 45%;
       margin-left: 5px;
-      padding: 4px 0;
+      padding: 2px 0;
       border-style: solid;
       border-width: 0 0 0 2px;
       border-color: var(--color-light-6);
@@ -358,11 +369,11 @@ h1.actor-name {
         flex-direction: row;
         align-items: center;
         .aux-value {
-          padding-top: 3px;
+          padding-top: 4px;
           width: 100%;
           height: 16px;
           font-size: 19px;
-          text-align: left;
+          text-align: center;
         }
         /* .aux-mod {
           width: 50%;

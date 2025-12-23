@@ -78,6 +78,14 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
           },
         }),
       }),
+
+      mitigation: new SchemaField({
+        ar: attributeField({ minBase: 0 }),
+        robust: attributeField({ minBase: 0 }),
+        insulant: attributeField({ minBase: 0 }),
+        ab: attributeField({ minBase: 0 }),
+      }),
+
       categoryModifiers: new SchemaField({
         corporais: new NumberField({ initial: 0, integer: true }),
         subterfugios: new NumberField({ initial: 0, integer: true }),
@@ -86,6 +94,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
         sociais: new NumberField({ initial: 0, integer: true }),
         espirituais: new NumberField({ initial: 0, integer: true }),
       }),
+
       skills: new SchemaField(skills),
     };
   }
@@ -171,6 +180,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     }
 
     eachAttribute(attributesData, deriveAttribute);
+    eachAttribute(attributesData, calculateStatic);
 
     // MINORS handling!
     for (let [_, minor] of Object.entries(minorsData)) {
@@ -192,6 +202,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       (origin.attributes.def || 0);
 
     deriveAttribute(attributesData.def);
+    calculateStatic(attributesData.def);
 
     // SUBATTRIBUTES handling
     subData.pv.max = this.maxStatus("pv", "fis", "ego", "resis");
@@ -344,12 +355,16 @@ function eachAttribute(objectMap, callback) {
 function deriveAttribute(att) {
   const derivedAtt = Number(att.override ?? att.base ?? null);
   att.derived = derivedAtt;
-  att.static = Math.max(10 + att.derived + att.mod, 10);
 
   // It's not working as intended, need to revise
   if (typeof att.mod !== "number") {
     att.mod = 0;
   }
 
+  return att;
+}
+
+function calculateStatic(att) {
+  att.static = Math.max(10 + att.derived + att.mod, 10);
   return att;
 }
