@@ -1,0 +1,124 @@
+/* PERSONA CONFIG */
+section.persona-config {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+p.info-desc {
+  margin-bottom: 6px;
+  text-align: center;
+}
+.info-config {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-color: var(--color-light-6);
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  color: var(--color-light-2);
+  h1 {
+    flex: 3 1 0;
+    font-size: 40px;
+    height: 36px;
+    line-height: 20px;
+    font-weight: normal;
+    input {
+      color: inherit;
+      height: 100%;
+      padding-top: 2px;
+      padding-left: 5px;
+      text-align: left;
+    }
+  }
+  h5 {
+    color: var(--color-light-2);
+    font-size: 15px;
+  }
+  .info-item {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    select,
+    input {
+      width: 100%;
+      padding: 0 2px;
+      font-size: var(--font-size-14);
+      color: inherit;
+      height: 21px;
+    }
+  }
+}
+.att-config {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.att-config-item,
+.sub-config-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 16%;
+  height: 46px;
+  h4 {
+    font-size: 19px;
+    height: 18px;
+  }
+  input {
+    height: 26px;
+    width: 100%;
+    font-size: 24px;
+    font-family: "SR";
+  }
+}
+.favor-desc {
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+}
+.favor-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  ul {
+    margin: 0;
+  }
+  .favor-col {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    .favor-line {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      input {
+        width: 21px;
+      }
+      .skill-label {
+        width: calc(100% - 41px);
+        color: var(--color-light-5);
+      }
+      .skill-favorable {
+        /* color: var(--color-level-success); */
+        color: var(--color-light-2);
+      }
+      .skill-level {
+        width: 20px;
+        font-size: 18px;
+        text-align: center;
+        margin-top: -3px;
+      }
+    }
+  }
+  .separator {
+    height: 140px;
+  }
+}
+input.favor-box {
+  background-color: transparent;
+}

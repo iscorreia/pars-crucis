@@ -1,13 +1,13 @@
 {{! Minors block }}
 
-<section class="minors flexcol">
-  <div class="flexrow">
+<section class="minors">
+  <div class="minor-block">
     <h4 class="luck-name">
       {{#if system.luck.disabled}}{{else}}
         <div>{{localize "PC.luck"}}</div>
       {{/if}}
     </h4>
-    <div class="luck-num flexrow">
+    <div class="luck-num">
       {{#each system.luck.booleans as |boolean obj|}}
         {{#if boolean}}
           <a
@@ -25,10 +25,10 @@
       {{/each}}
     </div>
   </div>
-
+  <div class="separator"></div>
   {{#each config.minors as |minor obj|}}
     {{#with (lookup @root.actor.system.minors obj) as |min|}}
-      <div class="minor-row flexrow">
+      <div class="minor-block">
         <h4 class="minor-name">
           {{#if att.disabled}}{{else}}
             <a
@@ -38,22 +38,27 @@
             >{{localize minor.label}}</a>
           {{/if}}
         </h4>
-        <input
-          class="minor-value"
-          type="Number"
-          name="system.minors.{{@key}}.override"
-          value="{{min.override}}"
-          placeholder="{{min.base}}"
-          data-dtype="Number"
-        />
-        <input
-          class="minor-modifier"
-          type="String"
-          name="system.minors.{{@key}}.mod"
-          value="{{numberFormat min.mod sign=true}}"
-          data-dtype="Number"
-        />
+        <div class="minor-line">
+          <input
+            class="minor-value"
+            type="Number"
+            name="system.minors.{{@key}}.override"
+            value="{{min.override}}"
+            placeholder="{{min.base}}"
+            data-dtype="Number"
+          />
+          <input
+            class="minor-modifier"
+            type="String"
+            name="system.minors.{{@key}}.mod"
+            value="{{numberFormat min.mod sign=true}}"
+            data-dtype="Number"
+          />
+        </div>
       </div>
+      {{#unless @last}}
+        <div class="separator"></div>
+      {{/unless}}
     {{/with}}
   {{/each}}
 </section>

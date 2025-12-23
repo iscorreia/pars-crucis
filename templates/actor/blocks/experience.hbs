@@ -1,19 +1,23 @@
 {{! Experience block }}
 
-<section class="experience flexrow">
-  <span>{{system.experience.current}}</span>/
+<section class="experience">
+  <div class="xp-current">{{system.experience.current}}</div>
+  <div class="separator"></div>
   <input
     class="xp-total"
     name="system.experience.total"
     type="Number"
     value="{{system.experience.total}}"
     data-dtype="Number"
-  />/
+  />
+  <div class="separator"></div>
   <input
     class="xp-reserved"
     name="system.experience.reserved"
     type="Number"
     value="{{system.experience.reserved}}"
     data-dtype="Number"
-  />/{{localize "PC.xp"}}
+  />
+  <div class="separator"></div>
+  <div class="xp-name">{{localize "PC.xp"}}</div>
 </section>

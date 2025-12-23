@@ -68,7 +68,7 @@ PC.attributes = {
   def: { label: "PC.attributes.def.label", abv: "PC.attributes.def.abv" },
 };
 
-PC.mv = { label: "PC.mv" };
+PC.movement = { label: "PC.movement" };
 PC.def = { label: "PC.def" };
 
 PC.subattributes = {
