@@ -21,6 +21,7 @@ export class ActionModel extends foundry.abstract.DataModel {
       effect: new StringField({ initial: "" }),
       range: new StringField({ initial: "" }),
       effort: new StringField({ initial: "0" }),
+      prepTime: new StringField({ initial: "" }),
       duration: new StringField({ initial: "" }),
       keywords: new TypedObjectField(
         new NumberField({ initial: null, nullable: true }),

@@ -201,8 +201,86 @@
       "subtypes": {
         "technique": { "label": "Técnica" },
         "power": { "label": "Poder" }
+      },
+      "arts": {
+        "meleeTech": { "label": "Corpo a corpo", "categories": {} },
+        "rangedTech": { "label": "À distância", "categories": {} },
+        "miscTech": { "label": "Diversa", "categories": {} },
+        "aoist": {
+          "label": "Aoista",
+          "categories": {
+            "favor": "Dádiva de Favor",
+            "summon": "Dádiva de Invocação",
+            "retribuition": "Dádiva de Retribuição",
+            "macculate": "Dádiva Maculada",
+            "unknown": "Dádiva Desconhecida"
+          }
+        },
+        "arcane": {
+          "label": "Arcano",
+          "categories": {
+            "alchemical": "Escola Alquímica",
+            "psycognitive": "Escola Psicognitiva",
+            "metaessential": "Escola Meta Essencial",
+            "scribing": "Escola Escriba",
+            "unknown": "Escola Desconhecida"
+          }
+        },
+        "bardic": {
+          "label": "Bárdico",
+          "categories": {
+            "fortune": "Arte da Fortuna",
+            "instrumental": "Arte Instrumental",
+            "psycovocal": "Arte Psicovocal",
+            "theatrical": "Arte Teatral",
+            "unknown": "Arte Desconhecida"
+          }
+        },
+        "cronocientific": {
+          "label": "Cronocientífico",
+          "categories": {
+            "crono": "Controle Cronológico",
+            "phase": "Controle Fásico",
+            "gravitational": "Control Gravitacional",
+            "sidereal": "Controle Sideral",
+            "unknown": "Controle Desconhecido"
+          }
+        },
+        "druidic": {
+          "label": "Druídico",
+          "categories": {
+            "animal": "Âmbito Animal",
+            "astral": "Âmbito Astral",
+            "vegetal": "Âmbito Vegetal",
+            "unknown": "Âmbito Desconhecido"
+          }
+        },
+        "elemental": {
+          "label": "Elemental",
+          "categories": {
+            "water": "Força da Água",
+            "fire": "Força do Fogo",
+            "lightning": "Força do Raio",
+            "earth": "Força da Terra",
+            "wind": "Força do Vento",
+            "unknown": "Força Desconhecida"
+          }
+        },
+        "sabak": {
+          "label": "Sabak",
+          "categories": {
+            "death": "Domínio do Exício",
+            "mind": "Domínio Mental",
+            "plague": "Domínio da Praga",
+            "blood": "Domínio do Sangue",
+            "unknown": "Domínio Desconhecido"
+          }
+        },
+        "other": { "label": "Desconhecido", "categories": {} }
       }
     },
+    "abilities": "Habilidades",
+    "expand": "Expandir",
     "action": {
       "label": "Ação",
       "types": {
@@ -224,6 +302,11 @@
       }
     },
     "actions": "Ações",
+    "effort": { "label": "Esforço", "abv": "Esf" },
+    "difficulty": { "label": "Dificuldade", "abv": "Dif" },
+    "range": { "label": "Alcance", "abv": "Alc" },
+    "prepTime": { "label": "Tempo de preparo", "abv": "TP" },
+    "duration": { "label": "Duração" },
     "weaponry": "Armamentos",
     "weapon": {
       "label": "Armamento",

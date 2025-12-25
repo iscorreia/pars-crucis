@@ -21,7 +21,28 @@
               {{/each}}
             </div>
 
-            <span>{{ability.system.details.experience}}</span>
+            <div class="flexrow">
+              {{#each ability.system.actions as |action key|}}
+                <a class="">
+                  {{#if (eq action.type "attack")}}<i
+                      class="fa-solid fa-hammer"
+                    ></i>{{/if}}
+                  {{#if (eq action.type "test")}}<i
+                      class="fa-solid fa-dice-d6"
+                    ></i>{{/if}}
+                  {{#if (eq action.type "direct")}}<i
+                      class="fa-solid fa-jar"
+                    ></i>{{/if}}
+                  {{action.name}}
+                </a>
+              {{/each}}
+            </div>
+
+            <div>
+              <a>
+                {{localize "PC.expand"}}
+              </a>
+            </div>
 
             <div>
               <a

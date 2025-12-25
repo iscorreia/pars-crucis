@@ -410,6 +410,83 @@ PC.ability = {
     technique: { label: "PC.ability.subtypes.technique.label" },
     power: { label: "PC.ability.subtypes.power.label" },
   },
+  arts: {
+    meleeTech: { label: "PC.ability.arts.meleeTech.label" },
+    rangedTech: { label: "PC.ability.arts.rangedTech.label" },
+    miscTech: { label: "PC.ability.arts.miscTech.label" },
+    aoist: {
+      label: "PC.ability.arts.aoist.label",
+      categories: {
+        unknown: "PC.ability.arts.aoist.categories.unknown",
+        favor: "PC.ability.arts.aoist.categories.favor",
+        summon: "PC.ability.arts.aoist.categories.summon",
+        retribuition: "PC.ability.arts.aoist.categories.retribuition",
+        macculate: "PC.ability.arts.aoist.categories.macculate",
+      },
+    },
+    arcane: {
+      label: "PC.ability.arts.arcane.label",
+      categories: {
+        unknown: "PC.ability.arts.arcane.categories.unknown",
+        alchemical: "PC.ability.arts.arcane.categories.alchemical",
+        psycognitive: "PC.ability.arts.arcane.categories.psycognitive",
+        metaessential: "PC.ability.arts.arcane.categories.metaessential",
+        scribing: "PC.ability.arts.arcane.categories.scribing",
+      },
+    },
+    bardic: {
+      label: "PC.ability.arts.bardic.label",
+      categories: {
+        unknown: "PC.ability.arts.bardic.categories.unknown",
+        fortune: "PC.ability.arts.bardic.categories.fortune",
+        instrumental: "PC.ability.arts.bardic.categories.instrumental",
+        psycovocal: "PC.ability.arts.bardic.categories.psycovocal",
+        theatrical: "PC.ability.arts.bardic.categories.theatrical",
+      },
+    },
+    cronocientific: {
+      label: "PC.ability.arts.cronocientific.label",
+      categories: {
+        unknown: "PC.ability.arts.cronocientific.categories.unknown",
+        crono: "PC.ability.arts.cronocientific.categories.crono",
+        phase: "PC.ability.arts.cronocientific.categories.phase",
+        gravitational:
+          "PC.ability.arts.cronocientific.categories.gravitational",
+        sidereal: "PC.ability.arts.cronocientific.categories.sidereal",
+      },
+    },
+    druidic: {
+      label: "PC.ability.arts.druidic.label",
+      categories: {
+        unknown: "PC.ability.arts.druidic.categories.unknown",
+        animal: "PC.ability.arts.druidic.categories.animal",
+        astral: "PC.ability.arts.druidic.categories.astral",
+        vegetal: "PC.ability.arts.druidic.categories.vegetal",
+      },
+    },
+    elemental: {
+      label: "PC.ability.arts.elemental.label",
+      categories: {
+        unknown: "PC.ability.arts.elemental.categories.unknown",
+        water: "PC.ability.arts.elemental.categories.water",
+        fire: "PC.ability.arts.elemental.categories.fire",
+        lightning: "PC.ability.arts.elemental.categories.lightning",
+        earth: "PC.ability.arts.elemental.categories.earth",
+        wind: "PC.ability.arts.elemental.categories.wind",
+      },
+    },
+    sabak: {
+      label: "PC.ability.arts.sabak.label",
+      categories: {
+        unknown: "PC.ability.arts.sabak.categories.unknown",
+        death: "PC.ability.arts.sabak.categories.death",
+        mind: "PC.ability.arts.sabak.categories.mind",
+        plague: "PC.ability.arts.sabak.categories.plague",
+        blood: "PC.ability.arts.sabak.categories.blood",
+      },
+    },
+    other: { label: "PC.ability.arts.other.label" },
+  },
 };
 
 PC.action = {

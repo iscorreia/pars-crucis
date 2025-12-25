@@ -34,11 +34,18 @@
       {{localize (concat "PC.ability.subtypes." system.info.subtype ".label")}}
       {{#if system.info.art}}
         ·
-        {{system.info.art}}
+        {{localize (concat "PC.ability.arts." system.info.art ".label")}}
       {{/if}}
       {{#if system.info.category}}
         ·
-        {{system.info.category}}
+        {{localize
+          (concat
+            "PC.ability.arts."
+            system.info.art
+            ".categories."
+            system.info.category
+          )
+        }}
       {{/if}}
     </div>
     <div class="flexrow">

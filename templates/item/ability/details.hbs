@@ -9,18 +9,26 @@
         localize=true
       }}
     </select>
-    <input
-      name="system.info.art"
-      type="String"
-      value="{{system.info.art}}"
-      data-dtype="String"
-    />
-    <input
-      name="system.info.category"
-      type="String"
-      value="{{system.info.category}}"
-      data-dtype="String"
-    />
+    <select name="system.info.art">
+      {{selectOptions
+        config.ability.arts
+        selected=system.info.art
+        localize=true
+      }}
+    </select>
+    {{#with (lookup config.ability.arts system.info.art) as |art|}}
+      {{#if art.categories}}
+        {{log ../system}}
+        {{log (lookup ../config.ability.arts ../system.info.art)}}
+        <select name="system.info.category">
+          {{selectOptions
+            (lookup (lookup ../config.ability.arts ../system.info.art) "categories")
+            selected=../system.info.category
+            localize=true
+          }}
+        </select>
+      {{/if}}
+    {{/with}}
     <div>
       <h4>{{localize "PC.keywords"}}</h4>
       <a data-action="addKeyword"><i class="fa fa-plus"></i></a>
@@ -30,12 +38,6 @@
             {{localize (concat "PC.keyword." obj)}}{{#if keyword}}
               ({{keyword}}){{/if}}
           </div>
-          <input
-            name="system.details.keywords.{{@key}}"
-            value="{{keyword}}"
-            type="Number"
-            data-dtype="Number"
-          />
           <a data-action="cutKeyword" data-keyword="{{@key}}">
             <i class="fa-solid fa-trash-can"></i></a>
         </div>

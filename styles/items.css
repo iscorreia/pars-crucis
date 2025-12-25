@@ -3,6 +3,31 @@
   height: 75px;
 }
 
+.action-block {
+  display: flex;
+  flex-direction: row;
+  input,
+  select {
+    height: 17.5px;
+  }
+  .action-block-info {
+    width: 100%;
+  }
+  .action-effect {
+    width: 100%;
+    input {
+      width: 100%;
+    }
+  }
+  .action-details {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
+    input {
+      width: 100%;
+    }
+  }
+}
+
 .keyword-picker {
   width: 400px;
   .form-footer {
