@@ -1,0 +1,50 @@
+{{! Actions block }}
+
+<section class="tab {{tab.cssClass}}" data-group="primary" data-tab="actions">
+  <div class="flexcol">
+    <a data-action="createAction"><i class="fa fa-plus"></i></a>
+    <ul class="flexcol">
+      {{#each system.actions as |action obj|}}
+        <li class="flexrow">
+          <div>
+            <input
+              name="system.actions.{{@key}}.name"
+              type="String"
+              value="{{action.name}}"
+              data-dtype="String"
+            />
+          </div>
+          <select name="system.actions.{{@key}}.type">
+            {{selectOptions
+              ../config.action.types
+              selected=action.type
+              localize=true
+            }}
+          </select>
+          {{#if (eq action.type "attack")}}
+            <select name="system.actions.{{@key}}.subtype">
+              {{selectOptions
+                ../config.action.types.attack.subtypes
+                selected=action.subtype
+                localize=true
+              }}
+            </select>
+          {{/if}}
+          {{#if (eq action.type "test")}}
+            <div class="flexrow">
+              dif
+              <input name="system.actions.{{@key}}.difficulty"
+              type="Number"
+              value="{{action.difficulty}}"
+              data-dtype="Number"
+              />
+            </div>
+          {{/if}}
+          <a data-action="deleteAction" data-action-id="{{action._id}}">
+            <i class="fa-solid fa-trash-can"></i>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

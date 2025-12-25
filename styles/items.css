@@ -1,0 +1,14 @@
+/* ITEM HEADER */
+.ability-header {
+  height: 75px;
+}
+
+.keyword-picker {
+  width: 400px;
+  .form-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 25%); /* 4 columns, 25% each */
+    justify-items: stretch; /* items fill the column instead of shrinking */
+    gap: 0; /* must be 0 or they overflow */
+  }
+}

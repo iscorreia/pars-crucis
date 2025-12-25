@@ -16,6 +16,7 @@
     "styles/config.css",
     "styles/styles.css",
     "styles/actor.css",
+    "styles/items.css",
     "styles/persona-config.css"
   ],
   "packs": [],

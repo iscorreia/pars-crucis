@@ -2,7 +2,7 @@
 
 <section class="experience">
   <div class="xp-line">
-    <div class="xp-current {{#if (lt system.experience.current 0)}} xp-negative{{/if}}">{{system.experience.current}}</div>
+    <div class="xp-current {{#if (lt system.experience.current 0)}}xp-negative{{/if}}">{{system.experience.current}}</div>
     <div class="separator"></div>
     <input
       class="xp-total"
@@ -20,5 +20,6 @@
       data-dtype="Number"
     />
     <div class="separator"></div>
-    <div class="xp-name">{{localize "PC.xp"}}</div></div>
+    <div class="xp-name">{{localize "PC.xp"}}</div>
+  </div>
 </section>

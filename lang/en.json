@@ -209,6 +209,7 @@
         "attack": {
           "label": "Ataque",
           "subtype": {
+            "melee": "Corpo a corpo",
             "throw": "Arremesso",
             "projectile": "Projétil",
             "jet": "Jato",
@@ -222,6 +223,7 @@
         "test": { "label": "Teste" }
       }
     },
+    "actions": "Ações",
     "weaponry": "Armamentos",
     "weapon": {
       "label": "Armamento",
@@ -378,6 +380,41 @@
     "equippable": "Equipável",
     "stackable": "Agrupável",
     "equipped": "Equipado",
-    "config": "Configurações"
+    "config": "Configurações",
+
+    "keyword": {
+      "label": "Palavra-chave",
+      "melee": "Corpo a corpo",
+      "bonus": "Bônus",
+      "throw": "Arremesso",
+      "reaction": "Reação",
+      "esoteric": "Esotérica",
+      "quick": "Rápida",
+      "power": "Poder",
+      "style": "Estilo",
+      "passive": "Passiva",
+      "aim": "Mira",
+      "projectile": "Projétil",
+      "social": "Social",
+      "starter": "Inicial",
+      "affliction": "Aflição",
+      "sigil": "Sigilo",
+      "summon": "Invocação",
+      "jet": "Jato",
+      "aoe": "Área",
+      "mental": "Mental",
+      "mutation": "Mutação",
+
+      "twohanded": "Duas mãos",
+      "custom": "Sob medida",
+      "potion": "Poção",
+      "elixir": "Elixir",
+      "poison": "Veneno",
+      "agent": "Agente",
+      "recipe": "Receita",
+      "grenade": "Granada",
+      "instrument": "Instrumento"
+    },
+    "keywords": "Palavras-chave"
   }
 }
