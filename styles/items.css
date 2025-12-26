@@ -29,11 +29,28 @@
 }
 
 .keyword-picker {
-  width: 400px;
+  width: 440px;
   .form-footer {
     display: grid;
-    grid-template-columns: repeat(4, 25%); /* 4 columns, 25% each */
-    justify-items: stretch; /* items fill the column instead of shrinking */
-    gap: 0; /* must be 0 or they overflow */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+    min-width: 0;
+    button {
+      width: 99.25px;
+      min-width: 0;
+      white-space: nowrap;
+      font-size: 14px;
+      height: 18px;
+      line-height: 18px;
+      min-height: 18px;
+      background-color: var(--color-dark-3);
+      border-color: var(--color-dark-6);
+      color: var(--color-light-2);
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 5px;
+      padding: 0 3px;
+      text-align: center;
+    }
   }
 }

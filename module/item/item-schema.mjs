@@ -15,7 +15,7 @@ export class ActionModel extends foundry.abstract.DataModel {
       name: new StringField({ initial: "" }),
       type: new StringField({
         initial: "attack",
-        choices: ["attack", "direct", "test"], // create EXECUTION LOGIC FOR THE TYPE
+        choices: ["attack", "use", "test"], // create EXECUTION LOGIC FOR THE TYPE
         required: true,
       }),
       effect: new StringField({ initial: "" }),

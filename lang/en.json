@@ -301,7 +301,7 @@
             "social": "Social"
           }
         },
-        "direct": { "label": "Uso direto" },
+        "use": { "label": "Uso direto" },
         "test": { "label": "Teste" }
       }
     },

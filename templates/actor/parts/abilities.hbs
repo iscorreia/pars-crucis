@@ -14,7 +14,7 @@
 
             <div class="ability-keywords">
               {{#each ability.system.details.keywords as |value keyword|}}
-                <div class="keyword">
+                <div class="pc-keyword">
                   {{localize (concat "PC.keyword." keyword)}}{{#if
                     value
                   }}({{value}}){{/if}}{{#unless @last}}{{/unless}}
@@ -26,6 +26,7 @@
               {{#each ability.system.actions as |action key|}}
                 {{#if (eq action.type "attack")}}<a
                     class="ability-action ac-attack"
+                    data-action="clickAbilityAttack"
                   ><i class="fa-solid fa-hammer"></i>
                     {{#if action.name}}
                       <div class="action-name">{{action.name}}</div>
@@ -33,13 +34,15 @@
                   </a>{{/if}}
                 {{#if (eq action.type "test")}}<a
                     class="ability-action ac-test"
+                    data-action="clickAbilityTest"
                   ><i class="fa-solid fa-dice-d6"></i>
                     {{#if action.name}}
                       <div class="action-name">{{action.name}}</div>
                     {{/if}}
                   </a>{{/if}}
-                {{#if (eq action.type "direct")}}<a
-                    class="ability-action ac-direct"
+                {{#if (eq action.type "use")}}<a
+                    class="ability-action ac-use"
+                    data-action="clickAbilityUse"
                   ><i class="fa-solid fa-jar"></i>
                     {{#if action.name}}
                       <div class="action-name">{{action.name}}</div>
@@ -87,9 +90,9 @@
                     {{localize
                       (concat "PC.action.types.attack.subtype." action.subtype)
                     }}{{/if}}{{#if (eq action.type "test")}}, dif{{action.difficulty}}{{/if}},
-                  {{localize
-                    (concat "PC.action.types." action.type ".label")
-                  }}</div>
+                  {{localize (concat "PC.action.types." action.type ".label")}},
+                  {{action.effect}}
+                </div>
               {{/each}}
             </div>
           {{/if}}

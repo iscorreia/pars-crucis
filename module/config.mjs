@@ -504,7 +504,7 @@ PC.action = {
         social: { label: "PC.action.types.attack.subtype.social" },
       },
     },
-    direct: { label: "PC.action.types.direct.label" },
+    use: { label: "PC.action.types.use.label" },
     test: { label: "PC.action.types.test.label" },
   },
 };

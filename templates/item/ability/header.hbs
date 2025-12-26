@@ -50,7 +50,7 @@
     </div>
     <div class="flexrow">
       {{#each system.details.keywords as |value key|}}
-        <div>{{localize (concat "PC.keyword." key)}}{{#if
+        <div class="pc-keyword">{{localize (concat "PC.keyword." key)}}{{#if
             value
           }}({{value}}){{/if}}</div>
       {{/each}}

@@ -18,6 +18,9 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       icon: "fa fa-address-card",
     },
     actions: {
+      clickAbilityAttack: this.abilityAttack,
+      clickAbilityTest: this.abilityTest,
+      clickAbilityUse: this.abilityUse,
       clickAttribute: this.onAttributeClick,
       clickDelete: this.deleteItemOnClick,
       clickEdit: this.editItemOnClick,
@@ -250,5 +253,17 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const item = this.actor.items.get(target.dataset.itemId);
     const current = item.getFlag("pars-crucis", "expanded") ?? false;
     item.setFlag("pars-crucis", "expanded", !current);
+  }
+
+  static async abilityAttack() {
+    console.log("ATTACK ABILITY HERE");
+  }
+
+  static async abilityTest() {
+    console.log("TEST ABILITY HERE");
+  }
+
+  static async abilityUse() {
+    console.log("USE ABILITY HERE");
   }
 }
