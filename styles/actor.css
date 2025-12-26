@@ -30,6 +30,7 @@
   }
   ol {
     padding: 0;
+    margin: 0;
   }
 }
 
@@ -347,15 +348,16 @@ h1.actor-name {
       }
       .ar-value {
         text-align: right;
+      }
+      .ar-value,
+      .ab-value {
         padding-top: 2px;
+        padding-right: 2px;
       }
       .ab-value,
       .ab-mod {
         text-align: right;
         background-color: transparent;
-      }
-      .ab-value {
-        padding-top: 2px;
       }
     }
     .ar-field {
@@ -537,8 +539,10 @@ h1.actor-name {
   align-items: center;
   width: 100%;
 }
-/* SKILL TAB SEPARATORS */
-.skill-tab > .skill-category:nth-child(odd)::after {
+/* SKILLS TAB SEPARATORS */
+.skill-tab > .skill-category:nth-child(odd)::after,
+.abilities-tab > ol:not(:last-child)::after {
+  /* adds it to ABILITIES TAB as well */
   content: "";
   display: block;
   width: 100%;
@@ -575,6 +579,45 @@ h1.actor-name {
 /* SKILL TAB currently uses 396 pixels of height from 424 available, what to do with the remaining 28 pixels?  */
 
 /* ABILITIES TAB */
+.abilities-tab {
+  .ability-group-title {
+    width: 100%;
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .empty-space {
+      width: 70px;
+    }
+    h4 {
+      height: 100%;
+      width: calc(100% - 140px);
+      text-align: center;
+      div {
+        height: inherit;
+      }
+    }
+    .ability-sorting {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      width: 70px;
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        color: var(--color-text-secondary);
+      }
+      a.active {
+        text-shadow: 0 0 10px var(--color-shadow-primary);
+        color: var(--color-text-emphatic);
+      }
+    }
+  }
+}
 .ability-block {
   display: flex;
   flex-direction: column;
@@ -664,7 +707,7 @@ h1.actor-name {
       }
     }
     .ability-expand {
-      width: 70px;
+      width: 68px;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -675,13 +718,13 @@ h1.actor-name {
       grid-auto-flow: column;
       grid-auto-columns: 1fr;
       gap: 2px;
-      width: 32px;
+      width: 34px;
       a {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         height: 100%;
-        width: 15px;
+        width: 16px;
       }
     }
   }
@@ -704,6 +747,10 @@ h1.actor-name {
   margin-left: 3px;
   font-size: 12px;
   text-align: center;
+}
+/* SKILLS TAB SEPARATORS */
+.abilities-tab > ol:not(:last-child)::after {
+  margin-bottom: 5px;
 }
 
 /* INVENTORY TAB */

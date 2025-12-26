@@ -181,8 +181,11 @@
       "druid": "Druidismo",
       "eleme": "Elementalismo",
       "ontol": "Ontologia",
-      "sabak": "Sabakismo"
+      "sabak": "Sabakismo",
+
+      "none": "Nenhuma"
     },
+    "skill": "Perícia",
     "learning": {
       "label": "Aprendizado",
       "common": "Comum",

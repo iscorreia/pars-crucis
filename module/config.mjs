@@ -351,6 +351,11 @@ PC.skills = {
   },
 };
 
+PC.skillsNone = {
+  none: { label: "PC.skills.none" },
+  ...PC.skills,
+};
+
 PC.corporais = {
   atlet: { label: "PC.skills.atlet" },
   briga: { label: "PC.skills.briga" },

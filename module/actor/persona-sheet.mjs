@@ -27,6 +27,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       clickEquip: this.equipItemOnClick,
       clickLuck: this.onLuckClick,
       clickSkill: this.onSkillClick,
+      sortAbilities: this.changeSortMode,
       toggleExpand: this.toggleAbilityExpand,
       configurePersona: this.configurePersona,
     },
@@ -96,8 +97,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       config: CONFIG.PC,
       tabs: this._prepareTabs("primary"),
     };
-
-    console.log(context);
 
     return context;
   }
@@ -242,15 +241,40 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const abilities = document.system.abilities;
     const categorizedItems = {};
 
-    for (let [id, ability] of Object.entries(abilities)) {
+    for (let ability of abilities) {
       const art = ability.system.info.art;
       if (!categorizedItems[art]) {
-        categorizedItems[art] = {};
+        categorizedItems[art] = [];
       }
-      categorizedItems[art][id] = ability;
+      categorizedItems[art].push(ability);
+    }
+
+    for (const art of Object.keys(categorizedItems)) {
+      const sortMode = this.getSortMode(art);
+      categorizedItems[art] = this.sortItems(categorizedItems[art], sortMode);
     }
 
     return categorizedItems;
+  }
+
+  sortItems(group, sortMode = "coreLevel-asc") {
+    return group.slice().sort((a, b) => {
+      switch (sortMode) {
+        case "coreLevel-desc":
+          return b.system.details.coreLevel - a.system.details.coreLevel;
+        case "name-asc":
+          return a.name.localeCompare(b.name);
+        case "name-desc":
+          return b.name.localeCompare(a.name);
+        default: // "coreLevel-asc"
+          return a.system.details.coreLevel - b.system.details.coreLevel;
+      }
+    });
+  }
+
+  getSortMode(flag) {
+    const actor = this.document;
+    return actor.getFlag("pars-crucis", flag) || "coreLevel-asc";
   }
 
   // Renders item sheet if owner
@@ -278,6 +302,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static async abilityAttack() {
     console.log("ATTACK ABILITY HERE");
+    c;
   }
 
   static async abilityTest() {
@@ -286,5 +311,11 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static async abilityUse() {
     console.log("USE ABILITY HERE");
+  }
+
+  static async changeSortMode(_, target) {
+    const dataset = target.dataset;
+    const actor = this.document;
+    actor.setFlag("pars-crucis", dataset.art, dataset.sortMode);
   }
 }

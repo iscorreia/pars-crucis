@@ -63,6 +63,8 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
           new NumberField({ initial: null, nullable: true }),
           {}
         ),
+        coreSkill: new StringField({ initial: "none" }),
+        coreLevel: new NumberField({ initial: 1, integer: true }),
       }),
       description: description(),
     };

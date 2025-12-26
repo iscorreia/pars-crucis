@@ -4,7 +4,7 @@
   <div class="flexcol">
     <input
       name="name"
-      type="text"
+      type="String"
       value="{{item.name}}"
       placeholder="Nameless Ability"
     />
@@ -46,6 +46,25 @@
             <i class="fa-solid fa-trash-can"></i></a>
         </div>
       {{/each}}
+    </div>
+    <div>
+      {{localize "PC.skill"}}
+      <select name="system.details.coreSkill">
+        {{selectOptions
+          config.skillsNone
+          selected=system.details.coreSkill
+          localize=true
+        }}
+      </select>
+    </div>
+    <div>
+      {{localize "PC.level.abv"}}
+      <input 
+        name="system.details.coreLevel"
+        value="{{system.details.coreLevel}}"
+        type="Number"
+        data-dtype="Number"
+      />
     </div>
   </div>
 </section>
