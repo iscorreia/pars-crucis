@@ -281,6 +281,10 @@
     },
     "abilities": "Habilidades",
     "expand": "Expandir",
+    "expandActions": "Expandir ações",
+    "expandCollapseActions": "Expandir/Recolher ações",
+    "collapse": "Recolher",
+    "collapseActions": "Recolher ações",
     "action": {
       "label": "Ação",
       "types": {

@@ -28,6 +28,9 @@
     background-color: var(--color-cool-4);
     border: none;
   }
+  ol {
+    padding: 0;
+  }
 }
 
 /* ACTOR SHEET HEADER */
@@ -152,11 +155,11 @@ h1.actor-name {
     z-index: 0;
     width: 0%;
     height: 22px;
-    background-color: #24942d70;
+    background-color: var(--pc-color-health-bg);
     border-radius: 5px 0 5px 0;
   }
   .pe-bar {
-    background-color: #2a5cc770;
+    background-color: var(--pc-color-essence-bg);
   }
   .subatt-value {
     padding-bottom: 1px;
@@ -413,7 +416,9 @@ h1.actor-name {
     font-weight: bold;
   }
   a {
-    width: 75px;
+    width: 100px;
+    height: 26px;
+    line-height: 28px;
   }
 }
 
@@ -576,6 +581,106 @@ h1.actor-name {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    h5 {
+      width: 200px;
+      padding: 1px 0 0 2px;
+      line-height: 23px;
+      font-size: 19px;
+      font-family: "Cambria";
+      font-weight: bold;
+    }
+    .ability-keywords {
+      width: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      .keyword {
+        height: 18px;
+        line-height: 18px;
+        background-color: var(--color-dark-3);
+        border-color: var(--color-dark-6);
+        color: var(--color-light-2);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        padding: 0 3px;
+        margin-left: 3px;
+        font-size: 12px;
+      }
+      .keyword:last-child {
+        /* margin-right: 0; */
+      }
+    }
+    .ability-actions {
+      width: 240px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .ability-action {
+        height: 22px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: "Cambria";
+        font-size: 16px;
+        background-color: var(--color-dark-3);
+        border-color: var(--color-dark-6);
+        color: var(--color-light-2);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        padding: 2px 3px;
+        margin-right: 3px;
+        i {
+          display: inline-flex; /* helps some icon fonts center properly */
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          height: 16px;
+        }
+        .action-name {
+          margin-left: 3px;
+        }
+      }
+      .ac-attack {
+        background-color: var(--pc-color-damage-bg);
+        border-color: var(--pc-color-damage-border);
+      }
+      .ac-test {
+        background-color: var(--pc-color-essence-bg);
+        border-color: var(--pc-color-essence-border);
+      }
+      .ac-direct {
+        background-color: var(--pc-color-health-bg);
+        border-color: var(--pc-color-health-border);
+      }
+      .ability-action:last-child {
+        margin: 0;
+      }
+    }
+    .ability-expand {
+      width: 70px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .ability-controls {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      gap: 2px;
+      width: 32px;
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 15px;
+      }
+    }
   }
   .ability-actions {
     display: flex;

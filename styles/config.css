@@ -2,3 +2,12 @@
   font-family: "SR";
   src: url("../fonts/Sundayromanticdemo.otf");
 }
+
+:root {
+  --pc-color-health-bg: #24942d70;
+  --pc-color-health-border: #24942d90;
+  --pc-color-essence-bg: #2a5cc770;
+  --pc-color-essence-border: #2a5cc790;
+  --pc-color-damage-bg: #c72a2a70;
+  --pc-color-damage-border: #c72a2a90;
+}

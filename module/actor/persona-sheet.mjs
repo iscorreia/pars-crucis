@@ -24,6 +24,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       clickEquip: this.equipItemOnClick,
       clickLuck: this.onLuckClick,
       clickSkill: this.onSkillClick,
+      toggleExpand: this.toggleAbilityExpand,
       configurePersona: this.configurePersona,
     },
   };
@@ -57,7 +58,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static TABS = {
     primary: {
-      initial: "skills",
+      initial: "abilities", // Changed to simplify testing, once done set back to skills
       tabs: [
         { id: "skills", label: "PC.tabs.skills" },
         { id: "abilities", label: "PC.tabs.abilities" },
@@ -124,7 +125,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
    * @param {HTMLElement} target - The capturing HTML element which defined a [data-action]
    */
   static async onAttributeClick(event, target) {
-    event.preventDefault();
     const dataset = target.dataset;
     const attKey = dataset.attribute;
     const attType = dataset.type;
@@ -154,7 +154,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
   }
 
   static async onLuckClick(event, target) {
-    event.preventDefault();
     const dataset = target.dataset;
     const luckBooleans = this.actor.system.luck.booleans;
     const index = dataset.luckIndex;
@@ -165,7 +164,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
   }
 
   static async onSkillClick(event, target) {
-    event.preventDefault();
     const dataset = target.dataset;
     const skKey = dataset.skill;
     const skType = dataset.type;
@@ -194,7 +192,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   // Open a Dialog box with options to Delete, Edit or Cancel
   static async deleteItemOnClick(event, target) {
-    event.preventDefault();
     const itemId = target.dataset.itemId;
     const item = this.actor.items.get(itemId);
 
@@ -233,24 +230,25 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
   }
 
   // Renders item sheet if owner
-  static async editItemOnClick(event, target) {
-    event.preventDefault();
-    const itemId = target.dataset.itemId;
-    const item = this.actor.items.get(itemId);
+  static async editItemOnClick(_, target) {
+    const item = this.actor.items.get(target.dataset.itemId);
     if (this.actor.isOwner) item.sheet.render(true);
   }
 
-  static async equipItemOnClick(event, target) {
-    event.preventDefault();
+  static async equipItemOnClick(_, target) {
     const dataset = target.dataset;
-    const itemId = dataset.itemId;
-    const item = this.actor.items.get(itemId);
+    const item = this.actor.items.get(dataset.itemId);
     if (this.actor.isOwner)
       return item.update({ ["system.details.equipped"]: dataset.equip });
   }
 
-  static async configurePersona(event) {
-    event.preventDefault();
+  static async configurePersona() {
     new PersonaConfig({ document: this.actor })?.render(true);
+  }
+
+  static async toggleAbilityExpand(_, target) {
+    const item = this.actor.items.get(target.dataset.itemId);
+    const current = item.getFlag("pars-crucis", "expanded") ?? false;
+    item.setFlag("pars-crucis", "expanded", !current);
   }
 }

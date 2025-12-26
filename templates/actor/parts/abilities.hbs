@@ -3,48 +3,67 @@
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="abilities">
   <div class="abilities-tab">
     <h4>
-      <div>{{localize "PC.tabs.abilities"}}</div>
+      <div>SEPARATE BY ART (MELEE TECHS / AOIST POWERS / SO ON...)</div>
     </h4>
     <ol>
       {{#each system.abilities as |ability obj|}}
         <li class="ability-block">
           <div class="ability-line">
             <img src="{{ability.img}}" width="24" height="24" />
-            <h5>{{ability.name}}</h5>
+            <h5 class="ability-name">{{ability.name}}</h5>
 
-            <div>
+            <div class="ability-keywords">
               {{#each ability.system.details.keywords as |value keyword|}}
-                {{localize (concat "PC.keyword." keyword)}}{{#if
-                  value
-                }}({{value}}){{/if}}{{#unless @last}},
-                {{/unless}}
+                <div class="keyword">
+                  {{localize (concat "PC.keyword." keyword)}}{{#if
+                    value
+                  }}({{value}}){{/if}}{{#unless @last}}{{/unless}}
+                </div>
               {{/each}}
             </div>
 
-            <div class="flexrow">
+            <div class="ability-actions">
               {{#each ability.system.actions as |action key|}}
-                <a class="">
-                  {{#if (eq action.type "attack")}}<i
-                      class="fa-solid fa-hammer"
-                    ></i>{{/if}}
-                  {{#if (eq action.type "test")}}<i
-                      class="fa-solid fa-dice-d6"
-                    ></i>{{/if}}
-                  {{#if (eq action.type "direct")}}<i
-                      class="fa-solid fa-jar"
-                    ></i>{{/if}}
-                  {{action.name}}
-                </a>
+                {{#if (eq action.type "attack")}}<a
+                    class="ability-action ac-attack"
+                  ><i class="fa-solid fa-hammer"></i>
+                    {{#if action.name}}
+                      <div class="action-name">{{action.name}}</div>
+                    {{/if}}
+                  </a>{{/if}}
+                {{#if (eq action.type "test")}}<a
+                    class="ability-action ac-test"
+                  ><i class="fa-solid fa-dice-d6"></i>
+                    {{#if action.name}}
+                      <div class="action-name">{{action.name}}</div>
+                    {{/if}}
+                  </a>{{/if}}
+                {{#if (eq action.type "direct")}}<a
+                    class="ability-action ac-direct"
+                  ><i class="fa-solid fa-jar"></i>
+                    {{#if action.name}}
+                      <div class="action-name">{{action.name}}</div>
+                    {{/if}}
+                  </a>{{/if}}
+
               {{/each}}
             </div>
 
-            <div>
-              <a>
-                {{localize "PC.expand"}}
+            <div class="ability-expand">
+              <a
+                data-action="toggleExpand"
+                data-item-id="{{ability._id}}"
+                title="{{localize 'PC.expandCollapseActions'}}"
+              >
+                {{#if ability.flags.pars-crucis.expanded}}
+                  {{localize "PC.collapse"}}
+                {{else}}
+                  {{localize "PC.expand"}}
+                {{/if}}
               </a>
             </div>
 
-            <div>
+            <div class="ability-controls">
               <a
                 data-action="clickEdit"
                 data-item-id="{{ability._id}}"
@@ -61,17 +80,19 @@
               </a>
             </div>
           </div>
-          <div class="ability-actions">
-            {{#each ability.system.actions as |action key|}}
-              <div>{{action.name}}{{#if (eq action.type "attack")}},
+          {{#if ability.flags.pars-crucis.expanded}}
+            <div class="ability-actions">
+              {{#each ability.system.actions as |action key|}}
+                <div>{{action.name}}{{#if (eq action.type "attack")}},
+                    {{localize
+                      (concat "PC.action.types.attack.subtype." action.subtype)
+                    }}{{/if}}{{#if (eq action.type "test")}}, dif{{action.difficulty}}{{/if}},
                   {{localize
-                    (concat "PC.action.types.attack.subtype." action.subtype)
-                  }}{{/if}}{{#if (eq action.type "test")}}, dif{{action.difficulty}}{{/if}},
-                {{localize
-                  (concat "PC.action.types." action.type ".label")
-                }}</div>
-            {{/each}}
-          </div>
+                    (concat "PC.action.types." action.type ".label")
+                  }}</div>
+              {{/each}}
+            </div>
+          {{/if}}
         </li>
       {{/each}}
     </ol>
