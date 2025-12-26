@@ -1,22 +1,70 @@
 import { PC } from "../config.mjs";
 
-const { ArrayField, BooleanField, NumberField, SchemaField, StringField } =
-  foundry.data.fields;
+const {
+  EmbeddedDataField,
+  BooleanField,
+  NumberField,
+  SchemaField,
+  StringField,
+  TypedObjectField,
+} = foundry.data.fields;
+
+export class ActionModel extends foundry.abstract.DataModel {
+  static defineSchema() {
+    return {
+      name: new StringField({ initial: "" }),
+      type: new StringField({
+        initial: "attack",
+        choices: ["attack", "use", "test"], // create EXECUTION LOGIC FOR THE TYPE
+        required: true,
+      }),
+      effect: new StringField({ initial: "" }),
+      range: new StringField({ initial: "" }),
+      effort: new StringField({ initial: "0" }),
+      prepTime: new StringField({ initial: "" }),
+      duration: new StringField({ initial: "" }),
+      keywords: new TypedObjectField(
+        new NumberField({ initial: null, nullable: true }),
+        {}
+      ),
+      _id: new StringField({}),
+      // ATTACK|TEST-only
+      skill: new StringField({
+        nullable: true,
+        choices: () => Object.keys(PC.skills),
+      }),
+      // ATTACK-only
+      subtype: new StringField({
+        nullable: true,
+        choices: () => Object.keys(PC.action.types.attack.subtypes),
+      }),
+      // TEST-only
+      difficulty: new NumberField({ nullable: true }),
+    };
+  }
+}
 
 export class AbilityModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       info: new SchemaField({
         subtype: new StringField({ initial: "power" }),
-        art: new StringField({ initial: null, nullable: true }),
+        art: new StringField({ initial: "meleeTech", nullable: true }),
         category: new StringField({ initial: null, nullable: true }),
       }),
-      actions: new ArrayField(action(), { initial: [] }),
+      actions: new TypedObjectField(new EmbeddedDataField(ActionModel), {
+        validateKey: (key) => foundry.data.validators.isValidId(key),
+        initial: {},
+      }),
       details: new SchemaField({
         experience: new NumberField({ initial: 2, integer: true }),
         preRequisites: new StringField({ initial: "" }),
-        esoteric: new BooleanField({ initial: false }),
-        properties: new ArrayField(property(), { initial: [] }),
+        keywords: new TypedObjectField(
+          new NumberField({ initial: null, nullable: true }),
+          {}
+        ),
+        coreSkill: new StringField({ initial: "none" }),
+        coreLevel: new NumberField({ initial: 1, integer: true }),
       }),
       description: description(),
     };
@@ -62,48 +110,15 @@ export class WeaponModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       info: information({ subtype: "melee", group: "light" }),
-      actions: new ArrayField(action(), { initial: [] }),
+      actions: new TypedObjectField(new EmbeddedDataField(ActionModel), {
+        validateKey: (key) => foundry.data.validators.isValidId(key),
+        initial: {},
+      }),
       cost: itemCost(),
       details: details({ equippable: true }),
       description: description(),
     };
   }
-}
-
-function action() {
-  return new SchemaField({
-    label: new StringField({ initial: "" }),
-    type: new StringField({
-      initial: "test",
-      choices: ["attack", "direct", "test"], // create EXECUTION LOGIC FOR THE TYPE
-      required: true,
-    }),
-    effect: new StringField({ initial: "" }),
-    range: new StringField({ initial: "" }),
-    effort: new StringField({ initial: 0 }),
-    duration: new StringField({ initial: "" }),
-    properties: new ArrayField(property(), { initial: [] }),
-    skill: new StringField({
-      nullable: true,
-      choices: () => Object.keys(PC.skills),
-    }),
-
-    // ATTACK-only
-    subtype: new StringField({
-      nullable: true,
-      choices: () => Object.keys(PC.action.types.attack.subtypes),
-    }),
-
-    // TEST-only
-    difficulty: new NumberField({ nullable: true }),
-  });
-}
-
-function property() {
-  return new SchemaField({
-    key: new StringField({ required: true }),
-    value: new NumberField({ initial: null, nullable: true }),
-  });
 }
 
 function itemCost() {

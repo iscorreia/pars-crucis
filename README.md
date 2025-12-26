@@ -5,18 +5,27 @@ Pars Crucis roleplaying system for Foundry Virtual Tabletop (http://foundryvtt.c
 ### Useful:
 
 To check the language library, type on the console:
-**_game.i18n.translations_**
-check under PC
+
+- **_game.i18n.translations_**
+- check under PC
 
 To get an actor data by name
-game.actors.getName('name')
+
+- game.actors.getName('name')
 
 To get an item data by id
 **_game.items.get('\_itemId')_**
 
+### Interesting
+
+ui.notifications?.info(`message`);
+
+Used to send a UI notification with `message`
+
 ### on Handlebars
 
 _{{log actor}}_
+
 Use example, to console.log(actor) in the actor .hbs
 
 ### On the Actor class

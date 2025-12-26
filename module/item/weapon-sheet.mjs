@@ -35,8 +35,8 @@ export default class WeaponSheet extends ParsCrucisItemSheet {
     primary: {
       initial: "description",
       tabs: [
-        { id: "description", label: "Descrição" },
-        { id: "config", label: "Configuração" },
+        { id: "description", label: "PC.description" },
+        { id: "config", label: "PC.config" },
       ],
     },
   };

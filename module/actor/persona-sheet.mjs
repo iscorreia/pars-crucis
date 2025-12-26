@@ -18,12 +18,17 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       icon: "fa fa-address-card",
     },
     actions: {
+      clickAbilityAttack: this.abilityAttack,
+      clickAbilityTest: this.abilityTest,
+      clickAbilityUse: this.abilityUse,
       clickAttribute: this.onAttributeClick,
       clickDelete: this.deleteItemOnClick,
       clickEdit: this.editItemOnClick,
       clickEquip: this.equipItemOnClick,
       clickLuck: this.onLuckClick,
       clickSkill: this.onSkillClick,
+      sortAbilities: this.changeSortMode,
+      toggleExpand: this.toggleAbilityExpand,
       configurePersona: this.configurePersona,
     },
   };
@@ -36,7 +41,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     tabs: {
       // Foundry-provided generic template
       template: "templates/generic/tab-navigation.hbs",
-      classes: ["persona-nav"], // Optionally add extra classes to the part for extra customization
+      classes: ["pars-crucis-nav"],
     },
     skills: {
       template: "systems/pars-crucis/templates/actor/parts/skills.hbs",
@@ -57,7 +62,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static TABS = {
     primary: {
-      initial: "skills",
+      initial: "abilities", // Changed to simplify testing, once done set back to skills
       tabs: [
         { id: "skills", label: "PC.tabs.skills" },
         { id: "abilities", label: "PC.tabs.abilities" },
@@ -81,10 +86,14 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
   }
 
   async _prepareContext() {
+    const document = this.document;
+    const categorizedItems = this.categorizeItems(document);
+
     const context = {
-      actor: this.document,
-      document: this.document,
-      system: this.document.system,
+      actor: document,
+      document: document,
+      system: document.system,
+      categorized: categorizedItems,
       config: CONFIG.PC,
       tabs: this._prepareTabs("primary"),
     };
@@ -124,7 +133,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
    * @param {HTMLElement} target - The capturing HTML element which defined a [data-action]
    */
   static async onAttributeClick(event, target) {
-    event.preventDefault();
     const dataset = target.dataset;
     const attKey = dataset.attribute;
     const attType = dataset.type;
@@ -154,7 +162,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
   }
 
   static async onLuckClick(event, target) {
-    event.preventDefault();
     const dataset = target.dataset;
     const luckBooleans = this.actor.system.luck.booleans;
     const index = dataset.luckIndex;
@@ -165,7 +172,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
   }
 
   static async onSkillClick(event, target) {
-    event.preventDefault();
     const dataset = target.dataset;
     const skKey = dataset.skill;
     const skType = dataset.type;
@@ -194,7 +200,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   // Open a Dialog box with options to Delete, Edit or Cancel
   static async deleteItemOnClick(event, target) {
-    event.preventDefault();
     const itemId = target.dataset.itemId;
     const item = this.actor.items.get(itemId);
 
@@ -232,25 +237,84 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     }
   }
 
+  categorizeItems(document) {
+    const abilities = document.system.abilities;
+    const categorizedItems = {};
+
+    for (let ability of abilities) {
+      const art = ability.system.info.art;
+      if (!categorizedItems[art]) {
+        categorizedItems[art] = [];
+      }
+      categorizedItems[art].push(ability);
+    }
+
+    for (const art of Object.keys(categorizedItems)) {
+      const sortMode = this.getSortMode(art);
+      categorizedItems[art] = this.sortItems(categorizedItems[art], sortMode);
+    }
+
+    return categorizedItems;
+  }
+
+  sortItems(group, sortMode = "coreLevel-asc") {
+    return group.slice().sort((a, b) => {
+      switch (sortMode) {
+        case "coreLevel-desc":
+          return b.system.details.coreLevel - a.system.details.coreLevel;
+        case "name-asc":
+          return a.name.localeCompare(b.name);
+        case "name-desc":
+          return b.name.localeCompare(a.name);
+        default: // "coreLevel-asc"
+          return a.system.details.coreLevel - b.system.details.coreLevel;
+      }
+    });
+  }
+
+  getSortMode(flag) {
+    const actor = this.document;
+    return actor.getFlag("pars-crucis", flag) || "coreLevel-asc";
+  }
+
   // Renders item sheet if owner
-  static async editItemOnClick(event, target) {
-    event.preventDefault();
-    const itemId = target.dataset.itemId;
-    const item = this.actor.items.get(itemId);
+  static async editItemOnClick(_, target) {
+    const item = this.actor.items.get(target.dataset.itemId);
     if (this.actor.isOwner) item.sheet.render(true);
   }
 
-  static async equipItemOnClick(event, target) {
-    event.preventDefault();
+  static async equipItemOnClick(_, target) {
     const dataset = target.dataset;
-    const itemId = dataset.itemId;
-    const item = this.actor.items.get(itemId);
+    const item = this.actor.items.get(dataset.itemId);
     if (this.actor.isOwner)
       return item.update({ ["system.details.equipped"]: dataset.equip });
   }
 
-  static async configurePersona(event) {
-    event.preventDefault();
+  static async configurePersona() {
     new PersonaConfig({ document: this.actor })?.render(true);
+  }
+
+  static async toggleAbilityExpand(_, target) {
+    const item = this.actor.items.get(target.dataset.itemId);
+    const current = item.getFlag("pars-crucis", "expanded") ?? false;
+    item.setFlag("pars-crucis", "expanded", !current);
+  }
+
+  static async abilityAttack() {
+    console.log("ATTACK ABILITY HERE");
+  }
+
+  static async abilityTest() {
+    console.log("TEST ABILITY HERE");
+  }
+
+  static async abilityUse() {
+    console.log("USE ABILITY HERE");
+  }
+
+  static async changeSortMode(_, target) {
+    const dataset = target.dataset;
+    const actor = this.document;
+    actor.setFlag("pars-crucis", dataset.art, dataset.sortMode);
   }
 }

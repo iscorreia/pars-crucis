@@ -28,6 +28,10 @@
     background-color: var(--color-cool-4);
     border: none;
   }
+  ol {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 /* ACTOR SHEET HEADER */
@@ -41,16 +45,18 @@
   margin: -5px;
   position: relative;
 }
-h1.actor-name {
+h1.name {
   font-size: 40px;
   height: 26px;
   line-height: 20px;
   font-weight: normal;
-  margin-left: -75px;
-  padding-left: 75px;
   border-color: var(--color-light-6);
   border-style: solid;
   border-width: 0 0 1px 0;
+}
+h1.actor-name {
+  margin-left: -75px;
+  padding-left: 75px;
 }
 .header-center-block {
   width: 70%;
@@ -152,11 +158,11 @@ h1.actor-name {
     z-index: 0;
     width: 0%;
     height: 22px;
-    background-color: #24942d70;
+    background-color: var(--pc-color-health-bg);
     border-radius: 5px 0 5px 0;
   }
   .pe-bar {
-    background-color: #2a5cc770;
+    background-color: var(--pc-color-essence-bg);
   }
   .subatt-value {
     padding-bottom: 1px;
@@ -342,15 +348,16 @@ h1.actor-name {
       }
       .ar-value {
         text-align: right;
+      }
+      .ar-value,
+      .ab-value {
         padding-top: 2px;
+        padding-right: 2px;
       }
       .ab-value,
       .ab-mod {
         text-align: right;
         background-color: transparent;
-      }
-      .ab-value {
-        padding-top: 2px;
       }
     }
     .ar-field {
@@ -404,7 +411,7 @@ h1.actor-name {
 }
 
 /* TABS */
-.persona-nav {
+.pars-crucis-nav {
   height: 26px;
   margin-bottom: 5px;
   .active {
@@ -413,7 +420,9 @@ h1.actor-name {
     font-weight: bold;
   }
   a {
-    width: 75px;
+    width: 100px;
+    height: 26px;
+    line-height: 28px;
   }
 }
 
@@ -530,8 +539,10 @@ h1.actor-name {
   align-items: center;
   width: 100%;
 }
-/* SKILL TAB SEPARATORS */
-.skill-tab > .skill-category:nth-child(odd)::after {
+/* SKILLS TAB SEPARATORS */
+.skill-tab > .skill-category:nth-child(odd)::after,
+.abilities-tab > ol:not(:last-child)::after {
+  /* adds it to ABILITIES TAB as well */
   content: "";
   display: block;
   width: 100%;
@@ -566,6 +577,181 @@ h1.actor-name {
   z-index: 1;
 }
 /* SKILL TAB currently uses 396 pixels of height from 424 available, what to do with the remaining 28 pixels?  */
+
+/* ABILITIES TAB */
+.abilities-tab {
+  .ability-group-title {
+    width: 100%;
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .empty-space {
+      width: 70px;
+    }
+    h4 {
+      height: 100%;
+      width: calc(100% - 140px);
+      text-align: center;
+      div {
+        height: inherit;
+      }
+    }
+    .ability-sorting {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      width: 70px;
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        color: var(--color-text-secondary);
+      }
+      a.active {
+        text-shadow: 0 0 10px var(--color-shadow-primary);
+        color: var(--color-text-emphatic);
+      }
+    }
+  }
+}
+.ability-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .ability-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h5 {
+      width: 180px;
+      padding: 1px 0 0 2px;
+      line-height: 23px;
+      font-size: 19px;
+      font-family: "Cambria";
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .ability-keywords {
+      width: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      .pc-keyword {
+        margin-left: 3px;
+      }
+      .pc-keyword:last-child {
+        /* margin-right: 0; */
+      }
+    }
+    .ability-actions {
+      width: 260px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .ability-action {
+        height: 22px;
+        min-width: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: "Cambria";
+        font-size: 16px;
+        background-color: var(--color-dark-3);
+        border-color: var(--color-dark-6);
+        color: var(--color-light-2);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        padding: 2px 3px;
+        margin-right: 3px;
+        i {
+          flex-shrink: 0;
+          display: inline-flex; /* helps some icon fonts center properly */
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          height: 16px;
+        }
+        .action-name {
+          width: 100%;
+          display: block;
+          min-width: 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-left: 3px;
+        }
+      }
+      .ac-attack {
+        background-color: var(--pc-color-damage-bg);
+        border-color: var(--pc-color-damage-border);
+      }
+      .ac-test {
+        background-color: var(--pc-color-essence-bg);
+        border-color: var(--pc-color-essence-border);
+      }
+      .ac-use {
+        background-color: var(--pc-color-health-bg);
+        border-color: var(--pc-color-health-border);
+      }
+      .ability-action:last-child {
+        margin: 0;
+      }
+    }
+    .ability-expand {
+      width: 68px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .ability-controls {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      gap: 2px;
+      width: 34px;
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 16px;
+      }
+    }
+  }
+  .ability-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.pc-keyword {
+  height: 18px;
+  line-height: 18px;
+  background-color: var(--color-dark-3);
+  border-color: var(--color-dark-6);
+  color: var(--color-light-2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 0 3px;
+  margin-left: 3px;
+  font-size: 12px;
+  text-align: center;
+}
+/* SKILLS TAB SEPARATORS */
+.abilities-tab > ol:not(:last-child)::after {
+  margin-bottom: 5px;
+}
 
 /* INVENTORY TAB */
 .item-line {

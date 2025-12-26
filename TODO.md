@@ -1,26 +1,25 @@
 # HIGH PRIORITY
 
-- Improve Ability basics **_logic_**
+- Persona Ability calculations **_logic_**
 - Create Weapon **_logic_**
-- Implement Actions **_logic_**
 
 ## IMPORTANT
 
-- Bagic Ability **_hbs style/css_**
-- Bagic Weapon/Gear **_hbs style/css_**
+- Persona sheet Ability Tab **_hbs style/css_**
+- Basic Ability **_hbs style/css_**
+- Basic Weapon/Gear **_hbs style/css_**
 - Basic Passive **_hbs style/css_**
 - Persona Inventory calculations **_logic_**
-- Persona Ability calculations **_logic_**
 - Passive points/xp **_logic_**
 - Improved dice roll **_logic_**
 - Currency block on Persona Inventory Tab **_feature_**
 
 ## NECESSARY
 
-- Implement usable items **_logic_**
+- Implement usable Ability/Item actions **_logic_**
 - Automatically set token actor-link/vision for personas **_config_**
 - Create Non Playable Character - PDM sheet from Persona Sheet **_config_**
-- Persona sheet Ability Tab **_hbs style/css_**
+
 - Persona sheet Inventory Tab **_hbs style/css_**
 - Persona sheet Passive Tab **_hbs style/css_**
 
@@ -41,6 +40,7 @@
 
 ### INTERESTING BUT NOT NECESSARY
 
+- Implement `enrichHTML` in the item descriptions/effect **_feature_**
 - Skills/Abilities/Items Macros **_feature_**
 - Persona Icon on chat **_feature update_**
 - Tooltips / Information on hover **_feature_** or;

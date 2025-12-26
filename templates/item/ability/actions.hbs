@@ -1,0 +1,110 @@
+{{! Actions block }}
+
+<section class="tab {{tab.cssClass}}" data-group="primary" data-tab="actions">
+  <div class="flexcol">
+    <a data-action="createAction"><i class="fa fa-plus"></i></a>
+    <ul class="flexcol">
+      {{#each system.actions as |action obj|}}
+        <li class="action-block">
+          <div class="action-block-info flexcol">
+            <div class="flexrow">
+              <div>
+                <input
+                  name="system.actions.{{@key}}.name"
+                  type="String"
+                  value="{{action.name}}"
+                  data-dtype="String"
+                />
+              </div>
+              
+              <select name="system.actions.{{@key}}.type">
+                {{selectOptions
+                  ../config.action.types
+                  selected=action.type
+                  localize=true
+                }}
+              </select>
+              {{#if (or (eq action.type "attack") (eq action.type "test"))}}
+                <select name="system.actions.{{@key}}.skill">
+                  {{selectOptions
+                    ../config.skills
+                    selected=action.skill
+                    localize=true
+                  }}
+                </select>
+              {{/if}}
+              {{#if (eq action.type "attack")}}
+                <select name="system.actions.{{@key}}.subtype">
+                  {{selectOptions
+                    ../config.action.types.attack.subtypes
+                    selected=action.subtype
+                    localize=true
+                  }}
+                </select>
+              {{/if}}
+              {{#if (eq action.type "test")}}
+                <div class="flexrow">
+                  {{localize "PC.difficulty.abv"}}
+                  <input
+                    name="system.actions.{{@key}}.difficulty"
+                    type="Number"
+                    value="{{action.difficulty}}"
+                    data-dtype="Number"
+                  />
+                </div>
+              {{/if}}
+
+              <a
+                class="trash-can"
+                data-action="deleteAction"
+                data-action-id="{{action._id}}"
+              >
+                <i class="fa-solid fa-trash-can"></i>
+              </a>
+            </div>
+
+            <div class="action-effect">
+              <input 
+                name="system.actions.{{@key}}.effect"
+                type="String"
+                value="{{action.effect}}"
+                data-dtype="String"
+              />
+            </div>
+
+            <div class="action-details">
+              {{localize "PC.effort.label"}}
+              <input
+                name="system.actions.{{@key}}.effort"
+                type="String"
+                value="{{action.effort}}"
+                data-dtype="String"
+              />
+              {{localize "PC.range.label"}}
+              <input
+                name="system.actions.{{@key}}.range"
+                type="String"
+                value="{{action.range}}"
+                data-dtype="String"
+              />
+              {{localize "PC.prepTime.abv"}}
+              <input
+                name="system.actions.{{@key}}.prepTime"
+                type="String"
+                value="{{action.prepTime}}"
+                data-dtype="String"
+              />
+              {{localize "PC.duration.label"}}
+              <input
+                name="system.actions.{{@key}}.duration"
+                type="String"
+                value="{{action.duration}}"
+                data-dtype="String"
+              />
+            </div>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

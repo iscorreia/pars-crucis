@@ -181,8 +181,11 @@
       "druid": "Druidismo",
       "eleme": "Elementalismo",
       "ontol": "Ontologia",
-      "sabak": "Sabakismo"
+      "sabak": "Sabakismo",
+
+      "none": "Nenhuma"
     },
+    "skill": "Perícia",
     "learning": {
       "label": "Aprendizado",
       "common": "Comum",
@@ -201,14 +204,120 @@
       "subtypes": {
         "technique": { "label": "Técnica" },
         "power": { "label": "Poder" }
+      },
+      "arts": {
+        "meleeTech": {
+          "label": "Corpo a corpo",
+          "groupLabel": "Técnicas Corpo a corpo",
+          "categories": {}
+        },
+        "rangedTech": {
+          "label": "À distância",
+          "groupLabel": "Técnicas à Distância",
+          "categories": {}
+        },
+        "miscTech": {
+          "label": "Diversa",
+          "groupLabel": "Técnicas Diversas",
+          "categories": {}
+        },
+        "aoist": {
+          "label": "Aoista",
+          "groupLabel": "Poderes Aoistas",
+          "categories": {
+            "favor": "Dádiva de Favor",
+            "summon": "Dádiva de Invocação",
+            "retribuition": "Dádiva de Retribuição",
+            "macculate": "Dádiva Maculada",
+            "unknown": "Dádiva Desconhecida"
+          }
+        },
+        "arcane": {
+          "label": "Arcano",
+          "groupLabel": "Poderes Arcanos",
+          "categories": {
+            "alchemical": "Escola Alquímica",
+            "psycognitive": "Escola Psicognitiva",
+            "metaessential": "Escola Meta Essencial",
+            "scribing": "Escola Escriba",
+            "unknown": "Escola Desconhecida"
+          }
+        },
+        "bardic": {
+          "label": "Bárdico",
+          "groupLabel": "Poderes Bárdicos",
+          "categories": {
+            "fortune": "Arte da Fortuna",
+            "instrumental": "Arte Instrumental",
+            "psycovocal": "Arte Psicovocal",
+            "theatrical": "Arte Teatral",
+            "unknown": "Arte Desconhecida"
+          }
+        },
+        "cronocientific": {
+          "label": "Cronocientífico",
+          "groupLabel": "Poderes Cronocientíficos",
+          "categories": {
+            "crono": "Controle Cronológico",
+            "phase": "Controle Fásico",
+            "gravitational": "Control Gravitacional",
+            "sidereal": "Controle Sideral",
+            "unknown": "Controle Desconhecido"
+          }
+        },
+        "druidic": {
+          "label": "Druídico",
+          "groupLabel": "Poderes Druídicos",
+          "categories": {
+            "animal": "Âmbito Animal",
+            "astral": "Âmbito Astral",
+            "vegetal": "Âmbito Vegetal",
+            "unknown": "Âmbito Desconhecido"
+          }
+        },
+        "elemental": {
+          "label": "Elemental",
+          "groupLabel": "Poderes Elementais",
+          "categories": {
+            "water": "Força da Água",
+            "fire": "Força do Fogo",
+            "lightning": "Força do Raio",
+            "earth": "Força da Terra",
+            "wind": "Força do Vento",
+            "unknown": "Força Desconhecida"
+          }
+        },
+        "sabak": {
+          "label": "Sabak",
+          "groupLabel": "Poderes Sabak",
+          "categories": {
+            "death": "Domínio do Exício",
+            "mind": "Domínio Mental",
+            "plague": "Domínio da Praga",
+            "blood": "Domínio do Sangue",
+            "unknown": "Domínio Desconhecido"
+          }
+        },
+        "other": {
+          "label": "Desconhecido",
+          "groupLabel": "Artes Desconhecidas",
+          "categories": {}
+        }
       }
     },
+    "abilities": "Habilidades",
+    "expand": "Expandir",
+    "expandActions": "Expandir ações",
+    "expandCollapseActions": "Expandir/Recolher ações",
+    "collapse": "Recolher",
+    "collapseActions": "Recolher ações",
     "action": {
       "label": "Ação",
       "types": {
         "attack": {
           "label": "Ataque",
           "subtype": {
+            "melee": "Corpo a corpo",
             "throw": "Arremesso",
             "projectile": "Projétil",
             "jet": "Jato",
@@ -218,10 +327,16 @@
             "social": "Social"
           }
         },
-        "direct": { "label": "Uso direto" },
+        "use": { "label": "Uso direto" },
         "test": { "label": "Teste" }
       }
     },
+    "actions": "Ações",
+    "effort": { "label": "Esforço", "abv": "Esf" },
+    "difficulty": { "label": "Dificuldade", "abv": "Dif" },
+    "range": { "label": "Alcance", "abv": "Alc" },
+    "prepTime": { "label": "Tempo de preparo", "abv": "TP" },
+    "duration": { "label": "Duração" },
     "weaponry": "Armamentos",
     "weapon": {
       "label": "Armamento",
@@ -378,6 +493,41 @@
     "equippable": "Equipável",
     "stackable": "Agrupável",
     "equipped": "Equipado",
-    "config": "Configurações"
+    "config": "Configurações",
+
+    "keyword": {
+      "label": "Palavra-chave",
+      "melee": "Corpo a corpo",
+      "bonus": "Bônus",
+      "throw": "Arremesso",
+      "reaction": "Reação",
+      "esoteric": "Esotérica",
+      "quick": "Rápida",
+      "power": "Poder",
+      "style": "Estilo",
+      "passive": "Passiva",
+      "aim": "Mira",
+      "projectile": "Projétil",
+      "social": "Social",
+      "starter": "Inicial",
+      "affliction": "Aflição",
+      "sigil": "Sigilo",
+      "summon": "Invocação",
+      "jet": "Jato",
+      "aoe": "Área",
+      "mental": "Mental",
+      "mutation": "Mutação",
+
+      "twohanded": "Duas mãos",
+      "custom": "Sob medida",
+      "potion": "Poção",
+      "elixir": "Elixir",
+      "poison": "Veneno",
+      "agent": "Agente",
+      "recipe": "Receita",
+      "grenade": "Granada",
+      "instrument": "Instrumento"
+    },
+    "keywords": "Palavras-chave"
   }
 }
