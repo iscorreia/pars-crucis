@@ -1,8 +1,43 @@
 /* ITEM HEADER */
 .ability-header {
-  height: 75px;
+  display: flex;
+  flex-direction: row;
+  height: 58px;
+  img {
+    border-radius: 10px 0 0 0;
+  }
 }
-
+.item-header-right {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 58px);
+  .item-name-line {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .item-name {
+      padding-left: 3px;
+      width: 80%;
+    }
+    .experience {
+      width: 20%;
+      .xp-cost {
+        width: 50%;
+      }
+      .xp-name {
+        width: 50%;
+      }
+    }
+  }
+  .item-sheet-keywords {
+    display: flex;
+  }
+}
+.item-info {
+  line-height: 14px;
+  height: 14px;
+  padding-left: 3px;
+}
 .action-block {
   display: flex;
   flex-direction: row;

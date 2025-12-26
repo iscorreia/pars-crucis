@@ -2,102 +2,108 @@
 
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="abilities">
   <div class="abilities-tab">
-    <h4>
-      <div>SEPARATE BY ART (MELEE TECHS / AOIST POWERS / SO ON...)</div>
-    </h4>
-    <ol>
-      {{#each system.abilities as |ability obj|}}
-        <li class="ability-block">
-          <div class="ability-line">
-            <img src="{{ability.img}}" width="24" height="24" />
-            <h5 class="ability-name">{{ability.name}}</h5>
+    {{#each categorized as |abilityGroups obj|}}
+      <h4>
+        <div>{{localize (concat "PC.ability.arts." obj ".groupLabel")}}</div>
+      </h4>
+      <ol>
+        {{#each abilityGroups as |ability obj|}}
+          <li class="ability-block">
+            <div class="ability-line">
+              <img src="{{ability.img}}" width="24" height="24" />
+              <h5 class="ability-name">{{ability.name}}</h5>
 
-            <div class="ability-keywords">
-              {{#each ability.system.details.keywords as |value keyword|}}
-                <div class="pc-keyword">
-                  {{localize (concat "PC.keyword." keyword)}}{{#if
-                    value
-                  }}({{value}}){{/if}}{{#unless @last}}{{/unless}}
-                </div>
-              {{/each}}
+              <div class="ability-keywords">
+                {{#each ability.system.details.keywords as |value keyword|}}
+                  <div class="pc-keyword">
+                    {{localize (concat "PC.keyword." keyword)}}{{#if
+                      value
+                    }}({{value}}){{/if}}{{#unless @last}}{{/unless}}
+                  </div>
+                {{/each}}
+              </div>
+
+              <div class="ability-actions">
+                {{#each ability.system.actions as |action key|}}
+                  {{#if (eq action.type "attack")}}<a
+                      class="ability-action ac-attack"
+                      data-action="clickAbilityAttack"
+                    ><i class="fa-sharp fa-sword"></i>
+                      {{#if action.name}}
+                        <div class="action-name">{{action.name}}</div>
+                      {{/if}}
+                    </a>{{/if}}
+                  {{#if (eq action.type "test")}}<a
+                      class="ability-action ac-test"
+                      data-action="clickAbilityTest"
+                    ><i class="fa-sharp fa-solid fa-dice-d10"></i>
+                      {{#if action.name}}
+                        <div class="action-name">{{action.name}}</div>
+                      {{/if}}
+                    </a>{{/if}}
+                  {{#if (eq action.type "use")}}<a
+                      class="ability-action ac-use"
+                      data-action="clickAbilityUse"
+                    ><i class="fa-sharp fa-solid fa-flask-round-potion"></i>
+                      {{#if action.name}}
+                        <div class="action-name">{{action.name}}</div>
+                      {{/if}}
+                    </a>{{/if}}
+
+                {{/each}}
+              </div>
+
+              <div class="ability-expand">
+                <a
+                  data-action="toggleExpand"
+                  data-item-id="{{ability._id}}"
+                  title="{{localize 'PC.expandCollapseActions'}}"
+                >
+                  {{#if ability.flags.pars-crucis.expanded}}
+                    {{localize "PC.collapse"}}
+                  {{else}}
+                    {{localize "PC.expand"}}
+                  {{/if}}
+                </a>
+              </div>
+
+              <div class="ability-controls">
+                <a
+                  data-action="clickEdit"
+                  data-item-id="{{ability._id}}"
+                  title="{{localize 'PC.edit'}}"
+                >
+                  <i class="fas fa-edit"></i>
+                </a>
+                <a
+                  data-action="clickDelete"
+                  data-item-id="{{ability._id}}"
+                  title="{{localize 'PC.delete'}}"
+                >
+                  <i class="fa-solid fa-eraser"></i>
+                </a>
+              </div>
             </div>
-
-            <div class="ability-actions">
-              {{#each ability.system.actions as |action key|}}
-                {{#if (eq action.type "attack")}}<a
-                    class="ability-action ac-attack"
-                    data-action="clickAbilityAttack"
-                  ><i class="fa-solid fa-hammer"></i>
-                    {{#if action.name}}
-                      <div class="action-name">{{action.name}}</div>
-                    {{/if}}
-                  </a>{{/if}}
-                {{#if (eq action.type "test")}}<a
-                    class="ability-action ac-test"
-                    data-action="clickAbilityTest"
-                  ><i class="fa-solid fa-dice-d6"></i>
-                    {{#if action.name}}
-                      <div class="action-name">{{action.name}}</div>
-                    {{/if}}
-                  </a>{{/if}}
-                {{#if (eq action.type "use")}}<a
-                    class="ability-action ac-use"
-                    data-action="clickAbilityUse"
-                  ><i class="fa-solid fa-jar"></i>
-                    {{#if action.name}}
-                      <div class="action-name">{{action.name}}</div>
-                    {{/if}}
-                  </a>{{/if}}
-
-              {{/each}}
-            </div>
-
-            <div class="ability-expand">
-              <a
-                data-action="toggleExpand"
-                data-item-id="{{ability._id}}"
-                title="{{localize 'PC.expandCollapseActions'}}"
-              >
-                {{#if ability.flags.pars-crucis.expanded}}
-                  {{localize "PC.collapse"}}
-                {{else}}
-                  {{localize "PC.expand"}}
-                {{/if}}
-              </a>
-            </div>
-
-            <div class="ability-controls">
-              <a
-                data-action="clickEdit"
-                data-item-id="{{ability._id}}"
-                title="{{localize 'PC.edit'}}"
-              >
-                <i class="fas fa-edit"></i>
-              </a>
-              <a
-                data-action="clickDelete"
-                data-item-id="{{ability._id}}"
-                title="{{localize 'PC.delete'}}"
-              >
-                <i class="fa-solid fa-trash-can"></i>
-              </a>
-            </div>
-          </div>
-          {{#if ability.flags.pars-crucis.expanded}}
-            <div class="ability-actions">
-              {{#each ability.system.actions as |action key|}}
-                <div>{{action.name}}{{#if (eq action.type "attack")}},
+            {{#if ability.flags.pars-crucis.expanded}}
+              <div class="ability-actions">
+                {{#each ability.system.actions as |action key|}}
+                  <div>{{action.name}}{{#if (eq action.type "attack")}},
+                      {{localize
+                        (concat
+                          "PC.action.types.attack.subtype." action.subtype
+                        )
+                      }}{{/if}}{{#if (eq action.type "test")}}, dif{{action.difficulty}}{{/if}},
                     {{localize
-                      (concat "PC.action.types.attack.subtype." action.subtype)
-                    }}{{/if}}{{#if (eq action.type "test")}}, dif{{action.difficulty}}{{/if}},
-                  {{localize (concat "PC.action.types." action.type ".label")}},
-                  {{action.effect}}
-                </div>
-              {{/each}}
-            </div>
-          {{/if}}
-        </li>
-      {{/each}}
-    </ol>
+                      (concat "PC.action.types." action.type ".label")
+                    }},
+                    {{action.effect}}
+                  </div>
+                {{/each}}
+              </div>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ol>
+    {{/each}}
   </div>
 </section>

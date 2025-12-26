@@ -203,11 +203,24 @@
         "power": { "label": "Poder" }
       },
       "arts": {
-        "meleeTech": { "label": "Corpo a corpo", "categories": {} },
-        "rangedTech": { "label": "À distância", "categories": {} },
-        "miscTech": { "label": "Diversa", "categories": {} },
+        "meleeTech": {
+          "label": "Corpo a corpo",
+          "groupLabel": "Técnicas Corpo a corpo",
+          "categories": {}
+        },
+        "rangedTech": {
+          "label": "À distância",
+          "groupLabel": "Técnicas à Distância",
+          "categories": {}
+        },
+        "miscTech": {
+          "label": "Diversa",
+          "groupLabel": "Técnicas Diversas",
+          "categories": {}
+        },
         "aoist": {
           "label": "Aoista",
+          "groupLabel": "Poderes Aoistas",
           "categories": {
             "favor": "Dádiva de Favor",
             "summon": "Dádiva de Invocação",
@@ -218,6 +231,7 @@
         },
         "arcane": {
           "label": "Arcano",
+          "groupLabel": "Poderes Arcanos",
           "categories": {
             "alchemical": "Escola Alquímica",
             "psycognitive": "Escola Psicognitiva",
@@ -228,6 +242,7 @@
         },
         "bardic": {
           "label": "Bárdico",
+          "groupLabel": "Poderes Bárdicos",
           "categories": {
             "fortune": "Arte da Fortuna",
             "instrumental": "Arte Instrumental",
@@ -238,6 +253,7 @@
         },
         "cronocientific": {
           "label": "Cronocientífico",
+          "groupLabel": "Poderes Cronocientíficos",
           "categories": {
             "crono": "Controle Cronológico",
             "phase": "Controle Fásico",
@@ -248,6 +264,7 @@
         },
         "druidic": {
           "label": "Druídico",
+          "groupLabel": "Poderes Druídicos",
           "categories": {
             "animal": "Âmbito Animal",
             "astral": "Âmbito Astral",
@@ -257,6 +274,7 @@
         },
         "elemental": {
           "label": "Elemental",
+          "groupLabel": "Poderes Elementais",
           "categories": {
             "water": "Força da Água",
             "fire": "Força do Fogo",
@@ -268,6 +286,7 @@
         },
         "sabak": {
           "label": "Sabak",
+          "groupLabel": "Poderes Sabak",
           "categories": {
             "death": "Domínio do Exício",
             "mind": "Domínio Mental",
@@ -276,7 +295,11 @@
             "unknown": "Domínio Desconhecido"
           }
         },
-        "other": { "label": "Desconhecido", "categories": {} }
+        "other": {
+          "label": "Desconhecido",
+          "groupLabel": "Artes Desconhecidas",
+          "categories": {}
+        }
       }
     },
     "abilities": "Habilidades",

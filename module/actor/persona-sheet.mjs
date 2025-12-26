@@ -40,7 +40,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     tabs: {
       // Foundry-provided generic template
       template: "templates/generic/tab-navigation.hbs",
-      classes: ["persona-nav"], // Optionally add extra classes to the part for extra customization
+      classes: ["pars-crucis-nav"],
     },
     skills: {
       template: "systems/pars-crucis/templates/actor/parts/skills.hbs",
@@ -85,13 +85,19 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
   }
 
   async _prepareContext() {
+    const document = this.document;
+    const categorizedItems = this.categorizeItems(document);
+
     const context = {
-      actor: this.document,
-      document: this.document,
-      system: this.document.system,
+      actor: document,
+      document: document,
+      system: document.system,
+      categorized: categorizedItems,
       config: CONFIG.PC,
       tabs: this._prepareTabs("primary"),
     };
+
+    console.log(context);
 
     return context;
   }
@@ -230,6 +236,21 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
         ],
       });
     }
+  }
+
+  categorizeItems(document) {
+    const abilities = document.system.abilities;
+    const categorizedItems = {};
+
+    for (let [id, ability] of Object.entries(abilities)) {
+      const art = ability.system.info.art;
+      if (!categorizedItems[art]) {
+        categorizedItems[art] = {};
+      }
+      categorizedItems[art][id] = ability;
+    }
+
+    return categorizedItems;
   }
 
   // Renders item sheet if owner

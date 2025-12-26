@@ -2,6 +2,12 @@
 
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="config">
   <div class="flexcol">
+    <input
+      name="name"
+      type="text"
+      value="{{item.name}}"
+      placeholder="Nameless Ability"
+    />
     <select name="system.info.subtype">
       {{selectOptions
         config.ability.subtypes
@@ -18,8 +24,6 @@
     </select>
     {{#with (lookup config.ability.arts system.info.art) as |art|}}
       {{#if art.categories}}
-        {{log ../system}}
-        {{log (lookup ../config.ability.arts ../system.info.art)}}
         <select name="system.info.category">
           {{selectOptions
             (lookup (lookup ../config.ability.arts ../system.info.art) "categories")

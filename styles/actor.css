@@ -44,16 +44,18 @@
   margin: -5px;
   position: relative;
 }
-h1.actor-name {
+h1.name {
   font-size: 40px;
   height: 26px;
   line-height: 20px;
   font-weight: normal;
-  margin-left: -75px;
-  padding-left: 75px;
   border-color: var(--color-light-6);
   border-style: solid;
   border-width: 0 0 1px 0;
+}
+h1.actor-name {
+  margin-left: -75px;
+  padding-left: 75px;
 }
 .header-center-block {
   width: 70%;
@@ -407,7 +409,7 @@ h1.actor-name {
 }
 
 /* TABS */
-.persona-nav {
+.pars-crucis-nav {
   height: 26px;
   margin-bottom: 5px;
   .active {
@@ -582,12 +584,15 @@ h1.actor-name {
     flex-direction: row;
     justify-content: space-between;
     h5 {
-      width: 200px;
+      width: 180px;
       padding: 1px 0 0 2px;
       line-height: 23px;
       font-size: 19px;
       font-family: "Cambria";
       font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .ability-keywords {
       width: 200px;
@@ -603,13 +608,14 @@ h1.actor-name {
       }
     }
     .ability-actions {
-      width: 240px;
+      width: 260px;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       .ability-action {
         height: 22px;
+        min-width: 16px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -624,6 +630,7 @@ h1.actor-name {
         padding: 2px 3px;
         margin-right: 3px;
         i {
+          flex-shrink: 0;
           display: inline-flex; /* helps some icon fonts center properly */
           align-items: center;
           justify-content: center;
@@ -631,6 +638,12 @@ h1.actor-name {
           height: 16px;
         }
         .action-name {
+          width: 100%;
+          display: block;
+          min-width: 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
           margin-left: 3px;
         }
       }

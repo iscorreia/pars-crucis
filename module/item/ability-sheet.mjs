@@ -22,6 +22,7 @@ export default class AbilitySheet extends ParsCrucisItemSheet {
     },
     tabs: {
       template: "templates/generic/tab-navigation.hbs",
+      classes: ["pars-crucis-nav"],
     },
     description: {
       template: "systems/pars-crucis/templates/item/parts/description.hbs",

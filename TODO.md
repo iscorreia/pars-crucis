@@ -16,7 +16,7 @@
 
 ## NECESSARY
 
-- Implement usable items **_logic_**
+- Implement usable Ability/Item actions **_logic_**
 - Automatically set token actor-link/vision for personas **_config_**
 - Create Non Playable Character - PDM sheet from Persona Sheet **_config_**
 

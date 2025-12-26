@@ -49,7 +49,7 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
     return {
       info: new SchemaField({
         subtype: new StringField({ initial: "power" }),
-        art: new StringField({ initial: null, nullable: true }),
+        art: new StringField({ initial: "meleeTech", nullable: true }),
         category: new StringField({ initial: null, nullable: true }),
       }),
       actions: new TypedObjectField(new EmbeddedDataField(ActionModel), {
