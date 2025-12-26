@@ -302,7 +302,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static async abilityAttack() {
     console.log("ATTACK ABILITY HERE");
-    c;
   }
 
   static async abilityTest() {
