@@ -1,0 +1,16 @@
+{{! Background tab }}
+
+<section
+  class="tab {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="background"
+>
+  <div class="background-tab">
+    <div class="background">
+      {{formGroup
+        systemFields.info.fields.background
+        value=system.info.background
+      }}
+    </div>
+  </div>
+</section>
