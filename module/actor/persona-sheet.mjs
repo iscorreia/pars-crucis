@@ -56,19 +56,19 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       template: "systems/pars-crucis/templates/actor/parts/passives.hbs",
     },
     details: {
-      template: "systems/pars-crucis/templates/actor/parts/details.hbs",
+      template: "systems/pars-crucis/templates/actor/parts/background.hbs",
     },
   };
 
   static TABS = {
     primary: {
-      initial: "abilities", // Changed to simplify testing, once done set back to skills
+      initial: "skills", // Change to simplify testing, once done set back to skills
       tabs: [
         { id: "skills", label: "PC.tabs.skills" },
         { id: "abilities", label: "PC.tabs.abilities" },
         { id: "gear", label: "PC.tabs.gear" },
         { id: "passives", label: "PC.tabs.passives" },
-        { id: "details", label: "PC.tabs.details" },
+        { id: "background", label: "PC.tabs.background" },
       ],
     },
   };
@@ -93,6 +93,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       actor: document,
       document: document,
       system: document.system,
+      systemFields: document.system.schema.fields, // used in formInput|formGroup
       categorized: categorizedItems,
       config: CONFIG.PC,
       tabs: this._prepareTabs("primary"),
@@ -107,7 +108,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       case "abilities":
       case "gear":
       case "passives":
-      case "details":
+      case "background":
         context.tab = context.tabs[partId];
         break;
       default:

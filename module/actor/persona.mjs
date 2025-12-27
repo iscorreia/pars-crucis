@@ -2,8 +2,14 @@ import { PC } from "../config.mjs";
 import { ORIGINS } from "../data/origins.mjs";
 import { CULTURES } from "../data/cultures.mjs";
 
-const { ArrayField, BooleanField, NumberField, SchemaField, StringField } =
-  foundry.data.fields;
+const {
+  ArrayField,
+  BooleanField,
+  HTMLField,
+  NumberField,
+  SchemaField,
+  StringField,
+} = foundry.data.fields;
 
 export class PersonaModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
@@ -19,6 +25,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
         culture: new StringField({ initial: "adv" }),
         subculture: new StringField({ initial: null, nullable: true }),
         persona: new StringField({ initial: "aven" }),
+        background: new HTMLField(),
       }),
 
       experience: new SchemaField({
