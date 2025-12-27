@@ -55,7 +55,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     passives: {
       template: "systems/pars-crucis/templates/actor/parts/passives.hbs",
     },
-    details: {
+    background: {
       template: "systems/pars-crucis/templates/actor/parts/background.hbs",
     },
   };
