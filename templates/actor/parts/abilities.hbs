@@ -1,8 +1,8 @@
 {{! Abilities tab }}
 
-<section class="tab {{tab.cssClass}}" data-group="primary" data-tab="abilities">
+<section class="tab persona-tab {{tab.cssClass}}" data-group="primary" data-tab="abilities">
   <div class="abilities-tab">
-    {{#each categorized as |abilityGroups obj|}}
+    {{#each categorized.abilities as |abilityGroups obj|}}
       <ol class="abilities-list">
         <div class="ability-group-title">
           <div class="empty-space"></div>
@@ -15,25 +15,25 @@
             <a
               data-action="sortAbilities"
               data-sort-mode="coreLevel-asc"
-              data-art="{{@key}}"
+              data-group="{{@key}}"
               class="{{#if (eq (lookup (lookup ../actor.flags "pars-crucis") @key) "coreLevel-asc")}}active{{/if}}"
             ><i class="fa-regular fa-arrow-down-1-9"></i></a>
             <a
               data-action="sortAbilities"
               data-sort-mode="coreLevel-desc"
-              data-art="{{@key}}"
+              data-group="{{@key}}"
               class="{{#if (eq (lookup (lookup ../actor.flags "pars-crucis") @key) "coreLevel-desc")}}active{{/if}}"
             ><i class="fa-regular fa-arrow-down-9-1"></i></a>
             <a
               data-action="sortAbilities"
               data-sort-mode="name-asc"
-              data-art="{{@key}}"
+              data-group="{{@key}}"
               class="{{#if (eq (lookup (lookup ../actor.flags "pars-crucis") @key) "name-asc")}}active{{/if}}"
             ><i class="fa-regular fa-arrow-down-a-z"></i></a>
             <a
               data-action="sortAbilities"
               data-sort-mode="name-desc"
-              data-art="{{@key}}"
+              data-group="{{@key}}"
               class="{{#if (eq (lookup (lookup ../actor.flags "pars-crucis") @key) "name-desc")}}active{{/if}}"
             ><i class="fa-regular fa-arrow-down-z-a"></i></a>
           </div>

@@ -3,6 +3,7 @@ import { PC } from "../config.mjs";
 const {
   EmbeddedDataField,
   BooleanField,
+  HTMLField,
   NumberField,
   SchemaField,
   StringField,
@@ -168,7 +169,7 @@ function details({
 
 function description() {
   return new SchemaField({
-    description: new StringField({ initial: "" }),
+    description: new HTMLField(),
     shortDescription: new StringField({ initial: "" }),
     notes: new StringField({ initial: "" }),
   });

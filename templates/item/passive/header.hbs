@@ -6,57 +6,37 @@
     src="{{item.img}}"
     data-edit="img"
     data-action="editImage"
-    width="75"
-    height="75"
+    width="58"
+    height="58"
   />
   <div class="item-header-right">
-    <h2 class="item-name">
-      <input
-        name="name"
-        type="text"
-        value="{{item.name}}"
-        placeholder="Nameless Passive"
-      />
-    </h2>
-    <div class="flexrow">
-      <select name="system.info.subtype">
-        {{selectOptions
-          config.passive.subtypes
-          selected=system.info.subtype
-          localize=true
-        }}
-      </select>
-      <select name="system.info.acquirement">
-        {{selectOptions
-          config.passive.acquirement
-          selected=system.info.acquirement
-          localize=true
-        }}
-      </select>
-    </div>
-    <div class="flexrow">
-      <div>
-        <h4>{{localize "PC.pts"}}</h4>
-        <input
-          class="item-input"
-          type="Number"
-          name="system.cost.points"
-          value="{{system.cost.points}}"
-          placeholder="Zeroed"
-          data-dtype="Number"
-        />
-      </div>
-      <div>
-        <h4>{{localize "PC.xp"}}</h4>
-        <input
-          class="item-input"
-          type="Number"
-          name="system.cost.experience"
-          value="{{system.cost.experience}}"
-          placeholder="Zeroed"
-          data-dtype="Number"
-        />
+    <div class="item-name-line">
+      <h1 class="name item-name">
+        {{item.name}}
+      </h1>
+      <div class="experience">
+        <div class="xp-line">
+          {{#if (eq system.info.acquirement "learned")}}
+            <div class="xp-cost">{{system.cost.experience}}</div>
+            <div class="separator"></div>
+            <div class="xp-name">{{localize "PC.xp"}}</div>
+          {{else}}
+            <div class="xp-cost">{{#if
+                (eq system.info.subtype "drawback")
+              }}↑{{/if}}{{system.cost.points}}</div>
+            <div class="separator"></div>
+            <div class="xp-name">{{localize "PC.pts"}}</div>
+          {{/if}}
+        </div>
       </div>
     </div>
+    <div class="item-info">
+      {{localize "PC.passive.label"}}
+      ·
+      {{localize (concat "PC.passive.subtypes." system.info.subtype)}}
+      ·
+      {{localize (concat "PC.passive.acquirement." system.info.acquirement)}}
+    </div>
+    <div class="item-sheet-keywords"></div>
   </div>
 </header>

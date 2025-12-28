@@ -54,6 +54,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     },
     passives: {
       template: "systems/pars-crucis/templates/actor/parts/passives.hbs",
+      scrollable: [".passives-list-block"],
     },
     background: {
       template: "systems/pars-crucis/templates/actor/parts/background.hbs",
@@ -62,7 +63,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static TABS = {
     primary: {
-      initial: "skills", // Change to simplify testing, once done set back to skills
+      initial: "passives", // Change to simplify testing, once done set back to skills
       tabs: [
         { id: "skills", label: "PC.tabs.skills" },
         { id: "abilities", label: "PC.tabs.abilities" },
@@ -87,14 +88,27 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   async _prepareContext() {
     const document = this.document;
-    const categorizedItems = this.categorizeItems(document);
+    const system = document.system;
+    const categorizedAbilities = this.categorize(
+      system.abilities,
+      "system.info.art",
+      this.sortAbilities.bind(this)
+    );
+    const categorizedPassives = this.categorize(
+      system.passives,
+      "system.info.subtype",
+      this.sortItems.bind(this)
+    );
 
     const context = {
       actor: document,
       document: document,
-      system: document.system,
-      systemFields: document.system.schema.fields, // used in formInput|formGroup
-      categorized: categorizedItems,
+      system: system,
+      systemFields: system.schema.fields, // used in formInput|formGroup
+      categorized: {
+        abilities: categorizedAbilities,
+        passives: categorizedPassives,
+      },
       config: CONFIG.PC,
       tabs: this._prepareTabs("primary"),
     };
@@ -238,27 +252,26 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     }
   }
 
-  categorizeItems(document) {
-    const abilities = document.system.abilities;
-    const categorizedItems = {};
+  categorize(itemCollection, path, sortFn) {
+    const categorized = {};
 
-    for (let ability of abilities) {
-      const art = ability.system.info.art;
-      if (!categorizedItems[art]) {
-        categorizedItems[art] = [];
+    for (let item of itemCollection) {
+      const category = path.split(".").reduce((obj, key) => obj[key], item);
+      if (!categorized[category]) {
+        categorized[category] = [];
       }
-      categorizedItems[art].push(ability);
+      categorized[category].push(item);
     }
 
-    for (const art of Object.keys(categorizedItems)) {
-      const sortMode = this.getSortMode(art);
-      categorizedItems[art] = this.sortItems(categorizedItems[art], sortMode);
+    for (const key of Object.keys(categorized)) {
+      const sortMode = this.getSortMode(key);
+      categorized[key] = sortFn(categorized[key], sortMode);
     }
 
-    return categorizedItems;
+    return categorized;
   }
 
-  sortItems(group, sortMode = "coreLevel-asc") {
+  sortAbilities(group, sortMode = "coreLevel-asc") {
     return group.slice().sort((a, b) => {
       switch (sortMode) {
         case "coreLevel-desc":
@@ -273,9 +286,20 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     });
   }
 
+  sortItems(group, sortMode = "name-asc") {
+    return group.slice().sort((a, b) => {
+      switch (sortMode) {
+        case "name-desc":
+          return b.name.localeCompare(a.name);
+        default: // "name-asc"
+          return a.name.localeCompare(b.name);
+      }
+    });
+  }
+
   getSortMode(flag) {
     const actor = this.document;
-    return actor.getFlag("pars-crucis", flag) || "coreLevel-asc";
+    return actor.getFlag("pars-crucis", flag) || "name-asc";
   }
 
   // Renders item sheet if owner
@@ -316,6 +340,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
   static async changeSortMode(_, target) {
     const dataset = target.dataset;
     const actor = this.document;
-    actor.setFlag("pars-crucis", dataset.art, dataset.sortMode);
+    actor.setFlag("pars-crucis", dataset.group, dataset.sortMode);
   }
 }
