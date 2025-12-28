@@ -768,10 +768,8 @@ h1.actor-name {
 }
 
 /* PASSIVES TAB */
-.passives-tab {
+.passives-list-block {
   height: 395px;
-}
-.passives-tab {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-gutter: stable;
