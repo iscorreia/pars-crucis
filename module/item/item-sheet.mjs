@@ -31,10 +31,13 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   }
 
   async _prepareContext() {
+    const document = this.document;
+    const system = document.system;
     const context = {
-      item: this.document,
-      document: this.document,
-      system: this.document.system,
+      item: document,
+      document: document,
+      system: system,
+      systemFields: system.schema.fields,
       config: CONFIG.PC,
     };
 
