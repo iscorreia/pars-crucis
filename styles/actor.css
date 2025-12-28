@@ -846,7 +846,7 @@ h1.actor-name {
   border-radius: 5px;
   background: linear-gradient(
     to bottom,
-    var(--color-cool-4) 8%,
+    var(--color-cool-4) 28px,
     transparent 90%
   );
   .form-group {
