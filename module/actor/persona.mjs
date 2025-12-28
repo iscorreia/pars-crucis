@@ -118,6 +118,8 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const minorsData = this.minors;
     const mvData = this.movement;
     const parent = this.parent;
+    const passivesXp = [];
+    const passivesPts = [];
     const skillsData = this.skills;
     const skillsXp = [];
     const subData = this.subattributes;
@@ -143,12 +145,27 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       return inventoryGroup.includes(i.type) && !i.system.details.equipped;
     });
     this.passives = parent.itemTypes.passive;
+    const passivesData = this.passives;
 
     // Gets a the favorables skills from culture and persona and creates a set
     const cultureFav = CULTURES[infoData.culture].favorables ?? [];
     const personaFav = PC.personas[infoData.persona].favorables ?? [];
     const mergedFav = new Set([...cultureFav, ...personaFav]);
     // const favorables = Array.from(mergedFav); // In case an Array is needed
+
+    // PASSIVES handling!
+    for (let passive of passivesData) {
+      const system = passive.system;
+      const cost = system.cost;
+      if (system.info.acquirement === "learned") {
+        passivesXp.push(cost.experience);
+      } else {
+        passivesPts.push(
+          system.info.subtype === "drawback" ? cost.points : -cost.points
+        );
+      }
+    }
+    xpData.ptsSum = passivesPts.reduce((acc, value) => acc + value, 0);
 
     // SKILLS handling!
     for (let [key, sk] of Object.entries(skillsData)) {
@@ -237,10 +254,12 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     // EXPERIENCE handling!
     xpData.abilitiesXpSum = abilitiesXp.reduce((acc, value) => acc + value, 0);
     xpData.skillsXpSum = skillsXp.reduce((acc, value) => acc + value, 0);
+    xpData.passivesXpSum = passivesXp.reduce((acc, value) => acc + value, 0);
     xpData.current =
       xpData.total -
-      xpData.skillsXpSum -
       xpData.abilitiesXpSum -
+      xpData.skillsXpSum -
+      xpData.passivesXpSum -
       xpData.reserved;
 
     // LUCK handling!

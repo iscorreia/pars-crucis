@@ -1,4 +1,7 @@
-.sheet,
+.ability-header,
+.passive-header,
+.persona-sheet-header,
+.persona-tab,
 .persona-config {
   h1,
   h2,
@@ -28,7 +31,7 @@
 }
 
 /* ACTOR SHEET HEADER */
-.sheet-header {
+.persona-sheet-header {
   display: flex;
   flex-direction: row;
   height: 150px;
@@ -535,7 +538,8 @@ h1.actor-name {
 }
 /* SKILLS TAB SEPARATORS */
 .skill-tab > .skill-category:nth-child(odd)::after,
-.abilities-tab > ol:not(:last-child)::after {
+.abilities-tab > ol:not(:last-child)::after,
+.passives-tab > ol:not(:last-child)::after {
   /* adds it to ABILITIES TAB as well */
   content: "";
   display: block;
@@ -760,6 +764,80 @@ h1.actor-name {
   height: 24px;
   input {
     width: 50%;
+  }
+}
+
+/* PASSIVES TAB */
+.passives-tab {
+  height: 395px;
+}
+.passives-tab {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  .passives-list {
+    margin: 0;
+    padding: 0;
+    .passives-group-title {
+      width: 100%;
+      height: 16px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .empty-space {
+        width: 70px;
+      }
+      h4 {
+        height: 100%;
+        width: calc(100% - 140px);
+        text-align: center;
+        div {
+          height: inherit;
+        }
+      }
+      .ability-sorting {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 2px;
+        width: 70px;
+        a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2px;
+          color: var(--color-text-secondary);
+        }
+        a.active {
+          text-shadow: 0 0 10px var(--color-shadow-primary);
+          color: var(--color-text-emphatic);
+        }
+      }
+    }
+  }
+}
+.point-bank {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  border-top: 1px solid var(--color-tabs-border);
+  margin-top: 5px;
+  font-family: "Cambria";
+  font-size: 20px;
+  .pts-desc {
+    height: 24px;
+    line-height: 24px;
+  }
+  .pts-sum {
+    margin-left: 5px;
+    height: 24px;
+    line-height: 24px;
+  }
+  .pts-warning {
+    color: var(--color-level-warning);
   }
 }
 

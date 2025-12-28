@@ -31,7 +31,7 @@ export default class AbilitySheet extends ParsCrucisItemSheet {
       template: "systems/pars-crucis/templates/item/ability/actions.hbs",
     },
     config: {
-      template: "systems/pars-crucis/templates/item/ability/details.hbs",
+      template: "systems/pars-crucis/templates/item/ability/config.hbs",
     },
   };
 

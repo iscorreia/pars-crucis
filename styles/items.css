@@ -1,8 +1,10 @@
 /* ITEM HEADER */
-.ability-header {
+.ability-header,
+.item-header {
   display: flex;
   flex-direction: row;
   height: 58px;
+  margin-bottom: 5px;
   img {
     border-radius: 10px 0 0 0;
   }
@@ -22,6 +24,7 @@
     .experience {
       width: 20%;
       .xp-cost {
+        text-align: center;
         width: 50%;
       }
       .xp-name {

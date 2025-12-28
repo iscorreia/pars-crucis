@@ -1,0 +1,48 @@
+{{! Passive Config tab }}
+
+<section class="tab {{tab.cssClass}}" data-group="primary" data-tab="config">
+  <div class="flexcol">
+    <input
+      name="name"
+      type="String"
+      value="{{item.name}}"
+      placeholder="Nameless Passive"
+    />
+    <select name="system.info.subtype">
+      {{selectOptions
+        config.passive.subtypes
+        selected=system.info.subtype
+        localize=true
+      }}
+    </select>
+    <select name="system.info.acquirement">
+      {{selectOptions
+        config.passive.acquirement
+        selected=system.info.acquirement
+        localize=true
+      }}
+    </select>
+    <div>
+      <h4>{{localize "PC.pts"}}</h4>
+      <input
+        class="item-input"
+        type="Number"
+        name="system.cost.points"
+        value="{{system.cost.points}}"
+        placeholder="Zeroed"
+        data-dtype="Number"
+      />
+    </div>
+    <div>
+      <h4>{{localize "PC.xp"}}</h4>
+      <input
+        class="item-input"
+        type="Number"
+        name="system.cost.experience"
+        value="{{system.cost.experience}}"
+        placeholder="Zeroed"
+        data-dtype="Number"
+      />
+    </div>
+  </div>
+</section>

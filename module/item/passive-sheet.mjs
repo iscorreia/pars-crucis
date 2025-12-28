@@ -7,6 +7,14 @@ export default class PassiveSheet extends ParsCrucisItemSheet {
     },
   };
 
+  async _prepareContext() {
+    const context = await super._prepareContext();
+
+    context.tabs = this._prepareTabs("primary");
+
+    return context;
+  }
+
   /** Defines where are the template PARTS */
   static PARTS = {
     header: {
@@ -14,21 +22,35 @@ export default class PassiveSheet extends ParsCrucisItemSheet {
     },
     tabs: {
       template: "templates/generic/tab-navigation.hbs",
+      classes: ["pars-crucis-nav"],
     },
     description: {
       template: "systems/pars-crucis/templates/item/parts/description.hbs",
+    },
+    config: {
+      template: "systems/pars-crucis/templates/item/passive/config.hbs",
     },
   };
 
   static TABS = {
     primary: {
-      initial: "description",
+      initial: "config", // Change to simplify testing
       tabs: [
-        {
-          id: "description",
-          label: "Descrição",
-        },
+        { id: "description", label: "PC.description" },
+        { id: "config", label: "PC.config" },
       ],
     },
   };
+
+  async _preparePartContext(partId, context) {
+    switch (partId) {
+      case "description":
+      case "config":
+        context.tab = context.tabs[partId];
+        break;
+      default:
+    }
+
+    return context;
+  }
 }
