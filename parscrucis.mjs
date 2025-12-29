@@ -77,4 +77,14 @@ Hooks.once("init", () => {
   );
 
   preloadHandlebarsTemplates();
+
+  /**
+   * Set an initiative formula for the system
+   * Formula: 1d10 + Reflexo (derived) + Reflexo (modifiers)
+   * @type {Object}
+   */
+  CONFIG.Combat.initiative = {
+    formula: "1d10 + @minors.ref.derived + @minors.ref.mod",
+    decimals: 2,
+  };
 });

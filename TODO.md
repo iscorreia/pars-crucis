@@ -5,7 +5,6 @@
 
 ## IMPORTANT
 
-- Initiative Roll **_feature_**
 - Persona Ability calculations: how to interact with weapons? Weapon abilities? **_logic_**
 - Basic Ability **_hbs style/css_**
 - Persona Inventory calculations **_logic_**
