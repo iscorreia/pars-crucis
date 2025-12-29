@@ -70,6 +70,16 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
       description: description(),
     };
   }
+
+  prepareDerivedData() {
+    const info = this.info;
+    const art = info.art;
+    if (!PC.ability.arts[art].categories) {
+      info.category = null;
+    } else if (!(info.category in PC.ability.arts[art].categories)) {
+      info.category = "unknown";
+    }
+  }
 }
 
 export class GearModel extends foundry.abstract.TypeDataModel {
@@ -119,6 +129,20 @@ export class WeaponModel extends foundry.abstract.TypeDataModel {
       details: details({ equippable: true }),
       description: description(),
     };
+  }
+
+  prepareDerivedData() {
+    const info = this.info;
+    const details = this.details;
+    const subtype = info.subtype;
+    const groups = PC.weapon.subtypes[subtype].groups;
+    if (!(info.group in groups)) {
+      info.group = Object.keys(groups)[0] ?? "exotic";
+    }
+    if (info.group === "unarmed") {
+      details.equippable = false;
+      details.equipped = true;
+    }
   }
 }
 

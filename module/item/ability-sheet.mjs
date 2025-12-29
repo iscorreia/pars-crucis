@@ -3,7 +3,8 @@ import { ParsCrucisItemSheet } from "./item-sheet.mjs";
 export default class AbilitySheet extends ParsCrucisItemSheet {
   static DEFAULT_OPTIONS = {
     window: {
-      icon: "fa fa-address-card",
+      icon: "fa-solid fa-address-card",
+      contentClasses: ["item-sheet"],
     },
   };
 
@@ -28,7 +29,7 @@ export default class AbilitySheet extends ParsCrucisItemSheet {
       template: "systems/pars-crucis/templates/item/parts/description.hbs",
     },
     actions: {
-      template: "systems/pars-crucis/templates/item/ability/actions.hbs",
+      template: "systems/pars-crucis/templates/item/parts/actions.hbs",
     },
     config: {
       template: "systems/pars-crucis/templates/item/ability/config.hbs",
@@ -37,7 +38,7 @@ export default class AbilitySheet extends ParsCrucisItemSheet {
 
   static TABS = {
     primary: {
-      initial: "description",
+      initial: "config", // Change to simplify testing
       tabs: [
         { id: "description", label: "PC.description" },
         { id: "actions", label: "PC.actions" },

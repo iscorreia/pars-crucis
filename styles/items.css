@@ -1,18 +1,26 @@
 /* ITEM HEADER */
+.item-sheet {
+  .pars-crucis-nav {
+    margin-left: 92px;
+  }
+}
 .ability-header,
 .item-header {
   display: flex;
   flex-direction: row;
   height: 58px;
+  min-height: 58px;
   margin-bottom: 5px;
-  img {
+  img.item-img {
+    position: absolute;
     border-radius: 10px 0 0 0;
   }
 }
 .item-header-right {
+  margin-left: 92px;
   display: flex;
   flex-direction: column;
-  width: calc(100% - 58px);
+  width: calc(100% - 92px);
   .item-name-line {
     display: flex;
     flex-direction: row;

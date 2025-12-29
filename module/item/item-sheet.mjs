@@ -15,7 +15,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     },
     tag: "form",
     window: {
-      icon: "fa fa-magic",
+      icon: "fa-solid fa-magic",
     },
     actions: {
       addKeyword: this.addKeywordOnClick,

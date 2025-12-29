@@ -3,7 +3,8 @@ import { ParsCrucisItemSheet } from "./item-sheet.mjs";
 export default class PassiveSheet extends ParsCrucisItemSheet {
   static DEFAULT_OPTIONS = {
     window: {
-      icon: "fa fa-address-card",
+      icon: "fa-solid fa-address-card",
+      contentClasses: ["item-sheet"],
     },
   };
 
