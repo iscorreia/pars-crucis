@@ -51,6 +51,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     },
     gear: {
       template: "systems/pars-crucis/templates/actor/parts/gear.hbs",
+      scrollable: [".gear-list-block"],
     },
     passives: {
       template: "systems/pars-crucis/templates/actor/parts/passives.hbs",
