@@ -465,10 +465,12 @@
     "currency": {
       "silver": {
         "label": "Prata",
+        "labelPlural": "Pratas",
         "abv": "P"
       },
       "copper": {
         "label": "Cobre",
+        "labelPlural": "Cobres",
         "abv": "C"
       },
       "unknown": {
