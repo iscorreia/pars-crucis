@@ -85,6 +85,5 @@ Hooks.once("init", () => {
    */
   CONFIG.Combat.initiative = {
     formula: "1d10 + @minors.ref.derived + @minors.ref.mod",
-    decimals: 2,
   };
 });

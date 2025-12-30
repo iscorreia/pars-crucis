@@ -26,6 +26,9 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       clickEdit: this.editItemOnClick,
       clickEquip: this.equipItemOnClick,
       clickLuck: this.onLuckClick,
+      clickGearAttack: this.gearAttack,
+      clickGearTest: this.gearTest,
+      clickGearUse: this.gearUse,
       clickSkill: this.onSkillClick,
       sortAbilities: this.changeSortMode,
       toggleExpand: this.toggleAbilityExpand,
@@ -48,6 +51,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     },
     abilities: {
       template: "systems/pars-crucis/templates/actor/parts/abilities.hbs",
+      scrollable: [".abilities-list-block"],
     },
     gear: {
       template: "systems/pars-crucis/templates/actor/parts/gear.hbs",
@@ -64,7 +68,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static TABS = {
     primary: {
-      initial: "passives", // Change to simplify testing, once done set back to skills
+      initial: "gear", // Change to simplify testing, once done set back to skills
       tabs: [
         { id: "skills", label: "PC.tabs.skills" },
         { id: "abilities", label: "PC.tabs.abilities" },
@@ -336,6 +340,18 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static async abilityUse() {
     console.log("USE ABILITY HERE");
+  }
+
+  static async gearAttack() {
+    console.log("ATTACK GEAR HERE");
+  }
+
+  static async gearTest() {
+    console.log("TEST GEAR HERE");
+  }
+
+  static async gearUse() {
+    console.log("USE GEAR HERE");
   }
 
   static async changeSortMode(_, target) {

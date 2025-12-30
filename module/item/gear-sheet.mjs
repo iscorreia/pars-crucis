@@ -3,7 +3,8 @@ import { ParsCrucisItemSheet } from "./item-sheet.mjs";
 export default class GearSheet extends ParsCrucisItemSheet {
   static DEFAULT_OPTIONS = {
     window: {
-      icon: "fa fa-address-card",
+      icon: "fa-solid fa-address-card",
+      contentClasses: ["item-sheet"],
     },
   };
 
@@ -22,6 +23,7 @@ export default class GearSheet extends ParsCrucisItemSheet {
     },
     tabs: {
       template: "templates/generic/tab-navigation.hbs",
+      classes: ["pars-crucis-nav"],
     },
     description: {
       template: "systems/pars-crucis/templates/item/parts/description.hbs",

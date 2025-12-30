@@ -3,6 +3,7 @@ import { PC } from "../config.mjs";
 const {
   EmbeddedDataField,
   BooleanField,
+  FilePathField,
   HTMLField,
   NumberField,
   SchemaField,
@@ -13,7 +14,12 @@ const {
 export class ActionModel extends foundry.abstract.DataModel {
   static defineSchema() {
     return {
-      name: new StringField({ initial: "" }),
+      img: new FilePathField({
+        initial: "icons/svg/d10-grey.svg",
+        categories: ["IMAGE"],
+        nullable: true,
+      }),
+      name: new StringField({ initial: null, nullable: true }),
       type: new StringField({
         initial: "attack",
         choices: ["attack", "use", "test"], // create EXECUTION LOGIC FOR THE TYPE
@@ -70,6 +76,16 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
       description: description(),
     };
   }
+
+  prepareDerivedData() {
+    const info = this.info;
+    const art = info.art;
+    if (!PC.ability.arts[art].categories) {
+      info.category = null;
+    } else if (!(info.category in PC.ability.arts[art].categories)) {
+      info.category = "unknown";
+    }
+  }
 }
 
 export class GearModel extends foundry.abstract.TypeDataModel {
@@ -111,6 +127,31 @@ export class WeaponModel extends foundry.abstract.TypeDataModel {
       details: details({ equippable: true }),
       description: description(),
     };
+  }
+
+  prepareDerivedData() {
+    const info = this.info;
+    const details = this.details;
+    const subtype = info.subtype;
+    const groups = PC.weapon.subtypes[subtype].groups;
+    if (!(info.group in groups)) {
+      info.group = Object.keys(groups)[0] ?? "exotic";
+    }
+    if (info.group === "unarmed") {
+      details.equippable = false;
+      details.equipped = true;
+    }
+    for (let [key, ac] of Object.entries(this.actions)) {
+      if (ac.type === "attack") {
+        ac.difficulty = null;
+      } else if (ac.type === "test") {
+        ac.subtype = null;
+      } else if (ac.type === "use") {
+        ac.skill = null;
+        ac.subtype = null;
+        ac.difficulty = null;
+      }
+    }
   }
 }
 

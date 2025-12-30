@@ -1,11 +1,23 @@
-{{! Actions block }}
+{{! Actions tab - parts }}
 
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="actions">
-  <div class="flexcol">
-    <a data-action="createAction"><i class="fa fa-plus"></i></a>
-    <ul class="flexcol">
+  <div class="actions-tab">
+    <div class="actions-controls">
+      <a data-action="createAction" data-ac-type="attack"><i class="fa fa-plus"></i> {{localize "PC.attack"}}</a>
+      <a data-action="createAction" data-ac-type="test"><i class="fa fa-plus"></i> {{localize "PC.test"}}</a>
+      <a data-action="createAction" data-ac-type="use"><i class="fa fa-plus"></i> {{localize "PC.use"}}</a>
+    </div>
+    <ul class="action-list">
       {{#each system.actions as |action obj|}}
         <li class="action-block">
+          <img 
+            class="action-img"
+            src="{{action.img}}"
+            data-edit="system.actions.{{@key}}.img"
+            data-action="editImage"
+            width="54"
+            height="54"
+          />
           <div class="action-block-info flexcol">
             <div class="flexrow">
               <div>

@@ -1,122 +1,140 @@
 /* ITEM HEADER */
-.ability-header,
-.item-header {
-  display: flex;
-  flex-direction: row;
-  height: 58px;
-  margin-bottom: 5px;
-  img {
-    border-radius: 10px 0 0 0;
+.item-sheet {
+  .pars-crucis-nav {
+    margin-left: 92px;
   }
-}
-.item-header-right {
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 58px);
-  .item-name-line {
+
+  .ability-header,
+  .item-header {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    .item-name {
-      padding-left: 3px;
-      width: 80%;
-    }
-    .experience {
-      width: 20%;
-      .xp-cost {
-        text-align: center;
-        width: 50%;
-      }
-      .xp-name {
-        width: 50%;
-      }
+    height: 58px;
+    min-height: 58px;
+    margin-bottom: 5px;
+    img.item-img {
+      position: absolute;
+      border-radius: 10px 0 0 0;
     }
   }
-  .item-sheet-keywords {
+  .item-header-right {
+    margin-left: 92px;
     display: flex;
+    flex-direction: column;
+    width: calc(100% - 92px);
+    .item-name-line {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      .item-name {
+        padding-left: 3px;
+        width: 80%;
+      }
+      .experience {
+        width: 20%;
+        .xp-cost {
+          text-align: center;
+          width: 50%;
+        }
+        .xp-name {
+          width: 50%;
+        }
+      }
+    }
+    .item-sheet-keywords {
+      display: flex;
+    }
   }
-}
-.item-info {
-  line-height: 14px;
-  height: 14px;
-  padding-left: 3px;
-}
+  .item-info {
+    line-height: 14px;
+    height: 14px;
+    padding-left: 3px;
+  }
 
-/* DESCRIPTION TAB */
-.description {
-  width: 100%;
-  height: 272px;
-  border-radius: 5px;
-  background: linear-gradient(
-    to bottom,
-    var(--color-cool-4) 28px,
-    transparent 90%
-  );
-  .form-group {
-    height: 100%;
-    .form-fields {
+  /* DESCRIPTION TAB */
+  .description {
+    width: 100%;
+    height: 272px;
+    border-radius: 5px;
+    background: linear-gradient(
+      to bottom,
+      var(--color-cool-4) 28px,
+      transparent 90%
+    );
+    .form-group {
       height: 100%;
-      .prosemirror {
-        height: inherit;
-        gap: 3px 0;
-        .editor-menu {
-          justify-content: center;
-          padding: 0;
-          li {
-            button {
-              padding: 0 5px;
+      .form-fields {
+        height: 100%;
+        .prosemirror {
+          height: inherit;
+          gap: 3px 0;
+          .editor-menu {
+            justify-content: center;
+            padding: 0;
+            li {
+              button {
+                padding: 0 5px;
+              }
             }
           }
         }
-      }
-      .editor-container {
-        height: calc(100% - 32px);
-        .editor-content {
-          padding-left: 5px;
-          padding-bottom: 3px;
+        .editor-container {
+          height: calc(100% - 32px);
+          .editor-content {
+            padding-left: 5px;
+            padding-bottom: 3px;
+          }
         }
       }
     }
   }
-}
 
-/* ACTIONS TAB */
-.action-block {
-  display: flex;
-  flex-direction: row;
-  input,
-  select {
-    height: 20.5px;
-  }
-  .action-block-info {
-    width: 100%;
-    .flexrow {
+  /* ACTIONS TAB */
+  .actions-tab {
+    height: 376px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+    .actions-controls {
+      height: 15px;
       display: flex;
-      flex-wrap: nowrap;
-      gap: 5px;
-      select {
-        min-width: 110px;
-        flex: 1 1 auto;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 5px;
+      a {
+        height: 15px;
+        text-align: center;
+        width: 30%;
       }
     }
-  }
-  .action-effect {
-    width: 100%;
-    margin-top: 8px;
-    input {
-      width: 100%;
+    .action-list {
+      height: 356px;
+      padding: 0;
+      margin: 0;
     }
   }
-  .action-details {
-    display: grid;
-    grid-template-columns: auto 1.5fr auto 1.5fr auto 1.5fr auto 1.5fr;
-    column-gap: 8px;
-    row-gap: 4px;
-    align-items: center;
-    margin-top: 8px;
-    input {
-      width: 80px;
-      text-align: center;
+  .action-block {
+    display: flex;
+    flex-direction: row;
+    input,
+    select {
+      height: 17.5px;
+    }
+    .action-block-info {
+      width: 100%;
+    }
+    .action-effect {
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+    .action-details {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
+      input {
+        width: 100%;
+      }
     }
   }
 }
