@@ -3,6 +3,7 @@ import { PC } from "../config.mjs";
 const {
   EmbeddedDataField,
   BooleanField,
+  FilePathField,
   HTMLField,
   NumberField,
   SchemaField,
@@ -13,7 +14,12 @@ const {
 export class ActionModel extends foundry.abstract.DataModel {
   static defineSchema() {
     return {
-      name: new StringField({ initial: "" }),
+      img: new FilePathField({
+        initial: "icons/svg/d10-grey.svg",
+        categories: ["IMAGE"],
+        nullable: true,
+      }),
+      name: new StringField({ initial: null, nullable: true }),
       type: new StringField({
         initial: "attack",
         choices: ["attack", "use", "test"], // create EXECUTION LOGIC FOR THE TYPE
@@ -134,6 +140,17 @@ export class WeaponModel extends foundry.abstract.TypeDataModel {
     if (info.group === "unarmed") {
       details.equippable = false;
       details.equipped = true;
+    }
+    for (let [key, ac] of Object.entries(this.actions)) {
+      if (ac.type === "attack") {
+        ac.difficulty = null;
+      } else if (ac.type === "test") {
+        ac.subtype = null;
+      } else if (ac.type === "use") {
+        ac.skill = null;
+        ac.subtype = null;
+        ac.difficulty = null;
+      }
     }
   }
 }

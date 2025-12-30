@@ -7,10 +7,15 @@
     "minimum": 13,
     "verified": 13
   },
-  "authors": {
-    "name": "Ismael Augusto Avila Correia",
-    "url": "https://github.com/iscorreia"
-  },
+  "authors": [
+    {
+      "name": "Ismael C.",
+      "discord": "krosbelt"
+    },
+    {
+      "name": "Guilherme R."
+    }
+  ],
   "esmodules": ["parscrucis.mjs"],
   "styles": [
     "styles/config.css",
@@ -30,21 +35,30 @@
   "documentTypes": {
     "Actor": {
       "persona": {
-        "htmlFields": []
+        "htmlFields": ["info.background"]
       }
     },
     "Item": {
       "ability": {
-        "htmlFields": []
+        "filePathFields": {
+          "actions.*.img": ["IMAGE"]
+        },
+        "htmlFields": ["description.description"]
       },
       "gear": {
-        "htmlFields": []
+        "filePathFields": {
+          "actions.*.img": ["IMAGE"]
+        },
+        "htmlFields": ["description.description"]
       },
       "passive": {
-        "htmlFields": []
+        "htmlFields": ["description.description"]
       },
       "weapon": {
-        "htmlFields": []
+        "filePathFields": {
+          "actions.*.img": ["IMAGE"]
+        },
+        "htmlFields": ["description.description"]
       }
     }
   },

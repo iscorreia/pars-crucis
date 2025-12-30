@@ -327,11 +327,14 @@
             "social": "Social"
           }
         },
-        "use": { "label": "Uso direto" },
+        "use": { "label": "Uso" },
         "test": { "label": "Teste" }
       }
     },
     "actions": "Ações",
+    "attack": "Ataque",
+    "test": "Teste",
+    "use": "Uso",
     "effort": { "label": "Esforço", "abv": "Esf" },
     "difficulty": { "label": "Dificuldade", "abv": "Dif" },
     "range": { "label": "Alcance", "abv": "Alc" },

@@ -1,7 +1,11 @@
 {{! Abilities tab }}
 
-<section class="tab persona-tab {{tab.cssClass}}" data-group="primary" data-tab="abilities">
-  <div class="abilities-tab">
+<section
+  class="tab persona-tab {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="abilities"
+>
+  <div class="abilities-list-block">
     {{#each categorized.abilities as |abilityGroups obj|}}
       <ol class="abilities-list">
         <div class="ability-group-title">
@@ -54,64 +58,84 @@
                 {{/each}}
               </div>
 
-              <div class="ability-actions">
+              <div class="persona-actions">
                 {{#each ability.system.actions as |action key|}}
-                  {{#if (eq action.type "attack")}}<a
-                      class="ability-action ac-attack"
+                  {{#if (eq action.type "attack")}}
+                    <a
+                      class="persona-action ac-attack"
                       data-action="clickAbilityAttack"
-                    ><i class="fa-sharp fa-sword"></i>
+                    >
+                      <img
+                        class="action-image"
+                        src="{{action.img}}"
+                        width="16"
+                        height="16"
+                      />
                       {{#if action.name}}
                         <div class="action-name">{{action.name}}</div>
                       {{/if}}
-                    </a>{{/if}}
-                  {{#if (eq action.type "test")}}<a
-                      class="ability-action ac-test"
+                    </a>
+                  {{/if}}
+                  {{#if (eq action.type "test")}}
+                    <a
+                      class="persona-action ac-test"
                       data-action="clickAbilityTest"
-                    ><i class="fa-sharp fa-solid fa-dice-d10"></i>
+                    >
+                      <img
+                        class="action-image"
+                        src="{{action.img}}"
+                        width="16"
+                        height="16"
+                      />
                       {{#if action.name}}
                         <div class="action-name">{{action.name}}</div>
                       {{/if}}
-                    </a>{{/if}}
-                  {{#if (eq action.type "use")}}<a
-                      class="ability-action ac-use"
+                    </a>
+                  {{/if}}
+                  {{#if (eq action.type "use")}}
+                    <a
+                      class="persona-action ac-use"
                       data-action="clickAbilityUse"
-                    ><i class="fa-sharp fa-solid fa-flask-round-potion"></i>
+                    >
+                      <img
+                        class="action-image"
+                        src="{{action.img}}"
+                        width="16"
+                        height="16"
+                      />
                       {{#if action.name}}
                         <div class="action-name">{{action.name}}</div>
                       {{/if}}
-                    </a>{{/if}}
-
+                    </a>
+                  {{/if}}
                 {{/each}}
               </div>
 
-              <div class="ability-expand">
+              <div class="ability-controls">
                 <a
                   data-action="toggleExpand"
                   data-item-id="{{ability._id}}"
                   title="{{localize 'PC.expandCollapseActions'}}"
                 >
                   {{#if ability.flags.pars-crucis.expanded}}
-                    {{localize "PC.collapse"}}
+                    <i class="fa-regular fa-arrows-to-line"></i>
                   {{else}}
-                    {{localize "PC.expand"}}
+                    <i class="fa-regular fa-arrows-from-line"></i>
                   {{/if}}
                 </a>
-              </div>
-
-              <div class="ability-controls">
                 <a
                   data-action="clickEdit"
                   data-item-id="{{ability._id}}"
                   title="{{localize 'PC.edit'}}"
                 >
-                  <i class="fas fa-edit"></i>
+                  <i class="fa-regular fa-edit"></i>
                 </a>
                 <a
                   data-action="clickDelete"
                   data-item-id="{{ability._id}}"
                   title="{{localize 'PC.delete'}}"
                 >
-                  <i class="fa-solid fa-eraser"></i>
+                  <i class="fa-regular fa-eraser"></i>
                 </a>
               </div>
             </div>

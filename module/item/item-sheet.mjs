@@ -10,8 +10,8 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
       submitOnChange: true,
     },
     position: {
-      width: 600,
-      height: 440,
+      width: 500,
+      height: 540,
     },
     tag: "form",
     window: {
@@ -79,8 +79,14 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   static async createActionOnClick(event, target) {
     event.preventDefault();
     const item = this.document;
+    const dataset = target.dataset;
     const actionId = foundry.utils.randomID();
-    const newAction = { name: "New Action", type: "attack", _id: actionId };
+    const newAction = {
+      img: item.img,
+      name: item.name,
+      type: dataset.acType,
+      _id: actionId,
+    };
 
     await item.update({
       [`system.actions.${actionId}`]: newAction,
