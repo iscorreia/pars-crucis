@@ -35,18 +35,8 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       }),
 
       currency: new SchemaField({
-        silver: new NumberField({
-          initial: null,
-          integer: true,
-          min: 0,
-          nullable: true,
-        }),
-        copper: new NumberField({
-          initial: null,
-          integer: true,
-          min: 0,
-          nullable: true,
-        }),
+        silver: currencyField(),
+        copper: currencyField(),
       }),
 
       attributes: new SchemaField({
@@ -367,6 +357,15 @@ function subField() {
     current: new NumberField({ integer: true, min: 0 }),
     override: new NumberField({ initial: null, integer: true, nullable: true }),
     adjust: new NumberField({ initial: 0, integer: true }),
+  });
+}
+
+function currencyField() {
+  return new NumberField({
+    initial: null,
+    integer: true,
+    min: 0,
+    nullable: true,
   });
 }
 
