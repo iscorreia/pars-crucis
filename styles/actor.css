@@ -840,6 +840,52 @@ h1.actor-name {
   }
 }
 
+/* GEAR TAB */
+.gear-list-block {
+  height: 395px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  div {
+    margin: 0;
+    padding: 0;
+    h4 {
+      margin: 0.5rem 0;
+    }
+    ol {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.currency-bank {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  border-top: 1px solid var(--color-tabs-border);
+  margin-top: 5px;
+  font-family: "Cambria";
+  font-size: 20px;
+  gap: 10px;
+  .currency-desc {
+    height: 24px;
+    line-height: 24px;
+  }
+  .currency-input {
+    margin-left: 5px;
+    height: 20px;
+    width: 60px;
+    text-align: center;
+    font-family: "Cambria";
+    font-size: 18px;
+    border: 1px solid var(--color-tabs-border);
+    border-radius: 3px;
+    background: var(--color-bg-input);
+  }
+}
+
 /* DETAILS TAB */
 .background {
   width: 100%;

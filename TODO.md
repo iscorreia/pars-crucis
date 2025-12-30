@@ -41,6 +41,7 @@
 - Persona Icon on chat **_feature update_**
 - Tooltips / Information on hover **_feature_** or;
 - Information icon: on click: pops a window with origin/skills/etc description **_feature_**
+- Implement currency working on itens
 
 ### MIGHT BE INTERESTING
 

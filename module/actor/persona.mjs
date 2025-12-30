@@ -34,6 +34,21 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
         total: new NumberField({ initial: 50, integer: true, min: 0 }),
       }),
 
+      currency: new SchemaField({
+        silver: new NumberField({
+          initial: null,
+          integer: true,
+          min: 0,
+          nullable: true,
+        }),
+        copper: new NumberField({
+          initial: null,
+          integer: true,
+          min: 0,
+          nullable: true,
+        }),
+      }),
+
       attributes: new SchemaField({
         fis: attributeField(),
         des: attributeField(),
