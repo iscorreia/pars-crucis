@@ -101,16 +101,8 @@ export class PassiveModel extends foundry.abstract.TypeDataModel {
         acquirement: new StringField({ initial: "natural" }),
       }),
       cost: new SchemaField({
-        experience: new NumberField({
-          initial: null,
-          integer: true,
-          nullable: true,
-        }),
-        points: new NumberField({
-          initial: null,
-          integer: true,
-          nullable: true,
-        }),
+        experience: currencyField(),
+        points: currencyField(),
       }),
       description: description(),
     };
@@ -189,6 +181,14 @@ function details({
   }
 
   return new SchemaField(fields);
+}
+
+function currencyField() {
+  return new NumberField({
+    initial: null,
+    integer: true,
+    nullable: true,
+  });
 }
 
 function description() {
