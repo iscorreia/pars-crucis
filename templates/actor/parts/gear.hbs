@@ -13,9 +13,9 @@
         <div class="gear-sorting"></div>
       </div>
       {{#each system.weaponry as |weapon obj|}}
-        <li class="gear-block">
+        <li class="item-block gear-block">
           <div class="gear-line">
-            <img src="{{weapon.img}}" width="24" height="24" />
+            <img class="icon-mid" src="{{weapon.img}}" width="24" height="24" />
             <h5 class="gear-name weapon-name">{{weapon.name}}</h5>
 
             <div class="gear-keywords">
@@ -128,9 +128,9 @@
       </div>
       {{#if system.vest}}
         {{#each system.vest as |vest obj|}}
-          <li class="gear-block">
+          <li class="item-block gear-block">
             <div class="gear-line">
-              <img src="{{vest.img}}" width="24" height="24" />
+              <img class="icon-mid" src="{{vest.img}}" width="24" height="24" />
               <h5>{{vest.name}}</h5>
 
               <div class="gear-controls">
@@ -179,9 +179,9 @@
     </ol>
     <ol class="gear-list">
       {{#each system.accessories as |acc obj|}}
-        <li class="gear-block">
+        <li class="item-block gear-block">
           <div class="gear-line">
-            <img src="{{acc.img}}" width="24" height="24" />
+            <img class="icon-mid" src="{{acc.img}}" width="24" height="24" />
             <h5>{{acc.name}}</h5>
 
             <div class="gear-controls">
@@ -232,9 +232,9 @@
         <div class="gear-sorting"></div>
       </div>
       {{#each system.gear as |gear obj|}}
-        <li class="gear-block">
+        <li class="item-block gear-block">
           <div class="gear-line">
-            <img src="{{gear.img}}" width="24" height="24" />
+            <img class="icon-mid" src="{{gear.img}}" width="24" height="24" />
             <h5>{{gear.name}}</h5>
 
             <div class="gear-controls">
@@ -280,35 +280,42 @@
     </ol>
   </div>
   <div class="currency-bank">
-    <div class="currency-desc">
-      {{#if (gt system.currency.silver 1)}}
-        {{localize "PC.currency.silver.labelPlural"}}:
-      {{else}}
-        {{localize "PC.currency.silver.label"}}:
-      {{/if}}
+    <div class="currency-line">
+      <input
+        class="currency-input"
+        name="system.currency.silver"
+        type="number"
+        value="{{system.currency.silver}}"
+        data-dtype="Number"
+        placeholder="0"
+        min="0"
+      />
+      <div class="currency-desc">
+        {{#if (gt system.currency.silver 1)}}
+          {{localize "PC.currency.silver.labelPlural"}}
+        {{else}}
+          {{localize "PC.currency.silver.label"}}
+        {{/if}}
+      </div>
     </div>
-    <input
-      class="currency-input"
-      name="system.currency.silver"
-      type="number"
-      value="{{system.currency.silver}}"
-      data-dtype="Number"
-      min="0"
-    />
-    <div class="currency-desc">
-      {{#if (gt system.currency.copper 1)}}
-        {{localize "PC.currency.copper.labelPlural"}}:
-      {{else}}
-        {{localize "PC.currency.copper.label"}}:
-      {{/if}}
+    <div class="separator"></div>
+    <div class="currency-line">
+      <input
+        class="currency-input"
+        name="system.currency.copper"
+        type="number"
+        value="{{system.currency.copper}}"
+        data-dtype="Number"
+        placeholder="0"
+        min="0"
+      />
+      <div class="currency-desc">
+        {{#if (gt system.currency.copper 1)}}
+          {{localize "PC.currency.copper.labelPlural"}}
+        {{else}}
+          {{localize "PC.currency.copper.label"}}
+        {{/if}}
+      </div>
     </div>
-    <input
-      class="currency-input"
-      name="system.currency.copper"
-      type="number"
-      value="{{system.currency.copper}}"
-      data-dtype="Number"
-      min="0"
-    />
   </div>
 </section>

@@ -1,4 +1,5 @@
 import { PC } from "../config.mjs";
+import { currencyField } from "../actor/persona.mjs";
 
 const {
   EmbeddedDataField,
@@ -198,14 +199,6 @@ function details({
   }
 
   return new SchemaField(fields);
-}
-
-function currencyField() {
-  return new NumberField({
-    initial: null,
-    integer: true,
-    nullable: true,
-  });
 }
 
 function description() {
