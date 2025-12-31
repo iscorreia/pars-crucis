@@ -6,6 +6,9 @@
 :root {
   --pc-font-size-mid: 14px;
 
+  --pc-icon-width-mid: 24px;
+  --pc-icon-height-mid: 24px;
+
   --pc-color-health-bg: #24942d70;
   --pc-color-health-border: #24942d90;
   --pc-color-essence-bg: #2a5cc770;

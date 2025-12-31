@@ -360,7 +360,7 @@ function subField() {
   });
 }
 
-function currencyField() {
+export function currencyField() {
   return new NumberField({
     initial: null,
     integer: true,

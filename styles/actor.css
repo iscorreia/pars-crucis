@@ -29,6 +29,13 @@
     background-color: var(--color-cool-4);
     border: none;
   }
+  .icon-mid {
+    height: var(--pc-icon-height-mid);
+    width: var(--pc-icon-width-mid);
+  }
+  .item-block {
+    margin-bottom: 2px;
+  }
 }
 
 /* ACTOR SHEET HEADER */
@@ -855,16 +862,8 @@ h1.actor-name {
     }
   }
 }
-.item-line {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 24px;
-  input {
-    width: 50%;
-  }
-}
+
+/* INVENTORY CURRENCY BANK */
 .currency-bank {
   display: flex;
   flex-direction: row;
@@ -876,20 +875,37 @@ h1.actor-name {
   font-family: "Cambria";
   font-size: 20px;
   gap: 10px;
-  .currency-desc {
-    height: 24px;
-    line-height: 24px;
+  .separator {
+    height: 12px;
   }
-  .currency-input {
-    margin-left: 5px;
-    height: 20px;
-    width: 60px;
-    text-align: center;
-    font-family: "Cambria";
-    font-size: 18px;
-    border: 1px solid var(--color-tabs-border);
-    border-radius: 3px;
-    background: var(--color-bg-input);
+  .currency-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      to right,
+      transparent 5%,
+      var(--color-cool-4) 100px,
+      transparent 100%
+    );
+    .currency-desc {
+      width: 70px;
+      height: 23px;
+      line-height: 24px;
+    }
+    .currency-input {
+      height: 23px;
+      padding-top: 2px;
+      padding-right: 2px;
+      margin-right: 1px;
+      line-height: 20px;
+      width: 100px;
+      text-align: right;
+      font-family: "Cambria";
+      font-size: 19px;
+      background: transparent;
+    }
   }
 }
 
@@ -902,6 +918,17 @@ h1.actor-name {
   .passives-list {
     margin: 0;
     padding: 0;
+
+    .passive-block {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 24px;
+      input {
+        width: 50%;
+      }
+    }
     .passives-group-title {
       width: 100%;
       height: 16px;

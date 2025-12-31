@@ -29,7 +29,7 @@
       </div>
       {{#if categorized.passives.benefit}}
         {{#each categorized.passives.benefit as |passive obj|}}
-          <li class="item-line">
+          <li class="item-block passive-block">
             <img src="{{passive.img}}" width="24" height="24" />
             <h5>{{passive.name}}</h5>
             <span>{{passive.system.info.acquirement}}</span>
@@ -87,7 +87,7 @@
       </div>
       {{#if categorized.passives.drawback}}
         {{#each categorized.passives.drawback as |passive obj|}}
-          <li class="item-line">
+          <li class="item-block passive-block">
             <img src="{{passive.img}}" width="24" height="24" />
             <h5>{{passive.name}}</h5>
             <span>{{passive.system.info.acquirement}}</span>

@@ -4,6 +4,9 @@ section.persona-config {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  .favor-col {
+    padding: 0;
+  }
 }
 p.info-desc {
   margin-bottom: 6px;
