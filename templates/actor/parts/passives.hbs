@@ -30,32 +30,41 @@
       {{#if categorized.passives.benefit}}
         {{#each categorized.passives.benefit as |passive obj|}}
           <li class="item-block passive-block">
-            <img src="{{passive.img}}" width="24" height="24" />
-            <h5>{{passive.name}}</h5>
-            <span>{{passive.system.info.acquirement}}</span>
-            <div>
-              {{#if (eq passive.system.info.acquirement "learned")}}
-                [{{passive.system.cost.experience}}{{localize "PC.xp"}}]
-              {{else}}
-                [{{passive.system.cost.points}}{{localize "PC.pts"}}]
-              {{/if}}
-            </div>
+            <div class="gear-line">
+              <img src="{{passive.img}}" width="24" height="24" />
+              <div class="passive-title">
+                <h5>{{passive.name}}</h5>
+                <div class="passive-cost">
+                  {{#if (eq passive.system.info.acquirement "learned")}}
+                    {{passive.system.cost.experience}}{{localize "PC.xp"}}
+                  {{else}}
+                    {{passive.system.cost.points}}{{localize "PC.pts"}}
+                  {{/if}}
+                </div>
+              </div>
 
-            <div>
-              <a
-                data-action="clickEdit"
-                data-item-id="{{passive._id}}"
-                title="{{localize 'PC.edit'}}"
-              >
-                <i class="fas fa-edit"></i>
-              </a>
-              <a
-                data-action="clickDelete"
-                data-item-id="{{passive._id}}"
-                title="{{localize 'PC.delete'}}"
-              >
-                <i class="fa-solid fa-trash-can"></i>
-              </a>
+              <div class="item-keywords">
+              </div>
+
+              <div class="passive-actions">
+              </div>
+
+              <div class="item-controls">
+                <a
+                  data-action="clickEdit"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.edit'}}"
+                >
+                  <i class="fa-regular fa-edit"></i>
+                </a>
+                <a
+                  data-action="clickDelete"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.delete'}}"
+                >
+                  <i class="fa-regular fa-eraser"></i>
+                </a>
+              </div>
             </div>
           </li>
         {{/each}}
@@ -88,32 +97,41 @@
       {{#if categorized.passives.drawback}}
         {{#each categorized.passives.drawback as |passive obj|}}
           <li class="item-block passive-block">
-            <img src="{{passive.img}}" width="24" height="24" />
-            <h5>{{passive.name}}</h5>
-            <span>{{passive.system.info.acquirement}}</span>
-            <div>
-              {{#if (eq passive.system.info.acquirement "learned")}}
-                [{{passive.system.cost.experience}}{{localize "PC.xp"}}]
-              {{else}}
-                [{{passive.system.cost.points}}{{localize "PC.pts"}}]
-              {{/if}}
-            </div>
+            <div class="gear-line">
+              <img src="{{passive.img}}" width="24" height="24" />
+              <div class="passive-title">
+                <h5>{{passive.name}}</h5>
+                <div class="passive-cost">
+                  {{#if (eq passive.system.info.acquirement "learned")}}
+                    {{passive.system.cost.experience}}{{localize "PC.xp"}}
+                  {{else}}
+                    {{passive.system.cost.points}}{{localize "PC.pts"}}
+                  {{/if}}
+                </div>
+              </div>
 
-            <div>
-              <a
-                data-action="clickEdit"
-                data-item-id="{{passive._id}}"
-                title="{{localize 'PC.edit'}}"
-              >
-                <i class="fas fa-edit"></i>
-              </a>
-              <a
-                data-action="clickDelete"
-                data-item-id="{{passive._id}}"
-                title="{{localize 'PC.delete'}}"
-              >
-                <i class="fa-solid fa-trash-can"></i>
-              </a>
+              <div class="item-keywords">
+              </div>
+
+              <div class="passive-actions">
+              </div>
+
+              <div class="item-controls">
+                <a
+                  data-action="clickEdit"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.edit'}}"
+                >
+                  <i class="fa-regular fa-edit"></i>
+                </a>
+                <a
+                  data-action="clickDelete"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.delete'}}"
+                >
+                  <i class="fa-regular fa-eraser"></i>
+                </a>
+              </div>
             </div>
           </li>
         {{/each}}

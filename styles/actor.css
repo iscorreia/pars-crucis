@@ -677,7 +677,7 @@ h1.actor-name {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: end;
+      justify-content: right;
       gap: 2px;
       width: 70px;
       a {
@@ -918,17 +918,6 @@ h1.actor-name {
   .passives-list {
     margin: 0;
     padding: 0;
-
-    .passive-block {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      height: 24px;
-      input {
-        width: 50%;
-      }
-    }
     .passives-group-title {
       width: 100%;
       height: 16px;
@@ -957,6 +946,7 @@ h1.actor-name {
           display: inline-flex;
           align-items: center;
           justify-content: center;
+          width: 16px;
           gap: 2px;
           color: var(--color-text-secondary);
         }
@@ -966,6 +956,72 @@ h1.actor-name {
         }
       }
     }
+  }
+}
+.passive-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 24px; */
+  .gear-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .passive-title {
+      width: 180px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      h5 {
+        padding: 1px 0 0 2px;
+        line-height: 23px;
+        font-size: 19px;
+        font-family: "Cambria";
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .passive-cost {
+        margin: 0 0 3px 3px;
+        font-size: 14px;
+        font-family: "Modesto Condensed";
+        color: var(--color-light-4);
+      }
+    }
+
+    .item-keywords {
+      width: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      .pc-keyword {
+        margin-left: 3px;
+      }
+    }
+    .passive-actions {
+      width: 280px;
+    }
+    .item-controls {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: right;
+      gap: 2px;
+      width: 70px;
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 16px;
+      }
+    }
+  }
+  input {
+    width: 50%;
   }
 }
 .point-bank {
