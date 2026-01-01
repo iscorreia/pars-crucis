@@ -534,7 +534,15 @@
       "agent": "Agente",
       "recipe": "Receita",
       "grenade": "Granada",
-      "instrument": "Instrumento"
+      "instrument": "Instrumento",
+
+      "attribute": "Atributo",
+      "skill": "Perícia",
+      "sense": "Sensorial",
+      "narrative": "Narrativa",
+      "cultural": "Cultural",
+      "original": "Original",
+      "conditional": "Condicional"
     },
     "keywords": "Palavras-chave"
   }

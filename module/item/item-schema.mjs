@@ -67,13 +67,13 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
       details: new SchemaField({
         experience: new NumberField({ initial: 2, integer: true }),
         preRequisites: new StringField({ initial: "" }),
-        keywords: new TypedObjectField(
-          new NumberField({ initial: null, nullable: true }),
-          {}
-        ),
         coreSkill: new StringField({ initial: "none" }),
         coreLevel: new NumberField({ initial: 1, integer: true }),
       }),
+      keywords: new TypedObjectField(
+        new NumberField({ initial: null, nullable: true }),
+        {}
+      ),
       description: description(),
     };
   }
@@ -111,6 +111,10 @@ export class PassiveModel extends foundry.abstract.TypeDataModel {
         experience: currencyField(),
         points: currencyField(),
       }),
+      keywords: new TypedObjectField(
+        new NumberField({ initial: null, nullable: true }),
+        {}
+      ),
       description: description(),
     };
   }

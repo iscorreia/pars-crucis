@@ -47,13 +47,17 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   static async addKeywordOnClick(event, target) {
     event.preventDefault();
     const item = this.document;
+    let keywords = PC.keyword;
+    if (target.dataset.type === "passive") {
+      keywords = PC.passiveKeyword;
+    }
 
-    const keywordButtons = Object.entries(PC.keyword).map(([key, data]) => ({
+    const keywordButtons = Object.entries(keywords).map(([key, data]) => ({
       action: key,
       label: game.i18n.localize(data.label),
       callback: async () => {
         await item.update({
-          [`system.details.keywords.${key}`]: null,
+          [`system.keywords.${key}`]: null,
         });
       },
     }));
@@ -73,7 +77,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     event.preventDefault();
     const item = this.document;
     const keywordKey = target.dataset.keyword;
-    item.update({ [`system.details.keywords.-=${keywordKey}`]: null });
+    item.update({ [`system.keywords.-=${keywordKey}`]: null });
   }
 
   static async createActionOnClick(event, target) {

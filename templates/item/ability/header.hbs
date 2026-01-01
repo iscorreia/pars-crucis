@@ -47,7 +47,7 @@
       {{/if}}
     </div>
     <div class="item-sheet-keywords">
-      {{#each system.details.keywords as |value key|}}
+      {{#each system.keywords as |value key|}}
         <div class="pc-keyword">{{localize (concat "PC.keyword." key)}}{{#if
             value
           }}({{value}}){{/if}}</div>
