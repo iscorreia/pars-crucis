@@ -638,6 +638,7 @@ h1.actor-name {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   .ability-line {
     display: flex;
     flex-direction: row;
@@ -666,13 +667,6 @@ h1.actor-name {
         /* margin-right: 0; */
       }
     }
-    /* .ability-expand {
-      width: 68px;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    } */
     .ability-controls {
       display: flex;
       flex-direction: row;
@@ -906,6 +900,22 @@ h1.actor-name {
       font-size: 19px;
       background: transparent;
     }
+  }
+  .silver {
+    background: linear-gradient(
+      to right,
+      transparent 5%,
+      var(--pc-color-silver-bg) 100px,
+      transparent 100%
+    );
+  }
+  .copper {
+    background: linear-gradient(
+      to right,
+      transparent 5%,
+      var(--pc-color-copper-bg) 100px,
+      transparent 100%
+    );
   }
 }
 

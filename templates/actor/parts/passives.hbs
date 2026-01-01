@@ -51,6 +51,17 @@
 
               <div class="item-controls">
                 <a
+                  data-action="toggleExpand"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.expandCollapseActions'}}"
+                >
+                  {{#if passive.flags.pars-crucis.expanded}}
+                    <i class="fa-regular fa-arrows-to-line"></i>
+                  {{else}}
+                    <i class="fa-regular fa-arrows-from-line"></i>
+                  {{/if}}
+                </a>
+                <a
                   data-action="clickEdit"
                   data-item-id="{{passive._id}}"
                   title="{{localize 'PC.edit'}}"
@@ -103,9 +114,9 @@
                 <h5>{{passive.name}}</h5>
                 <div class="passive-cost">
                   {{#if (eq passive.system.info.acquirement "learned")}}
-                    {{passive.system.cost.experience}}{{localize "PC.xp"}}
+                    ↑{{passive.system.cost.experience}}{{localize "PC.xp"}}
                   {{else}}
-                    {{passive.system.cost.points}}{{localize "PC.pts"}}
+                    ↑{{passive.system.cost.points}}{{localize "PC.pts"}}
                   {{/if}}
                 </div>
               </div>
@@ -117,6 +128,17 @@
               </div>
 
               <div class="item-controls">
+                <a
+                  data-action="toggleExpand"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.expandCollapseActions'}}"
+                >
+                  {{#if passive.flags.pars-crucis.expanded}}
+                    <i class="fa-regular fa-arrows-to-line"></i>
+                  {{else}}
+                    <i class="fa-regular fa-arrows-from-line"></i>
+                  {{/if}}
+                </a>
                 <a
                   data-action="clickEdit"
                   data-item-id="{{passive._id}}"
