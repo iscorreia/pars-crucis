@@ -668,3 +668,14 @@ PC.keyword = {
   grenade: { label: "PC.keyword.grenade" },
   instrument: { label: "PC.keyword.instrument" },
 };
+
+PC.passiveKeyword = {
+  attribute: { label: "PC.keyword.attribute" },
+  skill: { label: "PC.keyword.skill" },
+  sense: { label: "PC.keyword.sense" },
+  narrative: { label: "PC.keyword.narrative" },
+  cultural: { label: "PC.keyword.cultural" },
+  original: { label: "PC.keyword.original" },
+  conditional: { label: "PC.keyword.conditional" },
+  esoteric: { label: "PC.keyword.esoteric" },
+};

@@ -7,118 +7,194 @@
 >
   <div class="passives-list-block">
     <ol class="passives-list">
-      <div class="passives-group-title group-title">
-        <div class="empty-space"></div>
-        <h4>
-          <div>{{localize "PC.benefits"}}</div>
-        </h4>
-        <div class="ability-sorting">
-          <a
-            data-action="sortAbilities"
-            data-sort-mode="name-asc"
-            data-group="benefit"
-            class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "benefit") "name-asc")}}active{{/if}}"
-          ><i class="fa-regular fa-arrow-down-a-z"></i></a>
-          <a
-            data-action="sortAbilities"
-            data-sort-mode="name-desc"
-            data-group="benefit"
-            class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "benefit") "name-desc")}}active{{/if}}"
-          ><i class="fa-regular fa-arrow-down-z-a"></i></a>
-        </div>
-      </div>
       {{#if categorized.passives.benefit}}
+        <div class="passives-group-title group-title">
+          <div class="empty-space"></div>
+          <h4>
+            <div>{{localize "PC.benefits"}}</div>
+          </h4>
+          <div class="ability-sorting">
+            <a
+              data-action="sortAbilities"
+              data-sort-mode="name-asc"
+              data-group="benefit"
+              class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "benefit") "name-asc")}}active{{/if}}"
+            ><i class="fa-regular fa-arrow-down-a-z"></i></a>
+            <a
+              data-action="sortAbilities"
+              data-sort-mode="name-desc"
+              data-group="benefit"
+              class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "benefit") "name-desc")}}active{{/if}}"
+            ><i class="fa-regular fa-arrow-down-z-a"></i></a>
+          </div>
+        </div>
         {{#each categorized.passives.benefit as |passive obj|}}
           <li class="item-block passive-block">
-            <img src="{{passive.img}}" width="24" height="24" />
-            <h5>{{passive.name}}</h5>
-            <span>{{passive.system.info.acquirement}}</span>
-            <div>
-              {{#if (eq passive.system.info.acquirement "learned")}}
-                [{{passive.system.cost.experience}}{{localize "PC.xp"}}]
-              {{else}}
-                [{{passive.system.cost.points}}{{localize "PC.pts"}}]
-              {{/if}}
-            </div>
+            <div class="gear-line">
+              <img src="{{passive.img}}" width="24" height="24" />
+              <div class="passive-title">
+                <h5>{{passive.name}}</h5>
+                <div class="passive-cost">
+                  {{#if (eq passive.system.info.acquirement "learned")}}
+                    {{passive.system.cost.experience}}{{localize "PC.xp"}}
+                  {{else}}
+                    {{passive.system.cost.points}}{{localize "PC.pts"}}
+                  {{/if}}
+                </div>
+              </div>
 
-            <div>
-              <a
-                data-action="clickEdit"
-                data-item-id="{{passive._id}}"
-                title="{{localize 'PC.edit'}}"
-              >
-                <i class="fas fa-edit"></i>
-              </a>
-              <a
-                data-action="clickDelete"
-                data-item-id="{{passive._id}}"
-                title="{{localize 'PC.delete'}}"
-              >
-                <i class="fa-solid fa-trash-can"></i>
-              </a>
+              <div class="item-keywords">
+                {{#each passive.system.keywords as |value keyword|}}
+                  <div class="pc-keyword">
+                    {{localize (concat "PC.keyword." keyword)}}{{#if
+                      value
+                    }}({{value}}){{/if}}{{#unless @last}}{{/unless}}
+                  </div>
+                {{/each}}
+              </div>
+
+              <div class="persona-actions">
+              </div>
+
+              <div class="item-controls">
+                <a
+                  data-action="toggleExpand"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.expandCollapseActions'}}"
+                >
+                  {{#if passive.flags.pars-crucis.expanded}}
+                    <i class="fa-regular fa-arrows-to-line"></i>
+                  {{else}}
+                    <i class="fa-regular fa-arrows-from-line"></i>
+                  {{/if}}
+                </a>
+                <a
+                  data-action="clickEdit"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.edit'}}"
+                >
+                  <i class="fa-regular fa-edit"></i>
+                </a>
+                <a
+                  data-action="clickDelete"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.delete'}}"
+                >
+                  <i class="fa-regular fa-eraser"></i>
+                </a>
+              </div>
             </div>
+            {{#if passive.flags.pars-crucis.expanded}}
+              <div class="persona-item-desc">
+                {{{passive.system.description.description}}}
+              </div>
+            {{/if}}
           </li>
         {{/each}}
       {{else}}
-        <li>Não possui Benefícios</li>
+        <div class="passives-group-title group-title empty-group-title">
+          <div class="empty-space"></div>
+          <h4 class="empty-list-title">
+            <div>{{localize "PC.noBenefits"}}</div>
+          </h4>
+          <div class="empty-space"></div>
+        </div>
       {{/if}}
     </ol>
 
     <ol class="passives-list">
-      <div class="passives-group-title group-title">
-        <div class="empty-space"></div>
-        <h4>
-          <div>{{localize "PC.drawbacks"}}</div>
-        </h4>
-        <div class="ability-sorting">
-          <a
-            data-action="sortAbilities"
-            data-sort-mode="name-asc"
-            data-group="drawback"
-            class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "drawback") "name-asc")}}active{{/if}}"
-          ><i class="fa-regular fa-arrow-down-a-z"></i></a>
-          <a
-            data-action="sortAbilities"
-            data-sort-mode="name-desc"
-            data-group="drawback"
-            class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "drawback") "name-desc")}}active{{/if}}"
-          ><i class="fa-regular fa-arrow-down-z-a"></i></a>
+    {{#if categorized.passives.drawback}}
+        <div class="passives-group-title group-title">
+          <div class="empty-space"></div>
+          <h4>
+            <div>{{localize "PC.drawbacks"}}</div>
+          </h4>
+          <div class="ability-sorting">
+            <a
+              data-action="sortAbilities"
+              data-sort-mode="name-asc"
+              data-group="drawback"
+              class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "drawback") "name-asc")}}active{{/if}}"
+            ><i class="fa-regular fa-arrow-down-a-z"></i></a>
+            <a
+              data-action="sortAbilities"
+              data-sort-mode="name-desc"
+              data-group="drawback"
+              class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "drawback") "name-desc")}}active{{/if}}"
+            ><i class="fa-regular fa-arrow-down-z-a"></i></a>
+          </div>
         </div>
-      </div>
-      {{#if categorized.passives.drawback}}
         {{#each categorized.passives.drawback as |passive obj|}}
           <li class="item-block passive-block">
-            <img src="{{passive.img}}" width="24" height="24" />
-            <h5>{{passive.name}}</h5>
-            <span>{{passive.system.info.acquirement}}</span>
-            <div>
-              {{#if (eq passive.system.info.acquirement "learned")}}
-                [{{passive.system.cost.experience}}{{localize "PC.xp"}}]
-              {{else}}
-                [{{passive.system.cost.points}}{{localize "PC.pts"}}]
-              {{/if}}
-            </div>
+            <div class="gear-line">
+              <img src="{{passive.img}}" width="24" height="24" />
+              <div class="passive-title">
+                <h5>{{passive.name}}</h5>
+                <div class="passive-cost">
+                  {{#if (eq passive.system.info.acquirement "learned")}}
+                    ↑{{passive.system.cost.experience}}{{localize "PC.xp"}}
+                  {{else}}
+                    ↑{{passive.system.cost.points}}{{localize "PC.pts"}}
+                  {{/if}}
+                </div>
+              </div>
 
-            <div>
-              <a
-                data-action="clickEdit"
-                data-item-id="{{passive._id}}"
-                title="{{localize 'PC.edit'}}"
-              >
-                <i class="fas fa-edit"></i>
-              </a>
-              <a
-                data-action="clickDelete"
-                data-item-id="{{passive._id}}"
-                title="{{localize 'PC.delete'}}"
-              >
-                <i class="fa-solid fa-trash-can"></i>
-              </a>
+              <div class="item-keywords">
+                {{#each passive.system.keywords as |value keyword|}}
+                  <div class="pc-keyword">
+                    {{localize (concat "PC.keyword." keyword)}}{{#if
+                      value
+                    }}({{value}}){{/if}}{{#unless @last}}{{/unless}}
+                  </div>
+                {{/each}}
+              </div>
+
+              <div class="persona-actions">
+              </div>
+
+              <div class="item-controls">
+                <a
+                  data-action="toggleExpand"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.expandCollapseActions'}}"
+                >
+                  {{#if passive.flags.pars-crucis.expanded}}
+                    <i class="fa-regular fa-arrows-to-line"></i>
+                  {{else}}
+                    <i class="fa-regular fa-arrows-from-line"></i>
+                  {{/if}}
+                </a>
+                <a
+                  data-action="clickEdit"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.edit'}}"
+                >
+                  <i class="fa-regular fa-edit"></i>
+                </a>
+                <a
+                  data-action="clickDelete"
+                  data-item-id="{{passive._id}}"
+                  title="{{localize 'PC.delete'}}"
+                >
+                  <i class="fa-regular fa-eraser"></i>
+                </a>
+              </div>
             </div>
+            {{#if passive.flags.pars-crucis.expanded}}
+              <div class="persona-item-desc">
+                {{{passive.system.description.description}}}
+              </div>
+            {{/if}}
           </li>
         {{/each}}
       {{else}}
-        <li>Não possui Benefícios</li>
+        <div class="passives-group-title group-title empty-group-title">
+          <div class="empty-space"></div>
+          <h4 class="empty-list-title">
+            <div>{{localize "PC.noDrawbacks"}}</div>
+          </h4>
+          <div class="empty-space"></div>
+        </div>
       {{/if}}
     </ol>
   </div>

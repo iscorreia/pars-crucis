@@ -37,6 +37,12 @@
       ·
       {{localize (concat "PC.passive.acquirement." system.info.acquirement)}}
     </div>
-    <div class="item-sheet-keywords"></div>
+    <div class="item-sheet-keywords">
+      {{#each system.keywords as |value key|}}
+        <div class="pc-keyword">{{localize (concat "PC.keyword." key)}}{{#if
+            value
+          }}({{value}}){{/if}}</div>
+      {{/each}}
+    </div>
   </div>
 </header>

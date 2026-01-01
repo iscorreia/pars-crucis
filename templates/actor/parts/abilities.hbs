@@ -49,7 +49,7 @@
               <h5 class="ability-name">{{ability.name}}</h5>
 
               <div class="ability-keywords">
-                {{#each ability.system.details.keywords as |value keyword|}}
+                {{#each ability.system.keywords as |value keyword|}}
                   <div class="pc-keyword">
                     {{localize (concat "PC.keyword." keyword)}}{{#if
                       value
