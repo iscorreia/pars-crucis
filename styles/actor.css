@@ -1057,6 +1057,12 @@ h1.actor-name {
     color: var(--color-level-warning);
   }
 }
+.empty-group-title {
+  margin-bottom: 8px;
+}
+.empty-list-title {
+  color: var(--color-dark-6);
+}
 
 /* DETAILS TAB */
 .background {

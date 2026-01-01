@@ -461,7 +461,9 @@
       }
     },
     "benefits": "Benefícios",
+    "noBenefits": "Nenhum Benefício",
     "drawbacks": "Malefícios",
+    "noDrawbacks": "Nenhum Malefício",
     "equipment": "Equipamento",
     "wear": "Vestimentas",
     "items": "Itens",

@@ -7,27 +7,27 @@
 >
   <div class="passives-list-block">
     <ol class="passives-list">
-      <div class="passives-group-title group-title">
-        <div class="empty-space"></div>
-        <h4>
-          <div>{{localize "PC.benefits"}}</div>
-        </h4>
-        <div class="ability-sorting">
-          <a
-            data-action="sortAbilities"
-            data-sort-mode="name-asc"
-            data-group="benefit"
-            class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "benefit") "name-asc")}}active{{/if}}"
-          ><i class="fa-regular fa-arrow-down-a-z"></i></a>
-          <a
-            data-action="sortAbilities"
-            data-sort-mode="name-desc"
-            data-group="benefit"
-            class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "benefit") "name-desc")}}active{{/if}}"
-          ><i class="fa-regular fa-arrow-down-z-a"></i></a>
-        </div>
-      </div>
       {{#if categorized.passives.benefit}}
+        <div class="passives-group-title group-title">
+          <div class="empty-space"></div>
+          <h4>
+            <div>{{localize "PC.benefits"}}</div>
+          </h4>
+          <div class="ability-sorting">
+            <a
+              data-action="sortAbilities"
+              data-sort-mode="name-asc"
+              data-group="benefit"
+              class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "benefit") "name-asc")}}active{{/if}}"
+            ><i class="fa-regular fa-arrow-down-a-z"></i></a>
+            <a
+              data-action="sortAbilities"
+              data-sort-mode="name-desc"
+              data-group="benefit"
+              class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "benefit") "name-desc")}}active{{/if}}"
+            ><i class="fa-regular fa-arrow-down-z-a"></i></a>
+          </div>
+        </div>
         {{#each categorized.passives.benefit as |passive obj|}}
           <li class="item-block passive-block">
             <div class="gear-line">
@@ -46,7 +46,7 @@
               <div class="item-keywords">
               </div>
 
-              <div class="passive-actions">
+              <div class="persona-actions">
               </div>
 
               <div class="item-controls">
@@ -77,35 +77,46 @@
                 </a>
               </div>
             </div>
+            {{#if passive.flags.pars-crucis.expanded}}
+              <div class="persona-item-desc">
+                {{{passive.system.description.description}}}
+              </div>
+            {{/if}}
           </li>
         {{/each}}
       {{else}}
-        <li>Não possui Benefícios</li>
+        <div class="passives-group-title group-title empty-group-title">
+          <div class="empty-space"></div>
+          <h4 class="empty-list-title">
+            <div>{{localize "PC.noBenefits"}}</div>
+          </h4>
+          <div class="empty-space"></div>
+        </div>
       {{/if}}
     </ol>
 
     <ol class="passives-list">
-      <div class="passives-group-title group-title">
-        <div class="empty-space"></div>
-        <h4>
-          <div>{{localize "PC.drawbacks"}}</div>
-        </h4>
-        <div class="ability-sorting">
-          <a
-            data-action="sortAbilities"
-            data-sort-mode="name-asc"
-            data-group="drawback"
-            class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "drawback") "name-asc")}}active{{/if}}"
-          ><i class="fa-regular fa-arrow-down-a-z"></i></a>
-          <a
-            data-action="sortAbilities"
-            data-sort-mode="name-desc"
-            data-group="drawback"
-            class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "drawback") "name-desc")}}active{{/if}}"
-          ><i class="fa-regular fa-arrow-down-z-a"></i></a>
+    {{#if categorized.passives.drawback}}
+        <div class="passives-group-title group-title">
+          <div class="empty-space"></div>
+          <h4>
+            <div>{{localize "PC.drawbacks"}}</div>
+          </h4>
+          <div class="ability-sorting">
+            <a
+              data-action="sortAbilities"
+              data-sort-mode="name-asc"
+              data-group="drawback"
+              class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "drawback") "name-asc")}}active{{/if}}"
+            ><i class="fa-regular fa-arrow-down-a-z"></i></a>
+            <a
+              data-action="sortAbilities"
+              data-sort-mode="name-desc"
+              data-group="drawback"
+              class="{{#if (eq (lookup (lookup actor.flags "pars-crucis") "drawback") "name-desc")}}active{{/if}}"
+            ><i class="fa-regular fa-arrow-down-z-a"></i></a>
+          </div>
         </div>
-      </div>
-      {{#if categorized.passives.drawback}}
         {{#each categorized.passives.drawback as |passive obj|}}
           <li class="item-block passive-block">
             <div class="gear-line">
@@ -124,7 +135,7 @@
               <div class="item-keywords">
               </div>
 
-              <div class="passive-actions">
+              <div class="persona-actions">
               </div>
 
               <div class="item-controls">
@@ -155,10 +166,21 @@
                 </a>
               </div>
             </div>
+            {{#if passive.flags.pars-crucis.expanded}}
+              <div class="persona-item-desc">
+                {{{passive.system.description.description}}}
+              </div>
+            {{/if}}
           </li>
         {{/each}}
       {{else}}
-        <li>Não possui Benefícios</li>
+        <div class="passives-group-title group-title empty-group-title">
+          <div class="empty-space"></div>
+          <h4 class="empty-list-title">
+            <div>{{localize "PC.noDrawbacks"}}</div>
+          </h4>
+          <div class="empty-space"></div>
+        </div>
       {{/if}}
     </ol>
   </div>
