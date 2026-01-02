@@ -9,7 +9,9 @@
 }
 
 :root {
+  --pc-font-size-small: 12.5px;
   --pc-font-size-mid: 14px;
+  --pc-font-size-big: 17px;
 
   --pc-icon-width-mid: 24px;
   --pc-icon-height-mid: 24px;

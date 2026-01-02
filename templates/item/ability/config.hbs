@@ -35,15 +35,22 @@
     {{/with}}
     <div>
       <h4>{{localize "PC.keywords"}}</h4>
-      <a data-action="addKeyword"><i 
+      <a data-action="addKeyword" data-type="ability"><i 
         class="fa-regular fa-plus"
-      ></i></a>
+        ></i>
+      </a>
       {{#each system.keywords as |keyword obj|}}
         <div class="flexrow">
           <div>
             {{localize (concat "PC.keyword." obj)}}{{#if keyword}}
               ({{keyword}}){{/if}}
           </div>
+          <input
+            name="system.keywords.{{@key}}"
+            value="{{keyword}}"
+            data-dtype="String"
+            type="String"
+          />
           <a data-action="cutKeyword" data-keyword="{{@key}}">
             <i class="fa-regular fa-trash-can"></i></a>
         </div>

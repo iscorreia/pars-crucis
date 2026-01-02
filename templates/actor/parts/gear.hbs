@@ -21,6 +21,15 @@
             </div>
 
             <div class="item-keywords">
+              {{#each weapon.system.keywords as |value keyword|}}
+                <div class="pc-keyword">
+                  <div class="pc-keyword-label">{{localize
+                      (concat "PC.keyword." keyword)
+                    }}</div>{{#if value}}<div
+                      class="pc-keyword-value"
+                    >({{value}})</div>{{/if}}{{#unless @last}}{{/unless}}
+                </div>
+              {{/each}}
             </div>
 
             <div class="persona-actions weapon-actions">

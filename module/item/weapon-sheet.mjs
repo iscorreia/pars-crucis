@@ -33,6 +33,7 @@ export default class WeaponSheet extends ParsCrucisItemSheet {
     },
     config: {
       template: "systems/pars-crucis/templates/item/weapon/config.hbs",
+      classes: ["pc-item-tab"],
     },
   };
 

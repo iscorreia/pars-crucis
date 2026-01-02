@@ -3,6 +3,7 @@
 .persona-sheet-header,
 .persona-tab,
 .persona-config,
+.pc-item-tab,
 .weapon-header {
   h1,
   h2,
@@ -13,6 +14,12 @@
   p {
     padding: 0;
     margin: 0;
+  }
+  h1 {
+    overflow-x: clip;
+    overflow-y: visible;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   h3 {
     height: 24px;
@@ -652,6 +659,7 @@ h1.actor-name {
   .item-line {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     .item-title {
       width: 180px;
@@ -675,9 +683,7 @@ h1.actor-name {
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      .pc-keyword {
-        margin-left: 3px;
-      }
+      flex-wrap: wrap;
     }
     .item-controls {
       display: flex;
@@ -700,22 +706,32 @@ h1.actor-name {
   border: transparent;
 }
 .pc-keyword {
+  display: inline-flex;
   height: 18px;
-  /* line-height: 18px; */
   background-color: var(--color-dark-3);
   border-color: var(--color-dark-6);
   color: var(--color-light-2);
   border-style: solid;
   border-width: 1px;
-  border-radius: 5px;
-  padding: 0 3px;
-  margin-left: 3px;
-  /* font-size: 12px; */
+  border-radius: 3px;
+  padding: 0 2px;
+  margin-left: 2px;
   text-align: center;
-
   line-height: 16px;
+  font-size: var(--pc-font-size-small);
   font-family: "Barlow Condensed Light", sans-serif;
-  font-size: 14px;
+  .pc-keyword-label {
+  }
+  .pc-keyword-value {
+    margin-left: 2px;
+  }
+}
+.is-wrapped {
+  row-gap: 2px;
+  .pc-keyword {
+    height: 14px;
+    line-height: 12px;
+  }
 }
 .item-list-block > ol:not(:last-child)::after {
   margin-bottom: 5px;

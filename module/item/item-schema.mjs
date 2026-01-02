@@ -121,6 +121,7 @@ export class WeaponModel extends foundry.abstract.TypeDataModel {
       }),
       cost: itemCost(),
       details: details({ equippable: true }),
+      keywords: keywords(),
       description: description(),
     };
   }
