@@ -3,6 +3,11 @@
   src: url("../fonts/Sundayromanticdemo.otf");
 }
 
+@font-face {
+  font-family: "Barlow Condensed Light";
+  src: url("../fonts/BarlowCondensed/BarlowCondensed-Light.ttf");
+}
+
 :root {
   --pc-font-size-mid: 14px;
 

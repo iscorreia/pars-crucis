@@ -8,7 +8,7 @@
   <div class="item-list-block">
     <ol class="item-list">
       {{#if categorized.passives.benefit}}
-        <div class="item-group-title group-title">
+        <div class="item-group-title">
           <div class="empty-space"></div>
           <h4>
             <div>{{localize "PC.benefits"}}</div>
@@ -92,7 +92,7 @@
           </li>
         {{/each}}
       {{else}}
-        <div class="passives-group-title group-title empty-group-title">
+        <div class="item-group-title empty-group-title">
           <div class="empty-space"></div>
           <h4 class="empty-list-title">
             <div>{{localize "PC.noBenefits"}}</div>
@@ -188,7 +188,7 @@
           </li>
         {{/each}}
       {{else}}
-        <div class="passives-group-title group-title empty-group-title">
+        <div class="item-group-title empty-group-title">
           <div class="empty-space"></div>
           <h4 class="empty-list-title">
             <div>{{localize "PC.noDrawbacks"}}</div>
@@ -198,7 +198,7 @@
       {{/if}}
     </ol>
   </div>
-  <div class="point-bank">
+  <div class="tab-footer point-bank">
     <div class="pts-desc">{{localize "PC.ptsSum"}}:</div>
     <div class="pts-sum {{#unless (eq system.experience.ptsSum 0)}}pts-warning{{/unless}}">{{system.experience.ptsSum}}</div>
   </div>

@@ -31,10 +31,7 @@ export class ActionModel extends foundry.abstract.DataModel {
       effort: new StringField({ initial: "0" }),
       prepTime: new StringField({ initial: "" }),
       duration: new StringField({ initial: "" }),
-      keywords: new TypedObjectField(
-        new NumberField({ initial: null, nullable: true }),
-        {}
-      ),
+      keywords: keywords(),
       _id: new StringField({}),
       // ATTACK|TEST-only
       skill: new StringField({
@@ -70,10 +67,7 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
         coreSkill: new StringField({ initial: "none" }),
         coreLevel: new NumberField({ initial: 1, integer: true }),
       }),
-      keywords: new TypedObjectField(
-        new NumberField({ initial: null, nullable: true }),
-        {}
-      ),
+      keywords: keywords(),
       description: description(),
     };
   }
@@ -111,10 +105,7 @@ export class PassiveModel extends foundry.abstract.TypeDataModel {
         experience: currencyField(),
         points: currencyField(),
       }),
-      keywords: new TypedObjectField(
-        new NumberField({ initial: null, nullable: true }),
-        {}
-      ),
+      keywords: keywords(),
       description: description(),
     };
   }
@@ -182,6 +173,13 @@ function information({
   };
 
   return new SchemaField(fields);
+}
+
+function keywords() {
+  return new TypedObjectField(
+    new StringField({ initial: null, nullable: true }),
+    {}
+  );
 }
 
 function details({

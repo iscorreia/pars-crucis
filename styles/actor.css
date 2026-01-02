@@ -430,11 +430,15 @@ h1.actor-name {
     line-height: 28px;
   }
 }
+.tab-footer {
+  height: 24px;
+  width: 100%;
+  border-top: 1px solid var(--color-tabs-border);
+  margin-top: 5px;
+}
 
 /* TAB SEPARATORS */
 .skill-tab > .skill-category:nth-child(odd)::after,
-.abilities-list-block > ol:not(:last-child)::after,
-.gear-list-block > ol:not(:last-child):not(.vest-list)::after,
 .item-list-block > ol:not(:last-child)::after {
   content: "";
   display: block;
@@ -583,6 +587,9 @@ h1.actor-name {
   pointer-events: none;
   z-index: 1;
 }
+.skill-tab-footer {
+  margin-top: 4px;
+}
 /* SKILL TAB currently uses 396 pixels of height from 424 available, what to do with the remaining 28 pixels?  */
 
 /* GENERAL ITEM TAB */
@@ -694,7 +701,7 @@ h1.actor-name {
 }
 .pc-keyword {
   height: 18px;
-  line-height: 18px;
+  /* line-height: 18px; */
   background-color: var(--color-dark-3);
   border-color: var(--color-dark-6);
   color: var(--color-light-2);
@@ -703,8 +710,12 @@ h1.actor-name {
   border-radius: 5px;
   padding: 0 3px;
   margin-left: 3px;
-  font-size: 12px;
+  /* font-size: 12px; */
   text-align: center;
+
+  line-height: 16px;
+  font-family: "Barlow Condensed Light", sans-serif;
+  font-size: 14px;
 }
 .item-list-block > ol:not(:last-child)::after {
   margin-bottom: 5px;
