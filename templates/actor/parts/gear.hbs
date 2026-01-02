@@ -5,20 +5,31 @@
   data-group="primary"
   data-tab="gear"
 >
-  <div class="gear-list-block">
-    <ol class="gear-list weapons-list">
-      <div class="gear-group-title">
+  <div class="item-list-block">
+    <ol class="item-list weapons-list">
+      <div class="item-group-title">
         <div class="empty-space"></div>
         <h4>{{localize "PC.weaponry"}}</h4>
-        <div class="gear-sorting"></div>
+        <div class="item-sorting"></div>
       </div>
       {{#each system.weaponry as |weapon obj|}}
-        <li class="item-block gear-block">
-          <div class="gear-line">
+        <li class="item-block">
+          <div class="item-line">
             <img class="icon-mid" src="{{weapon.img}}" width="24" height="24" />
-            <h5 class="gear-name weapon-name">{{weapon.name}}</h5>
+            <div class="item-title">
+              <h5 class="gear-name weapon-name">{{weapon.name}}</h5>
+            </div>
 
-            <div class="gear-keywords">
+            <div class="item-keywords">
+              {{#each weapon.system.keywords as |value keyword|}}
+                <div class="pc-keyword">
+                  <div class="pc-keyword-label">{{localize
+                      (concat "PC.keyword." keyword)
+                    }}</div>{{#if value}}<div
+                      class="pc-keyword-value"
+                    >({{value}})</div>{{/if}}{{#unless @last}}{{/unless}}
+                </div>
+              {{/each}}
             </div>
 
             <div class="persona-actions weapon-actions">
@@ -79,7 +90,7 @@
               {{/each}}
             </div>
 
-            <div class="gear-controls">
+            <div class="item-controls">
               {{#if weapon.system.details.equippable}}
                 <a
                   data-action="clickEquip"
@@ -120,20 +131,25 @@
         </li>
       {{/each}}
     </ol>
-    <ol class="gear-list vest-list">
-      <div class="gear-group-title">
+    <ol class="item-list vest-list">
+      <div class="item-group-title">
         <div class="empty-space"></div>
         <h4>{{localize "PC.wear"}}</h4>
-        <div class="gear-sorting"></div>
+        <div class="item-sorting"></div>
       </div>
-      {{#if system.vest}}
+      {{#if (and system.vest system.accessories)}}
         {{#each system.vest as |vest obj|}}
-          <li class="item-block gear-block">
-            <div class="gear-line">
+          <li class="item-block">
+            <div class="item-line">
               <img class="icon-mid" src="{{vest.img}}" width="24" height="24" />
-              <h5>{{vest.name}}</h5>
+              <div class="item-title">
+                <h5>{{vest.name}}</h5>
+              </div>
 
-              <div class="gear-controls">
+              <div class="item-keywords"></div>
+              <div class="persona-actions"></div>
+
+              <div class="item-controls">
                 {{#if vest.system.details.equippable}}
                   <a
                     data-action="clickEquip"
@@ -173,71 +189,77 @@
             </div>
           </li>
         {{/each}}
-      {{else}}
-        <div>SEMROPA!!SEMROPA!!SEMROPA!!SEMROPA</div>
+        {{#each system.accessories as |acc obj|}}
+          <li class="item-block">
+            <div class="item-line">
+              <img class="icon-mid" src="{{acc.img}}" width="24" height="24" />
+              <div class="item-title">
+                <h5>{{acc.name}}</h5>
+              </div>
+
+              <div class="item-keywords"></div>
+              <div class="persona-actions"></div>
+
+              <div class="item-controls">
+                {{#if acc.system.details.equippable}}
+                  <a
+                    data-action="clickEquip"
+                    data-item-id="{{acc._id}}"
+                    data-equip="false"
+                    title="{{localize 'PC.equip'}}"
+                  >
+                    <i class="fa-regular fa-backpack"></i>
+                  </a>
+                {{/if}}
+                <a
+                  data-action="toggleExpand"
+                  data-item-id="{{acc._id}}"
+                  title="{{localize 'PC.expandCollapseActions'}}"
+                >
+                  {{#if acc.flags.pars-crucis.expanded}}
+                    <i class="fa-regular fa-arrows-to-line"></i>
+                  {{else}}
+                    <i class="fa-regular fa-arrows-from-line"></i>
+                  {{/if}}
+                </a>
+                <a
+                  data-action="clickEdit"
+                  data-item-id="{{acc._id}}"
+                  title="{{localize 'PC.edit'}}"
+                >
+                  <i class="fa-regular fa-edit"></i>
+                </a>
+                <a
+                  data-action="clickDelete"
+                  data-item-id="{{acc._id}}"
+                  title="{{localize 'PC.delete'}}"
+                >
+                  <i class="fa-regular fa-trash-can"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+        {{/each}}
       {{/if}}
     </ol>
-    <ol class="gear-list">
-      {{#each system.accessories as |acc obj|}}
-        <li class="item-block gear-block">
-          <div class="gear-line">
-            <img class="icon-mid" src="{{acc.img}}" width="24" height="24" />
-            <h5>{{acc.name}}</h5>
-
-            <div class="gear-controls">
-              {{#if acc.system.details.equippable}}
-                <a
-                  data-action="clickEquip"
-                  data-item-id="{{acc._id}}"
-                  data-equip="false"
-                  title="{{localize 'PC.equip'}}"
-                >
-                  <i class="fa-regular fa-backpack"></i>
-                </a>
-              {{/if}}
-              <a
-                data-action="toggleExpand"
-                data-item-id="{{acc._id}}"
-                title="{{localize 'PC.expandCollapseActions'}}"
-              >
-                {{#if acc.flags.pars-crucis.expanded}}
-                  <i class="fa-regular fa-arrows-to-line"></i>
-                {{else}}
-                  <i class="fa-regular fa-arrows-from-line"></i>
-                {{/if}}
-              </a>
-              <a
-                data-action="clickEdit"
-                data-item-id="{{acc._id}}"
-                title="{{localize 'PC.edit'}}"
-              >
-                <i class="fa-regular fa-edit"></i>
-              </a>
-              <a
-                data-action="clickDelete"
-                data-item-id="{{acc._id}}"
-                title="{{localize 'PC.delete'}}"
-              >
-                <i class="fa-regular fa-trash-can"></i>
-              </a>
-            </div>
-          </div>
-        </li>
-      {{/each}}
-    </ol>
-    <ol class="gear-list">
-      <div class="gear-group-title">
+    <ol class="item-list">
+      <div class="item-group-title">
         <div class="empty-space"></div>
         <h4>{{localize "PC.items"}}</h4>
-        <div class="gear-sorting"></div>
+        <div class="item-sorting"></div>
       </div>
       {{#each system.gear as |gear obj|}}
-        <li class="item-block gear-block">
-          <div class="gear-line">
+        <li class="item-block">
+          <div class="item-line">
             <img class="icon-mid" src="{{gear.img}}" width="24" height="24" />
-            <h5>{{gear.name}}</h5>
+            <div class="item-title">
+              <h5>{{gear.name}}</h5>
+            </div>
 
-            <div class="gear-controls">
+            <div class="item-keywords"></div>
+            <div class="persona-actions"></div>
+
+            <div class="item-controls">
               {{#if gear.system.details.equippable}}
                 <a
                   data-action="clickEquip"
@@ -279,7 +301,7 @@
       {{/each}}
     </ol>
   </div>
-  <div class="currency-bank">
+  <div class="tab-footer currency-bank">
     <div class="currency-line silver">
       <input
         class="currency-input"

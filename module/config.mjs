@@ -637,7 +637,7 @@ PC.passive = {
   },
 };
 
-PC.keyword = {
+PC.abilityKeyword = {
   melee: { label: "PC.keyword.melee" },
   bonus: { label: "PC.keyword.bonus" },
   throw: { label: "PC.keyword.throw" },
@@ -667,6 +667,20 @@ PC.keyword = {
   recipe: { label: "PC.keyword.recipe" },
   grenade: { label: "PC.keyword.grenade" },
   instrument: { label: "PC.keyword.instrument" },
+
+  lethality: { label: "PC.keyword.lethality" },
+  blunt: { label: "PC.keyword.blunt" },
+  impact: { label: "PC.keyword.impact" },
+  reload: { label: "PC.keyword.reload" },
+  rateOfFire: { label: "PC.keyword.rateOfFire" },
+  penetrating: { label: "PC.keyword.penetrating" },
+  handling: { label: "PC.keyword.handling" },
+  deviation: { label: "PC.keyword.deviation" },
+  kick: { label: "PC.keyword.kick" },
+  quickload: { label: "PC.keyword.quickload" },
+  insulant: { label: "PC.keyword.insulant" },
+  freezing: { label: "PC.keyword.freezing" },
+  effect: { label: "PC.keyword.effect" },
 };
 
 PC.passiveKeyword = {
@@ -678,4 +692,23 @@ PC.passiveKeyword = {
   original: { label: "PC.keyword.original" },
   conditional: { label: "PC.keyword.conditional" },
   esoteric: { label: "PC.keyword.esoteric" },
+};
+
+PC.weaponKeyword = {
+  twoHanded: { label: "PC.keyword.twoHanded" },
+  lethality: { label: "PC.keyword.lethality" },
+  blunt: { label: "PC.keyword.blunt" },
+  impact: { label: "PC.keyword.impact" },
+  reload: { label: "PC.keyword.reload" },
+  rateOfFire: { label: "PC.keyword.rateOfFire" },
+  penetrating: { label: "PC.keyword.penetrating" },
+  handling: { label: "PC.keyword.handling" },
+  stationary: { label: "PC.keyword.stationary" },
+  deviation: { label: "PC.keyword.deviation" },
+  kick: { label: "PC.keyword.kick" },
+  quickload: { label: "PC.keyword.quickload" },
+  fragile: { label: "PC.keyword.fragile" },
+  insulant: { label: "PC.keyword.insulant" },
+  freezing: { label: "PC.keyword.freezing" },
+  effect: { label: "PC.keyword.effect" },
 };

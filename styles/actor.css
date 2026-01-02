@@ -3,6 +3,7 @@
 .persona-sheet-header,
 .persona-tab,
 .persona-config,
+.pc-item-tab,
 .weapon-header {
   h1,
   h2,
@@ -13,6 +14,12 @@
   p {
     padding: 0;
     margin: 0;
+  }
+  h1 {
+    overflow-x: clip;
+    overflow-y: visible;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   h3 {
     height: 24px;
@@ -26,7 +33,8 @@
     padding: 0;
     margin: 0;
     text-align: center;
-    background-color: var(--color-cool-4);
+    /* background-color: var(--color-cool-4); */
+    background-color: var(--pc-fade-bg-0);
     border: none;
   }
   .icon-mid {
@@ -34,7 +42,7 @@
     width: var(--pc-icon-width-mid);
   }
   .item-block {
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }
 }
 
@@ -209,7 +217,7 @@ h1.actor-name {
     justify-content: space-around;
     width: 100%;
     height: 20px;
-    background: var(--color-cool-4);
+    background: var(--pc-fade-bg-0);
     border-radius: 5px;
     font-family: "Cambria";
     font-size: 20px;
@@ -270,7 +278,7 @@ h1.actor-name {
     height: 22px;
     font-family: "Font Awesome 6 Pro";
     font-size: 16px;
-    background: var(--color-cool-4);
+    background: var(--pc-fade-bg-0);
     .luck-mark {
       width: 25%;
     }
@@ -322,8 +330,8 @@ h1.actor-name {
     background: linear-gradient(
       to right,
       transparent 0%,
-      var(--color-cool-4) 25%,
-      var(--color-cool-4) 75%,
+      var(--pc-fade-bg-0) 25%,
+      var(--pc-fade-bg-0) 75%,
       transparent 100%
     );
     input {
@@ -429,12 +437,16 @@ h1.actor-name {
     line-height: 28px;
   }
 }
+.tab-footer {
+  height: 24px;
+  width: 100%;
+  border-top: 1px solid var(--color-tabs-border);
+  margin-top: 5px;
+}
 
 /* TAB SEPARATORS */
 .skill-tab > .skill-category:nth-child(odd)::after,
-.abilities-list-block > ol:not(:last-child)::after,
-.gear-list-block > ol:not(:last-child):not(.vest-list)::after,
-.passives-list-block > ol:not(:last-child)::after {
+.item-list-block > ol:not(:last-child)::after {
   content: "";
   display: block;
   width: 100%;
@@ -582,19 +594,22 @@ h1.actor-name {
   pointer-events: none;
   z-index: 1;
 }
+.skill-tab-footer {
+  margin-top: 4px;
+}
 /* SKILL TAB currently uses 396 pixels of height from 424 available, what to do with the remaining 28 pixels?  */
 
-/* ABILITIES TAB */
-.abilities-list-block {
-  height: calc(395px + 29px);
+/* GENERAL ITEM TAB */
+.item-list-block {
+  height: 395px;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-gutter: stable;
-  .abilities-list {
+  .item-list {
     margin: 0;
     padding: 0;
   }
-  .ability-group-title {
+  .item-group-title {
     width: 100%;
     height: 16px;
     display: flex;
@@ -611,63 +626,66 @@ h1.actor-name {
         height: inherit;
       }
     }
-    .ability-sorting {
+    .item-sorting {
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: right;
       gap: 2px;
       width: 70px;
-      a {
-        width: 16px;
-        height: 16px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2px;
-        color: var(--color-text-secondary);
-      }
-      a.active {
-        text-shadow: 0 0 10px var(--color-shadow-primary);
-        color: var(--color-text-emphatic);
-      }
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      gap: 2px;
+      color: var(--color-text-secondary);
+    }
+    a.active {
+      text-shadow: 0 0 10px var(--color-shadow-primary);
+      color: var(--color-text-emphatic);
     }
   }
 }
-.ability-block {
+.item-block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  .ability-line {
+  padding-bottom: 1px;
+  border-color: var(--color-scrollbar);
+  border-width: 0 0 1px 0;
+  border-style: dashed;
+  .item-line {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    h5 {
+    .item-title {
       width: 180px;
-      padding: 1px 0 0 2px;
-      line-height: 23px;
-      font-size: 19px;
-      font-family: "Cambria";
-      font-weight: bold;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      h5 {
+        padding: 1px 0 0 2px;
+        line-height: 23px;
+        font-size: 19px;
+        font-family: "Cambria";
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
-    .ability-keywords {
+    .item-keywords {
       width: 200px;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      .pc-keyword {
-        margin-left: 3px;
-      }
-      .pc-keyword:last-child {
-        /* margin-right: 0; */
-      }
+      flex-wrap: wrap;
     }
-    .ability-controls {
+    .item-controls {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -684,23 +702,44 @@ h1.actor-name {
     }
   }
 }
+.item-block:last-child {
+  border: transparent;
+}
 .pc-keyword {
+  display: inline-flex;
   height: 18px;
-  line-height: 18px;
   background-color: var(--color-dark-3);
   border-color: var(--color-dark-6);
   color: var(--color-light-2);
   border-style: solid;
   border-width: 1px;
-  border-radius: 5px;
-  padding: 0 3px;
-  margin-left: 3px;
-  font-size: 12px;
+  border-radius: 3px;
+  padding: 0 2px;
+  margin-left: 2px;
   text-align: center;
+  line-height: 16px;
+  font-size: var(--pc-font-size-small);
+  font-family: "Barlow Condensed Light", sans-serif;
+  .pc-keyword-label {
+  }
+  .pc-keyword-value {
+    margin-left: 2px;
+  }
 }
-/* SKILLS TAB SEPARATORS */
-.abilities-list-block > ol:not(:last-child)::after {
+.is-wrapped {
+  row-gap: 2px;
+  .pc-keyword {
+    height: 14px;
+    line-height: 12px;
+  }
+}
+.item-list-block > ol:not(:last-child)::after {
   margin-bottom: 5px;
+}
+
+/* ABILITIES TAB */
+.abilities-list-block {
+  height: calc(395px + 29px);
 }
 
 /* ACTIONS */
@@ -728,7 +767,7 @@ h1.actor-name {
     margin-right: 3px;
     i {
       flex-shrink: 0;
-      display: inline-flex; /* helps some icon fonts center properly */
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -774,88 +813,6 @@ h1.actor-name {
 }
 
 /* INVENTORY TAB */
-.gear-list-block {
-  height: 395px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-gutter: stable;
-  .gear-list {
-    margin: 0;
-    padding: 0;
-  }
-  .gear-group-title {
-    width: 100%;
-    height: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .empty-space {
-      width: 70px;
-    }
-    h4 {
-      height: 100%;
-      width: calc(100% - 140px);
-      text-align: center;
-      div {
-        height: inherit;
-      }
-    }
-    .gear-sorting {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2px;
-      width: 70px;
-    }
-  }
-}
-.gear-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  .gear-line {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    h5 {
-      width: 180px;
-      padding: 1px 0 0 2px;
-      line-height: 23px;
-      font-size: 19px;
-      font-family: "Cambria";
-      font-weight: bold;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .gear-keywords {
-      width: 200px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      .pc-keyword {
-        margin-left: 3px;
-      }
-    }
-    .gear-controls {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: right;
-      gap: 2px;
-      width: 70px;
-      a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 16px;
-      }
-    }
-  }
-}
 
 /* INVENTORY CURRENCY BANK */
 .currency-bank {
@@ -880,7 +837,7 @@ h1.actor-name {
     background: linear-gradient(
       to right,
       transparent 5%,
-      var(--color-cool-4) 100px,
+      var(--pc-fade-bg-0) 100px,
       transparent 100%
     );
     .currency-desc {
@@ -920,119 +877,11 @@ h1.actor-name {
 }
 
 /* PASSIVES TAB */
-.passives-list-block {
-  height: 395px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-gutter: stable;
-  .passives-list {
-    margin: 0;
-    padding: 0;
-    .passives-group-title {
-      width: 100%;
-      height: 16px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      .empty-space {
-        width: 70px;
-      }
-      h4 {
-        height: 100%;
-        width: calc(100% - 140px);
-        text-align: center;
-        div {
-          height: inherit;
-        }
-      }
-      .ability-sorting {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        gap: 2px;
-        width: 70px;
-        a {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 16px;
-          gap: 2px;
-          color: var(--color-text-secondary);
-        }
-        a.active {
-          text-shadow: 0 0 10px var(--color-shadow-primary);
-          color: var(--color-text-emphatic);
-        }
-      }
-    }
-  }
-}
-.passive-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  /* height: 24px; */
-  .gear-line {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .passive-title {
-      width: 180px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      h5 {
-        padding: 1px 0 0 2px;
-        line-height: 23px;
-        font-size: 19px;
-        font-family: "Cambria";
-        font-weight: bold;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      .passive-cost {
-        margin: 0 0 3px 3px;
-        font-size: 14px;
-        font-family: "Modesto Condensed";
-        color: var(--color-light-4);
-      }
-    }
-
-    .item-keywords {
-      width: 200px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      .pc-keyword {
-        margin-left: 3px;
-      }
-    }
-    .passive-actions {
-      width: 280px;
-    }
-    .item-controls {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: right;
-      gap: 2px;
-      width: 70px;
-      a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 16px;
-      }
-    }
-  }
-  input {
-    width: 50%;
-  }
+.passive-cost {
+  margin: 0 0 3px 3px;
+  font-size: 14px;
+  font-family: "Modesto Condensed";
+  color: var(--color-light-4);
 }
 .point-bank {
   display: flex;
@@ -1071,7 +920,7 @@ h1.actor-name {
   border-radius: 5px;
   background: linear-gradient(
     to bottom,
-    var(--color-cool-4) 28px,
+    var(--pc-fade-bg-0) 28px,
     transparent 90%
   );
   .form-group {

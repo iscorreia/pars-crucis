@@ -68,7 +68,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static TABS = {
     primary: {
-      initial: "passives", // Change to simplify testing, once done set back to skills
+      initial: "gear", // Change to simplify testing, once done set back to skills
       tabs: [
         { id: "skills", label: "PC.tabs.skills" },
         { id: "abilities", label: "PC.tabs.abilities" },

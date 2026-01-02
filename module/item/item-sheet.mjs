@@ -47,10 +47,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   static async addKeywordOnClick(event, target) {
     event.preventDefault();
     const item = this.document;
-    let keywords = PC.keyword;
-    if (target.dataset.type === "passive") {
-      keywords = PC.passiveKeyword;
-    }
+    let keywords = PC[`${target.dataset.type}Keyword`];
 
     const keywordButtons = Object.entries(keywords).map(([key, data]) => ({
       action: key,

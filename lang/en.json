@@ -438,6 +438,10 @@
         }
       }
     },
+    "armor": { "label": "Armadura", "abv": "AR" },
+    "abascant": { "label": "Abascanto", "abv": "AB" },
+    "robust": { "label": "Robustez", "abv": "Rob" },
+    "insulant": { "label": "Isolante", "abv": "Iso" },
     "accessories": "Acessórios",
     "gadgets": "Engenhocas",
     "alchemicals": "Alquímicos",
@@ -503,6 +507,13 @@
     "equipped": "Equipado",
     "config": "Configurações",
 
+    "weaponName": "Nome do armamento",
+    "subtype": "Subtipo",
+    "group": "Grupo",
+    "subgroup": "Subgrupo",
+    "load": "Carga",
+    "stack": "Monte",
+
     "keyword": {
       "label": "Palavra-chave",
       "melee": "Corpo a corpo",
@@ -526,7 +537,7 @@
       "mental": "Mental",
       "mutation": "Mutação",
 
-      "twohanded": "Duas mãos",
+      "twoHanded": "2 mãos",
       "custom": "Sob medida",
       "potion": "Poção",
       "elixir": "Elixir",
@@ -542,7 +553,23 @@
       "narrative": "Narrativa",
       "cultural": "Cultural",
       "original": "Original",
-      "conditional": "Condicional"
+      "conditional": "Condicional",
+
+      "lethality": "Fatalidade",
+      "blunt": "Embotada",
+      "impact": "Impacto",
+      "reload": "Recarga",
+      "rateOfFire": "Cadência",
+      "penetrating": "Penetrante",
+      "handling": "Manuseio",
+      "stationary": "Estacionário",
+      "deviation": "Desvio",
+      "kick": "Coice",
+      "quickload": "Uma carga",
+      "fragile": "Frágil",
+      "insulant": "Isolante",
+      "freezing": "Congelante",
+      "effect": "#Efeito"
     },
     "keywords": "Palavras-chave"
   }
