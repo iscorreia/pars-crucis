@@ -5,17 +5,17 @@
   data-group="primary"
   data-tab="abilities"
 >
-  <div class="abilities-list-block">
+  <div class="item-list-block abilities-list-block">
     {{#each categorized.abilities as |abilityGroups obj|}}
-      <ol class="abilities-list">
-        <div class="ability-group-title">
+      <ol class="item-list">
+        <div class="item-group-title">
           <div class="empty-space"></div>
           <h4>
             <div>{{localize
                 (concat "PC.ability.arts." obj ".groupLabel")
               }}</div>
           </h4>
-          <div class="ability-sorting">
+          <div class="item-sorting">
             <a
               data-action="sortAbilities"
               data-sort-mode="coreLevel-asc"
@@ -43,12 +43,14 @@
           </div>
         </div>
         {{#each abilityGroups as |ability obj|}}
-          <li class="item-block ability-block">
-            <div class="ability-line">
+          <li class="item-block">
+            <div class="item-line">
               <img class="icon-mid" src="{{ability.img}}" width="24" height="24" />
-              <h5 class="ability-name">{{ability.name}}</h5>
+              <div class="item-title">
+                <h5 class="ability-name">{{ability.name}}</h5>
+              </div>
 
-              <div class="ability-keywords">
+              <div class="item-keywords">
                 {{#each ability.system.keywords as |value keyword|}}
                   <div class="pc-keyword">
                     {{localize (concat "PC.keyword." keyword)}}{{#if
@@ -111,7 +113,7 @@
                 {{/each}}
               </div>
 
-              <div class="ability-controls">
+              <div class="item-controls">
                 <a
                   data-action="toggleExpand"
                   data-item-id="{{ability._id}}"

@@ -17,4 +17,7 @@
   --pc-color-damage-border: #c72a2a90;
   --pc-color-copper-bg: #4d3626;
   --pc-color-silver-bg: #505b68;
+
+  --pc-fade-bg-0: #302831;
+  --pc-fade-bg-1: rgba(48, 40, 49, 0.7);
 }

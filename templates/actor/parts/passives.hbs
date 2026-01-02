@@ -5,15 +5,15 @@
   data-group="primary"
   data-tab="passives"
 >
-  <div class="passives-list-block">
-    <ol class="passives-list">
+  <div class="item-list-block">
+    <ol class="item-list">
       {{#if categorized.passives.benefit}}
-        <div class="passives-group-title group-title">
+        <div class="item-group-title group-title">
           <div class="empty-space"></div>
           <h4>
             <div>{{localize "PC.benefits"}}</div>
           </h4>
-          <div class="ability-sorting">
+          <div class="item-sorting">
             <a
               data-action="sortAbilities"
               data-sort-mode="name-asc"
@@ -29,10 +29,10 @@
           </div>
         </div>
         {{#each categorized.passives.benefit as |passive obj|}}
-          <li class="item-block passive-block">
-            <div class="gear-line">
+          <li class="item-block">
+            <div class="item-line">
               <img src="{{passive.img}}" width="24" height="24" />
-              <div class="passive-title">
+              <div class="item-title">
                 <h5>{{passive.name}}</h5>
                 <div class="passive-cost">
                   {{#if (eq passive.system.info.acquirement "learned")}}
@@ -102,14 +102,14 @@
       {{/if}}
     </ol>
 
-    <ol class="passives-list">
+    <ol class="item-list">
     {{#if categorized.passives.drawback}}
-        <div class="passives-group-title group-title">
+        <div class="item-group-title">
           <div class="empty-space"></div>
           <h4>
             <div>{{localize "PC.drawbacks"}}</div>
           </h4>
-          <div class="ability-sorting">
+          <div class="item-sorting">
             <a
               data-action="sortAbilities"
               data-sort-mode="name-asc"
@@ -125,10 +125,10 @@
           </div>
         </div>
         {{#each categorized.passives.drawback as |passive obj|}}
-          <li class="item-block passive-block">
-            <div class="gear-line">
+          <li class="item-block">
+            <div class="item-line">
               <img src="{{passive.img}}" width="24" height="24" />
-              <div class="passive-title">
+              <div class="item-title">
                 <h5>{{passive.name}}</h5>
                 <div class="passive-cost">
                   {{#if (eq passive.system.info.acquirement "learned")}}
