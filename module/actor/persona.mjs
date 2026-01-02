@@ -252,9 +252,17 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     subData.pe.current = Math.min(Math.max(peDerived, 0), subData.pe.max);
 
     // ABILITIES handling!
+    const starterArts = {};
     for (let ability of abilitiesData) {
       abilitiesXp.push(ability.system.details.experience);
+      // Checks for starter abilities
+      if ("starter" in ability.system.keywords) {
+        const art = ability.system.info.art;
+        starterArts[art] = true;
+      }
     }
+    // Calculates XP discount once for each art with at least one starter ability
+    const startersDiscount = Object.keys(starterArts).length * -2;
 
     // EXPERIENCE handling!
     xpData.abilitiesXpSum = abilitiesXp.reduce((acc, value) => acc + value, 0);
@@ -264,6 +272,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       xpData.total -
       xpData.abilitiesXpSum -
       xpData.skillsXpSum -
+      startersDiscount -
       xpData.passivesXpSum -
       xpData.reserved;
 
