@@ -624,6 +624,15 @@ PC.currency = {
   },
 };
 
+PC.quality = {
+  low: { label: "PC.quality.low" },
+  common: { label: "PC.quality.common" },
+  high: { label: "PC.quality.high" },
+  rare: { label: "PC.quality.rare" },
+  odd: { label: "PC.quality.odd" },
+  phasic: { label: "PC.quality.phasic" },
+};
+
 PC.passive = {
   subtypes: {
     benefit: { label: "PC.passive.subtypes.benefit" },
@@ -670,6 +679,7 @@ PC.abilityKeyword = {
 
   lethality: { label: "PC.keyword.lethality" },
   blunt: { label: "PC.keyword.blunt" },
+  bypass: { label: "PC.keyword.bypass" },
   impact: { label: "PC.keyword.impact" },
   reload: { label: "PC.keyword.reload" },
   rateOfFire: { label: "PC.keyword.rateOfFire" },
@@ -698,6 +708,28 @@ PC.weaponKeyword = {
   twoHanded: { label: "PC.keyword.twoHanded" },
   lethality: { label: "PC.keyword.lethality" },
   blunt: { label: "PC.keyword.blunt" },
+  bypass: { label: "PC.keyword.bypass" },
+  impact: { label: "PC.keyword.impact" },
+  reload: { label: "PC.keyword.reload" },
+  rateOfFire: { label: "PC.keyword.rateOfFire" },
+  penetrating: { label: "PC.keyword.penetrating" },
+  handling: { label: "PC.keyword.handling" },
+  stationary: { label: "PC.keyword.stationary" },
+  deviation: { label: "PC.keyword.deviation" },
+  kick: { label: "PC.keyword.kick" },
+  quickload: { label: "PC.keyword.quickload" },
+  fragile: { label: "PC.keyword.fragile" },
+  insulant: { label: "PC.keyword.insulant" },
+  freezing: { label: "PC.keyword.freezing" },
+  stack: { label: "PC.keyword.stack" },
+  effect: { label: "PC.keyword.effect" },
+};
+
+PC.actionKeyword = {
+  twoHanded: { label: "PC.keyword.twoHanded" },
+  lethality: { label: "PC.keyword.lethality" },
+  blunt: { label: "PC.keyword.blunt" },
+  bypass: { label: "PC.keyword.bypass" },
   impact: { label: "PC.keyword.impact" },
   reload: { label: "PC.keyword.reload" },
   rateOfFire: { label: "PC.keyword.rateOfFire" },
@@ -711,4 +743,33 @@ PC.weaponKeyword = {
   insulant: { label: "PC.keyword.insulant" },
   freezing: { label: "PC.keyword.freezing" },
   effect: { label: "PC.keyword.effect" },
+
+  melee: { label: "PC.keyword.melee" },
+  bonus: { label: "PC.keyword.bonus" },
+  throw: { label: "PC.keyword.throw" },
+  reaction: { label: "PC.keyword.reaction" },
+  esoteric: { label: "PC.keyword.esoteric" },
+  quick: { label: "PC.keyword.quick" },
+  power: { label: "PC.keyword.power" },
+  style: { label: "PC.keyword.style" },
+  passive: { label: "PC.keyword.passive" },
+  aim: { label: "PC.keyword.aim" },
+  projectile: { label: "PC.keyword.projectile" },
+  social: { label: "PC.keyword.social" },
+  starter: { label: "PC.keyword.starter" },
+  affliction: { label: "PC.keyword.affliction" },
+  sigil: { label: "PC.keyword.sigil" },
+  summon: { label: "PC.keyword.summon" },
+  jet: { label: "PC.keyword.jet" },
+  aoe: { label: "PC.keyword.aoe" },
+  mental: { label: "PC.keyword.mental" },
+  mutation: { label: "PC.keyword.mutation" },
+
+  custom: { label: "PC.keyword.custom" },
+  potion: { label: "PC.keyword.potion" },
+  elixir: { label: "PC.keyword.elixir" },
+  poison: { label: "PC.keyword.poison" },
+  agent: { label: "PC.keyword.agent" },
+  grenade: { label: "PC.keyword.grenade" },
+  instrument: { label: "PC.keyword.instrument" },
 };

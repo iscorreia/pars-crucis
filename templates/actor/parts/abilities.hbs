@@ -53,9 +53,11 @@
               <div class="item-keywords">
                 {{#each ability.system.keywords as |value keyword|}}
                   <div class="pc-keyword">
-                    {{localize (concat "PC.keyword." keyword)}}{{#if
-                      value
-                    }} ({{value}}){{/if}}{{#unless @last}}{{/unless}}
+                    <div class="pc-keyword-label">{{localize
+                        (concat "PC.keyword." keyword)
+                      }}</div>{{#if value}}<div
+                        class="pc-keyword-value"
+                      >({{value}})</div>{{/if}}{{#unless @last}}{{/unless}}
                   </div>
                 {{/each}}
               </div>

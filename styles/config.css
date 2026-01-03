@@ -1,13 +1,3 @@
-@font-face {
-  font-family: "SR";
-  src: url("../fonts/Sundayromanticdemo.otf");
-}
-
-@font-face {
-  font-family: "Barlow Condensed Light";
-  src: url("../fonts/BarlowCondensed/BarlowCondensed-Light.ttf");
-}
-
 :root {
   --pc-font-size-small: 12.5px;
   --pc-font-size-mid: 14px;
@@ -24,6 +14,7 @@
   --pc-color-damage-border: #c72a2a90;
   --pc-color-copper-bg: #4d3626;
   --pc-color-silver-bg: #505b68;
+  --pc-color-costless-bg: #000;
 
   --pc-fade-bg-0: #302831;
   --pc-fade-bg-1: rgba(48, 40, 49, 0.7);

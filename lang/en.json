@@ -332,9 +332,9 @@
       }
     },
     "actions": "Ações",
-    "attack": "Ataque",
+    "attack": "Atacar",
     "test": "Teste",
-    "use": "Uso",
+    "use": "Usar",
     "effort": { "label": "Esforço", "abv": "Esf" },
     "difficulty": { "label": "Dificuldade", "abv": "Dif" },
     "range": { "label": "Alcance", "abv": "Alc" },
@@ -475,12 +475,12 @@
       "silver": {
         "label": "Prata",
         "labelPlural": "Pratas",
-        "abv": "P"
+        "abv": "p"
       },
       "copper": {
         "label": "Cobre",
         "labelPlural": "Cobres",
-        "abv": "C"
+        "abv": "c"
       },
       "unknown": {
         "label": "Desconhecido",
@@ -511,8 +511,17 @@
     "subtype": "Subtipo",
     "group": "Grupo",
     "subgroup": "Subgrupo",
-    "load": "Carga",
+    "slots": "Espaços",
     "stack": "Monte",
+    "quality": {
+      "label": "Qualidade",
+      "low": "Baixa qualidade",
+      "common": "Comum",
+      "high": "Alta qualidade",
+      "rare": "Rara",
+      "odd": "Estranha",
+      "phasic": "Fásica"
+    },
 
     "keyword": {
       "label": "Palavra-chave",
@@ -557,6 +566,7 @@
 
       "lethality": "Fatalidade",
       "blunt": "Embotada",
+      "bypass": "Indireto",
       "impact": "Impacto",
       "reload": "Recarga",
       "rateOfFire": "Cadência",
@@ -569,6 +579,7 @@
       "fragile": "Frágil",
       "insulant": "Isolante",
       "freezing": "Congelante",
+      "stack": "Monte",
       "effect": "#Efeito"
     },
     "keywords": "Palavras-chave"
