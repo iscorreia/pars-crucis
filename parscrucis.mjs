@@ -78,26 +78,25 @@ Hooks.once("init", () => {
 
   preloadHandlebarsTemplates();
 
-  // Hook on rendering the ActorSheet
-  Hooks.on("renderActorSheetV2", (sheet) => {
-    const windowContent = sheet.element.querySelector(".window-content");
-    const kwContainers = windowContent.querySelectorAll(".item-keywords");
-    // Checks the 'window-content' to see if a list of item-keywords is wrapped
-    for (const kwElement of kwContainers) {
-      const kws = kwElement.querySelectorAll(".pc-keyword");
-      let wrapped = false;
-      let firstTop = null;
-      for (const kw of kws) {
-        if (firstTop === null) firstTop = kw.offsetTop;
-        else if (kw.offsetTop > firstTop) {
-          wrapped = true;
-          break;
-        }
-      }
-      // If a list of item-keywords is wrapped, assigns a special class to it
-      kwElement.classList.toggle("is-wrapped", wrapped);
-    }
-  });
+  CONFIG.fontDefinitions["BarlowCondensed Light"] = {
+    editor: true,
+    fonts: [
+      {
+        urls: [
+          "systems/pars-crucis/fonts/BarlowCondensed/BarlowCondensed-Light.ttf",
+        ],
+      },
+    ],
+  };
+
+  CONFIG.fontDefinitions["SR"] = {
+    editor: true,
+    fonts: [
+      {
+        urls: ["systems/pars-crucis/fonts/Sundayromanticdemo.otf"],
+      },
+    ],
+  };
 
   /**
    * Set an initiative formula for the system

@@ -451,7 +451,6 @@ h1.actor-name {
   display: block;
   width: 100%;
   height: 1px;
-  margin-top: 3px;
   margin-bottom: 6px;
   background: linear-gradient(
     to right,
@@ -459,6 +458,13 @@ h1.actor-name {
     var(--color-light-6) 50%,
     transparent 100%
   );
+}
+
+.skill-tab > .skill-category:nth-child(odd)::after {
+  margin-top: 3px;
+}
+.item-list-block > ol:not(:last-child)::after {
+  margin-bottom: 5px;
 }
 
 /* SKILLS TAB */
@@ -608,6 +614,9 @@ h1.actor-name {
   .item-list {
     margin: 0;
     padding: 0;
+    :last-child {
+      margin-bottom: 0;
+    }
   }
   .item-group-title {
     width: 100%;
@@ -684,6 +693,7 @@ h1.actor-name {
       justify-content: flex-start;
       align-items: center;
       flex-wrap: wrap;
+      row-gap: 2px;
     }
     .item-controls {
       display: flex;
@@ -707,7 +717,7 @@ h1.actor-name {
 }
 .pc-keyword {
   display: inline-flex;
-  height: 18px;
+  height: 16px;
   background-color: var(--color-dark-3);
   border-color: var(--color-dark-6);
   color: var(--color-light-2);
@@ -717,24 +727,14 @@ h1.actor-name {
   padding: 0 2px;
   margin-left: 2px;
   text-align: center;
-  line-height: 16px;
+  line-height: 14px;
   font-size: var(--pc-font-size-small);
-  font-family: "Barlow Condensed Light", sans-serif;
+  font-family: "BarlowCondensed Light", sans-serif;
   .pc-keyword-label {
   }
   .pc-keyword-value {
     margin-left: 2px;
   }
-}
-.is-wrapped {
-  row-gap: 2px;
-  .pc-keyword {
-    height: 14px;
-    line-height: 12px;
-  }
-}
-.item-list-block > ol:not(:last-child)::after {
-  margin-bottom: 5px;
 }
 
 /* ABILITIES TAB */
@@ -911,6 +911,9 @@ h1.actor-name {
 }
 .empty-list-title {
   color: var(--color-dark-6);
+}
+.item-list-block ol.item-list .empty-group-title {
+  margin-bottom: 5px;
 }
 
 /* DETAILS TAB */
