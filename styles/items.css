@@ -29,6 +29,7 @@
         padding-left: 3px;
         width: 75%;
       }
+      /* EXPERIENCE AND COST */
       .experience {
         width: 25%;
         .xp-cost {
@@ -37,6 +38,58 @@
         }
         .xp-name {
           width: 50%;
+        }
+
+        .cost-line {
+          width: 100%;
+          height: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          font-family: "Cambria";
+          font-size: 20px;
+          .item-cost {
+            height: 20px;
+            line-height: 20px;
+            width: 75%;
+            text-align: right;
+          }
+          .currency {
+            height: 20px;
+            line-height: 20px;
+            width: 25%;
+            text-align: left;
+            margin-left: 2px;
+          }
+          .costless {
+            height: 20px;
+            line-height: 20px;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(
+              to right,
+              transparent 5%,
+              var(--pc-color-costless-bg) 50%,
+              transparent 100%
+            );
+          }
+        }
+        .silver {
+          background: linear-gradient(
+            to right,
+            transparent 5%,
+            var(--pc-color-silver-bg) 70px,
+            transparent 100%
+          );
+        }
+        .copper {
+          background: linear-gradient(
+            to right,
+            transparent 5%,
+            var(--pc-color-copper-bg) 70px,
+            transparent 100%
+          );
         }
       }
     }
@@ -115,13 +168,20 @@
   }
   .action-block {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    .action-header {
+      display: flex;
+      flex-direction: row;
+      .action-block-info {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 54px);
+      }
+    }
+
     input,
     select {
       height: 17.5px;
-    }
-    .action-block-info {
-      width: 100%;
     }
     .action-effect {
       width: 100%;
@@ -160,17 +220,38 @@
     flex-direction: column;
     align-items: center;
     select,
-    input {
+    input,
+    .not-available {
       line-height: 21px;
       width: 100%;
       padding: 1px 2px 0;
       font-size: var(--pc-font-size-small);
-      text-align: start;
+      text-align: center;
       color: inherit;
       height: 21px;
       border-width: 1px;
       border-style: solid;
       border-color: transparent;
+    }
+    .double-entry {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      select,
+      input,
+      .not-available {
+        line-height: 21px;
+        width: 50%;
+        padding: 1px 2px 0;
+        font-size: var(--pc-font-size-small);
+        text-align: center;
+        color: inherit;
+        height: 21px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
+      }
     }
   }
   .item-name-block {
@@ -179,6 +260,28 @@
       font-size: var(--pc-font-size-mid);
     }
   }
+
+  .name-tag {
+    color: var(--color-light-4);
+    font-family: "Amiri";
+  }
+  /* Checked state */
+  input[type="checkbox"]:checked + .name-tag,
+  input[type="checkbox"]:checked ~ .name-tag {
+    font-weight: bold;
+    color: var(--color-light-1);
+    border-color: #e0a800;
+    /* box-shadow: 0 0 6px 2px rgba(255, 210, 0, 0.4); */
+    text-shadow: 0 0 6px rgba(255, 210, 0, 0.7);
+  }
+  .name-tag:hover {
+    filter: brightness(1.15);
+  }
+}
+.item-keywords-config {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
 }
 .keyword-picker {
   width: 440px;

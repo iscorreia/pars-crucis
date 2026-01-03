@@ -19,7 +19,9 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     },
     actions: {
       addKeyword: this.addKeywordOnClick,
+      addActionKeyword: this.addActionKeywordOnClick,
       cutKeyword: this.cutKeywordOnClick,
+      cutActionKeyword: this.cutActionKeywordOnClick,
       createAction: this.createActionOnClick,
       deleteAction: this.deleteActionOnClick,
     },
@@ -44,8 +46,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     return context;
   }
 
-  static async addKeywordOnClick(event, target) {
-    event.preventDefault();
+  static async addKeywordOnClick(_, target) {
     const item = this.document;
     let keywords = PC[`${target.dataset.type}Keyword`];
 
@@ -70,22 +71,53 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     });
   }
 
-  static async cutKeywordOnClick(event, target) {
-    event.preventDefault();
+  static async addActionKeywordOnClick(_, target) {
+    const item = this.document;
+    const acId = target.dataset.acId;
+    let keywords = PC[`${target.dataset.type}Keyword`];
+
+    const keywordButtons = Object.entries(keywords).map(([key, data]) => ({
+      action: key,
+      label: game.i18n.localize(data.label),
+      callback: async () => {
+        await item.update({
+          [`system.actions.${acId}.keywords.${key}`]: null,
+        });
+      },
+    }));
+
+    // Show the keyword picker dialog
+    await api.Dialog.wait({
+      classes: ["keyword-picker"],
+      window: {
+        title: "Selecionar palavra-chave",
+      },
+      content: `<p>Clique para adicionar uma palavra chave ao item ${item.name}</p>`,
+      buttons: keywordButtons,
+    });
+  }
+
+  static async cutKeywordOnClick(_, target) {
     const item = this.document;
     const keywordKey = target.dataset.keyword;
     item.update({ [`system.keywords.-=${keywordKey}`]: null });
   }
 
-  static async createActionOnClick(event, target) {
-    event.preventDefault();
+  static async cutActionKeywordOnClick(_, target) {
     const item = this.document;
-    const dataset = target.dataset;
+    const acId = target.dataset.acId;
+    const keywordKey = target.dataset.keyword;
+    item.update({ [`system.actions.${acId}.keywords.-=${keywordKey}`]: null });
+  }
+
+  static async createActionOnClick(_, target) {
+    const item = this.document;
+    const acType = target.dataset.acType;
     const actionId = foundry.utils.randomID();
     const newAction = {
       img: item.img,
-      name: item.name,
-      type: dataset.acType,
+      name: game.i18n.localize(`PC.${acType}`),
+      type: acType,
       _id: actionId,
     };
 
@@ -95,8 +127,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   }
 
   // Deletes an Item Action from the actions collections
-  static async deleteActionOnClick(event, target) {
-    event.preventDefault();
+  static async deleteActionOnClick(_, target) {
     const actionId = target.dataset.actionId;
     const item = this.document;
     item.update({ [`system.actions.-=${actionId}`]: null });

@@ -2,6 +2,7 @@ import { PC } from "../config.mjs";
 import { currencyField } from "../actor/persona.mjs";
 
 const {
+  ArrayField,
   EmbeddedDataField,
   BooleanField,
   FilePathField,
@@ -26,9 +27,10 @@ export class ActionModel extends foundry.abstract.DataModel {
         choices: ["attack", "use", "test"], // create EXECUTION LOGIC FOR THE TYPE
         required: true,
       }),
+      damage: damage(),
       effect: new StringField({ initial: "" }),
       range: new StringField({ initial: "" }),
-      effort: new StringField({ initial: "0" }),
+      effort: new StringField({ initial: "" }),
       prepTime: new StringField({ initial: "" }),
       duration: new StringField({ initial: "" }),
       keywords: keywords(),
@@ -176,6 +178,18 @@ function information({
   return new SchemaField(fields);
 }
 
+function damage() {
+  return new SchemaField({
+    dmgBase: new NumberField({ nullable: true, integer: true }),
+    dmgAttributes: new ArrayField(new StringField(), { initial: [] }),
+    dmgAttMultiplier: new StringField({ initial: "" }),
+    dmgAddition: new StringField({ initial: "" }),
+    scalable: new BooleanField({ initial: false }),
+    dmgType: new StringField({ initial: "physical" }),
+    dmgSubtype: new StringField({ initial: "" }),
+  });
+}
+
 function keywords() {
   return new TypedObjectField(
     new StringField({ initial: null, nullable: true }),
@@ -190,7 +204,7 @@ function details({
   extraFields = null,
 } = {}) {
   const fields = {
-    load: new NumberField({ initial: 1 }),
+    slots: new NumberField({ initial: 1 }),
     stack: new NumberField({ initial: stack }),
     stackable: new BooleanField({ initial: stackable }),
     equippable: new BooleanField({ initial: equippable }),

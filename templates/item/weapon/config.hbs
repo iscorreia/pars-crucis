@@ -41,103 +41,143 @@
     </div>
   </div>
 
-  <div>
-    {{localize "PC.equippable"}}
-    <input
-      type="checkbox"
-      data-dtype="Boolean"
-      name="system.details.equippable"
-      {{checked system.details.equippable}}
-    />
-  </div>
-  <div>
-    {{localize "PC.equipped"}}
-    <input
-      type="checkbox"
-      data-dtype="Boolean"
-      name="system.details.equipped"
-      {{checked system.details.equipped}}
-    />
-  </div>
-  <div>
-    {{localize "PC.stackable"}}
-    <input
-      type="checkbox"
-      data-dtype="Boolean"
-      name="system.details.stackable"
-      {{checked system.details.stackable}}
-    />
+  <div class="item-info-config">
+    <div class="item-info-block">
+      <h5>{{localize "PC.price"}}</h5>
+      <div class="double-entry">
+        {{#if
+          (or
+            (eq system.cost.currency "unknown")
+            (eq system.cost.currency "priceless")
+          )
+        }}
+          <div class="not-available">{{localize
+              (concat "PC.currency." system.cost.currency ".abv")
+            }}</div>
+        {{else}}
+          <input
+            name="system.cost.price"
+            type="Number"
+            value="{{system.cost.price}}"
+            data-dtype="Number"
+          />
+        {{/if}}
+        <select name="system.cost.currency">
+          {{selectOptions
+            config.currency
+            selected=system.cost.currency
+            localize=true
+          }}
+        </select>
+      </div>
+    </div>
+    <div class="item-info-block">
+      <h5>{{localize "PC.quality.label"}}</h5>
+      <select name="system.info.quality">
+        {{selectOptions
+          config.quality
+          selected=system.info.quality
+          localize=true
+        }}
+      </select>
+    </div>
   </div>
 
-  <div>
+  <div class="item-info-config">
+    <div class="item-info-block">
+      <input
+        id="equippable-toggle-{{item._id}}"
+        type="checkbox"
+        data-dtype="Boolean"
+        name="system.details.equippable"
+        {{checked system.details.equippable}}
+        hidden
+      />
+      <label for="equippable-toggle-{{item._id}}" class="name-tag">
+        {{localize "PC.equippable"}}
+      </label>
+    </div>
+    <div class="item-info-block">
+      <input
+        id="equipped-toggle-{{item._id}}"
+        type="checkbox"
+        data-dtype="Boolean"
+        name="system.details.equipped"
+        {{checked system.details.equipped}}
+        hidden
+      />
+      <label for="equipped-toggle-{{item._id}}" class="name-tag">
+        {{localize "PC.equipped"}}
+      </label>
+    </div>
+    <div class="item-info-block">
+      <input
+        id="stackable-toggle-{{item._id}}"
+        type="checkbox"
+        data-dtype="Boolean"
+        name="system.details.stackable"
+        {{checked system.details.stackable}}
+        hidden
+      />
+      <label for="stackable-toggle-{{item._id}}" class="name-tag">
+        {{localize "PC.stackable"}}
+      </label>
+    </div>
+  </div>
+
+  <div class="item-info-config">
+    <div class="item-info-block">
+      {{#if system.details.stackable}}
+        <h5>{{localize "PC.slots"}}</h5>
+        <div class="not-available">{{system.details.slots}}</div>
+      {{else}}
+        <h5>{{localize "PC.slots"}}</h5>
+        <input
+          name="system.details.slots"
+          type="Number"
+          value="{{system.details.slots}}"
+          data-dtype="Number"
+        />
+      {{/if}}
+    </div>
+    <div class="item-info-block">
+      {{#if system.details.stackable}}
+        <h5>{{localize "PC.stack"}}</h5>
+        <input
+          name="system.details.stack"
+          type="Number"
+          value="{{system.details.stack}}"
+          data-dtype="Number"
+        />
+      {{else}}
+        <h5>{{localize "PC.stack"}}</h5>
+        <div class="not-available">{{system.details.stack}}</div>
+      {{/if}}
+    </div>
+  </div>
+
+  <div class="flexrow">
     <h4>{{localize "PC.keywords"}}</h4>
+
     <a data-action="addKeyword" data-type="weapon"><i
         class="fa-regular fa-plus"
       ></i>
-    </a>
+    </a></div>
+  <div class="item-info-config item-keywords-config">
     {{#each system.keywords as |keyword obj|}}
-      <div class="flexrow">
-        <div>
-          {{localize (concat "PC.keyword." obj)}}{{#if keyword}}
-            ({{keyword}}){{/if}}
-        </div>
+      <div class="item-info-block">
+        <h5>
+          {{localize (concat "PC.keyword." obj)}}
+          <a data-action="cutKeyword" data-keyword="{{@key}}">
+            <i class="fa-regular fa-eraser"></i></a>
+        </h5>
         <input
           name="system.keywords.{{@key}}"
           value="{{keyword}}"
           data-dtype="String"
           type="String"
         />
-        <a data-action="cutKeyword" data-keyword="{{@key}}">
-          <i class="fa-regular fa-trash-can"></i></a>
       </div>
     {{/each}}
-  </div>
-
-  <div class="flexrow">
-    {{#if system.details.stackable}}
-      {{localize "PC.load"}}
-      {{system.details.load}}
-      {{localize "PC.stack"}}
-      <input
-        name="system.details.stack"
-        type="Number"
-        value="{{system.details.stack}}"
-        data-dtype="Number"
-      />
-    {{else}}
-      {{localize "PC.load"}}
-      <input
-        name="system.details.load"
-        type="Number"
-        value="{{system.details.load}}"
-        data-dtype="Number"
-      />
-      {{localize "PC.stack"}}
-      {{system.details.stack}}
-    {{/if}}
-  </div>
-
-  <div class="flexrow">
-    <h4>{{localize "PC.price"}}</h4>
-    {{#unless
-      (or
-        (eq system.cost.currency "unknown")
-        (eq system.cost.currency "priceless")
-      )
-    }}
-      <input
-        name="system.cost.price"
-        type="Number"
-        value="{{system.cost.price}}"
-        data-dtype="Number"
-      />
-    {{/unless}}
-    <select name="system.cost.currency">
-      {{selectOptions
-        config.currency
-        selected=system.cost.currency
-        localize=true
-      }}
-    </select>
   </div>
 </section>
