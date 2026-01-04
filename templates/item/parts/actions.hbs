@@ -106,6 +106,88 @@
             </div>
           </div>
           
+          <div class="show-damage">
+            Demonstração DANO:
+            {{#if action.damage.scalable}}[{{/if}}
+            {{action.damage.dmgBase}}
+            {{log action}}
+            {{#if action.damage.dmgAttributes}}
+              +{{#each action.damage.dmgAttributes as |dmgAtt obj|}}
+                {{localize (concat "PC.attributes." dmgAtt ".abv")}}              
+                {{#unless @last}}
+                  |
+                {{/unless}}
+              {{/each}}
+              {{#unless (eq action.damage.dmgAttMultiplier 1)}}
+                {{localize (lookup (lookup ../config.multiplier action.damage.dmgAttMultiplier) "label")}}
+              {{/unless}}
+            {{/if}}
+            {{#if action.damage.scalable}}]{{/if}}
+            {{localize (concat "PC.dmgType." action.damage.dmgType ".label")}}
+          </div>
+          <div class="flexrow action-damage">
+            <div class="flexcol">
+              Base
+              <input
+                name="system.actions.{{@key}}.damage.dmgBase"
+                type="Number"
+                value="{{action.damage.dmgBase}}"
+                data-dtype="Number"
+              />
+            </div>
+            <div class="flexcol">
+              <div class="flexrow">
+                Atributos
+                <a data-action="addDmgAttribute" data-ac-id="{{action._id}}">
+                  <i class="fa-regular fa-plus"></i>
+                </a>
+              </div>
+              <div class="flexrow">
+                {{#each action.damage.dmgAttributes as |dmgAtt|}}
+                  <a
+                    data-action="cutDmgAttribute"
+                    data-ac-id="{{action._id}}"
+                    data-att="{{dmgAtt}}"
+                  >
+                    {{localize (concat "PC.attributes." dmgAtt ".abv" )}}
+                  </a>
+                {{/each}}
+              </div>
+            </div>
+            <div class="flexcol">
+              Multi
+              <select name="system.actions.{{@key}}.damage.dmgAttMultiplier">
+                {{selectOptions
+                  ../config.multiplier
+                  selected=action.damage.dmgAttMultiplier
+                  localize=true
+                }}
+              </select>
+            </div>
+            <div class="flexcol">
+              <input
+                id="scalable-toggle-{{action._id}}"
+                type="checkbox"
+                data-dtype="Boolean"
+                name="system.actions.{{@key}}.damage.scalable"
+                {{checked action.damage.scalable}}
+                hidden
+              />
+              <label for="scalable-toggle-{{action._id}}" class="name-tag">
+                Escalável?
+              </label>
+            </div>
+            <div class="flexcol">
+              DanoTipo
+              <select name="system.actions.{{@key}}.damage.dmgType">
+                {{selectOptions
+                  ../config.dmgType
+                  selected=action.damage.dmgType
+                  localize=true
+                }}
+              </select>
+            </div>
+          </div>
 
           <div class="action-details">
             {{localize "PC.effort.label"}}

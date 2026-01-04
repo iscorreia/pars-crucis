@@ -182,7 +182,7 @@ function damage() {
   return new SchemaField({
     dmgBase: new NumberField({ nullable: true, integer: true }),
     dmgAttributes: new ArrayField(new StringField(), { initial: [] }),
-    dmgAttMultiplier: new StringField({ initial: "" }),
+    dmgAttMultiplier: new NumberField({ initial: 1 }),
     dmgAddition: new StringField({ initial: "" }),
     scalable: new BooleanField({ initial: false }),
     dmgType: new StringField({ initial: "physical" }),

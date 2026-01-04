@@ -773,3 +773,42 @@ PC.actionKeyword = {
   grenade: { label: "PC.keyword.grenade" },
   instrument: { label: "PC.keyword.instrument" },
 };
+
+PC.dmgType = {
+  phy: { label: "PC.dmgType.phy.label", abv: "PC.dmgType.phy.abv" },
+  ele: { label: "PC.dmgType.ele.label", abv: "PC.dmgType.ele.abv" },
+  bio: { label: "PC.dmgType.bio.label", abv: "PC.dmgType.bio.abv" },
+  dtt: { label: "PC.dmgType.dtt.label", abv: "PC.dmgType.dtt.abv" },
+  es: { label: "PC.dmgType.es.label", abv: "PC.dmgType.es.abv" },
+  ex: { label: "PC.dmgType.ex.label", abv: "PC.dmgType.ex.abv" },
+  pain: { label: "PC.dmgType.pain.label", abv: "PC.dmgType.pain.abv" },
+};
+
+PC.phySubtype = {
+  crushing: { label: "PC.subtype.crushing" },
+  cutting: { label: "PC.subtype.cutting" },
+  piercing: { label: "PC.subtype.piercing" },
+};
+
+PC.bioSubtype = {
+  putrid: { label: "PC.subtype.putrid" },
+  toxic: { label: "PC.subtype.toxic" },
+  vital: { label: "PC.subtype.vital" },
+};
+
+PC.eleSubtype = {
+  arcane: { label: "PC.subtype.arcane" },
+  caustic: { label: "PC.subtype.caustic" },
+  glacial: { label: "PC.subtype.glacial" },
+  fiery: { label: "PC.subtype.fiery" },
+  voltaic: { label: "PC.subtype.voltaic" },
+};
+
+PC.multiplier = {
+  1: { label: "PC.multiplier.100" },
+  2: { label: "PC.multiplier.200" },
+  3: { label: "PC.multiplier.300" },
+  4: { label: "PC.multiplier.400" },
+  5: { label: "PC.multiplier.500" },
+  0.5: { label: "PC.multiplier.50" },
+};

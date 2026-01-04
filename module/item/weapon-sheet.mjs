@@ -39,7 +39,7 @@ export default class WeaponSheet extends ParsCrucisItemSheet {
 
   static TABS = {
     primary: {
-      initial: "config", // Change to simplify testing
+      initial: "actions", // Change to simplify testing
       tabs: [
         { id: "description", label: "PC.description" },
         { id: "actions", label: "PC.actions" },
