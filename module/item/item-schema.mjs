@@ -27,6 +27,7 @@ export class ActionModel extends foundry.abstract.DataModel {
         choices: ["attack", "use", "test"], // create EXECUTION LOGIC FOR THE TYPE
         required: true,
       }),
+      damaging: new BooleanField({ initial: true }),
       damage: damage(),
       effect: new StringField({ initial: "" }),
       range: new StringField({ initial: "" }),
@@ -180,12 +181,12 @@ function information({
 
 function damage() {
   return new SchemaField({
-    dmgBase: new NumberField({ nullable: true, integer: true }),
+    dmgBase: new NumberField({ integer: true, nullable: true }),
     dmgAttributes: new ArrayField(new StringField(), { initial: [] }),
     dmgAttMultiplier: new NumberField({ initial: 1 }),
     dmgAddition: new StringField({ initial: "" }),
-    scalable: new BooleanField({ initial: false }),
-    dmgType: new StringField({ initial: "physical" }),
+    scalable: new BooleanField({ initial: true }),
+    dmgType: new StringField({ initial: "phy" }),
     dmgSubtype: new StringField({ initial: "" }),
   });
 }

@@ -107,8 +107,8 @@
           </div>
           
           <div class="show-damage">
-            Demonstração DANO:
-            {{#if action.damage.scalable}}[{{/if}}
+            !DAMAGEDEMO:!
+            {{#unless action.damage.scalable}}[{{/unless}}
             {{action.damage.dmgBase}}
             {{log action}}
             {{#if action.damage.dmgAttributes}}
@@ -122,12 +122,12 @@
                 {{localize (lookup (lookup ../config.multiplier action.damage.dmgAttMultiplier) "label")}}
               {{/unless}}
             {{/if}}
-            {{#if action.damage.scalable}}]{{/if}}
+            {{#unless action.damage.scalable}}]{{/unless}}
             {{localize (concat "PC.dmgType." action.damage.dmgType ".label")}}
           </div>
           <div class="flexrow action-damage">
             <div class="flexcol">
-              Base
+              !BASE!
               <input
                 name="system.actions.{{@key}}.damage.dmgBase"
                 type="Number"
@@ -137,7 +137,7 @@
             </div>
             <div class="flexcol">
               <div class="flexrow">
-                Atributos
+                !ATT!
                 <a data-action="addDmgAttribute" data-ac-id="{{action._id}}">
                   <i class="fa-regular fa-plus"></i>
                 </a>
@@ -155,7 +155,7 @@
               </div>
             </div>
             <div class="flexcol">
-              Multi
+              !MULTI!
               <select name="system.actions.{{@key}}.damage.dmgAttMultiplier">
                 {{selectOptions
                   ../config.multiplier
@@ -174,11 +174,11 @@
                 hidden
               />
               <label for="scalable-toggle-{{action._id}}" class="name-tag">
-                Escalável?
+                !SCALABLE?!
               </label>
             </div>
             <div class="flexcol">
-              DanoTipo
+              !TYPE!
               <select name="system.actions.{{@key}}.damage.dmgType">
                 {{selectOptions
                   ../config.dmgType
