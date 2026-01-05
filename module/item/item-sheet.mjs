@@ -20,8 +20,10 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     actions: {
       addKeyword: this.addKeywordOnClick,
       addActionKeyword: this.addActionKeywordOnClick,
+      addDmgAttribute: this.addDmgAttributeOnClick,
       cutKeyword: this.cutKeywordOnClick,
       cutActionKeyword: this.cutActionKeywordOnClick,
+      cutDmgAttribute: this.cutDmgAttributeOnClick,
       createAction: this.createActionOnClick,
       deleteAction: this.deleteActionOnClick,
     },
@@ -97,6 +99,39 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     });
   }
 
+  static async addDmgAttributeOnClick(_, target) {
+    const item = this.document;
+    const acId = target.dataset.acId;
+    let attributes = PC.attributes;
+
+    const attributeButtons = Object.entries(attributes).map(([key, data]) => ({
+      action: key,
+      label: game.i18n.localize(data.abv),
+      callback: async () => {
+        const currentArray =
+          foundry.utils.getProperty(
+            item.system,
+            `actions.${acId}.damage.dmgAttributes`
+          ) ?? [];
+        const updatedArray = currentArray.includes(key)
+          ? currentArray
+          : [...currentArray, key];
+        await item.update({
+          [`system.actions.${acId}.damage.dmgAttributes`]: updatedArray,
+        });
+      },
+    }));
+
+    await api.Dialog.wait({
+      classes: ["attribute-picker"],
+      window: {
+        title: "Selecione um attributo de dano",
+      },
+      content: `<p>Clique para adicionar um atributo de dano a ação</p>`,
+      buttons: attributeButtons,
+    });
+  }
+
   static async cutKeywordOnClick(_, target) {
     const item = this.document;
     const keywordKey = target.dataset.keyword;
@@ -108,6 +143,21 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     const acId = target.dataset.acId;
     const keywordKey = target.dataset.keyword;
     item.update({ [`system.actions.${acId}.keywords.-=${keywordKey}`]: null });
+  }
+
+  static async cutDmgAttributeOnClick(_, target) {
+    const item = this.document;
+    const acId = target.dataset.acId;
+    const dmgAtt = target.dataset.att;
+    const currentArray =
+      foundry.utils.getProperty(
+        item.system,
+        `actions.${acId}.damage.dmgAttributes`
+      ) ?? [];
+    const updatedArray = currentArray.filter((att) => att !== dmgAtt);
+    item.update({
+      [`system.actions.${acId}.damage.dmgAttributes`]: updatedArray,
+    });
   }
 
   static async createActionOnClick(_, target) {

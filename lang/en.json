@@ -63,6 +63,7 @@
     },
     "persona": "Persona",
     "attributes": {
+      "label": "Atributos",
       "fis": {
         "label": "Físico",
         "abv": "FIS"
@@ -89,6 +90,7 @@
       }
     },
     "subattributes": {
+      "label": "Sub atributos",
       "pv": {
         "label": "Pontos de Vida",
         "abv": "PV"
@@ -199,6 +201,7 @@
         "weapon": "Armamento"
       }
     },
+    "type": "Tipo",
     "ability": {
       "label": "Habilidade",
       "subtypes": {
@@ -582,6 +585,45 @@
       "stack": "Monte",
       "effect": "#Efeito"
     },
-    "keywords": "Palavras-chave"
+    "keywords": "Palavras-chave",
+    "damaging": "Causa dano",
+    "damage": "Dano",
+    "base": "Base",
+    "scalable": "Escalável",
+    "dmgType": {
+      "phy": { "label": "Físico", "abv": "Fis" },
+      "ele": { "label": "Elemental", "abv": "Ele" },
+      "bio": { "label": "Biológico", "abv": "Bio" },
+      "dtt": { "label": "Destrutivo", "abv": "Dtt" },
+      "es": { "label": "Essencial", "abv": "Es" },
+      "ex": { "label": "Existencial", "abv": "Ex" },
+      "pain": { "label": "Dor", "abv": "Dor" }
+    },
+    "phySubtype": {
+      "crushing": { "label": "Contundente" },
+      "cutting": { "label": "Cortante" },
+      "piercing": { "label": "Perfurante" }
+    },
+    "bioSubtype": {
+      "putrid": { "label": "Podre" },
+      "toxic": { "label": "Tóxico" },
+      "vital": { "label": "Vital" }
+    },
+    "eleSubtype": {
+      "arcane": { "label": "Arcano" },
+      "caustic": { "label": "Cáustico" },
+      "glacial": { "label": "Glacial" },
+      "fiery": { "label": "Ígneo" },
+      "voltaic": { "label": "Voltaico" }
+    },
+    "multiplier": {
+      "label": "Múltiplo",
+      "50": "/2",
+      "100": "×1",
+      "200": "×2",
+      "300": "×3",
+      "400": "×4",
+      "500": "×5"
+    }
   }
 }

@@ -260,23 +260,22 @@
       font-size: var(--pc-font-size-mid);
     }
   }
-
-  .name-tag {
-    color: var(--color-light-4);
-    font-family: "Amiri";
-  }
-  /* Checked state */
-  input[type="checkbox"]:checked + .name-tag,
-  input[type="checkbox"]:checked ~ .name-tag {
-    font-weight: bold;
-    color: var(--color-light-1);
-    border-color: #e0a800;
-    /* box-shadow: 0 0 6px 2px rgba(255, 210, 0, 0.4); */
-    text-shadow: 0 0 6px rgba(255, 210, 0, 0.7);
-  }
-  .name-tag:hover {
-    filter: brightness(1.15);
-  }
+}
+.name-tag {
+  color: var(--color-light-4);
+  font-family: "Amiri";
+  font-weight: bold;
+}
+/* Checked state */
+input[type="checkbox"]:checked + .name-tag,
+input[type="checkbox"]:checked ~ .name-tag {
+  color: var(--color-light-1);
+  border-color: #e0a800;
+  /* box-shadow: 0 0 6px 2px rgba(255, 210, 0, 0.4); */
+  text-shadow: 0 0 6px rgba(255, 210, 0, 0.7);
+}
+.name-tag:hover {
+  filter: brightness(1.15);
 }
 .item-keywords-config {
   display: grid;

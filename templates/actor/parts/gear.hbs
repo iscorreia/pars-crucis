@@ -27,7 +27,7 @@
                       (concat "PC.keyword." keyword)
                     }}</div>{{#if value}}<div
                       class="pc-keyword-value"
-                    >({{value}})</div>{{/if}}{{#unless @last}}{{/unless}}
+                    >({{value}})</div>{{/if}}
                 </div>
               {{/each}}
             </div>
@@ -128,6 +128,32 @@
               </a>
             </div>
           </div>
+          {{#if weapon.flags.pars-crucis.expanded}}
+            <div class="gear-actions">
+              {{#each weapon.system.actions as |action key|}}
+                <div>
+                  {{action.name}}
+                  {{#if action.damaging}}
+                    {{#unless action.damage.scalable}}[{{/unless}}
+                    {{action.damage.dmgBase}}
+                    {{#if action.damage.dmgAttributes}}
+                      +{{#each action.damage.dmgAttributes as |dmgAtt obj|}}
+                        {{localize (concat "PC.attributes." dmgAtt ".abv")}}
+                        {{#unless @last}}
+                          |
+                        {{/unless}}
+                      {{/each}}
+                      {{#unless (eq action.damage.dmgAttMultiplier 1)}}
+                        {{localize (lookup (lookup ../config.multiplier action.damage.dmgAttMultiplier) "label")}}
+                      {{/unless}}
+                    {{/if}}
+                    {{#unless action.damage.scalable}}]{{/unless}}
+                    {{localize (concat "PC.dmgType." action.damage.dmgType ".label")}}
+                  {{/if}}
+                </div>
+              {{/each}}
+            </div>
+          {{/if}}
         </li>
       {{/each}}
     </ol>

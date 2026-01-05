@@ -30,6 +30,7 @@ export default class WeaponSheet extends ParsCrucisItemSheet {
     },
     actions: {
       template: "systems/pars-crucis/templates/item/parts/actions.hbs",
+      scrollable: [".actions-tab"],
     },
     config: {
       template: "systems/pars-crucis/templates/item/weapon/config.hbs",
@@ -39,7 +40,7 @@ export default class WeaponSheet extends ParsCrucisItemSheet {
 
   static TABS = {
     primary: {
-      initial: "config", // Change to simplify testing
+      initial: "actions", // Change to simplify testing
       tabs: [
         { id: "description", label: "PC.description" },
         { id: "actions", label: "PC.actions" },
