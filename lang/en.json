@@ -63,6 +63,7 @@
     },
     "persona": "Persona",
     "attributes": {
+      "label": "Atributos",
       "fis": {
         "label": "Físico",
         "abv": "FIS"
@@ -89,6 +90,7 @@
       }
     },
     "subattributes": {
+      "label": "Sub atributos",
       "pv": {
         "label": "Pontos de Vida",
         "abv": "PV"
@@ -199,6 +201,7 @@
         "weapon": "Armamento"
       }
     },
+    "type": "Tipo",
     "ability": {
       "label": "Habilidade",
       "subtypes": {
@@ -583,6 +586,10 @@
       "effect": "#Efeito"
     },
     "keywords": "Palavras-chave",
+    "damaging": "Causa dano",
+    "damage": "Dano",
+    "base": "Base",
+    "scalable": "Escalável",
     "dmgType": {
       "phy": { "label": "Físico", "abv": "Fis" },
       "ele": { "label": "Elemental", "abv": "Ele" },
@@ -610,6 +617,7 @@
       "voltaic": { "label": "Voltaico" }
     },
     "multiplier": {
+      "label": "Múltiplo",
       "50": "/2",
       "100": "×1",
       "200": "×2",

@@ -30,6 +30,7 @@ export default class WeaponSheet extends ParsCrucisItemSheet {
     },
     actions: {
       template: "systems/pars-crucis/templates/item/parts/actions.hbs",
+      scrollable: [".actions-tab"],
     },
     config: {
       template: "systems/pars-crucis/templates/item/weapon/config.hbs",

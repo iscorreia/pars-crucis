@@ -80,7 +80,6 @@
               </div>
 
               <div class="flexrow">
-                {{log action}}
                 <div>{{localize "PC.keywords"}}</div>
                 <a
                   data-action="addActionKeyword"
@@ -106,11 +105,22 @@
             </div>
           </div>
           
-          <div class="show-damage">
-            !DAMAGEDEMO:!
+          <div class="show-damage flexrow">
+            <div class="flexcol">
+              <input
+                id="damaging-toggle-{{action._id}}"
+                type="checkbox"
+                data-dtype="Boolean"
+                name="system.actions.{{@key}}.damaging"
+                {{checked action.damaging}}
+                hidden
+              />
+              <label for="damaging-toggle-{{action._id}}" class="name-tag">
+                {{localize "PC.damaging"}}
+              </label>
+            </div>
             {{#unless action.damage.scalable}}[{{/unless}}
             {{action.damage.dmgBase}}
-            {{log action}}
             {{#if action.damage.dmgAttributes}}
               +{{#each action.damage.dmgAttributes as |dmgAtt obj|}}
                 {{localize (concat "PC.attributes." dmgAtt ".abv")}}              
@@ -127,7 +137,7 @@
           </div>
           <div class="flexrow action-damage">
             <div class="flexcol">
-              !BASE!
+              {{localize "PC.base"}}
               <input
                 name="system.actions.{{@key}}.damage.dmgBase"
                 type="Number"
@@ -137,7 +147,7 @@
             </div>
             <div class="flexcol">
               <div class="flexrow">
-                !ATT!
+                {{localize "PC.attributes.label"}}
                 <a data-action="addDmgAttribute" data-ac-id="{{action._id}}">
                   <i class="fa-regular fa-plus"></i>
                 </a>
@@ -155,7 +165,7 @@
               </div>
             </div>
             <div class="flexcol">
-              !MULTI!
+              {{localize "PC.multiplier.label"}}
               <select name="system.actions.{{@key}}.damage.dmgAttMultiplier">
                 {{selectOptions
                   ../config.multiplier
@@ -174,11 +184,11 @@
                 hidden
               />
               <label for="scalable-toggle-{{action._id}}" class="name-tag">
-                !SCALABLE?!
+                {{localize "PC.scalable"}}
               </label>
             </div>
             <div class="flexcol">
-              !TYPE!
+              {{localize "PC.type"}}
               <select name="system.actions.{{@key}}.damage.dmgType">
                 {{selectOptions
                   ../config.dmgType
