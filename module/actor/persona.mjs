@@ -130,47 +130,11 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const subData = this.subattributes;
     const xpData = this.experience;
 
-    // Filter items by group, uses the helper actor#itemTypes
-    // Gear|Weapon items are set into their specific groups once equipped
-    // Otherwise they're assigned to [gear]
-    const accGroup = ["accessory", "gadget"];
-    const inventoryGroup = ["weapon", "gear"];
-    this.abilities = parent.itemTypes.ability;
-    const abilitiesData = this.abilities;
-    this.weaponry = parent.itemTypes.weapon.filter(
-      (i) => i.system.details.equipped || i.system.info.group === "unarmed"
-    );
-    this.vest = parent.itemTypes.gear.filter(
-      (i) => i.system.details.equipped && i.system.info.group === "vest"
-    );
-    this.accessories = parent.itemTypes.gear.filter(
-      (i) => i.system.details.equipped && accGroup.includes(i.system.info.group)
-    );
-    this.gear = parent.items.filter((i) => {
-      return inventoryGroup.includes(i.type) && !i.system.details.equipped;
-    });
-    this.passives = parent.itemTypes.passive;
-    const passivesData = this.passives;
-
     // Gets a the favorables skills from culture and persona and creates a set
     const cultureFav = CULTURES[infoData.culture].favorables ?? [];
     const personaFav = PC.personas[infoData.persona].favorables ?? [];
     const mergedFav = new Set([...cultureFav, ...personaFav]);
     // const favorables = Array.from(mergedFav); // In case an Array is needed
-
-    // PASSIVES handling!
-    for (let passive of passivesData) {
-      const system = passive.system;
-      const cost = system.cost;
-      if (system.info.acquirement === "learned") {
-        passivesXp.push(cost.experience);
-      } else {
-        passivesPts.push(
-          system.info.subtype === "drawback" ? cost.points : -cost.points
-        );
-      }
-    }
-    xpData.ptsSum = passivesPts.reduce((acc, value) => acc + value, 0);
 
     // SKILLS handling!
     for (let [key, sk] of Object.entries(skillsData)) {
@@ -250,6 +214,70 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     subData.pv.current = Math.min(Math.max(pvDerived, 0), subData.pv.max);
     const peDerived = Number(subData.pe?.current ?? 0);
     subData.pe.current = Math.min(Math.max(peDerived, 0), subData.pe.max);
+
+    // Filter items by group, uses the helper actor#itemTypes
+    // Gear|Weapon items are set into their specific groups once equipped
+    // Otherwise they're assigned to [gear]
+    const accGroup = ["accessory", "gadget"];
+    const inventoryGroup = ["weapon", "gear"];
+    this.abilities = parent.itemTypes.ability;
+    const abilitiesData = this.abilities;
+    this.weaponry = parent.itemTypes.weapon.filter(
+      (i) => i.system.details.equipped || i.system.info.group === "unarmed"
+    );
+    this.vest = parent.itemTypes.gear.filter(
+      (i) => i.system.details.equipped && i.system.info.group === "vest"
+    );
+    this.accessories = parent.itemTypes.gear.filter(
+      (i) => i.system.details.equipped && accGroup.includes(i.system.info.group)
+    );
+    this.gear = parent.items.filter((i) => {
+      return inventoryGroup.includes(i.type) && !i.system.details.equipped;
+    });
+    this.passives = parent.itemTypes.passive;
+    const passivesData = this.passives;
+    const weaponry = this.weaponry;
+
+    // Calculates equipped weapons damage
+    for (let [_, weapon] of Object.entries(weaponry)) {
+      const actions = weapon.system.actions;
+      for (let [_, action] of Object.entries(actions)) {
+        if (action.damaging) {
+          const dmg = action.damage ?? {};
+          const attValues = [];
+          for (const att of dmg.dmgAttributes) {
+            const attValue =
+              attributesData[att].derived + attributesData[att].mod;
+            attValues.push(attValue);
+          }
+          const highestDmgAtt =
+            attValues.length > 0 ? Math.max(...attValues) : 0;
+          const multipliedDmg = Math.ceil(highestDmgAtt * dmg.dmgAttMultiplier);
+          const calculatedDmg = dmg.dmgBase + multipliedDmg;
+          const dmgType = game.i18n.localize(`PC.dmgType.${dmg.dmgType}.abv`);
+          action.damage.dmgVal = calculatedDmg;
+
+          action.damage.dmgTxt = `${calculatedDmg} ${dmgType}`;
+          if (!dmg.scalable) {
+            action.damage.dmgTxt = `[${calculatedDmg}] ${dmgType}`;
+          }
+        }
+      }
+    }
+
+    // PASSIVES handling!
+    for (let passive of passivesData) {
+      const system = passive.system;
+      const cost = system.cost;
+      if (system.info.acquirement === "learned") {
+        passivesXp.push(cost.experience);
+      } else {
+        passivesPts.push(
+          system.info.subtype === "drawback" ? cost.points : -cost.points
+        );
+      }
+    }
+    xpData.ptsSum = passivesPts.reduce((acc, value) => acc + value, 0);
 
     // ABILITIES handling!
     const starterArts = {};

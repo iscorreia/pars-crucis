@@ -132,23 +132,16 @@
             <div class="gear-actions">
               {{#each weapon.system.actions as |action key|}}
                 <div>
-                  {{action.name}}
+                  {{action.name}}:
+                  {{localize "PC.range.abv"}}
+                  {{action.range}},
+                  {{#if action.effort}}
+                    {{localize "PC.effort.abv"}}
+                    {{action.effort}},
+                  {{/if}}
                   {{#if action.damaging}}
-                    {{#unless action.damage.scalable}}[{{/unless}}
-                    {{action.damage.dmgBase}}
-                    {{#if action.damage.dmgAttributes}}
-                      +{{#each action.damage.dmgAttributes as |dmgAtt obj|}}
-                        {{localize (concat "PC.attributes." dmgAtt ".abv")}}
-                        {{#unless @last}}
-                          |
-                        {{/unless}}
-                      {{/each}}
-                      {{#unless (eq action.damage.dmgAttMultiplier 1)}}
-                        {{localize (lookup (lookup ../config.multiplier action.damage.dmgAttMultiplier) "label")}}
-                      {{/unless}}
-                    {{/if}}
-                    {{#unless action.damage.scalable}}]{{/unless}}
-                    {{localize (concat "PC.dmgType." action.damage.dmgType ".label")}}
+                    {{localize "PC.damage"}}
+                    {{action.damage.dmgTxt}}
                   {{/if}}
                 </div>
               {{/each}}

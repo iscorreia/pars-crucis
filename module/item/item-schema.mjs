@@ -141,7 +141,7 @@ export class WeaponModel extends foundry.abstract.TypeDataModel {
       details.equippable = false;
       details.equipped = true;
     }
-    for (let [key, ac] of Object.entries(this.actions)) {
+    for (let [_, ac] of Object.entries(this.actions)) {
       if (ac.type === "attack") {
         ac.difficulty = null;
       } else if (ac.type === "test") {

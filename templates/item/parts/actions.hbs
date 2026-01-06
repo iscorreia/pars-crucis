@@ -116,24 +116,29 @@
                 hidden
               />
               <label for="damaging-toggle-{{action._id}}" class="name-tag">
-                {{localize "PC.damaging"}}
+                {{localize "PC.damaging"}}?
               </label>
             </div>
-            {{#unless action.damage.scalable}}[{{/unless}}
-            {{action.damage.dmgBase}}
-            {{#if action.damage.dmgAttributes}}
-              +{{#each action.damage.dmgAttributes as |dmgAtt obj|}}
-                {{localize (concat "PC.attributes." dmgAtt ".abv")}}              
-                {{#unless @last}}
-                  |
+            <div>
+              {{#unless action.damage.scalable}}[{{/unless}}
+              {{action.damage.dmgBase}}
+              {{#if action.damage.dmgAttributes}}
+                +{{#each action.damage.dmgAttributes as |dmgAtt obj|}}
+                  {{localize (concat "PC.attributes." dmgAtt ".abv")}}              
+                  {{#unless @last}}
+                    |
+                  {{/unless}}
+                {{/each}}
+                {{#unless (eq action.damage.dmgAttMultiplier 1)}}
+                  {{localize (lookup (lookup ../config.multiplier action.damage.dmgAttMultiplier) "label")}}
                 {{/unless}}
-              {{/each}}
-              {{#unless (eq action.damage.dmgAttMultiplier 1)}}
-                {{localize (lookup (lookup ../config.multiplier action.damage.dmgAttMultiplier) "label")}}
-              {{/unless}}
+              {{/if}}
+              {{#unless action.damage.scalable}}]{{/unless}}
+              {{localize (concat "PC.dmgType." action.damage.dmgType ".label")}}
+            </div>
+            {{#if action.damage.dmgTxt}}
+              => {{action.damage.dmgTxt}}
             {{/if}}
-            {{#unless action.damage.scalable}}]{{/unless}}
-            {{localize (concat "PC.dmgType." action.damage.dmgType ".label")}}
           </div>
           <div class="flexrow action-damage">
             <div class="flexcol">
