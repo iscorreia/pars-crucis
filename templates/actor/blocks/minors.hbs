@@ -29,7 +29,7 @@
   {{#each config.minors as |minor obj|}}
     {{#with (lookup @root.actor.system.minors obj) as |min|}}
       <div class="minor-block">
-        <h4 class="minor-name">
+        <h4>
           {{#if att.disabled}}{{else}}
             <a
               data-action="clickAttribute"

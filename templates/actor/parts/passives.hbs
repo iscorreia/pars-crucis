@@ -10,9 +10,9 @@
       {{#if categorized.passives.benefit}}
         <div class="item-group-title">
           <div class="empty-space"></div>
-          <h4>
+          <h3>
             <div>{{localize "PC.benefits"}}</div>
-          </h4>
+          </h3>
           <div class="item-sorting">
             <a
               data-action="sortAbilities"
@@ -33,7 +33,7 @@
             <div class="item-line">
               <img src="{{passive.img}}" width="24" height="24" />
               <div class="item-title">
-                <h5>{{passive.name}}</h5>
+                <h4>{{passive.name}}</h4>
                 <div class="passive-cost">
                   {{#if (eq passive.system.info.acquirement "learned")}}
                     {{passive.system.cost.experience}}{{localize "PC.xp"}}
@@ -94,9 +94,9 @@
       {{else}}
         <div class="item-group-title empty-group-title">
           <div class="empty-space"></div>
-          <h4 class="empty-list-title">
+          <h3 class="empty-list-title">
             <div>{{localize "PC.noBenefits"}}</div>
-          </h4>
+          </h3>
           <div class="empty-space"></div>
         </div>
       {{/if}}
@@ -106,9 +106,9 @@
     {{#if categorized.passives.drawback}}
         <div class="item-group-title">
           <div class="empty-space"></div>
-          <h4>
+          <h3>
             <div>{{localize "PC.drawbacks"}}</div>
-          </h4>
+          </h3>
           <div class="item-sorting">
             <a
               data-action="sortAbilities"
@@ -129,7 +129,7 @@
             <div class="item-line">
               <img src="{{passive.img}}" width="24" height="24" />
               <div class="item-title">
-                <h5>{{passive.name}}</h5>
+                <h4>{{passive.name}}</h4>
                 <div class="passive-cost">
                   {{#if (eq passive.system.info.acquirement "learned")}}
                     ↑{{passive.system.cost.experience}}{{localize "PC.xp"}}
@@ -190,9 +190,9 @@
       {{else}}
         <div class="item-group-title empty-group-title">
           <div class="empty-space"></div>
-          <h4 class="empty-list-title">
+          <h3 class="empty-list-title">
             <div>{{localize "PC.noDrawbacks"}}</div>
-          </h4>
+          </h3>
           <div class="empty-space"></div>
         </div>
       {{/if}}
