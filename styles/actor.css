@@ -21,10 +21,19 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  h3 {
+  h2 {
     height: 24px;
-    line-height: 24px;
+    line-height: 30px;
     font-size: 26px;
+    font-family: "LTRemark Black";
+  }
+  h3 {
+    height: 22px;
+    line-height: 22px;
+    font-size: 20px;
+    font-family: "LTRemark Regular";
+    font-weight: normal;
+    color: var(--color-light-3);
   }
   h4 {
     font-size: var(--font-size-20);
@@ -104,9 +113,6 @@ h1.actor-name {
   border-right: 1px;
   border-style: solid;
   border-color: var(--color-light-6);
-}
-.att-name {
-  font-family: Cambria;
 }
 .att-field {
   display: flex;
@@ -493,10 +499,8 @@ h1.actor-name {
     margin-bottom: 5px;
     .category-title {
       width: calc(100% - var(--skill-value-width) - var(--skill-value-width));
-      line-height: 20px;
       font-size: 23px;
-      font-family: "Cambria";
-      font-weight: normal;
+      line-height: 24px;
     }
     .category-level {
       height: inherit;
@@ -627,10 +631,11 @@ h1.actor-name {
     .empty-space {
       width: 70px;
     }
-    h4 {
+    h3 {
       height: 100%;
       width: calc(100% - 140px);
       text-align: center;
+      line-height: 20px;
       div {
         height: inherit;
       }
@@ -675,12 +680,11 @@ h1.actor-name {
       display: flex;
       flex-direction: row;
       align-items: center;
-      h5 {
+      h4 {
         padding: 1px 0 0 2px;
         line-height: 23px;
-        font-size: 19px;
-        font-family: "Cambria";
-        font-weight: bold;
+        font-size: 22px;
+        font-weight: normal;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -909,7 +913,7 @@ h1.actor-name {
 .empty-group-title {
   margin-bottom: 8px;
 }
-.empty-list-title {
+h3.empty-list-title {
   color: var(--color-dark-6);
 }
 .item-list-block ol.item-list .empty-group-title {

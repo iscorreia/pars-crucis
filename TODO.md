@@ -1,15 +1,17 @@
 # HIGH PRIORITY
 
-- Persona Inventory calculations **_logic_**
-- Basic Ability **_hbs style/css_**
+- Basic compendium **_logic_**
+- Improved dice roll **_logic_**
 
 ## IMPORTANT
 
+- Persona Inventory calculations **_logic_**
 - Implement usable Ability/Item actions **_logic_**
 - Improved Weapon **_logic hbs style/css_**
 - Persona Ability calculations: how to interact with weapons? Weapon abilities? **_logic_**
-- Improved dice roll **_logic_**
 - Improved PASSIVE SHEET **_logic hbs style/css_**
+- Expand general action logic to all gear
+- Expand action damage logic to other items (potions and alike)
 
 ## NECESSARY
 
@@ -45,6 +47,7 @@
 - Tooltips / Information on hover **_feature_** or;
 - Information icon: on click: pops a window with origin/skills/etc description **_feature_**
 - Implement currency working on items **_feature_**
+- Usable passives **_feature_**
 
 ### MIGHT BE INTERESTING
 

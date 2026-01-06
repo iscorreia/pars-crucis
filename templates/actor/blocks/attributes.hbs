@@ -4,7 +4,7 @@
   {{#each config.attributes as |attribute obj|}}
     {{#with (lookup @root.actor.system.attributes obj) as |att|}}
       <div class="attribute-block">
-        <h3 class="att-name">
+        <h2 class="att-name">
           {{#if att.disabled}}{{else}}
             <a
               data-action="clickAttribute"
@@ -12,7 +12,7 @@
               data-type="attributes"
             >{{localize attribute.abv}}</a>
           {{/if}}
-        </h3>
+        </h2>
         <div class="att-field">
           <input
             class="att-value"

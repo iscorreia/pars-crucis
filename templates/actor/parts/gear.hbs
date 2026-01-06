@@ -9,7 +9,7 @@
     <ol class="item-list weapons-list">
       <div class="item-group-title">
         <div class="empty-space"></div>
-        <h4>{{localize "PC.weaponry"}}</h4>
+        <h3>{{localize "PC.weaponry"}}</h3>
         <div class="item-sorting"></div>
       </div>
       {{#each system.weaponry as |weapon obj|}}
@@ -17,7 +17,7 @@
           <div class="item-line">
             <img class="icon-mid" src="{{weapon.img}}" width="24" height="24" />
             <div class="item-title">
-              <h5 class="gear-name weapon-name">{{weapon.name}}</h5>
+              <h4>{{weapon.name}}</h4>
             </div>
 
             <div class="item-keywords">
@@ -132,23 +132,16 @@
             <div class="gear-actions">
               {{#each weapon.system.actions as |action key|}}
                 <div>
-                  {{action.name}}
+                  {{action.name}}:
+                  {{localize "PC.range.abv"}}
+                  {{action.range}},
+                  {{#if action.effort}}
+                    {{localize "PC.effort.abv"}}
+                    {{action.effort}},
+                  {{/if}}
                   {{#if action.damaging}}
-                    {{#unless action.damage.scalable}}[{{/unless}}
-                    {{action.damage.dmgBase}}
-                    {{#if action.damage.dmgAttributes}}
-                      +{{#each action.damage.dmgAttributes as |dmgAtt obj|}}
-                        {{localize (concat "PC.attributes." dmgAtt ".abv")}}
-                        {{#unless @last}}
-                          |
-                        {{/unless}}
-                      {{/each}}
-                      {{#unless (eq action.damage.dmgAttMultiplier 1)}}
-                        {{localize (lookup (lookup ../config.multiplier action.damage.dmgAttMultiplier) "label")}}
-                      {{/unless}}
-                    {{/if}}
-                    {{#unless action.damage.scalable}}]{{/unless}}
-                    {{localize (concat "PC.dmgType." action.damage.dmgType ".label")}}
+                    {{localize "PC.damage"}}
+                    {{action.damage.dmgTxt}}
                   {{/if}}
                 </div>
               {{/each}}
@@ -160,7 +153,7 @@
     <ol class="item-list vest-list">
       <div class="item-group-title">
         <div class="empty-space"></div>
-        <h4>{{localize "PC.wear"}}</h4>
+        <h3>{{localize "PC.wear"}}</h3>
         <div class="item-sorting"></div>
       </div>
       {{#if (and system.vest system.accessories)}}
@@ -169,7 +162,7 @@
             <div class="item-line">
               <img class="icon-mid" src="{{vest.img}}" width="24" height="24" />
               <div class="item-title">
-                <h5>{{vest.name}}</h5>
+                <h4>{{vest.name}}</h4>
               </div>
 
               <div class="item-keywords"></div>
@@ -220,7 +213,7 @@
             <div class="item-line">
               <img class="icon-mid" src="{{acc.img}}" width="24" height="24" />
               <div class="item-title">
-                <h5>{{acc.name}}</h5>
+                <h4>{{acc.name}}</h4>
               </div>
 
               <div class="item-keywords"></div>
@@ -271,7 +264,7 @@
     <ol class="item-list">
       <div class="item-group-title">
         <div class="empty-space"></div>
-        <h4>{{localize "PC.items"}}</h4>
+        <h3>{{localize "PC.items"}}</h3>
         <div class="item-sorting"></div>
       </div>
       {{#each system.gear as |gear obj|}}
@@ -279,7 +272,7 @@
           <div class="item-line">
             <img class="icon-mid" src="{{gear.img}}" width="24" height="24" />
             <div class="item-title">
-              <h5>{{gear.name}}</h5>
+              <h4>{{gear.name}}</h4>
             </div>
 
             <div class="item-keywords"></div>

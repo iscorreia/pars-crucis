@@ -1,6 +1,7 @@
 import { PC } from "./module/config.mjs";
 import { PersonaModel } from "./module/actor/persona.mjs";
 import { PersonaSheet } from "./module/actor/persona-sheet.mjs";
+import { registerFonts } from "./module/fonts.mjs";
 import PassiveSheet from "./module/item/passive-sheet.mjs";
 import AbilitySheet from "./module/item/ability-sheet.mjs";
 import WeaponSheet from "./module/item/weapon-sheet.mjs";
@@ -27,6 +28,7 @@ async function preloadHandlebarsTemplates() {
 Hooks.once("init", () => {
   console.log("PARS CRUCIS | Initializing system");
 
+  registerFonts();
   CONFIG.PC = PC;
 
   // Register the data model for the Actor subtype.
@@ -77,26 +79,6 @@ Hooks.once("init", () => {
   );
 
   preloadHandlebarsTemplates();
-
-  CONFIG.fontDefinitions["BarlowCondensed Light"] = {
-    editor: true,
-    fonts: [
-      {
-        urls: [
-          "systems/pars-crucis/fonts/BarlowCondensed/BarlowCondensed-Light.ttf",
-        ],
-      },
-    ],
-  };
-
-  CONFIG.fontDefinitions["SR"] = {
-    editor: true,
-    fonts: [
-      {
-        urls: ["systems/pars-crucis/fonts/Sundayromanticdemo.otf"],
-      },
-    ],
-  };
 
   /**
    * Set an initiative formula for the system
