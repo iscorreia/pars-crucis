@@ -119,6 +119,19 @@
                 {{localize "PC.damaging"}}?
               </label>
             </div>
+            <div class="flexcol">
+              <input
+                id="scalable-toggle-{{action._id}}"
+                type="checkbox"
+                data-dtype="Boolean"
+                name="system.actions.{{@key}}.damage.scalable"
+                {{checked action.damage.scalable}}
+                hidden
+              />
+              <label for="scalable-toggle-{{action._id}}" class="name-tag">
+                {{localize "PC.scalable"}}
+              </label>
+            </div> 
             <div>
               {{#unless action.damage.scalable}}[{{/unless}}
               {{action.damage.dmgBase}}
@@ -180,19 +193,6 @@
               </select>
             </div>
             <div class="flexcol">
-              <input
-                id="scalable-toggle-{{action._id}}"
-                type="checkbox"
-                data-dtype="Boolean"
-                name="system.actions.{{@key}}.damage.scalable"
-                {{checked action.damage.scalable}}
-                hidden
-              />
-              <label for="scalable-toggle-{{action._id}}" class="name-tag">
-                {{localize "PC.scalable"}}
-              </label>
-            </div>
-            <div class="flexcol">
               {{localize "PC.type"}}
               <select name="system.actions.{{@key}}.damage.dmgType">
                 {{selectOptions
@@ -201,6 +201,15 @@
                   localize=true
                 }}
               </select>
+            </div>
+            <div class="flexcol">
+              {{localize "PC.subtype"}}
+              <input
+                name="system.actions.{{@key}}.damage.dmgSubtype"
+                type="String"
+                value="{{action.damage.dmgSubtype}}"
+                data-dtype="String"
+              />
             </div>
           </div>
 

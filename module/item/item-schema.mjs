@@ -52,6 +52,21 @@ export class ActionModel extends foundry.abstract.DataModel {
   }
 }
 
+export class AbilityActionModel extends ActionModel {
+  static defineSchema() {
+    const parentSchema = super.defineSchema();
+
+    return {
+      ...parentSchema,
+      type: new StringField({
+        initial: "attack",
+        choices: ["weaponAtk", "attack", "use", "test"],
+        required: true,
+      }),
+    };
+  }
+}
+
 export class AbilityModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
@@ -60,7 +75,7 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
         art: new StringField({ initial: "meleeTech", nullable: true }),
         category: new StringField({ initial: null, nullable: true }),
       }),
-      actions: new TypedObjectField(new EmbeddedDataField(ActionModel), {
+      actions: new TypedObjectField(new EmbeddedDataField(AbilityActionModel), {
         validateKey: (key) => foundry.data.validators.isValidId(key),
         initial: {},
       }),
