@@ -261,5 +261,4 @@ export function registerFonts() {
       fonts: data.fonts.map((f) => ({ urls: f.urls })),
     };
   }
-  console.log("Pars Crucis | Fonts registered:", Object.keys(fontDefs));
 }

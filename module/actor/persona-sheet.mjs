@@ -1,6 +1,7 @@
 const { api, sheets } = foundry.applications;
 import { PC } from "../config.mjs";
 import PersonaConfig from "../apps/persona-config.mjs";
+import PCRoll from "../rolls/basic-roll.mjs";
 
 export class PersonaSheet extends api.HandlebarsApplicationMixin(
   sheets.ActorSheetV2
@@ -35,6 +36,10 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       configurePersona: this.configurePersona,
     },
   };
+
+  get title() {
+    return this.actor.name;
+  }
 
   /** @inheritdoc Defines where are the template PARTS */
   static PARTS = {
@@ -91,8 +96,10 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     return controls;
   }
 
+  /** @override */
   async _prepareContext() {
-    const document = this.document;
+    const baseData = await super._prepareContext();
+    const document = baseData.document;
     const system = document.system;
     const categorizedAbilities = this.categorize(
       system.abilities,
@@ -106,9 +113,11 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     );
 
     const context = {
-      actor: document,
+      editable: baseData.editable,
       document: document,
+      actor: document,
       system: system,
+      // items: document.items, // if needed
       systemFields: system.schema.fields, // used in formInput|formGroup
       categorized: {
         abilities: categorizedAbilities,
@@ -116,11 +125,13 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       },
       config: CONFIG.PC,
       tabs: this._prepareTabs("primary"),
+      effects: document.effects, // easier access fo effects
     };
 
     return context;
   }
 
+  /** @override */
   async _preparePartContext(partId, context) {
     switch (partId) {
       case "skills":
@@ -135,6 +146,9 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
     return context;
   }
+
+  /** @override */
+  _onRender(context, options) {}
 
   dice(event) {
     let dice = "2d10";
@@ -164,7 +178,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const formula = `${diceFormula} + ${attData.derived} + ${attData.mod}`;
 
     // Create the roll with flavor
-    const roll = await Roll.create(
+    const roll = await PCRoll.create(
       formula,
       {},
       {

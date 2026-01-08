@@ -29,9 +29,8 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     },
   };
 
-  getTitle() {
-    // Retorna apenas o nome do item, sem o tipo
-    return this.document.name || "Novo Item";
+  get title() {
+    return this.document.name || "Item";
   }
 
   async _prepareContext() {

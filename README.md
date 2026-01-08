@@ -4,10 +4,9 @@ Pars Crucis roleplaying system for Foundry Virtual Tabletop (http://foundryvtt.c
 
 ### Useful:
 
-To check the language library, type on the console:
+To get the roll data, type on the console `_token.actor.getRollData()`
 
-- **_game.i18n.translations_**
-- check under PC
+To check the language library, type on the console: `game.i18n.translations` check under PC
 
 To get an actor data by name
 

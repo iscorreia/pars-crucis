@@ -12,6 +12,7 @@ import {
   PassiveModel,
   WeaponModel,
 } from "./module/item/item-schema.mjs";
+import PCRoll from "./module/rolls/basic-roll.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
@@ -30,6 +31,8 @@ Hooks.once("init", () => {
 
   registerFonts();
   CONFIG.PC = PC;
+
+  CONFIG.Dice.rolls = [PCRoll];
 
   // Register the data model for the Actor subtype.
   Object.assign(CONFIG.Actor.dataModels, {
