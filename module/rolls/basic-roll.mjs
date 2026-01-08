@@ -11,6 +11,7 @@ export default class PCRoll extends foundry.dice.Roll {
     const dices = diceTerms.flatMap((t) =>
       t.results.map((r) => {
         const dX = `d${t.faces}`;
+        const dice = PC.dice[dX]?.label ?? "d6";
         const icon = PC.dice[dX]?.icon ?? '<i class="fa-solid fa-dice-d6"></i>';
         const status = r.active ? "active" : "discarded";
         const isMax = r.result === t.faces; // e.g., 10 on d10
@@ -23,7 +24,7 @@ export default class PCRoll extends foundry.dice.Roll {
           icon,
           classes: [
             "dice",
-            dX, // d4, d6, d8, d10, d20
+            dice, // d4, d6, d8, d10, d20
             status, // active or discarded
             isMax ? "max" : null,
             isMin ? "min" : null,
