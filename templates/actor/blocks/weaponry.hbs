@@ -1,0 +1,143 @@
+<!-- Gear tab Weaponry list -->
+
+<ol class="item-list weapons-list">
+  <div class="item-group-title">
+    <div class="empty-space"></div>
+    <h3>{{localize "PC.weaponry"}}</h3>
+    <div class="item-sorting"></div>
+  </div>
+  {{#each system.weaponry as |weapon obj|}}
+    <li class="item-block">
+      <div class="item-line">
+        <img class="icon-mid" src="{{weapon.img}}" width="24" height="24" />
+        <div class="item-title">
+          <h4>{{weapon.name}}</h4>
+        </div>
+
+        <div class="item-keywords">
+          {{#each weapon.system.keywords as |value keyword|}}
+            <div class="pc-keyword">
+              <div class="pc-keyword-label">{{localize
+                  (concat "PC.keyword." keyword)
+                }}</div>{{#if value}}<div
+                  class="pc-keyword-value"
+                >({{value}})</div>{{/if}}
+            </div>
+          {{/each}}
+        </div>
+
+        <div class="persona-actions weapon-actions">
+          {{#each weapon.system.actions as |action key|}}
+            {{#if (eq action.type "attack")}}
+              <a class="persona-action ac-attack" data-action="clickGearAttack">
+                <img
+                  class="action-image"
+                  src="{{action.img}}"
+                  width="16"
+                  height="16"
+                />
+                {{#if action.name}}
+                  <div class="action-name">{{action.name}}</div>
+                {{else}}
+                  <div class="action-name">{{localize
+                      "PC.action.types.attack.label"
+                    }}</div>
+                {{/if}}
+              </a>
+            {{/if}}
+            {{#if (eq action.type "test")}}
+              <a class="persona-action ac-test" data-action="clickGearTest">
+                <img
+                  class="action-image"
+                  src="{{action.img}}"
+                  width="16"
+                  height="16"
+                />
+                {{#if action.name}}
+                  <div class="action-name">{{action.name}}</div>
+                {{else}}
+                  <div class="action-name">{{localize
+                      "PC.action.types.test.label"
+                    }}</div>
+                {{/if}}
+              </a>
+            {{/if}}
+            {{#if (eq action.type "use")}}
+              <a class="persona-action ac-use" data-action="clickGearUse">
+                <img
+                  class="action-image"
+                  src="{{action.img}}"
+                  width="16"
+                  height="16"
+                />
+                {{#if action.name}}
+                  <div class="action-name">{{action.name}}</div>
+                {{else}}
+                  <div class="action-name">{{localize
+                      "PC.action.types.use.label"
+                    }}</div>
+                {{/if}}
+              </a>{{/if}}
+          {{/each}}
+        </div>
+
+        <div class="item-controls">
+          {{#if weapon.system.details.equippable}}
+            <a
+              data-action="clickEquip"
+              data-item-id="{{weapon._id}}"
+              data-equip="false"
+              title="{{localize 'PC.equip'}}"
+            >
+              <i class="fa-regular fa-backpack"></i>
+            </a>
+          {{/if}}
+          <a
+            data-action="toggleExpand"
+            data-item-id="{{weapon._id}}"
+            title="{{localize 'PC.expandCollapseActions'}}"
+          >
+            {{#if weapon.flags.pars-crucis.expanded}}
+              <i class="fa-regular fa-arrows-to-line"></i>
+            {{else}}
+              <i class="fa-regular fa-arrows-from-line"></i>
+            {{/if}}
+          </a>
+          <a
+            data-action="clickEdit"
+            data-item-id="{{weapon._id}}"
+            title="{{localize 'PC.edit'}}"
+          >
+            <i class="fa-regular fa-edit"></i>
+          </a>
+          <a
+            data-action="clickDelete"
+            data-item-id="{{weapon._id}}"
+            title="{{localize 'PC.delete'}}"
+          >
+            <i class="fa-regular fa-trash-can"></i>
+          </a>
+        </div>
+      </div>
+      {{#if weapon.flags.pars-crucis.expanded}}
+        <div class="gear-actions">
+          {{#each weapon.system.actions as |action key|}}
+            <div>
+              {{action.name}}:
+              {{localize "PC.range.abv"}}
+              {{action.range}},
+              {{#if action.effort}}
+                {{localize "PC.effort.abv"}}
+                {{action.effort}},
+              {{/if}}
+              {{#if action.damaging}}
+                {{localize "PC.damage"}}
+                {{action.damage.dmgTxt}}
+              {{/if}}
+            </div>
+          {{/each}}
+        </div>
+      {{/if}}
+    </li>
+  {{/each}}
+</ol>

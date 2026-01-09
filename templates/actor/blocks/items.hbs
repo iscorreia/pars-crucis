@@ -1,0 +1,58 @@
+<ol class="item-list">
+  <div class="item-group-title">
+    <div class="empty-space"></div>
+    <h3>{{localize "PC.items"}}</h3>
+    <div class="item-sorting"></div>
+  </div>
+  {{#each system.gear as |gear obj|}}
+    <li class="item-block">
+      <div class="item-line">
+        <img class="icon-mid" src="{{gear.img}}" width="24" height="24" />
+        <div class="item-title">
+          <h4>{{gear.name}}</h4>
+        </div>
+
+        <div class="item-keywords"></div>
+        <div class="persona-actions"></div>
+
+        <div class="item-controls">
+          {{#if gear.system.details.equippable}}
+            <a
+              data-action="clickEquip"
+              data-item-id="{{gear._id}}"
+              data-equip="true"
+              title="{{localize 'PC.equip'}}"
+            >
+              <i class="fa-regular fa-arrow-up-from-arc"></i>
+            </a>
+          {{/if}}
+          <a
+            data-action="toggleExpand"
+            data-item-id="{{gear._id}}"
+            title="{{localize 'PC.expandCollapseActions'}}"
+          >
+            {{#if gear.flags.pars-crucis.expanded}}
+              <i class="fa-regular fa-arrows-to-line"></i>
+            {{else}}
+              <i class="fa-regular fa-arrows-from-line"></i>
+            {{/if}}
+          </a>
+          <a
+            data-action="clickEdit"
+            data-item-id="{{gear._id}}"
+            title="{{localize 'PC.edit'}}"
+          >
+            <i class="fa-regular fa-edit"></i>
+          </a>
+          <a
+            data-action="clickDelete"
+            data-item-id="{{gear._id}}"
+            title="{{localize 'PC.delete'}}"
+          >
+            <i class="fa-regular fa-trash-can"></i>
+          </a>
+        </div>
+      </div>
+    </li>
+  {{/each}}
+</ol>
