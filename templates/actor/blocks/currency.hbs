@@ -1,0 +1,39 @@
+<div class="tab-footer currency-bank">
+    <div class="currency-line silver">
+      <input
+        class="currency-input"
+        name="system.currency.silver"
+        type="number"
+        value="{{system.currency.silver}}"
+        data-dtype="Number"
+        placeholder="0"
+        min="0"
+      />
+      <div class="currency-desc">
+        {{#if (gt system.currency.silver 1)}}
+          {{localize "PC.currency.silver.labelPlural"}}
+        {{else}}
+          {{localize "PC.currency.silver.label"}}
+        {{/if}}
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="currency-line copper">
+      <input
+        class="currency-input"
+        name="system.currency.copper"
+        type="number"
+        value="{{system.currency.copper}}"
+        data-dtype="Number"
+        placeholder="0"
+        min="0"
+      />
+      <div class="currency-desc">
+        {{#if (gt system.currency.copper 1)}}
+          {{localize "PC.currency.copper.labelPlural"}}
+        {{else}}
+          {{localize "PC.currency.copper.label"}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
