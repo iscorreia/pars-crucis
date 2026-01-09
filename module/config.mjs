@@ -812,3 +812,12 @@ PC.multiplier = {
   5: { label: "PC.multiplier.500" },
   0.5: { label: "PC.multiplier.50" },
 };
+
+PC.dice = {
+  d4: { label: "d4", icon: '<i class="fa-solid fa-dice-d4"></i>' },
+  d6: { label: "d6", icon: '<i class="fa-solid fa-dice-d6"></i>' },
+  d8: { label: "d8", icon: '<i class="fa-solid fa-dice-d8"></i>' },
+  d10: { label: "d10", icon: '<i class="fa-solid fa-dice-d10"></i>' },
+  d12: { label: "d12", icon: '<i class="fa-solid fa-dice-d12"></i>' },
+  d20: { label: "d20", icon: '<i class="fa-solid fa-dice-d20"></i>' },
+};

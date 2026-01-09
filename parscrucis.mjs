@@ -12,6 +12,8 @@ import {
   PassiveModel,
   WeaponModel,
 } from "./module/item/item-schema.mjs";
+import PCRoll from "./module/rolls/basic-roll.mjs";
+import { PCChatMessage } from "./module/chat/chat-message.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
@@ -29,7 +31,10 @@ Hooks.once("init", () => {
   console.log("PARS CRUCIS | Initializing system");
 
   registerFonts();
+
   CONFIG.PC = PC;
+  CONFIG.Dice.rolls = [PCRoll];
+  CONFIG.ChatMessage.documentClass = PCChatMessage;
 
   // Register the data model for the Actor subtype.
   Object.assign(CONFIG.Actor.dataModels, {

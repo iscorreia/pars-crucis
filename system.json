@@ -22,7 +22,8 @@
     "styles/styles.css",
     "styles/actor.css",
     "styles/items.css",
-    "styles/persona-config.css"
+    "styles/persona-config.css",
+    "styles/dice.css"
   ],
   "packs": [],
   "languages": [
