@@ -147,9 +147,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     return context;
   }
 
-  /** @override */
-  _onRender(context, options) {}
-
   dice(event) {
     let dice = "2d10";
     // Checks if Shift or Ctrl is pressed and adjusts formula.
