@@ -2,6 +2,7 @@ const { api, sheets } = foundry.applications;
 import { PC } from "../config.mjs";
 import PersonaConfig from "../apps/persona-config.mjs";
 import PCRoll from "../rolls/basic-roll.mjs";
+import TestRoll from "../rolls/test-roll.mjs";
 
 export class PersonaSheet extends api.HandlebarsApplicationMixin(
   sheets.ActorSheetV2
@@ -22,16 +23,16 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       clickAbilityAttack: this.abilityAttack,
       clickAbilityTest: this.abilityTest,
       clickAbilityUse: this.abilityUse,
-      clickAttribute: this.onAttributeClick,
       clickDelete: this.deleteItemOnClick,
       clickEdit: this.editItemOnClick,
       clickEquip: this.equipItemOnClick,
-      clickLuck: this.onLuckClick,
       clickGearAttack: this.gearAttack,
-      clickGearTest: this.gearTest,
       clickGearUse: this.gearUse,
-      clickSkill: this.onSkillClick,
+      rollAttribute: this.rollAttributeOnClick,
+      rollGearTest: this.rollGearTestOnClick,
+      rollSkill: this.rollSkillOnClick,
       sortAbilities: this.changeSortMode,
+      switchLuck: this.switchLuckOnClick,
       toggleExpand: this.toggleAbilityExpand,
       configurePersona: this.configurePersona,
     },
@@ -163,26 +164,20 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
    * @param {PointerEvent} event - The originating click event
    * @param {HTMLElement} target - The capturing HTML element which defined a [data-action]
    */
-  static async onAttributeClick(event, target) {
+  static async rollAttributeOnClick(event, target) {
     const dataset = target.dataset;
     const attKey = dataset.attribute;
     const attType = dataset.type;
     const actor = this.actor;
-    const attData = actor.system[attType][attKey];
-    const diceFormula = this.dice(event);
+    const { derived, mod } = actor.system[attType][attKey];
+    const dice = this.dice(event);
+    const formula = `${dice} + ${derived} + ${mod}`;
+    const RollOptions = {
+      flavor: `${game.i18n.localize(PC[attType][attKey].label)}`,
+    };
+    const roll = new PCRoll(formula, {}, RollOptions);
 
-    // Create roll formula
-    const formula = `${diceFormula} + ${attData.derived} + ${attData.mod}`;
-
-    // Create the roll with flavor
-    const roll = await PCRoll.create(
-      formula,
-      {},
-      {
-        flavor: `${game.i18n.localize(PC[attType][attKey].label)}`,
-      }
-    );
-
+    await roll.evaluate();
     // Send to chat (toMessage)
     await roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: actor }),
@@ -192,7 +187,63 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     return roll;
   }
 
-  static async onLuckClick(event, target) {
+  static async rollGearTestOnClick(event, target) {
+    const dataset = target.dataset;
+    const itemId = dataset.itemId;
+    const acId = dataset.acId;
+    const item = this.actor.items.get(itemId);
+    const { difficulty, skill } = item.system.actions[acId];
+    // console.log("item", item);
+    // console.log("action", item.system.actions[acId]);
+    // console.log(`Difficulty: ${difficulty}, Skill: ${skill}`);
+    const actor = this.actor;
+    const { category, level, mod } = actor.system.skills[skill];
+    const catMod = actor.system.categoryModifiers[category];
+    // console.log(`level: ${level}, mod: ${mod}, catMod: ${catMod}`);
+    const dice = this.dice(event);
+    const formula = `${dice} + ${level} + ${mod + catMod}`;
+    const testLabel = `${game.i18n.localize("PC.testOf")}`;
+    const skillLabel = `${game.i18n.localize(PC.skills[skill].label)}`;
+    const difLabel = `${game.i18n.localize("PC.difficulty.label")}`;
+    const flavor = `${testLabel} ${skillLabel} — ${difLabel} ${difficulty}`;
+    const RollOptions = { flavor: flavor, difficulty: difficulty };
+
+    // Create the Test Roll
+    const roll = new TestRoll(formula, {}, RollOptions);
+    await roll.evaluate();
+    console.log("roll", roll);
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: actor }),
+      rollMode: game.settings.get("core", "rollMode"),
+    });
+
+    return roll;
+  }
+
+  static async rollSkillOnClick(event, target) {
+    const dataset = target.dataset;
+    const skKey = dataset.skill;
+    const skType = dataset.type;
+    const actor = this.actor;
+    const { category, level, mod } = actor.system[skType][skKey];
+    const catMod = actor.system.categoryModifiers[category];
+    const dice = this.dice(event);
+    const formula = `${dice} + ${level} + ${mod + catMod}`;
+    const RollOptions = {
+      flavor: `${game.i18n.localize(PC[skType][skKey].label)}`,
+    };
+    const roll = new PCRoll(formula, {}, RollOptions);
+
+    await roll.evaluate();
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: actor }),
+      rollMode: game.settings.get("core", "rollMode"),
+    });
+
+    return roll;
+  }
+
+  static async switchLuckOnClick(event, target) {
     const dataset = target.dataset;
     const luckBooleans = this.actor.system.luck.booleans;
     const index = dataset.luckIndex;
@@ -200,33 +251,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     luckBooleans[index] = !luckBooleans[index];
 
     this.actor.update({ "system.luck.booleans": luckBooleans });
-  }
-
-  static async onSkillClick(event, target) {
-    const dataset = target.dataset;
-    const skKey = dataset.skill;
-    const skType = dataset.type;
-    const actor = this.actor;
-    const skData = actor.system[skType][skKey];
-    const catMod = actor.system.categoryModifiers[skData.category];
-    const diceFormula = this.dice(event);
-
-    const formula = `${diceFormula} + ${skData.level} + ${skData.mod + catMod}`;
-
-    const roll = await Roll.create(
-      formula,
-      {},
-      {
-        flavor: `${game.i18n.localize(PC[skType][skKey].label)}`,
-      }
-    );
-
-    await roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: actor }),
-      rollMode: game.settings.get("core", "rollMode"),
-    });
-
-    return roll;
   }
 
   // Open a Dialog box with options to Delete, Edit or Cancel
@@ -355,10 +379,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static async gearAttack() {
     console.log("ATTACK GEAR HERE");
-  }
-
-  static async gearTest() {
-    console.log("TEST GEAR HERE");
   }
 
   static async gearUse() {

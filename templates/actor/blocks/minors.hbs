@@ -12,13 +12,13 @@
         {{#if boolean}}
           <a
             class="luck-mark"
-            data-action="clickLuck"
+            data-action="switchLuck"
             data-luck-index={{@key}}
           ><div>O</div></a>
         {{else}}
           <a
             class="luck-mark"
-            data-action="clickLuck"
+            data-action="switchLuck"
             data-luck-index={{@key}}
           ><div>X</div></a>
         {{/if}}
@@ -32,7 +32,7 @@
         <h4>
           {{#if att.disabled}}{{else}}
             <a
-              data-action="clickAttribute"
+              data-action="rollAttribute"
               data-attribute="{{@key}}"
               data-type="minors"
             >{{localize minor.label}}</a>

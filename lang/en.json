@@ -334,9 +334,14 @@
         "test": { "label": "Teste" }
       }
     },
+    "success": "Sucesso",
+    "failure": "Falha",
+    "marginOfSuccess": { "label": "Margem de Sucesso", "abv": "MS" },
+    "marginOfFailure": { "label": "Margem de Falha", "abv": "MF" },
     "actions": "Ações",
     "attack": "Atacar",
     "test": "Teste",
+    "testOf": "Teste de",
     "use": "Usar",
     "effort": { "label": "Esforço", "abv": "Esf" },
     "difficulty": { "label": "Dificuldade", "abv": "Dif" },
