@@ -14,7 +14,7 @@ export default class TestRoll extends PCRoll {
     // Checks difficulty and sets it to 10 if difficulty is null
     const difficulty = this.options.difficulty || 10;
     this.options.success = this.total >= difficulty;
-    this.options.margin = Math.abs(this.total - difficulty);
+    this.options.margin = Math.min(Math.abs(this.total - difficulty), 10);
 
     return this;
   }

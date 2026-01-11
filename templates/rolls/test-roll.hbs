@@ -15,13 +15,27 @@
       <h1 class="pc-roll-total">{{total}}</h1>
     </div>
   </div>
-  <div>{{#if success}}
-      {{localize "PC.success"}}:
-      {{localize "PC.marginOfSuccess.abv"}}
-      {{margin}}
+  <div class="pc-result-block">
+    {{#if success}}
+      <div class="pc-test">
+        {{localize "PC.success"}}
+      </div>
+      <div class="pc-test-result">
+        <h5 class="pc-margin">
+          {{localize "PC.marginOfSuccess.abv"}}
+          {{margin}}
+        </h5>
+      </div>
     {{else}}
-      {{localize "PC.failure"}}:
-      {{localize "PC.marginOfFailure.abv"}}
-      {{margin}}
-    {{/if}}</div>
+      <div class="pc-test">
+        {{localize "PC.failure"}}
+      </div>
+      <div class="pc-test-result">
+        <h5 class="pc-margin">
+          {{localize "PC.marginOfFailure.abv"}}
+          {{margin}}
+        </h5>
+      </div>
+    {{/if}}
+  </div>
 </div>
