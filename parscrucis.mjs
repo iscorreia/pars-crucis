@@ -14,6 +14,7 @@ import {
 } from "./module/item/item-schema.mjs";
 import PCRoll from "./module/rolls/basic-roll.mjs";
 import { PCChatMessage } from "./module/chat/chat-message.mjs";
+import TestRoll from "./module/rolls/test-roll.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
@@ -36,7 +37,7 @@ Hooks.once("init", () => {
   registerFonts();
 
   CONFIG.PC = PC;
-  CONFIG.Dice.rolls = [PCRoll];
+  CONFIG.Dice.rolls = [PCRoll, TestRoll];
   CONFIG.ChatMessage.documentClass = PCChatMessage;
 
   // Register the data model for the Actor subtype.

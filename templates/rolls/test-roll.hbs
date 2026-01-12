@@ -1,0 +1,41 @@
+<div class="pc-dice-roll">
+  {{#if flavor}}
+    <div class="pc-roll-flavor">{{flavor}}</div>
+  {{/if}}
+  <div class="pc-roll-block">
+    <div class="pc-roll">
+      <div class="pc-roll-formula">{{formula}}</div>
+      <ol class="pc-dices">
+        {{#each this.dices}}
+          <li class="pc-dice {{this.classes}}">{{this.result}}</li>
+        {{/each}}
+      </ol>
+    </div>
+    <div class="pc-result">
+      <h1 class="pc-roll-total">{{total}}</h1>
+    </div>
+  </div>
+  <div class="pc-result-block">
+    {{#if success}}
+      <div class="pc-test success">
+        {{localize "PC.success"}}
+      </div>
+      <div class="pc-test-result">
+        <h5 class="pc-margin">
+          {{localize "PC.marginOfSuccess.abv"}}
+          {{margin}}
+        </h5>
+      </div>
+    {{else}}
+      <div class="pc-test failure">
+        {{localize "PC.failure"}}
+      </div>
+      <div class="pc-test-result">
+        <h5 class="pc-margin">
+          {{localize "PC.marginOfFailure.abv"}}
+          {{margin}}
+        </h5>
+      </div>
+    {{/if}}
+  </div>
+</div>

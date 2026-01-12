@@ -83,7 +83,9 @@
                   {{#if (eq action.type "test")}}
                     <a
                       class="persona-action ac-test"
-                      data-action="clickAbilityTest"
+                      data-action="rollAbilityTest"
+                      data-item-id="{{ability._id}}"
+                      data-ac-id="{{action._id}}"
                     >
                       <img
                         class="action-image"

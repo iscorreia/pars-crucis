@@ -1,0 +1,172 @@
+.chat-message {
+  background: var(--color-cool-5-90);
+  border-color: var(--color-cool-4);
+  border-width: 1px;
+  color: var(--color-light-2);
+  h4.message-sender {
+    color: var(--color-light-1);
+  }
+  .message-metadata {
+    color: var(--color-light-4);
+  }
+}
+
+/* divisão usar --color-light-5 */
+
+.pc-dice-roll {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+  .pc-roll-block {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    .pc-roll {
+      height: 40px;
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      .pc-roll-formula {
+        width: 100%;
+        text-align: center;
+        height: 14px;
+        line-height: 14px;
+        margin-bottom: 2px;
+        color: var(--color-light-3);
+      }
+      .pc-dices {
+        height: 24px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "SR";
+        font-size: 21px;
+        font-weight: bold;
+        .pc-dice {
+          min-width: 24px;
+          line-height: 24px;
+          height: 24px;
+          background-size: 24px 24px;
+          text-align: center;
+          color: var(--color-light-2);
+          text-shadow: 0 0 1px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.6);
+          filter: brightness(0.68) sepia(0.1) hue-rotate(358deg) contrast(2.5);
+        }
+        .d4 {
+          background-image: url("/icons/svg/d4-grey.svg");
+        }
+        .d6 {
+          background-image: url("/icons/svg/d6-grey.svg");
+        }
+        .d8 {
+          background-image: url("/icons/svg/d8-grey.svg");
+        }
+        .d10 {
+          background-image: url("/icons/svg/d10-grey.svg");
+        }
+        .d12 {
+          background-image: url("/icons/svg/d12-grey.svg");
+        }
+        .d20 {
+          background-image: url("/icons/svg/d20-grey.svg");
+        }
+        .max {
+          /* color: #18520b; */
+          color: #45ff1b;
+          /* filter: sepia(0.8) hue-rotate(60deg); */
+          text-shadow: 0 0 1px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.6);
+          filter: brightness(0.68) sepia(0.8) hue-rotate(60deg) contrast(2.5);
+        }
+        .min {
+          /* color: #da0400; */
+          color: #ff7474;
+          /* filter: sepia(0.5) hue-rotate(-60deg); */
+
+          text-shadow: 0 0 1px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.6);
+          filter: brightness(0.68) sepia(0.5) hue-rotate(-30deg) contrast(2.5);
+        }
+        .discarded {
+          color: inherit;
+          /* filter: sepia(0.5) contrast(0.75) opacity(0.4); */
+          filter: brightness(0.4) contrast(1.4);
+        }
+      }
+      .pc-dices > li:not(:last-child) {
+        margin-right: 2px;
+      }
+    }
+    .pc-result {
+      height: 100%;
+      width: 25%;
+      .pc-roll-total {
+        height: 100%;
+        width: 55px;
+        line-height: 40px;
+        text-align: center;
+        /* background: rgba(0, 0, 0, 0.1); */
+        background: var(--pc-fade-bg-0);
+        border: 1px solid var(--color-light-5);
+        color: var(--color-light-1);
+        border-radius: 3px;
+        font-family: "LTRemark Bold";
+        font-size: 40px;
+        padding-top: 3px;
+        box-shadow: 0 0 2px var(--color-light-4) inset;
+        /* word-break: break-all; */
+      }
+    }
+  }
+  .pc-result-block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3px;
+    height: 20px;
+    .pc-test {
+      height: 100%;
+      width: 75%;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 18px;
+      border-width: 1px 0 0 0;
+      border-style: solid;
+      border-color: var(--color-light-5);
+    }
+    .success {
+    }
+    .failure {
+    }
+    .pc-test-result {
+      height: 100%;
+      width: 25%;
+      .pc-margin {
+        height: 100%;
+        width: 55px;
+        line-height: 20px;
+        text-align: center;
+        /* background: rgba(0, 0, 0, 0.1); */
+        background: var(--pc-fade-bg-0);
+        border: 1px solid var(--color-light-5);
+        border-radius: 0 3px 3px 3px;
+        font-family: "LTRemark Black";
+        font-size: 16px;
+        /* color: #111; */
+        color: var(--color-light-1);
+        padding-top: 1px;
+        box-shadow: 0 0 2px var(--color-light-4) inset;
+      }
+    }
+  }
+}
