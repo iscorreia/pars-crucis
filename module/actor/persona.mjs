@@ -107,6 +107,12 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
         espirituais: new NumberField({ initial: 0, integer: true }),
       }),
 
+      groupModifiers: new SchemaField({
+        meleeCombat: groupField(),
+        rangedCombat: groupField(),
+        supernatural: groupField(),
+      }),
+
       skills: new SchemaField(skills),
     };
   }
@@ -116,8 +122,8 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const abilitiesXp = [];
     const attributesData = this.attributes;
     const attValues = { fis: [], des: [], ego: [], cog: [], esp: [] };
-    const combatSkills = ["briga", "esgri", "hasta", "malha"];
     const combatValue = [];
+    const groupModifiers = this.groupModifiers;
     const infoData = this.info;
     const luckData = this.luck;
     const minorsData = this.minors;
@@ -154,6 +160,14 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       sk.favorable = mergedFav.has(key);
     }
 
+    for (let [key, group] of Object.entries(groupModifiers)) {
+      const groupLevels = [];
+      for (let sk of PC[key].skills) {
+        groupLevels.push(skillsData[sk].level);
+      }
+      group.level = Math.max(...groupLevels);
+    }
+
     // ATTRIBUTES handling!
     const origin = ORIGINS[infoData.origin];
     for (let [key, att] of Object.entries(attributesData)) {
@@ -164,9 +178,9 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
           (origin.attributes[key] || 0);
       }
       if (key === "def") {
-        for (let csk of combatSkills) {
-          const combatSk = skillsData[csk];
-          const combatSkValue = combatSk.level + combatSk.mod;
+        for (let mcsk of PC.meleeCombat.skills) {
+          const { level, mod } = skillsData[mcsk];
+          const combatSkValue = level + mod;
           combatValue.push(combatSkValue);
         }
       }
@@ -420,6 +434,14 @@ function skillField(skill, { nullableSkill = false } = {}) {
     growth: new NumberField({ initial: skill.growth }),
     attribute: new StringField({ initial: skill.att }),
     category: new StringField({ initial: skill.cat }),
+    group: new StringField({ initial: skill.group || null, nullable: true }),
+  });
+}
+
+function groupField() {
+  return new SchemaField({
+    mod: new NumberField({ initial: 0, integer: true }),
+    level: new NumberField({ initial: 0, integer: true }),
   });
 }
 

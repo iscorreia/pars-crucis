@@ -188,6 +188,9 @@
       "none": "Nenhuma"
     },
     "skill": "Perícia",
+    "meleeCombat": "Combate corpo a corpo",
+    "rangedCombat": "Combate à distância",
+    "supernatural": "Sobrenaturais",
     "learning": {
       "label": "Aprendizado",
       "common": "Comum",
