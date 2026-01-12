@@ -177,7 +177,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     };
     const roll = new PCRoll(formula, {}, RollOptions);
 
-    await roll.evaluate();
     // Send to chat (toMessage)
     await roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: actor }),
@@ -215,7 +214,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     // Create the Test Roll
     const roll = new TestRoll(formula, {}, RollOptions);
     await roll.evaluate();
-    console.log("roll", roll);
     await roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: actor }),
       rollMode: game.settings.get("core", "rollMode"),
@@ -238,7 +236,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     };
     const roll = new PCRoll(formula, {}, RollOptions);
 
-    await roll.evaluate();
     await roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: actor }),
       rollMode: game.settings.get("core", "rollMode"),
