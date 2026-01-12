@@ -21,7 +21,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     },
     actions: {
       clickAbilityAttack: this.abilityAttack,
-      clickAbilityTest: this.abilityTest,
       clickAbilityUse: this.abilityUse,
       clickDelete: this.deleteItemOnClick,
       clickEdit: this.editItemOnClick,
@@ -29,6 +28,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       clickGearAttack: this.gearAttack,
       clickGearUse: this.gearUse,
       rollAttribute: this.rollAttributeOnClick,
+      rollAbilityTest: this.rollGearTestOnClick,
       rollGearTest: this.rollGearTestOnClick,
       rollSkill: this.rollSkillOnClick,
       sortAbilities: this.changeSortMode,
@@ -185,6 +185,10 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     });
 
     return roll;
+  }
+
+  static async rollAbilityTestOnClick(event, target) {
+    console.log("TEST ABILITY HERE");
   }
 
   static async rollGearTestOnClick(event, target) {
@@ -367,10 +371,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static async abilityAttack() {
     console.log("ATTACK ABILITY HERE");
-  }
-
-  static async abilityTest() {
-    console.log("TEST ABILITY HERE");
   }
 
   static async abilityUse() {

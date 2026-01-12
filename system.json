@@ -23,7 +23,7 @@
     "styles/actor.css",
     "styles/items.css",
     "styles/persona-config.css",
-    "styles/dice.css"
+    "styles/chat.css"
   ],
   "packs": [],
   "languages": [
