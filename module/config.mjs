@@ -103,6 +103,7 @@ PC.skills = {
     label: "PC.skills.briga",
     att: "des",
     cat: "corporais",
+    group: "meleeCombat",
     learning: 1,
     growth: 1,
   },
@@ -110,6 +111,7 @@ PC.skills = {
     label: "PC.skills.esgri",
     att: "des",
     cat: "corporais",
+    group: "meleeCombat",
     learning: 1,
     growth: 1,
   },
@@ -117,6 +119,7 @@ PC.skills = {
     label: "PC.skills.hasta",
     att: "des",
     cat: "corporais",
+    group: "meleeCombat",
     learning: 1,
     growth: 1,
   },
@@ -124,6 +127,7 @@ PC.skills = {
     label: "PC.skills.malha",
     att: "fis",
     cat: "corporais",
+    group: "meleeCombat",
     learning: 1,
     growth: 1,
   },
@@ -146,6 +150,7 @@ PC.skills = {
     label: "PC.skills.arque",
     att: "des",
     cat: "subterfugios",
+    group: "rangedCombat",
     learning: 1,
     growth: 2,
   },
@@ -153,6 +158,7 @@ PC.skills = {
     label: "PC.skills.balis",
     att: "des",
     cat: "subterfugios",
+    group: "rangedCombat",
     learning: 1,
     growth: 2,
   },
@@ -182,6 +188,7 @@ PC.skills = {
     label: "PC.skills.arcan",
     att: "cog",
     cat: "conhecimentos",
+    group: "supernatural",
     learning: 2,
     growth: 1,
   },
@@ -189,6 +196,7 @@ PC.skills = {
     label: "PC.skills.crono",
     att: "cog",
     cat: "conhecimentos",
+    group: "supernatural",
     learning: 2,
     growth: 1,
   },
@@ -275,6 +283,7 @@ PC.skills = {
     label: "PC.skills.bardi",
     att: "ego",
     cat: "sociais",
+    group: "supernatural",
     learning: 2,
     growth: 1,
   },
@@ -318,6 +327,7 @@ PC.skills = {
     label: "PC.skills.aoism",
     att: "esp",
     cat: "espirituais",
+    group: "supernatural",
     learning: 2,
     growth: 1,
   },
@@ -325,6 +335,7 @@ PC.skills = {
     label: "PC.skills.druid",
     att: "esp",
     cat: "espirituais",
+    group: "supernatural",
     learning: 2,
     growth: 1,
   },
@@ -332,6 +343,7 @@ PC.skills = {
     label: "PC.skills.eleme",
     att: "esp",
     cat: "espirituais",
+    group: "supernatural",
     learning: 2,
     growth: 1,
   },
@@ -346,6 +358,7 @@ PC.skills = {
     label: "PC.skills.sabak",
     att: "esp",
     cat: "espirituais",
+    group: "supernatural",
     learning: 2,
     growth: 1,
   },
@@ -408,6 +421,21 @@ PC.espirituais = {
   eleme: { label: "PC.skills.eleme" },
   ontol: { label: "PC.skills.ontol" },
   sabak: { label: "PC.skills.sabak" },
+};
+
+PC.meleeCombat = {
+  label: "PC.meleeCombat",
+  skills: ["briga", "esgri", "hasta", "malha"],
+};
+
+PC.rangedCombat = {
+  label: "PC.rangedCombat",
+  skills: ["arque", "balis"],
+};
+
+PC.supernatural = {
+  label: "PC.supernatural",
+  skills: ["arcan", "crono", "bardi", "aoism", "druid", "eleme", "sabak"],
 };
 
 PC.ability = {

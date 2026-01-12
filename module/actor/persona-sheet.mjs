@@ -74,7 +74,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
 
   static TABS = {
     primary: {
-      initial: "gear", // Change to simplify testing, once done set back to skills
+      initial: "skills", // Change to simplify testing, once done set back to skills
       tabs: [
         { id: "skills", label: "PC.tabs.skills" },
         { id: "abilities", label: "PC.tabs.abilities" },
@@ -227,10 +227,11 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const skKey = dataset.skill;
     const skType = dataset.type;
     const actor = this.actor;
-    const { category, level, mod } = actor.system[skType][skKey];
+    const { category, group, level, mod } = actor.system[skType][skKey];
+    const groupMod = group ? actor.system.groupModifiers[group].mod : 0;
     const catMod = actor.system.categoryModifiers[category];
     const dice = this.dice(event);
-    const formula = `${dice} + ${level} + ${mod + catMod}`;
+    const formula = `${dice} + ${level} + ${mod + catMod + groupMod}`;
     const RollOptions = {
       flavor: `${game.i18n.localize(PC[skType][skKey].label)}`,
     };
