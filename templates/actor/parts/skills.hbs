@@ -74,15 +74,15 @@
       </ul>
     {{/each}}
   </div>
-  <div class="tab-footer skill-tab-footer flexrow">
+  <div class="tab-footer skill-tab-footer">
     {{#each system.groupModifiers}}
-      <div class="flexrow">
-        <div>{{localize (concat "PC." @key)}}</div>
+      <div class="group-mod-line">
+        <div class="group-label">{{localize (concat "PC." @key)}}</div>
         <input
-          class=""
+          class="group-mod"
           name="system.groupModifiers.{{@key}}.mod"
-          value="{{this.mod}}"
-          type="Number"
+          value="{{numberFormat this.mod sign=true}}"
+          type="String"
           data-dtype="Number"
         />
       </div>
