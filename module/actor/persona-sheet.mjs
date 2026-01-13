@@ -170,9 +170,9 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const { derived, mod } = actor.system[type][attribute];
     const dice = this.dice(event);
     const formula = `${dice} + ${derived} + ${mod}`;
-    const RollOptions = {
-      flavor: `${game.i18n.localize(PC[type][attribute].label)}`,
-    };
+    const testLabel = `${game.i18n.localize("PC.testOf")}`;
+    const attLabel = `${game.i18n.localize(PC[type][attribute].label)}`;
+    const RollOptions = { flavor: `${testLabel} ${attLabel}` };
     const roll = new PCRoll(formula, {}, RollOptions);
 
     // Send to chat (toMessage)
@@ -223,9 +223,9 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const catMod = actor.system.categoryModifiers[category];
     const dice = this.dice(event);
     const formula = `${dice} + ${level} + ${mod + catMod + groupMod}`;
-    const RollOptions = {
-      flavor: `${game.i18n.localize(PC[type][skill].label)}`,
-    };
+    const testLabel = `${game.i18n.localize("PC.testOf")}`;
+    const skillLabel = `${game.i18n.localize(PC[type][skill].label)}`;
+    const RollOptions = { flavor: `${testLabel} ${skillLabel}` };
     const roll = new PCRoll(formula, {}, RollOptions);
 
     await roll.toMessage({
