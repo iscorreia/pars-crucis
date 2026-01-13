@@ -21,7 +21,7 @@ export default class PersonaConfig extends api.HandlebarsApplicationMixin(
     },
     tag: "form",
     window: {
-      icon: "fas fa-wrench",
+      icon: "fa-regular fa-wrench",
       title: "PC.configPersona",
     },
   };
@@ -41,7 +41,7 @@ export default class PersonaConfig extends api.HandlebarsApplicationMixin(
     return context;
   }
 
-  static async #handleChanges(event, form, formData) {
+  static async #handleChanges(_event, _form, formData) {
     const actor = this.options.document;
     const upData = formData.object;
 
