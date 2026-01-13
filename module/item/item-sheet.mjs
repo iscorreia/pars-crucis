@@ -1,4 +1,5 @@
 const { api, sheets } = foundry.applications;
+import KeywordPicker from "../apps/keyword-picker.mjs";
 import { PC } from "../config.mjs";
 
 //This is the basic class for Pars Crucis Items and should be extended
@@ -18,7 +19,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
       icon: "fa-solid fa-magic",
     },
     actions: {
-      addKeyword: this.addKeywordOnClick,
+      keywordPicker: this.keywordPicker,
       addActionKeyword: this.addActionKeywordOnClick,
       addDmgAttribute: this.addDmgAttributeOnClick,
       cutKeyword: this.cutKeywordOnClick,
@@ -53,29 +54,15 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     return context;
   }
 
+  static async keywordPicker() {
+    new KeywordPicker({ document: this.item })?.render(true);
+  }
+
   static async addKeywordOnClick(_, target) {
+    console.log("CALLED");
     const item = this.document;
-    let keywords = PC[`${target.dataset.type}Keyword`];
-
-    const keywordButtons = Object.entries(keywords).map(([key, data]) => ({
-      action: key,
-      label: game.i18n.localize(data.label),
-      callback: async () => {
-        await item.update({
-          [`system.keywords.${key}`]: null,
-        });
-      },
-    }));
-
-    // Show the keyword picker dialog
-    await api.Dialog.wait({
-      classes: ["keyword-picker"],
-      window: {
-        title: "Selecionar palavra-chave",
-      },
-      content: `<p>Clique para adicionar uma palavra chave ao item ${item.name}</p>`,
-      buttons: keywordButtons,
-    });
+    const { keyword } = target.dataset;
+    await item.update({ [`system.keywords.${keyword}`]: null });
   }
 
   static async addActionKeywordOnClick(_, target) {

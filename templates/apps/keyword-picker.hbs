@@ -1,0 +1,39 @@
+{{! Keywork picker window }}
+
+<section class="keyword-picker">
+  <p class="info-desc">Selecione as Propriedades</p>
+  <div class="keyword-picker-block">
+    {{#each config.keyword}}
+      <h3>{{localize (concat "PC.keyGroups." @key)}}</h3>
+      <div class="keyword-picker-list">
+        {{#each this}}
+          <a
+            class="pc-keyword"
+            data-action="addKeyword"
+            data-keyword="{{@key}}"
+          >
+            {{localize label}}
+          </a>
+        {{/each}}
+      </div>
+    {{/each}}
+  </div>
+  <p class="info-desc">Configure as Propriedades</p>
+  <div>
+    {{#each system.keywords}}
+      <div class="item-info-block">
+        <div class="pc-keyword">
+          {{localize (concat "PC.keyword." @key)}}
+        </div>
+        <a data-action="cutKeyword" data-keyword="{{@key}}">
+          <i class="fa-regular fa-eraser"></i></a>
+        <input
+          name="system.keywords.{{@key}}"
+          value="{{this}}"
+          data-dtype="String"
+          type="String"
+        />
+      </div>
+    {{/each}}
+  </div>
+</section>
