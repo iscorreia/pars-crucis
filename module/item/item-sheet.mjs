@@ -36,6 +36,12 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   async _prepareContext() {
     const document = this.document;
     const system = document.system;
+    const PC = CONFIG.PC;
+
+    /** Create a translated group key for @selectOptions */
+    for (let [_, sk] of Object.entries(PC.skills)) {
+      sk.group = game.i18n.localize(`PC.categories.${[sk.cat]}`);
+    }
     const context = {
       item: document,
       document: document,

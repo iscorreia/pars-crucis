@@ -434,7 +434,10 @@ function skillField(skill, { nullableSkill = false } = {}) {
     growth: new NumberField({ initial: skill.growth }),
     attribute: new StringField({ initial: skill.att }),
     category: new StringField({ initial: skill.cat }),
-    group: new StringField({ initial: skill.group || null, nullable: true }),
+    modGroup: new StringField({
+      initial: skill.modGroup || null,
+      nullable: true,
+    }),
   });
 }
 

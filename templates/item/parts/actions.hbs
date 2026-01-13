@@ -3,9 +3,9 @@
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="actions">
   <div class="actions-tab">
     <div class="actions-controls">
-      <a data-action="createAction" data-ac-type="attack"><i class="fa fa-plus"></i> {{localize "PC.attack"}}</a>
-      <a data-action="createAction" data-ac-type="test"><i class="fa fa-plus"></i> {{localize "PC.test"}}</a>
-      <a data-action="createAction" data-ac-type="use"><i class="fa fa-plus"></i> {{localize "PC.use"}}</a>
+      <a data-action="createAction" data-ac-type="attack"><i class="fa-regular fa-plus"></i> {{localize "PC.createAttack"}}</a>
+      <a data-action="createAction" data-ac-type="test"><i class="fa-regular fa-plus"></i> {{localize "PC.createTest"}}</a>
+      <a data-action="createAction" data-ac-type="use"><i class="fa-regular fa-plus"></i> {{localize "PC.createUse"}}</a>
     </div>
     <ul class="action-list">
       {{#each system.actions as |action obj|}}
@@ -16,21 +16,22 @@
               src="{{action.img}}"
               data-edit="system.actions.{{@key}}.img"
               data-action="editImage"
-              width="54"
-              height="54"
+              width="36"
+              height="36"
             />
             <div class="action-block-info">
-              <div class="flexrow">
-                <div>
-                  <input
-                    name="system.actions.{{@key}}.name"
-                    type="String"
-                    value="{{action.name}}"
-                    data-dtype="String"
-                  />
-                </div>
+              <div class="action-title-line">
+                <input
+                  class="action-title"
+                  name="system.actions.{{@key}}.name"
+                  type="Text"
+                  value="{{action.name}}"
+                  data-dtype="String"
+                />
                 
-                <select name="system.actions.{{@key}}.type">
+                <select 
+                  class="action-type" 
+                  name="system.actions.{{@key}}.type">
                   {{selectOptions
                     ../config.action.types
                     selected=action.type
@@ -38,18 +39,10 @@
                   }}
                 </select>
 
-                <a
-                  class="trash-can"
-                  data-action="deleteAction"
-                  data-action-id="{{action._id}}"
-                >
-                  <i class="fa-solid fa-trash-can"></i>
-                </a>
-              </div>
-
-              <div class="flexrow">
                 {{#if (or (eq action.type "attack") (eq action.type "test"))}}
-                  <select name="system.actions.{{@key}}.skill">
+                  <select 
+                    class="action-skill"
+                    name="system.actions.{{@key}}.skill">
                     {{selectOptions
                       ../config.skills
                       selected=action.skill
@@ -58,7 +51,9 @@
                   </select>
                 {{/if}}
                 {{#if (eq action.type "attack")}}
-                  <select name="system.actions.{{@key}}.subtype">
+                  <select
+                    class="action-subtype"
+                    name="system.actions.{{@key}}.subtype">
                     {{selectOptions
                       ../config.action.types.attack.subtypes
                       selected=action.subtype
@@ -67,8 +62,10 @@
                   </select>
                 {{/if}}
                 {{#if (eq action.type "test")}}
-                  <div class="flexrow">
-                    {{localize "PC.difficulty.abv"}}
+                  <div class="action-subtype">
+                    <div class="dif-label">
+                      {{localize "PC.difficulty.label"}}
+                    </div>
                     <input
                       name="system.actions.{{@key}}.difficulty"
                       type="Number"
@@ -76,20 +73,29 @@
                       data-dtype="Number"
                     />
                   </div>
-                {{/if}}            
+                {{/if}}     
+
+                <a
+                  class="trash-can"
+                  data-action="deleteAction"
+                  data-action-id="{{action._id}}"
+                >
+                  <i class="fa-regular fa-trash-can"></i>
+                </a>
               </div>
 
-              <div class="flexrow">
-                <div>{{localize "PC.keywords"}}</div>
+              <div class="action-keyword-line">
                 <a
+                  class="add-keyword"
                   data-action="addActionKeyword"
                   data-type="action" 
                   data-ac-id="{{action._id}}"
-                ><i class="fa-regular fa-plus"></i>
+                >{{localize "PC.keywords"}}
+                  <i class="fa-regular fa-plus"></i>
                 </a>
                 {{#each action.keywords as |keyword obj|}}
-                  <div class="flexrow">
-                    <div>
+                  <div class="keyword-block">
+                    <div class="pc-keyword">
                       {{localize (concat "PC.keyword." obj)}}{{#if keyword}}
                         ({{keyword}}){{/if}}
                     </div>
@@ -98,7 +104,8 @@
                       data-keyword="{{@key}}"
                       data-ac-id="{{action._id}}"
                     >
-                      <i class="fa-regular fa-trash-can"></i></a>
+                      <i class="fa-regular fa-eraser"></i>
+                    </a>
                   </div>
                 {{/each}}
               </div>
