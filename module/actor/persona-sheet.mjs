@@ -236,12 +236,14 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     return roll;
   }
 
-  static async gearUse(event, target) {
-    // const dataset
+  static async gearUse(_, target) {
+    const { acId, itemId } = target.dataset;
+    const item = this.actor.items.get(itemId);
+    const action = item.system.actions[acId];
     const actor = this.actor;
     const html = await handlebars.renderTemplate(
-      "systems/pars-crucis/templates/chat/basic-chat.hbs",
-      { actor }
+      "systems/pars-crucis/templates/chat/use-action.hbs",
+      { action, actor, item }
     );
 
     ChatMessage.create({

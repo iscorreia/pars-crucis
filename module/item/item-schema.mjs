@@ -48,6 +48,8 @@ export class ActionModel extends foundry.abstract.DataModel {
       }),
       // TEST-only
       difficulty: new NumberField({ nullable: true }),
+      // USE-only
+      usage: new StringField({ initial: "", nullable: true }),
     };
   }
 }

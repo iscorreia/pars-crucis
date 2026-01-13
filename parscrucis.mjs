@@ -26,6 +26,7 @@ async function preloadHandlebarsTemplates() {
     "systems/pars-crucis/templates/actor/blocks/vest.hbs",
     "systems/pars-crucis/templates/actor/blocks/items.hbs",
     "systems/pars-crucis/templates/actor/blocks/currency.hbs",
+    "systems/pars-crucis/templates/item/blocks/name-cost.hbs",
   ];
 
   return foundry.applications.handlebars.loadTemplates(templatePaths);

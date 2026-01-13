@@ -1,0 +1,32 @@
+<div class="item-name-line">
+  <h1 class="name item-name">
+    {{item.name}}
+  </h1>
+  <div class="experience">
+    {{#if
+      (or (eq system.cost.currency "silver") (eq system.cost.currency "copper"))
+    }}
+      {{#if (eq system.cost.currency "silver")}}
+        <div class="cost-line silver">
+          <div class="item-cost">{{system.cost.price}}</div>
+          <div class="currency">
+            {{localize (concat "PC.currency." system.cost.currency ".abv")}}
+          </div>
+        </div>
+      {{else}}
+        <div class="cost-line copper">
+          <div class="item-cost">{{system.cost.price}}</div>
+          <div class="currency">
+            {{localize (concat "PC.currency." system.cost.currency ".abv")}}
+          </div>
+        </div>
+      {{/if}}
+    {{else}}
+      <div class="cost-line">
+        <div class="costless">
+          {{localize (concat "PC.currency." system.cost.currency ".abv")}}
+        </div>
+      </div>
+    {{/if}}
+  </div>
+</div>

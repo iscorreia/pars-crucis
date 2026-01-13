@@ -244,6 +244,9 @@
               font-size: var(--pc-font-size-mid);
             }
           }
+          .action-usage {
+            width: 55%;
+          }
           a {
             text-align: center;
             width: 16px;

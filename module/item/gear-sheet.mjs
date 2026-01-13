@@ -29,13 +29,14 @@ export default class GearSheet extends ParsCrucisItemSheet {
       template: "systems/pars-crucis/templates/item/parts/description.hbs",
     },
     config: {
-      template: "systems/pars-crucis/templates/item/gear/details.hbs",
+      template: "systems/pars-crucis/templates/item/gear/config.hbs",
+      classes: ["pc-item-tab"],
     },
   };
 
   static TABS = {
     primary: {
-      initial: "description",
+      initial: "config",
       tabs: [
         { id: "description", label: "PC.description" },
         { id: "config", label: "PC.config" },

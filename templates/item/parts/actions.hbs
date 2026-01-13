@@ -73,6 +73,17 @@
                       data-dtype="Number"
                     />
                   </div>
+                {{/if}}
+                {{#if (eq action.type "use")}}
+                  <div class="action-usage">
+                    <input
+                      name="system.actions.{{@key}}.usage"
+                      value="{{action.usage}}"
+                      type="Text"
+                      data-dtype="String"
+                      placeholder={{localize "PC.action.types.use.label"}}
+                    />
+                  </div>
                 {{/if}}     
 
                 <a

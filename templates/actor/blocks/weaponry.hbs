@@ -68,7 +68,12 @@
               </a>
             {{/if}}
             {{#if (eq action.type "use")}}
-              <a class="persona-action ac-use" data-action="clickGearUse">
+              <a
+                class="persona-action ac-use"
+                data-action="clickGearUse"
+                data-item-id="{{weapon._id}}"
+                data-ac-id="{{action._id}}"
+              >
                 <img
                   class="action-image"
                   src="{{action.img}}"
