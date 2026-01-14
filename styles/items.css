@@ -106,7 +106,7 @@
   /* DESCRIPTION TAB */
   .description {
     width: 100%;
-    height: 272px;
+    height: 376px;
     border-radius: 5px;
     background: linear-gradient(
       to bottom,
@@ -144,9 +144,6 @@
   /* ACTIONS TAB */
   .actions-tab {
     height: 376px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-gutter: stable;
     .actions-controls {
       height: 15px;
       display: flex;
@@ -154,6 +151,12 @@
       justify-content: space-evenly;
       align-items: center;
       margin-bottom: 5px;
+      font-family: "Amiri";
+      font-size: 14px;
+      font-weight: bold;
+      border-color: var(--color-light-6);
+      border-style: solid;
+      border-width: 0 0 1px 0;
       a {
         height: 15px;
         text-align: center;
@@ -164,24 +167,115 @@
       height: 356px;
       padding: 0;
       margin: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      scrollbar-gutter: stable;
     }
   }
   .action-block {
     display: flex;
     flex-direction: column;
-    .action-header {
-      display: flex;
-      flex-direction: row;
-      .action-block-info {
-        display: flex;
-        flex-direction: column;
-        width: calc(100% - 54px);
-      }
-    }
-
+    min-height: 160px;
+    padding-bottom: 1px;
+    border-color: var(--color-scrollbar);
+    border-width: 0 0 1px 0;
+    border-style: dashed;
     input,
     select {
       height: 17.5px;
+    }
+    select {
+      padding: 0 1px;
+    }
+    input {
+      padding: 1px 2px 0;
+    }
+    .action-header {
+      display: flex;
+      flex-direction: row;
+      img {
+        border-radius: 5px 0 0 0;
+      }
+      .action-block-info {
+        margin-left: 2px;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 36px);
+        .action-title-line {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 18px;
+          input,
+          select {
+            height: 18px;
+            font-size: 12.5px;
+          }
+          .action-title {
+            width: 25%;
+            font-size: var(--pc-font-size-mid);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .action-type {
+            width: 20%;
+          }
+          .action-skill {
+            width: 28%;
+          }
+          .action-subtype {
+            font-size: 12.5px;
+            width: 27%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .dif-label {
+              height: 18px;
+              line-height: 18px;
+              width: 70%;
+            }
+            input {
+              width: 30%;
+              text-align: center;
+              font-size: var(--pc-font-size-mid);
+            }
+          }
+          .action-usage {
+            width: 55%;
+          }
+          a {
+            text-align: center;
+            width: 16px;
+            height: 16px;
+          }
+        }
+        .action-keyword-line {
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+          width: 100%;
+          height: 18px;
+          .add-keyword {
+            display: inline-flex;
+            height: 18px;
+            font-family: "Amiri";
+            font-weight: bold;
+            align-items: center;
+            padding-top: 1px;
+            gap: 2px;
+          }
+          .keyword-block {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+        }
+      }
     }
     .action-effect {
       width: 100%;
@@ -197,6 +291,9 @@
       }
     }
   }
+  .action-block:last-child {
+    border: transparent;
+  }
 }
 
 /* CONFIG TAB */
@@ -208,7 +305,6 @@
   border-color: var(--color-light-6);
   border-style: solid;
   border-width: 0 0 1px 0;
-  color: var(--color-light-2);
   margin-bottom: 5px;
   h5 {
     color: var(--color-light-2);
@@ -227,7 +323,6 @@
       padding: 1px 2px 0;
       font-size: var(--pc-font-size-small);
       text-align: center;
-      color: inherit;
       height: 21px;
       border-width: 1px;
       border-style: solid;
@@ -277,34 +372,71 @@ input[type="checkbox"]:checked ~ .name-tag {
 .name-tag:hover {
   filter: brightness(1.15);
 }
+.keyword-title-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
 .item-keywords-config {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 3px;
+  column-gap: 3px;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
+  padding-bottom: 3px;
+  min-height: 22px;
+  .pc-keyword {
+    height: 18px;
+    line-height: 15px;
+    font-size: 15px;
+    white-space: nowrap;
+    margin: 0;
+  }
 }
 .keyword-picker {
-  width: 440px;
-  .form-footer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3px;
-    min-width: 0;
-    button {
-      width: 99.25px;
-      min-width: 0;
-      white-space: nowrap;
-      font-size: 14px;
-      height: 18px;
-      line-height: 18px;
-      min-height: 18px;
-      background-color: var(--color-dark-3);
-      border-color: var(--color-dark-6);
-      color: var(--color-light-2);
-      border-style: solid;
-      border-width: 1px;
-      border-radius: 5px;
-      padding: 0 3px;
-      text-align: center;
+  width: 100%;
+  .pc-keyword {
+    height: 18px;
+    line-height: 15px;
+    font-size: 15px;
+    white-space: nowrap;
+    margin: 0;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  .keyword-picker-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: var(--color-light-6);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    .keyword-picker-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 3px;
+      row-gap: 3px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 7px;
     }
+    .keyword-picker-list:last-child {
+      margin-bottom: 3px;
+    }
+  }
+}
+.in-ac-keyword-picker {
+  filter: brightness(0.65);
+  p {
+    text-align: center;
+    margin: 0;
   }
 }

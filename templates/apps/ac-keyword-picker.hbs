@@ -1,0 +1,48 @@
+{{! Action keywork picker window }}
+
+<section class="keyword-picker">
+  <p class="info-desc">Selecione as Propriedades específicas à Ação</p>
+  <div class="keyword-picker-block">
+    {{#each config.keyword}}
+      <h3>{{localize (concat "PC.keyGroups." @key)}}</h3>
+      <div class="keyword-picker-list">
+        {{#each this}}
+          <a
+            class="pc-keyword"
+            data-action="addActionKeyword"
+            data-keyword="{{@key}}"
+          >
+            {{localize label}}
+          </a>
+        {{/each}}
+      </div>
+    {{/each}}
+  </div>
+  <div class="in-ac-keyword-picker">
+    <p>Propriedades do item</p>
+    <div class="item-keywords-config">
+      {{#each system.keywords}}
+        <div class="pc-keyword">
+          {{localize (concat "PC.keyword." @key)}}{{#if this}} ({{this}}){{/if}}
+        </div>
+      {{/each}}
+    </div></div>
+  <p class="info-desc">Configura as propriedades da ação</p>
+  <div>
+    {{#each action.keywords}}
+      <div class="item-info-block">
+        <div class="pc-keyword">
+          {{localize (concat "PC.keyword." @key)}}
+        </div>
+        <a data-action="cutActionKeyword" data-keyword="{{@key}}">
+          <i class="fa-regular fa-eraser"></i></a>
+        <input
+          name="system.actions.{{../action._id}}.keywords.{{@key}}"
+          value="{{this}}"
+          data-dtype="String"
+          type="String"
+        />
+      </div>
+    {{/each}}
+  </div>
+</section>

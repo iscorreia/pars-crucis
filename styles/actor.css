@@ -1,10 +1,10 @@
 .ability-header,
-.passive-header,
 .persona-sheet-header,
 .persona-tab,
 .persona-config,
 .pc-item-tab,
-.weapon-header {
+.item-header,
+.keyword-picker {
   h1,
   h2,
   h3,

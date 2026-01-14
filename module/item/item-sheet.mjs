@@ -1,4 +1,6 @@
 const { api, sheets } = foundry.applications;
+import ActionKeywordPicker from "../apps/ac-keyword-picker.mjs";
+import KeywordPicker from "../apps/keyword-picker.mjs";
 import { PC } from "../config.mjs";
 
 //This is the basic class for Pars Crucis Items and should be extended
@@ -18,8 +20,8 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
       icon: "fa-solid fa-magic",
     },
     actions: {
-      addKeyword: this.addKeywordOnClick,
-      addActionKeyword: this.addActionKeywordOnClick,
+      keywordPicker: this.keywordPicker,
+      actionKeywordPicker: this.actionKeywordPicker,
       addDmgAttribute: this.addDmgAttributeOnClick,
       cutKeyword: this.cutKeywordOnClick,
       cutActionKeyword: this.cutActionKeywordOnClick,
@@ -36,6 +38,12 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   async _prepareContext() {
     const document = this.document;
     const system = document.system;
+    const PC = CONFIG.PC;
+
+    /** Create a translated group key for @selectOptions */
+    for (let [_, sk] of Object.entries(PC.skills)) {
+      sk.group = game.i18n.localize(`PC.categories.${[sk.cat]}`);
+    }
     const context = {
       item: document,
       document: document,
@@ -47,55 +55,13 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     return context;
   }
 
-  static async addKeywordOnClick(_, target) {
-    const item = this.document;
-    let keywords = PC[`${target.dataset.type}Keyword`];
-
-    const keywordButtons = Object.entries(keywords).map(([key, data]) => ({
-      action: key,
-      label: game.i18n.localize(data.label),
-      callback: async () => {
-        await item.update({
-          [`system.keywords.${key}`]: null,
-        });
-      },
-    }));
-
-    // Show the keyword picker dialog
-    await api.Dialog.wait({
-      classes: ["keyword-picker"],
-      window: {
-        title: "Selecionar palavra-chave",
-      },
-      content: `<p>Clique para adicionar uma palavra chave ao item ${item.name}</p>`,
-      buttons: keywordButtons,
-    });
+  static async keywordPicker() {
+    new KeywordPicker({ document: this.item })?.render(true);
   }
 
-  static async addActionKeywordOnClick(_, target) {
-    const item = this.document;
-    const acId = target.dataset.acId;
-    let keywords = PC[`${target.dataset.type}Keyword`];
-
-    const keywordButtons = Object.entries(keywords).map(([key, data]) => ({
-      action: key,
-      label: game.i18n.localize(data.label),
-      callback: async () => {
-        await item.update({
-          [`system.actions.${acId}.keywords.${key}`]: null,
-        });
-      },
-    }));
-
-    // Show the keyword picker dialog
-    await api.Dialog.wait({
-      classes: ["keyword-picker"],
-      window: {
-        title: "Selecionar palavra-chave",
-      },
-      content: `<p>Clique para adicionar uma palavra chave ao item ${item.name}</p>`,
-      buttons: keywordButtons,
-    });
+  static async actionKeywordPicker(_, target) {
+    const { acId } = target.dataset;
+    new ActionKeywordPicker({ document: this.item, acId: acId })?.render(true);
   }
 
   static async addDmgAttributeOnClick(_, target) {
@@ -139,21 +105,20 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
 
   static async cutActionKeywordOnClick(_, target) {
     const item = this.document;
-    const acId = target.dataset.acId;
+    const { acId } = target.dataset;
     const keywordKey = target.dataset.keyword;
     item.update({ [`system.actions.${acId}.keywords.-=${keywordKey}`]: null });
   }
 
   static async cutDmgAttributeOnClick(_, target) {
     const item = this.document;
-    const acId = target.dataset.acId;
-    const dmgAtt = target.dataset.att;
+    const { acId, att } = target.dataset;
     const currentArray =
       foundry.utils.getProperty(
         item.system,
         `actions.${acId}.damage.dmgAttributes`
       ) ?? [];
-    const updatedArray = currentArray.filter((att) => att !== dmgAtt);
+    const updatedArray = currentArray.filter((i) => i !== att);
     item.update({
       [`system.actions.${acId}.damage.dmgAttributes`]: updatedArray,
     });
@@ -162,23 +127,23 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
   static async createActionOnClick(_, target) {
     const item = this.document;
     const acType = target.dataset.acType;
-    const actionId = foundry.utils.randomID();
+    const acId = foundry.utils.randomID();
     const newAction = {
       img: item.img,
       name: game.i18n.localize(`PC.${acType}`),
       type: acType,
-      _id: actionId,
+      _id: acId,
     };
 
     await item.update({
-      [`system.actions.${actionId}`]: newAction,
+      [`system.actions.${acId}`]: newAction,
     });
   }
 
   // Deletes an Item Action from the actions collections
   static async deleteActionOnClick(_, target) {
-    const actionId = target.dataset.actionId;
+    const { acId } = target.dataset;
     const item = this.document;
-    item.update({ [`system.actions.-=${actionId}`]: null });
+    item.update({ [`system.actions.-=${acId}`]: null });
   }
 }

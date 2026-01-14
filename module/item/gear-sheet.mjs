@@ -28,16 +28,22 @@ export default class GearSheet extends ParsCrucisItemSheet {
     description: {
       template: "systems/pars-crucis/templates/item/parts/description.hbs",
     },
+    actions: {
+      template: "systems/pars-crucis/templates/item/parts/actions.hbs",
+      scrollable: [".action-list"],
+    },
     config: {
-      template: "systems/pars-crucis/templates/item/gear/details.hbs",
+      template: "systems/pars-crucis/templates/item/gear/config.hbs",
+      classes: ["pc-item-tab"],
     },
   };
 
   static TABS = {
     primary: {
-      initial: "description",
+      initial: "config",
       tabs: [
         { id: "description", label: "PC.description" },
+        { id: "actions", label: "PC.actions" },
         { id: "config", label: "PC.config" },
       ],
     },
@@ -46,6 +52,7 @@ export default class GearSheet extends ParsCrucisItemSheet {
   async _preparePartContext(partId, context) {
     switch (partId) {
       case "description":
+      case "actions":
       case "config":
         context.tab = context.tabs[partId];
         break;

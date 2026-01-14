@@ -48,6 +48,8 @@ export class ActionModel extends foundry.abstract.DataModel {
       }),
       // TEST-only
       difficulty: new NumberField({ nullable: true }),
+      // USE-only
+      usage: new StringField({ initial: "", nullable: true }),
     };
   }
 }
@@ -105,8 +107,13 @@ export class GearModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       info: information(),
+      actions: new TypedObjectField(new EmbeddedDataField(ActionModel), {
+        validateKey: (key) => foundry.data.validators.isValidId(key),
+        initial: {},
+      }),
       cost: itemCost(),
       details: details(),
+      keywords: keywords(),
       description: description(),
     };
   }

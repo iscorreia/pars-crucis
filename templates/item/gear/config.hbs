@@ -1,20 +1,20 @@
-{{! Weapon Details and Config tab }}
+{{! Gear Details and Config tab }}
 
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="config">
   <div class="item-info-config">
     <div class="item-info-block item-name-block">
-      <h5>{{localize "PC.weaponName"}}</h5>
+      <h5>{{localize "PC.gearName"}}</h5>
       <input
         name="name"
         type="Text"
         value="{{item.name}}"
-        placeholder="Nameless Weapon"
+        placeholder="Nameless Gear"
       /></div>
     <div class="item-info-block">
       <h5>{{localize "PC.subtype"}}</h5>
       <select name="system.info.subtype">
         {{selectOptions
-          config.weapon.subtypes
+          config.gear.subtypes
           selected=system.info.subtype
           localize=true
         }}
@@ -24,7 +24,7 @@
       <h5>{{localize "PC.group"}}</h5>
       <select name="system.info.group">
         {{selectOptions
-          (lookup (lookup config.weapon.subtypes system.info.subtype) "groups")
+          (lookup (lookup config.gear.subtypes system.info.subtype) "groups")
           selected=system.info.group
           localize=true
         }}
