@@ -89,7 +89,7 @@
                 <a
                   class="trash-can"
                   data-action="deleteAction"
-                  data-action-id="{{action._id}}"
+                  data-ac-id="{{action._id}}"
                 >
                   <i class="fa-regular fa-trash-can"></i>
                 </a>
@@ -98,8 +98,7 @@
               <div class="action-keyword-line">
                 <a
                   class="add-keyword"
-                  data-action="addActionKeyword"
-                  data-type="action" 
+                  data-action="actionKeywordPicker"
                   data-ac-id="{{action._id}}"
                 >{{localize "PC.keywords"}}
                   <i class="fa-regular fa-plus"></i>
@@ -109,7 +108,6 @@
                     <div class="pc-keyword">
                       {{localize (concat "PC.keyword." obj)}}{{#if keyword}}
                         ({{keyword}}){{/if}}
-                    </div>
                     <a 
                       data-action="cutActionKeyword"
                       data-keyword="{{@key}}"
@@ -117,6 +115,7 @@
                     >
                       <i class="fa-regular fa-eraser"></i>
                     </a>
+                    </div>
                   </div>
                 {{/each}}
               </div>

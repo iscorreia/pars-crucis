@@ -521,7 +521,9 @@
     "equipped": "Equipado",
     "config": "Configurações",
 
+    "abilityName": "Nome da habilidade",
     "weaponName": "Nome do armamento",
+    "gearName": "Mome do item",
     "subtype": "Subtipo",
     "group": "Grupo",
     "subgroup": "Subgrupo",

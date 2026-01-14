@@ -37,14 +37,12 @@ export default class PersonaConfig extends api.HandlebarsApplicationMixin(
     const options = this.options;
     const system = options.document.system;
     const context = { system: system, config: PC };
-
     return context;
   }
 
   static async #handleChanges(_event, _form, formData) {
     const actor = this.options.document;
     const upData = formData.object;
-
     await actor.update(upData);
   }
 }

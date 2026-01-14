@@ -717,7 +717,7 @@ PC.keyword = {
     grenade: { label: "PC.keyword.grenade" },
     instrument: { label: "PC.keyword.instrument" },
     matrix: { label: "PC.keyword.matrix" },
-    gadjet: { label: "PC.keyword.matrix" },
+    gadjet: { label: "PC.keyword.gadjet" },
   },
   offensive: {
     lethality: { label: "PC.keyword.lethality" },
