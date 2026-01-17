@@ -276,15 +276,6 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
             attValues.length > 0 ? Math.max(...attValues) : 0;
           const multipliedDmg = Math.ceil(highestDmgAtt * dmg.dmgAttMultiplier);
           const calculatedDmg = dmg.dmgBase + multipliedDmg;
-          console.log(
-            "DEBUG LOG",
-            weapon.name,
-            dmg,
-            attValues,
-            highestDmgAtt,
-            multipliedDmg,
-            calculatedDmg
-          );
           const dmgType = game.i18n.localize(`PC.dmgType.${dmg.dmgType}.abv`);
           action.damage.dmgVal = calculatedDmg;
           action.damage.dmgTxt = `${calculatedDmg} ${dmgType}`;

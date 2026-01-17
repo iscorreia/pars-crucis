@@ -183,26 +183,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     return roll;
   }
 
-  static async rollAttackOnClick(event, target) {
-    console.log("HERE", this);
-    const { acId, itemId } = target.dataset;
-    const actor = this.actor;
-    const item = actor.items.get(itemId);
-    const action = item.system.actions[acId];
-    const { skill } = action;
-    const { category, modGroup, level, mod } = actor.system.skills[skill];
-    const catMod = actor.system.categoryModifiers[category];
-    const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
-    const dice = this.dice(event);
-    const formula = `${dice} + ${level} + ${mod + catMod + groupMod}`;
-    const roll = new PCRoll(formula);
-    await roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: actor }),
-      rollMode: game.settings.get("core", "rollMode"),
-    });
-    console.log("rollAttackOnClick()", actor, item, action);
-  }
-
   static async rollTestOnClick(event, target) {
     const { acId, itemId } = target.dataset;
     const actor = this.actor;
@@ -210,10 +190,17 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const action = item.system.actions[acId];
     const { difficulty, skill, subtype, type } = action;
     const { category, modGroup, level, mod } = actor.system.skills[skill];
+    const keywords = { ...item.system.keywords, ...action.keywords };
     const catMod = actor.system.categoryModifiers[category];
     const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
+    const modifiers =
+      mod +
+      catMod +
+      groupMod +
+      (Number(keywords?.handling) || 0) +
+      (Number(keywords?.modifier) || 0);
     const dice = this.dice(event);
-    const formula = `${dice} + ${level} + ${mod + catMod + groupMod}`;
+    const formula = `${dice} + ${level} + ${modifiers}`;
     const testLabel = `${game.i18n.localize("PC.testOf")}`;
     const skillLabel = `${game.i18n.localize(PC.skills[skill].label)}`;
     const difLabel = `${game.i18n.localize("PC.difficulty.label")}`;
@@ -234,7 +221,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       effort: action.effort,
       duration: action.duration,
       effect: action.effect,
-      keywords: { ...item.system.keywords, ...action.keywords },
+      keywords: keywords,
       range: action.range,
       prepTime: action.prepTime,
     };

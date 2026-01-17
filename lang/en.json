@@ -608,6 +608,7 @@
       "stack": "Monte",
       "effect": "#Efeito",
       "penalty": "#Penalidade",
+      "modifier": "MOD",
 
       "attribute": "Atributo",
       "skill": "Perícia",

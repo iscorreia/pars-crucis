@@ -747,6 +747,7 @@ PC.keyword = {
     abascant: { label: "PC.keyword.abascant" },
   },
   general: {
+    modifier: { label: "PC.modifier.abv" },
     twoHanded: { label: "PC.keyword.twoHanded" },
     custom: { label: "PC.keyword.custom" },
     reload: { label: "PC.keyword.reload" },
