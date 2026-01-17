@@ -23,15 +23,13 @@ p.info-desc {
   color: var(--color-light-2);
   h1 {
     flex: 3 1 0;
-    font-size: 40px;
     height: 36px;
-    line-height: 20px;
     font-weight: normal;
     input {
-      font-size: 32px;
+      font-size: 21px;
       color: inherit;
       height: 100%;
-      padding-top: 2px;
+      padding-top: 15px;
       padding-left: 5px;
       text-align: left;
     }
@@ -70,8 +68,9 @@ p.info-desc {
   width: 16%;
   height: 46px;
   h4 {
-    font-size: 19px;
+    font-size: 18px;
     height: 18px;
+    line-height: 23px;
   }
   input {
     height: 26px;

@@ -12,9 +12,15 @@
           <h3 class="category-title">{{localize category.label}}</h3>
           <div class="category-level">{{localize "PC.level.abv"}}</div>
           <input
-            class="category-modifier"
+            class="category-modifier
+              {{#if (lt (lookup @root.actor.system.categoryModifiers objs) 0)}}
+                negative
+              {{/if}}
+              {{#if (gt (lookup @root.actor.system.categoryModifiers objs) 0)}}
+                positive
+              {{/if}}"
             name="system.categoryModifiers.{{@key}}"
-            type="String"
+            type="text"
             value="{{numberFormat
               (lookup @root.actor.system.categoryModifiers objs)
               sign=true
@@ -57,13 +63,20 @@
               <input
                 class="skill-level"
                 name="system.skills.{{@key}}.level"
-                type="Number"
                 value="{{skill.level}}"
+                type="number"
+                min="0"
                 data-dtype="Number"
               />
               <input
-                class="skill-mod"
-                type="String"
+                class="skill-mod
+                  {{#if (lt skill.mod 0)}}
+                    negative
+                  {{/if}}
+                  {{#if (gt skill.mod 0)}}
+                    positive
+                  {{/if}}"
+                type="text"
                 name="system.skills.{{@key}}.mod"
                 value="{{numberFormat skill.mod sign=true}}"
                 data-dtype="Number"
@@ -79,10 +92,16 @@
       <div class="group-mod-line">
         <div class="group-label">{{localize (concat "PC." @key)}}</div>
         <input
-          class="group-mod"
+          class="group-mod
+            {{#if (lt this.mod 0)}}
+              negative
+            {{/if}}
+            {{#if (gt this.mod 0)}}
+              positive
+            {{/if}}"
           name="system.groupModifiers.{{@key}}.mod"
           value="{{numberFormat this.mod sign=true}}"
-          type="String"
+          type="text"
           data-dtype="Number"
         />
       </div>

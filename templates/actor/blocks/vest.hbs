@@ -5,8 +5,97 @@
       <h4>{{this.name}}</h4>
     </div>
 
-    <div class="item-keywords"></div>
-    <div class="persona-actions"></div>
+    <div class="item-keywords">
+      {{#each system.keywords}}
+        <div class="pc-keyword">
+          <div class="pc-keyword-label">{{localize
+              (concat "PC.keyword." @key)
+            }}</div>{{#if this}}<div
+              class="pc-keyword-value"
+            >({{this}})</div>{{/if}}
+        </div>
+      {{/each}}
+      {{#each system.actions}}
+        {{#each this.keywords}}
+          <div class="pc-keyword pc-secondary-keyword">
+            <div class="pc-keyword-label">{{localize
+                (concat "PC.keyword." @key)
+              }}</div>{{#if this}}<div
+                class="pc-keyword-value"
+              >({{this}})</div>{{/if}}
+          </div>
+        {{/each}}
+      {{/each}}
+    </div>
+
+    <div class="persona-actions">
+      {{#each system.actions as |action key|}}
+        {{#if (eq action.type "attack")}}
+          <a class="persona-action ac-attack"
+            data-action="rollAttack"
+            data-item-id="{{../this._id}}"
+            data-ac-id="{{action._id}}"
+          >
+            <img
+              class="action-image"
+              src="{{action.img}}"
+              width="16"
+              height="16"
+            />
+            {{#if action.name}}
+              <div class="action-name">{{action.name}}</div>
+            {{else}}
+              <div class="action-name">{{localize
+                  "PC.action.types.attack.label"
+                }}</div>
+            {{/if}}
+          </a>
+        {{/if}}
+        {{#if (eq action.type "test")}}
+          <a
+            class="persona-action ac-test"
+            data-action="rollTest"
+            data-item-id="{{../this._id}}"
+            data-ac-id="{{action._id}}"
+          >
+            <img
+              class="action-image"
+              src="{{action.img}}"
+              width="16"
+              height="16"
+            />
+            {{#if action.name}}
+              <div class="action-name">{{action.name}}</div>
+            {{else}}
+              <div class="action-name">{{localize
+                  "PC.action.types.test.label"
+                }}</div>
+            {{/if}}
+          </a>
+        {{/if}}
+        {{#if (eq action.type "use")}}
+          <a
+            class="persona-action ac-use"
+            data-action="useGear"
+            data-item-id="{{../this._id}}"
+            data-ac-id="{{action._id}}"
+          >
+            <img
+              class="action-image"
+              src="{{action.img}}"
+              width="16"
+              height="16"
+            />
+            {{#if action.name}}
+              <div class="action-name">{{action.name}}</div>
+            {{else}}
+              <div class="action-name">{{localize
+                  "PC.action.types.use.label"
+                }}</div>
+            {{/if}}
+          </a>{{/if}}
+      {{/each}}
+    </div>
 
     <div class="item-controls">
       {{#if this.system.details.equippable}}

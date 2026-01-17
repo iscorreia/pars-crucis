@@ -16,6 +16,12 @@
   --pc-color-silver-bg: #505b68;
   --pc-color-costless-bg: #000;
 
-  --pc-fade-bg-0: #302831;
-  --pc-fade-bg-1: rgba(48, 40, 49, 0.7);
+  --pc-color-negative: #d7481f;
+  --pc-color-light-1: #dfdacb;
+  --pc-color-light-2: #e9ce7f;
+
+  /* --pc-fade-bg-0: #241e24; */
+  --pc-fade-bg-0: #2a232b;
+  /* --pc-fade-bg-1: #241e24f2; */
+  --pc-fade-bg-1: #2a232bf2;
 }

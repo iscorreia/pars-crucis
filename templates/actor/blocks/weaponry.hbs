@@ -15,21 +15,37 @@
         </div>
 
         <div class="item-keywords">
-          {{#each weapon.system.keywords as |value keyword|}}
+          {{#each weapon.system.keywords}}
             <div class="pc-keyword">
               <div class="pc-keyword-label">{{localize
-                  (concat "PC.keyword." keyword)
-                }}</div>{{#if value}}<div
+                  (concat "PC.keyword." @key)
+                }}</div>{{#if this}}<div
                   class="pc-keyword-value"
-                >({{value}})</div>{{/if}}
+                >({{this}})</div>{{/if}}
             </div>
+          {{/each}}
+          {{#each weapon.system.actions}}
+            {{#each this.keywords}}
+              <div class="pc-keyword pc-secondary-keyword">
+                <div class="pc-keyword-label">{{localize
+                    (concat "PC.keyword." @key)
+                  }}</div>{{#if this}}<div
+                    class="pc-keyword-value"
+                  >({{this}})</div>{{/if}}
+              </div>
+            {{/each}}
           {{/each}}
         </div>
 
         <div class="persona-actions weapon-actions">
           {{#each weapon.system.actions as |action key|}}
             {{#if (eq action.type "attack")}}
-              <a class="persona-action ac-attack" data-action="clickGearAttack">
+              <a
+                class="persona-action ac-attack"
+                data-action="rollAttack"
+                data-item-id="{{weapon._id}}"
+                data-ac-id="{{action._id}}"
+              >
                 <img
                   class="action-image"
                   src="{{action.img}}"
@@ -48,7 +64,7 @@
             {{#if (eq action.type "test")}}
               <a
                 class="persona-action ac-test"
-                data-action="rollGearTest"
+                data-action="rollTest"
                 data-item-id="{{weapon._id}}"
                 data-ac-id="{{action._id}}"
               >
@@ -70,7 +86,7 @@
             {{#if (eq action.type "use")}}
               <a
                 class="persona-action ac-use"
-                data-action="clickGearUse"
+                data-action="useGear"
                 data-item-id="{{weapon._id}}"
                 data-ac-id="{{action._id}}"
               >

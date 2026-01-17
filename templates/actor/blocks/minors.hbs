@@ -39,16 +39,17 @@
           {{/if}}
         </h4>
         <div class="minor-line">
+          <div class="minor-value">
+            {{min.base}}
+          </div>
           <input
-            class="minor-value"
-            type="Number"
-            name="system.minors.{{@key}}.override"
-            value="{{min.override}}"
-            placeholder="{{min.base}}"
-            data-dtype="Number"
-          />
-          <input
-            class="minor-modifier"
+            class="minor-modifier
+              {{#if (lt min.mod 0)}}
+                negative
+              {{/if}}
+              {{#if (gt min.mod 0)}}
+                positive
+              {{/if}}""
             type="String"
             name="system.minors.{{@key}}.mod"
             value="{{numberFormat min.mod sign=true}}"
