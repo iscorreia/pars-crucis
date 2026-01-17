@@ -93,10 +93,12 @@
       "label": "Sub atributos",
       "pv": {
         "label": "Pontos de Vida",
+        "shortLabel": "Vida",
         "abv": "PV"
       },
       "pe": {
         "label": "Pontos de Essência",
+        "shortLabel": "Essência",
         "abv": "PE"
       }
     },
@@ -520,6 +522,7 @@
     "stackable": "Agrupável",
     "equipped": "Equipado",
     "config": "Configurações",
+    "effect": "Efeito",
 
     "abilityName": "Nome da habilidade",
     "weaponName": "Nome do armamento",

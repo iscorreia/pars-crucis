@@ -3,8 +3,22 @@ import PCRoll from "./basic-roll.mjs";
 export default class TestRoll extends PCRoll {
   async _prepareChatRenderContext(options = {}) {
     const context = await super._prepareChatRenderContext(options);
-    context.success = this.options.success;
-    context.margin = this.options.margin;
+    const { info, margin, success, itemName, actionName, img, type } =
+      this.options;
+
+    Object.assign(context, {
+      success: success,
+      margin: margin,
+      itemName: itemName,
+      actionName: actionName,
+      img: img,
+      info: info,
+      type: type,
+    });
+
+    // console.log("TestRoll this", this);
+    // console.log("TextRoll context", context);
+
     return context;
   }
 

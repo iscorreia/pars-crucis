@@ -10,9 +10,20 @@
     color: var(--color-light-4);
   }
 }
-
+.message-sender {
+  font-size: 18px;
+  line-height: 20px;
+  height: 20px;
+  font-family: "LTRemark Bold";
+  z-index: 2;
+}
+.flavor-text {
+  height: 16px;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-light-2);
+}
 /* divisão usar --color-light-5 */
-
 .pc-dice-roll {
   h1,
   h2,
@@ -27,6 +38,61 @@
   ul,
   ol {
     list-style: none;
+  }
+  .action-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 3px;
+    img {
+      height: 35px;
+      width: 35px;
+      border-radius: 5px 0 0 0;
+    }
+    .roll-name {
+      margin-left: 3px;
+      .item-name {
+        height: 19px;
+        font-size: 17px;
+        font-family: "BarlowCondensed Medium";
+      }
+      .action-name {
+        height: 16px;
+        font-family: "Amiri";
+        color: var(--color-light-2);
+      }
+    }
+  }
+  .action-desc {
+    margin-bottom: 3px;
+    .item-keywords {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      row-gap: 2px;
+      column-gap: 2px;
+    }
+  }
+  .info-line {
+    align-items: start;
+    min-height: 17px;
+    line-height: 15px;
+    font-size: 13px;
+    .info-label {
+      font-family: "Amiri";
+      margin-right: 3px;
+      color: var(--color-light-3);
+    }
+  }
+  .pc-roll-flavor {
+    /* text-align: center; */
+    height: 16px;
+    line-height: 17px;
+    font-family: "Amiri";
+    font-size: 14.5px;
   }
   .pc-roll-block {
     display: flex;
@@ -44,6 +110,9 @@
         line-height: 14px;
         margin-bottom: 2px;
         color: var(--color-light-3);
+        border-width: 1px 0 0 0;
+        border-style: solid;
+        border-color: var(--color-light-5);
       }
       .pc-dices {
         height: 24px;
@@ -119,7 +188,7 @@
         background: var(--pc-fade-bg-0);
         border: 1px solid var(--color-light-5);
         color: var(--color-light-1);
-        border-radius: 3px;
+        border-radius: 0 3px 3px 3px;
         font-family: "LTRemark Bold";
         font-size: 40px;
         padding-top: 3px;
@@ -147,6 +216,7 @@
     .success {
     }
     .failure {
+      color: var(--pc-color-negative);
     }
     .pc-test-result {
       height: 100%;

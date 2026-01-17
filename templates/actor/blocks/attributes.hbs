@@ -14,17 +14,16 @@
           {{/if}}
         </h2>
         <div class="att-field">
-          <input
-            class="att-value"
-            type="Number"
-            name="system.attributes.{{@key}}.override"
-            value="{{att.override}}"
-            placeholder="{{att.base}}"
-            data-dtype="Number"
-          />
+          <div class="att-value">{{att.base}}</div>
           <div class="att-add">
             <input
-              class="att-modifier"
+              class="att-modifier
+                {{#if (lt att.mod 0)}}
+                  negative
+                {{/if}}
+                {{#if (gt att.mod 0)}}
+                  positive
+                {{/if}}"
               type="String"
               name="system.attributes.{{@key}}.mod"
               value="{{numberFormat att.mod sign=true}}"
@@ -42,7 +41,7 @@
 </section>
 <section class="subattributes">
   <div class="subattribute-block">
-    <h4 class="subattribute-name">{{localize "PC.subattributes.pv.label"}}</h4>
+    <h4 class="subattribute-name">{{localize "PC.subattributes.pv.shortLabel"}}</h4>
     <div class="subattribute-field resource-field">
       <span
         class="resource-bar pv-bar"
@@ -68,7 +67,7 @@
   </div>
   <div class="separator"></div>
   <div class="subattribute-block">
-    <h4 class="subattribute-name">{{localize "PC.subattributes.pe.label"}}</h4>
+    <h4 class="subattribute-name">{{localize "PC.subattributes.pe.shortLabel"}}</h4>
     <div class="subattribute-field resource-field">
       <span
         class="resource-bar pe-bar"
@@ -94,7 +93,7 @@
   </div>
   <div class="separator"></div>
   <div class="subattribute-block">
-    <h4 class="subattribute-name">{{localize "PC.movement.label"}}</h4>
+    <h4 class="subattribute-name movement">{{localize "PC.movement.label"}}</h4>
     <div class="subattribute-field">
       <input
         class="subatt-value"

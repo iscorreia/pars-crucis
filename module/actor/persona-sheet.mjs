@@ -20,17 +20,16 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       icon: "fa fa-address-card",
     },
     actions: {
-      clickAbilityAttack: this.abilityAttack,
-      clickAbilityUse: this.abilityUse,
       clickDelete: this.deleteItemOnClick,
       clickEdit: this.editItemOnClick,
       clickEquip: this.equipItemOnClick,
-      clickGearAttack: this.gearAttack,
-      clickGearUse: this.gearUse,
+      rollAttack: this.rollAttackOnClick,
       rollAttribute: this.rollAttributeOnClick,
-      rollAbilityTest: this.rollGearTestOnClick,
-      rollGearTest: this.rollGearTestOnClick,
+      rollAbilityAttack: this.rollAttackOnClick,
+      rollTest: this.rollTestOnClick,
       rollSkill: this.rollSkillOnClick,
+      useAbility: this.useGearOnClick,
+      useGear: this.useGearOnClick,
       sortAbilities: this.changeSortMode,
       switchLuck: this.switchLuckOnClick,
       toggleExpand: this.toggleAbilityExpand,
@@ -61,7 +60,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     },
     gear: {
       template: "systems/pars-crucis/templates/actor/parts/gear.hbs",
-      scrollable: [".gear-list-block"],
+      scrollable: [".item-list-block"],
     },
     passives: {
       template: "systems/pars-crucis/templates/actor/parts/passives.hbs",
@@ -184,15 +183,32 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     return roll;
   }
 
-  static async rollAbilityTestOnClick(event, target) {
-    console.log("TEST ABILITY HERE");
+  static async rollAttackOnClick(event, target) {
+    console.log("HERE", this);
+    const { acId, itemId } = target.dataset;
+    const actor = this.actor;
+    const item = actor.items.get(itemId);
+    const action = item.system.actions[acId];
+    const { skill } = action;
+    const { category, modGroup, level, mod } = actor.system.skills[skill];
+    const catMod = actor.system.categoryModifiers[category];
+    const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
+    const dice = this.dice(event);
+    const formula = `${dice} + ${level} + ${mod + catMod + groupMod}`;
+    const roll = new PCRoll(formula);
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: actor }),
+      rollMode: game.settings.get("core", "rollMode"),
+    });
+    console.log("rollAttackOnClick()", actor, item, action);
   }
 
-  static async rollGearTestOnClick(event, target) {
+  static async rollTestOnClick(event, target) {
     const { acId, itemId } = target.dataset;
-    const item = this.actor.items.get(itemId);
-    const { difficulty, skill } = item.system.actions[acId];
     const actor = this.actor;
+    const item = actor.items.get(itemId);
+    const action = item.system.actions[acId];
+    const { difficulty, skill } = action;
     const { category, modGroup, level, mod } = actor.system.skills[skill];
     const catMod = actor.system.categoryModifiers[category];
     const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
@@ -201,8 +217,32 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const testLabel = `${game.i18n.localize("PC.testOf")}`;
     const skillLabel = `${game.i18n.localize(PC.skills[skill].label)}`;
     const difLabel = `${game.i18n.localize("PC.difficulty.label")}`;
-    const flavor = `${testLabel} ${skillLabel} — ${difLabel} ${difficulty}`;
-    const RollOptions = { flavor: flavor, difficulty: difficulty };
+    const flavor = `${testLabel} ${skillLabel} — ${difLabel} ${
+      difficulty || 10
+    }`;
+    // Additional information passed to the roll
+    const info = {
+      damaging: action.damaging,
+      damage: action.damage?.dmgTxt,
+      effort: action.effort,
+      duration: action.duration,
+      effect: action.effect,
+      keywords: { ...item.system.keywords, ...action.keywords },
+      range: action.range,
+      prepTime: action.prepTime,
+    };
+    // Important options passed to the roll
+    const RollOptions = {
+      flavor: flavor,
+      difficulty: difficulty,
+      img: action.img || item.img,
+      itemName: item.name,
+      actionName: action.name,
+      info: info,
+      type: action.type,
+    };
+
+    console.log("rollTestOnClick", actor, item, item.system.actions[acId]);
 
     // Create the Test Roll
     const roll = new TestRoll(formula, {}, RollOptions);
@@ -236,7 +276,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     return roll;
   }
 
-  static async gearUse(_, target) {
+  static async useGearOnClick(_, target) {
     const { acId, itemId } = target.dataset;
     const item = this.actor.items.get(itemId);
     const action = item.system.actions[acId];
@@ -252,13 +292,11 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     });
   }
 
-  static async switchLuckOnClick(event, target) {
+  static async switchLuckOnClick(_, target) {
     const dataset = target.dataset;
     const luckBooleans = this.actor.system.luck.booleans;
     const index = dataset.luckIndex;
-
     luckBooleans[index] = !luckBooleans[index];
-
     this.actor.update({ "system.luck.booleans": luckBooleans });
   }
 
@@ -372,18 +410,6 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const item = this.actor.items.get(target.dataset.itemId);
     const current = item.getFlag("pars-crucis", "expanded") ?? false;
     item.setFlag("pars-crucis", "expanded", !current);
-  }
-
-  static async abilityAttack() {
-    console.log("ATTACK ABILITY HERE");
-  }
-
-  static async abilityUse() {
-    console.log("USE ABILITY HERE");
-  }
-
-  static async gearAttack() {
-    console.log("ATTACK GEAR HERE");
   }
 
   static async changeSortMode(_, target) {

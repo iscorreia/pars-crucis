@@ -1,4 +1,74 @@
 <div class="pc-dice-roll">
+  {{log this}}
+  <div class="action-head">
+    <img src="{{img}}" width="24" height="24" />
+    <div class="roll-name">
+      <div class="item-name">
+        {{itemName}}
+      </div>
+      <div class="action-name">
+        {{actionName}}
+      </div>
+    </div>
+  </div>
+
+  <div class="action-desc">
+    {{#if info.desc}}
+      <div class="info-line">
+        {{info.desc}}
+      </div>
+    {{/if}}
+    {{#if info.effort}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.effort.label"}}:</span>{{info.effort}}
+      </div>
+    {{/if}}
+    {{#if info.prepTime}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.prepTime.label"}}:</span>{{info.prepTime}}
+      </div>
+    {{/if}}
+    {{#if info.range}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.range.label"}}:</span>{{info.range}}
+      </div>
+    {{/if}}
+    {{#if info.damaging}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.damage"}}:</span>{{info.damage}}
+      </div>
+    {{/if}}
+    {{#if info.effect}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.effect"}}:</span>{{info.effect}}
+      </div>
+    {{/if}}
+    {{#if info.duration}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.duration.label"}}:</span>{{info.duration}}
+      </div>
+    {{/if}}
+    {{#if info.keywords}}
+      <div class="item-keywords">
+        {{#each info.keywords}}
+          <div class="pc-keyword">
+            <div class="pc-keyword-label">{{localize
+                (concat "PC.keyword." @key)
+              }}</div>{{#if this}}<div
+                class="pc-keyword-value"
+              >({{this}})</div>{{/if}}
+          </div>
+        {{/each}}
+      </div>
+    {{/if}}
+  </div>
+
   {{#if flavor}}
     <div class="pc-roll-flavor">{{flavor}}</div>
   {{/if}}
@@ -15,27 +85,29 @@
       <h1 class="pc-roll-total">{{total}}</h1>
     </div>
   </div>
-  <div class="pc-result-block">
-    {{#if success}}
-      <div class="pc-test success">
-        {{localize "PC.success"}}
-      </div>
-      <div class="pc-test-result">
-        <h5 class="pc-margin">
-          {{localize "PC.marginOfSuccess.abv"}}
-          {{margin}}
-        </h5>
-      </div>
-    {{else}}
-      <div class="pc-test failure">
-        {{localize "PC.failure"}}
-      </div>
-      <div class="pc-test-result">
-        <h5 class="pc-margin">
-          {{localize "PC.marginOfFailure.abv"}}
-          {{margin}}
-        </h5>
-      </div>
-    {{/if}}
-  </div>
+  {{#if (eq type "test")}}
+    <div class="pc-result-block">
+      {{#if success}}
+        <div class="pc-test success">
+          {{localize "PC.success"}}
+        </div>
+        <div class="pc-test-result">
+          <h5 class="pc-margin">
+            {{localize "PC.marginOfSuccess.abv"}}
+            {{margin}}
+          </h5>
+        </div>
+      {{else}}
+        <div class="pc-test failure">
+          {{localize "PC.failure"}}
+        </div>
+        <div class="pc-test-result">
+          <h5 class="pc-margin">
+            {{localize "PC.marginOfFailure.abv"}}
+            {{margin}}
+          </h5>
+        </div>
+      {{/if}}
+    </div>
+  {{/if}}
 </div>

@@ -15,6 +15,7 @@ import {
 import PCRoll from "./module/rolls/basic-roll.mjs";
 import { PCChatMessage } from "./module/chat/chat-message.mjs";
 import TestRoll from "./module/rolls/test-roll.mjs";
+import onRenderChatMessageHTML from "./hooks/onRenderChatMessageHTML.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
@@ -90,6 +91,11 @@ Hooks.once("init", () => {
 
   preloadHandlebarsTemplates();
 
+  Handlebars.registerHelper("lt", (a, b) => Number(a) < Number(b));
+  Handlebars.registerHelper("gt", (a, b) => Number(a) > Number(b));
+  Handlebars.registerHelper("lte", (a, b) => Number(a) <= Number(b));
+  Handlebars.registerHelper("gte", (a, b) => Number(a) >= Number(b));
+
   /**
    * Set an initiative formula for the system
    * Formula: 1d10 + Reflexo (derived) + Reflexo (modifiers)
@@ -99,3 +105,5 @@ Hooks.once("init", () => {
     formula: "1d10 + @minors.ref.derived + @minors.ref.mod",
   };
 });
+
+onRenderChatMessageHTML();

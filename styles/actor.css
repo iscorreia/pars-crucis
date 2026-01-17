@@ -20,12 +20,16 @@
     overflow-y: visible;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-family: "LTRemark Bold";
+    font-size: 28px;
+    line-height: 32px;
   }
   h2 {
     height: 24px;
     line-height: 30px;
     font-size: 26px;
     font-family: "LTRemark Black";
+    color: var(--pc-color-light-1);
   }
   h3 {
     height: 22px;
@@ -36,7 +40,9 @@
     color: var(--color-light-3);
   }
   h4 {
-    font-size: var(--font-size-20);
+    color: var(--pc-color-light-1);
+    font-weight: normal;
+    font-family: "LTRemark Bold";
   }
   input {
     padding: 0;
@@ -61,15 +67,18 @@
   flex-direction: row;
   height: 150px;
   margin-bottom: 5px;
+  input::placeholder {
+    color: var(--color-light-4);
+  }
 }
 .profile-img {
   margin: -5px;
   position: relative;
 }
 h1.name {
-  font-size: 40px;
+  font-size: 28px;
   height: 26px;
-  line-height: 20px;
+  line-height: 32px;
   font-weight: normal;
   border-color: var(--color-light-6);
   border-style: solid;
@@ -105,6 +114,7 @@ h1.actor-name {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 1 0;
 }
 .separator {
   margin: auto 1px;
@@ -129,6 +139,9 @@ h1.actor-name {
     padding-top: 1px;
     height: 36px;
     width: 60%;
+    text-align: center;
+    line-height: 38px;
+    color: var(--color-light-4);
   }
   .att-add {
     display: flex;
@@ -137,14 +150,26 @@ h1.actor-name {
     width: 40%;
     .att-modifier,
     .att-static {
-      font-size: 24px;
+      font-size: 22px;
       height: 50%;
+    }
+    .att-modifier {
+      color: var(--color-light-5);
+      padding-top: 1px;
+      border-radius: 5px 0 5px 0;
+    }
+    .positive {
+      color: var(--pc-color-light-1);
+    }
+    .negative {
+      color: var(--pc-color-negative);
     }
     .att-static {
       line-height: 20px;
-      font-size: 22px;
+      font-size: 21px;
       font-style: italic;
       text-align: center;
+      color: var(--color-light-4);
     }
   }
 }
@@ -152,12 +177,19 @@ h1.actor-name {
   .separator {
     height: 30px;
   }
-  > .subattribute-block {
+  /* > .subattribute-block {
     flex: 1 1 0;
-  }
+  } */
 }
 .subattribute-name {
   height: 18px;
+  font-family: "LTRemark Regular";
+  font-size: 20px;
+  z-index: 1;
+}
+h4.movement {
+  font-size: 18px;
+  padding-top: 1px;
 }
 .subattribute-field {
   position: relative;
@@ -166,7 +198,7 @@ h1.actor-name {
   align-items: center;
   height: 22px;
   width: 100%;
-  background: var(--color-cool-4);
+  background: var(--pc-fade-bg-0);
   border-radius: 5px 0 5px 0;
   input {
     height: 100%;
@@ -294,26 +326,36 @@ h1.actor-name {
     height: 22px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     font-family: "Modesto Condensed";
     .minor-value {
       text-align: center;
       height: 100%;
       width: 55%;
-      padding-top: 1px;
       font-size: 25px;
+      line-height: 22px;
+      color: var(--color-light-4);
     }
     .minor-modifier {
       text-align: center;
-      height: 100%;
+      height: 18px;
       width: 45%;
       font-size: 19px;
+      color: var(--color-light-5);
+      border-radius: 5px 0 5px 0;
+    }
+    .positive {
+      color: var(--pc-color-light-1);
+    }
+    .negative {
+      color: var(--pc-color-negative);
     }
   }
   h4 {
     height: 18px;
     margin: 0;
-    font-weight: normal;
-    font-size: 19px;
+    font-size: 16.5px;
+    font-family: "BarlowCondensed Regular";
   }
 }
 /* MITIGATION */
@@ -403,6 +445,7 @@ h1.actor-name {
           height: 16px;
           font-size: 19px;
           text-align: center;
+          color: var(--color-light-4);
         }
         /* .aux-mod {
           width: 50%;
@@ -481,7 +524,6 @@ h1.actor-name {
   grid-template-rows: repeat(2, auto);
   column-gap: 10px;
   grid-auto-columns: 1fr;
-  /* height: 400px; */
   --skill-value-width: 25px;
   input {
     font-family: "SR";
@@ -499,7 +541,6 @@ h1.actor-name {
     margin-bottom: 5px;
     .category-title {
       width: calc(100% - var(--skill-value-width) - var(--skill-value-width));
-      font-size: 23px;
       line-height: 24px;
     }
     .category-level {
@@ -519,6 +560,13 @@ h1.actor-name {
       width: var(--skill-value-width);
       font-size: 19px;
       border-radius: 0 5px 0 5px;
+      color: var(--color-light-5);
+    }
+    .positive {
+      color: var(--pc-color-light-1);
+    }
+    .negative {
+      color: var(--pc-color-negative);
     }
   }
   .skill {
@@ -529,8 +577,8 @@ h1.actor-name {
     height: 28px;
     margin: 0;
     a {
-      font-family: "Modesto Condensed";
-      font-size: 22px;
+      font: 20px "BarlowCondensed Medium", sans-serif;
+      color: var(--pc-color-light-1);
     }
     .skill-title {
       display: flex;
@@ -549,6 +597,7 @@ h1.actor-name {
     .skill-att {
       width: 70px;
       text-align: center;
+      color: var(--color-light-4);
     }
     .skill-hard {
       display: flex;
@@ -575,6 +624,13 @@ h1.actor-name {
       font-size: 19px;
       padding-top: 2px;
       border-radius: 5px 0 5px 0;
+      color: var(--color-light-5);
+    }
+    .positive {
+      color: var(--pc-color-light-1);
+    }
+    .negative {
+      color: var(--pc-color-negative);
     }
   }
 }
@@ -636,6 +692,13 @@ h1.actor-name {
       font-size: 19px;
       border-radius: 5px 0 5px 0;
       font-family: "SR";
+      color: var(--color-light-5);
+    }
+    .positive {
+      color: var(--pc-color-light-1);
+    }
+    .negative {
+      color: var(--pc-color-negative);
     }
   }
 }
@@ -660,6 +723,7 @@ h1.actor-name {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 3px;
     .empty-space {
       width: 70px;
     }
@@ -708,28 +772,31 @@ h1.actor-name {
     align-items: center;
     justify-content: space-between;
     .item-title {
-      width: 180px;
+      width: 160px;
       display: flex;
       flex-direction: row;
       align-items: center;
       h4 {
         padding: 1px 0 0 2px;
         line-height: 23px;
-        font-size: 22px;
-        font-weight: normal;
+        /* font-size: 19px; */
+        font-size: 17px;
+        /* font-size: 18.5px; */
+        font-family: "BarlowCondensed Regular";
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
       }
     }
     .item-keywords {
-      width: 200px;
+      width: 220px;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
       flex-wrap: wrap;
       row-gap: 2px;
+      column-gap: 2px;
     }
     .item-controls {
       display: flex;
@@ -761,7 +828,6 @@ h1.actor-name {
   border-width: 1px;
   border-radius: 3px;
   padding: 0 2px;
-  margin-left: 2px;
   text-align: center;
   line-height: 14px;
   font-size: var(--pc-font-size-small);
@@ -771,6 +837,10 @@ h1.actor-name {
   .pc-keyword-value {
     margin-left: 2px;
   }
+}
+.pc-secondary-keyword {
+  border-style: dashed;
+  filter: brightness(0.65);
 }
 
 /* ABILITIES TAB */
@@ -829,6 +899,8 @@ h1.actor-name {
       overflow: hidden;
       text-overflow: ellipsis;
       margin-left: 3px;
+      font: 15px "BarlowCondensed Regular";
+      line-height: 15px;
     }
   }
   .ac-attack {
@@ -972,6 +1044,7 @@ h3.empty-list-title {
         .editor-menu {
           justify-content: center;
           padding: 0;
+          background-color: var(--pc-fade-bg-0);
           li {
             button {
               padding: 0 5px;
@@ -988,4 +1061,26 @@ h3.empty-list-title {
       }
     }
   }
+}
+
+/* BACKGROUND IMAGE */
+.pc-actor-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: right -25% top -35px;
+  /* background-position: center top -35px; */
+  /* background-position: center; */
+  background-size: 160px;
+  opacity: 0.3; /* adjust opacity freely */
+  pointer-events: none;
+}
+.chat-message {
+  position: relative;
+  z-index: 1; /* ensures text sits above your bg layer */
+}
+.chat-message > *:not(.pc-actor-bg) {
+  position: relative;
+  z-index: 2;
 }
