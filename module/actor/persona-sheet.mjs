@@ -23,9 +23,9 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       clickDelete: this.deleteItemOnClick,
       clickEdit: this.editItemOnClick,
       clickEquip: this.equipItemOnClick,
-      rollAttack: this.rollAttackOnClick,
+      rollAttack: this.rollTestOnClick,
       rollAttribute: this.rollAttributeOnClick,
-      rollAbilityAttack: this.rollAttackOnClick,
+      rollAbilityAttack: this.rollTestOnClick,
       rollTest: this.rollTestOnClick,
       rollSkill: this.rollSkillOnClick,
       useAbility: this.useGearOnClick,
@@ -208,7 +208,7 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const actor = this.actor;
     const item = actor.items.get(itemId);
     const action = item.system.actions[acId];
-    const { difficulty, skill } = action;
+    const { difficulty, skill, subtype, type } = action;
     const { category, modGroup, level, mod } = actor.system.skills[skill];
     const catMod = actor.system.categoryModifiers[category];
     const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
@@ -217,9 +217,16 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
     const testLabel = `${game.i18n.localize("PC.testOf")}`;
     const skillLabel = `${game.i18n.localize(PC.skills[skill].label)}`;
     const difLabel = `${game.i18n.localize("PC.difficulty.label")}`;
-    const flavor = `${testLabel} ${skillLabel} — ${difLabel} ${
-      difficulty || 10
-    }`;
+    let flavor = `${testLabel} ${skillLabel}`;
+    if (type === "test") flavor = `${flavor} — ${difLabel} ${difficulty || 10}`;
+    if (type === "attack" && subtype) {
+      const versusLabel = `${game.i18n.localize("PC.versus")}`;
+      const counter = PC.versus[subtype];
+      const counterAttLabel = game.i18n.localize(
+        `PC.attributes.${counter}.abv`
+      );
+      flavor = `${flavor} — ${versusLabel} ${counterAttLabel}`;
+    }
     // Additional information passed to the roll
     const info = {
       damaging: action.damaging,
@@ -239,10 +246,10 @@ export class PersonaSheet extends api.HandlebarsApplicationMixin(
       itemName: item.name,
       actionName: action.name,
       info: info,
-      type: action.type,
+      type: type,
     };
 
-    console.log("rollTestOnClick", actor, item, item.system.actions[acId]);
+    // console.log("rollTestOnClick", actor, item, item.system.actions[acId]); // DEBUG logging
 
     // Create the Test Roll
     const roll = new TestRoll(formula, {}, RollOptions);

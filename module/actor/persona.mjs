@@ -250,10 +250,18 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     });
     this.passives = parent.itemTypes.passive;
     const passivesData = this.passives;
-    const weaponry = this.weaponry;
+    // const weaponry = this.weaponry;
+    const { abilities, weaponry, vest, accessories, gear } = this;
+    const itemGroupOne = [
+      ...abilities,
+      ...weaponry,
+      ...vest,
+      ...accessories,
+      ...gear,
+    ];
 
     // Calculates equipped weapons damage
-    for (let [_, weapon] of Object.entries(weaponry)) {
+    for (let [_, weapon] of Object.entries(itemGroupOne)) {
       const actions = weapon.system.actions;
       for (let [_, action] of Object.entries(actions)) {
         if (action.damaging) {
@@ -268,9 +276,17 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
             attValues.length > 0 ? Math.max(...attValues) : 0;
           const multipliedDmg = Math.ceil(highestDmgAtt * dmg.dmgAttMultiplier);
           const calculatedDmg = dmg.dmgBase + multipliedDmg;
+          console.log(
+            "DEBUG LOG",
+            weapon.name,
+            dmg,
+            attValues,
+            highestDmgAtt,
+            multipliedDmg,
+            calculatedDmg
+          );
           const dmgType = game.i18n.localize(`PC.dmgType.${dmg.dmgType}.abv`);
           action.damage.dmgVal = calculatedDmg;
-
           action.damage.dmgTxt = `${calculatedDmg} ${dmgType}`;
           if (!dmg.scalable) {
             action.damage.dmgTxt = `[${calculatedDmg}] ${dmgType}`;

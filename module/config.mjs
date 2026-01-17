@@ -542,6 +542,17 @@ PC.action = {
   },
 };
 
+PC.versus = {
+  melee: "def",
+  throw: "def",
+  projectile: "def",
+  jet: "def",
+  aoe: "def",
+  affliction: "esp",
+  mind: "cog",
+  social: "ego",
+};
+
 PC.weapon = {
   subtypes: {
     melee: {
