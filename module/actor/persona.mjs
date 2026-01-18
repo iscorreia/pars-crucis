@@ -366,7 +366,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
   }
 }
 
-function luckBooleans(luck) {
+export function luckBooleans(luck) {
   let luckBooleans = luck.booleans.length;
   luck.max < 0 ? (luck.max = 0) : luck.max;
 
@@ -455,7 +455,7 @@ function groupField() {
   });
 }
 
-function eachAttribute(objectMap, callback) {
+export function eachAttribute(objectMap, callback) {
   for (let [key, attribute] of Object.entries(objectMap)) {
     callback(attribute, key);
   }
@@ -473,7 +473,7 @@ function deriveAttribute(att) {
   return att;
 }
 
-function calculateStatic(att) {
+export function calculateStatic(att) {
   att.static = Math.max(10 + att.derived + att.mod, 10);
   return att;
 }

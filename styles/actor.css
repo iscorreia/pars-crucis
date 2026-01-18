@@ -219,6 +219,7 @@ h4.movement {
     font-family: "Cambria";
     font-size: 24px;
     font-weight: bold;
+    width: 50%;
   }
   .resource-line {
     position: absolute;
@@ -238,6 +239,7 @@ h4.movement {
       text-align: left;
       padding-left: 2px;
       background-color: inherit;
+      color: var(--color-light-4);
     }
   }
 }
@@ -577,7 +579,9 @@ h4.movement {
     height: 28px;
     margin: 0;
     a {
-      font: 20px "BarlowCondensed Medium", sans-serif;
+      font:
+        20px "BarlowCondensed Medium",
+        sans-serif;
       color: var(--pc-color-light-1);
     }
     .skill-title {
@@ -1083,4 +1087,14 @@ h3.empty-list-title {
 .chat-message > *:not(.pc-actor-bg) {
   position: relative;
   z-index: 2;
+}
+
+/* PDM SHEET */
+.experience {
+  .challenge {
+    width: 30%;
+  }
+  .challenge-name {
+    width: 70%;
+  }
 }

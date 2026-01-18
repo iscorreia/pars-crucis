@@ -1,6 +1,7 @@
 {
   "PC": {
     "configPersona": "Configuração de Persona",
+    "configPDM": "Configuração de PDM",
     "name": "Nome",
     "origins": {
       "capri": "Capríaco",
@@ -510,6 +511,7 @@
     },
     "price": "Preço",
     "xp": "XP",
+    "challenge": "Desafio",
     "pts": "PTS",
     "ptsSum": "Saldo de PTS",
 
