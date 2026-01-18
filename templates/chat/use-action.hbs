@@ -1,6 +1,79 @@
-<div>
-  {{log "ACTOR" actor}}
-  {{log "ITEM" item}}
-  {{log "ACTION" action}}
-  <div>RENDERING</div>
+{{! USABLE ACTION }}
+
+<div class="use-action">
+  {{! receives itemName, actionName, img, info }}
+  <div class="action-head">
+    <img src="{{img}}" />
+    <div class="roll-name">
+      <div class="item-name">
+        {{itemName}}
+      </div>
+      <div class="action-name">
+        {{actionName}}
+      </div>
+    </div>
+  </div>
+
+  <div class="action-desc">
+    {{#if info.desc}}
+      <div class="info-line">
+        {{info.desc}}
+      </div>
+    {{/if}}
+    {{#if info.usage}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.action.types.use.label"}}:</span>{{info.usage}}
+      </div>
+    {{/if}}
+    {{#if info.effort}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.effort.label"}}:</span>{{info.effort}}
+      </div>
+    {{/if}}
+    {{#if info.prepTime}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.prepTime.label"}}:</span>{{info.prepTime}}
+      </div>
+    {{/if}}
+    {{#if info.range}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.range.label"}}:</span>{{info.range}}
+      </div>
+    {{/if}}
+    {{#if info.damaging}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.damage"}}:</span>{{info.damage}}
+      </div>
+    {{/if}}
+    {{#if info.effect}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.effect"}}:</span>{{info.effect}}
+      </div>
+    {{/if}}
+    {{#if info.duration}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.duration.label"}}:</span>{{info.duration}}
+      </div>
+    {{/if}}
+    {{#if info.keywords}}
+      <div class="item-keywords">
+        {{#each info.keywords}}
+          <div class="pc-keyword">
+            <div class="pc-keyword-label">{{localize
+                (concat "PC.keyword." @key)
+              }}</div>{{#if this}}<div
+                class="pc-keyword-value"
+              >({{this}})</div>{{/if}}
+          </div>
+        {{/each}}
+      </div>
+    {{/if}}
+  </div>
 </div>

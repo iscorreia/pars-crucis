@@ -24,7 +24,8 @@
   color: var(--color-light-2);
 }
 /* divisão usar --color-light-5 */
-.pc-dice-roll {
+.pc-dice-roll,
+.use-action {
   h1,
   h2,
   h3,
@@ -130,7 +131,9 @@
           background-size: 24px 24px;
           text-align: center;
           color: var(--color-light-2);
-          text-shadow: 0 0 1px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.6);
+          text-shadow:
+            0 0 1px rgba(0, 0, 0, 0.9),
+            0 0 2px rgba(0, 0, 0, 0.6);
           filter: brightness(0.68) sepia(0.1) hue-rotate(358deg) contrast(2.5);
         }
         .d4 {
@@ -155,7 +158,9 @@
           /* color: #18520b; */
           color: #45ff1b;
           /* filter: sepia(0.8) hue-rotate(60deg); */
-          text-shadow: 0 0 1px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.6);
+          text-shadow:
+            0 0 1px rgba(0, 0, 0, 0.9),
+            0 0 2px rgba(0, 0, 0, 0.6);
           filter: brightness(0.68) sepia(0.8) hue-rotate(60deg) contrast(2.5);
         }
         .min {
@@ -163,7 +168,9 @@
           color: #ff7474;
           /* filter: sepia(0.5) hue-rotate(-60deg); */
 
-          text-shadow: 0 0 1px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.6);
+          text-shadow:
+            0 0 1px rgba(0, 0, 0, 0.9),
+            0 0 2px rgba(0, 0, 0, 0.6);
           filter: brightness(0.68) sepia(0.5) hue-rotate(-30deg) contrast(2.5);
         }
         .discarded {

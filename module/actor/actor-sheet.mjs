@@ -263,9 +263,23 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     const item = this.actor.items.get(itemId);
     const action = item.system.actions[acId];
     const actor = this.actor;
+    const img = action.img || item.img;
+    const keywords = { ...item.system.keywords, ...action.keywords };
+    // Additional info passed to the html
+    const info = {
+      usage: action.usage,
+      damaging: action.damaging,
+      damage: action.damage?.dmgTxt,
+      effort: action.effort,
+      duration: action.duration,
+      effect: action.effect,
+      keywords: keywords,
+      range: action.range,
+      prepTime: action.prepTime,
+    };
     const html = await handlebars.renderTemplate(
       "systems/pars-crucis/templates/chat/use-action.hbs",
-      { action, actor, item },
+      { itemName: item.name, actionName: action.name, img, info },
     );
 
     ChatMessage.create({
