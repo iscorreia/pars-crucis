@@ -1,0 +1,117 @@
+{{! Persona configuration window }}
+
+<section class="persona-config pdm-config">
+  <p class="info-desc">{{localize "PC.configPDM"}}: defina aqui as informações e
+    atributos do Persona de Mestre</p>
+  <div class="info-config">
+    <div class="info-item name-config">
+      <h5>{{localize "PC.name"}}</h5>
+      <input
+        class="actor-name_input"
+        type="text"
+        name="name"
+        value="{{system.parent.name}}"
+        placeholder="Nameless"
+      />
+    </div>
+    <div class="info-item">
+      <h5>{{localize "PC.info1"}}</h5>
+      <input
+        type="text"
+        data-dtype="String"
+        name="system.info.info1"
+        value="{{system.info.info1}}"
+      />
+    </div>
+    <div class="info-item">
+      <h5>{{localize "PC.info2"}}</h5>
+      <input
+        type="text"
+        data-dtype="String"
+        name="system.info.info2"
+        value="{{system.info.info2}}"
+      />
+    </div>
+    <div class="info-item">
+      <h5>{{localize "PC.info3"}}</h5>
+      <input
+        type="text"
+        data-dtype="String"
+        name="system.info.info3"
+        value="{{system.info.info3}}"
+      />
+    </div>
+  </div>
+  <div class="att-config">
+    {{#each system.attributes as |attribute obj|}}
+      <div class="att-config-item">
+        <h4>{{localize (concat "PC.attributes." obj ".abv")}}</h4>
+        <input
+          type="number"
+          data-dtype="Number"
+          name="system.attributes.{{@key}}.base"
+          value="{{attribute.base}}"
+          placeholder="Ø"
+        /></div>
+      <div class="separator"></div>
+    {{/each}}
+    {{#each system.subattributes as |sub obj|}}
+      <div class="sub-config-item">
+        <h4>{{localize (concat "PC.subattributes." obj ".abv")}}</h4>
+        <input
+          type="number"
+          data-dtype="Number"
+          name="system.subattributes.{{@key}}.max"
+          value="{{sub.max}}"
+          placeholder="Ø"
+        /></div>
+      <div class="separator"></div>
+    {{/each}}
+    <div class="sub-config-item">
+      <h4>{{localize "PC.movement.abv"}}</h4>
+      <div class="flexrow">
+        <input
+          name="system.movement.walk.base"
+          type="number"
+          value="{{system.movement.walk.base}}"
+          data-dtype="Number"
+          placeholder="Ø"
+        />|
+        <input
+          name="system.movement.sprint.base"
+          type="number"
+          value="{{system.movement.sprint.base}}"
+          data-dtype="Number"
+          placeholder="Ø"
+        /></div>
+    </div>
+    <div class="separator"></div>
+    <div class="sub-config-item">
+      <h4>{{localize "PC.luck"}}</h4>
+      <input
+        class="luck-max"
+        name="system.luck.max"
+        type="Number"
+        value="{{system.luck.max}}"
+        data-dtype="Number"
+        placeholder="Ø"
+      />
+    </div>
+    <div class="separator"></div>
+    {{#each system.minors as |minor obj|}}
+      <div class="sub-config-item">
+        <h4>{{localize (concat "PC.minors." obj ".abv")}}</h4>
+        <input
+          type="number"
+          data-dtype="Number"
+          name="system.minors.{{@key}}.base"
+          value="{{minor.base}}"
+          placeholder="Ø"
+        />
+      </div>
+      {{#unless @last}}
+        <div class="separator"></div>
+      {{/unless}}
+    {{/each}}
+  </div>
+</section>

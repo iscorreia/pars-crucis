@@ -17,7 +17,7 @@ export default class KeywordPicker extends api.HandlebarsApplicationMixin(
     },
     position: {
       width: 340,
-      height: 600,
+      height: 680,
     },
     tag: "form",
     window: {

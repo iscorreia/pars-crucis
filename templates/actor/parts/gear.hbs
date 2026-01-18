@@ -6,23 +6,57 @@
   data-tab="gear"
 >
   <div class="item-list-block">
-    {{> systems/pars-crucis/templates/actor/blocks/weaponry.hbs}}
-    <ol class="item-list vest-list">
-      <div class="item-group-title">
-        <div class="empty-space"></div>
-        <h3>{{localize "PC.wear"}}</h3>
-        <div class="item-sorting"></div>
-      </div>
-      {{#if (and system.vest system.accessories)}}
+    {{#if system.weaponry}}
+      {{> systems/pars-crucis/templates/actor/blocks/weaponry.hbs}}
+    {{else}}
+      <ol class="item-list">
+        <div class="item-group-title empty-group-title">
+          <div class="empty-space"></div>
+          <h3 class="empty-list-title">
+            <div>{{localize "PC.unarmed"}}</div>
+          </h3>
+          <div class="empty-space"></div>
+        </div>
+      </ol>
+    {{/if}}
+    {{#if (or system.vest.length system.accessories.length)}}
+      <ol class="item-list vest-list">
+        <div class="item-group-title">
+          <div class="empty-space"></div>
+          <h3>{{localize "PC.wear"}}</h3>
+          <div class="item-sorting"></div>
+        </div>
         {{#each system.vest}}
           {{> systems/pars-crucis/templates/actor/blocks/vest.hbs}}
         {{/each}}
         {{#each system.accessories}}
           {{> systems/pars-crucis/templates/actor/blocks/vest.hbs}}
         {{/each}}
-      {{/if}}
-    </ol>
-    {{> systems/pars-crucis/templates/actor/blocks/items.hbs}}
+      </ol>
+    {{else}}
+      <ol class="item-list vest-list">
+        <div class="item-group-title empty-group-title">
+          <div class="empty-space"></div>
+          <h3 class="empty-list-title">
+            <div>{{localize "PC.noWear"}}</div>
+          </h3>
+          <div class="empty-space"></div>
+        </div>
+      </ol>
+    {{/if}}
+    {{#if system.gear}}
+      {{> systems/pars-crucis/templates/actor/blocks/items.hbs}}
+    {{else}}
+      <ol class="item-list">
+        <div class="item-group-title empty-group-title">
+          <div class="empty-space"></div>
+          <h3 class="empty-list-title">
+            <div>{{localize "PC.noItems"}}</div>
+          </h3>
+          <div class="empty-space"></div>
+        </div>
+      </ol>
+    {{/if}}
   </div>
   {{> systems/pars-crucis/templates/actor/blocks/currency.hbs}}
 </section>

@@ -542,6 +542,17 @@ PC.action = {
   },
 };
 
+PC.versus = {
+  melee: "def",
+  throw: "def",
+  projectile: "def",
+  jet: "def",
+  aoe: "def",
+  affliction: "esp",
+  mind: "cog",
+  social: "ego",
+};
+
 PC.weapon = {
   subtypes: {
     melee: {
@@ -736,6 +747,7 @@ PC.keyword = {
     abascant: { label: "PC.keyword.abascant" },
   },
   general: {
+    modifier: { label: "PC.modifier.abv" },
     twoHanded: { label: "PC.keyword.twoHanded" },
     custom: { label: "PC.keyword.custom" },
     reload: { label: "PC.keyword.reload" },

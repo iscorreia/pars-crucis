@@ -37,6 +37,9 @@
     "Actor": {
       "persona": {
         "htmlFields": ["info.background"]
+      },
+      "pdm": {
+        "htmlFields": ["info.background"]
       }
     },
     "Item": {

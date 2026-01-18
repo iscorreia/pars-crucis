@@ -1,6 +1,7 @@
 {
   "PC": {
     "configPersona": "Configuração de Persona",
+    "configPDM": "Configuração de PDM",
     "name": "Nome",
     "origins": {
       "capri": "Capríaco",
@@ -314,6 +315,7 @@
       }
     },
     "abilities": "Habilidades",
+    "noAbilities": "Nenhuma Habilidade",
     "expand": "Expandir",
     "expandActions": "Expandir ações",
     "expandCollapseActions": "Expandir/Recolher ações",
@@ -347,6 +349,7 @@
     "attack": "Atacar",
     "test": "Teste",
     "testOf": "Teste de",
+    "versus": "Contra",
     "use": "Usar",
     "createAttack": "Criar ataque",
     "createTest": "Criar teste",
@@ -357,6 +360,7 @@
     "prepTime": { "label": "Tempo de preparo", "abv": "TP" },
     "duration": { "label": "Duração" },
     "weaponry": "Armamentos",
+    "unarmed": "Desarmado",
     "weapon": {
       "label": "Armamento",
       "subtypes": {
@@ -486,7 +490,9 @@
     "noDrawbacks": "Nenhum Malefício",
     "equipment": "Equipamento",
     "wear": "Vestimentas",
+    "noWear": "Nenhuma Veste",
     "items": "Itens",
+    "noItems": "Nenhum Item",
     "currency": {
       "silver": {
         "label": "Prata",
@@ -509,6 +515,7 @@
     },
     "price": "Preço",
     "xp": "XP",
+    "challenge": "Desafio",
     "pts": "PTS",
     "ptsSum": "Saldo de PTS",
 
@@ -607,6 +614,7 @@
       "stack": "Monte",
       "effect": "#Efeito",
       "penalty": "#Penalidade",
+      "modifier": "MOD",
 
       "attribute": "Atributo",
       "skill": "Perícia",

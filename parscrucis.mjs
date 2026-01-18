@@ -1,6 +1,9 @@
 import { PC } from "./module/config.mjs";
+import { PDMModel } from "./module/actor/pdm.mjs";
+import { PDMSheet } from "./module/actor/pdm-sheet.mjs";
 import { PersonaModel } from "./module/actor/persona.mjs";
 import { PersonaSheet } from "./module/actor/persona-sheet.mjs";
+import { PCChatMessage } from "./module/chat/chat-message.mjs";
 import { registerFonts } from "./module/fonts.mjs";
 import PassiveSheet from "./module/item/passive-sheet.mjs";
 import AbilitySheet from "./module/item/ability-sheet.mjs";
@@ -13,7 +16,6 @@ import {
   WeaponModel,
 } from "./module/item/item-schema.mjs";
 import PCRoll from "./module/rolls/basic-roll.mjs";
-import { PCChatMessage } from "./module/chat/chat-message.mjs";
 import TestRoll from "./module/rolls/test-roll.mjs";
 import onRenderChatMessageHTML from "./hooks/onRenderChatMessageHTML.mjs";
 
@@ -27,6 +29,7 @@ async function preloadHandlebarsTemplates() {
     "systems/pars-crucis/templates/actor/blocks/vest.hbs",
     "systems/pars-crucis/templates/actor/blocks/items.hbs",
     "systems/pars-crucis/templates/actor/blocks/currency.hbs",
+    "systems/pars-crucis/templates/actor/pdm/challenge.hbs",
     "systems/pars-crucis/templates/item/blocks/name-cost.hbs",
   ];
 
@@ -45,6 +48,7 @@ Hooks.once("init", () => {
   // Register the data model for the Actor subtype.
   Object.assign(CONFIG.Actor.dataModels, {
     persona: PersonaModel,
+    pdm: PDMModel,
   });
 
   // Register the data model for the Item subtype.
@@ -60,7 +64,14 @@ Hooks.once("init", () => {
     foundry.documents.Actor,
     "parscrucis",
     PersonaSheet,
-    { types: ["persona"], makeDefault: true, label: "Persona Sheet" }
+    { types: ["persona"], makeDefault: true, label: "Persona Sheet" },
+  );
+  // Register the V2 sheet for 'pdm' - persona de mestre
+  foundry.applications.apps.DocumentSheetConfig.registerSheet(
+    foundry.documents.Actor,
+    "parscrucis",
+    PDMSheet,
+    { types: ["pdm"], makeDefault: true, label: "PDM Sheet" },
   );
 
   // Register the V2 sheet for all item types
@@ -68,25 +79,25 @@ Hooks.once("init", () => {
     foundry.documents.Item,
     "parscrucis",
     AbilitySheet,
-    { types: ["ability"], makeDefault: true, label: "Ability Item Sheet" }
+    { types: ["ability"], makeDefault: true, label: "Ability Item Sheet" },
   );
   foundry.applications.apps.DocumentSheetConfig.registerSheet(
     foundry.documents.Item,
     "parscrucis",
     GearSheet,
-    { types: ["gear"], makeDefault: true, label: "Gear Item Sheet" }
+    { types: ["gear"], makeDefault: true, label: "Gear Item Sheet" },
   );
   foundry.applications.apps.DocumentSheetConfig.registerSheet(
     foundry.documents.Item,
     "parscrucis",
     PassiveSheet,
-    { types: ["passive"], makeDefault: true, label: "Passive Item Sheet" }
+    { types: ["passive"], makeDefault: true, label: "Passive Item Sheet" },
   );
   foundry.applications.apps.DocumentSheetConfig.registerSheet(
     foundry.documents.Item,
     "parscrucis",
     WeaponSheet,
-    { types: ["weapon"], makeDefault: true, label: "Weapon Item Sheet" }
+    { types: ["weapon"], makeDefault: true, label: "Weapon Item Sheet" },
   );
 
   preloadHandlebarsTemplates();

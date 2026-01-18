@@ -1,0 +1,30 @@
+{{! PDM Sheet header }}
+
+<header class="persona-sheet-header pdm-sheet-header">
+  <img
+    class="profile-img"
+    src="{{actor.img}}"
+    data-action="editImage"
+    data-edit="img"
+    height="160"
+    width="160"
+  />
+  <div class="header-center-block">
+    <h1 class="name actor-name">{{actor.name}}</h1>
+    <div class="actor-info flexrow">
+     <span>
+      {{system.info.info1}}
+      {{#if system.info.info2}} · {{system.info.info2}}{{/if}}
+      {{#if system.info.info3}} · {{system.info.info3}}{{/if}}
+     </span>
+    </div>
+    <div>
+      {{> systems/pars-crucis/templates/actor/blocks/attributes.hbs}}
+    </div>
+  </div>
+  <div class="header-right-block">
+    {{> systems/pars-crucis/templates/actor/pdm/challenge.hbs}}
+    {{> systems/pars-crucis/templates/actor/blocks/minors.hbs}}
+    {{> systems/pars-crucis/templates/actor/blocks/mitigation.hbs}}
+  </div>
+</header>

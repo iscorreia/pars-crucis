@@ -250,10 +250,18 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     });
     this.passives = parent.itemTypes.passive;
     const passivesData = this.passives;
-    const weaponry = this.weaponry;
+    // const weaponry = this.weaponry;
+    const { abilities, weaponry, vest, accessories, gear } = this;
+    const itemGroupOne = [
+      ...abilities,
+      ...weaponry,
+      ...vest,
+      ...accessories,
+      ...gear,
+    ];
 
     // Calculates equipped weapons damage
-    for (let [_, weapon] of Object.entries(weaponry)) {
+    for (let [_, weapon] of Object.entries(itemGroupOne)) {
       const actions = weapon.system.actions;
       for (let [_, action] of Object.entries(actions)) {
         if (action.damaging) {
@@ -270,7 +278,6 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
           const calculatedDmg = dmg.dmgBase + multipliedDmg;
           const dmgType = game.i18n.localize(`PC.dmgType.${dmg.dmgType}.abv`);
           action.damage.dmgVal = calculatedDmg;
-
           action.damage.dmgTxt = `${calculatedDmg} ${dmgType}`;
           if (!dmg.scalable) {
             action.damage.dmgTxt = `[${calculatedDmg}] ${dmgType}`;
@@ -359,7 +366,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
   }
 }
 
-function luckBooleans(luck) {
+export function luckBooleans(luck) {
   let luckBooleans = luck.booleans.length;
   luck.max < 0 ? (luck.max = 0) : luck.max;
 
@@ -448,7 +455,7 @@ function groupField() {
   });
 }
 
-function eachAttribute(objectMap, callback) {
+export function eachAttribute(objectMap, callback) {
   for (let [key, attribute] of Object.entries(objectMap)) {
     callback(attribute, key);
   }
@@ -466,7 +473,7 @@ function deriveAttribute(att) {
   return att;
 }
 
-function calculateStatic(att) {
+export function calculateStatic(att) {
   att.static = Math.max(10 + att.derived + att.mod, 10);
   return att;
 }
