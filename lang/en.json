@@ -315,6 +315,7 @@
       }
     },
     "abilities": "Habilidades",
+    "noAbilities": "Nenhuma Habilidade",
     "expand": "Expandir",
     "expandActions": "Expandir ações",
     "expandCollapseActions": "Expandir/Recolher ações",
@@ -359,6 +360,7 @@
     "prepTime": { "label": "Tempo de preparo", "abv": "TP" },
     "duration": { "label": "Duração" },
     "weaponry": "Armamentos",
+    "unarmed": "Desarmado",
     "weapon": {
       "label": "Armamento",
       "subtypes": {
@@ -488,7 +490,9 @@
     "noDrawbacks": "Nenhum Malefício",
     "equipment": "Equipamento",
     "wear": "Vestimentas",
+    "noWear": "Nenhuma Veste",
     "items": "Itens",
+    "noItems": "Nenhum Item",
     "currency": {
       "silver": {
         "label": "Prata",

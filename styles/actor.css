@@ -836,8 +836,6 @@ h4.movement {
   line-height: 14px;
   font-size: var(--pc-font-size-small);
   font-family: "BarlowCondensed Light", sans-serif;
-  .pc-keyword-label {
-  }
   .pc-keyword-value {
     margin-left: 2px;
   }
