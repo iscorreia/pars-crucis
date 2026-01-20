@@ -21,6 +21,7 @@ import onRenderChatMessageHTML from "./hooks/onRenderChatMessageHTML.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
+    "systems/pars-crucis/templates/actor/blocks/action.hbs",
     "systems/pars-crucis/templates/actor/blocks/attributes.hbs",
     "systems/pars-crucis/templates/actor/blocks/experience.hbs",
     "systems/pars-crucis/templates/actor/blocks/minors.hbs",
@@ -106,6 +107,12 @@ Hooks.once("init", () => {
   Handlebars.registerHelper("gt", (a, b) => Number(a) > Number(b));
   Handlebars.registerHelper("lte", (a, b) => Number(a) <= Number(b));
   Handlebars.registerHelper("gte", (a, b) => Number(a) >= Number(b));
+  Handlebars.registerHelper("isEmpty", (value) => {
+    if (value == null) return true;
+    if (Array.isArray(value)) return value.length === 0;
+    if (typeof value === "object") return Object.keys(value).length === 0;
+    return false;
+  });
 
   /**
    * Set an initiative formula for the system

@@ -20,6 +20,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       icon: "fa fa-address-card",
     },
     actions: {
+      callAction: this.callActionOnClick,
       clickDelete: this.deleteItemOnClick,
       clickEdit: this.editItemOnClick,
       clickEquip: this.equipItemOnClick,
@@ -144,6 +145,15 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       dice = "3d10kl2"; // Keep 2 lowest out of 3d10
     }
     return dice;
+  }
+
+  static async callActionOnClick(event, target) {
+    console.log(target.dataset);
+    const { acType } = target.dataset;
+    if (["attack", "test"].includes(acType))
+      ParsCrucisActorSheet.rollTestOnClick.call(this, event, target);
+    if (acType === "use")
+      ParsCrucisActorSheet.useGearOnClick.call(this, event, target);
   }
 
   /**
