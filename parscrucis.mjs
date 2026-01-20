@@ -18,6 +18,7 @@ import {
 import PCRoll from "./module/rolls/basic-roll.mjs";
 import TestRoll from "./module/rolls/test-roll.mjs";
 import onRenderChatMessageHTML from "./hooks/onRenderChatMessageHTML.mjs";
+import configurePersonaTokens from "./hooks/configurePersonaTokens.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
@@ -125,3 +126,4 @@ Hooks.once("init", () => {
 });
 
 onRenderChatMessageHTML();
+configurePersonaTokens();

@@ -663,6 +663,13 @@
       "300": "×3",
       "400": "×4",
       "500": "×5"
+    },
+    "PACKS": {
+      "ACTORS": "Personas",
+      "ABILITIES": "Habilidades",
+      "GEAR": "Equipamentos",
+      "PASSIVES": "Passivas",
+      "WEAPONS": "Armamentos"
     }
   }
 }
