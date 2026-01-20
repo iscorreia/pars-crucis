@@ -146,23 +146,11 @@
         </div>
       </div>
       {{#if weapon.flags.pars-crucis.expanded}}
-        <div class="gear-actions">
-          {{#each weapon.system.actions as |action key|}}
-            <div>
-              {{action.name}}:
-              {{localize "PC.range.abv"}}
-              {{action.range}},
-              {{#if action.effort}}
-                {{localize "PC.effort.abv"}}
-                {{action.effort}},
-              {{/if}}
-              {{#if action.damaging}}
-                {{localize "PC.damage"}}
-                {{action.damage.dmgTxt}}
-              {{/if}}
-            </div>
+        <ol class="gear-actions">
+          {{#each weapon.system.actions}}
+            {{> systems/pars-crucis/templates/actor/blocks/action.hbs gearId=../this._id}}
           {{/each}}
-        </div>
+        </ol>
       {{/if}}
     </li>
   {{/each}}

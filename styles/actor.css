@@ -55,6 +55,7 @@
   .icon-mid {
     height: var(--pc-icon-height-mid);
     width: var(--pc-icon-width-mid);
+    border-radius: 0 0 0 5px;
   }
   .item-block {
     margin-bottom: 1px;
@@ -767,7 +768,8 @@ h4.movement {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 1px;
-  border-color: var(--color-scrollbar);
+  /* border-color: var(--color-scrollbar); */
+  border-color: var(--pc-color-dark-1);
   border-width: 0 0 1px 0;
   border-style: dashed;
   .item-line {
@@ -905,6 +907,9 @@ h4.movement {
       line-height: 15px;
     }
   }
+  .persona-action:hover {
+    filter: brightness(1.25);
+  }
   .ac-attack {
     background-color: var(--pc-color-damage-bg);
     border-color: var(--pc-color-damage-border);
@@ -920,6 +925,89 @@ h4.movement {
   .persona-action:last-child {
     margin: 0;
   }
+}
+
+/* INLINE ACTION */
+.ability-actions,
+.gear-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .item-keywords {
+    margin-left: 7px;
+    height: 16px;
+  }
+}
+.inline-action {
+  width: calc(100% - 12px);
+  font-size: 13px;
+  min-height: 20px;
+  border-width: 0 0 1px 0;
+  padding-bottom: 1px;
+  border-style: dashed;
+  border-color: var(--color-dark-3);
+  .inline-head {
+    height: 20px;
+    border-width: 0 0 0 1px;
+    padding: 1px 0 1px 1px;
+    border-style: solid;
+    border-radius: 5px 0 0 5px;
+    border-color: var(--pc-color-damage-border);
+    background: linear-gradient(
+      to right,
+      var(--pc-color-damage-bg) 24px,
+      transparent 70px
+    );
+  }
+  .inline-head:hover {
+    filter: brightness(1.25);
+    cursor: pointer;
+  }
+  .test {
+    background: linear-gradient(
+      to right,
+      var(--pc-color-essence-bg) 0%,
+      transparent 100%
+    );
+    border-color: var(--pc-color-essence-border);
+  }
+  .use {
+    background: linear-gradient(
+      to right,
+      var(--pc-color-health-bg) 0%,
+      transparent 100%
+    );
+    border-color: var(--pc-color-health-border);
+  }
+  .inline-icon {
+    display: inline-block;
+    /* vertical-align: middle; */
+    border-radius: 5px;
+    vertical-align: -4px;
+  }
+  .inline-action-name {
+    font-size: 15px;
+    font-family: "BarlowCondensed Regular";
+    line-height: 17px;
+    position: relative;
+    top: 1px; /* small tweak to height */
+  }
+  .inline-label {
+    margin-left: 10px;
+    font-family: "Amiri";
+    color: var(--color-light-3);
+  }
+  .inline-skill {
+    font-size: 12px;
+    color: var(--pc-color-light-3);
+  }
+}
+.inline-action:last-child {
+  border-width: 0;
+  padding-bottom: 0;
 }
 
 /* INVENTORY TAB */

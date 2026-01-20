@@ -162,21 +162,11 @@
                 </div>
               </div>
               {{#if ability.flags.pars-crucis.expanded}}
-                <div class="ability-actions">
-                  {{#each ability.system.actions as |action key|}}
-                    <div>{{action.name}}{{#if (eq action.type "attack")}},
-                        {{localize
-                          (concat
-                            "PC.action.types.attack.subtype." action.subtype
-                          )
-                        }}{{/if}}{{#if (eq action.type "test")}}, dif{{action.difficulty}}{{/if}},
-                      {{localize
-                        (concat "PC.action.types." action.type ".label")
-                      }},
-                      {{action.effect}}
-                    </div>
+                <ol class="ability-actions">
+                  {{#each ability.system.actions}}
+                    {{> systems/pars-crucis/templates/actor/blocks/action.hbs gearId=../this._id}}
                   {{/each}}
-                </div>
+                </ol>
               {{/if}}
             </li>
           {{/each}}
