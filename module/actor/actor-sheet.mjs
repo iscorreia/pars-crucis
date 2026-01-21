@@ -29,8 +29,8 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       rollAbilityAttack: this.rollTestOnClick,
       rollTest: this.rollTestOnClick,
       rollSkill: this.rollSkillOnClick,
-      useAbility: this.useGearOnClick,
-      useGear: this.useGearOnClick,
+      useAbility: this.useOnClick,
+      useGear: this.useOnClick,
       sortAbilities: this.changeSortMode,
       switchLuck: this.switchLuckOnClick,
       toggleExpand: this.toggleAbilityExpand,
@@ -153,7 +153,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     if (["attack", "test"].includes(acType))
       ParsCrucisActorSheet.rollTestOnClick.call(this, event, target);
     if (acType === "use")
-      ParsCrucisActorSheet.useGearOnClick.call(this, event, target);
+      ParsCrucisActorSheet.useOnClick.call(this, event, target);
   }
 
   /**
@@ -203,7 +203,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     const skillLabel = `${game.i18n.localize(PC.skills[skill].label)}`;
     const difLabel = `${game.i18n.localize("PC.difficulty.label")}`;
     let flavor = `${testLabel} ${skillLabel}`;
-    if (type === "test") flavor = `${flavor} — ${difLabel} ${difficulty || 10}`;
+    if (type === "test") flavor = `${flavor} — ${difLabel} ${difficulty}`;
     if (type === "attack" && subtype) {
       const versusLabel = `${game.i18n.localize("PC.versus")}`;
       const counter = PC.versus[subtype];
@@ -268,7 +268,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     return roll;
   }
 
-  static async useGearOnClick(_, target) {
+  static async useOnClick(_, target) {
     const { acId, itemId } = target.dataset;
     const item = this.actor.items.get(itemId);
     const action = item.system.actions[acId];

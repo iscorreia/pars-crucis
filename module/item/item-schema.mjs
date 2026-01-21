@@ -3,7 +3,6 @@ import { currencyField } from "../actor/persona.mjs";
 
 const {
   ArrayField,
-  EmbeddedDataField,
   BooleanField,
   FilePathField,
   HTMLField,
@@ -11,9 +10,17 @@ const {
   SchemaField,
   StringField,
   TypedObjectField,
+  TypedSchemaField,
 } = foundry.data.fields;
 
 export class ActionModel extends foundry.abstract.DataModel {
+  static get TYPES() {
+    return {
+      attack: AttackActionModel,
+      test: TestActionModel,
+      use: UseActionModel,
+    };
+  }
   static defineSchema() {
     return {
       img: new FilePathField({
@@ -27,7 +34,7 @@ export class ActionModel extends foundry.abstract.DataModel {
         choices: ["attack", "use", "test"], // create EXECUTION LOGIC FOR THE TYPE
         required: true,
       }),
-      damaging: new BooleanField({ initial: true }),
+      damaging: new BooleanField({ initial: false }),
       damage: damage(),
       effect: new StringField({ initial: "" }),
       range: new StringField({ initial: "" }),
@@ -36,35 +43,47 @@ export class ActionModel extends foundry.abstract.DataModel {
       duration: new StringField({ initial: "" }),
       keywords: keywords(),
       _id: new StringField({}),
-      // ATTACK|TEST-only
-      skill: new StringField({
-        nullable: true,
-        choices: () => Object.keys(PC.skills),
-      }),
-      // ATTACK-only
-      subtype: new StringField({
-        nullable: true,
-        choices: () => Object.keys(PC.action.types.attack.subtypes),
-      }),
-      // TEST-only
-      difficulty: new NumberField({ nullable: true }),
-      // USE-only
-      usage: new StringField({ initial: "", nullable: true }),
     };
   }
 }
 
-export class AbilityActionModel extends ActionModel {
+export class AttackActionModel extends ActionModel {
   static defineSchema() {
     const parentSchema = super.defineSchema();
-
     return {
       ...parentSchema,
-      type: new StringField({
-        initial: "attack",
-        choices: ["weaponAtk", "attack", "use", "test"],
-        required: true,
+      skill: new StringField({
+        initial: "briga",
+        choices: () => Object.keys(PC.skills),
       }),
+      subtype: new StringField({
+        initial: "melee",
+        choices: () => Object.keys(PC.action.types.attack.subtypes),
+      }),
+    };
+  }
+}
+
+export class TestActionModel extends ActionModel {
+  static defineSchema() {
+    const parentSchema = super.defineSchema();
+    return {
+      ...parentSchema,
+      skill: new StringField({
+        initial: "briga",
+        choices: () => Object.keys(PC.skills),
+      }),
+      difficulty: new NumberField({ initial: 10, integer: true }),
+    };
+  }
+}
+
+export class UseActionModel extends ActionModel {
+  static defineSchema() {
+    const parentSchema = super.defineSchema();
+    return {
+      ...parentSchema,
+      usage: new StringField({ initial: "", nullable: true }),
     };
   }
 }
@@ -77,14 +96,11 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
         art: new StringField({ initial: "meleeTech", nullable: true }),
         category: new StringField({ initial: null, nullable: true }),
       }),
-      actions: new TypedObjectField(new EmbeddedDataField(AbilityActionModel), {
-        validateKey: (key) => foundry.data.validators.isValidId(key),
-        initial: {},
-      }),
+      actions: new TypedObjectField(new TypedSchemaField(ActionModel.TYPES)),
       details: new SchemaField({
         experience: new NumberField({ initial: 2, integer: true }),
         preRequisites: new StringField({ initial: "" }),
-        coreSkill: new StringField({ initial: "none" }),
+        coreSkill: new StringField({ initial: "briga" }),
         coreLevel: new NumberField({ initial: 1, integer: true }),
       }),
       keywords: keywords(),
@@ -107,10 +123,7 @@ export class GearModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       info: information(),
-      actions: new TypedObjectField(new EmbeddedDataField(ActionModel), {
-        validateKey: (key) => foundry.data.validators.isValidId(key),
-        initial: {},
-      }),
+      actions: new TypedObjectField(new TypedSchemaField(ActionModel.TYPES)),
       cost: itemCost(),
       details: details(),
       keywords: keywords(),
@@ -140,10 +153,7 @@ export class WeaponModel extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       info: information({ subtype: "melee", group: "light" }),
-      actions: new TypedObjectField(new EmbeddedDataField(ActionModel), {
-        validateKey: (key) => foundry.data.validators.isValidId(key),
-        initial: {},
-      }),
+      actions: new TypedObjectField(new TypedSchemaField(ActionModel.TYPES)),
       cost: itemCost(),
       details: details({ equippable: true }),
       keywords: keywords(),
@@ -162,17 +172,6 @@ export class WeaponModel extends foundry.abstract.TypeDataModel {
     if (info.group === "unarmed") {
       details.equippable = false;
       details.equipped = true;
-    }
-    for (let [_, ac] of Object.entries(this.actions)) {
-      if (ac.type === "attack") {
-        ac.difficulty = null;
-      } else if (ac.type === "test") {
-        ac.subtype = null;
-      } else if (ac.type === "use") {
-        ac.skill = null;
-        ac.subtype = null;
-        ac.difficulty = null;
-      }
     }
   }
 }
@@ -203,7 +202,7 @@ function information({
 
 function damage() {
   return new SchemaField({
-    dmgBase: new NumberField({ integer: true, nullable: true }),
+    dmgBase: new NumberField({ initial: 0, integer: true }),
     dmgAttributes: new ArrayField(new StringField(), { initial: [] }),
     dmgAttMultiplier: new NumberField({ initial: 1 }),
     dmgAddition: new StringField({ initial: "" }),
@@ -216,7 +215,7 @@ function damage() {
 function keywords() {
   return new TypedObjectField(
     new StringField({ initial: null, nullable: true }),
-    {}
+    {},
   );
 }
 

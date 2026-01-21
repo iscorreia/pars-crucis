@@ -28,16 +28,6 @@
                   value="{{action.name}}"
                   data-dtype="String"
                 />
-                
-                <select 
-                  class="action-type" 
-                  name="system.actions.{{@key}}.type">
-                  {{selectOptions
-                    ../config.action.types
-                    selected=action.type
-                    localize=true
-                  }}
-                </select>
 
                 {{#if (or (eq action.type "attack") (eq action.type "test"))}}
                   <select 
