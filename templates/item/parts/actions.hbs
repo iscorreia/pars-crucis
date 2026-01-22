@@ -3,7 +3,13 @@
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="actions">
   <div class="actions-tab">
     <div class="actions-controls">
+      {{log this}}
       <a data-action="createAction" data-ac-type="attack"><i class="fa-regular fa-plus"></i> {{localize "PC.createAttack"}}</a>
+      {{#if (eq item.type "ability")}}
+        <a data-action="createAction" data-ac-type="tech"
+        ><i class="fa-regular fa-plus"></i>
+        {{localize "PC.createTech"}}</a>
+      {{/if}}
       <a data-action="createAction" data-ac-type="test"><i class="fa-regular fa-plus"></i> {{localize "PC.createTest"}}</a>
       <a data-action="createAction" data-ac-type="use"><i class="fa-regular fa-plus"></i> {{localize "PC.createUse"}}</a>
     </div>
@@ -50,6 +56,19 @@
                       localize=true
                     }}
                   </select>
+                {{/if}}
+                {{#if (eq action.type "tech")}}
+                  <button
+                    type="button"
+                    class="action-picker"
+                    data-action="open-action-picker"
+                  >
+                    {{#if selectedAction}}
+                      {{selectedAction.name}}
+                    {{else}}
+                      <span class="placeholder">{{localize "PC.selectAction"}}</span>
+                    {{/if}}
+                  </button>
                 {{/if}}
                 {{#if (eq action.type "test")}}
                   <div class="action-subtype">

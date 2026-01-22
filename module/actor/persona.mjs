@@ -237,13 +237,14 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     this.abilities = parent.itemTypes.ability;
     const abilitiesData = this.abilities;
     this.weaponry = parent.itemTypes.weapon.filter(
-      (i) => i.system.details.equipped || i.system.info.group === "unarmed"
+      (i) => i.system.details.equipped || i.system.info.group === "unarmed",
     );
     this.vest = parent.itemTypes.gear.filter(
-      (i) => i.system.details.equipped && i.system.info.group === "vest"
+      (i) => i.system.details.equipped && i.system.info.group === "vest",
     );
     this.accessories = parent.itemTypes.gear.filter(
-      (i) => i.system.details.equipped && accGroup.includes(i.system.info.group)
+      (i) =>
+        i.system.details.equipped && accGroup.includes(i.system.info.group),
     );
     this.gear = parent.items.filter((i) => {
       return inventoryGroup.includes(i.type) && !i.system.details.equipped;
@@ -262,7 +263,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
     // Calculates equipped weapons damage
     for (let [_, weapon] of Object.entries(itemGroupOne)) {
-      const actions = weapon.system.actions;
+      const { actions } = weapon.system;
       for (let [_, action] of Object.entries(actions)) {
         if (action.damaging) {
           const dmg = action.damage ?? {};
@@ -276,11 +277,13 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
             attValues.length > 0 ? Math.max(...attValues) : 0;
           const multipliedDmg = Math.ceil(highestDmgAtt * dmg.dmgAttMultiplier);
           const calculatedDmg = dmg.dmgBase + multipliedDmg;
-          const dmgType = game.i18n.localize(`PC.dmgType.${dmg.dmgType}.abv`);
+          const dmgTypeLabel = game.i18n.localize(
+            `PC.dmgType.${dmg.dmgType}.abv`,
+          );
           action.damage.dmgVal = calculatedDmg;
-          action.damage.dmgTxt = `${calculatedDmg} ${dmgType}`;
+          action.damage.dmgTxt = `${calculatedDmg}${dmg.dmgAddition} ${dmgTypeLabel}`;
           if (!dmg.scalable) {
-            action.damage.dmgTxt = `[${calculatedDmg}] ${dmgType}`;
+            action.damage.dmgTxt = `[${calculatedDmg}${dmg.dmgAddition}] ${dmgTypeLabel}`;
           }
         }
       }
@@ -294,7 +297,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
         passivesXp.push(cost.experience);
       } else {
         passivesPts.push(
-          system.info.subtype === "drawback" ? cost.points : -cost.points
+          system.info.subtype === "drawback" ? cost.points : -cost.points,
         );
       }
     }

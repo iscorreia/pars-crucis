@@ -12,6 +12,14 @@
   </div>
 
   <div class="action-desc">
+    {{#if info.subtype}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.action.label"}}:</span>{{localize
+          (concat "PC.action.types.attack.subtype." info.subtype)
+        }}
+      </div>
+    {{/if}}
     {{#if info.desc}}
       <div class="info-line">
         {{info.desc}}

@@ -3,30 +3,31 @@
 - Improved Weapon **_logic hbs style/css_**
 - Improved Gear **_hbs style/css_**
 - Split action DataModels for attack, test, use
-- Creating weapon ability action DataModel
+- Creating `WeaponAbility` action DataModel
+- Persona Ability calculations: how to interact with weapons? Weapon abilities? **_logic_**
 
 # HIGH PRIORITY
 
 - Basic compendium **_logic_**
-- Persona Ability calculations: how to interact with weapons? Weapon abilities? **_logic_**
+- PV and PE properly set for token **_logic_**
+- Show Abilities/Items on chat **_feature_**
+- FIX PDM sheet / model mitigation **_logic hbs_**
 
 ## IMPORTANT
 
-- PV and PE properly set for token **_logic_**
 - Persona Inventory calculations **_logic_**
 - Improved PASSIVE SHEET **_logic hbs style/css_**
-- Show Abilities/Items on chat **_feature_**
 - Create a prompt for last roll action adjustment on pressing ALT **_feature_**
-- FIX PDM sheet / model mitigation **_logic hbs_**
 - PDM sheet having Attributes and Skills grayed out and not rollable when null **_feature hbs style/css_**
+- Improved Ability sheet **_hbs style/css_**
 
 ## NECESSARY
 
 - Automatically set token actor-link/vision for personas **_config_**
-- Improved Ability sheet **_hbs style/css_**
 - Review Overrides **_logic_**
 - Final touches on the PDM config app **_hbs/css_**
 - Weapon/Gear/Abilities ammunition, how to interact? **_logic hbs css qol_**
+- Add Inventory sorting **_qol feature_**
 
 ## LOW PRIORITY
 
@@ -36,13 +37,17 @@
 - Items Compendium **_pack_**
 - Abilities Compendium **_pack_**
 - Passives Compendium **_pack_**
-- Add Inventory sorting **_qol feature_**
 - Add Abilities (art) sorting **_qol_**
 - ?? Filter keywords such as Initial / Recipe on chat **_qol_**
 - Persona/PDM image picked from config instead of the sheet **_qol_**
 
 ### INTERESTING BUT NOT NECESSARY
 
+- Gray out and deactive expand/collapse actions on items without actions
+- Ability and Item use Limits and Conditions
+- Draggable Macros for Attribute and Skill rolls
+- Draggable Macros for Ability and Item actions
+- Automatic rest on click, with possibility to set an amount of hours to rest, so it recovers PV/PE
 - Implement `enrichHTML` in the item descriptions/effect **_feature_**
 - Skills/Abilities/Items Macros **_feature_**
 - Tooltips / Information on hover **_feature_** or;

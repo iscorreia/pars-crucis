@@ -6,6 +6,7 @@ import { PC } from "../config.mjs";
 // Defining default information for created actions based on its type
 const ACTION_DEFAULTS = {
   attack: { damaging: true, range: "0", damage: { dmgBase: 3 } },
+  tech: { damaging: true },
   test: { skill: "atlet" },
 };
 

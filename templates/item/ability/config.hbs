@@ -1,63 +1,55 @@
 {{! Ability Details and Config tab }}
 
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="config">
-  <div class="flexcol">
-    <input
-      name="name"
-      type="String"
-      value="{{item.name}}"
-      placeholder="Nameless Ability"
-    />
-    <select name="system.info.subtype">
-      {{selectOptions
-        config.ability.subtypes
-        selected=system.info.subtype
-        localize=true
-      }}
-    </select>
-    <select name="system.info.art">
-      {{selectOptions
-        config.ability.arts
-        selected=system.info.art
-        localize=true
-      }}
-    </select>
+  <div class="item-info-config">
+    <div class="item-info-block item-name-block">
+      <h5>{{localize "PC.abilityName"}}</h5>
+      <input
+        name="name"
+        value="{{item.name}}"
+        placeholder="Nameless Ability"
+        type="text"
+      />
+    </div>
+    <div class="item-info-block">
+      <h5>{{localize "PC.subtype"}}</h5>
+      <select name="system.info.subtype">
+        {{selectOptions
+          config.ability.subtypes
+          selected=system.info.subtype
+          localize=true
+        }}
+      </select>
+    </div>
+    <div class="item-info-block">
+      <h5>{{localize "PC.art"}}</h5>
+      <select name="system.info.art">
+        {{selectOptions
+          config.ability.arts
+          selected=system.info.art
+          localize=true
+        }}
+      </select>
+    </div>
     {{#with (lookup config.ability.arts system.info.art) as |art|}}
       {{#if art.categories}}
-        <select name="system.info.category">
-          {{selectOptions
-            (lookup (lookup ../config.ability.arts ../system.info.art) "categories")
-            selected=../system.info.category
-            localize=true
-          }}
-        </select>
+        <div class="item-info-block">
+          <h5>{{localize "PC.category"}}</h5>
+          <select name="system.info.category">
+            {{selectOptions
+              (lookup (lookup ../config.ability.arts ../system.info.art) "categories")
+              selected=../system.info.category
+              localize=true
+            }}
+          </select>
+        </div>
       {{/if}}
     {{/with}}
-    <div>
-      <h4>{{localize "PC.keywords"}}</h4>
-      <a data-action="addKeyword" data-type="ability"><i 
-        class="fa-regular fa-plus"
-        ></i>
-      </a>
-      {{#each system.keywords as |keyword obj|}}
-        <div class="flexrow">
-          <div>
-            {{localize (concat "PC.keyword." obj)}}{{#if keyword}}
-              ({{keyword}}){{/if}}
-          </div>
-          <input
-            name="system.keywords.{{@key}}"
-            value="{{keyword}}"
-            data-dtype="String"
-            type="String"
-          />
-          <a data-action="cutKeyword" data-keyword="{{@key}}">
-            <i class="fa-regular fa-trash-can"></i></a>
-        </div>
-      {{/each}}
-    </div>
-    <div>
-      {{localize "PC.skill"}}
+  </div>
+
+  <div class="item-info-config">
+    <div class="item-info-block">
+      <h5> {{localize "PC.skill"}}</h5>
       <select name="system.details.coreSkill">
         {{selectOptions
           config.skillsNone
@@ -66,8 +58,8 @@
         }}
       </select>
     </div>
-    <div>
-      {{localize "PC.level.abv"}}
+    <div class="item-info-block">
+      <h5>{{localize "PC.level.abv"}}</h5>
       <input 
         name="system.details.coreLevel"
         value="{{system.details.coreLevel}}"
@@ -75,5 +67,19 @@
         data-dtype="Number"
       />
     </div>
+  </div>
+
+  <div class="keyword-title-line">
+    <a data-action="keywordPicker">{{localize "PC.keywords"}}
+      <i class="fa-regular fa-plus"></i>
+    </a></div>
+  <div class="item-info-config item-keywords-config">
+    {{#each system.keywords}}
+      <div class="pc-keyword">
+        {{localize (concat "PC.keyword." @key)}}{{#if this}} ({{this}}){{/if}}
+        <a data-action="cutKeyword" data-keyword="{{@key}}">
+          <i class="fa-regular fa-eraser"></i></a>
+      </div>
+    {{/each}}
   </div>
 </section>

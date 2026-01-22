@@ -7,11 +7,15 @@
   --pc-icon-height-mid: 24px;
 
   --pc-color-health-bg: #24942d70;
-  --pc-color-health-border: #24942d90;
-  --pc-color-essence-bg: #2a5cc770;
-  --pc-color-essence-border: #2a5cc790;
-  --pc-color-damage-bg: #c72a2a70;
-  --pc-color-damage-border: #c72a2a90;
+  --pc-color-health-border: #24942d99;
+  --pc-color-health-border-st: #24942de6;
+  --pc-color-essence-bg: #2342a870;
+  --pc-color-essence-border: #2342a899;
+  --pc-color-essence-border-st: #2342a8e6;
+  --pc-color-damage-bg: #9c1d1d70;
+  --pc-color-damage-border: #9c1d1d99;
+  --pc-color-damage-border-st: #9c1d1de6;
+
   --pc-color-copper-bg: #4d3626;
   --pc-color-silver-bg: #505b68;
   --pc-color-costless-bg: #000;

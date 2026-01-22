@@ -11,6 +11,23 @@
     <img class="inline-icon" src="{{this.img}}" width="16" height="16" />
     <span class="inline-action-name">{{this.name}}</span>
   </span>
+
+  {{#if (eq this.type "tech")}}
+    <button
+      type="button"
+      class="action-picker"
+      data-action="actionPicker"
+      data-ac-id="{{@key}}"
+      data-item-id="{{gearId}}"
+    >
+      {{#if selectedAction}}
+        {{selectedAction.name}}
+      {{else}}
+        <span class="placeholder">{{localize "PC.selectAction"}}</span>
+      {{/if}}
+    </button>
+  {{/if}}
+
   {{#if (not (isEmpty this.keywords))}}
     <span class="item-keywords">
       {{#each this.keywords}}

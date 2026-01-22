@@ -17,6 +17,7 @@ export class ActionModel extends foundry.abstract.DataModel {
   static get TYPES() {
     return {
       attack: AttackActionModel,
+      tech: TechActionModel,
       test: TestActionModel,
       use: UseActionModel,
     };
@@ -31,7 +32,7 @@ export class ActionModel extends foundry.abstract.DataModel {
       name: new StringField({ initial: null, nullable: true }),
       type: new StringField({
         initial: "attack",
-        choices: ["attack", "use", "test"], // create EXECUTION LOGIC FOR THE TYPE
+        choices: ["attack", "use", "test", "tech"], // required to get TYPES
         required: true,
       }),
       damaging: new BooleanField({ initial: false }),
@@ -84,6 +85,17 @@ export class UseActionModel extends ActionModel {
     return {
       ...parentSchema,
       usage: new StringField({ initial: "", nullable: true }),
+    };
+  }
+}
+
+export class TechActionModel extends ActionModel {
+  static defineSchema() {
+    const parentSchema = super.defineSchema();
+    return {
+      ...parentSchema,
+      _gearActionId: new StringField({ initial: null, nullable: true }),
+      _gearId: new StringField({ initial: null, nullable: true }),
     };
   }
 }

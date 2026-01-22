@@ -26,8 +26,8 @@
   }
   h2 {
     height: 24px;
-    line-height: 30px;
-    font-size: 26px;
+    line-height: 32px;
+    font-size: 24px;
     font-family: "LTRemark Black";
     color: var(--pc-color-light-1);
   }
@@ -955,12 +955,12 @@ h4.movement {
     padding: 1px 0 1px 1px;
     border-style: solid;
     border-radius: 5px 0 0 5px;
-    border-color: var(--pc-color-damage-border);
     background: linear-gradient(
       to right,
       var(--pc-color-damage-bg) 24px,
       transparent 70px
     );
+    border-color: var(--pc-color-damage-border-st);
   }
   .inline-head:hover {
     filter: brightness(1.25);
@@ -972,7 +972,7 @@ h4.movement {
       var(--pc-color-essence-bg) 0%,
       transparent 100%
     );
-    border-color: var(--pc-color-essence-border);
+    border-color: var(--pc-color-essence-border-st);
   }
   .use {
     background: linear-gradient(
@@ -980,7 +980,7 @@ h4.movement {
       var(--pc-color-health-bg) 0%,
       transparent 100%
     );
-    border-color: var(--pc-color-health-border);
+    border-color: var(--pc-color-health-border-st);
   }
   .inline-icon {
     display: inline-block;

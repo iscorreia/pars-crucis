@@ -217,21 +217,18 @@
             font-size: 12.5px;
           }
           .action-title {
-            width: 25%;
+            width: 40%;
             font-size: var(--pc-font-size-mid);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
           }
-          .action-type {
-            width: 20%;
-          }
           .action-skill {
-            width: 28%;
+            width: 30%;
           }
           .action-subtype {
             font-size: 12.5px;
-            width: 27%;
+            width: 30%;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -248,7 +245,7 @@
             }
           }
           .action-usage {
-            width: 55%;
+            width: 60%;
           }
           a {
             text-align: center;
