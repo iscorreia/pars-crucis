@@ -16,9 +16,10 @@ function expectedActorLinkForType(type) {
 
 /**
  * System-wide Actor document class.
- * Used to apply default prototype token configuration for actor types. */
+ * Used to apply default prototype token configuration for actor types.
+ * @extends { Actor }
+ */
 export class PCActor extends foundry.documents.Actor {
-  @override
   async _preCreate(data, options, userId) {
     await super._preCreate(data, options, userId);
 
@@ -36,7 +37,7 @@ export class PCActor extends foundry.documents.Actor {
     });
   }
 
-  @override
+  /** @override */
   async _onCreate(data, options, userId) {
     await super._onCreate(data, options, userId);
 

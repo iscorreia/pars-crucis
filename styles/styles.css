@@ -1,0 +1,19 @@
+ol.directory-list li.actor,
+ol.directory-list li.item {
+  height: 24px;
+  overflow: hidden;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  img {
+    line-height: 24px;
+    object-position: 0 45%;
+  }
+
+  a {
+    height: inherit;
+    line-height: 20px;
+    font-size: 17px;
+    font-family: "BarlowCondensed Regular";
+  }
+}

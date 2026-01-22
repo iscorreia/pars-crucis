@@ -20,6 +20,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       icon: "fa fa-address-card",
     },
     actions: {
+      actionPicker: this.actionPicker,
       callAction: this.callActionOnClick,
       clickDelete: this.deleteItemOnClick,
       clickEdit: this.editItemOnClick,
@@ -29,8 +30,8 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       rollAbilityAttack: this.rollTestOnClick,
       rollTest: this.rollTestOnClick,
       rollSkill: this.rollSkillOnClick,
-      useAbility: this.useGearOnClick,
-      useGear: this.useGearOnClick,
+      useAbility: this.useOnClick,
+      useGear: this.useOnClick,
       sortAbilities: this.changeSortMode,
       switchLuck: this.switchLuckOnClick,
       toggleExpand: this.toggleAbilityExpand,
@@ -74,7 +75,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
 
   static TABS = {
     primary: {
-      initial: "gear", // Change to simplify testing, once done set back to skills
+      initial: "abilities", // Change to simplify testing, once done set back to skills
       tabs: [
         { id: "skills", label: "PC.tabs.skills" },
         { id: "abilities", label: "PC.tabs.abilities" },
@@ -153,7 +154,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     if (["attack", "test"].includes(acType))
       ParsCrucisActorSheet.rollTestOnClick.call(this, event, target);
     if (acType === "use")
-      ParsCrucisActorSheet.useGearOnClick.call(this, event, target);
+      ParsCrucisActorSheet.useOnClick.call(this, event, target);
   }
 
   /**
@@ -203,7 +204,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     const skillLabel = `${game.i18n.localize(PC.skills[skill].label)}`;
     const difLabel = `${game.i18n.localize("PC.difficulty.label")}`;
     let flavor = `${testLabel} ${skillLabel}`;
-    if (type === "test") flavor = `${flavor} — ${difLabel} ${difficulty || 10}`;
+    if (type === "test") flavor = `${flavor} — ${difLabel} ${difficulty || 0}`;
     if (type === "attack" && subtype) {
       const versusLabel = `${game.i18n.localize("PC.versus")}`;
       const counter = PC.versus[subtype];
@@ -214,6 +215,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     }
     // Additional information passed to the roll
     const info = {
+      subtype: action.subtype,
       damaging: action.damaging,
       damage: action.damage?.dmgTxt,
       effort: action.effort,
@@ -268,7 +270,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     return roll;
   }
 
-  static async useGearOnClick(_, target) {
+  static async useOnClick(_, target) {
     const { acId, itemId } = target.dataset;
     const item = this.actor.items.get(itemId);
     const action = item.system.actions[acId];
@@ -304,6 +306,41 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     const index = dataset.luckIndex;
     luckBooleans[index] = !luckBooleans[index];
     this.actor.update({ "system.luck.booleans": luckBooleans });
+  }
+  static async equipItemOnClick(_, target) {
+    const dataset = target.dataset;
+    const item = this.actor.items.get(dataset.itemId);
+    if (this.actor.isOwner)
+      return item.update({ ["system.details.equipped"]: dataset.equip });
+  }
+
+  static async toggleAbilityExpand(_, target) {
+    const item = this.actor.items.get(target.dataset.itemId);
+    const current = item.getFlag("pars-crucis", "expanded") ?? false;
+    item.setFlag("pars-crucis", "expanded", !current);
+  }
+
+  // Renders item sheet if owner
+  static async editItemOnClick(_, target) {
+    const item = this.actor.items.get(target.dataset.itemId);
+    if (this.actor.isOwner) item.sheet.render(true);
+  }
+
+  static async actionPicker(_, target) {
+    const { acId, itemId } = target.dataset;
+    console.log("AcPicker->", target.dataset);
+    const actor = this.actor;
+    console.log("this actor", actor);
+    const { weaponry, vest, accessories, gear } = actor.system;
+    const itemGroupOne = [...weaponry, ...vest, ...accessories, ...gear];
+    console.log("GroupItems", itemGroupOne);
+    const filtered = itemGroupOne.filter((item) => {
+      // console.log(item.system.actions);
+      // console.log(Object.keys(item.system.actions).length > 0);
+      
+      return Object.keys(item.system.actions).length > 0;
+    });
+    console.log(filtered);
   }
 
   // Open a Dialog box with options to Delete, Edit or Cancel
@@ -343,6 +380,12 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
         ],
       });
     }
+  }
+
+  static async changeSortMode(_, target) {
+    const dataset = target.dataset;
+    const actor = this.document;
+    actor.setFlag("pars-crucis", dataset.group, dataset.sortMode);
   }
 
   categorize(itemCollection, path, sortFn) {
@@ -393,30 +436,5 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
   getSortMode(flag) {
     const actor = this.document;
     return actor.getFlag("pars-crucis", flag) || "name-asc";
-  }
-
-  // Renders item sheet if owner
-  static async editItemOnClick(_, target) {
-    const item = this.actor.items.get(target.dataset.itemId);
-    if (this.actor.isOwner) item.sheet.render(true);
-  }
-
-  static async equipItemOnClick(_, target) {
-    const dataset = target.dataset;
-    const item = this.actor.items.get(dataset.itemId);
-    if (this.actor.isOwner)
-      return item.update({ ["system.details.equipped"]: dataset.equip });
-  }
-
-  static async toggleAbilityExpand(_, target) {
-    const item = this.actor.items.get(target.dataset.itemId);
-    const current = item.getFlag("pars-crucis", "expanded") ?? false;
-    item.setFlag("pars-crucis", "expanded", !current);
-  }
-
-  static async changeSortMode(_, target) {
-    const dataset = target.dataset;
-    const actor = this.document;
-    actor.setFlag("pars-crucis", dataset.group, dataset.sortMode);
   }
 }

@@ -94,6 +94,24 @@
                         {{/if}}
                       </a>
                     {{/if}}
+                    {{#if (eq action.type "tech")}}
+                      <a
+                        class="persona-action ac-tech"
+                        data-action="rollAbilityTech"
+                        data-item-id="{{ability._id}}"
+                        data-ac-id="{{action._id}}"
+                      >
+                        <img
+                          class="action-image"
+                          src="{{action.img}}"
+                          width="16"
+                          height="16"
+                        />
+                        {{#if action.name}}
+                          <div class="action-name">{{action.name}}</div>
+                        {{/if}}
+                      </a>
+                    {{/if}}
                     {{#if (eq action.type "test")}}
                       <a
                         class="persona-action ac-test"

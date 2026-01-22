@@ -3,9 +3,16 @@ import ActionKeywordPicker from "../apps/ac-keyword-picker.mjs";
 import KeywordPicker from "../apps/keyword-picker.mjs";
 import { PC } from "../config.mjs";
 
+// Defining default information for created actions based on its type
+const ACTION_DEFAULTS = {
+  attack: { damaging: true, range: "0", damage: { dmgBase: 3 } },
+  tech: { damaging: true },
+  test: { skill: "atlet" },
+};
+
 //This is the basic class for Pars Crucis Items and should be extended
 export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
-  sheets.ItemSheetV2
+  sheets.ItemSheetV2,
 ) {
   static DEFAULT_OPTIONS = {
     form: {
@@ -76,7 +83,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
         const currentArray =
           foundry.utils.getProperty(
             item.system,
-            `actions.${acId}.damage.dmgAttributes`
+            `actions.${acId}.damage.dmgAttributes`,
           ) ?? [];
         const updatedArray = currentArray.includes(key)
           ? currentArray
@@ -116,7 +123,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     const currentArray =
       foundry.utils.getProperty(
         item.system,
-        `actions.${acId}.damage.dmgAttributes`
+        `actions.${acId}.damage.dmgAttributes`,
       ) ?? [];
     const updatedArray = currentArray.filter((i) => i !== att);
     item.update({
@@ -133,6 +140,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
       name: game.i18n.localize(`PC.${acType}`),
       type: acType,
       _id: acId,
+      ...(ACTION_DEFAULTS[acType] ?? {}),
     };
 
     await item.update({
