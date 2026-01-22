@@ -23,7 +23,6 @@
 
 ## NECESSARY
 
-- Automatically set token actor-link/vision for personas **_config_**
 - Review Overrides **_logic_**
 - Final touches on the PDM config app **_hbs/css_**
 - Weapon/Gear/Abilities ammunition, how to interact? **_logic hbs css qol_**
@@ -61,3 +60,9 @@
 
 - Custom effects **_feature_**
 - Implement currency working on items **_feature_**
+
+### KNOWN BUGS
+
+- PDM mitigation is `NaN` when the PDM is created
+- Darkvision is automatically set on the actor, but does not take effect until re-set
+- Compendium banner img src path is empty
