@@ -22,7 +22,7 @@
 
 ## NECESSARY
 
-- Automatically set token actor-link/vision for personas **_config_**
+- Automatically set token actor-link/vision for personas **_config_** done
 - Improved Ability sheet **_hbs style/css_**
 - Review Overrides **_logic_**
 - Final touches on the PDM config app **_hbs/css_**

@@ -1,6 +1,7 @@
 import { PC } from "./module/config.mjs";
 import { PDMModel } from "./module/actor/pdm.mjs";
 import { PDMSheet } from "./module/actor/pdm-sheet.mjs";
+import { PCActor } from "./module/actor/actor.mjs";
 import { PersonaModel } from "./module/actor/persona.mjs";
 import { PersonaSheet } from "./module/actor/persona-sheet.mjs";
 import { PCChatMessage } from "./module/chat/chat-message.mjs";
@@ -18,7 +19,6 @@ import {
 import PCRoll from "./module/rolls/basic-roll.mjs";
 import TestRoll from "./module/rolls/test-roll.mjs";
 import onRenderChatMessageHTML from "./hooks/onRenderChatMessageHTML.mjs";
-import configurePersonaTokens from "./hooks/configurePersonaTokens.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
@@ -46,6 +46,7 @@ Hooks.once("init", () => {
   CONFIG.PC = PC;
   CONFIG.Dice.rolls = [PCRoll, TestRoll];
   CONFIG.ChatMessage.documentClass = PCChatMessage;
+  CONFIG.Actor.documentClass = PCActor;
 
   // Register the data model for the Actor subtype.
   Object.assign(CONFIG.Actor.dataModels, {
@@ -126,4 +127,3 @@ Hooks.once("init", () => {
 });
 
 onRenderChatMessageHTML();
-configurePersonaTokens();

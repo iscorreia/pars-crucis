@@ -28,31 +28,31 @@
   "packs": [
     {
       "name": "personas",
-      "label": "PC.PACKS.ACTORS",
+      "label": "PC.packs.actors",
       "type": "Actor",
       "banner": "systems/pars-crucis/assets/banners/personas.svg"
     },
     {
       "name": "abilities",
-      "label": "PC.PACKS.ABILITIES",
+      "label": "PC.packs.abilities",
       "type": "Item",
       "banner": "systems/pars-crucis/assets/banners/abilities.svg"
     },
     {
       "name": "gear",
-      "label": "PC.PACKS.GEAR",
+      "label": "PC.packs.gear",
       "type": "Item",
       "banner": "systems/pars-crucis/assets/banners/gear.svg"
     },
     {
       "name": "passives",
-      "label": "PC.PACKS.PASSIVES",
+      "label": "PC.packs.passives",
       "type": "Item",
       "banner": "systems/pars-crucis/assets/banners/passives.svg"
     },
     {
       "name": "weapons",
-      "label": "PC.PACKS.WEAPONS",
+      "label": "PC.packs.weapons",
       "type": "Item",
       "banner": "systems/pars-crucis/assets/banners/weapons.svg"
     }
