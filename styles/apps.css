@@ -147,3 +147,9 @@ input.favor-box {
 section.pdm-config {
   height: auto;
 }
+
+/* ACTION PICKER */
+.action-picker {
+  min-height: 200px;
+  max-height: 550px;
+}

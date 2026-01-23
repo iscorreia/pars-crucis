@@ -94,7 +94,7 @@ export class TechActionModel extends ActionModel {
     const parentSchema = super.defineSchema();
     return {
       ...parentSchema,
-      _gearActionId: new StringField({ initial: null, nullable: true }),
+      _gearAcId: new StringField({ initial: null, nullable: true }),
       _gearId: new StringField({ initial: null, nullable: true }),
     };
   }

@@ -1,0 +1,40 @@
+{{! Action picker window }}
+
+<section class="action-picker">
+  {{log this}}
+  <p class="info-desc">TEST</p>
+  <ol>
+    {{#each choices}}
+      <li class="inline-action">
+        {{log this}}
+        <img
+          class="inline-icon"
+          src="{{this.item.img}}"
+          width="24"
+          height="24"
+        />
+        <span class="inline-action-name">{{this.item.name}}</span>
+        <ol>
+          {{#each actions}}
+            <li>
+              <span
+                class="inline-head"
+                data-action="selectAction"
+                data-gear-ac-id="{{this.action.id}}"
+                data-gear-id="{{this.item.id}}"
+              >
+                <img
+                  class="inline-icon"
+                  src="{{this.img}}"
+                  width="16"
+                  height="16"
+                />
+                <span class="inline-action-name">{{this.name}}</span>
+              </span>
+            </li>
+          {{/each}}
+        </ol>
+      </li>
+    {{/each}}
+  </ol>
+</section>
