@@ -20,23 +20,6 @@ function expectedActorLinkForType(type) {
  * @extends { Actor }
  */
 export class PCActor extends foundry.documents.Actor {
-  async _preCreate(data, options, userId) {
-    await super._preCreate(data, options, userId);
-
-    const type = data?.type ?? this.type;
-    if (!isParsCrucisActorType(type)) return;
-
-    // Apply defaults to the prototype token at creation-time.
-    const expectedActorLink = expectedActorLinkForType(type);
-    this.updateSource({
-      "prototypeToken.actorLink": expectedActorLink,
-      "prototypeToken.sight.enabled": defaultSight.enabled,
-      "prototypeToken.sight.range": defaultSight.range,
-      "prototypeToken.sight.angle": defaultSight.angle,
-      "prototypeToken.sight.visionMode": defaultSight.visionMode,
-    });
-  }
-
   /** @override */
   async _onCreate(data, options, userId) {
     await super._onCreate(data, options, userId);
@@ -44,18 +27,35 @@ export class PCActor extends foundry.documents.Actor {
     const type = this.type;
     if (!isParsCrucisActorType(type)) return;
 
-    // Eensure the prototype token persisted as expected.
+    // Apply defaults to the prototype token after creation.
     const expectedActorLink = expectedActorLinkForType(type);
     const sight = this.prototypeToken?.sight ?? {};
+    const bar1 = this.prototypeToken?.bar1 ?? {};
+    const bar2 = this.prototypeToken?.bar2 ?? {};
 
     const needsUpdate =
       this.prototypeToken?.actorLink !== expectedActorLink ||
       sight.enabled !== defaultSight.enabled ||
       sight.range !== defaultSight.range ||
       sight.angle !== defaultSight.angle ||
-      sight.visionMode !== defaultSight.visionMode;
+      sight.visionMode !== defaultSight.visionMode ||
+      bar1.attribute !== "subattributes.pv.current" ||
+      bar1.max !== "subattributes.pv.max" ||
+      bar2.attribute !== "subattributes.pe.current" ||
+      bar2.max !== "subattributes.pe.max";
 
     if (!needsUpdate) return;
+
+    // Fix for darkvision bug: update visionMode in two steps
+    // First, set to basic to force a reset, then set to darkvision
+    if (
+      sight.visionMode !== defaultSight.visionMode &&
+      defaultSight.visionMode === "darkvision"
+    ) {
+      await this.update({
+        "prototypeToken.sight.visionMode": "basic",
+      });
+    }
 
     await this.update({
       "prototypeToken.actorLink": expectedActorLink,
@@ -63,6 +63,10 @@ export class PCActor extends foundry.documents.Actor {
       "prototypeToken.sight.range": defaultSight.range,
       "prototypeToken.sight.angle": defaultSight.angle,
       "prototypeToken.sight.visionMode": defaultSight.visionMode,
+      "prototypeToken.bar1.attribute": "subattributes.pv.current",
+      "prototypeToken.bar1.max": "subattributes.pv.max",
+      "prototypeToken.bar2.attribute": "subattributes.pe.current",
+      "prototypeToken.bar2.max": "subattributes.pe.max",
     });
   }
 }
