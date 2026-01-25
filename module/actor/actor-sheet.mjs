@@ -1,4 +1,5 @@
 const { api, handlebars, sheets } = foundry.applications;
+import ActionPicker from "../apps/action-picker.mjs";
 import { PC } from "../config.mjs";
 import PCRoll from "../rolls/basic-roll.mjs";
 import TestRoll from "../rolls/test-roll.mjs";
@@ -328,19 +329,23 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
 
   static async actionPicker(_, target) {
     const { acId, itemId } = target.dataset;
-    console.log("AcPicker->", target.dataset);
-    const actor = this.actor;
-    console.log("this actor", actor);
+    const { actor } = this;
     const { weaponry, vest, accessories, gear } = actor.system;
-    const itemGroupOne = [...weaponry, ...vest, ...accessories, ...gear];
-    console.log("GroupItems", itemGroupOne);
-    const filtered = itemGroupOne.filter((item) => {
-      // console.log(item.system.actions);
-      // console.log(Object.keys(item.system.actions).length > 0);
-      
-      return Object.keys(item.system.actions).length > 0;
-    });
-    console.log(filtered);
+    const gearArray = [...weaponry, ...vest, ...accessories, ...gear];
+    const attackChoices = gearArray
+      .map((item) => {
+        const actions = getItemActionsByType(item, "attack");
+        return Object.keys(actions).length ? { item, actions } : null;
+      })
+      .filter(Boolean);
+    // console.log(attackChoices);
+
+    new ActionPicker({
+      document: actor,
+      choices: attackChoices,
+      acId: acId,
+      itemId: itemId,
+    })?.render(true);
   }
 
   // Open a Dialog box with options to Delete, Edit or Cancel
@@ -437,4 +442,12 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     const actor = this.document;
     return actor.getFlag("pars-crucis", flag) || "name-asc";
   }
+}
+
+function getItemActionsByType(item, type) {
+  return Object.fromEntries(
+    Object.entries(item.system.actions).filter(
+      ([_, action]) => action.type === type,
+    ),
+  );
 }

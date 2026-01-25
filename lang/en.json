@@ -639,7 +639,8 @@
       "dtt": { "label": "Destrutivo", "abv": "Dtt" },
       "es": { "label": "Essencial", "abv": "Es" },
       "ex": { "label": "Existencial", "abv": "Ex" },
-      "pain": { "label": "Dor", "abv": "Dor" }
+      "pain": { "label": "Dor", "abv": "Dor" },
+      "inherit": { "label": "Herdar" }
     },
     "phySubtype": {
       "crushing": { "label": "Contundente" },
@@ -673,6 +674,7 @@
       "gear": "Equipamentos",
       "passives": "Passivas",
       "weapons": "Armamentos"
-    }
+    },
+    "with": "com"
   }
 }

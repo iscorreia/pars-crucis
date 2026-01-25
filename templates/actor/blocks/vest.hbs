@@ -31,7 +31,8 @@
     <div class="persona-actions">
       {{#each system.actions as |action key|}}
         {{#if (eq action.type "attack")}}
-          <a class="persona-action ac-attack"
+          <a 
+            class="persona-action ac-attack"
             data-action="rollAttack"
             data-item-id="{{../this._id}}"
             data-ac-id="{{action._id}}"
@@ -93,7 +94,8 @@
                   "PC.action.types.use.label"
                 }}</div>
             {{/if}}
-          </a>{{/if}}
+          </a>
+        {{/if}}
       {{/each}}
     </div>
 

@@ -4,7 +4,8 @@
 .persona-config,
 .pc-item-tab,
 .item-header,
-.keyword-picker {
+.keyword-picker,
+.action-picker {
   h1,
   h2,
   h3,
@@ -1003,6 +1004,21 @@ h4.movement {
   .inline-skill {
     font-size: 12px;
     color: var(--pc-color-light-3);
+  }
+  .inline-button {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin-left: 3px;
+    height: 20px;
+    line-height: 20px;
+    min-height: 20px;
+    .inline-label {
+      margin: 0;
+    }
+    .inline-selected {
+      color: var(--pc-color-light-1);
+    }
   }
 }
 .inline-action:last-child {

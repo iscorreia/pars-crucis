@@ -2,16 +2,16 @@
 
 - Improved Weapon **_logic hbs style/css_**
 - Improved Gear **_hbs style/css_**
-- Split action DataModels for attack, test, use
-- Creating `WeaponAbility` action DataModel
+- Improved Ability sheet **_hbs style/css_**
+- Improved Ability Technique data handling **_logic hbs_**
 - Persona Ability calculations: how to interact with weapons? Weapon abilities? **_logic_**
+- Implementing usable Ability Techniques **_logic_**
 
 # HIGH PRIORITY
 
 - Basic compendium **_logic_**
 - PV and PE properly set for token **_logic_**
 - Show Abilities/Items on chat **_feature_**
-- FIX PDM sheet / model mitigation **_logic hbs_**
 
 ## IMPORTANT
 
@@ -19,7 +19,6 @@
 - Improved PASSIVE SHEET **_logic hbs style/css_**
 - Create a prompt for last roll action adjustment on pressing ALT **_feature_**
 - PDM sheet having Attributes and Skills grayed out and not rollable when null **_feature hbs style/css_**
-- Improved Ability sheet **_hbs style/css_**
 
 ## NECESSARY
 
@@ -63,6 +62,7 @@
 
 ### KNOWN BUGS
 
-- PDM mitigation is `NaN` when the PDM is created
+- PDM mitigation is `NaN` when set no `null`, needs better treatment null should be valid
 - Darkvision is automatically set on the actor, but does not take effect until re-set
 - Compendium banner img src path is empty
+- PV/PE max values not being taken into account on token

@@ -3,7 +3,6 @@
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="actions">
   <div class="actions-tab">
     <div class="actions-controls">
-      {{log this}}
       <a data-action="createAction" data-ac-type="attack"><i class="fa-regular fa-plus"></i> {{localize "PC.createAttack"}}</a>
       {{#if (eq item.type "ability")}}
         <a data-action="createAction" data-ac-type="tech"
@@ -60,7 +59,7 @@
                 {{#if (eq action.type "tech")}}
                   <button
                     type="button"
-                    class="action-picker"
+                    class="pick-action"
                     data-action="open-action-picker"
                   >
                     {{#if selectedAction}}
@@ -209,26 +208,39 @@
                 {{/each}}
               </div>
             </div>
-            <div class="flexcol">
-              {{localize "PC.multiplier.label"}}
-              <select name="system.actions.{{@key}}.damage.dmgAttMultiplier">
-                {{selectOptions
-                  ../config.multiplier
-                  selected=action.damage.dmgAttMultiplier
-                  localize=true
-                }}
-              </select>
-            </div>
-            <div class="flexcol">
-              {{localize "PC.type"}}
-              <select name="system.actions.{{@key}}.damage.dmgType">
-                {{selectOptions
-                  ../config.dmgType
-                  selected=action.damage.dmgType
-                  localize=true
-                }}
-              </select>
-            </div>
+            {{#if (not (eq action.type "tech"))}}
+              <div class="flexcol">
+                {{localize "PC.multiplier.label"}}
+                <select name="system.actions.{{@key}}.damage.dmgAttMultiplier">
+                  {{selectOptions
+                    ../config.multiplier
+                    selected=action.damage.dmgAttMultiplier
+                    localize=true
+                  }}
+                </select>
+              </div>
+              <div class="flexcol">
+                {{localize "PC.type"}}
+                <select name="system.actions.{{@key}}.damage.dmgType">
+                  {{selectOptions
+                    ../config.dmgType
+                    selected=action.damage.dmgType
+                    localize=true
+                  }}
+                </select>
+              </div>
+            {{else}}
+              <div class="flexcol">
+                {{localize "PC.type"}}
+                <select name="system.actions.{{@key}}.damage.dmgType">
+                  {{selectOptions
+                    ../config.techDmgType
+                    selected=action.damage.dmgType
+                    localize=true
+                  }}
+                </select>
+              </div>
+            {{/if}}
             <div class="flexcol">
               {{localize "PC.subtype"}}
               <input

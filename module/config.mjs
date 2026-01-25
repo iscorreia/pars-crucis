@@ -772,6 +772,11 @@ PC.dmgType = {
   pain: { label: "PC.dmgType.pain.label", abv: "PC.dmgType.pain.abv" },
 };
 
+PC.techDmgType = {
+  ...PC.dmgType,
+  inherit: { label: "PC.dmgType.inherit.label" },
+};
+
 PC.phySubtype = {
   crushing: { label: "PC.subtype.crushing" },
   cutting: { label: "PC.subtype.cutting" },

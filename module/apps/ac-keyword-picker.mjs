@@ -7,7 +7,7 @@ const { api } = foundry.applications;
 import { PC } from "../config.mjs";
 
 export default class ActionKeywordPicker extends api.HandlebarsApplicationMixin(
-  api.DocumentSheetV2
+  api.DocumentSheetV2,
 ) {
   static DEFAULT_OPTIONS = {
     form: {

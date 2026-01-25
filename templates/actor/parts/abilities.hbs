@@ -96,7 +96,7 @@
                     {{/if}}
                     {{#if (eq action.type "tech")}}
                       <a
-                        class="persona-action ac-tech"
+                        class="persona-action ac-attack"
                         data-action="rollAbilityTech"
                         data-item-id="{{ability._id}}"
                         data-ac-id="{{action._id}}"
@@ -182,7 +182,7 @@
               {{#if ability.flags.pars-crucis.expanded}}
                 <ol class="ability-actions">
                   {{#each ability.system.actions}}
-                    {{> systems/pars-crucis/templates/actor/blocks/action.hbs gearId=../this._id}}
+                    {{> systems/pars-crucis/templates/actor/blocks/action.hbs itemId=../this._id}}
                   {{/each}}
                 </ol>
               {{/if}}
