@@ -152,4 +152,41 @@ section.pdm-config {
 .action-picker {
   min-height: 200px;
   max-height: 550px;
+  ol,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .item-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    .item-title {
+      width: 160px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      h4 {
+        padding: 1px 0 0 2px;
+        line-height: 23px;
+        font-size: 17px;
+        font-family: "BarlowCondensed Regular";
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .item-keywords {
+      width: 220px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      row-gap: 2px;
+      column-gap: 2px;
+    }
+  }
 }

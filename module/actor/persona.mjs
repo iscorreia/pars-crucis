@@ -253,7 +253,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const passivesData = this.passives;
     // const weaponry = this.weaponry;
     const { abilities, weaponry, vest, accessories, gear } = this;
-    const itemGroupOne = [
+    const itemGroup = [
       ...abilities,
       ...weaponry,
       ...vest,
@@ -261,33 +261,8 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       ...gear,
     ];
 
-    // Calculates equipped weapons damage
-    for (let [_, weapon] of Object.entries(itemGroupOne)) {
-      const { actions } = weapon.system;
-      for (let [_, action] of Object.entries(actions)) {
-        if (action.damaging) {
-          const dmg = action.damage ?? {};
-          const attValues = [];
-          for (const att of dmg.dmgAttributes) {
-            const attValue =
-              attributesData[att].derived + attributesData[att].mod;
-            attValues.push(attValue);
-          }
-          const highestDmgAtt =
-            attValues.length > 0 ? Math.max(...attValues) : 0;
-          const multipliedDmg = Math.ceil(highestDmgAtt * dmg.dmgAttMultiplier);
-          const calculatedDmg = dmg.dmgBase + multipliedDmg;
-          const dmgTypeLabel = game.i18n.localize(
-            `PC.dmgType.${dmg.dmgType}.abv`,
-          );
-          action.damage.dmgVal = calculatedDmg;
-          action.damage.dmgTxt = `${calculatedDmg}${dmg.dmgAddition} ${dmgTypeLabel}`;
-          if (!dmg.scalable) {
-            action.damage.dmgTxt = `[${calculatedDmg}${dmg.dmgAddition}] ${dmgTypeLabel}`;
-          }
-        }
-      }
-    }
+    // ABILITIES and GEAR derived calculations
+    handleGearAbilities(itemGroup, attributesData, parent.items);
 
     // PASSIVES handling!
     for (let passive of passivesData) {
@@ -479,4 +454,69 @@ function deriveAttribute(att) {
 export function calculateStatic(att) {
   att.static = Math.max(10 + att.derived + att.mod, 10);
   return att;
+}
+
+export function handleGearAbilities(itemGroup, attributesData, items) {
+  for (let [_, gear] of Object.entries(itemGroup)) {
+    const { actions } = gear.system;
+    // Calculates equipped gear and abilities damage
+    for (let [_, action] of Object.entries(actions)) {
+      if (action.damaging && action.type !== "tech") {
+        const dmg = action.damage ?? {};
+        const attValues = [];
+        for (const att of dmg.dmgAttributes) {
+          const attValue =
+            attributesData[att].derived + attributesData[att].mod;
+          attValues.push(attValue);
+        }
+        const highestDmgAtt = attValues.length > 0 ? Math.max(...attValues) : 0;
+        const multipliedDmg = Math.ceil(highestDmgAtt * dmg.dmgAttMultiplier);
+        const calculatedDmg = dmg.dmgBase + multipliedDmg;
+        const dmgTypeLabel = game.i18n.localize(
+          `PC.dmgType.${dmg.dmgType}.abv`,
+        );
+        action.damage.dmgVal = calculatedDmg;
+        action.damage.dmgTxt = `${calculatedDmg}${dmg.dmgAddition} ${dmgTypeLabel}`;
+        if (!dmg.scalable) {
+          action.damage.dmgTxt = `[${calculatedDmg}${dmg.dmgAddition}] ${dmgTypeLabel}`;
+        }
+      } else if (action.type === "tech") {
+        const selectedItem = items.get(action._gearId);
+        const selectedAction = selectedItem?.system.actions[action._gearAcId];
+        action.selectedItem = selectedItem ?? null;
+        action.selectedAction = selectedAction ?? null;
+        action.ready = selectedItem && selectedAction ? true : false;
+        // Calculates technique damage based on selected item attack action
+        if (action.damaging && action.ready) {
+          const dmg = action.damage ?? {};
+          const srcDmg = selectedAction?.damage ?? {};
+          const attValues = [];
+          const joinedAtt = [
+            ...new Set([...dmg.dmgAttributes, ...srcDmg.dmgAttributes]),
+          ];
+          for (const att of joinedAtt) {
+            const attValue =
+              attributesData[att].derived + attributesData[att].mod;
+            attValues.push(attValue);
+          }
+          const highestDmgAtt =
+            attValues.length > 0 ? Math.max(...attValues) : 0;
+          const multipliedSrcDmg = Math.ceil(
+            highestDmgAtt * srcDmg.dmgAttMultiplier,
+          );
+          const reCalculatedSrcDmg = srcDmg.dmgBase + multipliedSrcDmg;
+          const calculatedDmg = reCalculatedSrcDmg + dmg.dmgBase;
+          let dmgType = dmg.dmgType;
+          if (dmg.dmgType === "inherit") {
+            dmgType = srcDmg.dmgType;
+          }
+          const dmgTypeLabel = game.i18n.localize(`PC.dmgType.${dmgType}.abv`);
+          action.damage.dmgTxt = `${calculatedDmg}${srcDmg.dmgAddition}${dmg.dmgAddition} ${dmgTypeLabel}`;
+        } else if (action.damaging) {
+          action.damage.dmgTxt = `ø`;
+        }
+        console.log(action);
+      }
+    }
+  }
 }

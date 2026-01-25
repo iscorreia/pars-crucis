@@ -1005,6 +1005,21 @@ h4.movement {
     font-size: 12px;
     color: var(--pc-color-light-3);
   }
+  .inline-button {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin-left: 3px;
+    height: 20px;
+    line-height: 20px;
+    min-height: 20px;
+    .inline-label {
+      margin: 0;
+    }
+    .inline-selected {
+      color: var(--pc-color-light-1);
+    }
+  }
 }
 .inline-action:last-child {
   border-width: 0;

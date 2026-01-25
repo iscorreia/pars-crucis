@@ -94,6 +94,7 @@ export class TechActionModel extends ActionModel {
     const parentSchema = super.defineSchema();
     return {
       ...parentSchema,
+      damage: damage({ damageType: "inherit" }),
       _gearAcId: new StringField({ initial: null, nullable: true }),
       _gearId: new StringField({ initial: null, nullable: true }),
     };
@@ -212,14 +213,14 @@ function information({
   return new SchemaField(fields);
 }
 
-function damage() {
+function damage({ damageType = "phy" } = {}) {
   return new SchemaField({
     dmgBase: new NumberField({ initial: 0, integer: true }),
     dmgAttributes: new ArrayField(new StringField(), { initial: [] }),
     dmgAttMultiplier: new NumberField({ initial: 1 }),
     dmgAddition: new StringField({ initial: "" }),
     scalable: new BooleanField({ initial: true }),
-    dmgType: new StringField({ initial: "phy" }),
+    dmgType: new StringField({ initial: damageType }),
     dmgSubtype: new StringField({ initial: "" }),
   });
 }

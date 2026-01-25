@@ -16,11 +16,13 @@ export default class ActionPicker extends api.HandlebarsApplicationMixin(
       width: 800,
     },
     tag: "form",
-    windows: {
+    window: {
       icon: "fa-regular fa-key-skeleton-left-right",
       title: "PC.actionPicker",
     },
-    actions: {},
+    actions: {
+      selectAction: this.selectAction,
+    },
   };
 
   /** @inheritdoc */
@@ -31,11 +33,29 @@ export default class ActionPicker extends api.HandlebarsApplicationMixin(
   };
 
   async _prepareContext() {
-    console.log(this);
-    const options = this.options;
-    const system = options.document.system;
-    const choices = options.choices;
-    const context = { system: system, choices: choices };
+    const { options } = this;
+    const { acId, choices, document, itemId } = options;
+    const { system } = document;
+    const item = document.items.get(itemId);
+    const tech = item.system.actions[acId];
+    const context = {
+      choices: choices,
+      system: system,
+      item: item,
+      tech: tech,
+    };
     return context;
+  }
+
+  static async selectAction(_, target) {
+    const { options } = this;
+    const { acId, document, itemId } = options;
+    const { gearAcId, gearId } = target.dataset;
+    const item = document.items.get(itemId);
+    await item.update({
+      [`system.actions.${acId}._gearAcId`]: gearAcId,
+      [`system.actions.${acId}._gearId`]: gearId,
+    });
+    this.close(); // closes de app window after action select
   }
 }

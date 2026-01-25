@@ -3,6 +3,7 @@ import {
   calculateStatic,
   currencyField,
   eachAttribute,
+  handleGearAbilities,
   luckBooleans,
 } from "./persona.mjs";
 
@@ -70,10 +71,10 @@ export class PDMModel extends foundry.abstract.TypeDataModel {
       }),
 
       mitigation: new SchemaField({
-        ar: PDMattributeField(),
-        robust: PDMattributeField(),
-        insulant: PDMattributeField(),
-        ab: PDMattributeField(),
+        ar: PDMmitigationField(),
+        robust: PDMmitigationField(),
+        insulant: PDMmitigationField(),
+        ab: PDMmitigationField(),
       }),
 
       categoryModifiers: new SchemaField({
@@ -122,20 +123,21 @@ export class PDMModel extends foundry.abstract.TypeDataModel {
     this.abilities = parent.itemTypes.ability;
     const abilitiesData = this.abilities;
     this.weaponry = parent.itemTypes.weapon.filter(
-      (i) => i.system.details.equipped || i.system.info.group === "unarmed"
+      (i) => i.system.details.equipped || i.system.info.group === "unarmed",
     );
     this.vest = parent.itemTypes.gear.filter(
-      (i) => i.system.details.equipped && i.system.info.group === "vest"
+      (i) => i.system.details.equipped && i.system.info.group === "vest",
     );
     this.accessories = parent.itemTypes.gear.filter(
-      (i) => i.system.details.equipped && accGroup.includes(i.system.info.group)
+      (i) =>
+        i.system.details.equipped && accGroup.includes(i.system.info.group),
     );
     this.gear = parent.items.filter((i) => {
       return inventoryGroup.includes(i.type) && !i.system.details.equipped;
     });
     this.passives = parent.itemTypes.passive;
     const { abilities, weaponry, vest, accessories, gear } = this;
-    const itemGroupOne = [
+    const itemGroup = [
       ...abilities,
       ...weaponry,
       ...vest,
@@ -143,31 +145,8 @@ export class PDMModel extends foundry.abstract.TypeDataModel {
       ...gear,
     ];
 
-    // Calculates equipped weapons damage
-    for (let [_, weapon] of Object.entries(itemGroupOne)) {
-      const actions = weapon.system.actions;
-      for (let [_, action] of Object.entries(actions)) {
-        if (action.damaging) {
-          const dmg = action.damage ?? {};
-          const attValues = [];
-          for (const att of dmg.dmgAttributes) {
-            const attValue =
-              attributesData[att].derived + attributesData[att].mod;
-            attValues.push(attValue);
-          }
-          const highestDmgAtt =
-            attValues.length > 0 ? Math.max(...attValues) : 0;
-          const multipliedDmg = Math.ceil(highestDmgAtt * dmg.dmgAttMultiplier);
-          const calculatedDmg = dmg.dmgBase + multipliedDmg;
-          const dmgType = game.i18n.localize(`PC.dmgType.${dmg.dmgType}.abv`);
-          action.damage.dmgVal = calculatedDmg;
-          action.damage.dmgTxt = `${calculatedDmg} ${dmgType}`;
-          if (!dmg.scalable) {
-            action.damage.dmgTxt = `[${calculatedDmg}] ${dmgType}`;
-          }
-        }
-      }
-    }
+    // ABILITIES and GEAR derived calculations
+    handleGearAbilities(itemGroup, attributesData, parent.items);
 
     // LUCK handling!
     const luckData = this.luck;
@@ -204,6 +183,13 @@ function PDMattributeField({ extraFields = null } = {}) {
   }
 
   return new SchemaField(fields);
+}
+
+function PDMmitigationField({} = {}) {
+  return new SchemaField({
+    base: new NumberField({ initial: 0, integer: true, nullable: true }),
+    mod: new NumberField({ initial: 0, integer: true, nullable: true }),
+  });
 }
 
 function PDMsubField() {
