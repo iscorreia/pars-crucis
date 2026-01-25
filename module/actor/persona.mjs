@@ -213,21 +213,25 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
     // SUBATTRIBUTES handling
     subData.pv.max = this.maxStatus("pv", "fis", "ego", "resis");
-    subData.pv.percent = (100 * subData.pv.current) / subData.pv.max;
     subData.pe.max = this.maxStatus("pe", "esp", "cog", "amago");
-    subData.pe.percent = (100 * subData.pe.current) / subData.pe.max;
+    
+    // Works current PV and PE **MAKE THIS INTO A FUNCTION**
+    const pvDerived = Number(subData.pv?.current ?? 0);
+    subData.pv.current = Math.min(Math.max(pvDerived, 0), subData.pv.max);
+    subData.pv.value = subData.pv.current;
+    subData.pv.percent = (100 * subData.pv.value) / subData.pv.max;
+    
+    const peDerived = Number(subData.pe?.current ?? 0);
+    subData.pe.current = Math.min(Math.max(peDerived, 0), subData.pe.max);
+    subData.pe.value = subData.pe.current;
+    subData.pe.percent = (100 * subData.pe.value) / subData.pe.max;
+    
     mvData.walk.base = origin.attributes.mv + mvData.walk.adjust || 4;
     mvData.sprint.base =
       (mvData.walk.override || mvData.walk.base) +
       mvData.sprint.adjust +
       2 +
       Math.ceil(Math.max(skillsData.atlet.level, skillsData.agili.level) / 2);
-
-    // Works current PV and PE **MAKE THIS INTO A FUNCTION**
-    const pvDerived = Number(subData.pv?.current ?? 0);
-    subData.pv.current = Math.min(Math.max(pvDerived, 0), subData.pv.max);
-    const peDerived = Number(subData.pe?.current ?? 0);
-    subData.pe.current = Math.min(Math.max(peDerived, 0), subData.pe.max);
 
     // Filter items by group, uses the helper actor#itemTypes
     // Gear|Weapon items are set into their specific groups once equipped
@@ -391,6 +395,7 @@ function attributeField({
 function subField() {
   return new SchemaField({
     current: new NumberField({ integer: true, min: 0 }),
+    value: new NumberField({ integer: true, min: 0 }),
     override: new NumberField({ initial: null, integer: true, nullable: true }),
     adjust: new NumberField({ initial: 0, integer: true }),
   });

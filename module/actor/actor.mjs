@@ -41,12 +41,10 @@ export class PCActor extends foundry.documents.Actor {
         actorLink: expectedActorLink,
         sight: { ...defaultSight },
         bar1: {
-          attribute: "subattributes.pv.current",
-          max: "subattributes.pv.max",
+          attribute: "subattributes.pv",
         },
         bar2: {
-          attribute: "subattributes.pe.current",
-          max: "subattributes.pe.max",
+          attribute: "subattributes.pe",
         },
       },
     };
