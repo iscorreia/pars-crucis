@@ -95,6 +95,14 @@ export class TechActionModel extends ActionModel {
     return {
       ...parentSchema,
       damage: damage({ damageType: "inherit" }),
+      skill: new StringField({
+        initial: "inherit",
+        choices: () => Object.keys(PC.techSkills),
+      }),
+      subtype: new StringField({
+        initial: "inherit",
+        choices: () => Object.keys(PC.techSubtypes),
+      }),
       _gearAcId: new StringField({ initial: null, nullable: true }),
       _gearId: new StringField({ initial: null, nullable: true }),
     };

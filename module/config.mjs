@@ -369,6 +369,11 @@ PC.skillsNone = {
   ...PC.skills,
 };
 
+PC.techSkills = {
+  inherit: { label: "PC.inherit" },
+  ...PC.skills,
+};
+
 PC.corporais = {
   atlet: { label: "PC.skills.atlet" },
   briga: { label: "PC.skills.briga" },
@@ -540,6 +545,11 @@ PC.action = {
     use: { label: "PC.action.types.use.label" },
     test: { label: "PC.action.types.test.label" },
   },
+};
+
+PC.techSubtypes = {
+  inherit: { label: "PC.inherit" },
+  ...PC.action.types.attack.subtypes,
 };
 
 PC.versus = {
@@ -736,6 +746,7 @@ PC.keyword = {
     bypass: { label: "PC.keyword.bypass" },
     impact: { label: "PC.keyword.impact" },
     penetrating: { label: "PC.keyword.penetrating" },
+    plague: { label: "PC.keyword.plague" },
     handling: { label: "PC.keyword.handling" },
     deviation: { label: "PC.keyword.deviation" },
     freezing: { label: "PC.keyword.freezing" },
@@ -773,8 +784,8 @@ PC.dmgType = {
 };
 
 PC.techDmgType = {
-  ...PC.dmgType,
   inherit: { label: "PC.dmgType.inherit.label" },
+  ...PC.dmgType,
 };
 
 PC.phySubtype = {

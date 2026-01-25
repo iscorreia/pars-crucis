@@ -3,9 +3,8 @@
 - Improved Weapon **_logic hbs style/css_**
 - Improved Gear **_hbs style/css_**
 - Improved Ability sheet **_hbs style/css_**
-- Improved Ability Technique data handling **_logic hbs_**
-- Persona Ability calculations: how to interact with weapons? Weapon abilities? **_logic_**
-- Implementing usable Ability Techniques **_logic_**
+- Further improve Ability Technique data handling and presentation **_logic hbs_**
+- Gray-out and disable Techniques that are not `Ready`, need to select Item Action **_logic_**
 
 # HIGH PRIORITY
 
@@ -66,3 +65,8 @@
 - Darkvision is automatically set on the actor, but does not take effect until re-set
 - Compendium banner img src path is empty
 - PV/PE max values not being taken into account on token
+
+### PONDER ABOUT
+
+- Ability Technique Item/Action keywords not showing in the ability line, do we want it to?
+- Move some functions to utils

@@ -997,7 +997,7 @@ h4.movement {
     top: 1px; /* small tweak to height */
   }
   .inline-label {
-    margin-left: 10px;
+    margin-left: 8px;
     font-family: "Amiri";
     color: var(--color-light-3);
   }
@@ -1008,7 +1008,7 @@ h4.movement {
   .inline-button {
     display: inline-block;
     border: none;
-    padding: 0;
+    padding: 0 2px;
     margin-left: 3px;
     height: 20px;
     line-height: 20px;

@@ -188,7 +188,8 @@
       "ontol": "Ontologia",
       "sabak": "Sabakismo",
 
-      "none": "Nenhuma"
+      "none": "Nenhuma",
+      "inherit": "Herdar"
     },
     "skill": "Perícia",
     "meleeCombat": "Combate corpo a corpo",
@@ -334,7 +335,9 @@
             "aoe": "Área",
             "affliction": "Aflição",
             "mind": "Mental",
-            "social": "Social"
+            "social": "Social",
+
+            "inherit": "Herdar"
           }
         },
         "use": { "label": "Uso" },
@@ -597,6 +600,7 @@
       "bypass": "Indireto",
       "impact": "Impacto",
       "penetrating": "Penetrante",
+      "plague": "Peste",
       "handling": "Manuseio",
       "deviation": "Desvio",
       "freezing": "Congelante",
