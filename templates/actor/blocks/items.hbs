@@ -117,17 +117,23 @@
               <i class="fa-regular fa-arrow-up-from-arc"></i>
             </a>
           {{/if}}
-          <a
-            data-action="toggleExpand"
-            data-item-id="{{this._id}}"
-            title="{{localize 'PC.expandCollapseActions'}}"
-          >
-            {{#if this.flags.pars-crucis.expanded}}
-              <i class="fa-regular fa-arrows-to-line"></i>
-            {{else}}
+          {{#if (isEmpty this.system.actions)}}
+            <div class="disabled-control">
               <i class="fa-regular fa-arrows-from-line"></i>
-            {{/if}}
-          </a>
+            </div>
+          {{else}}
+            <a
+              data-action="toggleExpand"
+              data-item-id="{{this._id}}"
+              title="{{localize 'PC.expandCollapseActions'}}"
+            >
+              {{#if this.flags.pars-crucis.expanded}}
+                <i class="fa-regular fa-arrows-to-line"></i>
+              {{else}}
+                <i class="fa-regular fa-arrows-from-line"></i>
+              {{/if}}
+            </a>
+          {{/if}}
           <a
             data-action="clickEdit"
             data-item-id="{{this._id}}"

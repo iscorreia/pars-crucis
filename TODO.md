@@ -40,7 +40,6 @@
 
 ### INTERESTING BUT NOT NECESSARY
 
-- Gray out and deactive expand/collapse actions on items without actions
 - Ability and Item use Limits and Conditions
 - Draggable Macros for Attribute and Skill rolls
 - Draggable Macros for Ability and Item actions
