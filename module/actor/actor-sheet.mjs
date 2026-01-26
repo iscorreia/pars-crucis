@@ -274,8 +274,19 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       acSubtype: techSubtype,
       acType: type,
     });
+    const withItem = {
+      selectedItem: {
+        img: selectedItem.img,
+        name: selectedItem.name,
+      },
+      selectedAction: {
+        img: selectedAction.img,
+        name: selectedAction.name,
+      },
+    };
     // Additional information passed to the roll
     const info = {
+      withItem: withItem,
       subtype: action.techSubtype,
       damaging: action.damaging,
       damage: action.damage?.dmgTxt,

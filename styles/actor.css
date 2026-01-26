@@ -944,10 +944,10 @@ h4.movement {
 }
 .inline-action {
   width: calc(100% - 12px);
-  font-size: 13px;
+  font-size: 13.5px;
   min-height: 20px;
   border-width: 0 0 1px 0;
-  padding-bottom: 1px;
+  padding-top: 1px;
   border-style: dashed;
   border-color: var(--color-dark-3);
   .inline-head {

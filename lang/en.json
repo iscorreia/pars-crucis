@@ -679,6 +679,7 @@
       "passives": "Passivas",
       "weapons": "Armamentos"
     },
-    "with": "com"
+    "with": "com",
+    "With": "Com"
   }
 }
