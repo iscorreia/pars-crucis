@@ -4,7 +4,6 @@
 - Improved Gear **_hbs style/css_**
 - Improved Ability sheet **_hbs style/css_**
 - Further improve Ability Technique data handling and presentation **_logic hbs_**
-- Gray-out and disable Techniques that are not `Ready`, need to select Item Action **_logic_**
 
 # HIGH PRIORITY
 
