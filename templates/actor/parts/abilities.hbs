@@ -95,22 +95,36 @@
                       </a>
                     {{/if}}
                     {{#if (eq action.type "tech")}}
-                      <a
-                        class="persona-action ac-attack"
-                        data-action="rollTech"
-                        data-item-id="{{ability._id}}"
-                        data-ac-id="{{action._id}}"
-                      >
-                        <img
-                          class="action-image"
-                          src="{{action.img}}"
-                          width="16"
-                          height="16"
-                        />
-                        {{#if action.name}}
-                          <div class="action-name">{{action.name}}</div>
-                        {{/if}}
-                      </a>
+                      {{#if action.ready}}
+                        <a
+                          class="persona-action ac-attack"
+                          data-action="rollTech"
+                          data-item-id="{{ability._id}}"
+                          data-ac-id="{{action._id}}"
+                        >
+                          <img
+                            class="action-image"
+                            src="{{action.img}}"
+                            width="16"
+                            height="16"
+                          />
+                          {{#if action.name}}
+                            <div class="action-name">{{action.name}}</div>
+                          {{/if}}
+                        </a>
+                      {{else}}
+                        <div class="persona-action ac-attack disabled-action">
+                          <img
+                            class="action-image"
+                            src="{{action.img}}"
+                            width="16"
+                            height="16"
+                          />
+                          {{#if action.name}}
+                            <div class="action-name">{{action.name}}</div>
+                          {{/if}}
+                        </div>
+                      {{/if}}
                     {{/if}}
                     {{#if (eq action.type "test")}}
                       <a

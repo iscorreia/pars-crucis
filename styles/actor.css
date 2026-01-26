@@ -916,8 +916,8 @@ h4.movement {
       line-height: 15px;
     }
   }
-  .persona-action:hover {
-    filter: brightness(1.25);
+  .persona-action:hover:not(.disabled-action) {
+    filter: brightness(1.2) saturate(1.1);
   }
   .ac-attack {
     background-color: var(--pc-color-damage-bg);
@@ -934,6 +934,9 @@ h4.movement {
   .persona-action:last-child {
     margin: 0;
   }
+}
+.disabled-action {
+  filter: brightness(0.85) saturate(0.25);
 }
 
 /* INLINE ACTION */
@@ -971,8 +974,8 @@ h4.movement {
     );
     border-color: var(--pc-color-damage-border-st);
   }
-  .inline-head:hover {
-    filter: brightness(1.25);
+  .inline-head:hover:not(.disabled-action) {
+    filter: brightness(1.2) saturate(1.1);
     cursor: pointer;
   }
   .test {

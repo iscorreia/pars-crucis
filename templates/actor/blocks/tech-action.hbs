@@ -1,16 +1,27 @@
 <li class="inline-action">
-  <span 
-    class="inline-head
-    {{#if (eq this.type "test")}}test{{/if}}
-    {{#if (eq this.type "use")}}use{{/if}}"
-    data-action="callAction"
-    data-ac-id="{{@key}}"
-    data-ac-type="{{this.type}}"
-    data-item-id="{{itemId}}"
+  {{#if this.ready}}
+    <span 
+      class="inline-head
+      {{#if (eq this.type "test")}}test{{/if}}
+      {{#if (eq this.type "use")}}use{{/if}}"
+      data-action="callAction"
+      data-ac-id="{{@key}}"
+      data-ac-type="{{this.type}}"
+      data-item-id="{{itemId}}"
     >
-    <img class="inline-icon" src="{{this.img}}" width="16" height="16" />
-    <span class="inline-action-name">{{this.name}}</span>
-  </span>
+      <img class="inline-icon" src="{{this.img}}" width="16" height="16" />
+      <span class="inline-action-name">{{this.name}}</span>
+    </span>
+  {{else}}
+    <span
+      class="inline-head disabled-action
+      {{#if (eq this.type "test")}}test{{/if}}
+      {{#if (eq this.type "use")}}use{{/if}}"
+    >
+      <img class="inline-icon" src="{{this.img}}" width="16" height="16" />
+      <span class="inline-action-name">{{this.name}}</span>
+    </span>
+  {{/if}}
 
   {{#if (eq this.type "tech")}}
     <button
