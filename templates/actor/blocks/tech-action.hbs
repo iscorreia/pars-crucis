@@ -34,7 +34,6 @@
 
   {{#if (and this.skill (not this.subtype))}}
     <span class="inline-value inline-skill">
-      {{log this}}
       {{#if (eq this.skill "inherit")}}
         ({{localize (concat "PC.skills." this.action.skill)}})
       {{else}}
@@ -54,7 +53,6 @@
     </span>
   {{/if}}
 
-  {{log this}}
   {{#if (not (isEmpty this.techKeywords))}}
     <span class="item-keywords">
       {{#each this.techKeywords}}
