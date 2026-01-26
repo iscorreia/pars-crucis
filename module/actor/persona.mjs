@@ -133,7 +133,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const passivesPts = [];
     const skillsData = this.skills;
     const skillsXp = [];
-    const subData = this.subattributes;
+    const { pv, pe } = this.subattributes;
     const xpData = this.experience;
 
     // Gets a the favorables skills from culture and persona and creates a set
@@ -212,20 +212,13 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     calculateStatic(attributesData.def);
 
     // SUBATTRIBUTES handling
-    subData.pv.max = this.maxStatus("pv", "fis", "ego", "resis");
-    subData.pe.max = this.maxStatus("pe", "esp", "cog", "amago");
-    
-    // Works current PV and PE **MAKE THIS INTO A FUNCTION**
-    const pvDerived = Number(subData.pv?.current ?? 0);
-    subData.pv.current = Math.min(Math.max(pvDerived, 0), subData.pv.max);
-    subData.pv.value = subData.pv.current;
-    subData.pv.percent = (100 * subData.pv.value) / subData.pv.max;
-    
-    const peDerived = Number(subData.pe?.current ?? 0);
-    subData.pe.current = Math.min(Math.max(peDerived, 0), subData.pe.max);
-    subData.pe.value = subData.pe.current;
-    subData.pe.percent = (100 * subData.pe.value) / subData.pe.max;
-    
+    pv.max = this.maxStatus("pv", "fis", "ego", "resis");
+    pe.max = this.maxStatus("pe", "esp", "cog", "amago");
+    if (pv.max) pv.value = Math.max(Math.min(pv.value, pv.max), 0);
+    if (pe.max) pe.value = Math.max(Math.min(pe.value, pe.max), 0);
+    pv.percent = (100 * pv.value) / pv.max;
+    pe.percent = (100 * pe.value) / pe.max;
+
     mvData.walk.base = origin.attributes.mv + mvData.walk.adjust || 4;
     mvData.sprint.base =
       (mvData.walk.override || mvData.walk.base) +
@@ -394,8 +387,8 @@ function attributeField({
 
 function subField() {
   return new SchemaField({
-    current: new NumberField({ integer: true, min: 0 }),
-    value: new NumberField({ integer: true, min: 0 }),
+    value: new NumberField({ initial: 0, integer: true, min: 0 }),
+    max: new NumberField({ initial: 0, integer: true }),
     override: new NumberField({ initial: null, integer: true, nullable: true }),
     adjust: new NumberField({ initial: 0, integer: true }),
   });

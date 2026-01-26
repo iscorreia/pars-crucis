@@ -40,6 +40,7 @@ export class PCActor extends foundry.documents.Actor {
       prototypeToken: {
         actorLink: expectedActorLink,
         sight: { ...defaultSight },
+        displayBars: CONST.TOKEN_DISPLAY_MODES.ALWAYS,
         bar1: {
           attribute: "subattributes.pv",
         },

@@ -111,15 +111,12 @@ export class PDMModel extends foundry.abstract.TypeDataModel {
     const minorsData = this.minors;
     eachAttribute(minorsData, PDMderiveAttribute);
 
-    const subData = this.subattributes;
-    
-    // Sync value for Foundry token bars
-    subData.pv.value = subData.pv.current;
-    subData.pe.value = subData.pe.current;
-    
-    // Calculate percent after value is synced
-    subData.pv.percent = (100 * subData.pv.value) / subData.pv.max;
-    subData.pe.percent = (100 * subData.pe.value) / subData.pe.max;
+    const { pv, pe } = this.subattributes;
+    if (pv.max) pv.value = Math.max(Math.min(pv.value, pv.max), 0);
+    if (pe.max) pe.value = Math.max(Math.min(pe.value, pe.max), 0);
+    // Calculate percent
+    pv.percent = (100 * pv.value) / pv.max;
+    pe.percent = (100 * pe.value) / pe.max;
 
     // Filter items by group, uses the helper actor#itemTypes
     // Gear|Weapon items are set into their specific groups once equipped
@@ -200,9 +197,8 @@ function PDMmitigationField({} = {}) {
 
 function PDMsubField() {
   return new SchemaField({
-    current: new NumberField({ integer: true, min: 0 }),
-    value: new NumberField({ integer: true, min: 0 }), // For Foundry token bar compatibility
-    max: new NumberField({ integer: true, min: 0 }),
+    value: new NumberField({ initial: null, integer: true, min: 0 }),
+    max: new NumberField({ initial: null, integer: true, min: 0 }),
   });
 }
 
