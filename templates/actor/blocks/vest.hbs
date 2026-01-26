@@ -32,7 +32,7 @@
       {{#each system.actions as |action key|}}
         {{#if (eq action.type "attack")}}
           <a 
-            class="persona-action ac-attack"
+            class="persona-action ac-attack draggable"
             data-action="rollAttack"
             data-item-id="{{../this._id}}"
             data-ac-id="{{action._id}}"
@@ -42,6 +42,7 @@
               src="{{action.img}}"
               width="16"
               height="16"
+              draggable="false"
             />
             {{#if action.name}}
               <div class="action-name">{{action.name}}</div>
@@ -54,7 +55,7 @@
         {{/if}}
         {{#if (eq action.type "test")}}
           <a
-            class="persona-action ac-test"
+            class="persona-action ac-test draggable"
             data-action="rollTest"
             data-item-id="{{../this._id}}"
             data-ac-id="{{action._id}}"
@@ -64,6 +65,7 @@
               src="{{action.img}}"
               width="16"
               height="16"
+              draggable="false"
             />
             {{#if action.name}}
               <div class="action-name">{{action.name}}</div>
@@ -76,7 +78,7 @@
         {{/if}}
         {{#if (eq action.type "use")}}
           <a
-            class="persona-action ac-use"
+            class="persona-action ac-use draggable"
             data-action="useGear"
             data-item-id="{{../this._id}}"
             data-ac-id="{{action._id}}"
@@ -86,6 +88,7 @@
               src="{{action.img}}"
               width="16"
               height="16"
+              draggable="false"
             />
             {{#if action.name}}
               <div class="action-name">{{action.name}}</div>
