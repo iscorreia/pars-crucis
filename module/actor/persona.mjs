@@ -1,7 +1,7 @@
 import { PC } from "../config.mjs";
 import { ORIGINS } from "../data/origins.mjs";
 import { CULTURES } from "../data/cultures.mjs";
-import { keywordResolver } from "./actor-sheet.mjs";
+import { keywordResolver } from "../utils.mjs";
 
 const {
   ArrayField,

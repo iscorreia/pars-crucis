@@ -1,8 +1,6 @@
 # DOING
 
 - Further improve Ability Technique data handling and presentation **_logic hbs_**
-- Draggable Macros for Attribute and Skill rolls
-- Draggable Macros for Ability and Item actions
 
 # HIGH PRIORITY
 
@@ -43,7 +41,6 @@
 - Ability and Item use Limits and Conditions
 - Automatic rest on click, with possibility to set an amount of hours to rest, so it recovers PV/PE
 - Implement `enrichHTML` in the item descriptions/effect **_feature_**
-- Skills/Abilities/Items Macros **_feature_**
 - Tooltips / Information on hover **_feature_** or;
 - Information icon: on click: pops a window with origin/skills/etc description **_feature_**
 - Usable passives **_feature_**
@@ -66,3 +63,5 @@
 - Ability Technique Item/Action keywords not showing in the ability line, do we want it to?
 - Move some functions to utils
 - Make possible to clear Technique ability selected Item action **_qol_**
+- Expanded Actions be Draggable to Macros
+- Attributes be Draggable to Macros

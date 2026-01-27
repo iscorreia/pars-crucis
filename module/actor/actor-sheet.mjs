@@ -1,8 +1,5 @@
-const { api, handlebars, sheets } = foundry.applications;
+const { api, sheets } = foundry.applications;
 import ActionPicker from "../apps/action-picker.mjs";
-import { PC } from "../config.mjs";
-import PCRoll from "../rolls/basic-roll.mjs";
-import TestRoll from "../rolls/test-roll.mjs";
 
 //This is the basic class for Pars Crucis Actor and should be extended
 export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
@@ -37,7 +34,6 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       sortAbilities: this.changeSortMode,
       switchLuck: this.switchLuckOnClick,
       toggleExpand: this.toggleAbilityExpand,
-      // configurePersona: this.configurePersona,
     },
   };
 
@@ -107,6 +103,8 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       dataset.type = item.toDragData().type;
       dataset.uuid = item.toDragData().uuid;
       dragData = dataset;
+    } else if (action) {
+      dragData = dataset;
     }
 
     // Set data transfer
@@ -165,17 +163,6 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     return context;
   }
 
-  dice(event) {
-    let dice = "2d10";
-    // Checks if Shift or Ctrl is pressed and adjusts formula.
-    if (event.shiftKey) {
-      dice = "3d10kh2"; // Keep 2 highest out of 3d10
-    } else if (event.ctrlKey || event.metaKey) {
-      dice = "3d10kl2"; // Keep 2 lowest out of 3d10
-    }
-    return dice;
-  }
-
   static async callActionOnClick(event, target) {
     const { acType } = target.dataset;
     if (["attack", "test"].includes(acType))
@@ -193,204 +180,31 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
    */
   static async rollAttributeOnClick(event, target) {
     const { attribute, attType } = target.dataset;
-    const actor = this.actor;
-    const { derived, mod } = actor.system[attType][attribute];
-    const dice = this.dice(event);
-    const formula = `${dice} + ${derived} + ${mod}`;
-    const testLabel = `${game.i18n.localize("PC.testOf")}`;
-    const attLabel = `${game.i18n.localize(PC[attType][attribute].label)}`;
-    const RollOptions = { flavor: `${testLabel} ${attLabel}` };
-    const roll = new PCRoll(formula, {}, RollOptions);
-
-    // Send to chat (toMessage)
-    await roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: actor }),
-      rollMode: game.settings.get("core", "rollMode"),
-    });
-
-    return roll;
-  }
-
-  static async rollTestOnClick(event, target) {
-    const { acId, itemId } = target.dataset;
-    const actor = this.actor;
-    const item = actor.items.get(itemId);
-    const action = item.system.actions[acId];
-    const { difficulty, skill, subtype, type } = action;
-    const { category, modGroup, level, mod } = actor.system.skills[skill];
-    const keywords = keywordResolver(item.system.keywords, action.keywords);
-    const catMod = actor.system.categoryModifiers[category];
-    const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
-    const modifiers =
-      mod +
-      catMod +
-      groupMod +
-      (Number(keywords?.handling) || 0) +
-      (Number(keywords?.modifier) || 0);
-    const dice = this.dice(event);
-    const formula = `${dice} + ${level || 0} + ${modifiers || 0}`;
-    const flavor = craftFlavor({
-      skill: skill,
-      acType: type,
-      acSubtype: subtype,
-      difficulty: difficulty,
-    });
-    // Additional information passed to the roll
-    const info = {
-      subtype: action.subtype,
-      damaging: action.damaging,
-      damage: action.damage?.dmgTxt,
-      effort: action.effort,
-      duration: action.duration,
-      effect: action.effect,
-      keywords: keywords,
-      range: action.range,
-      prepTime: action.prepTime,
-    };
-    // Important options passed to the roll
-    const RollOptions = {
-      flavor: flavor,
-      difficulty: difficulty,
-      img: action.img || item.img,
-      itemName: item.name,
-      actionName: action.name,
-      info: info,
-      type: type,
-    };
-
-    // console.log("rollTestOnClick", actor, item, item.system.actions[acId]); // DEBUG logging
-
-    // Create the Test Roll
-    const roll = new TestRoll(formula, {}, RollOptions);
-    await roll.evaluate();
-    await roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: actor }),
-      rollMode: game.settings.get("core", "rollMode"),
-    });
-    return roll;
-  }
-
-  static async rollTechOnClick(event, target) {
-    const { acId, itemId } = target.dataset;
-    const actor = this.actor;
-    const item = actor.items.get(itemId);
-    const action = item.system.actions[acId];
-    const { techSkill, techSubtype, type } = action;
-    const { category, modGroup, level, mod } = actor.system.skills[techSkill];
-    const techKeywords = keywordResolver(item.system.keywords, action.keywords);
-    const { selectedAction, selectedItem } = action;
-    const srcKeywords = keywordResolver(
-      selectedItem.system.keywords,
-      selectedAction.keywords,
-    );
-    const keywords = keywordResolver(techKeywords, srcKeywords);
-    // console.log(resolvedKeywords); // DEBUG logging the merge keywords
-    const catMod = actor.system.categoryModifiers[category];
-    const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
-    const modifiers =
-      mod +
-      catMod +
-      groupMod +
-      (Number(keywords?.handling) || 0) +
-      (Number(keywords?.modifier) || 0);
-    const dice = this.dice(event);
-    const formula = `${dice} + ${level || 0} + ${modifiers || 0}`;
-    const flavor = craftFlavor({
-      skill: techSkill,
-      acSubtype: techSubtype,
-      acType: type,
-    });
-    const withItem = {
-      selectedItem: {
-        img: selectedItem.img,
-        name: selectedItem.name,
-      },
-      selectedAction: {
-        img: selectedAction.img,
-        name: selectedAction.name,
-      },
-    };
-    // Additional information passed to the roll
-    const info = {
-      withItem: withItem,
-      subtype: action.techSubtype,
-      damaging: action.damaging,
-      damage: action.damage?.dmgTxt,
-      effort: action.effort,
-      duration: action.duration,
-      effect: action.effect,
-      keywords: keywords,
-      range: action.range,
-      prepTime: action.prepTime,
-    };
-    // Important options passed to the roll
-    const RollOptions = {
-      flavor: flavor,
-      img: action.img || item.img,
-      itemName: item.name,
-      actionName: action.name,
-      info: info,
-      type: type,
-    };
-
-    // console.log("rollTechOnClick", flavor, formula, item, action, dice); // DEBUG logging
-
-    // Create the Test Roll
-    const roll = new TestRoll(formula, {}, RollOptions);
-    await roll.evaluate();
-    await roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: actor }),
-      rollMode: game.settings.get("core", "rollMode"),
-    });
-    return roll;
+    const dice = pickDice(event);
+    return this.actor.rollAttribute(attribute, attType, dice);
   }
 
   static async rollSkillOnClick(event, target) {
     const { skill } = target.dataset;
-    const actor = this.actor;
-    const { category, modGroup, level, mod } = actor.system.skills[skill];
-    const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
-    const catMod = actor.system.categoryModifiers[category];
-    const dice = this.dice(event);
-    const formula = `${dice} + ${level} + ${mod + catMod + groupMod}`;
-    const flavor = craftFlavor({ skill: skill });
-    const RollOptions = { flavor: flavor };
-    const roll = new PCRoll(formula, {}, RollOptions);
-    await roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: actor }),
-      rollMode: game.settings.get("core", "rollMode"),
-    });
-    return roll;
+    const dice = pickDice(event);
+    return this.actor.rollSkill(skill, dice);
+  }
+
+  static async rollTechOnClick(event, target) {
+    const { acId, itemId } = target.dataset;
+    const dice = pickDice(event);
+    return this.actor.rollTech(itemId, acId, dice);
+  }
+
+  static async rollTestOnClick(event, target) {
+    const { acId, itemId } = target.dataset;
+    const dice = pickDice(event);
+    return this.actor.rollTest(itemId, acId, dice);
   }
 
   static async useOnClick(_, target) {
     const { acId, itemId } = target.dataset;
-    const item = this.actor.items.get(itemId);
-    const action = item.system.actions[acId];
-    const actor = this.actor;
-    const img = action.img || item.img;
-    const keywords = { ...item.system.keywords, ...action.keywords };
-    // Additional info passed to the html
-    const info = {
-      usage: action.usage,
-      damaging: action.damaging,
-      damage: action.damage?.dmgTxt,
-      effort: action.effort,
-      duration: action.duration,
-      effect: action.effect,
-      keywords: keywords,
-      range: action.range,
-      prepTime: action.prepTime,
-    };
-    const html = await handlebars.renderTemplate(
-      "systems/pars-crucis/templates/chat/use-action.hbs",
-      { itemName: item.name, actionName: action.name, img, info },
-    );
-
-    ChatMessage.create({
-      speaker: ChatMessage.getSpeaker({ actor: actor }),
-      content: html,
-    });
+    return this.actor.useGearOrAbility(itemId, acId);
   }
 
   static async switchLuckOnClick(_, target) {
@@ -544,99 +358,13 @@ function getItemActionsByType(item, type) {
   );
 }
 
-function craftFlavor({ skill, acType, difficulty, acSubtype }) {
-  const testLabel = `${game.i18n.localize("PC.testOf")}`;
-  const skillLabel = `${game.i18n.localize(PC.skills[skill].label)}`;
-  let flavor = `${testLabel} ${skillLabel}`;
-  if (acType === "test") {
-    const difLabel = `${game.i18n.localize("PC.difficulty.label")}`;
-    flavor += ` — ${difLabel} ${difficulty || 0}`;
-    return flavor;
+function pickDice(event) {
+  let dice = "2d10";
+  // Checks if Shift or Ctrl is pressed and adjusts formula.
+  if (event.shiftKey) {
+    dice = "3d10kh2"; // Keep 2 highest out of 3d10
+  } else if (event.ctrlKey || event.metaKey) {
+    dice = "3d10kl2"; // Keep 2 lowest out of 3d10
   }
-  if (["attack", "tech"].includes(acType) && acSubtype) {
-    const versusLabel = `${game.i18n.localize("PC.versus")}`;
-    const counter = PC.versus[acSubtype];
-    const counterAttLabel = game.i18n.localize(`PC.attributes.${counter}.abv`);
-    flavor += ` — ${versusLabel} ${counterAttLabel}`;
-    return flavor;
-  }
-  return flavor;
-}
-
-function sumKwVal(a, b) {
-  const na = Number(a);
-  const nb = Number(b);
-  const aIsNum = Number.isFinite(na);
-  const bIsNum = Number.isFinite(nb);
-  if (aIsNum && bIsNum) return `+${na + nb}`;
-  return a;
-}
-
-function lowestKwVal(a, b) {
-  const na = Number(a);
-  const nb = Number(b);
-  const aIsNum = Number.isFinite(na);
-  const bIsNum = Number.isFinite(nb);
-  if (aIsNum && bIsNum) return Math.min(na, nb);
-  return a;
-}
-
-// Should be called only when a keyword is present in both set A and set B
-function keywordMerger(a, b, key) {
-  switch (key) {
-    case "lethality":
-      const aIsDiv = a === "/2";
-      const bIsDiv = b === "/2";
-      const na = Number(a);
-      const nb = Number(b);
-      const aIsNum = Number.isFinite(na);
-      const bIsNum = Number.isFinite(nb);
-      if (aIsDiv && bIsDiv) return "/2";
-      if (aIsNum && bIsNum) return `+${na + nb}`;
-      if ((aIsNum && bIsDiv) || (aIsDiv && bIsNum)) {
-        const n = aIsNum ? na : nb;
-        const result = (1 + n) / 2 - 1;
-        return result > 0 ? `+${result}` : undefined;
-      }
-      return a;
-    case "handling":
-    case "modifier":
-    case "plague":
-      return sumKwVal(a, b);
-    case "fragile":
-    case "freezing":
-    case "impact":
-      return lowestKwVal(a, b);
-    default:
-      return a;
-  }
-}
-
-export function keywordResolver(kwSetA, kwSetB) {
-  const keywords = {};
-  const keys = new Set([...Object.keys(kwSetA), ...Object.keys(kwSetB)]);
-
-  for (const key of keys) {
-    const a = kwSetA[key];
-    const b = kwSetB[key];
-    if (a !== undefined && b === undefined) {
-      keywords[key] = a;
-      continue;
-    }
-    if (a === undefined && b !== undefined) {
-      keywords[key] = b;
-      continue;
-    }
-    // Exists in both sets, verify merge rules
-    keywords[key] = keywordMerger(a, b, key);
-  }
-
-  // Remove undefined keywords, they should always have a value or be null
-  for (const key of Object.keys(keywords)) {
-    if (keywords[key] === undefined) {
-      delete keywords[key];
-    }
-  }
-
-  return keywords;
+  return dice;
 }

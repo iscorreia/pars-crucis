@@ -1,7 +1,7 @@
 <li class="inline-action">
   {{#if this.ready}}
     <span 
-      class="inline-head draggable
+      class="inline-head
       {{#if (eq this.type "test")}}test{{/if}}
       {{#if (eq this.type "use")}}use{{/if}}"
       data-action="callAction"
@@ -14,7 +14,6 @@
         src="{{this.img}}"
         width="16"
         height="16"
-        draggable="false"
       />
       <span class="inline-action-name">{{this.name}}</span>
     </span>
