@@ -7,7 +7,6 @@
 # HIGH PRIORITY
 
 - Basic compendium **_logic_**
-- PV and PE properly set for token **_logic_**
 - Show Abilities/Items on chat **_feature_**
 - Improved Weapon **_logic hbs style/css_**
 - Improved Gear **_hbs style/css_**
@@ -61,7 +60,6 @@
 
 - PDM mitigation is `NaN` when set no `null`, needs better treatment null should be valid
 - Compendium banner img src path is empty
-- PV/PE max values not being taken into account on token
 
 ### PONDER ABOUT
 
