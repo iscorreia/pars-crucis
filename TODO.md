@@ -8,7 +8,6 @@
 # HIGH PRIORITY
 
 - Basic compendium **_logic_**
-- PV and PE properly set for token **_logic_**
 - Show Abilities/Items on chat **_feature_**
 
 ## IMPORTANT
@@ -60,9 +59,7 @@
 ### KNOWN BUGS
 
 - PDM mitigation is `NaN` when set no `null`, needs better treatment null should be valid
-- Darkvision is automatically set on the actor, but does not take effect until re-set
 - Compendium banner img src path is empty
-- PV/PE max values not being taken into account on token
 
 ### PONDER ABOUT
 
