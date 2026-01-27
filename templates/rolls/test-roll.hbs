@@ -12,6 +12,30 @@
   </div>
 
   <div class="action-desc">
+    {{#if info.withItem}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.With"}}:</span>
+        <img
+          class="info-icon"
+          src="{{info.withItem.selectedItem.img}}"
+          width="16"
+          height="16"
+        />
+        <span
+          class="inline-action-name inline-selected"
+        >{{info.withItem.selectedItem.name}}:</span>
+        <img
+          class="info-icon"
+          src="{{info.withItem.selectedAction.img}}"
+          width="16"
+          height="16"
+        />
+        <span
+          class="inline-action-name inline-selected"
+        >{{info.withItem.selectedAction.name}}</span>
+      </div>
+    {{/if}}
     {{#if info.subtype}}
       <div class="info-line">
         <span class="info-label">

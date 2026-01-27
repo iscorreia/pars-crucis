@@ -1,20 +1,55 @@
 <li class="inline-action">
-  <span 
-    class="inline-head
-    {{#if (eq this.type "test")}}test{{/if}}
-    {{#if (eq this.type "use")}}use{{/if}}"
-    data-action="callAction"
-    data-ac-id="{{@key}}"
-    data-ac-type="{{this.type}}"
-    data-item-id="{{itemId}}"
+  {{#if this.ready}}
+    <span 
+      class="inline-head
+      {{#if (eq this.type "test")}}test{{/if}}
+      {{#if (eq this.type "use")}}use{{/if}}"
+      data-action="callAction"
+      data-ac-id="{{@key}}"
+      data-ac-type="{{this.type}}"
+      data-item-id="{{itemId}}"
     >
-    <img class="inline-icon" src="{{this.img}}" width="16" height="16" />
-    <span class="inline-action-name">{{this.name}}</span>
-  </span>
+      <img class="inline-icon" src="{{this.img}}" width="16" height="16" />
+      <span class="inline-action-name">{{this.name}}</span>
+    </span>
+  {{else}}
+    <span
+      class="inline-head disabled-action
+      {{#if (eq this.type "test")}}test{{/if}}
+      {{#if (eq this.type "use")}}use{{/if}}"
+    >
+      <img class="inline-icon" src="{{this.img}}" width="16" height="16" />
+      <span class="inline-action-name">{{this.name}}</span>
+    </span>
+  {{/if}}
+
+  {{#if (eq this.type "tech")}}
+    <button
+      type="button"
+      class="pick-action inline-button"
+      data-action="actionPicker"
+      data-ac-id="{{@key}}"
+      data-item-id="{{itemId}}"
+    >
+      {{#if this.ready}}
+        <span class="inline-label">{{localize "PC.with"}}</span>
+        <img class="inline-icon" src="{{this.selectedItem.img}}" width="16" height="16" />
+        <span class="inline-action-name inline-selected">{{this.selectedItem.name}}:</span>
+        <img class="inline-icon" src="{{this.selectedAction.img}}" width="16" height="16" />
+        <span class="inline-action-name inline-selected">{{this.selectedAction.name}}</span>
+      {{else}}
+        <span class="placeholder">{{localize "PC.selectAction"}}</span>
+      {{/if}}
+    </button>
+  {{/if}}
 
   {{#if (and this.skill (not this.subtype))}}
     <span class="inline-value inline-skill">
-      ({{localize (concat "PC.skills." this.skill)}})
+      {{#if (eq this.skill "inherit")}}
+        ({{localize (concat "PC.skills." this.action.skill)}})
+      {{else}}
+        ({{localize (concat "PC.skills." this.skill)}})
+      {{/if}}
     </span>
   {{/if}}
   {{#if (and (not this.skill) this.subtype)}}
@@ -24,13 +59,14 @@
   {{/if}}
   {{#if (and this.skill this.subtype)}}
     <span class="inline-value inline-skill">
-      ({{localize (concat "PC.skills." this.skill)}} | {{localize (concat "PC.action.types.attack.subtype." this.subtype)}})
+      ({{localize (concat "PC.skills." this.techSkill)}}      
+      | {{localize (concat "PC.action.types.attack.subtype." this.techSubtype)}})
     </span>
   {{/if}}
 
-  {{#if (not (isEmpty this.keywords))}}
+  {{#if (not (isEmpty this.techKeywords))}}
     <span class="item-keywords">
-      {{#each this.keywords}}
+      {{#each this.techKeywords}}
         <span class="pc-keyword">
           <span class="pc-keyword-label">{{localize
               (concat "PC.keyword." @key)

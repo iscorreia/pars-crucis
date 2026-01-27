@@ -1,6 +1,7 @@
 import { PC } from "../config.mjs";
 import { ORIGINS } from "../data/origins.mjs";
 import { CULTURES } from "../data/cultures.mjs";
+import { keywordResolver } from "./actor-sheet.mjs";
 
 const {
   ArrayField,
@@ -484,6 +485,21 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
         action.selectedItem = selectedItem ?? null;
         action.selectedAction = selectedAction ?? null;
         action.ready = selectedItem && selectedAction ? true : false;
+        action.techKeywords = action.keywords;
+        // Once an item attack action is selected, handles necessary data
+        if (action.ready) {
+          action.techSkill = action.skill;
+          action.techSubtype = action.skill;
+          if (action.skill === "inherit")
+            action.techSkill = selectedAction.skill;
+          if (action.subtype === "inherit")
+            action.techSubtype = selectedAction.subtype;
+          const srcKeywords = keywordResolver(
+            selectedItem.system.keywords,
+            selectedAction.keywords,
+          );
+          action.techKeywords = keywordResolver(action.keywords, srcKeywords);
+        }
         // Calculates technique damage based on selected item attack action
         if (action.damaging && action.ready) {
           const dmg = action.damage ?? {};
@@ -505,15 +521,12 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
           const reCalculatedSrcDmg = srcDmg.dmgBase + multipliedSrcDmg;
           const calculatedDmg = reCalculatedSrcDmg + dmg.dmgBase;
           let dmgType = dmg.dmgType;
-          if (dmg.dmgType === "inherit") {
-            dmgType = srcDmg.dmgType;
-          }
+          if (dmg.dmgType === "inherit") dmgType = srcDmg.dmgType;
           const dmgTypeLabel = game.i18n.localize(`PC.dmgType.${dmgType}.abv`);
           action.damage.dmgTxt = `${calculatedDmg}${srcDmg.dmgAddition}${dmg.dmgAddition} ${dmgTypeLabel}`;
         } else if (action.damaging) {
           action.damage.dmgTxt = `ø`;
         }
-        console.log(action);
       }
     }
   }

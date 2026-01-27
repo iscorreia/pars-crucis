@@ -24,13 +24,14 @@ async function preloadHandlebarsTemplates() {
   const templatePaths = [
     "systems/pars-crucis/templates/actor/blocks/action.hbs",
     "systems/pars-crucis/templates/actor/blocks/attributes.hbs",
+    "systems/pars-crucis/templates/actor/blocks/currency.hbs",
     "systems/pars-crucis/templates/actor/blocks/experience.hbs",
+    "systems/pars-crucis/templates/actor/blocks/items.hbs",
     "systems/pars-crucis/templates/actor/blocks/minors.hbs",
     "systems/pars-crucis/templates/actor/blocks/mitigation.hbs",
-    "systems/pars-crucis/templates/actor/blocks/weaponry.hbs",
+    "systems/pars-crucis/templates/actor/blocks/tech-action.hbs",
     "systems/pars-crucis/templates/actor/blocks/vest.hbs",
-    "systems/pars-crucis/templates/actor/blocks/items.hbs",
-    "systems/pars-crucis/templates/actor/blocks/currency.hbs",
+    "systems/pars-crucis/templates/actor/blocks/weaponry.hbs",
     "systems/pars-crucis/templates/actor/pdm/challenge.hbs",
     "systems/pars-crucis/templates/item/blocks/name-cost.hbs",
   ];

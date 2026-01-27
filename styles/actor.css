@@ -819,6 +819,14 @@ h4.movement {
         height: 100%;
         width: 16px;
       }
+      .disabled-control {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 16px;
+        filter: brightness(0.5);
+      }
     }
   }
 }
@@ -908,8 +916,8 @@ h4.movement {
       line-height: 15px;
     }
   }
-  .persona-action:hover {
-    filter: brightness(1.25);
+  .persona-action:hover:not(.disabled-action) {
+    filter: brightness(1.2) saturate(1.1);
   }
   .ac-attack {
     background-color: var(--pc-color-damage-bg);
@@ -926,6 +934,9 @@ h4.movement {
   .persona-action:last-child {
     margin: 0;
   }
+}
+.disabled-action {
+  filter: brightness(0.85) saturate(0.25);
 }
 
 /* INLINE ACTION */
@@ -944,10 +955,10 @@ h4.movement {
 }
 .inline-action {
   width: calc(100% - 12px);
-  font-size: 13px;
+  font-size: 13.5px;
   min-height: 20px;
   border-width: 0 0 1px 0;
-  padding-bottom: 1px;
+  padding-top: 1px;
   border-style: dashed;
   border-color: var(--color-dark-3);
   .inline-head {
@@ -963,8 +974,8 @@ h4.movement {
     );
     border-color: var(--pc-color-damage-border-st);
   }
-  .inline-head:hover {
-    filter: brightness(1.25);
+  .inline-head:hover:not(.disabled-action) {
+    filter: brightness(1.2) saturate(1.1);
     cursor: pointer;
   }
   .test {
@@ -997,7 +1008,7 @@ h4.movement {
     top: 1px; /* small tweak to height */
   }
   .inline-label {
-    margin-left: 10px;
+    margin-left: 8px;
     font-family: "Amiri";
     color: var(--color-light-3);
   }
@@ -1008,7 +1019,7 @@ h4.movement {
   .inline-button {
     display: inline-block;
     border: none;
-    padding: 0;
+    padding: 0 2px;
     margin-left: 3px;
     height: 20px;
     line-height: 20px;

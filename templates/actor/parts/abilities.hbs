@@ -95,22 +95,36 @@
                       </a>
                     {{/if}}
                     {{#if (eq action.type "tech")}}
-                      <a
-                        class="persona-action ac-attack"
-                        data-action="rollAbilityTech"
-                        data-item-id="{{ability._id}}"
-                        data-ac-id="{{action._id}}"
-                      >
-                        <img
-                          class="action-image"
-                          src="{{action.img}}"
-                          width="16"
-                          height="16"
-                        />
-                        {{#if action.name}}
-                          <div class="action-name">{{action.name}}</div>
-                        {{/if}}
-                      </a>
+                      {{#if action.ready}}
+                        <a
+                          class="persona-action ac-attack"
+                          data-action="rollTech"
+                          data-item-id="{{ability._id}}"
+                          data-ac-id="{{action._id}}"
+                        >
+                          <img
+                            class="action-image"
+                            src="{{action.img}}"
+                            width="16"
+                            height="16"
+                          />
+                          {{#if action.name}}
+                            <div class="action-name">{{action.name}}</div>
+                          {{/if}}
+                        </a>
+                      {{else}}
+                        <div class="persona-action ac-attack disabled-action">
+                          <img
+                            class="action-image"
+                            src="{{action.img}}"
+                            width="16"
+                            height="16"
+                          />
+                          {{#if action.name}}
+                            <div class="action-name">{{action.name}}</div>
+                          {{/if}}
+                        </div>
+                      {{/if}}
                     {{/if}}
                     {{#if (eq action.type "test")}}
                       <a
@@ -152,17 +166,23 @@
                 </div>
 
                 <div class="item-controls">
-                  <a
-                    data-action="toggleExpand"
-                    data-item-id="{{ability._id}}"
-                    title="{{localize 'PC.expandCollapseActions'}}"
-                  >
-                    {{#if ability.flags.pars-crucis.expanded}}
-                      <i class="fa-regular fa-arrows-to-line"></i>
-                    {{else}}
+                  {{#if (isEmpty ability.system.actions)}}
+                    <div class="disabled-control">
                       <i class="fa-regular fa-arrows-from-line"></i>
-                    {{/if}}
-                  </a>
+                    </div>
+                  {{else}}
+                    <a
+                      data-action="toggleExpand"
+                      data-item-id="{{this._id}}"
+                      title="{{localize 'PC.expandCollapseActions'}}"
+                    >
+                      {{#if this.flags.pars-crucis.expanded}}
+                        <i class="fa-regular fa-arrows-to-line"></i>
+                      {{else}}
+                        <i class="fa-regular fa-arrows-from-line"></i>
+                      {{/if}}
+                    </a>
+                  {{/if}}
                   <a
                     data-action="clickEdit"
                     data-item-id="{{ability._id}}"
@@ -182,7 +202,11 @@
               {{#if ability.flags.pars-crucis.expanded}}
                 <ol class="ability-actions">
                   {{#each ability.system.actions}}
-                    {{> systems/pars-crucis/templates/actor/blocks/action.hbs itemId=../this._id}}
+                    {{#if (eq this.type "tech")}}
+                      {{> systems/pars-crucis/templates/actor/blocks/tech-action.hbs itemId=../this._id}}
+                    {{else}}
+                      {{> systems/pars-crucis/templates/actor/blocks/action.hbs itemId=../this._id}}
+                    {{/if}}
                   {{/each}}
                 </ol>
               {{/if}}

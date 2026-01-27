@@ -29,6 +29,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       rollAttack: this.rollTestOnClick,
       rollAttribute: this.rollAttributeOnClick,
       rollAbilityAttack: this.rollTestOnClick,
+      rollTech: this.rollTechOnClick,
       rollTest: this.rollTestOnClick,
       rollSkill: this.rollSkillOnClick,
       useAbility: this.useOnClick,
@@ -150,10 +151,11 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
   }
 
   static async callActionOnClick(event, target) {
-    console.log(target.dataset);
     const { acType } = target.dataset;
     if (["attack", "test"].includes(acType))
       ParsCrucisActorSheet.rollTestOnClick.call(this, event, target);
+    if (acType === "tech")
+      ParsCrucisActorSheet.rollTechOnClick.call(this, event, target);
     if (acType === "use")
       ParsCrucisActorSheet.useOnClick.call(this, event, target);
   }
@@ -190,7 +192,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     const action = item.system.actions[acId];
     const { difficulty, skill, subtype, type } = action;
     const { category, modGroup, level, mod } = actor.system.skills[skill];
-    const keywords = { ...item.system.keywords, ...action.keywords };
+    const keywords = keywordResolver(item.system.keywords, action.keywords);
     const catMod = actor.system.categoryModifiers[category];
     const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
     const modifiers =
@@ -201,19 +203,12 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       (Number(keywords?.modifier) || 0);
     const dice = this.dice(event);
     const formula = `${dice} + ${level || 0} + ${modifiers || 0}`;
-    const testLabel = `${game.i18n.localize("PC.testOf")}`;
-    const skillLabel = `${game.i18n.localize(PC.skills[skill].label)}`;
-    const difLabel = `${game.i18n.localize("PC.difficulty.label")}`;
-    let flavor = `${testLabel} ${skillLabel}`;
-    if (type === "test") flavor = `${flavor} — ${difLabel} ${difficulty || 0}`;
-    if (type === "attack" && subtype) {
-      const versusLabel = `${game.i18n.localize("PC.versus")}`;
-      const counter = PC.versus[subtype];
-      const counterAttLabel = game.i18n.localize(
-        `PC.attributes.${counter}.abv`,
-      );
-      flavor = `${flavor} — ${versusLabel} ${counterAttLabel}`;
-    }
+    const flavor = craftFlavor({
+      skill: skill,
+      acType: type,
+      acSubtype: subtype,
+      difficulty: difficulty,
+    });
     // Additional information passed to the roll
     const info = {
       subtype: action.subtype,
@@ -246,28 +241,99 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       speaker: ChatMessage.getSpeaker({ actor: actor }),
       rollMode: game.settings.get("core", "rollMode"),
     });
-
     return roll;
   }
 
-  static async rollSkillOnClick(event, target) {
-    const { skill, type } = target.dataset;
+  static async rollTechOnClick(event, target) {
+    const { acId, itemId } = target.dataset;
     const actor = this.actor;
-    const { category, modGroup, level, mod } = actor.system[type][skill];
-    const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
+    const item = actor.items.get(itemId);
+    const action = item.system.actions[acId];
+    const { techSkill, techSubtype, type } = action;
+    const { category, modGroup, level, mod } = actor.system.skills[techSkill];
+    const techKeywords = keywordResolver(item.system.keywords, action.keywords);
+    const { selectedAction, selectedItem } = action;
+    const srcKeywords = keywordResolver(
+      selectedItem.system.keywords,
+      selectedAction.keywords,
+    );
+    const keywords = keywordResolver(techKeywords, srcKeywords);
+    // console.log(resolvedKeywords); // DEBUG logging the merge keywords
     const catMod = actor.system.categoryModifiers[category];
+    const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
+    const modifiers =
+      mod +
+      catMod +
+      groupMod +
+      (Number(keywords?.handling) || 0) +
+      (Number(keywords?.modifier) || 0);
     const dice = this.dice(event);
-    const formula = `${dice} + ${level} + ${mod + catMod + groupMod}`;
-    const testLabel = `${game.i18n.localize("PC.testOf")}`;
-    const skillLabel = `${game.i18n.localize(PC[type][skill].label)}`;
-    const RollOptions = { flavor: `${testLabel} ${skillLabel}` };
-    const roll = new PCRoll(formula, {}, RollOptions);
+    const formula = `${dice} + ${level || 0} + ${modifiers || 0}`;
+    const flavor = craftFlavor({
+      skill: techSkill,
+      acSubtype: techSubtype,
+      acType: type,
+    });
+    const withItem = {
+      selectedItem: {
+        img: selectedItem.img,
+        name: selectedItem.name,
+      },
+      selectedAction: {
+        img: selectedAction.img,
+        name: selectedAction.name,
+      },
+    };
+    // Additional information passed to the roll
+    const info = {
+      withItem: withItem,
+      subtype: action.techSubtype,
+      damaging: action.damaging,
+      damage: action.damage?.dmgTxt,
+      effort: action.effort,
+      duration: action.duration,
+      effect: action.effect,
+      keywords: keywords,
+      range: action.range,
+      prepTime: action.prepTime,
+    };
+    // Important options passed to the roll
+    const RollOptions = {
+      flavor: flavor,
+      img: action.img || item.img,
+      itemName: item.name,
+      actionName: action.name,
+      info: info,
+      type: type,
+    };
 
+    // console.log("rollTechOnClick", flavor, formula, item, action, dice); // DEBUG logging
+
+    // Create the Test Roll
+    const roll = new TestRoll(formula, {}, RollOptions);
+    await roll.evaluate();
     await roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: actor }),
       rollMode: game.settings.get("core", "rollMode"),
     });
+    return roll;
+  }
 
+  static async rollSkillOnClick(event, target) {
+    const { skill } = target.dataset;
+    const actor = this.actor;
+    const { category, modGroup, level, mod } = actor.system.skills[skill];
+    const groupMod = modGroup ? actor.system.groupModifiers[modGroup].mod : 0;
+    const catMod = actor.system.categoryModifiers[category];
+    const dice = this.dice(event);
+    const formula = `${dice} + ${level} + ${mod + catMod + groupMod}`;
+    const flavor = craftFlavor({ skill: skill });
+    const RollOptions = { flavor: flavor };
+    const roll = new PCRoll(formula, {}, RollOptions);
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: actor }),
+      rollMode: game.settings.get("core", "rollMode"),
+    });
     return roll;
   }
 
@@ -308,6 +374,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     luckBooleans[index] = !luckBooleans[index];
     this.actor.update({ "system.luck.booleans": luckBooleans });
   }
+
   static async equipItemOnClick(_, target) {
     const dataset = target.dataset;
     const item = this.actor.items.get(dataset.itemId);
@@ -338,7 +405,6 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
         return Object.keys(actions).length ? { item, actions } : null;
       })
       .filter(Boolean);
-    // console.log(attackChoices);
 
     new ActionPicker({
       document: actor,
@@ -450,4 +516,101 @@ function getItemActionsByType(item, type) {
       ([_, action]) => action.type === type,
     ),
   );
+}
+
+function craftFlavor({ skill, acType, difficulty, acSubtype }) {
+  const testLabel = `${game.i18n.localize("PC.testOf")}`;
+  const skillLabel = `${game.i18n.localize(PC.skills[skill].label)}`;
+  let flavor = `${testLabel} ${skillLabel}`;
+  if (acType === "test") {
+    const difLabel = `${game.i18n.localize("PC.difficulty.label")}`;
+    flavor += ` — ${difLabel} ${difficulty || 0}`;
+    return flavor;
+  }
+  if (["attack", "tech"].includes(acType) && acSubtype) {
+    const versusLabel = `${game.i18n.localize("PC.versus")}`;
+    const counter = PC.versus[acSubtype];
+    const counterAttLabel = game.i18n.localize(`PC.attributes.${counter}.abv`);
+    flavor += ` — ${versusLabel} ${counterAttLabel}`;
+    return flavor;
+  }
+  return flavor;
+}
+
+function sumKwVal(a, b) {
+  const na = Number(a);
+  const nb = Number(b);
+  const aIsNum = Number.isFinite(na);
+  const bIsNum = Number.isFinite(nb);
+  if (aIsNum && bIsNum) return `+${na + nb}`;
+  return a;
+}
+
+function lowestKwVal(a, b) {
+  const na = Number(a);
+  const nb = Number(b);
+  const aIsNum = Number.isFinite(na);
+  const bIsNum = Number.isFinite(nb);
+  if (aIsNum && bIsNum) return Math.min(na, nb);
+  return a;
+}
+
+// Should be called only when a keyword is present in both set A and set B
+function keywordMerger(a, b, key) {
+  switch (key) {
+    case "lethality":
+      const aIsDiv = a === "/2";
+      const bIsDiv = b === "/2";
+      const na = Number(a);
+      const nb = Number(b);
+      const aIsNum = Number.isFinite(na);
+      const bIsNum = Number.isFinite(nb);
+      if (aIsDiv && bIsDiv) return "/2";
+      if (aIsNum && bIsNum) return `+${na + nb}`;
+      if ((aIsNum && bIsDiv) || (aIsDiv && bIsNum)) {
+        const n = aIsNum ? na : nb;
+        const result = (1 + n) / 2 - 1;
+        return result > 0 ? `+${result}` : undefined;
+      }
+      return a;
+    case "handling":
+    case "modifier":
+    case "plague":
+      return sumKwVal(a, b);
+    case "fragile":
+    case "freezing":
+    case "impact":
+      return lowestKwVal(a, b);
+    default:
+      return a;
+  }
+}
+
+export function keywordResolver(kwSetA, kwSetB) {
+  const keywords = {};
+  const keys = new Set([...Object.keys(kwSetA), ...Object.keys(kwSetB)]);
+
+  for (const key of keys) {
+    const a = kwSetA[key];
+    const b = kwSetB[key];
+    if (a !== undefined && b === undefined) {
+      keywords[key] = a;
+      continue;
+    }
+    if (a === undefined && b !== undefined) {
+      keywords[key] = b;
+      continue;
+    }
+    // Exists in both sets, verify merge rules
+    keywords[key] = keywordMerger(a, b, key);
+  }
+
+  // Remove undefined keywords, they should always have a value or be null
+  for (const key of Object.keys(keywords)) {
+    if (keywords[key] === undefined) {
+      delete keywords[key];
+    }
+  }
+
+  return keywords;
 }

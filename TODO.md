@@ -3,9 +3,7 @@
 - Improved Weapon **_logic hbs style/css_**
 - Improved Gear **_hbs style/css_**
 - Improved Ability sheet **_hbs style/css_**
-- Improved Ability Technique data handling **_logic hbs_**
-- Persona Ability calculations: how to interact with weapons? Weapon abilities? **_logic_**
-- Implementing usable Ability Techniques **_logic_**
+- Further improve Ability Technique data handling and presentation **_logic hbs_**
 
 # HIGH PRIORITY
 
@@ -40,7 +38,6 @@
 
 ### INTERESTING BUT NOT NECESSARY
 
-- Gray out and deactive expand/collapse actions on items without actions
 - Ability and Item use Limits and Conditions
 - Draggable Macros for Attribute and Skill rolls
 - Draggable Macros for Ability and Item actions
@@ -63,3 +60,8 @@
 
 - PDM mitigation is `NaN` when set no `null`, needs better treatment null should be valid
 - Compendium banner img src path is empty
+
+### PONDER ABOUT
+
+- Ability Technique Item/Action keywords not showing in the ability line, do we want it to?
+- Move some functions to utils
