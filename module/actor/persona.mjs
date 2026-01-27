@@ -305,31 +305,6 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     luckBooleans(luckData);
   }
 
-  /**
-   * Prepare data for dice rolls
-   * @returns {Object} Data object for use in roll formulas
-   */
-  // DOESN'T SEEM TO BE CALLED ANYWHERE
-  getRollData() {
-    const data = {};
-
-    // Add attribute values to roll data
-    Object.keys(this.attributes).forEach((key) => {
-      const att = this.attributes[key];
-      const mod = att.mod ?? 0;
-      data[`att_${key}`] = att.derived + mod;
-    });
-
-    // Add minor attributes
-    Object.keys(this.minors).forEach((key) => {
-      const minor = this.minors[key];
-      const mod = minor.mod ?? 0;
-      data[`minor_${key}`] = minor.derived + mod;
-    });
-
-    return data;
-  }
-
   maxStatus(subatt, mainAtt, secAtt, skill) {
     const max =
       25 +
