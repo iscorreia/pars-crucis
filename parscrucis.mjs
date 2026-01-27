@@ -19,6 +19,7 @@ import {
 import PCRoll from "./module/rolls/basic-roll.mjs";
 import TestRoll from "./module/rolls/test-roll.mjs";
 import onRenderChatMessageHTML from "./hooks/onRenderChatMessageHTML.mjs";
+import handleMacroCreation from "./hooks/handleMacroCreation.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
@@ -125,6 +126,16 @@ Hooks.once("init", () => {
   CONFIG.Combat.initiative = {
     formula: "1d10 + @minors.ref.derived + @minors.ref.mod",
   };
+});
+
+Hooks.once("ready", async function () {
+  Hooks.on("hotbarDrop", (bar, data, slot) => {
+    if (data.action || ["Actor", "Item"].includes(data.type)) {
+      handleMacroCreation(bar, data, slot);
+      return false;
+    }
+  });
+  console.log("PARS CRUCIS | System ready!");
 });
 
 onRenderChatMessageHTML();

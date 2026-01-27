@@ -88,6 +88,32 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     },
   };
 
+  /**
+   * An event that occurs when a drag workflow begins for a draggable item on the sheet.
+   * @param {DragEvent} event       The initiating drag start event
+   * @returns {Promise<void>}
+   * @protected
+   */
+  async _onDragStart(event) {
+    const target = event.currentTarget;
+    const { dataset } = target;
+    const { action, itemId } = dataset;
+    let dragData;
+
+    // Dragged element is an Action
+    if (action && itemId) {
+      const item = this.actor.items.get(itemId);
+      // console.log(item.toDragData()); // DEBUG logging
+      dataset.type = item.toDragData().type;
+      dataset.uuid = item.toDragData().uuid;
+      dragData = dataset;
+    }
+
+    // Set data transfer
+    if (!dragData) return;
+    event.dataTransfer.setData("text/plain", JSON.stringify(dragData));
+  }
+
   /** @override */
   async _prepareContext() {
     const baseData = await super._prepareContext();
@@ -166,13 +192,13 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
    * @param {HTMLElement} target - The capturing HTML element which defined a [data-action]
    */
   static async rollAttributeOnClick(event, target) {
-    const { attribute, type } = target.dataset;
+    const { attribute, attType } = target.dataset;
     const actor = this.actor;
-    const { derived, mod } = actor.system[type][attribute];
+    const { derived, mod } = actor.system[attType][attribute];
     const dice = this.dice(event);
     const formula = `${dice} + ${derived} + ${mod}`;
     const testLabel = `${game.i18n.localize("PC.testOf")}`;
-    const attLabel = `${game.i18n.localize(PC[type][attribute].label)}`;
+    const attLabel = `${game.i18n.localize(PC[attType][attribute].label)}`;
     const RollOptions = { flavor: `${testLabel} ${attLabel}` };
     const roll = new PCRoll(formula, {}, RollOptions);
 
