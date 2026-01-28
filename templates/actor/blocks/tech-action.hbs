@@ -9,7 +9,12 @@
       data-ac-type="{{this.type}}"
       data-item-id="{{itemId}}"
     >
-      <img class="inline-icon" src="{{this.img}}" width="16" height="16" />
+      <img
+        class="inline-icon"
+        src="{{this.img}}"
+        width="16"
+        height="16"
+      />
       <span class="inline-action-name">{{this.name}}</span>
     </span>
   {{else}}
@@ -38,30 +43,32 @@
         <img class="inline-icon" src="{{this.selectedAction.img}}" width="16" height="16" />
         <span class="inline-action-name inline-selected">{{this.selectedAction.name}}</span>
       {{else}}
-        <span class="placeholder">{{localize "PC.selectAction"}}</span>
+        <span class="inline-action-name">{{localize "PC.selectAction"}}</span>
       {{/if}}
     </button>
   {{/if}}
 
-  {{#if (and this.skill (not this.subtype))}}
-    <span class="inline-value inline-skill">
-      {{#if (eq this.skill "inherit")}}
-        ({{localize (concat "PC.skills." this.action.skill)}})
-      {{else}}
-        ({{localize (concat "PC.skills." this.skill)}})
-      {{/if}}
-    </span>
-  {{/if}}
-  {{#if (and (not this.skill) this.subtype)}}
-    <span class="inline-value inline-skill">
-      ({{localize (concat "PC.action.types.attack.subtype." this.subtype)}})
-    </span>
-  {{/if}}
-  {{#if (and this.skill this.subtype)}}
-    <span class="inline-value inline-skill">
-      ({{localize (concat "PC.skills." this.techSkill)}}      
-      | {{localize (concat "PC.action.types.attack.subtype." this.techSubtype)}})
-    </span>
+  {{#if this.ready}}
+    {{#if (and this.skill (not this.subtype))}}
+      <span class="inline-value inline-skill">
+        {{#if (eq this.skill "inherit")}}
+          ({{localize (concat "PC.skills." this.action.skill)}})
+        {{else}}
+          ({{localize (concat "PC.skills." this.skill)}})
+        {{/if}}
+      </span>
+    {{/if}}
+    {{#if (and (not this.skill) this.subtype)}}
+      <span class="inline-value inline-skill">
+        ({{localize (concat "PC.action.types.attack.subtype." this.subtype)}})
+      </span>
+    {{/if}}
+    {{#if (and this.skill this.subtype)}}
+      <span class="inline-value inline-skill">
+        ({{localize (concat "PC.skills." this.techSkill)}}      
+        | {{localize (concat "PC.action.types.attack.subtype." this.techSubtype)}})
+      </span>
+    {{/if}}
   {{/if}}
 
   {{#if (not (isEmpty this.techKeywords))}}

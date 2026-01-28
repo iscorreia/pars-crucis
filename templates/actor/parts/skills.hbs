@@ -33,8 +33,10 @@
             <li class="skill skill-line">
               <div class="skill-title">
                 <a
+                  class="draggable"
                   data-action="rollSkill"
                   data-skill="{{@key}}"
+                  data-uuid="{{@root.actor.uuid}}"
                 >
                   {{localize sk.label}}
                 </a>
