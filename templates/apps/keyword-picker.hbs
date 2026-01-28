@@ -3,20 +3,37 @@
 <section class="keyword-picker">
   <p class="info-desc">Selecione as Propriedades</p>
   <div class="keyword-picker-block">
-    {{#each config.keyword}}
-      <h3>{{localize (concat "PC.keyGroups." @key)}}</h3>
-      <div class="keyword-picker-list">
-        {{#each this}}
-          <a
-            class="pc-keyword"
-            data-action="addKeyword"
-            data-keyword="{{@key}}"
-          >
-            {{localize label}}
-          </a>
-        {{/each}}
-      </div>
-    {{/each}}
+    {{#if (eq this.system.parent.type "passive")}}
+      {{#each config.passiveKeyword}}
+        <h3>{{localize (concat "PC.keyGroups." @key)}}</h3>
+        <div class="keyword-picker-list">
+          {{#each this}}
+            <a
+              class="pc-keyword"
+              data-action="addKeyword"
+              data-keyword="{{@key}}"
+            >
+              {{localize label}}
+            </a>
+          {{/each}}
+        </div>
+      {{/each}}
+    {{else}}
+      {{#each config.keyword}}
+        <h3>{{localize (concat "PC.keyGroups." @key)}}</h3>
+        <div class="keyword-picker-list">
+          {{#each this}}
+            <a
+              class="pc-keyword"
+              data-action="addKeyword"
+              data-keyword="{{@key}}"
+            >
+              {{localize label}}
+            </a>
+          {{/each}}
+        </div>
+      {{/each}}
+    {{/if}}
   </div>
   <p class="info-desc">Configure as Propriedades</p>
   <div>

@@ -30,6 +30,7 @@ export default class PassiveSheet extends ParsCrucisItemSheet {
     },
     config: {
       template: "systems/pars-crucis/templates/item/passive/config.hbs",
+      classes: ["pc-item-tab"],
     },
   };
 

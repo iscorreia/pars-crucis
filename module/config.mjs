@@ -695,17 +695,6 @@ PC.passive = {
   },
 };
 
-PC.passiveKeyword = {
-  attribute: { label: "PC.keyword.attribute" },
-  skill: { label: "PC.keyword.skill" },
-  sense: { label: "PC.keyword.sense" },
-  narrative: { label: "PC.keyword.narrative" },
-  cultural: { label: "PC.keyword.cultural" },
-  original: { label: "PC.keyword.original" },
-  conditional: { label: "PC.keyword.conditional" },
-  esoteric: { label: "PC.keyword.esoteric" },
-};
-
 PC.keyword = {
   action: {
     melee: { label: "PC.keyword.melee" },
@@ -768,6 +757,23 @@ PC.keyword = {
     quickload: { label: "PC.keyword.quickload" },
     fragile: { label: "PC.keyword.fragile" },
     stack: { label: "PC.keyword.stack" },
+    effect: { label: "PC.keyword.effect" },
+    penalty: { label: "PC.keyword.penalty" },
+  },
+};
+
+PC.passiveKeyword = {
+  qualifying: {
+    attribute: { label: "PC.keyword.attribute" },
+    skill: { label: "PC.keyword.skill" },
+    sense: { label: "PC.keyword.sense" },
+    narrative: { label: "PC.keyword.narrative" },
+    cultural: { label: "PC.keyword.cultural" },
+    original: { label: "PC.keyword.original" },
+    conditional: { label: "PC.keyword.conditional" },
+    esoteric: { label: "PC.keyword.esoteric" },
+  },
+  general: {
     effect: { label: "PC.keyword.effect" },
     penalty: { label: "PC.keyword.penalty" },
   },

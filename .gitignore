@@ -1,2 +1,5 @@
 node_modules/
-packs/
+packs/abilities/
+packs/gear/
+packs/personas/
+packs/weapons/
