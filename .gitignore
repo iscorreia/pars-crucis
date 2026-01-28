@@ -1,6 +1,4 @@
 node_modules/
-packs/abilities/
-packs/gear/
-packs/personas/
-packs/weapons/
-packs/**/LOCK
+
+# Built packs
+packs/
