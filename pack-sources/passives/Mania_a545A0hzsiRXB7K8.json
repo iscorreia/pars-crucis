@@ -1,0 +1,21 @@
+{
+  "type": "Item",
+  "folder": "82dgtnrAtFEVfiJG",
+  "name": "Mania",
+  "color": null,
+  "sorting": "a",
+  "_id": "a545A0hzsiRXB7K8",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!a545A0hzsiRXB7K8"
+}

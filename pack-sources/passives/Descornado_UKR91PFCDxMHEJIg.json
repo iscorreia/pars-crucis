@@ -1,0 +1,45 @@
+{
+  "name": "Descornado",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/orb-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "original"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "original": null,
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Aquele que não teve o desenvolvimento de chifres e por sua ausência é discriminado, ao ser notado têm MOD-1 em testes de perícias sociais com outros que valorizem esse aspecto. Perde a passiva racial <em>chifres</em>.</span></p>",
+      "notes": "",
+      "summary": "MOD-1 em alguns testes Sociais. Não tem a passiva original chifres."
+    }
+  },
+  "effects": [],
+  "folder": "JLhL0OGz9ta2hFnb",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769635847598,
+    "modifiedTime": 1769635847612,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "UKR91PFCDxMHEJIg",
+  "sort": 400000,
+  "_key": "!items!UKR91PFCDxMHEJIg"
+}

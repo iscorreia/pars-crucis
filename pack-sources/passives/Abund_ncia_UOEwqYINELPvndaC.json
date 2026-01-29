@@ -1,0 +1,44 @@
+{
+  "name": "Abundância",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p>Desde o surgimento o espírito do personagem foi presenteado com essência mais abundante. Aumenta o PE em 4.</p>",
+      "notes": "",
+      "summary": "PE+4."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769647021239,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "UOEwqYINELPvndaC",
+  "sort": 2600000,
+  "_key": "!items!UOEwqYINELPvndaC"
+}

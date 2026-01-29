@@ -1,0 +1,45 @@
+{
+  "name": "Visão protegida",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-circle.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "original"
+    },
+    "cost": {
+      "experience": null,
+      "points": null
+    },
+    "keywords": {
+      "original": null,
+      "sense": null
+    },
+    "description": {
+      "description": "<p>Uma camada sobre seus olhos fornece proteção contra o excesso de luz, permitindo até que o quezal olhe direta e fixamente para o sol. Tem Visão diurna (9) e não sofre o efeito cegante de bombas de luz e similares.</p>",
+      "notes": "",
+      "summary": "Visão diurna (9), não sofre efeito cegante de lampejos."
+    }
+  },
+  "effects": [],
+  "folder": "eCOegkbDU7U8gB2F",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769645317443,
+    "modifiedTime": 1769645416451,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "CRrG4f5hue39xTtO",
+  "sort": 400000,
+  "_key": "!items!CRrG4f5hue39xTtO"
+}

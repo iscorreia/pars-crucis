@@ -1,0 +1,44 @@
+{
+  "name": "Porta da morte",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "effect": null
+    },
+    "description": {
+      "description": "<p class=\"MsoNormal\">Quando exausto ou muito ferido o personagem dá o seu máximo para manter-se firme e lutar. Ao ficar com 0 PV e/ou 0 PE o personagem tem MOD+2 em seus ataques, DEF, Vontade e suas ações não ficam limitadas.</p>",
+      "notes": "",
+      "summary": "Com 0PE|0PE tem MOD+2 nos ataques, DEF, Vontade e #Efeito."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769648692827,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "UZZkJjnHW6Ih73Xp",
+  "sort": 500000,
+  "_key": "!items!UZZkJjnHW6Ih73Xp"
+}

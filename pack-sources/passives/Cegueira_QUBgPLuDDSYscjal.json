@@ -1,0 +1,44 @@
+{
+  "name": "Cegueira",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 6
+    },
+    "keywords": {
+      "sense": null
+    },
+    "description": {
+      "description": "<p>Nasceu cego ou algo causou cegueira. Outros sentidos se tornam mais aguçados, por isso não afeta a Reflexo do personagem. Testes que dependam da visão são automaticamente uma falha.</p>",
+      "notes": "",
+      "summary": "Testes de Visão sempre falham. Não afeta Reflexo."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569345641,
+    "modifiedTime": 1769612422465,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "QUBgPLuDDSYscjal",
+  "sort": 4000000,
+  "_key": "!items!QUBgPLuDDSYscjal"
+}

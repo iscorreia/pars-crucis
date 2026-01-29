@@ -1,0 +1,44 @@
+{
+  "name": "Inepto",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "skill": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">O personagem ainda que sendo capaz de sentir e praticar os dons sobrenaturais possui dificuldades para expressá-los. Tem MOD-2 para realizar poderes.</span></p>",
+      "notes": "",
+      "summary": "MOD -2 para realizar Poderes."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769571132110,
+    "modifiedTime": 1769612900731,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "rmcW1zYSLg1K4hd0",
+  "sort": 2100000,
+  "_key": "!items!rmcW1zYSLg1K4hd0"
+}

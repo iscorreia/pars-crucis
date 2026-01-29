@@ -1,0 +1,45 @@
+{
+  "name": "Gene célere",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/orb-arrow-up.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "original"
+    },
+    "cost": {
+      "experience": null,
+      "points": 4
+    },
+    "keywords": {
+      "original": null,
+      "attribute": null
+    },
+    "description": {
+      "description": "<p>O personagem tem a atenção, memória e tempo de reação aprimorados, mas com humor impaciente e sofrendo maior estresse fisiológico. Tendo Saúde-3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Poção: </span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\"><em>accelerato</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Características: </span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">vasos dos olhos constantemente dilatados e olheiras.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Atributos: </span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">FIS 0, DES+1, EGO+1, COG+1, ESP 0, MV 4m.</span></p>",
+      "notes": "",
+      "summary": "DES+1, EGO-1, COG+1, Saúde-3."
+    }
+  },
+  "effects": [],
+  "folder": "ycroJ4j5MuJJ1dtU",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769634371712,
+    "modifiedTime": 1769634371712,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Q337D1dsdkzqp47N",
+  "sort": 0,
+  "_key": "!items!Q337D1dsdkzqp47N"
+}

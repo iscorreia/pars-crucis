@@ -1,0 +1,45 @@
+{
+  "name": "Tolice",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "attribute": null,
+      "skill": null
+    },
+    "description": {
+      "description": "<p>Seja qual for a razão, o personagem simplesmente tem muita dificuldade ao processar informações complexas e dedicar-se a estudos. Tem COG-2 e perícias de conhecimento têm MOD-2.</p>",
+      "notes": "",
+      "summary": "COG -2, perícias de Conhecimento têm MOD-2."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769608535991,
+    "modifiedTime": 1769613164650,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "1I6UEbtmO6F05vmA",
+  "sort": 0,
+  "_key": "!items!1I6UEbtmO6F05vmA"
+}

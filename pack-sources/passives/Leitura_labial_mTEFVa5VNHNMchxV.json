@@ -1,0 +1,44 @@
+{
+  "name": "Leitura labial",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "sense": null
+    },
+    "description": {
+      "description": "<p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">A percepção do personagem o permite fazer leitura labial uma vez que tenha visão dos lábios de quem estiver falando, para isso faça um teste de DES ou COG contra a dificuldade descrita na tabela, variando de acordo com a distância e tipo de conversa:</span></p><table class=\"MsoNormalTable\" border=\"0\" style=\"width:248.1pt;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0cm 3.5pt 0cm 3.5pt\"><tbody><tr style=\"mso-yfti-irow:0;mso-yfti-firstrow:yes;height:3.2pt\"><td colspan=\"2\" style=\"width:248.1pt;border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:3.2pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal;text-align:center\"><span style=\"font-size:9.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"><strong>Dificuldade de Leitura labial</strong></span></p></td></tr><tr style=\"mso-yfti-irow:1;height:3.2pt\"><td style=\"width:20.35pt;border:none;border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:3.2pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal;text-align:center\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"><strong>Dif</strong></span></p></td><td style=\"width:227.75pt;border:none;border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:3.2pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"><strong>Condição</strong></span></p></td></tr><tr style=\"mso-yfti-irow:2;height:3.2pt\"><td style=\"width:20.35pt;border:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:3.2pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal;text-align:center\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">8</span></p></td><td style=\"width:227.75pt;border:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:3.2pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Está bem próximo, conversa lentamente e com fala marcada</span></p></td></tr><tr style=\"mso-yfti-irow:3;height:3.7pt\"><td style=\"width:20.35pt;background:#E7E6E6;padding:0cm 3.5pt 0cm 3.5pt;height:3.7pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal;text-align:center\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial;color:black;mso-color-alt:windowtext\">10</span></p></td><td style=\"width:227.75pt;background:#E7E6E6;padding:0cm 3.5pt 0cm 3.5pt;height:3.7pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial;color:black;mso-color-alt:windowtext\">Entre 3m e 7m, conversa elaborada</span></p></td></tr><tr style=\"mso-yfti-irow:4;height:3.7pt\"><td style=\"width:20.35pt;padding:0cm 3.5pt 0cm 3.5pt;height:3.7pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal;text-align:center\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">12</span></p></td><td style=\"width:227.75pt;padding:0cm 3.5pt 0cm 3.5pt;height:3.7pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Entre 8m e 15m, uso de gírias, conversa rápida</span></p></td></tr><tr style=\"mso-yfti-irow:5;height:3.7pt\"><td style=\"width:20.35pt;background:#E7E6E6;padding:0cm 3.5pt 0cm 3.5pt;height:3.7pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal;text-align:center\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial;color:black;mso-color-alt:windowtext\">14</span></p></td><td style=\"width:227.75pt;background:#E7E6E6;padding:0cm 3.5pt 0cm 3.5pt;height:3.7pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial;color:black;mso-color-alt:windowtext\">Além de 16m, conversa muita rápida, pouca visibilidade</span></p></td></tr><tr style=\"mso-yfti-irow:6;mso-yfti-lastrow:yes;height:3.7pt\"><td style=\"width:20.35pt;border:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:3.7pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal;text-align:center\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">+X</span></p></td><td style=\"width:227.75pt;border:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:3.7pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm;line-height:normal\"><span style=\"mso-bidi-font-size:8.0pt;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Dificuldade+1 para cada nível de artimanha</span></p></td></tr></tbody></table><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Note que para fazer leitura labial é necessário conhecer o idioma que esteja para realizar a leitura, noutro caso tem dificuldade+4 para entender apenas os fonemas produzidos.</span></p>",
+      "notes": "",
+      "summary": "Teste de Reflexo|Percepção contra dif para leitura labial."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769648026547,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "mTEFVa5VNHNMchxV",
+  "sort": 1200000,
+  "_key": "!items!mTEFVa5VNHNMchxV"
+}

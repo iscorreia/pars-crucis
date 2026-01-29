@@ -1,9 +1,5 @@
 # DOING
 
-- Basic Compendium **_logic_**
-- Passives Partial Compendium **_pack_**
-- Improved PASSIVE SHEET **_logic hbs style/css_**
-
 # HIGH PRIORITY
 
 - Improved Weapon **_logic hbs style/css_**
@@ -12,6 +8,7 @@
 
 ## IMPORTANT
 
+- Further improve Passive sheet **_logic style/css_**
 - Further improve Ability Technique data handling and presentation **_logic hbs_**
 - Persona Inventory calculations **_logic_**
 - Create a prompt for last roll action adjustment on pressing ALT **_feature_**
@@ -31,7 +28,6 @@
 - Weapons Compendium **_pack_**
 - Items Compendium **_pack_**
 - Abilities Compendium **_pack_**
-- Passives Complete Compendium **_pack_**
 - Add Abilities (art) sorting **_qol_**
 - Persona/PDM image picked from config instead of the sheet **_qol_**
 

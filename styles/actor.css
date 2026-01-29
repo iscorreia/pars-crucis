@@ -1102,6 +1102,15 @@ h4.movement {
 }
 
 /* PASSIVES TAB */
+.passive-summary {
+  width: 280px; /* 292px */
+  font-size: 13.5px;
+  font-size: 14px;
+  font-family: "BarlowCondensed Light";
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .passive-cost {
   margin: 0 0 3px 3px;
   font-size: 14px;

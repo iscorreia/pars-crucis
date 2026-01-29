@@ -1,0 +1,45 @@
+{
+  "name": "Perda manual (esq)",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 4
+    },
+    "keywords": {
+      "narrative": null,
+      "penalty": null
+    },
+    "description": {
+      "description": "<p>Personagem não tem uma mão ou braço, ou teve o membro lesionado de maneira permanente. O lado escolhido entre esquerdo ou direito não possui função e Ações que precisem de ambas as mãos não podem ser realizadas ou tem MOD-4.</p><p class=\"MsoNormal\">Pode colocar um gancho ou instrumento na mão ou braço perdido, e o instrumento pode ser utilizado sem nenhuma penalidade. Se for necessário fineza manual, o instrumento terá MOD-4.</p><p class=\"MsoNormal\">Não pode recuperar seu membro com o uso de prostéticos ou tratamento a não que remova o Malefício.</p>",
+      "notes": "",
+      "summary": "Perda ou inutilidade da mão/braço, MOD-4 se precisa de ambas mãos."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769608056799,
+    "modifiedTime": 1769613067583,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "dQOZLddXreMJ3GAX",
+  "sort": 800000,
+  "_key": "!items!dQOZLddXreMJ3GAX"
+}

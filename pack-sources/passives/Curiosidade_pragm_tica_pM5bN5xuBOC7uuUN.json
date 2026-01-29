@@ -1,0 +1,45 @@
+{
+  "name": "Curiosidade pragmática",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-circle.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "original"
+    },
+    "cost": {
+      "experience": null,
+      "points": null
+    },
+    "keywords": {
+      "original": null,
+      "skill": null
+    },
+    "description": {
+      "description": "<p>Unindo pragmatismo capríaco e curiosidade humana o artiano pode escolher uma perícia a mais para favorecer dentre as perícias favoráveis de sua origem e persona, ou perícia de ofício.</p>",
+      "notes": "",
+      "summary": "Favoreça uma perícia a mais ou uma perícia de Ofício ou Sobrevivência."
+    }
+  },
+  "effects": [],
+  "folder": "JLhL0OGz9ta2hFnb",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769635532088,
+    "modifiedTime": 1769635847612,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "pM5bN5xuBOC7uuUN",
+  "sort": 300000,
+  "_key": "!items!pM5bN5xuBOC7uuUN"
+}

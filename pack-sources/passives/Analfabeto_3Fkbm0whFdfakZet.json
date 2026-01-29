@@ -1,0 +1,44 @@
+{
+  "name": "Analfabeto",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">O personagem não consegue ler, escrever e tem dificuldade para aprender. Se for comum da cultura ter conhecimento matemático, esse também é afetado pelo malefício.</span></p>",
+      "notes": "",
+      "summary": "Não consegue ler e escrever. Dificuldade em aprender."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569060443,
+    "modifiedTime": 1769612367896,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "3Fkbm0whFdfakZet",
+  "sort": 5100000,
+  "_key": "!items!3Fkbm0whFdfakZet"
+}

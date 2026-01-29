@@ -1,0 +1,45 @@
+{
+  "name": "Memórias traumáticas",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "narrative": null,
+      "penalty": null
+    },
+    "description": {
+      "description": "<p>O personagem passou por ume vento muito traumático durante a sua vida, e as memórias desse evento ainda o perturbam. Quando tiver que lidar com algo relativo a essas memória, todos os seus testes têm Desvantagem.</p><p class=\"MsoNormal\">É possível fazer um teste de Vontade com dificuldade 12+ (2 <span style=\"mso-bidi-font-family:Arial\">×</span> <em>número de vezes que passou nesse teste</em>) para evitar a Desvantagem por 1 hora.</p>",
+      "notes": "",
+      "summary": "Teste de Vontade com dif 12+, falhar causa #Penalidade."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769607506275,
+    "modifiedTime": 1769612992092,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "4NIbQ8um0QDCK97y",
+  "sort": 2900000,
+  "_key": "!items!4NIbQ8um0QDCK97y"
+}

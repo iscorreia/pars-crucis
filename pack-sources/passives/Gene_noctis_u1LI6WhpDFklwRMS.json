@@ -1,0 +1,45 @@
+{
+  "name": "Gene noctis",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/orb-arrow-up.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "original"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "original": null,
+      "sense": null
+    },
+    "description": {
+      "description": "<p>O gene aprimora a visão noturna do personagem, seus olhos captando mais luz, tem Visão noturna (16m), mas Visão diurna (-2).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Poção: </span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\"><em>noctis</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Características: </span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">os olhos dilatam bastante e refletem luz.</span></p>",
+      "notes": "",
+      "summary": "Visão noturna (16m), Visão diurna (-2)."
+    }
+  },
+  "effects": [],
+  "folder": "ycroJ4j5MuJJ1dtU",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769634453298,
+    "modifiedTime": 1769634471217,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "u1LI6WhpDFklwRMS",
+  "sort": 50000,
+  "_key": "!items!u1LI6WhpDFklwRMS"
+}

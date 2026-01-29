@@ -1,0 +1,45 @@
+{
+  "name": "Ingenuidade",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "attribute": null,
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Confia nas pessoas facilmente e isso permite manipularem-no. Se for provado que alguém agiu de má fé, o personagem passará a desconfiar de quem o enganou. Tem EGO-2.</span></p>",
+      "notes": "",
+      "summary": "EGO -2."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769606190666,
+    "modifiedTime": 1769612907621,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "UMIK7czmsafqdKQ7",
+  "sort": 2600000,
+  "_key": "!items!UMIK7czmsafqdKQ7"
+}

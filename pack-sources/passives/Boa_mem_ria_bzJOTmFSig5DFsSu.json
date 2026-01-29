@@ -1,0 +1,44 @@
+{
+  "name": "Boa memória",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 1
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p>O personagem tem memória exemplar. Sempre se lembra do que comeu ontem ou com quem conversou, é aquela pessoa que sabe o nome de todos em seu local de trabalho. Um personagem com boa memória tem MOD+3 em testes de COG para lembrar informações e na maioria dos casos, vai se lembrar de coisas simples como nomes de outros personagens conhecidos e locais.</p>",
+      "notes": "",
+      "summary": "MOD+3 tem testes de COG para lembrar informaçào."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769646574551,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "bzJOTmFSig5DFsSu",
+  "sort": 3300000,
+  "_key": "!items!bzJOTmFSig5DFsSu"
+}

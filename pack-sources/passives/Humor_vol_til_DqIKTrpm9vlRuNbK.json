@@ -1,0 +1,44 @@
+{
+  "name": "Humor volátil",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">O personagem pode oscilar repentinamente de humor caindo em frustração por pequenas questões ou subitamente se empolgar sem qualquer motivo aparente. Por conta disso é difícil para os outros prever que tipo de reação o personagem terá e essas oscilações tendem a atrapalhar em situações de tensão.</span></p>",
+      "notes": "",
+      "summary": "Humor ocila repentinamente."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769571051357,
+    "modifiedTime": 1769612869930,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "DqIKTrpm9vlRuNbK",
+  "sort": 1800000,
+  "_key": "!items!DqIKTrpm9vlRuNbK"
+}

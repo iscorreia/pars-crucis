@@ -1,0 +1,45 @@
+{
+  "name": "Terrestre",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/orb-arrow-up.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "original"
+    },
+    "cost": {
+      "experience": null,
+      "points": null
+    },
+    "keywords": {
+      "original": null,
+      "narrative": null
+    },
+    "description": {
+      "description": "<p>O orcino nascido e criado longe dos mares e pântanos, e com nenhuma oportunidade de nadar tem as suas barbatanas atrofiadas e seu corpo se adaptou para manter a oleosidade mesmo em condições de pouca umidade. Não tem penalidades na passiva Oleoso. Não possui passiva <em>Da água.</em></p>",
+      "notes": "",
+      "summary": "Sem penalidades de Oleoso. Não possui a passiva Da água."
+    }
+  },
+  "effects": [],
+  "folder": "WrggjZRxPgceC7vo",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769644757575,
+    "modifiedTime": 1769644757594,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "KjrEdKVp3fY6nJUq",
+  "sort": 300000,
+  "_key": "!items!KjrEdKVp3fY6nJUq"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Estabanado",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "skill": null,
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Por excesso de nervosismo, desatenção ou coordenação, o personagem é meio avoado e desastrado, cometendo erros bobos, tropeçando, trombando ou batendo nas coisas. Tem MOD-2 em testes de Furtividade.</span></p>",
+      "notes": "",
+      "summary": "MOD -2 para Furtividade."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769570720382,
+    "modifiedTime": 1769612797376,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "ntMKZcofP3tf2BWc",
+  "sort": 3800000,
+  "_key": "!items!ntMKZcofP3tf2BWc"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Sangue frio",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "conditional": null
+    },
+    "description": {
+      "description": "<p class=\"MsoNormal\">Quando o luta começa e o sangue jorra o personagem mantém a mente centrada tendo MOD+6 em testes para manter-se controlado, e para resistir a provocações e distrações. Um personagem de sangue-frio não costuma sentir remorso sobre suas ações em combate.</p>",
+      "notes": "",
+      "summary": "MOD+6 em testes para se manter controlado."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769649057832,
+    "modifiedTime": 1769649057832,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "E4MzYO2B8IL7sP1o",
+  "sort": 0,
+  "_key": "!items!E4MzYO2B8IL7sP1o"
+}

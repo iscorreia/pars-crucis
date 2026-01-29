@@ -1,0 +1,44 @@
+{
+  "name": "Herança",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p>Vindo de uma família abastada que lhe deu boas condições, ou de pais empenhados que fizeram o que puderam para lhe dar do melhor, seu personagem herdou bens e dinheiro. Dobra o ganho inicial pelas finanças do personagem.</p><p class=\"MsoNormal\">Esse benefício não é compatível com o malefício <em>Dívida</em>.</p>",
+      "notes": "",
+      "summary": "Dobro de Finança inicial."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769647736381,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "toKEBLsuW1YT9iaS",
+  "sort": 900000,
+  "_key": "!items!toKEBLsuW1YT9iaS"
+}

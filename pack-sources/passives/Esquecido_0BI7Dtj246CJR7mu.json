@@ -1,0 +1,44 @@
+{
+  "name": "Esquecido",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Coisas de pouca relevância para o personagem ou que pareçam tediosas ainda que importantes são difíceis de memorizar, nomes de pessoas, cidades, longas instruções ou direções podem cair facilmente no reino do esquecimento.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Relacionando as perícias dominadas pelo personagem isso pode se expressar ao não lembrar certos detalhes, como um alquimista saber exatamente como fazer tal poção, porém não lembrar o nome dos reagentes utilizados precisando sempre os ver.</span></p>",
+      "notes": "",
+      "summary": "Esquece coisas com facilidade."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769570672941,
+    "modifiedTime": 1769612782921,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "0BI7Dtj246CJR7mu",
+  "sort": 3700000,
+  "_key": "!items!0BI7Dtj246CJR7mu"
+}

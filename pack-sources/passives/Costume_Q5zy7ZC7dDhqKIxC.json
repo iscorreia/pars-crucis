@@ -1,0 +1,45 @@
+{
+  "name": "Costume",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "conditional": null,
+      "penalty": null
+    },
+    "description": {
+      "description": "<p>Estar muito acostumado com uma arma ou equipamento pode vir ser um problema caso precise fazer uso de outros. Um personagem com costume tem MOD-2 ao utilizar armas de combate corpo a corpo e à distância dos quais ele não esteja habituado. É necessário ao menos 1 dia inteiro de prática para se acostumar a um novo armamento.</p>",
+      "notes": "",
+      "summary": "MOD -2 ao utilizar armamentos que não esteja habituado."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569566534,
+    "modifiedTime": 1769612682303,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Q5zy7ZC7dDhqKIxC",
+  "sort": 4400000,
+  "_key": "!items!Q5zy7ZC7dDhqKIxC"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Fanatismo",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 4
+    },
+    "keywords": {
+      "narrative": null,
+      "conditional": null,
+      "effect": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Alguma coisa despertou na personagem um fanatismo do qual acredita cegamente. Tem MOD+10 em testes para situações que a coloquem contra o objeto de seu fanatismo. Tem MOD+2 na primeira ação de ataque após ter seu fanatismo desdenhado ou insultado, mas fica <em>vulnerável</em> durante toda a batalha.</span></p>",
+      "notes": "",
+      "summary": "Mediante seu objeto de fanatismo tem vantagens e desvantagens."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769570894033,
+    "modifiedTime": 1769612824177,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "S4DWLqirseCencJv",
+  "sort": 2000000,
+  "_key": "!items!S4DWLqirseCencJv"
+}

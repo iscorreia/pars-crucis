@@ -1,0 +1,44 @@
+{
+  "name": "Penitente",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p>O personagem se arrepende de algo que fez no passado e acha que deve pagar pelos seus erros ou sacrificar-se para remediá-los. O jogador pode escolher a maneira como expressa essa característica.</p>",
+      "notes": "",
+      "summary": "Forte arrependimento."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769607958116,
+    "modifiedTime": 1769613041270,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "BvTRMrwFCcK7kIZt",
+  "sort": 700000,
+  "_key": "!items!BvTRMrwFCcK7kIZt"
+}

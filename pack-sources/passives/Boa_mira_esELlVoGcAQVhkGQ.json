@@ -1,0 +1,42 @@
+{
+  "name": "Boa mira",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Ataques de projétil têm alcance aumentado em 20%. Sempre arredonde para cima.</p>",
+      "notes": "",
+      "summary": "Ataques de projétil têm alcance aumentado em 20%."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769647086320,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "esELlVoGcAQVhkGQ",
+  "sort": 2700000,
+  "_key": "!items!esELlVoGcAQVhkGQ"
+}
