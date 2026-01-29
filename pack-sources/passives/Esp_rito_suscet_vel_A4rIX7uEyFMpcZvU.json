@@ -1,0 +1,44 @@
+{
+  "name": "Espírito suscetível",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 4
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">O personagem tem o espírito enfraquecido e mais suscetível as aflições. Tem ESP-1 e todo o dano Essencial é aumentado em 2.</span></p>",
+      "notes": "",
+      "summary": "ESP -1, Danos Essenciais aumentados em 2."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769570602108,
+    "modifiedTime": 1769612777408,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "A4rIX7uEyFMpcZvU",
+  "sort": 3600000,
+  "_key": "!items!A4rIX7uEyFMpcZvU"
+}

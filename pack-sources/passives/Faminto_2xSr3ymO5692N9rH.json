@@ -1,0 +1,44 @@
+{
+  "name": "Faminto",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">A personagem tem fome insaciável e dificilmente negará comida. Tem MOD-4 em testes para resistir uma oferta de alimento, suportar a fome e não sofrer efeitos de privação de alimento.</span></p>",
+      "notes": "",
+      "summary": "MOD -4 para resistir alimento."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769570760296,
+    "modifiedTime": 1769612807537,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "2xSr3ymO5692N9rH",
+  "sort": 3400000,
+  "_key": "!items!2xSr3ymO5692N9rH"
+}

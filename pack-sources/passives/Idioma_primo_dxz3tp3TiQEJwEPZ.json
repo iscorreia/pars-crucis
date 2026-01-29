@@ -1,0 +1,45 @@
+{
+  "name": "Idioma primo",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/orb-arrow-up.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "original"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "original": null,
+      "narrative": null
+    },
+    "description": {
+      "description": "<p>Idioma não pronunciado, mas sentido através dos laços com a natureza, pode ser aprendido durante os primeiros anos de vida de um ligno e aprimorado no decorrer de sua vida. Esse idioma permite acessar as informações armazenadas em plantas, sendo árvores antigas como enciclopédias. O idioma primo pode servir de auxílio para perícias como Erudição, Orientação, Sobrevivência e outras que forem pertinentes. Ao comunicar-se com uma planta detentora de informação relevante o ligno pode fazer um teste com essas perícias tendo MOD+2.</p><p class=\"MsoNormal\">Um teste de Erudição feito ao comunicar-se com uma antiga árvore no centro de uma floresta pode fornecer ao ligno um mapa mental de grande parte da floresta se obtiver uma boa MS.</p>",
+      "notes": "",
+      "summary": "Auxilia perícias e permite acessar conhecimento contido em planta."
+    }
+  },
+  "effects": [],
+  "folder": "EwTllmG8gCI2maEM",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769644110282,
+    "modifiedTime": 1769644110282,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "dxz3tp3TiQEJwEPZ",
+  "sort": 0,
+  "_key": "!items!dxz3tp3TiQEJwEPZ"
+}

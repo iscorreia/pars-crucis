@@ -1,0 +1,44 @@
+{
+  "name": "Dívida",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 4
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">O personagem pegou um empréstimo com uma instituição ou com um agiota e não pôde pagar, ou retraiu uma dívida de parentes, de qualquer maneira, cabe a ele pagar essa grande dívida. O jogador que decide se deve a um agiota ou instituição, mudando as consequências.</span></p><p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Como devedor de uma instituição, pode ser que o personagem seja proibido de realizar compras em algum lugar, tenha propriedades apreendidas ou seja perseguido por cobradores e guardas para que pague sua dívida ou parte dela. Como devedor de um agiota apode ser coagido através de ameaças ou violência para pagar a dívida.</span></p><p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Cabe ao Narrador do jogo decidir um valor razoável para a dívida, assim como possíveis juros e punições a cada vez que postergar o pagamento. Ficando livre também a possibilidade de aumentar a dívida ou exigir serviços como pagamento, conseguindo meios de dificultar que o personagem pague sua dívida facilmente.</span></p><p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Recomenda-se que a dívida em dinheiro seja equivalente a 4× a quantia inicial do personagem, com valor mínimo de 35 Pratas.</span></p><p></p>",
+      "notes": "",
+      "summary": "Possui uma dívida considerável."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569981318,
+    "modifiedTime": 1769612756224,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "oOiqBKStqVi76wxT",
+  "sort": 3500000,
+  "_key": "!items!oOiqBKStqVi76wxT"
+}

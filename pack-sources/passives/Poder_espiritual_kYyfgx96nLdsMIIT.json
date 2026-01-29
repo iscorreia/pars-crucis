@@ -1,0 +1,44 @@
+{
+  "name": "Poder espiritual",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 4
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p class=\"MsoNormal\">O personagem tem maior acesso a sua força espiritual, ESP+1.</p>",
+      "notes": "",
+      "summary": "ESP+1."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769648586814,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "kYyfgx96nLdsMIIT",
+  "sort": 300000,
+  "_key": "!items!kYyfgx96nLdsMIIT"
+}

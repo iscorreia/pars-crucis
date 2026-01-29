@@ -1,0 +1,44 @@
+{
+  "name": "Cogni",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p>O personagem tem cognição acima da média, COG+1.</p>",
+      "notes": "",
+      "summary": "COG+1."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769647150777,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "94uJ6ynoumW6xJGh",
+  "sort": 3100000,
+  "_key": "!items!94uJ6ynoumW6xJGh"
+}

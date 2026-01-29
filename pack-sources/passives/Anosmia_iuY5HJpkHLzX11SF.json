@@ -1,0 +1,45 @@
+{
+  "name": "Anosmia",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "sense": null,
+      "narrative": null
+    },
+    "description": {
+      "description": "<p>Por lesar o nariz devido a um ferimento, ou devido a sequelas de uma doença o personagem não sente cheiros e mal sente sabores. Pelas marcas no rosto o personagem pode sofrer mal julgamento.</p><p class=\"MsoNormal\">Não pode ser remediado por prostéticos ou sobrenatural.</p>",
+      "notes": "",
+      "summary": "Não sente cheiros e sabores."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569101652,
+    "modifiedTime": 1769612381904,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "iuY5HJpkHLzX11SF",
+  "sort": 4600000,
+  "_key": "!items!iuY5HJpkHLzX11SF"
+}

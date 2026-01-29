@@ -1,0 +1,44 @@
+{
+  "name": "Bonzinho",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p>O personagem se dispõe a fazer a vontade dos outros para os agradar mesmo que seja custoso para ele, para ele é difícil dizer não, e ao dizer não se sente culpado.</p>",
+      "notes": "",
+      "summary": "Não sabe dizer não."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569285767,
+    "modifiedTime": 1769612412448,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "9S98FaPPTgZbgCrK",
+  "sort": 3900000,
+  "_key": "!items!9S98FaPPTgZbgCrK"
+}

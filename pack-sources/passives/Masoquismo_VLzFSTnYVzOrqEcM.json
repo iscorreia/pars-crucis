@@ -1,0 +1,44 @@
+{
+  "name": "Masoquismo",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "conditional": null
+    },
+    "description": {
+      "description": "<p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Para alguns a dor pode ser extremamente revigorante. Toda vez que o personagem sofre entre 5 e 10 PV de dano cure [3] PE, ao sofrer entre 11 e 20 PV de dano cure [6] PE e ao sofrer 21 para mais PV de dano cure [9] PE. Causar dano a si mesmo ativa o benefício.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Esse benefício não tem efeito nenhum se o personagem estiver sobre o efeito do poder <em>arte do sangue</em> ou sobre efeitos que reduzam a sensação de dor.</span></p>",
+      "notes": "",
+      "summary": "Sofrer dano cura PE: 5~10PV: [3]PE, 11~20PV: [6]PE, 21+PV: [9]PE"
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769648122029,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "VLzFSTnYVzOrqEcM",
+  "sort": 1300000,
+  "_key": "!items!VLzFSTnYVzOrqEcM"
+}

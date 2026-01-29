@@ -264,7 +264,7 @@ function details({
 function description() {
   return new SchemaField({
     description: new HTMLField(),
-    shortDescription: new StringField({ initial: "" }),
+    summary: new StringField({ initial: "" }),
     notes: new StringField({ initial: "" }),
   });
 }

@@ -1,0 +1,44 @@
+{
+  "name": "Descoordenação",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 4
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Por mais habilidosa que seja, algo dificulta a boa coordenação do personagem, que tem DES-2.</span></p>",
+      "notes": "",
+      "summary": "DES -2."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569881388,
+    "modifiedTime": 1769612736768,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "PlhvAF9NSNimcRam",
+  "sort": 3300000,
+  "_key": "!items!PlhvAF9NSNimcRam"
+}

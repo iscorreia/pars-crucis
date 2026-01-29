@@ -1,0 +1,45 @@
+{
+  "name": "Primitivo",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "cultural": null,
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Crescido e vivido numa tribo ou entre guardiões, o personagem não tem conhecimento algum sobre tecnologias e tratos sociais urbanos. Tem desvantagens com equipamentos e itens modernos, não podendo fazer uso deles ou com MOD-4 até que se passe um tempo de adaptação. Ficar longe da tecnologia fará o personagem se esquecer novamente de como se usa determinado aparato.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\"> origens: anama, astraios, bandeiros, guardiões, orcai, sabak e vagantes.</span></p>",
+      "notes": "",
+      "summary": "Não consegue usar ou MOD -4 com equipamentos modernos."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769608252946,
+    "modifiedTime": 1769613209390,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "fGDs36hOSYn68sBS",
+  "sort": 1200000,
+  "_key": "!items!fGDs36hOSYn68sBS"
+}

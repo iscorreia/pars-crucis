@@ -1,0 +1,44 @@
+{
+  "name": "Saguinário",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p>Acostumado com a morte e violência, o personagem tem frieza cruel, sem escrúpulos com a vida e matando os seus inimigos a não ser que impedido. Isso muitas vezes podendo colocá-lo em situações complicadas, ou custando informação crucial.</p>",
+      "notes": "",
+      "summary": "Frieza cruel, mata sem escrúpulos."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769608378333,
+    "modifiedTime": 1769613153008,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "ctgJs0VQ6aaLrDl9",
+  "sort": 1600000,
+  "_key": "!items!ctgJs0VQ6aaLrDl9"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Originais lignas",
+  "color": "#176b00",
+  "sorting": "a",
+  "_id": "EwTllmG8gCI2maEM",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769632577528,
+    "modifiedTime": 1769632746420,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!folders!EwTllmG8gCI2maEM"
+}

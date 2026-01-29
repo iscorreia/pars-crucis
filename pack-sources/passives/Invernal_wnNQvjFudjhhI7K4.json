@@ -1,0 +1,45 @@
+{
+  "name": "Invernal",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/orb-arrow-up.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "original"
+    },
+    "cost": {
+      "experience": null,
+      "points": null
+    },
+    "keywords": {
+      "original": null,
+      "attribute": null
+    },
+    "description": {
+      "description": "<p>Natural de climas frios, vivendo em tundras e florestas gélidas o ligno invernal é acostumado a períodos de muita luz e de pouca luz solar. Tem <em>Isolante</em> (+1) e MOD+8 em testes de frio extremo.</p><p class=\"MsoNormal\">Não tem a passiva original <em>solar</em>.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Incompatível:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\"> <em>desértico </em>e <em>hidrófito</em></span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Características:</span> tom de pele mais escuro ou pálido e as suas folhas são finas e caem no inverno.</p>",
+      "notes": "",
+      "summary": "Isolante (+1), MOD+8 em testes de frio extremo. Perde Solar."
+    }
+  },
+  "effects": [],
+  "folder": "EwTllmG8gCI2maEM",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769644157890,
+    "modifiedTime": 1769644157890,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "wnNQvjFudjhhI7K4",
+  "sort": 0,
+  "_key": "!items!wnNQvjFudjhhI7K4"
+}

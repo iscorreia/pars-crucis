@@ -1,0 +1,45 @@
+{
+  "name": "Moral incontestável",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "attribute": null,
+      "narrative": null
+    },
+    "description": {
+      "description": "<p class=\"MsoNormal\">O personagem é firme em suas convicções, com EGO+1. Além disso não pode ser persuadido a ir contra seu julgamento.</p>",
+      "notes": "",
+      "summary": "EGO+1. Não pode ser persuadido contra o julgamento."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769648253647,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "OGkhy0X9rr9IdFQX",
+  "sort": 1500000,
+  "_key": "!items!OGkhy0X9rr9IdFQX"
+}

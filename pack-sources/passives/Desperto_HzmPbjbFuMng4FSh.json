@@ -1,0 +1,44 @@
+{
+  "name": "Desperto",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "sense": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Por costume ou treino, o sono do personagem e leve, mesmo enquanto dorme está atento a barulhos e estranhezas. O personagem não sofre penalidade aos testes de Reflexo enquanto dorme, também acorda prontamente, podendo realizar ações sem penalidades.</span></p>",
+      "notes": "",
+      "summary": "Sem penalidades de Reflexo enquanto dorme."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769647329509,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "HzmPbjbFuMng4FSh",
+  "sort": 2000000,
+  "_key": "!items!HzmPbjbFuMng4FSh"
+}

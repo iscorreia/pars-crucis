@@ -17,3 +17,6 @@ ol.directory-list li.item {
     font-family: "BarlowCondensed Regular";
   }
 }
+ol.directory-list li.compendium {
+  height: 72px;
+}

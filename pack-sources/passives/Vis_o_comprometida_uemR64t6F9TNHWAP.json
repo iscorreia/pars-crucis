@@ -1,0 +1,44 @@
+{
+  "name": "Visão comprometida",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "sense": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Algum problema compromete a visão do personagem, esse podendo ser devido a perda de um olho, problemas congênitos de visão, danos causados à vista em algum momento etc. e por conta disso o personagem tem MOD-2 em testes relacionados a visão e o alcance de arremessos e projéteis é diminuído em 20%.</span></p>",
+      "notes": "",
+      "summary": "MOD -2 em testes com a visão. Alc de Arremessos e Projéteis -20%."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769608755564,
+    "modifiedTime": 1769613192065,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "uemR64t6F9TNHWAP",
+  "sort": 0,
+  "_key": "!items!uemR64t6F9TNHWAP"
+}

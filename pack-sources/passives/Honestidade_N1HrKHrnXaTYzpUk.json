@@ -1,0 +1,44 @@
+{
+  "name": "Honestidade",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Totalmente honesto, o personagem não consegue mentir de maneira direta sem dar algum tipo de sinal ou confusão, principalmente quando uma mentira se faz necessário. Essa característica pode se tornar mais evidente em certas condições.</span></p>",
+      "notes": "",
+      "summary": "Não consegue mentir."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769571084813,
+    "modifiedTime": 1769612879085,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "N1HrKHrnXaTYzpUk",
+  "sort": 1900000,
+  "_key": "!items!N1HrKHrnXaTYzpUk"
+}

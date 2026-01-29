@@ -1,0 +1,45 @@
+{
+  "name": "Visão noturna (6m)",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-circle.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "original"
+    },
+    "cost": {
+      "experience": null,
+      "points": null
+    },
+    "keywords": {
+      "original": null,
+      "sense": null
+    },
+    "description": {
+      "description": "<p>Os séculos vivendo no subsolo de Crialis concedeu aos capríacos uma boa visão no escuro.</p>",
+      "notes": "",
+      "summary": "Visão noturna (6m)"
+    }
+  },
+  "effects": [],
+  "folder": "JLhL0OGz9ta2hFnb",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769635299147,
+    "modifiedTime": 1769635847612,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "G54GUvWVfYzkGILL",
+  "sort": 900000,
+  "_key": "!items!G54GUvWVfYzkGILL"
+}

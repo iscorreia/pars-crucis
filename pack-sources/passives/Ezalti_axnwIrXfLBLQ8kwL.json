@@ -1,0 +1,46 @@
+{
+  "name": "Ezalti",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/orb-arrow-up.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "original"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "original": null,
+      "attribute": null,
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">Descendente do grupo de pioneiros que cruzaram pelos planos, e assim como seus ancestrais possui um espírito poderoso, mas sua saúde é debilitada pelo fluxo essencial de Raiz, tendo Saúde-3.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Características: </span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">longevidade de 100 anos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Atributos:</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\"> FIS+1, DES 0, EGO-1, COG 0, ESP+1, MV 4m.</span></p>",
+      "notes": "",
+      "summary": "FIS-1, ESP+2, Saúde-3."
+    }
+  },
+  "effects": [],
+  "folder": "FBUV9O2gnsChg4Gc",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769636158332,
+    "modifiedTime": 1769636158332,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "axnwIrXfLBLQ8kwL",
+  "sort": 0,
+  "_key": "!items!axnwIrXfLBLQ8kwL"
+}

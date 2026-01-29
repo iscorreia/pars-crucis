@@ -1,0 +1,44 @@
+{
+  "name": "Corpo de vidro",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 7
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p>O personagem possui uma debilidade nos ossos. Tem FIS-1, sofre 4 de dano adicional de todos os ataques de dano Físico, e têm chance maior de sofrer fraturas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Incompatível:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\"> <em>Força física </em>e <em>Robusto.</em></span></p>",
+      "notes": "",
+      "summary": "FIS -1, Danos Físicos aumentados em 4."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569495756,
+    "modifiedTime": 1769612890513,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "lMrw0M8I5JMHSmzI",
+  "sort": 4200000,
+  "_key": "!items!lMrw0M8I5JMHSmzI"
+}

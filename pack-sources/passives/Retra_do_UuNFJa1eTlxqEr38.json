@@ -1,0 +1,44 @@
+{
+  "name": "Retraído",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "skill": null
+    },
+    "description": {
+      "description": "<p>O personagem tem dificuldades para socializar e interagir com outros personagens que não sejam de seu grupo. Todas as perícias sociais têm MOD-2.</p>",
+      "notes": "",
+      "summary": "Todas as perícias Sociais têm MOD-2."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769608300323,
+    "modifiedTime": 1769613130528,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "UuNFJa1eTlxqEr38",
+  "sort": 1400000,
+  "_key": "!items!UuNFJa1eTlxqEr38"
+}

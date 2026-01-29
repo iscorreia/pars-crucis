@@ -1,45 +1,41 @@
 {{! Passive Config tab }}
 
 <section class="tab {{tab.cssClass}}" data-group="primary" data-tab="config">
-  <div class="flexcol">
-    <input
-      name="name"
-      type="String"
-      value="{{item.name}}"
-      placeholder="Nameless Passive"
-    />
-    <select name="system.info.subtype">
-      {{selectOptions
-        config.passive.subtypes
-        selected=system.info.subtype
-        localize=true
-      }}
-    </select>
-    <select name="system.info.acquirement">
-      {{selectOptions
-        config.passive.acquirement
-        selected=system.info.acquirement
-        localize=true
-      }}
-    </select>
-    <div>
-      <h4>{{localize "PC.keywords"}}</h4>
-      <a data-action="addKeyword" data-type="passive"><i
-          class="fa-regular fa-plus"
-        ></i></a>
-      {{#each system.keywords as |keyword obj|}}
-        <div class="flexrow">
-          <div>
-            {{localize (concat "PC.keyword." obj)}}{{#if keyword}}
-              ({{keyword}}){{/if}}
-          </div>
-          <a data-action="cutKeyword" data-keyword="{{@key}}">
-            <i class="fa-regular fa-trash-can"></i></a>
-        </div>
-      {{/each}}
+  <div class="item-info-config">
+    <div class="item-info-block item-name-block">
+      <h5>{{localize "PC.passiveName"}}</h5>
+      <input
+        name="name"
+        type="String"
+        value="{{item.name}}"
+        placeholder="Nameless Passive"
+      />
     </div>
-    <div>
-      <h4>{{localize "PC.pts"}}</h4>
+    <div class="item-info-block">
+      <h5>{{localize "PC.subtype"}}</h5>
+      <select name="system.info.subtype">
+        {{selectOptions
+          config.passive.subtypes
+          selected=system.info.subtype
+          localize=true
+        }}
+      </select>
+    </div>
+    <div class="item-info-block">
+      <h5>{{localize "PC.acquirement"}}</h5>
+      <select name="system.info.acquirement">
+        {{selectOptions
+          config.passive.acquirement
+          selected=system.info.acquirement
+          localize=true
+        }}
+      </select>
+    </div>
+  </div>
+
+  <div class="item-info-config">
+    <div class="item-info-block">
+      <h5>{{localize "PC.pts"}}</h5>
       <input
         class="item-input"
         type="Number"
@@ -49,8 +45,8 @@
         data-dtype="Number"
       />
     </div>
-    <div>
-      <h4>{{localize "PC.xp"}}</h4>
+    <div class="item-info-block">
+      <h5>{{localize "PC.xp"}}</h5>
       <input
         class="item-input"
         type="Number"
@@ -58,6 +54,33 @@
         value="{{system.cost.experience}}"
         placeholder="Zeroed"
         data-dtype="Number"
+      />
+    </div>
+  </div>
+
+  <div class="keyword-title-line">
+    <a data-action="keywordPicker">{{localize "PC.keywords"}}
+      <i class="fa-regular fa-plus"></i>
+    </a></div>
+  <div class="item-info-config item-keywords-config">
+    {{#each system.keywords}}
+      <div class="pc-keyword">
+        {{localize (concat "PC.keyword." @key)}}{{#if this}} ({{this}}){{/if}}
+        <a data-action="cutKeyword" data-keyword="{{@key}}">
+          <i class="fa-regular fa-eraser"></i></a>
+      </div>
+    {{/each}}
+  </div>
+
+  <div class="item-info-config">
+    <div class="item-info-block">
+      <h5>{{localize "PC.summary"}}</h5>
+      <input
+        class="item-input"
+        name="system.description.summary"
+        value="{{system.description.summary}}"
+        data-dtype="String"
+        type="text"
       />
     </div>
   </div>

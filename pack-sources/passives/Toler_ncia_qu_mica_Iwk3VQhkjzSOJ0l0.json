@@ -1,0 +1,45 @@
+{
+  "name": "Tolerância química",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "conditional": null,
+      "effect": null
+    },
+    "description": {
+      "description": "<p class=\"MsoNormal\">Aumenta em 2 a quantidade de poções e ervas que podem ser usados pelo personagem sem chances de efeitos colaterais. Tem MOD+3 para resistir ao efeito de bebidas alcoólicas, venenos, e efeitos negativos de itens alquímicos e herbais.</p>",
+      "notes": "",
+      "summary": "MOD+3 para resistir efeitos intoxicantes. Usa mais poções."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769649146266,
+    "modifiedTime": 1769649146266,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "Iwk3VQhkjzSOJ0l0",
+  "sort": 0,
+  "_key": "!items!Iwk3VQhkjzSOJ0l0"
+}

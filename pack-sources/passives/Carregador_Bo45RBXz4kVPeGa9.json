@@ -1,0 +1,44 @@
+{
+  "name": "Carregador",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 1
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p>Acostumado a levantar peso e carregar coisas de um lado para o outro, o personagem tem 7 Espaços a mais de inventário.</p>",
+      "notes": "",
+      "summary": "Tem +7 espaços de inventário."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769647132424,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Bo45RBXz4kVPeGa9",
+  "sort": 3000000,
+  "_key": "!items!Bo45RBXz4kVPeGa9"
+}

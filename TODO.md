@@ -1,19 +1,16 @@
 # DOING
 
-- Further improve Ability Technique data handling and presentation **_logic hbs_**
-
 # HIGH PRIORITY
 
-- Basic compendium **_logic_**
-- Show Abilities/Items on chat **_feature_**
 - Improved Weapon **_logic hbs style/css_**
 - Improved Gear **_hbs style/css_**
 - Improved Ability sheet **_hbs style/css_**
 
 ## IMPORTANT
 
+- Further improve Passive sheet **_logic style/css_**
+- Further improve Ability Technique data handling and presentation **_logic hbs_**
 - Persona Inventory calculations **_logic_**
-- Improved PASSIVE SHEET **_logic hbs style/css_**
 - Create a prompt for last roll action adjustment on pressing ALT **_feature_**
 - PDM sheet having Attributes and Skills grayed out and not rollable when null **_feature hbs style/css_**
 
@@ -31,9 +28,7 @@
 - Weapons Compendium **_pack_**
 - Items Compendium **_pack_**
 - Abilities Compendium **_pack_**
-- Passives Compendium **_pack_**
 - Add Abilities (art) sorting **_qol_**
-- ?? Filter keywords such as Initial / Recipe on chat **_qol_**
 - Persona/PDM image picked from config instead of the sheet **_qol_**
 
 ### INTERESTING BUT NOT NECESSARY
@@ -65,3 +60,4 @@
 - Make possible to clear Technique ability selected Item action **_qol_**
 - Expanded Actions be Draggable to Macros
 - Attributes be Draggable to Macros
+- Show Abilities/Items general description on chat **_feature_**

@@ -1,0 +1,45 @@
+{
+  "name": "Discromopsia",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "sense": null,
+      "skill": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">O personagem nasceu com uma deficiência visual que o impede de distinguir certas cores. Em alguns casos a visão é completamente em preto e branco. Testes de percepção dependentes da visão, e testes de busca por materiais tem MOD-2.</span></p>",
+      "notes": "",
+      "summary": "Certos teste de visão tem MOD-2."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569938773,
+    "modifiedTime": 1769612745311,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "9XlSmNv91p0VPwAa",
+  "sort": 3000000,
+  "_key": "!items!9XlSmNv91p0VPwAa"
+}

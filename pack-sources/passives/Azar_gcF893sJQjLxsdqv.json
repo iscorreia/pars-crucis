@@ -1,0 +1,44 @@
+{
+  "name": "Azar",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Portador de má sorte. Azar diminui a Sorte em 1, também impede que sorte seja usada para evitar falhas desastrosas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Incompatível:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\"> Benefício: <em>Sorte extra</em>.</span></p>",
+      "notes": "",
+      "summary": "Sorte -1"
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569206678,
+    "modifiedTime": 1769612434757,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "gcF893sJQjLxsdqv",
+  "sort": 4900000,
+  "_key": "!items!gcF893sJQjLxsdqv"
+}

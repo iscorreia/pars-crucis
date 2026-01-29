@@ -1,0 +1,45 @@
+{
+  "name": "Penas e escamas",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-circle.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "original"
+    },
+    "cost": {
+      "experience": null,
+      "points": null
+    },
+    "keywords": {
+      "original": null,
+      "attribute": null
+    },
+    "description": {
+      "description": "<p>As penas e escamas do quezal concedem isolamento térmico e boa dispersão de calor, o permitindo suportar variações térmicas e climas mais árduos. Isolante (+2) e MOD+3 em testes contra frio e calor extremos.</p>",
+      "notes": "",
+      "summary": "Isolante (+2) e MOD+3 em testes contra frio e calor extremos."
+    }
+  },
+  "effects": [],
+  "folder": "eCOegkbDU7U8gB2F",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769645259618,
+    "modifiedTime": 1769645416451,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "nsdhz6aWpw36yK5b",
+  "sort": 200000,
+  "_key": "!items!nsdhz6aWpw36yK5b"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Dependência",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "penalty": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">O personagem é dependente de algum tipo de droga que deve ser ingerida ou ministrada pelo menos 2 vezes na semana. Não suprir a dependência causa uma crise de abstinência, tendo Desvantagem em todas as ações, MV-1 e PV diminuído em 2</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%;mso-bidi-font-family:Arial\">×</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Dezenas.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">O medicamento ou droga utilizada deve ter alguma relevância. Durante a crise o personagem fará o que pode para consumir a droga de sua dependência. É possível adiar os efeitos da crise de abstinência em 6 horas ao passar em um teste de Saúde com dificuldade 16 +2</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%;mso-bidi-font-family:Arial\">×</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">crises resistidas em sequência.</span></p>",
+      "notes": "",
+      "summary": "Pode sofrer crises de dependência."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569766866,
+    "modifiedTime": 1769608453596,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "ldg7KaeQwW2afHk5",
+  "sort": 4300000,
+  "_key": "!items!ldg7KaeQwW2afHk5"
+}

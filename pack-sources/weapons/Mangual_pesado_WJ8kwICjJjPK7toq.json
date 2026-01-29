@@ -1,0 +1,86 @@
+{
+  "name": "Mangual pesado",
+  "type": "weapon",
+  "img": "icons/weapons/maces/flail-spiked-grey.webp",
+  "system": {
+    "details": {
+      "equippable": true,
+      "equipped": false,
+      "stackable": false,
+      "stack": 1,
+      "slots": 2
+    },
+    "info": {
+      "subtype": "melee",
+      "group": "flail",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "O64VBu8lKLEofivE": {
+        "img": "icons/weapons/maces/flail-spiked-grey.webp",
+        "name": "Atacar",
+        "type": "attack",
+        "_id": "O64VBu8lKLEofivE",
+        "skill": "malha",
+        "subtype": "melee",
+        "effect": "se um ataque com Ⓐ for defendido ainda é considerado sucesso.",
+        "range": "1m",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "damage": {
+          "dmgBase": 12,
+          "dmgAttributes": [
+            "fis"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "damaging": false
+      }
+    },
+    "cost": {
+      "currency": "silver",
+      "price": 12
+    },
+    "keywords": {
+      "twoHanded": "",
+      "handling": "-1",
+      "blunt": "",
+      "impact": "6",
+      "bypass": "",
+      "effect": ""
+    },
+    "description": {
+      "description": "<p>Mangual pesado</p><p>Alcance: 1m</p><p>Dano: 12+FIS</p><p>Observações: 2 mãos. Manuseio (-1). Embotada. Impacto (6). Indireto. Efeito #.</p><p>Preço: 12p</p><p>Requerimentos: FIS4</p><p>Ofícios: Arm N6</p><p>Materiais: 7</p>",
+      "shortDescription": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769561374660,
+    "modifiedTime": 1769561374660,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "WJ8kwICjJjPK7toq",
+  "sort": 0,
+  "_key": "!items!WJ8kwICjJjPK7toq"
+}

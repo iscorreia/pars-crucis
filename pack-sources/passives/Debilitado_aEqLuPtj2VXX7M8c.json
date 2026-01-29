@@ -1,0 +1,44 @@
+{
+  "name": "Debilitado",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Uma condição fisiológica torna o personagem particularmente suscetível a doenças, fadiga e intempéries, tendo Saúde-3.</span></p>",
+      "notes": "",
+      "summary": "Saúde -3."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569624230,
+    "modifiedTime": 1769612701247,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "aEqLuPtj2VXX7M8c",
+  "sort": 4500000,
+  "_key": "!items!aEqLuPtj2VXX7M8c"
+}

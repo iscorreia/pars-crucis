@@ -1,0 +1,45 @@
+{
+  "name": "Estômago de ferro",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "conditional": null,
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">O personagem possui um estomago forte e excelente digestão, acostumado a comer sem muitas preocupações, pois nada edível lhe causa irritação ou desconforto. Pão um pouco mofado, queijo velho e leite azedo são para ele nada mais que um diferencial de sabor. Só ficará intoxicado com alimentos realmente tóxicos e tem MOD+4 em testes para resistir as contaminações.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"><em>“Se dá para comer é para comer!”</em></span></p>",
+      "notes": "",
+      "summary": "MOD+4 para resistir efeitos e penalidades por ingestão."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769647700324,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "vBxNrguTvmpLSkYx",
+  "sort": 800000,
+  "_key": "!items!vBxNrguTvmpLSkYx"
+}

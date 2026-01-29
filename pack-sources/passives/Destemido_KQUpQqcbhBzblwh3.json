@@ -1,0 +1,44 @@
+{
+  "name": "Destemido",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "conditional": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Sua coragem é notável, e medo é uma sensação rara para você. Tem MOD+4 para enfrentar o medo causado por adversários, criaturas com <em>amedrontar</em> e situações que proporcionem medo. O personagem ainda pode possuir fobias, nesse caso o modificador não se aplica a elas.</span></p>",
+      "notes": "",
+      "summary": "MOD+4 para confrontar o medo."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769647360757,
+    "modifiedTime": 1769648780570,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "KQUpQqcbhBzblwh3",
+  "sort": 2100000,
+  "_key": "!items!KQUpQqcbhBzblwh3"
+}

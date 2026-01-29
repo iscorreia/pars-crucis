@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Originais orcinas",
+  "color": "#287367",
+  "sorting": "a",
+  "_id": "WrggjZRxPgceC7vo",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769632583992,
+    "modifiedTime": 1769632724308,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!folders!WrggjZRxPgceC7vo"
+}

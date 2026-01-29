@@ -1,0 +1,44 @@
+{
+  "name": "Corpo frágil",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 4
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p>Seja por má nutrição ou por herança genética o personagem tem o corpo frágil. Tem FIS-1 e sofre 2 de dano adicional de todos os ataques de dano Físico.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Incompatível:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\"> <em>Força física </em>e <em>Robusto.</em></span></p>",
+      "notes": "",
+      "summary": "FIS -1, Danos Físicos aumentados em 2."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769569421859,
+    "modifiedTime": 1769612890515,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "9op3skQ3Bh4YDfRA",
+  "sort": 4100000,
+  "_key": "!items!9op3skQ3Bh4YDfRA"
+}

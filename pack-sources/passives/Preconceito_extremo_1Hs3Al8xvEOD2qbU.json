@@ -1,0 +1,44 @@
+{
+  "name": "Preconceito extremo",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 3
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p>Possui uma forte aversão a certa origem, cultura, afiliação, religião ou aspecto a ponto de desejar a morte de alguém que faça parte ou apoie tal. O motivo pode ser justificado ou completamente irracional.</p>",
+      "notes": "",
+      "summary": "Forte aversão a certa origem, cultura etc."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769608182200,
+    "modifiedTime": 1769613112856,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "1Hs3Al8xvEOD2qbU",
+  "sort": 1100000,
+  "_key": "!items!1Hs3Al8xvEOD2qbU"
+}

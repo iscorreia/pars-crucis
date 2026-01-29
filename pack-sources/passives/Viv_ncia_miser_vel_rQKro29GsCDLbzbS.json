@@ -1,0 +1,44 @@
+{
+  "name": "Vivência miserável",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">O personagem vem de uma família muito pobre ou que perdeu seus bens por algum motivo. Inicia com metade do valor inicial e tem MOD-2 em todos os testes de Perícias Sociais que estejam relacionados a dinheiro ou finanças.</span></p>",
+      "notes": "",
+      "summary": "Metade das Finanças inicais. MOD -2 em testes a ver com Dinheiro."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769607767672,
+    "modifiedTime": 1769613206225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "rQKro29GsCDLbzbS",
+  "sort": 300000,
+  "_key": "!items!rQKro29GsCDLbzbS"
+}

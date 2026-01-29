@@ -1,0 +1,44 @@
+{
+  "name": "Vitalidade",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow.svg",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 2
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p class=\"MsoNormal\">Agressões constantes acostumaram o corpo, podendo suportar mais ferimentos. Aumenta o PV do personagem em 4.</p>",
+      "notes": "",
+      "summary": "PV+4."
+    }
+  },
+  "effects": [],
+  "folder": "mkXF35jHUg4LRjY5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769649243197,
+    "modifiedTime": 1769649243197,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "PU8bqXg4G9QdUGZx",
+  "sort": 0,
+  "_key": "!items!PU8bqXg4G9QdUGZx"
+}

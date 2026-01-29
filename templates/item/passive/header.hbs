@@ -17,13 +17,21 @@
       <div class="experience">
         <div class="xp-line">
           {{#if (eq system.info.acquirement "learned")}}
-            <div class="xp-cost">{{system.cost.experience}}</div>
+            {{#if system.cost.experience}}
+              <div class="xp-cost">{{system.cost.experience}}</div>
+            {{else}}
+              <div class="xp-cost">Ø</div>
+            {{/if}}
             <div class="separator"></div>
             <div class="xp-name">{{localize "PC.xp"}}</div>
           {{else}}
-            <div class="xp-cost">{{#if
-                (eq system.info.subtype "drawback")
-              }}↑{{/if}}{{system.cost.points}}</div>
+            {{#if system.cost.points}}
+              <div class="xp-cost">{{#if
+                  (eq system.info.subtype "drawback")
+                }}↑{{/if}}{{system.cost.points}}</div>
+            {{else}}
+              <div class="xp-cost">Ø</div>
+            {{/if}}
             <div class="separator"></div>
             <div class="xp-name">{{localize "PC.pts"}}</div>
           {{/if}}

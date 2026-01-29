@@ -1,0 +1,44 @@
+{
+  "name": "Surdez",
+  "type": "passive",
+  "img": "systems/pars-crucis/assets/icons/svg/plain-arrow-down.svg",
+  "system": {
+    "info": {
+      "subtype": "drawback",
+      "acquirement": "natural"
+    },
+    "cost": {
+      "experience": null,
+      "points": 4
+    },
+    "keywords": {
+      "sense": null
+    },
+    "description": {
+      "description": "<p>Não ouve absolutamente nada, mas ainda sente vibrações. Testes de audição são falhas automáticas.</p>",
+      "notes": "",
+      "summary": "Testes de audição sempre falham."
+    }
+  },
+  "effects": [],
+  "folder": "82dgtnrAtFEVfiJG",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769608419205,
+    "modifiedTime": 1769613158528,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "HaHkeq3udPZlMYHg",
+  "sort": 1700000,
+  "_key": "!items!HaHkeq3udPZlMYHg"
+}
