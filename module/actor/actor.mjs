@@ -50,6 +50,19 @@ export class PCActor extends foundry.documents.Actor {
     this.updateSource(updates);
   }
 
+  async equipGear(equip, itemId) {
+    const item = this.items.get(itemId);
+    const group = item.system.info.group;
+    const vest = this.system.vest;
+    if (this.isOwner) {
+      if (group === "vest" && vest.length > 0) {
+        const wearing = this.items.get(vest[0].id);
+        await wearing.update({ ["system.details.equipped"]: false });
+      }
+      return item.update({ ["system.details.equipped"]: equip });
+    }
+  }
+
   async rollAttribute(attribute, type, dice) {
     const { derived, mod } = this.system[type][attribute];
     const formula = `${dice} + ${derived} + ${mod}`;

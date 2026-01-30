@@ -1,5 +1,8 @@
 # DOING
 
+- Adjusting HBS for AR and AB not having modifier on the sheet anymore
+- Armor adjusts on the config
+
 # HIGH PRIORITY
 
 - Improved Weapon **_logic hbs style/css_**
@@ -23,7 +26,6 @@
 
 ## LOW PRIORITY
 
-- Calculate AR / Robust / Insulant / AB based on equipped Gear/Passives/other **_logic_**
 - Notes on the Persona Ability Tab **_feature update_**
 - Weapons Compendium **_pack_**
 - Items Compendium **_pack_**

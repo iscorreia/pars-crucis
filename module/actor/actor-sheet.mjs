@@ -73,7 +73,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
 
   static TABS = {
     primary: {
-      initial: "abilities", // Change to simplify testing, once done set back to skills
+      initial: "gear", // Change to simplify testing, once done set back to skills
       tabs: [
         { id: "skills", label: "PC.tabs.skills" },
         { id: "abilities", label: "PC.tabs.abilities" },
@@ -216,10 +216,8 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
   }
 
   static async equipItemOnClick(_, target) {
-    const dataset = target.dataset;
-    const item = this.actor.items.get(dataset.itemId);
-    if (this.actor.isOwner)
-      return item.update({ ["system.details.equipped"]: dataset.equip });
+    const { equip, itemId } = target.dataset;
+    return this.actor.equipGear(equip, itemId);
   }
 
   static async toggleAbilityExpand(_, target) {

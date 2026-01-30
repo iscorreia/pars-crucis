@@ -93,10 +93,10 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       }),
 
       mitigation: new SchemaField({
-        ar: attributeField({ minBase: 0 }),
-        robust: attributeField({ minBase: 0 }),
-        insulant: attributeField({ minBase: 0 }),
-        ab: attributeField({ minBase: 0 }),
+        armor: mitigationField(),
+        robust: mitigationField(),
+        insulant: mitigationField(),
+        abascant: mitigationField(),
       }),
 
       categoryModifiers: new SchemaField({
@@ -128,6 +128,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const infoData = this.info;
     const luckData = this.luck;
     const minorsData = this.minors;
+    const mitigationData = this.mitigation;
     const mvData = this.movement;
     const parent = this.parent;
     const passivesXp = [];
@@ -145,6 +146,8 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
 
     // SKILLS handling!
     for (let [key, sk] of Object.entries(skillsData)) {
+      if (!Number.isFinite(sk.mod)) sk.mod = 0;
+
       // Calculates the attribute value based on a specific skill level.
       sk.attValue = Math.ceil(sk.level / sk.growth);
       attValues[sk.attribute].push(sk.attValue);
@@ -251,6 +254,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     const passivesData = this.passives;
     // const weaponry = this.weaponry;
     const { abilities, weaponry, vest, accessories, gear } = this;
+    const wear = [...vest, ...accessories];
     const itemGroup = [
       ...abilities,
       ...weaponry,
@@ -258,9 +262,6 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       ...accessories,
       ...gear,
     ];
-
-    // ABILITIES and GEAR derived calculations
-    handleGearAbilities(itemGroup, attributesData, parent.items);
 
     // PASSIVES handling!
     for (let passive of passivesData) {
@@ -275,6 +276,31 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       }
     }
     xpData.ptsSum = passivesPts.reduce((acc, value) => acc + value, 0);
+
+    // ABILITIES and GEAR derived calculations
+    handleGearAbilities(itemGroup, attributesData, parent.items);
+
+    // MITIGATION derived calculations
+    const mitValues = wear.reduce(
+      (acc, equipment) => {
+        const { armor, robust, insulant, abascant } =
+          equipment.system.keywords ?? {};
+        const mitSum = (keyword, value) => {
+          const n = Number(value);
+          if (Number.isFinite(n)) acc[keyword] += n;
+        };
+        mitSum("armor", armor);
+        mitSum("robust", robust);
+        mitSum("insulant", insulant);
+        mitSum("abascant", abascant);
+        return acc;
+      },
+      { armor: 0, robust: 0, insulant: 0, abascant: 0 },
+    );
+    console.log(mitValues);
+    for (const [key, mitigation] of Object.entries(mitigationData)) {
+      mitigation.base = mitValues[key] + mitigation.adjust;
+    }
 
     // ABILITIES handling!
     const starterArts = {};
@@ -361,6 +387,14 @@ function attributeField({
   return new SchemaField(fields);
 }
 
+function mitigationField() {
+  return new SchemaField({
+    base: new NumberField({ initial: 0, integer: true }),
+    override: new NumberField({ initial: null, integer: true, nullable: true }),
+    adjust: new NumberField({ initial: 0, integer: true }),
+  });
+}
+
 function subField() {
   return new SchemaField({
     value: new NumberField({ initial: 0, integer: true, min: 0 }),
@@ -418,7 +452,7 @@ function deriveAttribute(att) {
   att.derived = derivedAtt;
 
   // It's not working as intended, need to revise
-  if (typeof att.mod !== "number") {
+  if (!Number.isFinite(att.mod)) {
     att.mod = 0;
   }
 
