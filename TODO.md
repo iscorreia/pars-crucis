@@ -1,6 +1,5 @@
 # DOING
 
-- Adjusting HBS for AR and AB not having modifier on the sheet anymore
 - Armor adjusts on the config
 
 # HIGH PRIORITY
@@ -63,3 +62,4 @@
 - Expanded Actions be Draggable to Macros
 - Attributes be Draggable to Macros
 - Show Abilities/Items general description on chat **_feature_**
+- Click on luck title to use one luck? Would this print possible use option?
