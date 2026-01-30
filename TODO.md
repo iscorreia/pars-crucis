@@ -1,5 +1,7 @@
 # DOING
 
+- Weapon/Gear/Abilities ammunition, how to interact? **_logic hbs css qol_**
+
 # HIGH PRIORITY
 
 - Improved Weapon **_logic hbs style/css_**
@@ -18,7 +20,6 @@
 
 - Review Overrides **_logic_**
 - Final touches on the PDM config app **_hbs/css_**
-- Weapon/Gear/Abilities ammunition, how to interact? **_logic hbs css qol_**
 - Add Inventory sorting **_qol feature_**
 
 ## LOW PRIORITY
@@ -49,13 +50,12 @@
 
 ### KNOWN BUGS
 
-- PDM mitigation is `NaN` when set no `null`, needs better treatment null should be valid
 - Compendium banner img src path is empty
+- _mitigation_.adjust can be deleted in the persona config, resulting in `NaN`
 
 ### PONDER ABOUT
 
 - Ability Technique Item/Action keywords not showing in the ability line, do we want it to?
-- Move some functions to utils
 - Make possible to clear Technique ability selected Item action **_qol_**
 - Expanded Actions be Draggable to Macros
 - Attributes be Draggable to Macros
