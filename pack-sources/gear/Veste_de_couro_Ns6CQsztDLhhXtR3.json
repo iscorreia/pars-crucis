@@ -1,0 +1,54 @@
+{
+  "name": "Veste de couro",
+  "type": "gear",
+  "img": "icons/equipment/chest/breastplate-layered-leather-studded-black.webp",
+  "system": {
+    "info": {
+      "subtype": "wear",
+      "group": "vest",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "cost": {
+      "price": 5,
+      "currency": "silver"
+    },
+    "details": {
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "slots": 2
+    },
+    "description": {
+      "description": "<p>Armadura: 4</p><p>Espaço: 2</p><p>Preço: 5p</p><p>Ofício: Art N4</p><p>Mts: 8</p>",
+      "notes": "",
+      "summary": ""
+    },
+    "keywords": {
+      "armor": "4"
+    },
+    "actions": {}
+  },
+  "effects": [],
+  "folder": "0rAC4l78SHKQWFlp",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769734900141,
+    "modifiedTime": 1769736083707,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Ns6CQsztDLhhXtR3",
+  "sort": 100000,
+  "_key": "!items!Ns6CQsztDLhhXtR3"
+}

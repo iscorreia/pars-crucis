@@ -1,0 +1,111 @@
+{
+  "name": "Espada perfurante",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-hilt-steel-green.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "sword",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "NCrq5eJO4xAQtODL": {
+        "img": "icons/weapons/swords/sword-hilt-steel-green.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "NCrq5eJO4xAQtODL",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 9,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "esgri",
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee"
+      },
+      "dPkelQBbwfmD4QYB": {
+        "img": "icons/weapons/swords/sword-hilt-steel-green.webp",
+        "name": "Golpear²",
+        "type": "attack",
+        "_id": "dPkelQBbwfmD4QYB",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 11,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "keywords": {
+          "twoHanded": null
+        },
+        "skill": "esgri",
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 15,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "penetrating": null
+    },
+    "description": {
+      "description": "<p>Alcance: 1m</p><p>Dano: 9+FIS|DES</p><p>Obs: Penetrante. Com 2 mãos Dano+2.</p><p>Preço: 15p</p><p>Req: FIS0</p><p>Ofício: Arm N7</p><p>Mts: 5</p>",
+      "notes": "",
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "UJMi2v8hWvQ7WSkK",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769705728997,
+    "modifiedTime": 1769708265630,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "173lawFJqcxTOcE2",
+  "sort": 900000,
+  "_key": "!items!173lawFJqcxTOcE2"
+}

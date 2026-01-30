@@ -1,0 +1,84 @@
+{
+  "name": "Espada grande",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "sword",
+      "subgroup": "Espadão",
+      "quality": "common"
+    },
+    "actions": {
+      "NCrq5eJO4xAQtODL": {
+        "img": "icons/weapons/swords/sword-guard.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "NCrq5eJO4xAQtODL",
+        "damaging": true,
+        "range": "2m",
+        "damage": {
+          "dmgBase": 15,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "esgri",
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 20,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 3,
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "twoHanded": "",
+      "handling": "-1",
+      "impact": "8"
+    },
+    "description": {
+      "description": "<p>Alcance: 2m</p><p>Dano: 15+FIS|DES</p><p>Obs: 2 mãos. Manuseio (-1). Impacto (8).</p><p>Preço: 20p</p><p>Req: FIS5</p><p>Ofício: Arm N6</p><p>Mts: 9</p>",
+      "notes": "",
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "UJMi2v8hWvQ7WSkK",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769708733656,
+    "modifiedTime": 1769708733656,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "OFAwRJb8jOavjjIa",
+  "sort": 0,
+  "_key": "!items!OFAwRJb8jOavjjIa"
+}

@@ -1,7 +1,7 @@
 {
-  "name": "Espada perfurante",
+  "name": "Espada",
   "type": "weapon",
-  "img": "icons/weapons/swords/sword-hilt-steel-green.webp",
+  "img": "icons/weapons/swords/sword-guard-blue.webp",
   "system": {
     "info": {
       "subtype": "melee",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "NCrq5eJO4xAQtODL": {
-        "img": "icons/weapons/swords/sword-hilt-steel-green.webp",
+        "img": "icons/weapons/swords/sword-guard-blue.webp",
         "name": "Golpear",
         "type": "attack",
         "_id": "NCrq5eJO4xAQtODL",
@@ -37,15 +37,15 @@
         "keywords": {},
         "subtype": "melee"
       },
-      "dPkelQBbwfmD4QYB": {
-        "img": "icons/weapons/swords/sword-hilt-steel-green.webp",
-        "name": "Golpear 2",
+      "xhiIMQTIxrGdtUEQ": {
+        "img": "icons/weapons/swords/sword-guard-blue.webp",
+        "name": "Golpear²",
         "type": "attack",
-        "_id": "dPkelQBbwfmD4QYB",
+        "_id": "xhiIMQTIxrGdtUEQ",
         "damaging": true,
         "range": "1m",
         "damage": {
-          "dmgBase": 11,
+          "dmgBase": 12,
           "dmgAttributes": [
             "fis",
             "des"
@@ -56,19 +56,19 @@
           "dmgType": "phy",
           "dmgSubtype": ""
         },
-        "keywords": {
-          "twoHanded": null
-        },
-        "skill": "esgri",
         "effect": "",
         "effort": "",
         "prepTime": "",
         "duration": "",
+        "keywords": {
+          "twoHanded": null
+        },
+        "skill": "esgri",
         "subtype": "melee"
       }
     },
     "cost": {
-      "price": 15,
+      "price": 7,
       "currency": "silver"
     },
     "details": {
@@ -78,17 +78,15 @@
       "equippable": true,
       "equipped": false
     },
-    "keywords": {
-      "penetrating": null
-    },
+    "keywords": {},
     "description": {
-      "description": "",
-      "shortDescription": "",
-      "notes": ""
+      "description": "<p>Alcance: 1m</p><p>Dano: 9+FIS|DES</p><p>Obs: Com 2 mãos Dano+3.</p><p>Preço: 7p</p><p>Req: FIS0</p><p>Ofício: Arm N5</p><p>Mts: 4</p>",
+      "notes": "",
+      "summary": ""
     }
   },
   "effects": [],
-  "folder": null,
+  "folder": "UJMi2v8hWvQ7WSkK",
   "ownership": {
     "default": 0,
     "BWDFQ9zEwkAXpvLu": 3
@@ -101,11 +99,11 @@
     "coreVersion": "13.351",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
-    "createdTime": 1769561376532,
-    "modifiedTime": 1769561376532,
+    "createdTime": 1769707517084,
+    "modifiedTime": 1769708265630,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
-  "_id": "RPeIggnpitdPkxuI",
-  "sort": 0,
-  "_key": "!items!RPeIggnpitdPkxuI"
+  "_id": "HiQ0KefzSUmMjFo3",
+  "sort": 600000,
+  "_key": "!items!HiQ0KefzSUmMjFo3"
 }

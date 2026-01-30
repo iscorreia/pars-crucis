@@ -1,0 +1,82 @@
+{
+  "name": "Foice",
+  "type": "weapon",
+  "img": "icons/weapons/sickles/sickle-curved.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "sword",
+      "subgroup": "Foice",
+      "quality": "common"
+    },
+    "actions": {
+      "NCrq5eJO4xAQtODL": {
+        "img": "icons/weapons/sickles/sickle-curved.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "NCrq5eJO4xAQtODL",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "esgri",
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 3,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "bypass": null
+    },
+    "description": {
+      "description": "<p>Alcance: 1m</p><p>Dano: 8+FIS|DES</p><p>Obs: Indireto.</p><p>Preço: 3p</p><p>Ofício: Arm N4</p><p>Mts: 3</p>",
+      "notes": "",
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "UJMi2v8hWvQ7WSkK",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769706838181,
+    "modifiedTime": 1769708265630,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "51hm65szdIZGMz06",
+  "sort": 200000,
+  "_key": "!items!51hm65szdIZGMz06"
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Roupa de pano",
+  "type": "gear",
+  "img": "icons/equipment/chest/shirt-simple-grey.webp",
+  "system": {
+    "info": {
+      "subtype": "wear",
+      "group": "vest",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "cost": {
+      "price": 50,
+      "currency": "copper"
+    },
+    "details": {
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "slots": 1
+    },
+    "description": {
+      "description": "<p>Obs: Isolante (+1). Não tem custo como vestimenta inicial.</p><p>Espaço: 1</p><p>Preço: 50c</p><p>Ofício: Art N3</p><p>Mts: 2</p>",
+      "notes": "",
+      "summary": ""
+    },
+    "keywords": {
+      "insulant": "+1"
+    },
+    "actions": {}
+  },
+  "effects": [],
+  "folder": "0rAC4l78SHKQWFlp",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769735185075,
+    "modifiedTime": 1769736083707,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "lkIkDC1xRoGJ6pdt",
+  "sort": 800000,
+  "_key": "!items!lkIkDC1xRoGJ6pdt"
+}

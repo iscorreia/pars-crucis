@@ -1,0 +1,82 @@
+{
+  "name": "Sabre",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard-gold-red.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "sword",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "NCrq5eJO4xAQtODL": {
+        "img": "icons/weapons/swords/sword-guard-gold-red.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "NCrq5eJO4xAQtODL",
+        "damaging": true,
+        "range": "2m",
+        "damage": {
+          "dmgBase": 7,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "esgri",
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 9,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "lethality": "+1"
+    },
+    "description": {
+      "description": "<p>Alcance: 2m</p><p>Dano: 7+FIS|DES</p><p>Obs: Fatalidade (+1).</p><p>Preço: 9p</p><p>Ofício: Arm N6</p><p>Mts: 4</p>",
+      "notes": "",
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "UJMi2v8hWvQ7WSkK",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769707913204,
+    "modifiedTime": 1769708265630,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "5G3BQNMemnE7Y7fQ",
+  "sort": 500000,
+  "_key": "!items!5G3BQNMemnE7Y7fQ"
+}
