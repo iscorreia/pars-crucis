@@ -43,31 +43,31 @@
     </div>
   </div>
   <div class="att-config">
-    {{#each system.attributes as |attribute obj|}}
+    {{#each system.attributes}}
       <div class="att-config-item">
-        <h4>{{localize (concat "PC.attributes." obj ".abv")}}</h4>
+        <h4>{{localize (concat "PC.attributes." @key ".abv")}}</h4>
         <input
           type="number"
           data-dtype="Number"
           name="system.attributes.{{@key}}.base"
-          value="{{attribute.base}}"
+          value="{{this.base}}"
           placeholder="Ø"
         /></div>
       <div class="separator"></div>
     {{/each}}
-    {{#each system.subattributes as |sub obj|}}
+    {{#each system.subattributes}}
       <div class="sub-config-item">
-        <h4>{{localize (concat "PC.subattributes." obj ".abv")}}</h4>
+        <h4>{{localize (concat "PC.subattributes." @key ".abv")}}</h4>
         <input
           type="number"
           data-dtype="Number"
           name="system.subattributes.{{@key}}.max"
-          value="{{sub.max}}"
+          value="{{this.max}}"
           placeholder="Ø"
         /></div>
       <div class="separator"></div>
     {{/each}}
-    <div class="sub-config-item">
+    <div class="sub-config-item size2">
       <h4>{{localize "PC.movement.abv"}}</h4>
       <div class="flexrow">
         <input
@@ -98,14 +98,27 @@
       />
     </div>
     <div class="separator"></div>
-    {{#each system.minors as |minor obj|}}
+    {{#each system.minors}}
       <div class="sub-config-item">
-        <h4>{{localize (concat "PC.minors." obj ".abv")}}</h4>
+        <h4>{{localize (concat "PC.minors." @key ".abv")}}</h4>
         <input
           type="number"
           data-dtype="Number"
           name="system.minors.{{@key}}.base"
-          value="{{minor.base}}"
+          value="{{this.base}}"
+          placeholder="Ø"
+        />
+      </div>
+      <div class="separator"></div>
+    {{/each}}
+    {{#each system.mitigation}}
+      <div class="sub-config-item">
+        <h4>{{localize (concat "PC.mitigation." @key ".abv")}}</h4>
+        <input
+          type="number"
+          data-dtype="Number"
+          name="system.mitigation.{{@key}}.base"
+          value="{{this.base}}"
           placeholder="Ø"
         />
       </div>

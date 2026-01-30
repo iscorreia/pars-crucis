@@ -71,10 +71,10 @@ export class PDMModel extends foundry.abstract.TypeDataModel {
       }),
 
       mitigation: new SchemaField({
-        ar: PDMmitigationField(),
+        armor: PDMmitigationField(),
         robust: PDMmitigationField(),
         insulant: PDMmitigationField(),
-        ab: PDMmitigationField(),
+        abascant: PDMmitigationField(),
       }),
 
       categoryModifiers: new SchemaField({

@@ -464,10 +464,13 @@
         }
       }
     },
-    "armor": { "label": "Armadura", "abv": "AR" },
-    "abascant": { "label": "Abascanto", "abv": "AB" },
-    "robust": { "label": "Robustez", "abv": "Rob" },
-    "insulant": { "label": "Isolante", "abv": "Iso" },
+    "mitigation": {
+      "label": "Mitigação",
+      "armor": { "label": "Armadura", "abv": "AR" },
+      "abascant": { "label": "Abascanto", "abv": "AB" },
+      "robust": { "label": "Robustez", "abv": "Rob" },
+      "insulant": { "label": "Isolante", "abv": "Iso" }
+    },
     "accessories": "Acessórios",
     "gadgets": "Engenhocas",
     "alchemicals": "Alquímicos",

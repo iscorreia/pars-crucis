@@ -1,7 +1,5 @@
 # DOING
 
-- Armor adjusts on the config
-
 # HIGH PRIORITY
 
 - Improved Weapon **_logic hbs style/css_**
