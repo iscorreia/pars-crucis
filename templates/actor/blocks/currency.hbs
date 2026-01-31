@@ -41,14 +41,18 @@
     </div>
   </div>
 
-  {{#if system.inventory}}
-    <div class="inventory-summary">
-      <span
-        class="inventory-slots"
-      >{{system.inventory.occupied}}/{{system.inventory.slots}}</span>
-      <span class="inventory-label">Espaços</span>
-    </div>
-  {{else}}
-    <div class="inventory-summary"></div>
-  {{/if}}
+  <div class="inventory-summary">
+    {{#if system.inventory}}
+      <div class="inventory-slots">
+        <div class="occupied
+          {{#if (gt system.inventory.occupied system.inventory.slots)}}
+            overloaded
+          {{/if}}"
+        >{{system.inventory.occupied}}</div>
+        <div class="slot-separator">/</div>
+        <div class="slots">{{system.inventory.slots}}</div>
+      </div>
+      <div class="slots-label">{{localize "PC.slots"}}</div>
+    {{/if}}
+  </div>
 </div>

@@ -617,6 +617,7 @@
       "insulant": "Isolante",
       "abascant": "Abascanto",
 
+      "modifier": "MOD",
       "twoHanded": "2 mãos",
       "custom": "Sob medida",
       "reload": "Recarga",
@@ -628,7 +629,6 @@
       "stack": "Monte",
       "effect": "#Efeito",
       "penalty": "#Penalidade",
-      "modifier": "MOD",
 
       "attribute": "Atributo",
       "skill": "Perícia",
