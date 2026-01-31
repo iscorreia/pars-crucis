@@ -247,7 +247,7 @@ function details({
   extraFields = null,
 } = {}) {
   const fields = {
-    slots: new NumberField({ initial: 1, integer: true }),
+    slots: new NumberField({ initial: 1, integer: true, nullable: true }),
     stack: new NumberField({ initial: 1, integer: true }),
     stackMax: new NumberField({ initial: stackMax, integer: true }),
     stackable: new BooleanField({ initial: stackable }),

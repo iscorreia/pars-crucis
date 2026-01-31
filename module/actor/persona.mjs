@@ -281,9 +281,6 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       return acc + weight;
     }, 0);
 
-    // ABILITIES and GEAR derived calculations
-    handleGearAbilities(itemGroup, attributesData, parent.items);
-
     // PASSIVES handling!
     for (let passive of passivesData) {
       const system = passive.system;
