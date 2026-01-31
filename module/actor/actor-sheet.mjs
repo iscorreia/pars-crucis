@@ -18,22 +18,22 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       icon: "fa fa-address-card",
     },
     actions: {
-      actionPicker: this.actionPicker,
-      callAction: this.callActionOnClick,
-      clickDelete: this.deleteItemOnClick,
-      clickEdit: this.editItemOnClick,
-      clickEquip: this.equipItemOnClick,
-      rollAttack: this.rollTestOnClick,
-      rollAttribute: this.rollAttributeOnClick,
-      rollAbilityAttack: this.rollTestOnClick,
-      rollTech: this.rollTechOnClick,
-      rollTest: this.rollTestOnClick,
-      rollSkill: this.rollSkillOnClick,
-      useAbility: this.useOnClick,
-      useGear: this.useOnClick,
-      sortAbilities: this.changeSortMode,
-      switchLuck: this.switchLuckOnClick,
-      toggleExpand: this.toggleAbilityExpand,
+      actionPicker: this._actionPicker,
+      callAction: this._callActionOnClick,
+      clickDelete: this._deleteItemOnClick,
+      clickEdit: this._editItemOnClick,
+      clickEquip: this._equipItemOnClick,
+      rollAttack: this._rollTestOnClick,
+      rollAttribute: this._rollAttributeOnClick,
+      rollAbilityAttack: this._rollTestOnClick,
+      rollTech: this._rollTechOnClick,
+      rollTest: this._rollTestOnClick,
+      rollSkill: this._rollSkillOnClick,
+      useAbility: this._useOnClick,
+      useGear: this._useOnClick,
+      sortAbilities: this._changeSortMode,
+      switchLuck: this._switchLuckOnClick,
+      toggleExpand: this._toggleAbilityExpand,
     },
   };
 
@@ -113,9 +113,10 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
   }
 
   /** @override */
-  async _onRender(context, options) {
-    await super._onRender(context, options);
-    this.element.addEventListener("change", this.updateDataOnChange.bind(this));
+  _onChangeForm(formConfig, event) {
+    if (event?.target.matches("input[data-field][data-item-id]"))
+      return this._updateDataOnChange(event.target);
+    super._onChangeForm(formConfig, event);
   }
 
   /** @override */
@@ -169,14 +170,14 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     return context;
   }
 
-  static async callActionOnClick(event, target) {
+  static async _callActionOnClick(event, target) {
     const { acType } = target.dataset;
     if (["attack", "test"].includes(acType))
-      ParsCrucisActorSheet.rollTestOnClick.call(this, event, target);
+      ParsCrucisActorSheet._rollTestOnClick.call(this, event, target);
     if (acType === "tech")
-      ParsCrucisActorSheet.rollTechOnClick.call(this, event, target);
+      ParsCrucisActorSheet._rollTechOnClick.call(this, event, target);
     if (acType === "use")
-      ParsCrucisActorSheet.useOnClick.call(this, event, target);
+      ParsCrucisActorSheet._useOnClick.call(this, event, target);
   }
 
   /**
@@ -184,36 +185,36 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
    * @param {PointerEvent} event - The originating click event
    * @param {HTMLElement} target - The capturing HTML element which defined a [data-action]
    */
-  static async rollAttributeOnClick(event, target) {
+  static async _rollAttributeOnClick(event, target) {
     const { attribute, attType } = target.dataset;
     const dice = pickDice(event);
     return this.actor.rollAttribute(attribute, attType, dice);
   }
 
-  static async rollSkillOnClick(event, target) {
+  static async _rollSkillOnClick(event, target) {
     const { skill } = target.dataset;
     const dice = pickDice(event);
     return this.actor.rollSkill(skill, dice);
   }
 
-  static async rollTechOnClick(event, target) {
+  static async _rollTechOnClick(event, target) {
     const { acId, itemId } = target.dataset;
     const dice = pickDice(event);
     return this.actor.rollTech(itemId, acId, dice);
   }
 
-  static async rollTestOnClick(event, target) {
+  static async _rollTestOnClick(event, target) {
     const { acId, itemId } = target.dataset;
     const dice = pickDice(event);
     return this.actor.rollTest(itemId, acId, dice);
   }
 
-  static async useOnClick(_, target) {
+  static async _useOnClick(_, target) {
     const { acId, itemId } = target.dataset;
     return this.actor.useGearOrAbility(itemId, acId);
   }
 
-  static async switchLuckOnClick(_, target) {
+  static async _switchLuckOnClick(_, target) {
     const dataset = target.dataset;
     const luckBooleans = this.actor.system.luck.booleans;
     const index = dataset.luckIndex;
@@ -221,24 +222,24 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     this.actor.update({ "system.luck.booleans": luckBooleans });
   }
 
-  static async equipItemOnClick(_, target) {
+  static async _equipItemOnClick(_, target) {
     const { equip, itemId } = target.dataset;
     return this.actor.equipGear(equip, itemId);
   }
 
-  static async toggleAbilityExpand(_, target) {
+  static async _toggleAbilityExpand(_, target) {
     const item = this.actor.items.get(target.dataset.itemId);
     const current = item.getFlag("pars-crucis", "expanded") ?? false;
     item.setFlag("pars-crucis", "expanded", !current);
   }
 
   // Renders item sheet if owner
-  static async editItemOnClick(_, target) {
+  static async _editItemOnClick(_, target) {
     const item = this.actor.items.get(target.dataset.itemId);
     if (this.actor.isOwner) item.sheet.render(true);
   }
 
-  static async actionPicker(_, target) {
+  static async _actionPicker(_, target) {
     const { acId, itemId } = target.dataset;
     const { actor } = this;
     const { weaponry, vest, accessories, gear } = actor.system;
@@ -260,7 +261,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
   }
 
   // Open a Dialog box with options to Delete, Edit or Cancel
-  static async deleteItemOnClick(event, target) {
+  static async _deleteItemOnClick(event, target) {
     const itemId = target.dataset.itemId;
     const item = this.actor.items.get(itemId);
 
@@ -298,7 +299,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     }
   }
 
-  static async changeSortMode(_, target) {
+  static async _changeSortMode(_, target) {
     const dataset = target.dataset;
     const actor = this.document;
     actor.setFlag("pars-crucis", dataset.group, dataset.sortMode);
@@ -356,15 +357,10 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
 
   /**
    * Handles change on inputs with [data-update][data-item-id] (e.g. stack).
-   * Uses data-update as selector; callback calls item.update().
+   * Uses data-field as the path as selector; callback calls item.update().
    * @param {Event} event
    */
-  updateDataOnChange(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    const { target } = event;
-    if (!target.matches("input[data-field][data-item-id]")) return;
-    const { dataset, value } = target;
+  async _updateDataOnChange({ dataset, value }) {
     const { actor } = this;
     if (!actor) return;
     const item = actor.items?.get(dataset.itemId);

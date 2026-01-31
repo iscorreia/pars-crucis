@@ -1169,7 +1169,7 @@ h4.movement {
 
 /* PASSIVES TAB */
 .passive-summary {
-  width: 280px; /* 292px */
+  width: 290px;
   font-size: 13.5px;
   font-size: 14px;
   font-family: "BarlowCondensed Light";
