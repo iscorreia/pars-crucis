@@ -1,4 +1,7 @@
 <div class="tab-footer currency-bank">
+  <div class="currency-spacer"></div>
+
+  <div class="currency-group">
     <div class="currency-line silver">
       <input
         class="currency-input"
@@ -37,3 +40,19 @@
       </div>
     </div>
   </div>
+
+  <div class="inventory-summary">
+    {{#if system.inventory}}
+      <div class="inventory-slots">
+        <div class="occupied
+          {{#if (gt system.inventory.occupied system.inventory.slots)}}
+            overloaded
+          {{/if}}"
+        >{{system.inventory.occupied}}</div>
+        <div class="slot-separator">/</div>
+        <div class="slots">{{system.inventory.slots}}</div>
+      </div>
+      <div class="slots-label">{{localize "PC.slots"}}</div>
+    {{/if}}
+  </div>
+</div>

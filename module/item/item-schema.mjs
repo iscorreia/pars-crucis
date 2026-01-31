@@ -273,12 +273,13 @@ function keywords() {
 function details({
   stackable = false,
   equippable = false,
-  stack = 1,
+  stackMax = 1,
   extraFields = null,
 } = {}) {
   const fields = {
-    slots: new NumberField({ initial: 1 }),
-    stack: new NumberField({ initial: stack }),
+    slots: new NumberField({ initial: 1, integer: true, nullable: true }),
+    stack: new NumberField({ initial: 1, integer: true }),
+    stackMax: new NumberField({ initial: stackMax, integer: true }),
     stackable: new BooleanField({ initial: stackable }),
     equippable: new BooleanField({ initial: equippable }),
     equipped: new BooleanField({ initial: false }),

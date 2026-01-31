@@ -552,6 +552,7 @@
     "subgroup": "Subgrupo",
     "slots": "Espaços",
     "stack": "Monte",
+    "quantity": "Quantidade",
     "quality": {
       "label": "Qualidade",
       "low": "Baixa qualidade",
@@ -617,6 +618,7 @@
       "insulant": "Isolante",
       "abascant": "Abascanto",
 
+      "modifier": "MOD",
       "twoHanded": "2 mãos",
       "custom": "Sob medida",
       "reload": "Recarga",
@@ -628,7 +630,6 @@
       "stack": "Monte",
       "effect": "#Efeito",
       "penalty": "#Penalidade",
-      "modifier": "MOD",
 
       "attribute": "Atributo",
       "skill": "Perícia",

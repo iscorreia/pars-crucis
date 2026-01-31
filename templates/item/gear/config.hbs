@@ -144,14 +144,14 @@
       {{#if system.details.stackable}}
         <h5>{{localize "PC.stack"}}</h5>
         <input
-          name="system.details.stack"
+          name="system.details.stackMax"
           type="Number"
-          value="{{system.details.stack}}"
+          value="{{system.details.stackMax}}"
           data-dtype="Number"
         />
       {{else}}
         <h5>{{localize "PC.stack"}}</h5>
-        <div class="not-available">{{system.details.stack}}</div>
+        <div class="not-available">{{system.details.stackMax}}</div>
       {{/if}}
     </div>
   </div>
