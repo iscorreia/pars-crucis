@@ -318,7 +318,6 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       },
       { armor: 0, robust: 0, insulant: 0, abascant: 0 },
     );
-    console.log(mitValues);
     for (const [key, mitigation] of Object.entries(mitigationData)) {
       mitigation.base = mitValues[key] + mitigation.adjust;
     }

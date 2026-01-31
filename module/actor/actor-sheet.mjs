@@ -113,28 +113,9 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
   }
 
   /** @override */
-  async _onRender(...args) {
-    await super._onRender(...args);
-    if (this.element.dataset.dataUpdateListener) return;
-    this.element.addEventListener("change", this._onDataUpdateChange.bind(this));
-    this.element.dataset.dataUpdateListener = "1";
-  }
-
-  /**
-   * Handles change on inputs with [data-update][data-item-id] (e.g. stack).
-   * Uses data-update as selector; callback calls item.update().
-   * @param {Event} event
-   */
-  _onDataUpdateChange(event) {
-    const el = event.target;
-    if (!el.matches("input[data-update][data-item-id]")) return;
-    const itemId = el.dataset.itemId;
-    const item = this.actor?.items?.get(itemId);
-    if (!item?.isOwner) return;
-    const updateType = el.dataset.update;
-    if (updateType === "stack") {
-      item.update({ "system.details.stack": el.value });
-    }
+  async _onRender(context, options) {
+    await super._onRender(context, options);
+    this.element.addEventListener("change", this.updateDataOnChange.bind(this));
   }
 
   /** @override */
@@ -370,6 +351,24 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
   getSortMode(flag) {
     const actor = this.document;
     return actor.getFlag("pars-crucis", flag) || "name-asc";
+  }
+
+  /**
+   * Handles change on inputs with [data-update][data-item-id] (e.g. stack).
+   * Uses data-update as selector; callback calls item.update().
+   * @param {Event} event
+   */
+  updateDataOnChange(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    const { target } = event;
+    if (!target.matches("input[data-field][data-item-id]")) return;
+    const { dataset, value } = target;
+    const { actor } = this;
+    if (!actor) return;
+    const item = actor.items?.get(dataset.itemId);
+    if (!item?.isOwner) return;
+    item.update({ [`${dataset.field}`]: value });
   }
 }
 
