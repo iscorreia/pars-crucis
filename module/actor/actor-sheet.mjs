@@ -113,6 +113,31 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
   }
 
   /** @override */
+  async _onRender(...args) {
+    await super._onRender(...args);
+    if (this.element.dataset.dataUpdateListener) return;
+    this.element.addEventListener("change", this._onDataUpdateChange.bind(this));
+    this.element.dataset.dataUpdateListener = "1";
+  }
+
+  /**
+   * Handles change on inputs with [data-update][data-item-id] (e.g. stack).
+   * Uses data-update as selector; callback calls item.update().
+   * @param {Event} event
+   */
+  _onDataUpdateChange(event) {
+    const el = event.target;
+    if (!el.matches("input[data-update][data-item-id]")) return;
+    const itemId = el.dataset.itemId;
+    const item = this.actor?.items?.get(itemId);
+    if (!item?.isOwner) return;
+    const updateType = el.dataset.update;
+    if (updateType === "stack") {
+      item.update({ "system.details.stack": el.value });
+    }
+  }
+
+  /** @override */
   async _prepareContext() {
     const baseData = await super._prepareContext();
     const document = baseData.document;

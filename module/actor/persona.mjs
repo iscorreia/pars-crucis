@@ -115,6 +115,11 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       }),
 
       skills: new SchemaField(skills),
+
+      inventory: new SchemaField({
+        slots: new NumberField({ initial: 20, integer: true, min: 0 }),
+        occupied: new NumberField({ initial: 0, integer: true }),
+      }),
     };
   }
 
@@ -262,6 +267,22 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       ...accessories,
       ...gear,
     ];
+
+    // INVENTORY handling!
+    // Max capacity: 20 + FIS (derived + mod)
+    const inventoryData = this.inventory;
+    inventoryData.slots =
+      20 + (attributesData.fis?.derived ?? 0) + (attributesData.fis?.mod ?? 0);
+    inventoryData.occupied = this.gear.reduce((acc, item) => {
+      const { stack, stackMax, slots, stackable } = item.system?.details ?? {};
+      const weight = stackable
+        ? Math.ceil((stack ?? 0) / Math.max(stackMax || 1, 1))
+        : (slots ?? 1);
+      return acc + weight;
+    }, 0);
+
+    // ABILITIES and GEAR derived calculations
+    handleGearAbilities(itemGroup, attributesData, parent.items);
 
     // PASSIVES handling!
     for (let passive of passivesData) {

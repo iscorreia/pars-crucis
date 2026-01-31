@@ -801,6 +801,35 @@ h4.movement {
       justify-content: right;
       gap: 2px;
       width: 70px;
+      &.has-stack {
+        width: 140px;
+      }
+      .item-stack-controls {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        margin-right: 3px;
+        .stack-input {
+          width: 28px;
+          height: 18px;
+          line-height: 18px;
+          padding-top: 0;
+          text-align: center;
+          font-family: "Cambria";
+          font-size: 14px;
+          background-color: var(--pc-fade-bg-0);
+          border-radius: 4px;
+        }
+        .stack-sep {
+          width: 6px;
+          text-align: center;
+          color: var(--color-light-4);
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
       a {
         display: inline-flex;
         align-items: center;
@@ -1028,18 +1057,57 @@ h4.movement {
 
 /* INVENTORY TAB */
 
-/* INVENTORY CURRENCY BANK */
+/* INVENTORY CURRENCY BANK - inventory summary (X/Y) sits below 1/20 of stackable items */
 .currency-bank {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   height: 24px;
   border-top: 1px solid var(--color-tabs-border);
   margin-top: 5px;
+  padding-right: 12px;
   font-family: "Cambria";
   font-size: 20px;
   gap: 10px;
+  .inventory-summary {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    min-width: 0;
+    font-size: 12px;
+    color: var(--color-light-4);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* same width as .item-controls.has-stack so X/Y sits below 1/20 */
+    box-sizing: content-box;
+    .inventory-slots {
+      width: 140px;
+      text-align: right;
+      font-family: "Cambria";
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+    .inventory-label {
+      flex-shrink: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .currency-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .currency-spacer {
+    flex: 1;
+    min-width: 0;
+  }
   .separator {
     height: 12px;
   }

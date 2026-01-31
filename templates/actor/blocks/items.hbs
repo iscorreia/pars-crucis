@@ -109,6 +109,24 @@
           {{/each}}
         </div>
 
+        <div class="item-stack">
+          {{#if this.system.details.stackable}}
+            <div class="item-stack-controls">
+              <input
+                class="stack-input"
+                type="number"
+                value="{{this.system.details.stack}}"
+                data-dtype="Number"
+                min="0"
+                data-update="stack"
+                data-item-id="{{this._id}}"
+              />
+              <span class="stack-sep">/</span>
+              <span class="stack-input stack-max">{{this.system.details.stackMax}}</span>
+            </div>
+          {{/if}}
+        </div>
+
         <div class="item-controls">
           {{#if this.system.details.equippable}}
             <a

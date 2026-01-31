@@ -110,7 +110,24 @@
           {{/each}}
         </div>
 
-        <div class="item-controls">
+        <div
+          class="item-controls {{#if weapon.system.details.stackable}}has-stack{{/if}}"
+        >
+          {{#if weapon.system.details.stackable}}
+            <div class="item-stack-controls">
+              <input
+                class="stack-input"
+                type="number"
+                value="{{weapon.system.details.stack}}"
+                data-dtype="Number"
+                min="0"
+                data-update="stack"
+                data-item-id="{{weapon._id}}"
+              />
+              <span class="stack-sep">/</span>
+              <span class="stack-input stack-max">{{weapon.system.details.stackMax}}</span>
+            </div>
+          {{/if}}
           {{#if weapon.system.details.equippable}}
             <a
               data-action="clickEquip"

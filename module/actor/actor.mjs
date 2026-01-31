@@ -247,6 +247,10 @@ export class PCActor extends foundry.documents.Actor {
       content: html,
     });
   }
+
+  async updateGear() {
+    console.log("ALGO NOTÁVEL AQUI");
+  }
 }
 
 function isParsCrucisActorType(type) {

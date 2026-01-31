@@ -551,6 +551,7 @@
     "subgroup": "Subgrupo",
     "slots": "Espaços",
     "stack": "Monte",
+    "quantity": "Quantidade",
     "quality": {
       "label": "Qualidade",
       "low": "Baixa qualidade",
