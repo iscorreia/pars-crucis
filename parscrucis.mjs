@@ -12,6 +12,7 @@ import WeaponSheet from "./module/item/weapon-sheet.mjs";
 import GearSheet from "./module/item/gear-sheet.mjs";
 import {
   AbilityModel,
+  AmmoModel,
   GearModel,
   PassiveModel,
   WeaponModel,
@@ -20,6 +21,7 @@ import PCRoll from "./module/rolls/basic-roll.mjs";
 import TestRoll from "./module/rolls/test-roll.mjs";
 import onRenderChatMessageHTML from "./hooks/onRenderChatMessageHTML.mjs";
 import handleMacroCreation from "./hooks/handleMacroCreation.mjs";
+import AmmoSheet from "./module/item/ammo-sheet.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
@@ -62,6 +64,7 @@ Hooks.once("init", () => {
     gear: GearModel,
     passive: PassiveModel,
     weapon: WeaponModel,
+    ammo: AmmoModel,
   });
 
   // Register the V2 sheet for 'persona'
@@ -85,6 +88,12 @@ Hooks.once("init", () => {
     "parscrucis",
     AbilitySheet,
     { types: ["ability"], makeDefault: true, label: "Ability Item Sheet" },
+  );
+  foundry.applications.apps.DocumentSheetConfig.registerSheet(
+    foundry.documents.Item,
+    "parscrucis",
+    AmmoSheet,
+    { types: ["ammo"], makeDefault: true, label: "Ammo Item Sheet" },
   );
   foundry.applications.apps.DocumentSheetConfig.registerSheet(
     foundry.documents.Item,

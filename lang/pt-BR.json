@@ -409,27 +409,28 @@
             "exotic": "Exótico"
           }
         },
-        "ammo": {
-          "label": "Munição",
-          "groups": {
-            "pebble": "Calhau",
-            "arrow": "Flecha",
-            "bolt": "Virote",
-            "gasoil": "Gasóleo",
-            "harpoon": "Arpão",
-            "lead": "Chumbo e pólvora",
-            "cartridge": "Cartucho",
-            "bullet": "Bala",
-            "cannonball": "Pelouro",
-            "exotic": "Exótico"
-          }
-        },
         "exotic": {
           "label": "Exótico",
           "groups": {
             "exotic": "Exótico"
           }
         }
+      }
+    },
+    "ammo": {
+      "label": "Munição",
+      "group": {
+        "pebble": "Calhau",
+        "arrow": "Flecha",
+        "bolt": "Virote",
+        "gasoil": "Gasóleo",
+        "harpoon": "Arpão",
+        "lead": "Chumbo e pólvora",
+        "cartridge": "Cartucho",
+        "bullet": "Bala",
+        "cannonball": "Pelouro",
+        "exotic": "Exótico",
+        "omni": "Universal"
       }
     },
     "gear": {

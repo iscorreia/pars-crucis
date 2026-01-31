@@ -239,6 +239,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     const gearArray = [...weaponry, ...vest, ...accessories, ...gear];
     const attackChoices = gearArray
       .map((item) => {
+        if (!item.system.actions) return;
         const actions = getItemActionsByType(item, "attack");
         return Object.keys(actions).length ? { item, actions } : null;
       })

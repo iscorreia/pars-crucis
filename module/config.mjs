@@ -604,27 +604,23 @@ PC.weapon = {
         exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
       },
     },
-    ammo: {
-      label: "PC.weapon.subtypes.ammo.label",
-      groups: {
-        pebble: { label: "PC.weapon.subtypes.ammo.groups.pebble" },
-        arrow: { label: "PC.weapon.subtypes.ammo.groups.arrow" },
-        bolt: { label: "PC.weapon.subtypes.ammo.groups.bolt" },
-        gasoil: { label: "PC.weapon.subtypes.ammo.groups.gasoil" },
-        harpoon: { label: "PC.weapon.subtypes.ammo.groups.harpoon" },
-        lead: { label: "PC.weapon.subtypes.ammo.groups.lead" },
-        cartridge: { label: "PC.weapon.subtypes.ammo.groups.cartridge" },
-        bullet: { label: "PC.weapon.subtypes.ammo.groups.bullet" },
-        cannonball: { label: "PC.weapon.subtypes.ammo.groups.cannonball" },
-        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
-      },
-    },
-    exotic: {
-      label: "PC.weapon.subtypes.exotic.label",
-      groups: {
-        exotic: { label: "PC.weapon.subtypes.melee.groups.exotic" },
-      },
-    },
+  },
+};
+
+PC.ammo = {
+  label: "PC.ammo.label",
+  group: {
+    pebble: { label: "PC.ammo.group.pebble" },
+    arrow: { label: "PC.ammo.group.arrow" },
+    bolt: { label: "PC.ammo.group.bolt" },
+    gasoil: { label: "PC.ammo.group.gasoil" },
+    harpoon: { label: "PC.ammo.group.harpoon" },
+    lead: { label: "PC.ammo.group.lead" },
+    cartridge: { label: "PC.ammo.group.cartridge" },
+    bullet: { label: "PC.ammo.group.bullet" },
+    cannonball: { label: "PC.ammo.group.cannonball" },
+    exotic: { label: "PC.ammo.group.exotic" },
+    omni: { label: "PC.ammo.group.omni" },
   },
 };
 
