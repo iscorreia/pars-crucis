@@ -1129,7 +1129,8 @@ h4.movement {
     align-items: center;
     justify-content: flex-end;
     gap: 4px;
-    min-width: 0;
+    height: 23px;
+    width: 136px;
     color: var(--color-light-3);
     white-space: nowrap;
     overflow: hidden;
