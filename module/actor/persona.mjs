@@ -474,7 +474,7 @@ export function calculateStatic(att) {
 export function handleGearAbilities(itemGroup, attributesData, items) {
   for (let [_, gear] of Object.entries(itemGroup)) {
     const { actions } = gear.system;
-    if (!actions) return;
+    if (!actions) continue;
     // Calculates equipped gear and abilities actions damage
     for (let [_, action] of Object.entries(actions)) {
       if (action.damaging && action.type !== "tech") {

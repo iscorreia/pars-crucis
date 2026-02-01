@@ -131,6 +131,22 @@
             </div>
           </div>
           
+          <div class="flexrow">
+            <div class="flexcol">
+              <input
+                id="usesAmmo-toggle-{{this._id}}"
+                type="checkbox"
+                data-dtype="Boolean"
+                name="system.actions.{{@key}}.usesAmmo"
+                {{checked action.usesAmmo}}
+                hidden
+              />
+              <label for="usesAmmo-toggle-{{this._id}}" class="name-tag">
+                {{localize "PC.usesAmmo"}}?
+              </label>
+            </div>
+          </div>
+          
           <div class="show-damage flexrow">
             <div class="flexcol">
               <input
@@ -155,7 +171,7 @@
                 hidden
               />
               <label for="scalable-toggle-{{action._id}}" class="name-tag">
-                {{localize "PC.scalable"}}
+                {{localize "PC.scalable"}}?
               </label>
             </div> 
             <div>

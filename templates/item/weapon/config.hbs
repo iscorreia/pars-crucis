@@ -113,6 +113,19 @@
     </div>
     <div class="item-info-block">
       <input
+        id="hasAmmo-toggle-{{item._id}}"
+        type="checkbox"
+        data-dtype="Boolean"
+        name="system.hasAmmo"
+        {{checked system.hasAmmo}}
+        hidden
+      />
+      <label for="hasAmmo-toggle-{{item._id}}" class="name-tag">
+        {{localize "PC.hasAmmo"}}
+      </label>
+    </div>
+    <div class="item-info-block">
+      <input
         id="stackable-toggle-{{item._id}}"
         type="checkbox"
         data-dtype="Boolean"

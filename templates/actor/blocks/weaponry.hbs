@@ -16,7 +16,7 @@
 
         <div class="item-keywords">
           {{#each weapon.system.keywords}}
-            <div class="pc-keyword">
+            <div class="pc-keyword" data-tooltip="PUTDESCRIPTIONHERE!?">
               <div class="pc-keyword-label">{{localize
                   (concat "PC.keyword." @key)
                 }}</div>{{#if this}}<div
@@ -26,7 +26,9 @@
           {{/each}}
           {{#each weapon.system.actions}}
             {{#each this.keywords}}
-              <div class="pc-keyword pc-secondary-keyword">
+              <div 
+                class="pc-keyword pc-secondary-keyword"
+                data-tooltip="PUTDESCRIPTIONHERE!?">
                 <div class="pc-keyword-label">{{localize
                     (concat "PC.keyword." @key)
                   }}</div>{{#if this}}<div
@@ -172,6 +174,9 @@
       </div>
       {{#if weapon.flags.pars-crucis.expanded}}
         <ol class="gear-actions">
+          {{#if this.system.hasAmmo}}
+            {{> systems/pars-crucis/templates/actor/blocks/ammo.hbs itemId=../this._id}}
+          {{/if}}
           {{#each weapon.system.actions}}
             {{> systems/pars-crucis/templates/actor/blocks/action.hbs itemId=../this._id}}
           {{/each}}

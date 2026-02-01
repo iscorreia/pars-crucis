@@ -356,6 +356,7 @@
     "use": "Usar",
     "tech": "Técnica",
     "selectAction": "Selecione uma ação",
+    "selectAmmo": "Selecione a munição",
     "createAttack": "Criar ataque",
     "createTech": "Criar técnica",
     "createTest": "Criar teste",
@@ -539,6 +540,8 @@
     "equippable": "Equipável",
     "stackable": "Agrupável",
     "equipped": "Equipado",
+    "hasAmmo": "Tem munição",
+    "usesAmmo": "Usa munição",
     "config": "Configurações",
     "effect": "Efeito",
 

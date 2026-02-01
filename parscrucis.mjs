@@ -26,6 +26,7 @@ import AmmoSheet from "./module/item/ammo-sheet.mjs";
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
     "systems/pars-crucis/templates/actor/blocks/action.hbs",
+    "systems/pars-crucis/templates/actor/blocks/ammo.hbs",
     "systems/pars-crucis/templates/actor/blocks/attributes.hbs",
     "systems/pars-crucis/templates/actor/blocks/currency.hbs",
     "systems/pars-crucis/templates/actor/blocks/experience.hbs",
