@@ -12,33 +12,14 @@
       />
     </div>
     <div class="item-info-block">
-      <h5>{{localize "PC.subtype"}}</h5>
-      <select name="system.info.subtype">
-        {{selectOptions
-          config.weapon.subtypes
-          selected=system.info.subtype
-          localize=true
-        }}
-      </select>
-    </div>
-    <div class="item-info-block">
       <h5>{{localize "PC.group"}}</h5>
       <select name="system.info.group">
         {{selectOptions
-          (lookup (lookup config.weapon.subtypes system.info.subtype) "groups")
+          config.ammo.group
           selected=system.info.group
           localize=true
         }}
       </select>
-    </div>
-    <div class="item-info-block">
-      <h5>{{localize "PC.subgroup"}}</h5>
-      <input
-        name="system.info.subgroup"
-        type="Text"
-        value="{{system.info.subgroup}}"
-        data-dtype="String"
-      />
     </div>
   </div>
 

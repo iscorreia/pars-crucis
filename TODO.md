@@ -1,6 +1,6 @@
 # DOING
 
-- Weapon/Gear/Abilities ammunition, how to interact? **_logic hbs css qol_**
+- Weapon/Gear/Abilities ammunition **_logic hbs css qol_**
 
 # HIGH PRIORITY
 
@@ -21,6 +21,8 @@
 - Review Overrides **_logic_**
 - Final touches on the PDM config app **_hbs/css_**
 - Add Inventory sorting **_qol feature_**
+- Create a `#bonus` property for items
+- Make item `#bonus`, `#effect`, `#penalty` properties have their custom descriptiom that can be set on the item config
 
 ## LOW PRIORITY
 

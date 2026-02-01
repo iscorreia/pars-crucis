@@ -12,8 +12,9 @@ const {
   TypedObjectField,
   TypedSchemaField,
 } = foundry.data.fields;
+const { DataModel, TypeDataModel } = foundry.abstract;
 
-export class ActionModel extends foundry.abstract.DataModel {
+export class ActionModel extends DataModel {
   static get TYPES() {
     return {
       attack: AttackActionModel,
@@ -61,6 +62,7 @@ export class AttackActionModel extends ActionModel {
         initial: "melee",
         choices: () => Object.keys(PC.action.types.attack.subtypes),
       }),
+      usesAmmo: new BooleanField({ initial: false }),
     };
   }
 }
@@ -109,7 +111,20 @@ export class TechActionModel extends ActionModel {
   }
 }
 
-export class AbilityModel extends foundry.abstract.TypeDataModel {
+export class AmmoModel extends TypeDataModel {
+  static defineSchema() {
+    return {
+      info: information({ subtype: "ammo", group: "arrow" }),
+      details: details({ stackable: true, stack: 20 }),
+      damage: damage(),
+      cost: itemCost(),
+      keywords: keywords(),
+      description: description(),
+    };
+  }
+}
+
+export class AbilityModel extends TypeDataModel {
   static defineSchema() {
     return {
       info: new SchemaField({
@@ -140,7 +155,7 @@ export class AbilityModel extends foundry.abstract.TypeDataModel {
   }
 }
 
-export class GearModel extends foundry.abstract.TypeDataModel {
+export class GearModel extends TypeDataModel {
   static defineSchema() {
     return {
       info: information(),
@@ -153,7 +168,7 @@ export class GearModel extends foundry.abstract.TypeDataModel {
   }
 }
 
-export class PassiveModel extends foundry.abstract.TypeDataModel {
+export class PassiveModel extends TypeDataModel {
   static defineSchema() {
     return {
       info: new SchemaField({
@@ -170,7 +185,7 @@ export class PassiveModel extends foundry.abstract.TypeDataModel {
   }
 }
 
-export class WeaponModel extends foundry.abstract.TypeDataModel {
+export class WeaponModel extends TypeDataModel {
   static defineSchema() {
     return {
       info: information({ subtype: "melee", group: "light" }),
@@ -179,6 +194,21 @@ export class WeaponModel extends foundry.abstract.TypeDataModel {
       details: details({ equippable: true }),
       keywords: keywords(),
       description: description(),
+      hasAmmo: new BooleanField({ initial: false }),
+      ammo: new SchemaField({
+        type: new StringField({ initial: "arrow" }),
+        loaded: new NumberField({
+          initial: null,
+          integer: true,
+          nullable: true,
+        }),
+        capacity: new NumberField({
+          initial: null,
+          integer: true,
+          nullable: true,
+        }),
+        _ammoId: new StringField({ initial: null, nullable: true }),
+      }),
     };
   }
 

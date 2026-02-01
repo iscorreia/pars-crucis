@@ -239,9 +239,9 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     // Gear|Weapon items are set into their specific groups once equipped
     // Otherwise they're assigned to [gear]
     const accGroup = ["accessory", "gadget"];
-    const inventoryGroup = ["weapon", "gear"];
+    const inventoryGroup = ["weapon", "gear", "ammo"];
     this.abilities = parent.itemTypes.ability;
-    const abilitiesData = this.abilities;
+    this.ammo = parent.itemTypes.ammo;
     this.weaponry = parent.itemTypes.weapon.filter(
       (i) => i.system.details.equipped || i.system.info.group === "unarmed",
     );
@@ -256,16 +256,24 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
       return inventoryGroup.includes(i.type) && !i.system.details.equipped;
     });
     this.passives = parent.itemTypes.passive;
-    const passivesData = this.passives;
     // const weaponry = this.weaponry;
-    const { abilities, weaponry, vest, accessories, gear } = this;
-    const wear = [...vest, ...accessories];
+    const {
+      abilities: abilitiesData,
+      ammo: ammoData,
+      weaponry,
+      vest: vestData,
+      accessories: accData,
+      gear: gearData,
+      passives: passivesData,
+    } = this;
+    const wearData = [...vestData, ...accData];
     const itemGroup = [
-      ...abilities,
+      ...abilitiesData,
+      ...ammoData,
       ...weaponry,
-      ...vest,
-      ...accessories,
-      ...gear,
+      ...vestData,
+      ...accData,
+      ...gearData,
     ];
 
     // INVENTORY handling!
@@ -299,25 +307,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     handleGearAbilities(itemGroup, attributesData, parent.items);
 
     // MITIGATION derived calculations
-    const mitValues = wear.reduce(
-      (acc, equipment) => {
-        const { armor, robust, insulant, abascant } =
-          equipment.system.keywords ?? {};
-        const mitSum = (keyword, value) => {
-          const n = Number(value);
-          if (Number.isFinite(n)) acc[keyword] += n;
-        };
-        mitSum("armor", armor);
-        mitSum("robust", robust);
-        mitSum("insulant", insulant);
-        mitSum("abascant", abascant);
-        return acc;
-      },
-      { armor: 0, robust: 0, insulant: 0, abascant: 0 },
-    );
-    for (const [key, mitigation] of Object.entries(mitigationData)) {
-      mitigation.base = mitValues[key] + mitigation.adjust;
-    }
+    handleMitigation(wearData, mitigationData);
 
     // ABILITIES handling!
     const starterArts = {};
@@ -484,7 +474,8 @@ export function calculateStatic(att) {
 export function handleGearAbilities(itemGroup, attributesData, items) {
   for (let [_, gear] of Object.entries(itemGroup)) {
     const { actions } = gear.system;
-    // Calculates equipped gear and abilities damage
+    if (!actions) return;
+    // Calculates equipped gear and abilities actions damage
     for (let [_, action] of Object.entries(actions)) {
       if (action.damaging && action.type !== "tech") {
         const dmg = action.damage ?? {};
@@ -555,5 +546,27 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
         }
       }
     }
+  }
+}
+
+export function handleMitigation(wearData, mitigationData) {
+  const mitValues = wearData.reduce(
+    (acc, equipment) => {
+      const { armor, robust, insulant, abascant } =
+        equipment.system.keywords ?? {};
+      const mitSum = (keyword, value) => {
+        const n = Number(value);
+        if (Number.isFinite(n)) acc[keyword] += n;
+      };
+      mitSum("armor", armor);
+      mitSum("robust", robust);
+      mitSum("insulant", insulant);
+      mitSum("abascant", abascant);
+      return acc;
+    },
+    { armor: 0, robust: 0, insulant: 0, abascant: 0 },
+  );
+  for (const [key, mitigation] of Object.entries(mitigationData)) {
+    mitigation.base = mitValues[key] + mitigation.adjust;
   }
 }

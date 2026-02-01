@@ -80,6 +80,12 @@
         },
         "htmlFields": ["description.description"]
       },
+      "ammo": {
+        "filePathFields": {
+          "actions.*.img": ["IMAGE"]
+        },
+        "htmlFields": ["description.description"]
+      },
       "gear": {
         "filePathFields": {
           "actions.*.img": ["IMAGE"]

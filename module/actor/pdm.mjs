@@ -124,7 +124,7 @@ export class PDMModel extends foundry.abstract.TypeDataModel {
     const accGroup = ["accessory", "gadget"];
     const inventoryGroup = ["weapon", "gear"];
     this.abilities = parent.itemTypes.ability;
-    const abilitiesData = this.abilities;
+    this.ammo = parent.itemTypes.ammo;
     this.weaponry = parent.itemTypes.weapon.filter(
       (i) => i.system.details.equipped || i.system.info.group === "unarmed",
     );
@@ -139,13 +139,24 @@ export class PDMModel extends foundry.abstract.TypeDataModel {
       return inventoryGroup.includes(i.type) && !i.system.details.equipped;
     });
     this.passives = parent.itemTypes.passive;
-    const { abilities, weaponry, vest, accessories, gear } = this;
+    // const weaponry = this.weaponry;
+    const {
+      abilities: abilitiesData,
+      ammo: ammoData,
+      weaponry,
+      vest: vestData,
+      accessories: accData,
+      gear: gearData,
+      passives: passivesData,
+    } = this;
+    const wearData = [...vestData, ...accData];
     const itemGroup = [
-      ...abilities,
+      ...abilitiesData,
+      ...ammoData,
       ...weaponry,
-      ...vest,
-      ...accessories,
-      ...gear,
+      ...vestData,
+      ...accData,
+      ...gearData,
     ];
 
     // ABILITIES and GEAR derived calculations
@@ -190,8 +201,8 @@ function PDMattributeField({ extraFields = null } = {}) {
 
 function PDMmitigationField({} = {}) {
   return new SchemaField({
-    base: new NumberField({ initial: 0, integer: true, nullable: true }),
-    mod: new NumberField({ initial: 0, integer: true, nullable: true }),
+    base: new NumberField({ initial: 0, integer: true, nullable: false }),
+    mod: new NumberField({ initial: 0, integer: true, nullable: false }),
   });
 }
 
