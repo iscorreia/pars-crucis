@@ -1,32 +1,6 @@
 # DOING
 
-- Weapon/Gear/Abilities ammunition, how to interact? **_logic hbs css qol_**
-- DONE Add a boolean `hasAmmo` for Weapons
-- If `hasAmmo = true` do the following:
-
-1. DONE Weapon has the schemaFielld `ammo`.
-2. DONE the field `ammo` has the follow fields: `ammoType`, `loaded`, `capacity`, `ammoId`
-3. DONE Add a boolean for `usesAmmo` in Attack Actions
-4. `ammoId` is set by a `pickAmmo` BUTTON that belongs to the weapon
-5. `pickAmmo` BUTTON is available through the weapon sheet when item belongs to Actor, or in the inventory when expanding the weapon (1st option)
-6. Before the persona inventory weapon expanded inline actions show the picker ammo
-7. If an action have `usesAmmo = true` it's `damage` calculations should take into account the AMMO data
-8. AMMO data must be able to set a new formular with a few different strategies:
-
-1) ammo increments weapon damage, updates damage property;
-2) ammo adds effects;
-3) ammo completely overhauls weapon damage, has either it's own damage and scaling, or flat damage that does not depend on weapon
-4) Simples initial fix: have a field in ammo that describes all its effect. Once a weapon has an ammo selected, using the weapon attack prints the used ammo and also which are the ammo effects :D
-
-9. have one ammo type called `omni` which is always available
-10. have an ammo type valled `exotic` which is only available for the `exotic` ammo typed weapons, this is for weird created weapons
-11. for now attack wont automatically deduce ammo, but take this possibility into account
-12. make sure that ammo configs are properly taken into account for attack techniques with weapons using ammo
-
-- Work needed on ammo (if item subtype is ammo)
-- Have a few option on the configs for ammo
-- What will decide the damage formula
-- Responsability on ammo! advantages are more control: options such as:
+- Weapon/Gear/Abilities ammunition **_logic hbs css qol_**
 
 # HIGH PRIORITY
 
