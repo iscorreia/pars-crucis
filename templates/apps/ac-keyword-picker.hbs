@@ -23,7 +23,7 @@
     <div class="item-keywords-config">
       {{#each system.keywords}}
         <div class="pc-keyword">
-          {{localize (concat "PC.keyword." @key)}}{{#if this}} ({{this}}){{/if}}
+          {{localize (concat "PC.keyword." @key)}}{{#if this}} {{this}}{{/if}}
         </div>
       {{/each}}
     </div></div>

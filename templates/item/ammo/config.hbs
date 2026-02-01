@@ -145,7 +145,7 @@
   <div class="item-info-config item-keywords-config">
     {{#each system.keywords}}
       <div class="pc-keyword">
-        {{localize (concat "PC.keyword." @key)}}{{#if this}} ({{this}}){{/if}}
+        {{localize (concat "PC.keyword." @key)}}{{#if this}} {{this}}{{/if}}
         <a data-action="cutKeyword" data-keyword="{{@key}}">
           <i class="fa-regular fa-eraser"></i></a>
       </div>

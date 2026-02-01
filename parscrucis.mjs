@@ -25,19 +25,20 @@ import AmmoSheet from "./module/item/ammo-sheet.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
-    "systems/pars-crucis/templates/actor/blocks/action.hbs",
-    "systems/pars-crucis/templates/actor/blocks/ammo.hbs",
-    "systems/pars-crucis/templates/actor/blocks/attributes.hbs",
-    "systems/pars-crucis/templates/actor/blocks/currency.hbs",
-    "systems/pars-crucis/templates/actor/blocks/experience.hbs",
-    "systems/pars-crucis/templates/actor/blocks/items.hbs",
-    "systems/pars-crucis/templates/actor/blocks/minors.hbs",
-    "systems/pars-crucis/templates/actor/blocks/mitigation.hbs",
-    "systems/pars-crucis/templates/actor/blocks/tech-action.hbs",
-    "systems/pars-crucis/templates/actor/blocks/vest.hbs",
-    "systems/pars-crucis/templates/actor/blocks/weaponry.hbs",
+    "systems/pars-crucis/templates/actor/partials/action.hbs",
+    "systems/pars-crucis/templates/actor/partials/ammo.hbs",
+    "systems/pars-crucis/templates/actor/partials/attributes.hbs",
+    "systems/pars-crucis/templates/actor/partials/currency.hbs",
+    "systems/pars-crucis/templates/actor/partials/experience.hbs",
+    "systems/pars-crucis/templates/actor/partials/items.hbs",
+    "systems/pars-crucis/templates/actor/partials/minors.hbs",
+    "systems/pars-crucis/templates/actor/partials/mitigation.hbs",
+    "systems/pars-crucis/templates/actor/partials/tech-action.hbs",
+    "systems/pars-crucis/templates/actor/partials/vest.hbs",
+    "systems/pars-crucis/templates/actor/partials/weaponry.hbs",
     "systems/pars-crucis/templates/actor/pdm/challenge.hbs",
-    "systems/pars-crucis/templates/item/blocks/name-cost.hbs",
+    "systems/pars-crucis/templates/item/partials/name-cost.hbs",
+    "systems/pars-crucis/templates/partials/pc-keyword.hbs",
   ];
 
   return foundry.applications.handlebars.loadTemplates(templatePaths);

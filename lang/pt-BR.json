@@ -357,6 +357,7 @@
     "tech": "Técnica",
     "selectAction": "Selecione uma ação",
     "selectAmmo": "Selecione a munição",
+    "ammoType": "Tipo de munição",
     "createAttack": "Criar ataque",
     "createTech": "Criar técnica",
     "createTest": "Criar teste",
@@ -402,7 +403,7 @@
           "groups": {
             "bow": "Arco",
             "sling": "Estilingue",
-            "crossbow": "Bestra",
+            "crossbow": "Besta",
             "pistol": "Pistola",
             "rifle": "Rifle",
             "shotgun": "Escopeta",
@@ -542,6 +543,7 @@
     "equipped": "Equipado",
     "hasAmmo": "Tem munição",
     "usesAmmo": "Usa munição",
+    "capacity": "Capacidade",
     "config": "Configurações",
     "effect": "Efeito",
 
@@ -592,6 +594,7 @@
 
       "starter": "Inicial",
       "esoteric": "Esotérica",
+      "technique": "Técnica",
       "power": "Poder",
       "recipe": "Receita",
       "sigil": "Sigilo",
@@ -616,6 +619,7 @@
       "deviation": "Desvio",
       "freezing": "Congelante",
 
+      "defense": "Defesa",
       "armor": "Armadura",
       "robust": "Robustez",
       "insulant": "Isolante",
@@ -632,7 +636,7 @@
       "fragile": "Frágil",
       "stack": "Monte",
       "effect": "#Efeito",
-      "penalty": "#Penalidade",
+      "penalty": "#Defeito",
 
       "attribute": "Atributo",
       "skill": "Perícia",

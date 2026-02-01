@@ -198,9 +198,9 @@ export class WeaponModel extends TypeDataModel {
       ammo: new SchemaField({
         type: new StringField({ initial: "arrow" }),
         loaded: new NumberField({
-          initial: null,
+          initial: 0,
           integer: true,
-          nullable: true,
+          nullable: false,
         }),
         capacity: new NumberField({
           initial: null,

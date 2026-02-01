@@ -154,7 +154,7 @@ section.pdm-config {
 
 /* ACTION PICKER */
 .action-picker {
-  min-height: 200px;
+  min-height: 120px;
   max-height: 550px;
   ol,
   li {
@@ -192,5 +192,33 @@ section.pdm-config {
       row-gap: 2px;
       column-gap: 2px;
     }
+  }
+}
+
+/* AMMO-PICKER */
+.ammo-picker {
+  .inline-item {
+    padding-bottom: 1px;
+    width: 100%;
+    border-color: var(--pc-color-dark-1);
+    border-width: 0 0 1px 0;
+    border-style: dashed;
+  }
+  .inline-icon {
+    display: inline-block;
+    /* vertical-align: middle; */
+    border-radius: 5px;
+    vertical-align: -5px;
+  }
+  .inline-title {
+    line-height: 23px;
+    font-size: 17px;
+    font-family: "BarlowCondensed Regular";
+  }
+  .item-keywords {
+    vertical-align: 1px;
+  }
+  .inline-item:last-child {
+    border: transparent;
   }
 }

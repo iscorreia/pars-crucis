@@ -710,6 +710,7 @@ PC.keyword = {
   qualifying: {
     starter: { label: "PC.keyword.starter" },
     esoteric: { label: "PC.keyword.esoteric" },
+    technique: { label: "PC.keyword.technique" },
     power: { label: "PC.keyword.power" },
     recipe: { label: "PC.keyword.recipe" },
     sigil: { label: "PC.keyword.sigil" },
@@ -737,6 +738,7 @@ PC.keyword = {
     freezing: { label: "PC.keyword.freezing" },
   },
   defensive: {
+    defense: { label: "PC.keyword.defense" },
     armor: { label: "PC.keyword.armor" },
     insulant: { label: "PC.keyword.insulant" },
     robust: { label: "PC.keyword.robust" },

@@ -7,23 +7,11 @@
 
     <div class="item-keywords">
       {{#each system.keywords}}
-        <div class="pc-keyword">
-          <div class="pc-keyword-label">{{localize
-              (concat "PC.keyword." @key)
-            }}</div>{{#if this}}<div
-              class="pc-keyword-value"
-            >({{this}})</div>{{/if}}
-        </div>
+        {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
       {{/each}}
       {{#each system.actions}}
         {{#each this.keywords}}
-          <div class="pc-keyword pc-secondary-keyword">
-            <div class="pc-keyword-label">{{localize
-                (concat "PC.keyword." @key)
-              }}</div>{{#if this}}<div
-                class="pc-keyword-value"
-              >({{this}})</div>{{/if}}
-          </div>
+          {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
         {{/each}}
       {{/each}}
     </div>
@@ -165,7 +153,7 @@
   {{#if this.flags.pars-crucis.expanded}}
     <ol class="gear-actions">
       {{#each this.system.actions}}
-        {{> systems/pars-crucis/templates/actor/blocks/action.hbs itemId=../this._id}}
+        {{> systems/pars-crucis/templates/actor/partials/action.hbs itemId=../this._id}}
       {{/each}}
     </ol>
   {{/if}}

@@ -53,23 +53,11 @@
 
                 <div class="item-keywords">
                   {{#each ability.system.keywords as |value keyword|}}
-                    <div class="pc-keyword">
-                      <div class="pc-keyword-label">{{localize
-                          (concat "PC.keyword." keyword)
-                        }}</div>{{#if value}}<div
-                          class="pc-keyword-value"
-                        >({{value}})</div>{{/if}}
-                    </div>
+                    {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
                   {{/each}}
                   {{#each ability.system.actions}}
                     {{#each this.keywords}}
-                      <div class="pc-keyword pc-secondary-keyword">
-                        <div class="pc-keyword-label">{{localize
-                            (concat "PC.keyword." @key)
-                          }}</div>{{#if this}}<div
-                            class="pc-keyword-value"
-                          >({{this}})</div>{{/if}}
-                      </div>
+                      {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
                     {{/each}}
                   {{/each}}
                 </div>
@@ -209,9 +197,9 @@
                 <ol class="ability-actions">
                   {{#each ability.system.actions}}
                     {{#if (eq this.type "tech")}}
-                      {{> systems/pars-crucis/templates/actor/blocks/tech-action.hbs itemId=../this._id}}
+                      {{> systems/pars-crucis/templates/actor/partials/tech-action.hbs itemId=../this._id}}
                     {{else}}
-                      {{> systems/pars-crucis/templates/actor/blocks/action.hbs itemId=../this._id}}
+                      {{> systems/pars-crucis/templates/actor/partials/action.hbs itemId=../this._id}}
                     {{/if}}
                   {{/each}}
                 </ol>

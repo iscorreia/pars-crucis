@@ -7,7 +7,7 @@
 >
   <div class="item-list-block">
     {{#if system.weaponry}}
-      {{> systems/pars-crucis/templates/actor/blocks/weaponry.hbs}}
+      {{> systems/pars-crucis/templates/actor/partials/weaponry.hbs}}
     {{else}}
       <ol class="item-list">
         <div class="item-group-title empty-group-title">
@@ -27,10 +27,10 @@
           <div class="item-sorting"></div>
         </div>
         {{#each system.vest}}
-          {{> systems/pars-crucis/templates/actor/blocks/vest.hbs}}
+          {{> systems/pars-crucis/templates/actor/partials/vest.hbs}}
         {{/each}}
         {{#each system.accessories}}
-          {{> systems/pars-crucis/templates/actor/blocks/vest.hbs}}
+          {{> systems/pars-crucis/templates/actor/partials/vest.hbs}}
         {{/each}}
       </ol>
     {{else}}
@@ -45,7 +45,7 @@
       </ol>
     {{/if}}
     {{#if system.gear}}
-      {{> systems/pars-crucis/templates/actor/blocks/items.hbs}}
+      {{> systems/pars-crucis/templates/actor/partials/items.hbs}}
     {{else}}
       <ol class="item-list">
         <div class="item-group-title empty-group-title">
@@ -58,5 +58,5 @@
       </ol>
     {{/if}}
   </div>
-  {{> systems/pars-crucis/templates/actor/blocks/currency.hbs}}
+  {{> systems/pars-crucis/templates/actor/partials/currency.hbs}}
 </section>

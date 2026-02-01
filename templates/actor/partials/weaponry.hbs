@@ -1,47 +1,37 @@
-<ol class="item-list">
+<!-- Gear tab Weaponry list -->
+
+<ol class="item-list weapons-list">
   <div class="item-group-title">
     <div class="empty-space"></div>
-    <h3>{{localize "PC.items"}}</h3>
+    <h3>{{localize "PC.weaponry"}}</h3>
     <div class="item-sorting"></div>
   </div>
-  {{#each system.gear as |gear obj|}}
+  {{#each system.weaponry as |weapon obj|}}
     <li class="item-block">
       <div class="item-line">
-        <img class="icon-mid" src="{{this.img}}" width="24" height="24" />
+        <img class="icon-mid" src="{{weapon.img}}" width="24" height="24" />
         <div class="item-title">
-          <h4>{{this.name}}</h4>
+          <h4>{{weapon.name}}</h4>
         </div>
 
         <div class="item-keywords">
-          {{#each system.keywords}}
-            <div class="pc-keyword">
-              <div class="pc-keyword-label">{{localize
-                  (concat "PC.keyword." @key)
-                }}</div>{{#if this}}<div
-                  class="pc-keyword-value"
-                >({{this}})</div>{{/if}}
-            </div>
+          {{#each weapon.system.keywords}}
+            {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
           {{/each}}
-          {{#each system.actions}}
+          {{#each weapon.system.actions}}
             {{#each this.keywords}}
-              <div class="pc-keyword pc-secondary-keyword">
-                <div class="pc-keyword-label">{{localize
-                    (concat "PC.keyword." @key)
-                  }}</div>{{#if this}}<div
-                    class="pc-keyword-value"
-                  >({{this}})</div>{{/if}}
-              </div>
+              {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
             {{/each}}
           {{/each}}
         </div>
 
-        <div class="persona-actions">
-          {{#each system.actions as |action key|}}
+        <div class="persona-actions weapon-actions">
+          {{#each weapon.system.actions as |action key|}}
             {{#if (eq action.type "attack")}}
-              <a 
+              <a
                 class="persona-action ac-attack draggable"
                 data-action="rollAttack"
-                data-item-id="{{../this._id}}"
+                data-item-id="{{weapon._id}}"
                 data-ac-id="{{action._id}}"
               >
                 <img
@@ -64,7 +54,7 @@
               <a
                 class="persona-action ac-test draggable"
                 data-action="rollTest"
-                data-item-id="{{../this._id}}"
+                data-item-id="{{weapon._id}}"
                 data-ac-id="{{action._id}}"
               >
                 <img
@@ -87,7 +77,7 @@
               <a
                 class="persona-action ac-use draggable"
                 data-action="useGear"
-                data-item-id="{{../this._id}}"
+                data-item-id="{{weapon._id}}"
                 data-ac-id="{{action._id}}"
               >
                 <img
@@ -104,8 +94,7 @@
                       "PC.action.types.use.label"
                     }}</div>
                 {{/if}}
-              </a>
-            {{/if}}
+              </a>{{/if}}
           {{/each}}
         </div>
 
@@ -126,17 +115,17 @@
         </div>
 
         <div class="item-controls">
-          {{#if this.system.details.equippable}}
+          {{#if weapon.system.details.equippable}}
             <a
               data-action="clickEquip"
-              data-item-id="{{this._id}}"
-              data-equip="true"
+              data-item-id="{{weapon._id}}"
+              data-equip="false"
               title="{{localize 'PC.equip'}}"
             >
-              <i class="fa-regular fa-arrow-up-from-arc"></i>
+              <i class="fa-regular fa-backpack"></i>
             </a>
           {{/if}}
-          {{#if (isEmpty this.system.actions)}}
+          {{#if (isEmpty weapon.system.actions)}}
             <div class="disabled-control">
               <i class="fa-regular fa-arrows-from-line"></i>
             </div>
@@ -155,24 +144,27 @@
           {{/if}}
           <a
             data-action="clickEdit"
-            data-item-id="{{this._id}}"
+            data-item-id="{{weapon._id}}"
             title="{{localize 'PC.edit'}}"
           >
             <i class="fa-regular fa-edit"></i>
           </a>
           <a
             data-action="clickDelete"
-            data-item-id="{{this._id}}"
+            data-item-id="{{weapon._id}}"
             title="{{localize 'PC.delete'}}"
           >
             <i class="fa-regular fa-trash-can"></i>
           </a>
         </div>
       </div>
-      {{#if this.flags.pars-crucis.expanded}}
+      {{#if weapon.flags.pars-crucis.expanded}}
         <ol class="gear-actions">
-          {{#each this.system.actions}}
-            {{> systems/pars-crucis/templates/actor/blocks/action.hbs itemId=../this._id}}
+          {{#if this.system.hasAmmo}}
+            {{> systems/pars-crucis/templates/actor/partials/ammo.hbs itemId=this._id}}
+          {{/if}}
+          {{#each weapon.system.actions}}
+            {{> systems/pars-crucis/templates/actor/partials/action.hbs itemId=../this._id}}
           {{/each}}
         </ol>
       {{/if}}

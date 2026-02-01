@@ -87,6 +87,19 @@
   <div class="item-info-config">
     <div class="item-info-block">
       <input
+        id="hasAmmo-toggle-{{item._id}}"
+        type="checkbox"
+        data-dtype="Boolean"
+        name="system.hasAmmo"
+        {{checked system.hasAmmo}}
+        hidden
+      />
+      <label for="hasAmmo-toggle-{{item._id}}" class="name-tag">
+        {{localize "PC.hasAmmo"}}
+      </label>
+    </div>
+    <div class="item-info-block">
+      <input
         id="equippable-toggle-{{item._id}}"
         type="checkbox"
         data-dtype="Boolean"
@@ -113,19 +126,6 @@
     </div>
     <div class="item-info-block">
       <input
-        id="hasAmmo-toggle-{{item._id}}"
-        type="checkbox"
-        data-dtype="Boolean"
-        name="system.hasAmmo"
-        {{checked system.hasAmmo}}
-        hidden
-      />
-      <label for="hasAmmo-toggle-{{item._id}}" class="name-tag">
-        {{localize "PC.hasAmmo"}}
-      </label>
-    </div>
-    <div class="item-info-block">
-      <input
         id="stackable-toggle-{{item._id}}"
         type="checkbox"
         data-dtype="Boolean"
@@ -140,6 +140,27 @@
   </div>
 
   <div class="item-info-config">
+    {{#if system.hasAmmo}}
+      <div class="item-info-block">
+        <h5>{{localize "PC.ammoType"}}</h5>
+        <select name="system.ammo.type">
+          {{selectOptions
+            config.ammo.group
+            selected=system.ammo.type
+            localize=true
+          }}
+        </select>
+      </div>
+      <div class="item-info-block">
+        <h5>{{localize "PC.capacity"}}</h5>
+        <input
+          name="system.ammo.capacity"
+          type="Number"
+          value="{{system.ammo.capacity}}"
+          data-dtype="Number"
+        />
+      </div>
+    {{/if}}
     <div class="item-info-block">
       {{#if system.details.stackable}}
         <h5>{{localize "PC.slots"}}</h5>
@@ -177,7 +198,7 @@
   <div class="item-info-config item-keywords-config">
     {{#each system.keywords}}
       <div class="pc-keyword">
-        {{localize (concat "PC.keyword." @key)}}{{#if this}} ({{this}}){{/if}}
+        {{localize (concat "PC.keyword." @key)}}{{#if this}} {{this}}{{/if}}
         <a data-action="cutKeyword" data-keyword="{{@key}}">
           <i class="fa-regular fa-eraser"></i></a>
       </div>
