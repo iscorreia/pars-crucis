@@ -1,5 +1,6 @@
 const { api, sheets } = foundry.applications;
 import ActionPicker from "../apps/action-picker.mjs";
+import AmmoPicker from "../apps/ammo-picker.mjs";
 
 //This is the basic class for Pars Crucis Actor and should be extended
 export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
@@ -19,6 +20,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     },
     actions: {
       actionPicker: this._actionPicker,
+      ammoPicker: this._ammoPicker,
       callAction: this._callActionOnClick,
       clickDelete: this._deleteItemOnClick,
       clickEdit: this._editItemOnClick,
@@ -255,8 +257,25 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     new ActionPicker({
       document: actor,
       choices: attackChoices,
-      acId: acId,
-      itemId: itemId,
+      acId,
+      itemId,
+    })?.render(true);
+  }
+
+  static async _ammoPicker(_, target) {
+    const { itemId } = target.dataset;
+    const { actor } = this;
+    const item = actor.items.get(itemId);
+    const { type } = item.system.ammo;
+    const ammoChoices = [];
+    actor.system.ammo.forEach((ammunition) => {
+      if ([type, "omni"].includes(ammunition.system.info.group))
+        ammoChoices.push(ammunition);
+    });
+    new AmmoPicker({
+      choices: ammoChoices,
+      document: actor,
+      itemId,
     })?.render(true);
   }
 

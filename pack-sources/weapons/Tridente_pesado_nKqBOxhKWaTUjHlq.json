@@ -1,0 +1,92 @@
+{
+  "name": "Tridente pesado",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/spear-ornate-gold.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "spear",
+      "subgroup": "Tridente",
+      "quality": "common"
+    },
+    "actions": {
+      "IueZg1gruU7dPh4N": {
+        "img": "icons/weapons/polearms/spear-ornate-gold.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "IueZg1gruU7dPh4N",
+        "damaging": true,
+        "range": "2m",
+        "damage": {
+          "dmgBase": 11,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "hasta",
+        "subtype": "melee",
+        "usesAmmo": false
+      }
+    },
+    "cost": {
+      "price": 11,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "stackMax": 1
+    },
+    "keywords": {
+      "twoHanded": "",
+      "defense": "+1"
+    },
+    "description": {
+      "description": "<p>Alcance: 2m</p><p>Dano: 11+FIS|DES</p><p>Obs: 2 mãos. DEF+1.</p><p>Espaço: 2</p><p>Preço: 11p</p><p>Req: DES2</p><p>Ofício: Arm N5</p><p>Mts: 7</p>",
+      "notes": "",
+      "summary": ""
+    },
+    "hasAmmo": false,
+    "ammo": {
+      "type": "arrow",
+      "loaded": null,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "Duwarfd9Z0Sr6U02",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769918205520,
+    "modifiedTime": 1769954171989,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "nKqBOxhKWaTUjHlq",
+  "sort": 700000,
+  "_key": "!items!nKqBOxhKWaTUjHlq"
+}

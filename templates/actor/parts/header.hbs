@@ -15,12 +15,12 @@
      <span>{{localize (concat "PC.origins." system.info.origin)}} · {{localize (concat "PC.cultures." system.info.culture)}} {{system.info.subculture}} · {{localize (concat "PC.personas." system.info.persona)}}</span>
     </div>
     <div>
-      {{> systems/pars-crucis/templates/actor/blocks/attributes.hbs}}
+      {{> systems/pars-crucis/templates/actor/partials/attributes.hbs}}
     </div>
   </div>
   <div class="header-right-block">
-    {{> systems/pars-crucis/templates/actor/blocks/experience.hbs}}
-    {{> systems/pars-crucis/templates/actor/blocks/minors.hbs}}
-    {{> systems/pars-crucis/templates/actor/blocks/mitigation.hbs}}
+    {{> systems/pars-crucis/templates/actor/partials/experience.hbs}}
+    {{> systems/pars-crucis/templates/actor/partials/minors.hbs}}
+    {{> systems/pars-crucis/templates/actor/partials/mitigation.hbs}}
   </div>
 </header>

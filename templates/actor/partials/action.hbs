@@ -36,13 +36,7 @@
   {{#if (not (isEmpty this.keywords))}}
     <span class="item-keywords">
       {{#each this.keywords}}
-        <span class="pc-keyword">
-          <span class="pc-keyword-label">{{localize
-              (concat "PC.keyword." @key)
-            }}</span>{{#if this}}<span
-              class="pc-keyword-value"
-            >({{this}})</span>{{/if}}
-        </span>
+        {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
       {{/each}}
     </span>
   {{/if}}

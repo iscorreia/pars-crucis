@@ -10,7 +10,7 @@
     height="89"
   />
   <div class="item-header-right">
-    {{> systems/pars-crucis/templates/item/blocks/name-cost.hbs}}
+    {{> systems/pars-crucis/templates/item/partials/name-cost.hbs}}
     <div class="item-info">
       {{localize (concat "PC.weapon.subtypes." system.info.subtype ".label")}}
       ·
@@ -27,9 +27,7 @@
 
     <div class="item-sheet-keywords">
       {{#each system.keywords as |value key|}}
-        <div class="pc-keyword">{{localize (concat "PC.keyword." key)}}{{#if
-            value
-          }} ({{value}}){{/if}}</div>
+        {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
       {{/each}}
     </div>
   </div>

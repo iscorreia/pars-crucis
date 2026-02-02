@@ -1,0 +1,49 @@
+<li class="inline-action inline-ammo">
+  <span class="inline-label">{{localize "PC.ammo.label"}}:</span>
+  {{#if (gt this.system.ammo.capacity 0)}}
+    <span class="inline-value">
+      {{log this}}
+      {{log "ammoId" this.system.ammo._ammoId}}
+      <input
+        class="loaded-input"
+        type="number"
+        value="{{this.system.ammo.loaded}}"
+        data-dtype="Number"
+        min="0"
+        data-field="system.ammo.loaded"
+        data-item-id="{{this.system.parent._id}}"
+      />
+      /{{this.system.ammo.capacity}}
+    </span>
+  {{/if}}
+  <button
+    type="button"
+    class="pick-ammo inline-button"
+    data-action="ammoPicker"
+    data-item-id="{{itemId}}"
+  >
+    {{#if this.selectedAmmo}}
+      <img
+        class="inline-icon"
+        src="{{this.selectedAmmo.img}}"
+        width="16"
+        height="16"
+      />
+      <span
+        class="inline-action-name inline-selected"
+      >{{this.selectedAmmo.name}}</span>
+    {{else}}
+      <span class="inline-action-name">{{localize "PC.selectAmmo"}}</span>
+    {{/if}}
+  </button>
+  {{#if (not (isEmpty this.selectedAmmo.system.keywords))}}
+    <span class="item-keywords">
+      {{#each this.selectedAmmo.system.keywords}}
+        {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
+      {{/each}}
+    </span>
+  {{/if}}
+  {{#if this.selectedAmmo.effect}}
+    Efeito aqui
+  {{/if}}
+</li>

@@ -1,51 +1,24 @@
 {
-  "name": "Lancespada",
+  "name": "Azagaia",
   "type": "weapon",
-  "img": "icons/weapons/polearms/glaive-simple.webp",
+  "img": "icons/weapons/polearms/javelin-flared.webp",
   "system": {
     "info": {
       "subtype": "melee",
-      "group": "sword",
-      "subgroup": "Espada & Lança",
+      "group": "javelin",
+      "subgroup": "",
       "quality": "common"
     },
     "actions": {
-      "NCrq5eJO4xAQtODL": {
-        "img": "icons/weapons/polearms/glaive-simple.webp",
-        "name": "Golpear E",
+      "hYEvgHRVLs7ifR4T": {
+        "img": "icons/weapons/polearms/javelin-flared.webp",
+        "name": "Golpear",
         "type": "attack",
-        "_id": "NCrq5eJO4xAQtODL",
+        "_id": "hYEvgHRVLs7ifR4T",
         "damaging": true,
         "range": "2m",
         "damage": {
-          "dmgBase": 12,
-          "dmgAttributes": [
-            "fis",
-            "des"
-          ],
-          "dmgAttMultiplier": 1,
-          "dmgAddition": "",
-          "scalable": true,
-          "dmgType": "phy",
-          "dmgSubtype": ""
-        },
-        "skill": "esgri",
-        "effect": "",
-        "effort": "",
-        "prepTime": "",
-        "duration": "",
-        "keywords": {},
-        "subtype": "melee"
-      },
-      "WTgO7u0h2rbbR6KS": {
-        "img": "icons/weapons/polearms/glaive-simple.webp",
-        "name": "Golpear H",
-        "type": "attack",
-        "_id": "WTgO7u0h2rbbR6KS",
-        "damaging": true,
-        "range": "2m",
-        "damage": {
-          "dmgBase": 12,
+          "dmgBase": 8,
           "dmgAttributes": [
             "fis",
             "des"
@@ -62,31 +35,66 @@
         "duration": "",
         "keywords": {},
         "skill": "hasta",
-        "subtype": "melee"
+        "subtype": "melee",
+        "usesAmmo": false
+      },
+      "bAOE4VYfqiWTjBox": {
+        "img": "icons/weapons/polearms/javelin-flared.webp",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "bAOE4VYfqiWTjBox",
+        "damaging": true,
+        "range": "10/30m",
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "hasta",
+        "subtype": "throw",
+        "usesAmmo": false
       }
     },
     "cost": {
-      "price": 12,
+      "price": 2,
       "currency": "silver"
     },
     "details": {
-      "slots": 2,
+      "slots": 1,
       "stack": 1,
-      "stackable": false,
+      "stackMax": 3,
+      "stackable": true,
       "equippable": true,
       "equipped": false
     },
-    "keywords": {
-      "twoHanded": null
-    },
+    "keywords": {},
     "description": {
-      "description": "<p>Alcance: 2m</p><p>Dano: 12+FIS|DES</p><p>Obs: 2 mãos. É considerada espada e lança.</p><p>Preço: 12p</p><p>Req: FIS2</p><p>Ofício: Arm N5</p><p>Mts: 7</p>",
-      "notes": "",
-      "summary": ""
+      "description": "<p>Alcance: 10/30m</p><p>Dano: 8+FIS|DES</p><p>Monte: 3</p><p>Obs: Corpo a corpo tem alcance 2m.</p><p>Preço: 2p</p><p>Req: DES1</p><p>Ofício: Arm N3</p><p>Mts: 3</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammo": {
+      "type": "arrow",
+      "loaded": null,
+      "capacity": null,
+      "_ammoId": null
     }
   },
   "effects": [],
-  "folder": "UJMi2v8hWvQ7WSkK",
+  "folder": "Duwarfd9Z0Sr6U02",
   "ownership": {
     "default": 0,
     "BWDFQ9zEwkAXpvLu": 3
@@ -99,11 +107,11 @@
     "coreVersion": "13.351",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
-    "createdTime": 1769708265613,
-    "modifiedTime": 1769954212209,
+    "createdTime": 1769952903276,
+    "modifiedTime": 1769954171989,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
-  "_id": "uPlCVHa1WBukXFTF",
-  "sort": 400000,
-  "_key": "!items!uPlCVHa1WBukXFTF"
+  "_id": "PFc5LzQJQGJl1JgC",
+  "sort": 300000,
+  "_key": "!items!PFc5LzQJQGJl1JgC"
 }

@@ -54,6 +54,7 @@
 
 - Compendium banner img src path is empty
 - _mitigation_.adjust can be deleted in the persona config, resulting in `NaN`
+- if Item action `usesAmmo = true` but no ammo is selected you can roll the Attack action still
 
 ### PONDER ABOUT
 
@@ -63,3 +64,13 @@
 - Attributes be Draggable to Macros
 - Show Abilities/Items general description on chat **_feature_**
 - Click on luck title to use one luck? Would this print possible use option?
+
+### COMPLETE COMPENDIUM PACKS
+
+- SWORDS
+- JAVELINS
+- SPEARS
+
+### PARTIAL PACKS
+
+- VESTS

@@ -8,13 +8,7 @@
     </div>
     <div class="item-keywords">
       {{#each tech.system.keywords}}
-        <div class="pc-keyword">
-          <div class="pc-keyword-label">{{localize
-              (concat "PC.keyword." @key)
-            }}</div>{{#if this}}<div
-              class="pc-keyword-value"
-            >({{this}})</div>{{/if}}
-        </div>
+        {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
       {{/each}}
     </div>
   </div>
@@ -30,23 +24,11 @@
 
           <div class="item-keywords">
             {{#each item.system.keywords}}
-              <div class="pc-keyword">
-                <div class="pc-keyword-label">{{localize
-                    (concat "PC.keyword." @key)
-                  }}</div>{{#if this}}<div
-                    class="pc-keyword-value"
-                  >({{this}})</div>{{/if}}
-              </div>
+              {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
             {{/each}}
             {{#each item.system.actions}}
               {{#each this.keywords}}
-                <div class="pc-keyword pc-secondary-keyword">
-                  <div class="pc-keyword-label">{{localize
-                      (concat "PC.keyword." @key)
-                    }}</div>{{#if this}}<div
-                      class="pc-keyword-value"
-                    >({{this}})</div>{{/if}}
-                </div>
+                {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
               {{/each}}
             {{/each}}
           </div>
@@ -72,13 +54,7 @@
                 {{#if (not (isEmpty this.keywords))}}
                   <span class="item-keywords">
                     {{#each this.keywords}}
-                      <span class="pc-keyword">
-                        <span class="pc-keyword-label">{{localize
-                            (concat "PC.keyword." @key)
-                          }}</span>{{#if this}}<span
-                            class="pc-keyword-value"
-                          >({{this}})</span>{{/if}}
-                      </span>
+                      {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
                     {{/each}}
                   </span>
                 {{/if}}

@@ -1,0 +1,88 @@
+{
+  "name": "Atlatl",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/javelin-simple.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "javelin",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "3zkGHReU7wDe6R0d": {
+        "img": "icons/weapons/polearms/javelin-simple.webp",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "3zkGHReU7wDe6R0d",
+        "damaging": true,
+        "range": "12/40m",
+        "damage": {
+          "dmgBase": 7,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "subtype": "throw",
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "hasta",
+        "usesAmmo": false
+      }
+    },
+    "cost": {
+      "price": 40,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 6,
+      "stackable": true,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Alcance: 12/40m</p><p>Dano: 7+DES</p><p>Monte: 6</p><p>Preço: 40c</p><p>Req: DES2</p><p>Ofício: Arm N2</p><p>Mts: 2</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammo": {
+      "type": "arrow",
+      "loaded": null,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "Duwarfd9Z0Sr6U02",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769951224925,
+    "modifiedTime": 1769954171989,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "5pgyvATfx6YkpSc1",
+  "sort": 200000,
+  "_key": "!items!5pgyvATfx6YkpSc1"
+}

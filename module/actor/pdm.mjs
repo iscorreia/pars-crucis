@@ -121,8 +121,8 @@ export class PDMModel extends foundry.abstract.TypeDataModel {
     // Filter items by group, uses the helper actor#itemTypes
     // Gear|Weapon items are set into their specific groups once equipped
     // Otherwise they're assigned to [gear]
-    const accGroup = ["accessory", "gadget"];
-    const inventoryGroup = ["weapon", "gear"];
+    const isAccessory = ["accessory", "gadget"];
+    const isEquipment = ["weapon", "gear", "ammo"];
     this.abilities = parent.itemTypes.ability;
     this.ammo = parent.itemTypes.ammo;
     this.weaponry = parent.itemTypes.weapon.filter(
@@ -133,10 +133,10 @@ export class PDMModel extends foundry.abstract.TypeDataModel {
     );
     this.accessories = parent.itemTypes.gear.filter(
       (i) =>
-        i.system.details.equipped && accGroup.includes(i.system.info.group),
+        i.system.details.equipped && isAccessory.includes(i.system.info.group),
     );
     this.gear = parent.items.filter((i) => {
-      return inventoryGroup.includes(i.type) && !i.system.details.equipped;
+      return isEquipment.includes(i.type) && !i.system.details.equipped;
     });
     this.passives = parent.itemTypes.passive;
     // const weaponry = this.weaponry;
