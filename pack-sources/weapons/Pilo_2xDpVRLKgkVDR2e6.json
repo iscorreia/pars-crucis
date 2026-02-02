@@ -1,0 +1,91 @@
+{
+  "name": "Pilo",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/javelin.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "javelin",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "1ilfCabf3CfNRb2d": {
+        "img": "icons/weapons/polearms/javelin.webp",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "1ilfCabf3CfNRb2d",
+        "damaging": true,
+        "range": "10/30m",
+        "damage": {
+          "dmgBase": 5,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "hasta",
+        "subtype": "throw",
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usesAmmo": false
+      }
+    },
+    "cost": {
+      "price": 2,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 3,
+      "stackable": true,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "lethality": "+1"
+    },
+    "description": {
+      "description": "<p>Alcance: 10/30m</p><p>Dano: 5+FIS|DES</p><p>Obs: Fatalidade (+1).</p><p>Monte: 3</p><p>Preço: 2p</p><p>Req: DES2</p><p>Ofício: Arm N5</p><p>Mts: 3</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammo": {
+      "type": "arrow",
+      "loaded": null,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "Duwarfd9Z0Sr6U02",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769952725335,
+    "modifiedTime": 1769954171989,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "2xDpVRLKgkVDR2e6",
+  "sort": 100000,
+  "_key": "!items!2xDpVRLKgkVDR2e6"
+}

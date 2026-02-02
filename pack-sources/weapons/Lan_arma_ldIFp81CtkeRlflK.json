@@ -1,0 +1,145 @@
+{
+  "name": "Lançarma",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/spear-hooked-rounded.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "spear",
+      "subgroup": "Lança & Rifle",
+      "quality": "common"
+    },
+    "actions": {
+      "8EkOU5ggYJ1IjQAb": {
+        "img": "icons/weapons/polearms/spear-hooked-rounded.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "8EkOU5ggYJ1IjQAb",
+        "damaging": true,
+        "range": "2m",
+        "damage": {
+          "dmgBase": 13,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "hasta",
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee",
+        "usesAmmo": false
+      },
+      "yKK6UwU3huIbQwar": {
+        "img": "icons/skills/ranged/cannon-barrel-firing-white-yellow.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "yKK6UwU3huIbQwar",
+        "damaging": true,
+        "range": "5/10m",
+        "damage": {
+          "dmgBase": 19,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "subtype": "projectile",
+        "skill": "hasta",
+        "keywords": {},
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": ""
+      },
+      "v2x5ZPd4x02ItHkG": {
+        "img": "icons/skills/melee/strike-polearm-light-orange.webp",
+        "name": "Queima roupa",
+        "type": "use",
+        "_id": "v2x5ZPd4x02ItHkG",
+        "effect": "o golpe da Lançarma tem Dano+9",
+        "usage": "no ataque CaC",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "range": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {
+          "technique": null
+        }
+      }
+    },
+    "cost": {
+      "price": 26,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "stackMax": 1
+    },
+    "keywords": {
+      "twoHanded": "",
+      "handling": "-1",
+      "penalty": ""
+    },
+    "description": {
+      "description": "<p>Alcance: 2m</p><p>Dano: 13+FIS|DES</p><p>Obs: 2 mãos. Não pode ser aprimorada. Efeito #.</p><p>Espaço: 2</p><p>Preço: 26p</p><p>Req: FIS3</p><p>Ofício: Arm N7</p><p>Mts: 12</p><p><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito #Lançarma:</span> pode disparar a arma de fogo embutida usando a perícia <em>Hasta-2</em> ou <em>Balística</em> com ataque: Projétil, Dano 19+DES/2, alcance 5/10m, CT 1, Recarga (2) Cartucho. Adicionalmente é possível como uma técnica disparar durante um ataque CaC para ter Dano+10.</p>",
+      "notes": "",
+      "summary": ""
+    },
+    "hasAmmo": true,
+    "ammo": {
+      "type": "cartridge",
+      "loaded": 0,
+      "capacity": 1,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "Duwarfd9Z0Sr6U02",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1769994754845,
+    "modifiedTime": 1769994754845,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "ldIFp81CtkeRlflK",
+  "sort": 0,
+  "_key": "!items!ldIFp81CtkeRlflK"
+}
