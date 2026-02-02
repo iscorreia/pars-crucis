@@ -1,6 +1,21 @@
 <li class="inline-action inline-ammo">
-  {{log this}}
   <span class="inline-label">{{localize "PC.ammo.label"}}:</span>
+  {{#if (gt this.system.ammo.capacity 0)}}
+    <span class="inline-value">
+      {{log this}}
+      {{log "ammoId" this.system.ammo._ammoId}}
+      <input
+        class="loaded-input"
+        type="number"
+        value="{{this.system.ammo.loaded}}"
+        data-dtype="Number"
+        min="0"
+        data-field="system.ammo.loaded"
+        data-item-id="{{this.system.parent._id}}"
+      />
+      /{{this.system.ammo.capacity}}
+    </span>
+  {{/if}}
   <button
     type="button"
     class="pick-ammo inline-button"
@@ -26,12 +41,6 @@
       {{#each this.selectedAmmo.system.keywords}}
         {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
       {{/each}}
-    </span>
-  {{/if}}
-  {{#if (gt this.system.ammo.capacity 0)}}
-    <span class="inline-label">{{localize "PC.capacity"}}</span>
-    <span class="inline-value">
-      {{this.system.ammo.loaded}}/{{this.system.ammo.capacity}}
     </span>
   {{/if}}
   {{#if this.selectedAmmo.effect}}

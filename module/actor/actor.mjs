@@ -168,7 +168,18 @@ export class PCActor extends foundry.documents.Actor {
     if (!item) return;
     const action = item.system.actions[acId];
     if (!action) return;
-    const { difficulty, skill, subtype, type } = action;
+    const { difficulty, skill, subtype, type, usesAmmo } = action;
+    const { hasAmmo, ammo } = item.system;
+    if (usesAmmo && hasAmmo && ammo._ammoId) {
+      const ammunition = this.items.get(ammo._ammoId);
+      const details = ammunition.system.details;
+      const { stack } = details;
+      if ((ammo.loaded === 0 && ammo.capacity > 0) || stack === 0) return;
+      const itemLoad = ammo.loaded > 0 ? (ammo.loaded -= 1) : 0;
+      const ammoStack = stack > 0 ? (details.stack -= 1) : 0;
+      await item.update({ ["system.ammo.loaded"]: itemLoad });
+      await ammunition.update({ ["system.details.stack"]: ammoStack });
+    }
     const { category, modGroup, level, mod } = this.system.skills[skill];
     const keywords = keywordResolver(item.system.keywords, action.keywords);
     const catMod = this.system.categoryModifiers[category];

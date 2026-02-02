@@ -54,6 +54,7 @@
 
 - Compendium banner img src path is empty
 - _mitigation_.adjust can be deleted in the persona config, resulting in `NaN`
+- if Item action `usesAmmo = true` but no ammo is selected you can roll the Attack action still
 
 ### PONDER ABOUT
 
