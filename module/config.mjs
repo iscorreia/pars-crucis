@@ -751,6 +751,7 @@ PC.keyword = {
     reload: { label: "PC.keyword.reload" },
     rateOfFire: { label: "PC.keyword.rateOfFire" },
     stationary: { label: "PC.keyword.stationary" },
+    recoil: { label: "PC.keyword.recoil" },
     kick: { label: "PC.keyword.kick" },
     quickload: { label: "PC.keyword.quickload" },
     fragile: { label: "PC.keyword.fragile" },

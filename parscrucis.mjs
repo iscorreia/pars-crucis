@@ -39,6 +39,7 @@ async function preloadHandlebarsTemplates() {
     "systems/pars-crucis/templates/actor/pdm/challenge.hbs",
     "systems/pars-crucis/templates/item/partials/name-cost.hbs",
     "systems/pars-crucis/templates/partials/pc-keyword.hbs",
+    "systems/pars-crucis/templates/partials/pc-sec-keyword.hbs",
   ];
 
   return foundry.applications.handlebars.loadTemplates(templatePaths);

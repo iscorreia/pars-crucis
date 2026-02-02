@@ -98,6 +98,8 @@
     }
     .item-sheet-keywords {
       display: flex;
+      margin-top: 2px;
+      gap: 2px;
     }
   }
   .item-info {

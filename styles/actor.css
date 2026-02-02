@@ -1166,8 +1166,6 @@ h4.movement {
       .overloaded {
         color: var(--pc-color-negative);
       }
-      .slot-separator {
-      }
       .slots {
         font-size: 14px;
         margin-top: 5px;

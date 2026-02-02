@@ -8,11 +8,9 @@ import { PC } from "../module/config.mjs";
  */
 
 export default async function (bar, data, slot) {
-  console.log("data:", data);
   const { action, acId, uuid, itemId } = data;
   const document = await fromUuid(uuid);
   if (!document) return;
-  console.log(document);
   const { documentName, name, img } = document;
   let macro;
 
