@@ -164,7 +164,7 @@
             {{> systems/pars-crucis/templates/actor/partials/ammo.hbs itemId=this._id}}
           {{/if}}
           {{#each weapon.system.actions}}
-            {{> systems/pars-crucis/templates/actor/partials/action.hbs itemId=../this._id}}
+            {{> systems/pars-crucis/templates/actor/partials/inline-action.hbs itemId=../this._id}}
           {{/each}}
         </ol>
       {{/if}}
