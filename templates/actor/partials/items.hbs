@@ -24,76 +24,8 @@
         </div>
 
         <div class="persona-actions">
-          {{#each system.actions as |action key|}}
-            {{#if (eq action.type "attack")}}
-              <a 
-                class="persona-action ac-attack draggable"
-                data-action="rollAttack"
-                data-item-id="{{../this._id}}"
-                data-ac-id="{{action._id}}"
-              >
-                <img
-                  class="action-image"
-                  src="{{action.img}}"
-                  width="16"
-                  height="16"
-                  draggable="false"
-                />
-                {{#if action.name}}
-                  <div class="action-name">{{action.name}}</div>
-                {{else}}
-                  <div class="action-name">{{localize
-                      "PC.action.types.attack.label"
-                    }}</div>
-                {{/if}}
-              </a>
-            {{/if}}
-            {{#if (eq action.type "test")}}
-              <a
-                class="persona-action ac-test draggable"
-                data-action="rollTest"
-                data-item-id="{{../this._id}}"
-                data-ac-id="{{action._id}}"
-              >
-                <img
-                  class="action-image"
-                  src="{{action.img}}"
-                  width="16"
-                  height="16"
-                  draggable="false"
-                />
-                {{#if action.name}}
-                  <div class="action-name">{{action.name}}</div>
-                {{else}}
-                  <div class="action-name">{{localize
-                      "PC.action.types.test.label"
-                    }}</div>
-                {{/if}}
-              </a>
-            {{/if}}
-            {{#if (eq action.type "use")}}
-              <a
-                class="persona-action ac-use draggable"
-                data-action="useGear"
-                data-item-id="{{../this._id}}"
-                data-ac-id="{{action._id}}"
-              >
-                <img
-                  class="action-image"
-                  src="{{action.img}}"
-                  width="16"
-                  height="16"
-                  draggable="false"
-                />
-                {{#if action.name}}
-                  <div class="action-name">{{action.name}}</div>
-                {{else}}
-                  <div class="action-name">{{localize
-                      "PC.action.types.use.label"
-                    }}</div>
-                {{/if}}
-              </a>
-            {{/if}}
+          {{#each system.actions}}
+            {{> systems/pars-crucis/templates/actor/partials/inline-action.hbs action=this itemId=gear._id dataAction=this.type}}
           {{/each}}
         </div>
 
@@ -160,7 +92,7 @@
       {{#if this.flags.pars-crucis.expanded}}
         <ol class="gear-actions">
           {{#each this.system.actions}}
-            {{> systems/pars-crucis/templates/actor/partials/inline-action.hbs itemId=../this._id}}
+            {{> systems/pars-crucis/templates/actor/partials/list-action.hbs itemId=../this._id}}
           {{/each}}
         </ol>
       {{/if}}

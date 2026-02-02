@@ -485,7 +485,7 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
     // Calculates equipped gear and abilities actions damage
     if (actions) {
       for (let [_, action] of Object.entries(actions)) {
-        action.ready = false;
+        action.ready = true;
         if (action.damaging && action.type !== "tech") {
           const dmg = action.damage ?? {};
           const attValues = [];

@@ -891,14 +891,14 @@ h4.movement {
     align-items: center;
     font-family: "Cambria";
     font-size: var(--pc-font-size-mid);
-    background-color: var(--color-dark-3);
-    border-color: var(--color-dark-6);
     color: var(--color-light-2);
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
     padding: 1px 2px 1px 1px;
     margin-right: 3px;
+    background-color: var(--pc-color-damage-bg);
+    border-color: var(--pc-color-damage-border);
     i {
       flex-shrink: 0;
       display: inline-flex;
@@ -934,10 +934,6 @@ h4.movement {
   .persona-action:hover:not(.disabled-action) {
     filter: brightness(1.2) saturate(1.1);
   }
-  .ac-attack {
-    background-color: var(--pc-color-damage-bg);
-    border-color: var(--pc-color-damage-border);
-  }
   .ac-test {
     background-color: var(--pc-color-essence-bg);
     border-color: var(--pc-color-essence-border);
@@ -968,7 +964,7 @@ h4.movement {
     height: 16px;
   }
 }
-.inline-action {
+.list-action {
   width: calc(100% - 12px);
   font-size: 13.5px;
   min-height: 20px;
@@ -1047,11 +1043,11 @@ h4.movement {
     }
   }
 }
-.inline-action:last-child {
+.list-action:last-child {
   border-width: 0;
   padding-bottom: 0;
 }
-.inline-ammo {
+.list-ammo {
   .loaded-input {
     color: var(--color-light-1);
     display: inline-block;
