@@ -28,7 +28,7 @@
             {{/each}}
             {{#each item.system.actions}}
               {{#each this.keywords}}
-                {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
+                {{> systems/pars-crucis/templates/partials/pc-sec-keyword.hbs}}
               {{/each}}
             {{/each}}
           </div>
@@ -36,7 +36,7 @@
 
         <ol class="gear-actions">
           {{#each actions}}
-            <li class="inline-action">
+            <li class="list-action">
               <span
                 class="inline-head"
                 data-action="selectAction"

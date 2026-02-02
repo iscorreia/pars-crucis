@@ -127,7 +127,7 @@
         <h5>{{localize "PC.stack"}}</h5>
         <input
           name="system.details.stackMax"
-          type="Number"
+          type="number"
           value="{{system.details.stackMax}}"
           data-dtype="Number"
         />
@@ -135,6 +135,37 @@
         <h5>{{localize "PC.stack"}}</h5>
         <div class="not-available">{{system.details.stackMax}}</div>
       {{/if}}
+    </div>
+  </div>
+
+  <div class="item-info-config">
+    <div class="item-info-block">
+      <h5>{{localize "PC.damage"}}</h5>
+      <input
+        name="system.damage.dmgBase"
+        type="text"
+        value="{{numberFormat system.damage.dmgBase sign=true}}"
+        data-dtype="Number"
+      />
+    </div>
+    <div class="item-info-block">
+      <h5>{{localize "PC.type"}}</h5>
+      <select name="system.damage.dmgType">
+        {{selectOptions
+          config.dmgType
+          selected=system.damage.dmgType
+          localize=true
+        }}
+      </select>
+    </div>
+    <div class="item-info-block">
+      <h5>{{localize "PC.subtype"}}</h5>
+      <input
+        name="system.damage.dmgSubtype"
+        type="text"
+        value="{{system.damage.dmgSubtype}}"
+        data-dtype="String"
+      />
     </div>
   </div>
 

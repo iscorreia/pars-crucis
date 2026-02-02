@@ -38,6 +38,7 @@ export class ActionModel extends DataModel {
       }),
       damaging: new BooleanField({ initial: false }),
       damage: damage(),
+      usesAmmo: new BooleanField({ initial: false }),
       effect: new StringField({ initial: "" }),
       range: new StringField({ initial: "" }),
       effort: new StringField({ initial: "" }),
@@ -62,7 +63,6 @@ export class AttackActionModel extends ActionModel {
         initial: "melee",
         choices: () => Object.keys(PC.action.types.attack.subtypes),
       }),
-      usesAmmo: new BooleanField({ initial: false }),
     };
   }
 }
@@ -117,6 +117,7 @@ export class AmmoModel extends TypeDataModel {
       info: information({ subtype: "ammo", group: "arrow" }),
       details: details({ stackable: true, stack: 20 }),
       damage: damage(),
+      effect: new StringField({ initial: "" }),
       cost: itemCost(),
       keywords: keywords(),
       description: description(),
@@ -195,7 +196,7 @@ export class WeaponModel extends TypeDataModel {
       keywords: keywords(),
       description: description(),
       hasAmmo: new BooleanField({ initial: false }),
-      ammo: new SchemaField({
+      ammoInfo: new SchemaField({
         type: new StringField({ initial: "arrow" }),
         loaded: new NumberField({
           initial: 0,

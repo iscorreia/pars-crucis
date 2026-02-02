@@ -25,14 +25,12 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
       clickDelete: this._deleteItemOnClick,
       clickEdit: this._editItemOnClick,
       clickEquip: this._equipItemOnClick,
-      rollAttack: this._rollTestOnClick,
       rollAttribute: this._rollAttributeOnClick,
-      rollAbilityAttack: this._rollTestOnClick,
-      rollTech: this._rollTechOnClick,
-      rollTest: this._rollTestOnClick,
+      attack: this._rollTestOnClick,
+      tech: this._rollTechOnClick,
+      test: this._rollTestOnClick,
       rollSkill: this._rollSkillOnClick,
-      useAbility: this._useOnClick,
-      useGear: this._useOnClick,
+      use: this._useOnClick,
       sortAbilities: this._changeSortMode,
       switchLuck: this._switchLuckOnClick,
       toggleExpand: this._toggleAbilityExpand,
@@ -266,7 +264,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     const { itemId } = target.dataset;
     const { actor } = this;
     const item = actor.items.get(itemId);
-    const { type } = item.system.ammo;
+    const { type } = item.system.ammoInfo;
     const ammoChoices = [];
     actor.system.ammo.forEach((ammunition) => {
       if ([type, "omni"].includes(ammunition.system.info.group))

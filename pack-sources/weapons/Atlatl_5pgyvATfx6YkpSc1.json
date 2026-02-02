@@ -19,9 +19,7 @@
         "range": "12/40m",
         "damage": {
           "dmgBase": 7,
-          "dmgAttributes": [
-            "des"
-          ],
+          "dmgAttributes": ["des"],
           "dmgAttMultiplier": 1,
           "dmgAddition": "",
           "scalable": true,
@@ -57,7 +55,7 @@
       "notes": ""
     },
     "hasAmmo": false,
-    "ammo": {
+    "ammoInfo": {
       "type": "arrow",
       "loaded": null,
       "capacity": null,
@@ -65,7 +63,7 @@
     }
   },
   "effects": [],
-  "folder": "Duwarfd9Z0Sr6U02",
+  "folder": "M1fJrwASX2YnfsnR",
   "ownership": {
     "default": 0,
     "BWDFQ9zEwkAXpvLu": 3
@@ -79,10 +77,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769951224925,
-    "modifiedTime": 1769954171989,
+    "modifiedTime": 1770035355471,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "5pgyvATfx6YkpSc1",
-  "sort": 200000,
+  "sort": 100000,
   "_key": "!items!5pgyvATfx6YkpSc1"
 }

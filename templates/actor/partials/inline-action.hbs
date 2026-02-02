@@ -1,0 +1,34 @@
+{{! INLINE ACTION PARTIAL }}
+
+{{#if action.ready}}
+  <a
+    class="persona-action 
+      {{#if (eq action.type "test")}}ac-test{{/if}}
+      {{#if (eq action.type "use")}}ac-use{{/if}}
+      draggable"
+    data-action="{{dataAction}}"
+    data-item-id="{{itemId}}"
+    data-ac-id="{{action._id}}"
+  >
+    <img
+      class="action-image"
+      src="{{action.img}}"
+      width="16"
+      height="16"
+      draggable="false"
+    />
+    {{#if action.name}}
+      <div class="action-name">{{action.name}}</div>
+    {{/if}}
+  </a>
+{{else}}
+  <div class="persona-action
+    {{#if (eq action.type "test")}}ac-test{{/if}}
+    {{#if (eq action.type "use")}}ac-use{{/if}}
+    disabled-action">
+    <img class="action-image" src="{{action.img}}" width="16" height="16" />
+    {{#if action.name}}
+      <div class="action-name">{{action.name}}</div>
+    {{/if}}
+  </div>
+{{/if}}

@@ -90,7 +90,7 @@
       "summary": ""
     },
     "hasAmmo": false,
-    "ammo": {
+    "ammoInfo": {
       "type": "arrow",
       "loaded": null,
       "capacity": null,

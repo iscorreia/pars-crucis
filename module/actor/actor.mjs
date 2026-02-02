@@ -102,6 +102,17 @@ export class PCActor extends foundry.documents.Actor {
     const techKeywords = keywordResolver(item.system.keywords, action.keywords);
     const { selectedAction, selectedItem } = action;
     if (!selectedAction || !selectedItem) return;
+    const { usesAmmo } = selectedAction;
+    const { hasAmmo, ammoInfo } = selectedItem.system;
+    if (usesAmmo && hasAmmo && ammoInfo._ammoId) {
+      const ammunition = this.items.get(ammoInfo._ammoId);
+      if (
+        (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
+        ammunition.stack === 0
+      )
+        return true;
+      consumeAmmo(ammoInfo, ammunition, item);
+    }
     const srcKeywords = keywordResolver(
       selectedItem.system.keywords,
       selectedAction.keywords,
@@ -169,16 +180,15 @@ export class PCActor extends foundry.documents.Actor {
     const action = item.system.actions[acId];
     if (!action) return;
     const { difficulty, skill, subtype, type, usesAmmo } = action;
-    const { hasAmmo, ammo } = item.system;
-    if (usesAmmo && hasAmmo && ammo._ammoId) {
-      const ammunition = this.items.get(ammo._ammoId);
-      const details = ammunition.system.details;
-      const { stack } = details;
-      if ((ammo.loaded === 0 && ammo.capacity > 0) || stack === 0) return;
-      const itemLoad = ammo.loaded > 0 ? (ammo.loaded -= 1) : 0;
-      const ammoStack = stack > 0 ? (details.stack -= 1) : 0;
-      await item.update({ ["system.ammo.loaded"]: itemLoad });
-      await ammunition.update({ ["system.details.stack"]: ammoStack });
+    const { hasAmmo, ammoInfo } = item.system;
+    if (usesAmmo && hasAmmo && ammoInfo._ammoId) {
+      const ammunition = this.items.get(ammoInfo._ammoId);
+      if (
+        (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
+        ammunition.system.details.stack === 0
+      )
+        return true;
+      consumeAmmo(ammoInfo, ammunition, item);
     }
     const { category, modGroup, level, mod } = this.system.skills[skill];
     const keywords = keywordResolver(item.system.keywords, action.keywords);
@@ -234,6 +244,17 @@ export class PCActor extends foundry.documents.Actor {
     if (!item) return;
     const action = item.system.actions[acId];
     if (!action) return;
+    const { usesAmmo } = action;
+    const { hasAmmo, ammoInfo } = item.system;
+    if (usesAmmo && hasAmmo && ammoInfo._ammoId) {
+      const ammunition = this.items.get(ammoInfo._ammoId);
+      if (
+        (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
+        ammunition.system.details.stack === 0
+      )
+        return true;
+      consumeAmmo(ammoInfo, ammunition, item);
+    }
     const img = action.img || item.img;
     const keywords = keywordResolver(item.system.keywords, action.keywords);
     // Information passed to the html context
@@ -286,4 +307,12 @@ function craftFlavor({ skill, acType, difficulty, acSubtype }) {
     return flavor;
   }
   return flavor;
+}
+
+async function consumeAmmo(ammoInfo, ammunition, item) {
+  const details = ammunition.system.details;
+  const itemLoad = ammoInfo.loaded > 0 ? (ammoInfo.loaded -= 1) : 0;
+  const ammoStack = details.stack > 0 ? (details.stack -= 1) : 0;
+  await item.update({ ["system.ammoInfo.loaded"]: itemLoad });
+  await ammunition.update({ ["system.details.stack"]: ammoStack });
 }

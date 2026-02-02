@@ -57,103 +57,14 @@
                   {{/each}}
                   {{#each ability.system.actions}}
                     {{#each this.keywords}}
-                      {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
+                      {{> systems/pars-crucis/templates/partials/pc-sec-keyword.hbs}}
                     {{/each}}
                   {{/each}}
                 </div>
 
                 <div class="persona-actions">
-                  {{#each ability.system.actions as |action key|}}
-                    {{#if (eq action.type "attack")}}
-                      <a
-                        class="persona-action ac-attack draggable"
-                        data-action="rollAbilityAttack"
-                        data-item-id="{{ability._id}}"
-                        data-ac-id="{{action._id}}"
-                      >
-                        <img
-                          class="action-image"
-                          src="{{action.img}}"
-                          width="16"
-                          height="16"
-                          draggable="false"
-                        />
-                        {{#if action.name}}
-                          <div class="action-name">{{action.name}}</div>
-                        {{/if}}
-                      </a>
-                    {{/if}}
-                    {{#if (eq action.type "tech")}}
-                      {{#if action.ready}}
-                        <a
-                          class="persona-action ac-attack draggable"
-                          data-action="rollTech"
-                          data-item-id="{{ability._id}}"
-                          data-ac-id="{{action._id}}"
-                        >
-                          <img
-                            class="action-image"
-                            src="{{action.img}}"
-                            width="16"
-                            height="16"
-                            draggable="false"
-                          />
-                          {{#if action.name}}
-                            <div class="action-name">{{action.name}}</div>
-                          {{/if}}
-                        </a>
-                      {{else}}
-                        <div class="persona-action ac-attack disabled-action">
-                          <img
-                            class="action-image"
-                            src="{{action.img}}"
-                            width="16"
-                            height="16"
-                          />
-                          {{#if action.name}}
-                            <div class="action-name">{{action.name}}</div>
-                          {{/if}}
-                        </div>
-                      {{/if}}
-                    {{/if}}
-                    {{#if (eq action.type "test")}}
-                      <a
-                        class="persona-action ac-test draggable"
-                        data-action="rollTest"
-                        data-item-id="{{ability._id}}"
-                        data-ac-id="{{action._id}}"
-                      >
-                        <img
-                          class="action-image"
-                          src="{{action.img}}"
-                          width="16"
-                          height="16"
-                          draggable="false"
-                        />
-                        {{#if action.name}}
-                          <div class="action-name">{{action.name}}</div>
-                        {{/if}}
-                      </a>
-                    {{/if}}
-                    {{#if (eq action.type "use")}}
-                      <a
-                        class="persona-action ac-use draggable"
-                        data-action="useAbility"
-                        data-item-id="{{ability._id}}"
-                        data-ac-id="{{action._id}}"
-                      >
-                        <img
-                          class="action-image"
-                          src="{{action.img}}"
-                          width="16"
-                          height="16"
-                          draggable="false"
-                        />
-                        {{#if action.name}}
-                          <div class="action-name">{{action.name}}</div>
-                        {{/if}}
-                      </a>
-                    {{/if}}
+                  {{#each ability.system.actions}}
+                    {{> systems/pars-crucis/templates/actor/partials/inline-action.hbs action=this itemId=ability._id dataAction=this.type}}
                   {{/each}}
                 </div>
 
@@ -197,9 +108,9 @@
                 <ol class="ability-actions">
                   {{#each ability.system.actions}}
                     {{#if (eq this.type "tech")}}
-                      {{> systems/pars-crucis/templates/actor/partials/tech-action.hbs itemId=../this._id}}
+                      {{> systems/pars-crucis/templates/actor/partials/list-tech-action.hbs itemId=../this._id}}
                     {{else}}
-                      {{> systems/pars-crucis/templates/actor/partials/action.hbs itemId=../this._id}}
+                      {{> systems/pars-crucis/templates/actor/partials/list-action.hbs itemId=../this._id}}
                     {{/if}}
                   {{/each}}
                 </ol>

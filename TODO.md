@@ -1,6 +1,7 @@
 # DOING
 
-- Weapon/Gear/Abilities ammunition **_logic hbs css qol_**
+- Need to add effect to Ammo's
+- Make ammo damage logic apply to weapons and weapon techniques
 
 # HIGH PRIORITY
 
@@ -55,6 +56,7 @@
 - Compendium banner img src path is empty
 - _mitigation_.adjust can be deleted in the persona config, resulting in `NaN`
 - if Item action `usesAmmo = true` but no ammo is selected you can roll the Attack action still
+- Ammo weapons need a default damage type option that inherits / uses the damage type provided by the ammo. THe intended behavior is that if not set to inherit, then the weapon overhauls the damage type by for it's own damage property.
 
 ### PONDER ABOUT
 

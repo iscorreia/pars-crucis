@@ -19,10 +19,7 @@
         "range": "1m",
         "damage": {
           "dmgBase": 7,
-          "dmgAttributes": [
-            "fis",
-            "des"
-          ],
+          "dmgAttributes": ["fis", "des"],
           "dmgAttMultiplier": 1,
           "dmgAddition": "",
           "scalable": true,
@@ -61,7 +58,7 @@
       "summary": ""
     },
     "hasAmmo": false,
-    "ammo": {
+    "ammoInfo": {
       "type": "arrow",
       "loaded": null,
       "capacity": null,
