@@ -266,7 +266,7 @@ export class ParsCrucisActorSheet extends api.HandlebarsApplicationMixin(
     const { itemId } = target.dataset;
     const { actor } = this;
     const item = actor.items.get(itemId);
-    const { type } = item.system.ammo;
+    const { type } = item.system.ammoInfo;
     const ammoChoices = [];
     actor.system.ammo.forEach((ammunition) => {
       if ([type, "omni"].includes(ammunition.system.info.group))

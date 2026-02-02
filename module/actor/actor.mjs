@@ -102,6 +102,11 @@ export class PCActor extends foundry.documents.Actor {
     const techKeywords = keywordResolver(item.system.keywords, action.keywords);
     const { selectedAction, selectedItem } = action;
     if (!selectedAction || !selectedItem) return;
+    const { usesAmmo } = selectedAction;
+    const { hasAmmo, ammoInfo } = selectedItem.system;
+    const ammunition = this.items.get(ammoInfo._ammoId);
+    if (usesAmmo && hasAmmo && ammoInfo._ammoId)
+      ifUsesAmmo(ammoInfo, ammunition, item);
     const srcKeywords = keywordResolver(
       selectedItem.system.keywords,
       selectedAction.keywords,
@@ -169,17 +174,10 @@ export class PCActor extends foundry.documents.Actor {
     const action = item.system.actions[acId];
     if (!action) return;
     const { difficulty, skill, subtype, type, usesAmmo } = action;
-    const { hasAmmo, ammo } = item.system;
-    if (usesAmmo && hasAmmo && ammo._ammoId) {
-      const ammunition = this.items.get(ammo._ammoId);
-      const details = ammunition.system.details;
-      const { stack } = details;
-      if ((ammo.loaded === 0 && ammo.capacity > 0) || stack === 0) return;
-      const itemLoad = ammo.loaded > 0 ? (ammo.loaded -= 1) : 0;
-      const ammoStack = stack > 0 ? (details.stack -= 1) : 0;
-      await item.update({ ["system.ammo.loaded"]: itemLoad });
-      await ammunition.update({ ["system.details.stack"]: ammoStack });
-    }
+    const { hasAmmo, ammoInfo } = item.system;
+    const ammunition = this.items.get(ammoInfo._ammoId);
+    if (usesAmmo && hasAmmo && ammoInfo._ammoId)
+      ifUsesAmmo(ammoInfo, ammunition, item);
     const { category, modGroup, level, mod } = this.system.skills[skill];
     const keywords = keywordResolver(item.system.keywords, action.keywords);
     const catMod = this.system.categoryModifiers[category];
@@ -286,4 +284,17 @@ function craftFlavor({ skill, acType, difficulty, acSubtype }) {
     return flavor;
   }
   return flavor;
+}
+
+async function ifUsesAmmo(ammoInfo, ammunition, item) {
+  console.log("ammoInfo", ammoInfo);
+  console.log("item", item);
+  console.log("ammunition", ammunition);
+  const details = ammunition.system.details;
+  const { stack } = details;
+  if ((ammoInfo.loaded === 0 && ammoInfo.capacity > 0) || stack === 0) return;
+  const itemLoad = ammoInfo.loaded > 0 ? (ammoInfo.loaded -= 1) : 0;
+  const ammoStack = stack > 0 ? (details.stack -= 1) : 0;
+  await item.update({ ["system.ammo.loaded"]: itemLoad });
+  await ammunition.update({ ["system.details.stack"]: ammoStack });
 }

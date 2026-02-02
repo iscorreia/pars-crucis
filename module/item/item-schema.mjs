@@ -195,7 +195,7 @@ export class WeaponModel extends TypeDataModel {
       keywords: keywords(),
       description: description(),
       hasAmmo: new BooleanField({ initial: false }),
-      ammo: new SchemaField({
+      ammoInfo: new SchemaField({
         type: new StringField({ initial: "arrow" }),
         loaded: new NumberField({
           initial: 0,

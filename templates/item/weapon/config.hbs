@@ -143,10 +143,10 @@
     {{#if system.hasAmmo}}
       <div class="item-info-block">
         <h5>{{localize "PC.ammoType"}}</h5>
-        <select name="system.ammo.type">
+        <select name="system.ammoInfo.type">
           {{selectOptions
             config.ammo.group
-            selected=system.ammo.type
+            selected=system.ammoInfo.type
             localize=true
           }}
         </select>
@@ -154,9 +154,9 @@
       <div class="item-info-block">
         <h5>{{localize "PC.capacity"}}</h5>
         <input
-          name="system.ammo.capacity"
+          name="system.ammoInfo.capacity"
           type="Number"
-          value="{{system.ammo.capacity}}"
+          value="{{system.ammoInfo.capacity}}"
           data-dtype="Number"
         />
       </div>

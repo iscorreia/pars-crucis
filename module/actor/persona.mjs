@@ -478,10 +478,10 @@ export function calculateStatic(att) {
 
 export function handleGearAbilities(itemGroup, attributesData, items) {
   for (let [_, gear] of Object.entries(itemGroup)) {
-    const { actions, hasAmmo, ammo } = gear.system;
+    const { actions, hasAmmo, ammoInfo } = gear.system;
     // If uses ammo, gets data for selected ammo
-    if (hasAmmo && ammo?._ammoId) {
-      gear.selectedAmmo = items.get(ammo._ammoId);
+    if (hasAmmo && ammoInfo?._ammoId) {
+      gear.selectedAmmo = items.get(ammoInfo._ammoId);
     }
     // Calculates equipped gear and abilities actions damage
     if (actions) {

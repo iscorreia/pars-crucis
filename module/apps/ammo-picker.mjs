@@ -49,7 +49,7 @@ export default class AmmoPicker extends api.HandlebarsApplicationMixin(
     const { options } = this;
     const { document, itemId } = options;
     const item = document.items.get(itemId);
-    await item.update({ [`system.ammo._ammoId`]: target.dataset.ammoId });
+    await item.update({ [`system.ammoInfo._ammoId`]: target.dataset.ammoId });
     this.close();
   }
 }
