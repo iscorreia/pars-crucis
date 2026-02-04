@@ -425,12 +425,15 @@
         "pebble": "Calhau",
         "arrow": "Flecha",
         "bolt": "Virote",
+        "dart": "Dardo",
         "gasoil": "Gasóleo",
         "harpoon": "Arpão",
+        "heavyArrow": "Flecha pesada",
         "lead": "Chumbo e pólvora",
         "cartridge": "Cartucho",
         "bullet": "Bala",
         "cannonball": "Pelouro",
+        "dynamo": "Dínamo",
         "exotic": "Exótico",
         "omni": "Universal"
       }

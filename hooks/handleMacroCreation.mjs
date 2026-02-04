@@ -34,9 +34,7 @@ export default async function (bar, data, slot) {
     }
   }
 
-  if (
-    ["rollAttack", "rollAbilityAttack", "rollTech", "rollTest"].includes(action)
-  ) {
+  if (["attack", "tech", "test"].includes(action)) {
     const item = await fromUuid(uuid);
     if (!item) return;
     const actor = item?.parent;
@@ -46,7 +44,7 @@ export default async function (bar, data, slot) {
     const name = `${actor.name}: ${item.name} — ${itemAction.name}`;
     const img = itemAction.img || item.img;
     let command =
-      action !== "rollTech"
+      action !== "tech"
         ? `const item = await fromUuid("${uuid}");
           if (!item) return;
           const actor = game.actors.get(item.parent?.id);
@@ -70,7 +68,7 @@ export default async function (bar, data, slot) {
     }
   }
 
-  if (["useAbility", "useGear"].includes(action)) {
+  if (["use"].includes(action)) {
     const item = await fromUuid(uuid);
     if (!item) return;
     const actor = item?.parent;

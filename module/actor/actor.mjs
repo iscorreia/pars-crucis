@@ -104,14 +104,20 @@ export class PCActor extends foundry.documents.Actor {
     if (!selectedAction || !selectedItem) return;
     const { usesAmmo } = selectedAction;
     const { hasAmmo, ammoInfo } = selectedItem.system;
-    if (usesAmmo && hasAmmo && ammoInfo._ammoId) {
-      const ammunition = this.items.get(ammoInfo._ammoId);
+    const ammunition = ammoInfo?._ammoId
+      ? this.items.get(ammoInfo._ammoId)
+      : null;
+    // If tech is executed with action that uses ammo
+    // And either of the following statements fail, return
+    // Else, consumes ammo an reduces loaded ammo (if loaded)
+    if (usesAmmo && !ammunition) return;
+    if (usesAmmo && hasAmmo && ammunition) {
       if (
         (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
-        ammunition.stack === 0
+        ammunition.system.details.stack === 0
       )
-        return true;
-      consumeAmmo(ammoInfo, ammunition, item);
+        return;
+      consumeAmmo(ammoInfo, ammunition, selectedItem);
     }
     const srcKeywords = keywordResolver(
       selectedItem.system.keywords,
@@ -144,6 +150,9 @@ export class PCActor extends foundry.documents.Actor {
     };
     // Additional information passed to the roll
     const info = {
+      ...(ammunition && {
+        withAmmo: { img: ammunition.img, name: ammunition.name },
+      }),
       withItem,
       subtype: action.techSubtype,
       damaging: action.damaging,
@@ -181,13 +190,22 @@ export class PCActor extends foundry.documents.Actor {
     if (!action) return;
     const { difficulty, skill, subtype, type, usesAmmo } = action;
     const { hasAmmo, ammoInfo } = item.system;
-    if (usesAmmo && hasAmmo && ammoInfo._ammoId) {
-      const ammunition = this.items.get(ammoInfo._ammoId);
+    // If action requires ammo but item doesn't accept ammo, return
+    if (usesAmmo && !hasAmmo) return;
+    const ammunition = ammoInfo?._ammoId
+      ? this.items.get(ammoInfo._ammoId)
+      : null;
+    // Has ammo but could not get the ammo data, return
+    if (hasAmmo && !ammunition) return;
+    // If tech is executed with action that uses ammo
+    // And either of the following statements fail, return
+    // Else, consumes ammo an reduces loaded ammo (if loaded)
+    if (usesAmmo) {
       if (
         (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
         ammunition.system.details.stack === 0
       )
-        return true;
+        return;
       consumeAmmo(ammoInfo, ammunition, item);
     }
     const { category, modGroup, level, mod } = this.system.skills[skill];
@@ -209,6 +227,9 @@ export class PCActor extends foundry.documents.Actor {
     });
     // Additional information passed to the roll
     const info = {
+      ...(ammunition && {
+        withAmmo: { img: ammunition.img, name: ammunition.name },
+      }),
       subtype: action.subtype,
       damaging: action.damaging,
       damage: action.damage?.dmgTxt,
@@ -252,7 +273,7 @@ export class PCActor extends foundry.documents.Actor {
         (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
         ammunition.system.details.stack === 0
       )
-        return true;
+        return;
       consumeAmmo(ammoInfo, ammunition, item);
     }
     const img = action.img || item.img;
