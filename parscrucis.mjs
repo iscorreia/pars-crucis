@@ -25,13 +25,13 @@ import AmmoSheet from "./module/item/ammo-sheet.mjs";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [
-    "systems/pars-crucis/templates/actor/partials/ammo.hbs",
     "systems/pars-crucis/templates/actor/partials/attributes.hbs",
     "systems/pars-crucis/templates/actor/partials/currency.hbs",
     "systems/pars-crucis/templates/actor/partials/experience.hbs",
     "systems/pars-crucis/templates/actor/partials/inline-action.hbs",
     "systems/pars-crucis/templates/actor/partials/items.hbs",
     "systems/pars-crucis/templates/actor/partials/list-action.hbs",
+    "systems/pars-crucis/templates/actor/partials/list-ammo.hbs",
     "systems/pars-crucis/templates/actor/partials/list-tech-action.hbs",
     "systems/pars-crucis/templates/actor/partials/minors.hbs",
     "systems/pars-crucis/templates/actor/partials/mitigation.hbs",

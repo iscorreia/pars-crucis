@@ -123,7 +123,10 @@ export class PCActor extends foundry.documents.Actor {
       selectedItem.system.keywords,
       selectedAction.keywords,
     );
-    const keywords = keywordResolver(techKeywords, srcKeywords);
+    let keywords = keywordResolver(techKeywords, srcKeywords);
+    if (ammunition) {
+      keywords = keywordResolver(keywords, ammunition.system.keywords);
+    }
     const catMod = this.system.categoryModifiers[category];
     const groupMod = modGroup ? this.system.groupModifiers[modGroup].mod : 0;
     const modifiers =
@@ -209,7 +212,10 @@ export class PCActor extends foundry.documents.Actor {
       consumeAmmo(ammoInfo, ammunition, item);
     }
     const { category, modGroup, level, mod } = this.system.skills[skill];
-    const keywords = keywordResolver(item.system.keywords, action.keywords);
+    let keywords = keywordResolver(item.system.keywords, action.keywords);
+    if (ammunition) {
+      keywords = keywordResolver(keywords, ammunition.system.keywords);
+    }
     const catMod = this.system.categoryModifiers[category];
     const groupMod = modGroup ? this.system.groupModifiers[modGroup].mod : 0;
     const modifiers =

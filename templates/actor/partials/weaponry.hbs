@@ -94,7 +94,7 @@
       {{#if weapon.flags.pars-crucis.expanded}}
         <ol class="gear-actions">
           {{#if this.system.hasAmmo}}
-            {{> systems/pars-crucis/templates/actor/partials/ammo.hbs itemId=this._id}}
+            {{> systems/pars-crucis/templates/actor/partials/list-ammo.hbs itemId=this._id}}
           {{/if}}
           {{#each weapon.system.actions}}
             {{> systems/pars-crucis/templates/actor/partials/list-action.hbs itemId=../this._id}}

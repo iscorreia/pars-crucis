@@ -18,10 +18,10 @@
   ],
   "esmodules": ["parscrucis.mjs"],
   "styles": [
+    "styles/config.css",
     "styles/actor.css",
     "styles/apps.css",
     "styles/chat.css",
-    "styles/config.css",
     "styles/items.css",
     "styles/styles.css"
   ],

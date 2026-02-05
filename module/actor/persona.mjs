@@ -515,9 +515,13 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
           }
           // Calculates action damage
           if (action.damaging) {
+            const ammoSet = item.selectedAmmo ? true : false;
+            const ammoDamage = ammoSet
+              ? (item.selectedAmmo?.system.damage ?? null)
+              : null;
             const damage = action.damage ?? {};
-            calcDmg(damage, attributesData);
-            craftDmgTxt(damage);
+            calcDmg(damage, attributesData, { ammoDmg: ammoDamage });
+            craftDmgTxt(damage, { ammoDmg: ammoDamage });
           }
         } else if (isTech) {
           // For techniques, get information about selected item and its action
@@ -551,8 +555,18 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
           if (action.damaging && actionSet) {
             const damage = action.damage ?? {};
             const srcDamage = selectedAction?.damage ?? {};
-            calcDmg(damage, attributesData, srcDamage);
-            craftDmgTxt(damage, srcDamage);
+            const ammoSet = selectedItem.selectedAmmo ? true : false;
+            const ammoDamage = ammoSet
+              ? (selectedItem.selectedAmmo?.system.damage ?? null)
+              : null;
+            calcDmg(damage, attributesData, {
+              srcDmg: srcDamage,
+              ammoDmg: ammoDamage,
+            });
+            craftDmgTxt(damage, {
+              srcDmg: srcDamage,
+              ammoDmg: ammoDamage,
+            });
           } else if (action.damaging) {
             action.damage.dmgTxt = `ø`;
           }
@@ -566,48 +580,64 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
  * Actor TypeDataModel function that calculates damageVal
  * Multiplies the highest damage attribute by the damage multiplier
  * Then increments that to the base damage provided
- * @param {Object} damageData
+ * @param {Object} mainDmg
  * @param {Object} attributesData
- * @param {Object|null} srcDamageData techniques which have a base source for their damage
+ * @param {Object|null} srcDmg   when there is another source for the damage
+ * @param {Object|null} ammoDmg  required for ammo based actions
  */
-function calcDmg(damageData, attributesData, srcDamageData) {
-  const dmgBase = damageData?.dmgBase ?? 0;
-  const dmgAttMultiplier = srcDamageData
-    ? (srcDamageData.dmgAttMultiplier ?? 1)
-    : (damageData?.dmgAttMultiplier ?? 1);
-  const attValues = [];
-  const joinedAtt = [
+function calcDmg(
+  mainDmg,
+  attributesData,
+  { srcDmg = null, ammoDmg = null } = {},
+) {
+  // Action base damage (additive from all sources)
+  const baseDmg =
+    (mainDmg?.dmgBase ?? 0) + (srcDmg?.dmgBase ?? 0) + (ammoDmg?.dmgBase ?? 0);
+  // Damage attributes
+  const dmgAttributes = [
     ...new Set([
-      ...(damageData?.dmgAttributes ?? []),
-      ...(srcDamageData?.dmgAttributes ?? []),
+      ...(mainDmg?.dmgAttributes ?? []),
+      ...(srcDmg?.dmgAttributes ?? []),
     ]),
   ];
-  for (const att of joinedAtt) {
-    const attValue = attributesData[att].derived + attributesData[att].mod;
-    attValues.push(attValue);
-  }
-  const highestAttDmg = attValues.length > 0 ? Math.max(...attValues) : 0;
-  const multipliedDmg =
-    highestAttDmg > 0 ? Math.ceil(highestAttDmg * dmgAttMultiplier) : 0;
-  damageData.dmgVal = dmgBase + multipliedDmg + (srcDamageData?.dmgBase ?? 0);
+  const attValues = dmgAttributes.map(
+    (att) => attributesData[att].derived + attributesData[att].mod,
+  );
+  const highestAtt = attValues.length > 0 ? Math.max(...attValues) : 0;
+  // Gets the attribute damage multiplier (substitutes)
+  const dmgAttMultiplier =
+    srcDmg?.dmgAttMultiplier ?? mainDmg?.dmgAttMultiplier ?? 1;
+  const attributeDmg = Math.ceil(highestAtt * dmgAttMultiplier);
+  // Final calculations
+  let dmgVal = baseDmg + attributeDmg;
+  if (ammoDmg?.dmgAttMultiplier)
+    dmgVal = Math.ceil(dmgVal * ammoDmg.dmgAttMultiplier);
+  mainDmg.dmgVal = dmgVal;
 }
 
 /**
  * Actor TypeDataModel function that craft the exhibited damage text
- * @param {Object} damageData
- * @param {Object|null} srcDamage techniques which have a base source for their damage
+ * @param {Object} mainDmg       main source for damage data
+ * @param {Object|null} srcDmg   techniques have another source for their damage
+ * @param {Object|null} ammoDmg  required for ammo based actions
  */
-function craftDmgTxt(damageData, srcDamageData) {
-  const { dmgVal, dmgAddition, dmgType, dmgSubtype, scalable } = damageData;
-  const srcDmgType = srcDamageData?.dmgType ?? "";
-  const srcDmgAdd = srcDamageData?.dmgAddition ?? "";
-  const resultingDmgType = dmgType === "inherit" ? srcDmgType : dmgType;
-  let dmgNumbers = `${dmgVal}${srcDmgAdd}${dmgAddition}`;
+function craftDmgTxt(mainDmg, { srcDmg, ammoDmg } = {}) {
+  const { dmgVal, dmgAddition, dmgType, scalable } = mainDmg;
+  let dmgTypeSrc = mainDmg;
+  if (dmgType === "inherit") dmgTypeSrc = srcDmg;
+  if (ammoDmg?.dmgType) {
+    if (ammoDmg.dmgType !== "none") dmgTypeSrc = ammoDmg;
+  }
+  const srcDmgAdd = srcDmg?.dmgAddition ?? "";
+  const ammoDmgAdd = ammoDmg?.dmgAddition ?? "";
+  const finalDmgType = dmgTypeSrc?.dmgType ?? "ERRO";
+  const finalDmgSubtype = dmgTypeSrc?.dmgSubtype ?? "";
+  let dmgNumbers = `${dmgVal}${srcDmgAdd}${ammoDmgAdd}${dmgAddition}`;
   if (!scalable) dmgNumbers = `[${dmgNumbers}]`;
-  const dmgTypeLabel = game.i18n.localize(`PC.dmgType.${resultingDmgType}.abv`);
+  const dmgTypeLabel = game.i18n.localize(`PC.dmgType.${finalDmgType}.abv`);
   let dmgTxt = `${dmgNumbers} ${dmgTypeLabel}`;
-  if (dmgSubtype) dmgTxt = `${dmgTxt}: ${dmgSubtype}`;
-  damageData.dmgTxt = dmgTxt;
+  if (finalDmgSubtype) dmgTxt = `${dmgTxt}: ${finalDmgSubtype}`;
+  mainDmg.dmgTxt = dmgTxt;
 }
 
 export function handleMitigation(wearData, mitigationData) {

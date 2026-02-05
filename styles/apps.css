@@ -221,4 +221,13 @@ section.pdm-config {
   .inline-item:last-child {
     border: transparent;
   }
+  .inline-label {
+    vertical-align: 1px;
+    margin-left: 8px;
+    font-family: "Amiri";
+    color: var(--color-light-3);
+  }
+  .inline-value {
+    vertical-align: 1px;
+  }
 }

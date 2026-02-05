@@ -796,6 +796,11 @@ PC.techDmgType = {
   ...PC.dmgType,
 };
 
+PC.noneDmgType = {
+  none: { label: "PC.dmgType.none.label" },
+  ...PC.dmgType,
+};
+
 PC.phySubtype = {
   crushing: { label: "PC.subtype.crushing" },
   cutting: { label: "PC.subtype.cutting" },

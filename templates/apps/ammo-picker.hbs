@@ -31,6 +31,24 @@
               {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
             {{/each}}
           </span>
+
+          {{#if this.system.damage}}
+            <span class="inline-label">{{localize "PC.damage"}}</span>
+            <span class="inline-value">
+              {{numberFormat this.system.damage.dmgBase sign=true}}
+            </span>
+            {{#unless (eq this.system.damage.dmgType "none")}}
+              <span class="inline-value">
+                {{localize (concat "PC.dmgType." this.system.damage.dmgType ".abv")}}
+              </span>
+            {{/unless}}
+          {{/if}}
+          {{#if this.system.effect}}
+            <span class="inline-label">{{localize "PC.effect"}}</span>
+            <span class="inline-value">{{this.system.effect}}</span>
+          {{/if}}
+          <span class="inline-label">{{localize "PC.stock"}}</span>
+          <span class="inline-value">{{this.system.details.stack}}</span>
         </span>
       </li>
     {{/each}}

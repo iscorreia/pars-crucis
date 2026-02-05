@@ -547,6 +547,7 @@
     "hasAmmo": "Tem munição",
     "usesAmmo": "Usa munição",
     "capacity": "Capacidade",
+    "stock": "Estoque",
     "config": "Configurações",
     "effect": "Efeito",
 
@@ -663,7 +664,8 @@
       "es": { "label": "Essencial", "abv": "Es" },
       "ex": { "label": "Existencial", "abv": "Ex" },
       "pain": { "label": "Dor", "abv": "Dor" },
-      "inherit": { "label": "Herdar" }
+      "inherit": { "label": "Herdar" },
+      "none": { "label": "Nenhum" }
     },
     "phySubtype": {
       "crushing": { "label": "Contundente" },
