@@ -230,4 +230,13 @@ section.pdm-config {
   .inline-value {
     vertical-align: 1px;
   }
+  .select-ammo:hover {
+    filter: brightness(1.2) saturate(1.1);
+  }
+  .out-of-stock {
+    filter: brightness(0.5) saturate(0.25);
+  }
+  .out-of-stock.select-ammo:hover {
+    filter: brightness(0.7) saturate(0.4);
+  }
 }

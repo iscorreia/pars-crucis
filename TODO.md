@@ -61,8 +61,9 @@
 - JAVELINS
 - SPEARS
 - ARCHERY (does not include siege)
+- BALISTICS (does not include siege)
+- AMMO (does not include battery, and ionic projectiles)
 
 ### PARTIAL PACKS
 
 - VESTS
-- AMMO (basic, pebbles)
