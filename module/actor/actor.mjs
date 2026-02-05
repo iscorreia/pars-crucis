@@ -338,8 +338,10 @@ function craftFlavor({ skill, acType, difficulty, acSubtype }) {
 
 async function consumeAmmo(ammoInfo, ammunition, item) {
   const details = ammunition.system.details;
-  const itemLoad = ammoInfo.loaded > 0 ? (ammoInfo.loaded -= 1) : 0;
-  const ammoStack = details.stack > 0 ? (details.stack -= 1) : 0;
-  await item.update({ ["system.ammoInfo.loaded"]: itemLoad });
-  await ammunition.update({ ["system.details.stack"]: ammoStack });
+  const itemLoad = ammoInfo.loaded > 0 ? ammoInfo.loaded - 1 : 0;
+  const ammoStack = details.stack > 0 ? details.stack - 1 : 0;
+  if (ammunition.system.info.group !== "dynamo") {
+    await item.update({ ["system.ammoInfo.loaded"]: itemLoad });
+    await ammunition.update({ ["system.details.stack"]: ammoStack });
+  }
 }
