@@ -1,0 +1,64 @@
+{
+  "name": "Pavise",
+  "type": "weapon",
+  "img": "icons/equipment/shield/wardoor-wooden-boss-brown.webp",
+  "system": {
+    "info": {
+      "subtype": "shield",
+      "group": "cover",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 17,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "defense": "+1",
+      "handling": "-2",
+      "effect": null
+    },
+    "description": {
+      "description": "<p>DEF: +1</p><p>Obs: Manuseio (-2). DR 30. Efeito #.</p><p>Preço: 17p</p><p>Espaço: 2</p><p>Requerimento: FIS 2</p><p>Ofício: Arm N5</p><p>Materiais: 11</p><p><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito #Pavise:</span> pode utilizar 1 ação rápida para plantar o escudo pavise, que concede <em>Meia cobertura </em>ao personagem e até 1 metro atrás do escudo, e <em>Cobertura </em>se este não declarar nenhuma ação que o exponha.</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "sCHcqnlUjEMwpHZ6",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770323004590,
+    "modifiedTime": 1770324619950,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "z1igKv2aYL85SLGD",
+  "sort": 200000,
+  "_key": "!items!z1igKv2aYL85SLGD"
+}

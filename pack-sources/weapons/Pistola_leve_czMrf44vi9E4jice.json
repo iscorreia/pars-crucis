@@ -1,0 +1,92 @@
+{
+  "name": "Pistola leve",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "pistol",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/gun-purple.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "10/30m",
+        "damage": {
+          "dmgBase": 10,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 14,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "rateOfFire": "1/1",
+      "reload": "2",
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Munição: Bala</p><p>Alcance: 10/30m</p><p>Dano: 10+DES</p><p>Cadência: 1/1</p><p>Obs: Recarga (2). Ocultar +4.</p><p>Preço: 14p</p><p>Espaço: 1</p><p>Ofício: Arm N6</p><p>Materiais: 2</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "bullet",
+      "loaded": 0,
+      "capacity": 1,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "y4sGceYYRm7DZixk",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770254506415,
+    "modifiedTime": 1770254564477,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "czMrf44vi9E4jice",
+  "sort": 0,
+  "_key": "!items!czMrf44vi9E4jice"
+}

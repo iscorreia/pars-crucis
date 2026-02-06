@@ -19,7 +19,9 @@
         "range": "20/40m",
         "damage": {
           "dmgBase": 13,
-          "dmgAttributes": ["des"],
+          "dmgAttributes": [
+            "des"
+          ],
           "dmgAttMultiplier": 0.5,
           "dmgAddition": "",
           "scalable": true,
@@ -50,12 +52,12 @@
     },
     "keywords": {
       "twoHanded": "",
-      "rateOfFire": "1/1",
+      "rateOfFire": "2/2",
       "handling": "+1",
       "recoil": "4",
       "reload": "4",
       "quickload": "2",
-      "penalty": null
+      "penalty": ""
     },
     "description": {
       "description": "<p>Munição: Virote</p><p>Alcance: 20/40m</p><p>Dano: 13+DES/2</p><p>CT: 2/2</p><p>Obs: Recarga (3). Uma carga (1). Manuseio (+1). Recuo (4). Não pode ser aprimorada.</p><p>Preço: 20p</p><p>Ofício: Arm N6</p><p>Mts: 7</p>",
@@ -85,10 +87,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770036161780,
-    "modifiedTime": 1770048382373,
+    "modifiedTime": 1770261645421,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "FMOnCoj4EoP918Xs",
-  "sort": 400000,
+  "sort": 1300000,
   "_key": "!items!FMOnCoj4EoP918Xs"
 }

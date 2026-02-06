@@ -19,7 +19,10 @@
         "range": "2m",
         "damage": {
           "dmgBase": 13,
-          "dmgAttributes": ["fis", "des"],
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
           "dmgAttMultiplier": 1,
           "dmgAddition": "",
           "scalable": true,
@@ -44,7 +47,9 @@
         "range": "5/10m",
         "damage": {
           "dmgBase": 19,
-          "dmgAttributes": ["des"],
+          "dmgAttributes": [
+            "des"
+          ],
           "dmgAttMultiplier": 0.5,
           "dmgAddition": "",
           "scalable": true,
@@ -83,7 +88,8 @@
         "duration": "",
         "keywords": {
           "technique": null
-        }
+        },
+        "usesAmmo": true
       }
     },
     "cost": {
@@ -127,7 +133,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769994754845,
-    "modifiedTime": 1770048403436,
+    "modifiedTime": 1770053106555,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "ownership": {

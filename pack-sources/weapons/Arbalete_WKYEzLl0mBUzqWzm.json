@@ -1,0 +1,93 @@
+{
+  "name": "Arbalete",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-green.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "rifle",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/gun-green.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "7/21m",
+        "damage": {
+          "dmgBase": 13,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 10,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "twoHanded": "",
+      "rateOfFire": "1/1",
+      "reload": "3",
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Munição: Arpão</p><p>Alcance: 7/21m</p><p>Dano: 13+DES/2</p><p>Cadência: 1/1</p><p>Obs: Recarga (3). Funciona na água.</p><p>Preço: 10p</p><p>Espaço: 1</p><p>Ofício: Arm N5</p><p>Materiais: 4</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "harpoon",
+      "loaded": 0,
+      "capacity": 1,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "TnKwJXguAJ4WZ5P2",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770255234309,
+    "modifiedTime": 1770306683143,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "WKYEzLl0mBUzqWzm",
+  "sort": 800000,
+  "_key": "!items!WKYEzLl0mBUzqWzm"
+}

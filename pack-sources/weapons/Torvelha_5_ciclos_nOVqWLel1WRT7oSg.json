@@ -1,0 +1,93 @@
+{
+  "name": "Torvelha 5 ciclos",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-red.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "pistol",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/gun-red.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "12/40m",
+        "damage": {
+          "dmgBase": 11,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 40,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "rateOfFire": "2/5",
+      "reload": "4",
+      "quickload": "2",
+      "recoil": "6"
+    },
+    "description": {
+      "description": "<p>Munição: Bala</p><p>Alcance: 12/40m</p><p>Dano: 11+DES</p><p>Cadência: 2/5</p><p>Obs: Recarga (4). Uma carga (2). Recuo (6).</p><p>Preço: 40p</p><p>Espaço: 1</p><p>Ofício: Arm N7</p><p>Materiais: 3</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "bullet",
+      "loaded": 0,
+      "capacity": 5,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "y4sGceYYRm7DZixk",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770254733523,
+    "modifiedTime": 1770254733523,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "nOVqWLel1WRT7oSg",
+  "sort": 0,
+  "_key": "!items!nOVqWLel1WRT7oSg"
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Pelouro explosivo",
+  "type": "ammo",
+  "img": "icon%20library/skills/artillery%20skills/artillery%20(30).png",
+  "system": {
+    "info": {
+      "subtype": "ammo",
+      "group": "cannonball",
+      "subgroup": null,
+      "quality": "common"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 2,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false
+    },
+    "damage": {
+      "dmgBase": 10,
+      "dmgAttributes": [],
+      "dmgAttMultiplier": 1,
+      "dmgAddition": "",
+      "scalable": true,
+      "dmgType": "none",
+      "dmgSubtype": ""
+    },
+    "cost": {
+      "price": 10,
+      "currency": "silver"
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Bala de canhão com bastante carga explosiva. Com o impacto o pelouro explode.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> tem Dano+10 e causa metade do dano em um raio de 4m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 10 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Armeiro N4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 hora.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 5 Metais e 7 de Pólvora.</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "effect": "causa metade do dano em um raio de 3m."
+  },
+  "effects": [],
+  "folder": "NIxjOB0FVssNlIp3",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770262158825,
+    "modifiedTime": 1770262158825,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "mx83kAeMSUXyrCmZ",
+  "sort": 0,
+  "_key": "!items!mx83kAeMSUXyrCmZ"
+}

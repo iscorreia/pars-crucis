@@ -1,0 +1,93 @@
+{
+  "name": "Pistola de precisão",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-topbarrel.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "pistol",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/gun-topbarrel.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "15/30m",
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 50,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "rateOfFire": "2/2",
+      "reload": "3",
+      "recoil": "4",
+      "lethality": "+1"
+    },
+    "description": {
+      "description": "<p>Munição: Bala</p><p>Alcance: 15/30m</p><p>Dano: 8+DES</p><p>Cadência: 2/2</p><p>Obs: Recarga (3). Recuo (4). Fatalidade (+1).</p><p>Preço: 50p</p><p>Espaço: 1</p><p>Ofício: Arm N8</p><p>Materiais: 4</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "bullet",
+      "loaded": 0,
+      "capacity": 2,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "y4sGceYYRm7DZixk",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770254857861,
+    "modifiedTime": 1770254857861,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "XTnUCsoTVPZ87WeS",
+  "sort": 0,
+  "_key": "!items!XTnUCsoTVPZ87WeS"
+}

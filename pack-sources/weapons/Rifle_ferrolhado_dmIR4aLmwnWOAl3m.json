@@ -1,0 +1,95 @@
+{
+  "name": "Rifle ferrolhado",
+  "type": "weapon",
+  "img": "icons/weapons/guns/rifle-fluted.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "rifle",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/rifle-fluted.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "30/90",
+        "damage": {
+          "dmgBase": 15,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 80,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "twoHanded": "",
+      "rateOfFire": "1/1",
+      "reload": "2",
+      "penetrating": "",
+      "lethality": "+1",
+      "penalty": null
+    },
+    "description": {
+      "description": "<p>Munição: Bala</p><p>Alcance: 30/90m</p><p>Dano: 15+DES</p><p>Cadência: 1/1</p><p>Obs: MV-1. Recarga (2). Penetrante. Fatalidade (+1).</p><p>Preço: 80p</p><p>Espaço: 2</p><p>Requerimento: FIS 2</p><p>Ofício: Arm N6</p><p>Materiais: 8</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "bullet",
+      "loaded": 0,
+      "capacity": 1,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "TnKwJXguAJ4WZ5P2",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770262665299,
+    "modifiedTime": 1770307030294,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "dmIR4aLmwnWOAl3m",
+  "sort": 0,
+  "_key": "!items!dmIR4aLmwnWOAl3m"
+}

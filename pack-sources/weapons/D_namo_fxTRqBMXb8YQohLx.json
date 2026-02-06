@@ -1,0 +1,62 @@
+{
+  "folder": "NIxjOB0FVssNlIp3",
+  "name": "Dínamo",
+  "type": "ammo",
+  "img": "icons/commodities/tech/coil-steel-grey.webp",
+  "system": {
+    "info": {
+      "subtype": "ammo",
+      "group": "dynamo",
+      "subgroup": null,
+      "quality": "common"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false
+    },
+    "damage": {
+      "dmgBase": 0,
+      "dmgAttributes": [],
+      "dmgAttMultiplier": 1,
+      "dmgAddition": "",
+      "scalable": true,
+      "dmgType": "none",
+      "dmgSubtype": ""
+    },
+    "effect": "",
+    "cost": {
+      "price": 10,
+      "currency": "silver"
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Núcleo de conversão de essência em energia dinâmica usada em equipamentos de alta tecnologia. Os equipamentos que utilizam um Dínamo (também conhecido por núcleo dinâmico) como fonte de energia exigem esforço do personagem, mas também podem ser supridos com uma bateria dinâmica que supre uma quantia de esforço equivalente à sua carga, tendo Recarga (3).</p><p>Preço: 10 pratas.</p><p>Ofício: Engenharia N5.</p><p>Tempo para fabricar: 48 horas.</p><p>Materiais: 1 Metal, 1 Eônio e 1 Lágrima.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770258678299,
+    "modifiedTime": 1770258678299,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "fxTRqBMXb8YQohLx",
+  "sort": 0,
+  "_key": "!items!fxTRqBMXb8YQohLx"
+}

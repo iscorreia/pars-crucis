@@ -19,7 +19,10 @@
         "range": "2m",
         "damage": {
           "dmgBase": 8,
-          "dmgAttributes": ["fis", "des"],
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
           "dmgAttMultiplier": 1,
           "dmgAddition": "",
           "scalable": true,
@@ -44,7 +47,10 @@
         "range": "10/30m",
         "damage": {
           "dmgBase": 8,
-          "dmgAttributes": ["fis", "des"],
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
           "dmgAttMultiplier": 1,
           "dmgAddition": "",
           "scalable": true,

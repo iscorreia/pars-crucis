@@ -1,0 +1,90 @@
+{
+  "name": "Zarabatana",
+  "type": "weapon",
+  "img": "icons/commodities/wood/bamboo-brown.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "exotic",
+      "subgroup": "Zarabatana",
+      "quality": "common"
+    },
+    "actions": {
+      "S9T5IJdnIYUGec5P": {
+        "img": "icons/commodities/wood/bamboo-brown.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "S9T5IJdnIYUGec5P",
+        "damaging": true,
+        "range": "10/30m",
+        "damage": {
+          "dmgBase": 5,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "arque",
+        "subtype": "projectile",
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {}
+      }
+    },
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "handling": "1"
+    },
+    "description": {
+      "description": "<p>Munição: Dardo</p><p>Alcance: 10/30m</p><p>Dano: 5+DES</p><p>CT: 1</p><p>Espaço: 1</p><p>Preço: 1p</p><p>Ofício: Art N3</p><p>Mts: 2</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "dart",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "Ya6mEQ57pDRbFECh",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770088428305,
+    "modifiedTime": 1770090309770,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "fG9RW5V0XDs20eth",
+  "sort": 700000,
+  "_key": "!items!fG9RW5V0XDs20eth"
+}

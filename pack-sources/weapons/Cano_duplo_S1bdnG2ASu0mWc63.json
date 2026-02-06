@@ -1,0 +1,94 @@
+{
+  "name": "Cano duplo",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-double-barrel.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "shotgun",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/gun-double-barrel.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "5/10m",
+        "damage": {
+          "dmgBase": 17,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 24,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "twoHanded": "",
+      "rateOfFire": "2/2",
+      "reload": "2",
+      "kick": "FIS5",
+      "recoil": "7"
+    },
+    "description": {
+      "description": "<p>Munições: Cartucho</p><p>Alcance: 5/10m</p><p>Dano: 17+DES/2</p><p>CT: 2/2</p><p>Obs: Recarga (2). Coice (FIS5). Recuo (7).</p><p>Preço: 24p</p><p>Espaço: 2</p><p>Req: FIS2</p><p>Ofício: Arm N5</p><p>Mts: 7</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "cartridge",
+      "loaded": 0,
+      "capacity": 2,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "TnKwJXguAJ4WZ5P2",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770135925068,
+    "modifiedTime": 1770306927180,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "S1bdnG2ASu0mWc63",
+  "sort": 1100000,
+  "_key": "!items!S1bdnG2ASu0mWc63"
+}

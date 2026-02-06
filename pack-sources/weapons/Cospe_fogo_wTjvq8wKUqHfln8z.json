@@ -1,0 +1,93 @@
+{
+  "name": "Cospe fogo",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blunderbuss-steel.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "cannon",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/gun-blunderbuss-steel.webp",
+        "name": "Jatear",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "4m",
+        "damage": {
+          "dmgBase": 9,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Ígneo"
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "jet"
+      }
+    },
+    "cost": {
+      "price": 27,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "twoHanded": "",
+      "rateOfFire": "4/20",
+      "reload": "5",
+      "recoil": "2"
+    },
+    "description": {
+      "description": "<p>Munição: Gasóleo</p><p>Alcance: 4m</p><p>Dano: 9+COG/2</p><p>Cadência: 4/20</p><p>Obs: Dano Elemental: Ígneo. Jato. Recarga (5). Recuo (2).</p><p>Preço: 27p</p><p>Espaço: 2</p><p>Requerimento: FIS 2</p><p>Ofício: Eng N4</p><p>Materiais: 15</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "gasoil",
+      "loaded": 0,
+      "capacity": 20,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "TnKwJXguAJ4WZ5P2",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770256770160,
+    "modifiedTime": 1770306639473,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "wTjvq8wKUqHfln8z",
+  "sort": 600000,
+  "_key": "!items!wTjvq8wKUqHfln8z"
+}

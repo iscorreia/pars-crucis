@@ -19,7 +19,9 @@
         "range": "12/40m",
         "damage": {
           "dmgBase": 7,
-          "dmgAttributes": ["des"],
+          "dmgAttributes": [
+            "des"
+          ],
           "dmgAttMultiplier": 1,
           "dmgAddition": "",
           "scalable": true,

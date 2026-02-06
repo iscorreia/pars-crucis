@@ -1,0 +1,92 @@
+{
+  "name": "Garrucha",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-brown.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "pistol",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/gun-brown.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "10/20m",
+        "damage": {
+          "dmgBase": 13,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 7,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "rateOfFire": "1/1",
+      "reload": "4",
+      "fragile": "5"
+    },
+    "description": {
+      "description": "<p>Munição: Chumbo</p><p>Alcance: 10/20m</p><p>Dano: 13+DES</p><p>CT: 1/1</p><p>Obs: Recarga (4). Frágil (5).</p><p>Preço: 7p</p><p>Ofício: Arm N4</p><p>Mts: 2</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "lead",
+      "loaded": 0,
+      "capacity": 1,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "y4sGceYYRm7DZixk",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770131667810,
+    "modifiedTime": 1770135925090,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Jr90riTgJblWggDE",
+  "sort": 300000,
+  "_key": "!items!Jr90riTgJblWggDE"
+}

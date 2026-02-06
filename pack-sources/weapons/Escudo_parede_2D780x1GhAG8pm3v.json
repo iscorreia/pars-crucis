@@ -1,0 +1,64 @@
+{
+  "name": "Escudo parede",
+  "type": "weapon",
+  "img": "icons/equipment/shield/Scutum-steel-worn.webp",
+  "system": {
+    "info": {
+      "subtype": "shield",
+      "group": "cover",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 18,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 3,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "defense": "+3",
+      "handling": "-2",
+      "effect": ""
+    },
+    "description": {
+      "description": "<p>DEF: +3</p><p>Obs: 2 mãos. Manuseio (-2). DR 35. Efeito #.</p><p>Preço: 18p</p><p>Espaço: 3</p><p>Requerimento: FIS 5</p><p>Ofício: Arm N5</p><p>Materiais: 24</p><p><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito #Escudo parede:</span> fornece <em>Meia cobertura</em> a personagens na linha atrás do escudo</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "sCHcqnlUjEMwpHZ6",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770324654329,
+    "modifiedTime": 1770324686895,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "2D780x1GhAG8pm3v",
+  "sort": 0,
+  "_key": "!items!2D780x1GhAG8pm3v"
+}

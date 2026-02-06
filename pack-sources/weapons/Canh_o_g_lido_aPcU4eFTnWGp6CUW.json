@@ -1,0 +1,93 @@
+{
+  "name": "Canhão gélido",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blunderbuss-gold.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "cannon",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/gun-blunderbuss-gold.webp",
+        "name": "Jatear",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "4m",
+        "damage": {
+          "dmgBase": 10,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Glacial"
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "1",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "jet"
+      }
+    },
+    "cost": {
+      "price": 35,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "twoHanded": "",
+      "rateOfFire": "2",
+      "freezing": "5",
+      "recoil": "2"
+    },
+    "description": {
+      "description": "<p>Munição: Dínamo</p><p>Alcance: 4m</p><p>Dano: 10+COG/2</p><p>Cadência: 2/∞</p><p>Obs: 1AP. Congelante (5). Dano Elemental: Glacial. Jato. Esforço 1/tiro. Recuo (2).</p><p>Preço: 35p</p><p>Espaço: 2</p><p>Requerimento: COG 2</p><p>Ofício: Eng N7</p><p>Materiais: 10</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "dynamo",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "TnKwJXguAJ4WZ5P2",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770261662425,
+    "modifiedTime": 1770306853419,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "aPcU4eFTnWGp6CUW",
+  "sort": 0,
+  "_key": "!items!aPcU4eFTnWGp6CUW"
+}
