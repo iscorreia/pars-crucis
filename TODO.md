@@ -1,33 +1,26 @@
 # DOING
 
-- Need to add effect to Ammo's
-- Make ammo damage logic apply to weapons and weapon techniques
-
 # HIGH PRIORITY
 
-- Improved Weapon **_logic hbs style/css_**
-- Improved Gear **_hbs style/css_**
-- Improved Ability sheet **_hbs style/css_**
+- Improved overall #Item config tab **_logic hbs style/css_**
+- Create a prompt for last roll action adjustment on pressing ALT **_feature_**
 
 ## IMPORTANT
 
-- Further improve Passive sheet **_logic style/css_**
 - Further improve Ability Technique data handling and presentation **_logic hbs_**
-- Persona Inventory calculations **_logic_**
-- Create a prompt for last roll action adjustment on pressing ALT **_feature_**
 - PDM sheet having Attributes and Skills grayed out and not rollable when null **_feature hbs style/css_**
+- Make item `#effect`, `#penalty` properties have their custom description that can be set on the item config
 
 ## NECESSARY
 
 - Review Overrides **_logic_**
 - Final touches on the PDM config app **_hbs/css_**
 - Add Inventory sorting **_qol feature_**
-- Create a `#bonus` property for items
-- Make item `#bonus`, `#effect`, `#penalty` properties have their custom descriptiom that can be set on the item config
+- Tooltips / Information on hover **_feature_** or;
+- Information icon: on click: pops a window with origin/skills/etc description **_feature_**
 
 ## LOW PRIORITY
 
-- Notes on the Persona Ability Tab **_feature update_**
 - Weapons Compendium **_pack_**
 - Items Compendium **_pack_**
 - Abilities Compendium **_pack_**
@@ -39,8 +32,6 @@
 - Ability and Item use Limits and Conditions
 - Automatic rest on click, with possibility to set an amount of hours to rest, so it recovers PV/PE
 - Implement `enrichHTML` in the item descriptions/effect **_feature_**
-- Tooltips / Information on hover **_feature_** or;
-- Information icon: on click: pops a window with origin/skills/etc description **_feature_**
 - Usable passives **_feature_**
 - Improved favorable skills on Persona Config **_logic style/css_**
 - Option for Action effort to be automatically deduced when used **_qol_**
@@ -53,15 +44,12 @@
 
 ### KNOWN BUGS
 
-- Compendium banner img src path is empty
 - _mitigation_.adjust can be deleted in the persona config, resulting in `NaN`
-- if Item action `usesAmmo = true` but no ammo is selected you can roll the Attack action still
-- Ammo weapons need a default damage type option that inherits / uses the damage type provided by the ammo. THe intended behavior is that if not set to inherit, then the weapon overhauls the damage type by for it's own damage property.
 
 ### PONDER ABOUT
 
 - Ability Technique Item/Action keywords not showing in the ability line, do we want it to?
-- Make possible to clear Technique ability selected Item action **_qol_**
+- Make possible to clear selected Actions on Techniques, and selected Ammo on Items ability selected Item action **_qol_**
 - Expanded Actions be Draggable to Macros
 - Attributes be Draggable to Macros
 - Show Abilities/Items general description on chat **_feature_**
@@ -72,6 +60,9 @@
 - SWORDS
 - JAVELINS
 - SPEARS
+- ARCHERY (does not include siege)
+- BALISTICS (does not include siege)
+- AMMO (does not include battery, and ionic projectiles)
 
 ### PARTIAL PACKS
 

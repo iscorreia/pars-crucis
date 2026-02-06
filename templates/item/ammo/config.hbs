@@ -149,10 +149,20 @@
       />
     </div>
     <div class="item-info-block">
+      <h5>{{localize "PC.multiplier.label"}}</h5>
+      <select name="system.damage.dmgAttMultiplier">
+        {{selectOptions
+          config.multiplier
+          selected=system.damage.dmgAttMultiplier
+          localize=true
+        }}
+      </select>
+    </div>
+    <div class="item-info-block">
       <h5>{{localize "PC.type"}}</h5>
       <select name="system.damage.dmgType">
         {{selectOptions
-          config.dmgType
+          config.noneDmgType
           selected=system.damage.dmgType
           localize=true
         }}
@@ -164,6 +174,17 @@
         name="system.damage.dmgSubtype"
         type="text"
         value="{{system.damage.dmgSubtype}}"
+        data-dtype="String"
+      />
+    </div>
+  </div>
+
+  <div class="item-info-config">
+    <div class="item-info-block">
+      <input
+        name="system.effect"
+        value="{{system.effect}}"
+        type="text"
         data-dtype="String"
       />
     </div>

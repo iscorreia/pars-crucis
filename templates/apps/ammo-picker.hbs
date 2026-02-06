@@ -15,12 +15,11 @@
   <p class="info-desc">Selecione a munição a ser utilizada pelo Equipamento</p>
   <ol>
     {{#each choices}}
-      <li class="inline-item">
-        <span
-          class="inline-head"
-          data-action="selectAmmo"
-          data-ammo-id="{{this._id}}"
-        >
+      <li class="inline-item select-ammo
+        {{#if (eq this.system.details.stack 0)}}out-of-stock{{/if}}"
+        data-action="selectAmmo"
+        data-ammo-id="{{this._id}}">
+        <span class="inline-head">
           <img class="inline-icon" src="{{this.img}}" width="24" height="24" />
           <span class="inline-title">
             {{this.name}}
@@ -31,6 +30,24 @@
               {{> systems/pars-crucis/templates/partials/pc-keyword.hbs}}
             {{/each}}
           </span>
+
+          {{#if this.system.damage}}
+            <span class="inline-label">{{localize "PC.damage"}}</span>
+            <span class="inline-value">
+              {{numberFormat this.system.damage.dmgBase sign=true}}
+            </span>
+            {{#unless (eq this.system.damage.dmgType "none")}}
+              <span class="inline-value">
+                {{localize (concat "PC.dmgType." this.system.damage.dmgType ".abv")}}
+              </span>
+            {{/unless}}
+          {{/if}}
+          {{#if this.system.effect}}
+            <span class="inline-label">{{localize "PC.effect"}}</span>
+            <span class="inline-value">{{this.system.effect}}</span>
+          {{/if}}
+          <span class="inline-label">{{localize "PC.stock"}}</span>
+          <span class="inline-value">{{this.system.details.stack}}</span>
         </span>
       </li>
     {{/each}}

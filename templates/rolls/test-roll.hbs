@@ -36,6 +36,21 @@
         >{{info.withItem.selectedAction.name}}</span>
       </div>
     {{/if}}
+    {{#if info.withAmmo}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.ammo.label"}}:</span>
+        <img
+          class="info-icon"
+          src="{{info.withAmmo.img}}"
+          width="16"
+          height="16"
+        />
+        <span
+          class="inline-action-name inline-selected"
+        >{{info.withAmmo.name}}</span>
+      </div>
+    {{/if}}
     {{#if info.subtype}}
       <div class="info-line">
         <span class="info-label">

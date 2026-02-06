@@ -104,20 +104,29 @@ export class PCActor extends foundry.documents.Actor {
     if (!selectedAction || !selectedItem) return;
     const { usesAmmo } = selectedAction;
     const { hasAmmo, ammoInfo } = selectedItem.system;
-    if (usesAmmo && hasAmmo && ammoInfo._ammoId) {
-      const ammunition = this.items.get(ammoInfo._ammoId);
+    const ammunition = ammoInfo?._ammoId
+      ? this.items.get(ammoInfo._ammoId)
+      : null;
+    // If tech is executed with action that uses ammo
+    // And either of the following statements fail, return
+    // Else, consumes ammo an reduces loaded ammo (if loaded)
+    if (usesAmmo && !ammunition) return;
+    if (usesAmmo && hasAmmo && ammunition) {
       if (
         (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
-        ammunition.stack === 0
+        ammunition.system.details.stack === 0
       )
-        return true;
-      consumeAmmo(ammoInfo, ammunition, item);
+        return;
+      consumeAmmo(ammoInfo, ammunition, selectedItem);
     }
     const srcKeywords = keywordResolver(
       selectedItem.system.keywords,
       selectedAction.keywords,
     );
-    const keywords = keywordResolver(techKeywords, srcKeywords);
+    let keywords = keywordResolver(techKeywords, srcKeywords);
+    if (ammunition) {
+      keywords = keywordResolver(keywords, ammunition.system.keywords);
+    }
     const catMod = this.system.categoryModifiers[category];
     const groupMod = modGroup ? this.system.groupModifiers[modGroup].mod : 0;
     const modifiers =
@@ -144,6 +153,9 @@ export class PCActor extends foundry.documents.Actor {
     };
     // Additional information passed to the roll
     const info = {
+      ...(ammunition && {
+        withAmmo: { img: ammunition.img, name: ammunition.name },
+      }),
       withItem,
       subtype: action.techSubtype,
       damaging: action.damaging,
@@ -181,17 +193,29 @@ export class PCActor extends foundry.documents.Actor {
     if (!action) return;
     const { difficulty, skill, subtype, type, usesAmmo } = action;
     const { hasAmmo, ammoInfo } = item.system;
-    if (usesAmmo && hasAmmo && ammoInfo._ammoId) {
-      const ammunition = this.items.get(ammoInfo._ammoId);
+    // If action requires ammo but item doesn't accept ammo, return
+    if (usesAmmo && !hasAmmo) return;
+    const ammunition = ammoInfo?._ammoId
+      ? this.items.get(ammoInfo._ammoId)
+      : null;
+    // Has ammo but could not get the ammo data, return
+    if (hasAmmo && !ammunition) return;
+    // If tech is executed with action that uses ammo
+    // And either of the following statements fail, return
+    // Else, consumes ammo an reduces loaded ammo (if loaded)
+    if (usesAmmo) {
       if (
         (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
         ammunition.system.details.stack === 0
       )
-        return true;
+        return;
       consumeAmmo(ammoInfo, ammunition, item);
     }
     const { category, modGroup, level, mod } = this.system.skills[skill];
-    const keywords = keywordResolver(item.system.keywords, action.keywords);
+    let keywords = keywordResolver(item.system.keywords, action.keywords);
+    if (ammunition) {
+      keywords = keywordResolver(keywords, ammunition.system.keywords);
+    }
     const catMod = this.system.categoryModifiers[category];
     const groupMod = modGroup ? this.system.groupModifiers[modGroup].mod : 0;
     const modifiers =
@@ -209,6 +233,9 @@ export class PCActor extends foundry.documents.Actor {
     });
     // Additional information passed to the roll
     const info = {
+      ...(ammunition && {
+        withAmmo: { img: ammunition.img, name: ammunition.name },
+      }),
       subtype: action.subtype,
       damaging: action.damaging,
       damage: action.damage?.dmgTxt,
@@ -252,7 +279,7 @@ export class PCActor extends foundry.documents.Actor {
         (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
         ammunition.system.details.stack === 0
       )
-        return true;
+        return;
       consumeAmmo(ammoInfo, ammunition, item);
     }
     const img = action.img || item.img;
@@ -311,8 +338,10 @@ function craftFlavor({ skill, acType, difficulty, acSubtype }) {
 
 async function consumeAmmo(ammoInfo, ammunition, item) {
   const details = ammunition.system.details;
-  const itemLoad = ammoInfo.loaded > 0 ? (ammoInfo.loaded -= 1) : 0;
-  const ammoStack = details.stack > 0 ? (details.stack -= 1) : 0;
-  await item.update({ ["system.ammoInfo.loaded"]: itemLoad });
-  await ammunition.update({ ["system.details.stack"]: ammoStack });
+  const itemLoad = ammoInfo.loaded > 0 ? ammoInfo.loaded - 1 : 0;
+  const ammoStack = details.stack > 0 ? details.stack - 1 : 0;
+  if (ammunition.system.info.group !== "dynamo") {
+    await item.update({ ["system.ammoInfo.loaded"]: itemLoad });
+    await ammunition.update({ ["system.details.stack"]: ammoStack });
+  }
 }

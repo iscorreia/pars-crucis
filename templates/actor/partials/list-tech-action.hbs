@@ -36,7 +36,7 @@
       data-ac-id="{{@key}}"
       data-item-id="{{itemId}}"
     >
-      {{#if this.ready}}
+      {{#if this.set}}
         <span class="inline-label">{{localize "PC.with"}}</span>
         <img class="inline-icon" src="{{this.selectedItem.img}}" width="16" height="16" />
         <span class="inline-action-name inline-selected">{{this.selectedItem.name}}:</span>
@@ -48,7 +48,7 @@
     </button>
   {{/if}}
 
-  {{#if this.ready}}
+  {{#if this.set}}
     {{#if (and this.skill (not this.subtype))}}
       <span class="inline-value inline-skill">
         {{#if (eq this.skill "inherit")}}

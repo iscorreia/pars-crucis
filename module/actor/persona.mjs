@@ -476,46 +476,64 @@ export function calculateStatic(att) {
   return att;
 }
 
+function ammoReady(action, item, items) {
+  const { hasAmmo, ammoInfo } = item.system;
+  item.selectedAmmo = null;
+  // If action requires ammo but item doesn't accept ammo, disables
+  if (!hasAmmo) action.ready = false;
+  else {
+    // If item has ammo, gets the selected ammo data and sets it
+    const ammunition = ammoInfo?._ammoId ? items.get(ammoInfo._ammoId) : null;
+    // If could not get the ammo data, disables
+    if (!ammunition) action.ready = false;
+    else {
+      item.selectedAmmo = ammunition;
+      // If action uses ammo, checks if its loaded, its capacity
+      // And checks is there is ammo in the inventory, if not, disables
+      if (
+        (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
+        item.selectedAmmo?.system.details.stack === 0
+      )
+        action.ready = false;
+    }
+  }
+}
+
 export function handleGearAbilities(itemGroup, attributesData, items) {
-  for (let [_, gear] of Object.entries(itemGroup)) {
-    // If gear has ammo, gets the selected ammo data
-    const { actions, hasAmmo, ammoInfo } = gear.system;
-    if (hasAmmo && ammoInfo?._ammoId)
-      gear.selectedAmmo = items.get(ammoInfo._ammoId);
-    // Calculates equipped gear and abilities actions damage
+  for (let [_, item] of Object.entries(itemGroup)) {
+    const { actions } = item.system;
+    if (item.type === "ammo") {
+      // console.log("PREPARE AMMO");
+    }
     if (actions) {
       for (let [_, action] of Object.entries(actions)) {
         action.ready = true;
-        if (action.damaging && action.type !== "tech") {
-          const dmg = action.damage ?? {};
-          const attValues = [];
-          for (const att of dmg.dmgAttributes) {
-            const attValue =
-              attributesData[att].derived + attributesData[att].mod;
-            attValues.push(attValue);
+        const isTech = action.type === "tech";
+        if (!isTech) {
+          if (action.usesAmmo) {
+            ammoReady(action, item, items);
           }
-          const highestDmgAtt =
-            attValues.length > 0 ? Math.max(...attValues) : 0;
-          const multipliedDmg = Math.ceil(highestDmgAtt * dmg.dmgAttMultiplier);
-          const calculatedDmg = dmg.dmgBase + multipliedDmg;
-          const dmgTypeLabel = game.i18n.localize(
-            `PC.dmgType.${dmg.dmgType}.abv`,
-          );
-          action.damage.dmgVal = calculatedDmg;
-          action.damage.dmgTxt = `${calculatedDmg}${dmg.dmgAddition} ${dmgTypeLabel}`;
-          if (!dmg.scalable) {
-            action.damage.dmgTxt = `[${calculatedDmg}${dmg.dmgAddition}] ${dmgTypeLabel}`;
+          // Calculates action damage
+          if (action.damaging) {
+            const ammoSet = item.selectedAmmo ? true : false;
+            const ammoDamage = ammoSet
+              ? (item.selectedAmmo?.system.damage ?? null)
+              : null;
+            const damage = action.damage ?? {};
+            calcDmg(damage, attributesData, { ammoDmg: ammoDamage });
+            craftDmgTxt(damage, { ammoDmg: ammoDamage });
           }
-        } else if (action.type === "tech") {
+        } else if (isTech) {
           // For techniques, get information about selected item and its action
           const selectedItem = items.get(action._gearId);
           const selectedAction = selectedItem?.system.actions[action._gearAcId];
           action.selectedItem = selectedItem ?? null;
           action.selectedAction = selectedAction ?? null;
-          action.ready = selectedItem && selectedAction ? true : false;
+          const actionSet = selectedItem && selectedAction ? true : false;
+          action.set = actionSet;
           action.techKeywords = action.keywords;
           // Once an item attack action is selected, handles necessary data
-          if (action.ready) {
+          if (actionSet) {
             action.techSkill = action.skill;
             action.techSubtype = action.skill;
             if (action.skill === "inherit")
@@ -527,33 +545,28 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
               selectedAction.keywords,
             );
             action.techKeywords = keywordResolver(action.keywords, srcKeywords);
-          }
-          // Calculates technique damage based on selected item attack action
-          if (action.damaging && action.ready) {
-            const dmg = action.damage ?? {};
-            const srcDmg = selectedAction?.damage ?? {};
-            const attValues = [];
-            const joinedAtt = [
-              ...new Set([...dmg.dmgAttributes, ...srcDmg.dmgAttributes]),
-            ];
-            for (const att of joinedAtt) {
-              const attValue =
-                attributesData[att].derived + attributesData[att].mod;
-              attValues.push(attValue);
+            if (selectedAction.usesAmmo && action.usesAmmo) {
+              selectedAction.ready = true;
+              ammoReady(selectedAction, selectedItem, items);
+              if (!selectedAction.ready) action.ready = false;
             }
-            const highestDmgAtt =
-              attValues.length > 0 ? Math.max(...attValues) : 0;
-            const multipliedSrcDmg = Math.ceil(
-              highestDmgAtt * srcDmg.dmgAttMultiplier,
-            );
-            const reCalculatedSrcDmg = srcDmg.dmgBase + multipliedSrcDmg;
-            const calculatedDmg = reCalculatedSrcDmg + dmg.dmgBase;
-            let dmgType = dmg.dmgType;
-            if (dmg.dmgType === "inherit") dmgType = srcDmg.dmgType;
-            const dmgTypeLabel = game.i18n.localize(
-              `PC.dmgType.${dmgType}.abv`,
-            );
-            action.damage.dmgTxt = `${calculatedDmg}${srcDmg.dmgAddition}${dmg.dmgAddition} ${dmgTypeLabel}`;
+          } else action.ready = false;
+          // Calculates technique damage based on selected item attack action
+          if (action.damaging && actionSet) {
+            const damage = action.damage ?? {};
+            const srcDamage = selectedAction?.damage ?? {};
+            const ammoSet = selectedItem.selectedAmmo ? true : false;
+            const ammoDamage = ammoSet
+              ? (selectedItem.selectedAmmo?.system.damage ?? null)
+              : null;
+            calcDmg(damage, attributesData, {
+              srcDmg: srcDamage,
+              ammoDmg: ammoDamage,
+            });
+            craftDmgTxt(damage, {
+              srcDmg: srcDamage,
+              ammoDmg: ammoDamage,
+            });
           } else if (action.damaging) {
             action.damage.dmgTxt = `ø`;
           }
@@ -561,6 +574,70 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
       }
     }
   }
+}
+
+/**
+ * Actor TypeDataModel function that calculates damageVal
+ * Multiplies the highest damage attribute by the damage multiplier
+ * Then increments that to the base damage provided
+ * @param {Object} mainDmg
+ * @param {Object} attributesData
+ * @param {Object|null} srcDmg   when there is another source for the damage
+ * @param {Object|null} ammoDmg  required for ammo based actions
+ */
+function calcDmg(
+  mainDmg,
+  attributesData,
+  { srcDmg = null, ammoDmg = null } = {},
+) {
+  // Action base damage (additive from all sources)
+  const baseDmg =
+    (mainDmg?.dmgBase ?? 0) + (srcDmg?.dmgBase ?? 0) + (ammoDmg?.dmgBase ?? 0);
+  // Damage attributes
+  const dmgAttributes = [
+    ...new Set([
+      ...(mainDmg?.dmgAttributes ?? []),
+      ...(srcDmg?.dmgAttributes ?? []),
+    ]),
+  ];
+  const attValues = dmgAttributes.map(
+    (att) => attributesData[att].derived + attributesData[att].mod,
+  );
+  const highestAtt = attValues.length > 0 ? Math.max(...attValues) : 0;
+  // Gets the attribute damage multiplier (substitutes)
+  const dmgAttMultiplier =
+    srcDmg?.dmgAttMultiplier ?? mainDmg?.dmgAttMultiplier ?? 1;
+  const attributeDmg = Math.ceil(highestAtt * dmgAttMultiplier);
+  // Final calculations
+  let dmgVal = baseDmg + attributeDmg;
+  if (ammoDmg?.dmgAttMultiplier)
+    dmgVal = Math.ceil(dmgVal * ammoDmg.dmgAttMultiplier);
+  mainDmg.dmgVal = dmgVal;
+}
+
+/**
+ * Actor TypeDataModel function that craft the exhibited damage text
+ * @param {Object} mainDmg       main source for damage data
+ * @param {Object|null} srcDmg   techniques have another source for their damage
+ * @param {Object|null} ammoDmg  required for ammo based actions
+ */
+function craftDmgTxt(mainDmg, { srcDmg, ammoDmg } = {}) {
+  const { dmgVal, dmgAddition, dmgType, scalable } = mainDmg;
+  let dmgTypeSrc = mainDmg;
+  if (dmgType === "inherit") dmgTypeSrc = srcDmg;
+  if (ammoDmg?.dmgType) {
+    if (ammoDmg.dmgType !== "none") dmgTypeSrc = ammoDmg;
+  }
+  const srcDmgAdd = srcDmg?.dmgAddition ?? "";
+  const ammoDmgAdd = ammoDmg?.dmgAddition ?? "";
+  const finalDmgType = dmgTypeSrc?.dmgType ?? "ERRO";
+  const finalDmgSubtype = dmgTypeSrc?.dmgSubtype ?? "";
+  let dmgNumbers = `${dmgVal}${srcDmgAdd}${ammoDmgAdd}${dmgAddition}`;
+  if (!scalable) dmgNumbers = `[${dmgNumbers}]`;
+  const dmgTypeLabel = game.i18n.localize(`PC.dmgType.${finalDmgType}.abv`);
+  let dmgTxt = `${dmgNumbers} ${dmgTypeLabel}`;
+  if (finalDmgSubtype) dmgTxt = `${dmgTxt}: ${finalDmgSubtype}`;
+  mainDmg.dmgTxt = dmgTxt;
 }
 
 export function handleMitigation(wearData, mitigationData) {
