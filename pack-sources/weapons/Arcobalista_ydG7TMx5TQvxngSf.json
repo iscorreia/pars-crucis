@@ -19,7 +19,9 @@
         "range": "20/40m",
         "damage": {
           "dmgBase": 25,
-          "dmgAttributes": ["des"],
+          "dmgAttributes": [
+            "des"
+          ],
           "dmgAttMultiplier": 0.5,
           "dmgAddition": "",
           "scalable": true,
@@ -85,10 +87,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770036522494,
-    "modifiedTime": 1770048372966,
+    "modifiedTime": 1770261645421,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "ydG7TMx5TQvxngSf",
-  "sort": 200000,
+  "sort": 1000000,
   "_key": "!items!ydG7TMx5TQvxngSf"
 }

@@ -1,0 +1,88 @@
+{
+  "name": "Arco curto",
+  "type": "weapon",
+  "img": "icons/weapons/bows/longbow-recurve-brown.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "bow",
+      "subgroup": "Arco curto",
+      "quality": "common"
+    },
+    "actions": {
+      "S9T5IJdnIYUGec5P": {
+        "img": "icons/weapons/bows/longbow-recurve-brown.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "S9T5IJdnIYUGec5P",
+        "damaging": true,
+        "range": "15/30m",
+        "damage": {
+          "dmgBase": 6,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "arque",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 3,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Munição: Flecha</p><p>Alcance: 15/30m</p><p>Dano: 6+DES</p><p>CT: 1</p><p>Espaço: 1</p><p>Preço: 3p</p><p>Ofício: Art N3</p><p>Mts: 3</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "Ya6mEQ57pDRbFECh",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770064524497,
+    "modifiedTime": 1770089272646,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "2NBT4k29xBXa4z1k",
+  "sort": 600000,
+  "_key": "!items!2NBT4k29xBXa4z1k"
+}

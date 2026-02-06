@@ -1,0 +1,93 @@
+{
+  "name": "Canhão portátil",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-worn-steel.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "cannon",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/gun-worn-steel.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "20/40",
+        "damage": {
+          "dmgBase": 35,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 42,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 3,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "twoHanded": "",
+      "rateOfFire": "1/1",
+      "deviation": "",
+      "kick": "FIS8"
+    },
+    "description": {
+      "description": "<p>Munição: Pelouro</p><p>Alcance: 20/40m</p><p>Dano: 35+COG</p><p>Cadência: 1/1</p><p>Obs: MV-1. Recarga (5). Desvio. Coice (FIS8).</p><p>Preço: 42p</p><p>Espaço: 3</p><p>Requerimento: FIS 6</p><p>Ofício: Arm N6</p><p>Materiais: 16</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "cannonball",
+      "loaded": 0,
+      "capacity": 1,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "TnKwJXguAJ4WZ5P2",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770262172146,
+    "modifiedTime": 1770306891924,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "mveMeje8PeUKUuWp",
+  "sort": 0,
+  "_key": "!items!mveMeje8PeUKUuWp"
+}

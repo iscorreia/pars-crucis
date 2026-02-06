@@ -1,0 +1,93 @@
+{
+  "name": "Rifle de trilho",
+  "type": "weapon",
+  "img": "icons/weapons/guns/rifle-white.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "rifle",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/rifle-white.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "30/90",
+        "damage": {
+          "dmgBase": 18,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Voltaico"
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "1",
+        "prepTime": "2AP",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 100,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "twoHanded": "",
+      "rateOfFire": "1",
+      "penetrating": null,
+      "penalty": null
+    },
+    "description": {
+      "description": "<p>Munição: Dínamo</p><p>Alcance: 20/40m</p><p>Dano: 18+DES</p><p>Cadência: 1/∞</p><p>Obs: 2AP. MV-1. Dano Elemental: Voltaico. Penetrante. Esforço 1/tiro.</p><p>Preço: 100p</p><p>Espaço: 2</p><p>Requerimento: COG 3</p><p>Ofício: Eng N7</p><p>Materiais: 10</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "dynamo",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "TnKwJXguAJ4WZ5P2",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770262829198,
+    "modifiedTime": 1770306989430,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "XRSwOVETfRB3QT6w",
+  "sort": 0,
+  "_key": "!items!XRSwOVETfRB3QT6w"
+}

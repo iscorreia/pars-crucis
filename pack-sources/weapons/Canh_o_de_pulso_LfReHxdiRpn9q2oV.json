@@ -1,0 +1,93 @@
+{
+  "name": "Canhão de pulso",
+  "type": "weapon",
+  "img": "icons/skills/ranged/cannon-barrel-gray.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "cannon",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/skills/ranged/projectile-spiral-gray.webp",
+        "name": "Jatear",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "4m",
+        "damage": {
+          "dmgBase": 18,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "1",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "jet"
+      }
+    },
+    "cost": {
+      "price": 32,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "twoHanded": "",
+      "rateOfFire": "1",
+      "blunt": "",
+      "kick": "FIS3"
+    },
+    "description": {
+      "description": "<p>Munição: Dínamo</p><p>Alcance: 4m</p><p>Dano: 18+DES/2</p><p>Cadência: 1/∞</p><p>Obs: 1AP. Embotada. Esforço 1/tiro. Coice (FIS3).</p><p>Preço: 32p</p><p>Espaço: 2</p><p>Ofício: Eng N6</p><p>Materiais: 8</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "dynamo",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "TnKwJXguAJ4WZ5P2",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770259470498,
+    "modifiedTime": 1770306813989,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "LfReHxdiRpn9q2oV",
+  "sort": 700000,
+  "_key": "!items!LfReHxdiRpn9q2oV"
+}

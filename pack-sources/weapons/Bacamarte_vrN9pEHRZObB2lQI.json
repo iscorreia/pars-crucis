@@ -1,0 +1,95 @@
+{
+  "name": "Bacamarte",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blunderbuss-bronze.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "rifle",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/gun-blunderbuss-bronze.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "5/10m",
+        "damage": {
+          "dmgBase": 18,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 12,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "twoHanded": "",
+      "rateOfFire": "1/1",
+      "reload": "4",
+      "fragile": "",
+      "kick": "FIS4",
+      "impact": "6"
+    },
+    "description": {
+      "description": "<p>Munição: Chumbo</p><p>Alcance: 5/10m</p><p>Dano: 18+DES/2</p><p>Cadência: 1/1</p><p>Obs: Recarga (4). Frágil. Coice (FIS4). Impacto (6).</p><p>Preço: 12p</p><p>Espaço: 2</p><p>Requerimento: FIS 1</p><p>Ofício: Arm N4</p><p>Materiais: 7</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "lead",
+      "loaded": 0,
+      "capacity": 1,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "TnKwJXguAJ4WZ5P2",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770134414325,
+    "modifiedTime": 1770306773291,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "vrN9pEHRZObB2lQI",
+  "sort": 500000,
+  "_key": "!items!vrN9pEHRZObB2lQI"
+}

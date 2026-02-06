@@ -1,0 +1,62 @@
+{
+  "name": "Pelouro",
+  "type": "ammo",
+  "img": "icons/weapons/ammunition/shot-round-brown.webp",
+  "system": {
+    "info": {
+      "subtype": "ammo",
+      "group": "cannonball",
+      "subgroup": null,
+      "quality": "common"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 2,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false
+    },
+    "damage": {
+      "dmgBase": 0,
+      "dmgAttributes": [],
+      "dmgAttMultiplier": 1,
+      "dmgAddition": "",
+      "scalable": true,
+      "dmgType": "none",
+      "dmgSubtype": ""
+    },
+    "cost": {
+      "price": 4,
+      "currency": "silver"
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Monte: 2</p><p>Obs: —</p><p>Preço: 4p</p><p>Ofício: Arm N3</p><p>QF: 1</p><p>Materiais: 6</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "effect": ""
+  },
+  "effects": [],
+  "folder": "NIxjOB0FVssNlIp3",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770262156042,
+    "modifiedTime": 1770262156042,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "7qlYtMHnDodOleA1",
+  "sort": 0,
+  "_key": "!items!7qlYtMHnDodOleA1"
+}

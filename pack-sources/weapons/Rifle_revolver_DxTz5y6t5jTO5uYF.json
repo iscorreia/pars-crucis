@@ -1,0 +1,94 @@
+{
+  "name": "Rifle revolver",
+  "type": "weapon",
+  "img": "icons/weapons/guns/rifle-brown.webp",
+  "system": {
+    "info": {
+      "subtype": "ranged",
+      "group": "rifle",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uqCXC5dKfsgqfyi5": {
+        "img": "icons/weapons/guns/rifle-brown.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "uqCXC5dKfsgqfyi5",
+        "damaging": true,
+        "range": "20/60",
+        "damage": {
+          "dmgBase": 12,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "balis",
+        "subtype": "projectile"
+      }
+    },
+    "cost": {
+      "price": 60,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false
+    },
+    "keywords": {
+      "twoHanded": "",
+      "rateOfFire": "2/5",
+      "reload": "4",
+      "quickload": "2",
+      "recoil": "4"
+    },
+    "description": {
+      "description": "<p>Munição: Bala</p><p>Alcance: 20/60m</p><p>Dano: 12+DES</p><p>Cadência: 2/5</p><p>Obs: Recarga (4). Uma carga (2). Recuo (4).</p><p>Preço: 60p</p><p>Espaço: 2</p><p>Requerimento: FIS 1</p><p>Ofício: Arm N7</p><p>Materiais: 7</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": true,
+    "ammoInfo": {
+      "type": "bullet",
+      "loaded": 0,
+      "capacity": 5,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "TnKwJXguAJ4WZ5P2",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770262466304,
+    "modifiedTime": 1770307057543,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "DxTz5y6t5jTO5uYF",
+  "sort": 0,
+  "_key": "!items!DxTz5y6t5jTO5uYF"
+}

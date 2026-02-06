@@ -19,7 +19,10 @@
         "range": "1m",
         "damage": {
           "dmgBase": 10,
-          "dmgAttributes": ["fis", "des"],
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
           "dmgAttMultiplier": 1,
           "dmgAddition": "",
           "scalable": true,

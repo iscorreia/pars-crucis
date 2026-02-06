@@ -1,0 +1,62 @@
+{
+  "name": "Virote explosivo",
+  "type": "ammo",
+  "img": "icon%20library/skills/crossbowman%20skills/44.png",
+  "system": {
+    "info": {
+      "subtype": "ammo",
+      "group": "bolt",
+      "subgroup": null,
+      "quality": "common"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 20,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false
+    },
+    "damage": {
+      "dmgBase": -4,
+      "dmgAttributes": [],
+      "dmgAttMultiplier": 1,
+      "dmgAddition": "",
+      "scalable": true,
+      "dmgType": "none",
+      "dmgSubtype": ""
+    },
+    "effect": "explode no contato causando Dano [11+COG/2] Ele: Ígneo ao alvo e no raio de 2m.",
+    "cost": {
+      "price": 150,
+      "currency": "copper"
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Essa ponteira de flechas e virotes é feita com uma pequena carga de pólvora que explode ao contato.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> o projétil tem Dano-4, mas explode ao contato causando um adicional de [11+COG<span style=\"mso-bidi-font-family:Arial\">/</span>2] de dano Elemental: Ígneo ao alvo e em um raio de 2m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 1 prata e 50 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Armeiro N5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span> 2 horas, pode fabricar até 10 ponteiras por vez.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 1 Metal e 2 de Pólvora para 2 ponteiras.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "7NT37BqJobgjvt0L",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770312468070,
+    "modifiedTime": 1770312468070,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "wZ9fixfVUASBnJhE",
+  "sort": 0,
+  "_key": "!items!wZ9fixfVUASBnJhE"
+}

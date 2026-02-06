@@ -1,0 +1,62 @@
+{
+  "folder": "7NT37BqJobgjvt0L",
+  "name": "Flechas",
+  "type": "ammo",
+  "img": "icons/weapons/ammunition/arrows-war-white.webp",
+  "system": {
+    "info": {
+      "subtype": "ammo",
+      "group": "arrow",
+      "subgroup": null,
+      "quality": "common"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 20,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false
+    },
+    "damage": {
+      "dmgBase": 0,
+      "dmgAttributes": [],
+      "dmgAttMultiplier": 1,
+      "dmgAddition": "",
+      "scalable": true,
+      "dmgType": "none",
+      "dmgSubtype": ""
+    },
+    "effect": "",
+    "cost": {
+      "price": 10,
+      "currency": "copper"
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Monte: 20</p><p>Obs: —</p><p>Preço: 10c</p><p>Ofício: Arm | Art N2</p><p>QF: 3</p><p>Materiais: 1</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770224792942,
+    "modifiedTime": 1770312200482,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "W64KCKB2noaxmJeF",
+  "sort": 1800000,
+  "_key": "!items!W64KCKB2noaxmJeF"
+}

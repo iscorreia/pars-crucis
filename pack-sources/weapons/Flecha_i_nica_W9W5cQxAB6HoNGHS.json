@@ -1,0 +1,62 @@
+{
+  "name": "Flecha iônica",
+  "type": "ammo",
+  "img": "icon%20library/skills/archer%20skills/archery%20(15).png",
+  "system": {
+    "info": {
+      "subtype": "ammo",
+      "group": "arrow",
+      "subgroup": null,
+      "quality": "common"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 20,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false
+    },
+    "damage": {
+      "dmgBase": 4,
+      "dmgAttributes": [],
+      "dmgAttMultiplier": 1,
+      "dmgAddition": "",
+      "scalable": true,
+      "dmgType": "ele",
+      "dmgSubtype": "Voltaico"
+    },
+    "effect": "desativa certas funções em máquinas e equipamentos.",
+    "cost": {
+      "price": 50,
+      "currency": "copper"
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Carregada com energia estática no momento do disparo, essa ponteira é muito eficiente contra máquina. Atingir um equipamento ou máquina com uma flecha ou virote com ponteira iônica desativa suas funcionalidades que dependam de energia elétrica ou Dínamo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> tem Dano+4 Elemental: Voltaico em máquinas e desativa certas funções.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 50 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Engenharia N5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span> 2 horas, pode fabricar até 10 ponteiras por vez.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 1 Metal para 2 ponteiras.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "7NT37BqJobgjvt0L",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770312562040,
+    "modifiedTime": 1770312610856,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "W9W5cQxAB6HoNGHS",
+  "sort": 0,
+  "_key": "!items!W9W5cQxAB6HoNGHS"
+}
