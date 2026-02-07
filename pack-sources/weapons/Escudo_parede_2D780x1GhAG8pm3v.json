@@ -20,7 +20,8 @@
       "stackMax": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>fornece Meia cobertura a personagens na linha atrás do escudo</p>"
     },
     "keywords": {
       "defense": "+3",
@@ -55,7 +56,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770324654329,
-    "modifiedTime": 1770324686895,
+    "modifiedTime": 1770392993707,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "2D780x1GhAG8pm3v",

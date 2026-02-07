@@ -169,4 +169,26 @@
       </div>
     {{/each}}
   </div>
+
+  {{#if (hasKey system.keywords "effect")}}
+    <div class="item-info-config">
+      <div class="item-info-block medium-block">
+        {{formInput
+          systemFields.details.fields.effect
+          value=system.details.effect
+        }}
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if (hasKey system.keywords "penalty")}}
+    <div class="item-info-config">
+      <div class="item-info-block medium-block">
+        {{formInput
+          systemFields.details.fields.penalty
+          value=system.details.penalty
+        }}
+      </div>
+    </div>
+  {{/if}}
 </section>

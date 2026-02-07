@@ -15,7 +15,8 @@
       "stackMax": 10,
       "stackable": true,
       "equippable": false,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>Atinge Grupos.</p>"
     },
     "damage": {
       "dmgBase": 0,
@@ -30,7 +31,9 @@
       "price": 40,
       "currency": "copper"
     },
-    "keywords": {},
+    "keywords": {
+      "effect": null
+    },
     "description": {
       "description": "<p>Monte: 10</p><p>Obs: Espalha atingindo grupos.</p><p>Preço: 40c</p><p>Ofício: Arm N5</p><p>QF: 1</p><p>Mts: 1</p>",
       "summary": "",
@@ -53,7 +56,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770219115208,
-    "modifiedTime": 1770241843909,
+    "modifiedTime": 1770392842184,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "qNCwqnsxzhIvwVyn",

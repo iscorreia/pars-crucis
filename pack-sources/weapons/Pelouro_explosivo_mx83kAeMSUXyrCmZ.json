@@ -15,7 +15,8 @@
       "stackMax": 2,
       "stackable": true,
       "equippable": false,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>causa metade do dano em um raio de 3m.</p>"
     },
     "damage": {
       "dmgBase": 10,
@@ -30,7 +31,9 @@
       "price": 10,
       "currency": "silver"
     },
-    "keywords": {},
+    "keywords": {
+      "effect": null
+    },
     "description": {
       "description": "<p>Bala de canhão com bastante carga explosiva. Com o impacto o pelouro explode.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> tem Dano+10 e causa metade do dano em um raio de 4m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 10 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Armeiro N4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 hora.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 5 Metais e 7 de Pólvora.</p>",
       "summary": "",
@@ -53,7 +56,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770262158825,
-    "modifiedTime": 1770262158825,
+    "modifiedTime": 1770392863232,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "mx83kAeMSUXyrCmZ",

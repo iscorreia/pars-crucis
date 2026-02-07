@@ -117,11 +117,16 @@ export class AmmoModel extends TypeDataModel {
       info: information({ subtype: "ammo", group: "arrow" }),
       details: details({ stackable: true, stack: 20 }),
       damage: damage(),
-      effect: new StringField({ initial: "" }),
       cost: itemCost(),
       keywords: keywords(),
       description: description(),
     };
+  }
+  prepareDerivedData() {
+    const { details, keywords } = this;
+    details.effect;
+    details.penalty;
+    clearEffectPenalty(details, keywords);
   }
 }
 
@@ -139,6 +144,8 @@ export class AbilityModel extends TypeDataModel {
         preRequisites: new StringField({ initial: "" }),
         coreSkill: new StringField({ initial: "briga" }),
         coreLevel: new NumberField({ initial: 1, integer: true }),
+        effect: new HTMLField(),
+        penalty: new HTMLField(),
       }),
       keywords: keywords(),
       description: description(),
@@ -146,13 +153,16 @@ export class AbilityModel extends TypeDataModel {
   }
 
   prepareDerivedData() {
-    const info = this.info;
+    const { details, info, keywords } = this;
     const art = info.art;
     if (!PC.ability.arts[art].categories) {
       info.category = null;
     } else if (!(info.category in PC.ability.arts[art].categories)) {
       info.category = "unknown";
     }
+    details.effect;
+    details.penalty;
+    clearEffectPenalty(details, keywords);
   }
 }
 
@@ -167,6 +177,12 @@ export class GearModel extends TypeDataModel {
       description: description(),
     };
   }
+  prepareDerivedData() {
+    const { details, keywords } = this;
+    details.effect;
+    details.penalty;
+    clearEffectPenalty(details, keywords);
+  }
 }
 
 export class PassiveModel extends TypeDataModel {
@@ -180,9 +196,19 @@ export class PassiveModel extends TypeDataModel {
         experience: currencyField(),
         points: currencyField(),
       }),
+      details: new SchemaField({
+        effect: new HTMLField(),
+        penalty: new HTMLField(),
+      }),
       keywords: keywords(),
       description: description(),
     };
+  }
+  prepareDerivedData() {
+    const { details, keywords } = this;
+    details.effect;
+    details.penalty;
+    clearEffectPenalty(details, keywords);
   }
 }
 
@@ -214,8 +240,7 @@ export class WeaponModel extends TypeDataModel {
   }
 
   prepareDerivedData() {
-    const info = this.info;
-    const details = this.details;
+    const { details, info, keywords } = this;
     const subtype = info.subtype;
     const groups = PC.weapon.subtypes[subtype].groups;
     if (!(info.group in groups)) {
@@ -225,6 +250,9 @@ export class WeaponModel extends TypeDataModel {
       details.equippable = false;
       details.equipped = true;
     }
+    details.effect;
+    details.penalty;
+    clearEffectPenalty(details, keywords);
   }
 }
 
@@ -233,7 +261,6 @@ function itemCost() {
     price: new NumberField({ initial: 0, integer: true, nullable: true }),
     currency: new StringField({ initial: "silver" }),
   };
-
   return new SchemaField(fields);
 }
 
@@ -248,7 +275,6 @@ function information({
     subgroup: new StringField({ initial: null, nullable: true }),
     quality: new StringField({ initial: quality }),
   };
-
   return new SchemaField(fields);
 }
 
@@ -284,12 +310,12 @@ function details({
     stackable: new BooleanField({ initial: stackable }),
     equippable: new BooleanField({ initial: equippable }),
     equipped: new BooleanField({ initial: false }),
+    effect: new HTMLField(),
+    penalty: new HTMLField(),
   };
-
   if (extraFields && typeof extraFields === "object") {
     Object.assign(fields, extraFields);
   }
-
   return new SchemaField(fields);
 }
 
@@ -299,4 +325,15 @@ function description() {
     summary: new StringField({ initial: "" }),
     notes: new StringField({ initial: "" }),
   });
+}
+
+function clearEffectPenalty(details, keywords) {
+  const hasEffect = Object.hasOwn(keywords, "effect");
+  const hasPenalty = Object.hasOwn(keywords, "penalty");
+  if (!hasEffect) {
+    details.effect = "";
+  }
+  if (!hasPenalty) {
+    details.penalty = "";
+  }
 }

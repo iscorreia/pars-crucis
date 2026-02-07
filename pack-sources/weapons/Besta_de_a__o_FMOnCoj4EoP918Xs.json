@@ -48,7 +48,8 @@
       "stackMax": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "penalty": "<p>Não pode ser aprimorada.</p>"
     },
     "keywords": {
       "twoHanded": "",
@@ -87,7 +88,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770036161780,
-    "modifiedTime": 1770261645421,
+    "modifiedTime": 1770398674229,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "FMOnCoj4EoP918Xs",

@@ -15,7 +15,8 @@
       "stackMax": 20,
       "stackable": true,
       "equippable": false,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>explode ao contato causando um adicional de [11+COG/2] de dano Elemental: Ígneo ao alvo e em um raio de 2m.</p>"
     },
     "damage": {
       "dmgBase": -4,
@@ -26,12 +27,13 @@
       "dmgType": "none",
       "dmgSubtype": ""
     },
-    "effect": "explode no contato causando Dano [11+COG/2] Ele: Ígneo ao alvo e no raio de 2m.",
     "cost": {
       "price": 150,
       "currency": "copper"
     },
-    "keywords": {},
+    "keywords": {
+      "effect": null
+    },
     "description": {
       "description": "<p>Essa ponteira de flechas e virotes é feita com uma pequena carga de pólvora que explode ao contato.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> o projétil tem Dano-4, mas explode ao contato causando um adicional de [11+COG<span style=\"mso-bidi-font-family:Arial\">/</span>2] de dano Elemental: Ígneo ao alvo e em um raio de 2m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 1 prata e 50 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Armeiro N5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span> 2 horas, pode fabricar até 10 ponteiras por vez.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 1 Metal e 2 de Pólvora para 2 ponteiras.</p>",
       "summary": "",
@@ -53,7 +55,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770312455886,
-    "modifiedTime": 1770312455886,
+    "modifiedTime": 1770392790400,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "eKMAQQovPDvsRC4o",

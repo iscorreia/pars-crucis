@@ -15,7 +15,8 @@
       "stackMax": 10,
       "stackable": true,
       "equippable": false,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>Atinge Grupos.</p>"
     },
     "damage": {
       "dmgBase": -4,
@@ -30,7 +31,9 @@
       "price": 1,
       "currency": "silver"
     },
-    "keywords": {},
+    "keywords": {
+      "effect": null
+    },
     "description": {
       "description": "<p class=\"MsoNormal\">Esse cartucho fabricado com eônio e revestimento especial resulta em um projétil extremamente perigoso para criaturas vivas, tendo uma produção de carga radioativa no ponto de contato dos bagos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> o projétil tem Dano-5 Biológico: Podre e atinge <em>Grupos</em>.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 1 prata.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Engenharia N6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span> 2 horas, pode fabricar até 10 cartuchos por vez.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 1 de Eônio para fabricar 3 cartuchos.</p>",
       "summary": "",
@@ -53,7 +56,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770219122735,
-    "modifiedTime": 1770241843909,
+    "modifiedTime": 1770392865200,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "mVAIPggIf345sCus",

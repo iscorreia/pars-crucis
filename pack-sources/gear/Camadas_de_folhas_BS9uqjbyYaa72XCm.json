@@ -21,7 +21,7 @@
       "slots": 1
     },
     "description": {
-      "description": "<p>Armadura: 1</p><p>Obs: Isolante (+3).</p><p>Espaço: 1</p><p>Preço: 150c</p><p>Ofício: Art N3</p><p>Mts: 4</p>",
+      "description": "<p>Armadura: 1</p><p>Obs: Isolante (+3).</p><p>Preço: 150c</p><p>Espaço: 1</p><p>Requerimento: —</p><p>Ofício: Art N3</p><p>Materiais: 4</p>",
       "notes": "",
       "summary": ""
     },
@@ -46,10 +46,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769735380279,
-    "modifiedTime": 1769736264835,
+    "modifiedTime": 1770431254620,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "BS9uqjbyYaa72XCm",
-  "sort": 600000,
+  "sort": 3200000,
   "_key": "!items!BS9uqjbyYaa72XCm"
 }

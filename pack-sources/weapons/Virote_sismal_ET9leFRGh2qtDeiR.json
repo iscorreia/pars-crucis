@@ -15,7 +15,8 @@
       "stackMax": 20,
       "stackable": true,
       "equippable": false,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>adicional de [2] de dano Destrutivo</p>"
     },
     "damage": {
       "dmgBase": 0,
@@ -26,13 +27,13 @@
       "dmgType": "none",
       "dmgSubtype": ""
     },
-    "effect": "adicional de [2] de dano Destrutivo",
     "cost": {
       "price": 60,
       "currency": "copper"
     },
     "keywords": {
-      "penetrating": null
+      "penetrating": null,
+      "effect": null
     },
     "description": {
       "description": "<p>Projétil imbuído com força elemental através de uma arte atípica e muito rara praticada por alguns elementalistas. Consiste em canalizar um pouco de essência elemental na ponteira deixando-a imbuída. Qualquer personagem é capaz de utilizar dessas ponteiras.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ponteira sismal:</span> adicional de [2] de dano Destrutivo e Penetrante. Para fabricar é preciso conhecer o poder <em>Golpe sísmico</em>.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> mantém um efeito conforme o elemento imbuído a ponteira. As ponteiras como a <em>Ponteira perfurante </em>podem ser imbuídas. Utilizar um poder sobre a ponteira elemental irá sobrescrever seu efeito. Uma vez que utilizado perde seu efeito.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 60 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Elementalismo N5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span> 2 minutos, pode imbuir até 10 ponteiras por vez.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 2 Projéteis e 1 de Essência de <em>Pedra essencial </em>por ponteira.</p>",
@@ -55,7 +56,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770312198824,
-    "modifiedTime": 1770312294639,
+    "modifiedTime": 1770392758837,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "ET9leFRGh2qtDeiR",

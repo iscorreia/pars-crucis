@@ -1,0 +1,59 @@
+{
+  "name": "Malha sucateada",
+  "type": "gear",
+  "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+  "system": {
+    "info": {
+      "subtype": "wear",
+      "group": "vest",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "cost": {
+      "price": 6,
+      "currency": "silver"
+    },
+    "details": {
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "slots": 2,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "description": {
+      "description": "<p>Armadura: 4</p><p>Obs: Robustez (+2). Frágil (5).</p><p>Preço: 6p</p><p>Espaço: 2</p><p>Requerimento: FIS2</p><p>Ofício: Art N3</p><p>Materiais: 10</p>",
+      "notes": "",
+      "summary": ""
+    },
+    "keywords": {
+      "armor": "4",
+      "robust": "+2",
+      "fragile": "5"
+    },
+    "actions": {}
+  },
+  "effects": [],
+  "folder": "0rAC4l78SHKQWFlp",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770399344123,
+    "modifiedTime": 1770431254620,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "LxFKAyyAJn2M6qvk",
+  "sort": 2900000,
+  "_key": "!items!LxFKAyyAJn2M6qvk"
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Veste metatérmica",
+  "type": "gear",
+  "img": "icons/equipment/chest/breastplate-layered-leather-blue-gold.webp",
+  "system": {
+    "info": {
+      "subtype": "wear",
+      "group": "vest",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "cost": {
+      "price": 29,
+      "currency": "silver"
+    },
+    "details": {
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "slots": 2,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "description": {
+      "description": "<p>Armadura: 5</p><p>Obs: Isolante (+7). Sob medida.</p><p>Preço: 29p</p><p>Espaço: 2</p><p>Requerimento: COG5</p><p>Ofício: Eng N7</p><p>Materiais: 24</p>",
+      "notes": "",
+      "summary": ""
+    },
+    "keywords": {
+      "armor": "5",
+      "insulant": "+7",
+      "custom": ""
+    },
+    "actions": {}
+  },
+  "effects": [],
+  "folder": "0rAC4l78SHKQWFlp",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770431384076,
+    "modifiedTime": 1770431384076,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "ZqfjGnknY6t3ky0i",
+  "sort": 0,
+  "_key": "!items!ZqfjGnknY6t3ky0i"
+}

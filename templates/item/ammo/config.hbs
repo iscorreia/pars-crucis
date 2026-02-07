@@ -179,17 +179,6 @@
     </div>
   </div>
 
-  <div class="item-info-config">
-    <div class="item-info-block">
-      <input
-        name="system.effect"
-        value="{{system.effect}}"
-        type="text"
-        data-dtype="String"
-      />
-    </div>
-  </div>
-
   <div class="keyword-title-line">
     <a data-action="keywordPicker">{{localize "PC.keywords"}}
       <i class="fa-regular fa-plus"></i>
@@ -203,4 +192,26 @@
       </div>
     {{/each}}
   </div>
+
+  {{#if (hasKey system.keywords "effect")}}
+    <div class="item-info-config">
+      <div class="item-info-block medium-block">
+        {{formInput
+          systemFields.details.fields.effect
+          value=system.details.effect
+        }}
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if (hasKey system.keywords "penalty")}}
+    <div class="item-info-config">
+      <div class="item-info-block medium-block">
+        {{formInput
+          systemFields.details.fields.penalty
+          value=system.details.penalty
+        }}
+      </div>
+    </div>
+  {{/if}}
 </section>

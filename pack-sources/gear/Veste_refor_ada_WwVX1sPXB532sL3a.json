@@ -18,10 +18,13 @@
       "stackable": false,
       "equippable": true,
       "equipped": false,
-      "slots": 1
+      "slots": 1,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": ""
     },
     "description": {
-      "description": "<p>Armadura: 2</p><p>Espaço: 1</p><p>Preço: 150c</p><p>Ofício: Art N4</p><p>Mts: 4</p>",
+      "description": "<p>Armadura: 2</p><p>Obs: —</p><p>Preço: 150c</p><p>Espaço: 1</p><p>Requerimento: —</p><p>Ofício: Art N4</p><p>Materiais: 4</p>",
       "notes": "",
       "summary": ""
     },
@@ -45,10 +48,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769735680405,
-    "modifiedTime": 1769736083707,
+    "modifiedTime": 1770431254620,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "WwVX1sPXB532sL3a",
-  "sort": 400000,
+  "sort": 3100000,
   "_key": "!items!WwVX1sPXB532sL3a"
 }

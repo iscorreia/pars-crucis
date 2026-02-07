@@ -52,9 +52,9 @@
       </span>
     {{/unless}}
   {{/if}}
-  {{#if this.selectedAmmo.system.effect}}
+  {{#if this.selectedAmmo.system.details.effect}}
     <span class="inline-label">{{localize "PC.effect"}}</span>
-    <span class="inline-value">{{this.selectedAmmo.system.effect}}</span>
+    <span class="inline-value">{{{this.selectedAmmo.system.details.effect}}}</span>
   {{/if}}
   <span class="inline-label">{{localize "PC.stock"}}</span>
   <span class="inline-value">{{this.selectedAmmo.system.details.stack}}</span>

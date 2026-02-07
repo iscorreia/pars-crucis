@@ -130,6 +130,10 @@ Hooks.once("init", () => {
     if (typeof value === "object") return Object.keys(value).length === 0;
     return false;
   });
+  Handlebars.registerHelper("hasKey", function (obj, key) {
+    if (!obj || typeof obj !== "object") return false;
+    return Object.prototype.hasOwnProperty.call(obj, key);
+  });
 
   /**
    * Set an initiative formula for the system

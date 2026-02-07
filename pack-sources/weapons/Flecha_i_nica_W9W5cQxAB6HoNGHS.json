@@ -15,7 +15,8 @@
       "stackMax": 20,
       "stackable": true,
       "equippable": false,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>em máquinas e desativa certas funções.</p>"
     },
     "damage": {
       "dmgBase": 4,
@@ -26,12 +27,13 @@
       "dmgType": "ele",
       "dmgSubtype": "Voltaico"
     },
-    "effect": "desativa certas funções em máquinas e equipamentos.",
     "cost": {
       "price": 50,
       "currency": "copper"
     },
-    "keywords": {},
+    "keywords": {
+      "effect": null
+    },
     "description": {
       "description": "<p>Carregada com energia estática no momento do disparo, essa ponteira é muito eficiente contra máquina. Atingir um equipamento ou máquina com uma flecha ou virote com ponteira iônica desativa suas funcionalidades que dependam de energia elétrica ou Dínamo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> tem Dano+4 Elemental: Voltaico em máquinas e desativa certas funções.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 50 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Engenharia N5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span> 2 horas, pode fabricar até 10 ponteiras por vez.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 1 Metal para 2 ponteiras.</p>",
       "summary": "",
@@ -53,7 +55,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770312562040,
-    "modifiedTime": 1770312610856,
+    "modifiedTime": 1770392761249,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "W9W5cQxAB6HoNGHS",

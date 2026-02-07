@@ -1,0 +1,60 @@
+{
+  "name": "Couraça sucateada",
+  "type": "gear",
+  "img": "icons/equipment/chest/breastplate-banded-steel-studded.webp",
+  "system": {
+    "info": {
+      "subtype": "wear",
+      "group": "vest",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "cost": {
+      "price": 22,
+      "currency": "silver"
+    },
+    "details": {
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "slots": 3,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": "<p>Reflexo têm MOD-2.</p>"
+    },
+    "description": {
+      "description": "<p>Armadura: 7</p><p>Obs: Reflexo têm MOD-2. Robustez (+3). Frágil (5).</p><p>Preço: 22p</p><p>Espaço: 3</p><p>Requerimento: FIS3</p><p>Ofício: Art N6</p><p>Materiais: 20</p>",
+      "notes": "",
+      "summary": ""
+    },
+    "keywords": {
+      "armor": "7",
+      "robust": "+3",
+      "fragile": "5",
+      "penalty": null
+    },
+    "actions": {}
+  },
+  "effects": [],
+  "folder": "0rAC4l78SHKQWFlp",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770429436464,
+    "modifiedTime": 1770435874803,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "3S0VPJUie2M9SkfR",
+  "sort": 500000,
+  "_key": "!items!3S0VPJUie2M9SkfR"
+}

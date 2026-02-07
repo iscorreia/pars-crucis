@@ -20,7 +20,8 @@
       "stackMax": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>ao bloquear um ataque o atacante deve realizar 4 de esforço e sofre 2 de dano existencial ou fica vulnerável.</p>"
     },
     "keywords": {
       "defense": "+1",
@@ -55,7 +56,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770324554479,
-    "modifiedTime": 1770324785847,
+    "modifiedTime": 1770393005355,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "inIaghBIHNPeOqWM",
