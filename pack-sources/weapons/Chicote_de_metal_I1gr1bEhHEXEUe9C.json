@@ -1,7 +1,7 @@
 {
   "name": "Chicote de metal",
   "type": "weapon",
-  "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(33).png",
+  "img": "icon%20library/weapons/exotic%20weapons/exotic%20(33).png",
   "system": {
     "info": {
       "subtype": "melee",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "fzVwGJrrZqk2zb13": {
-        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(33).png",
+        "img": "icon%20library/weapons/exotic%20weapons/exotic%20(33).png",
         "name": "Atacar",
         "type": "attack",
         "_id": "fzVwGJrrZqk2zb13",
@@ -83,8 +83,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770487837485,
-    "modifiedTime": 1770488119720,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1770498108681,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "I1gr1bEhHEXEUe9C",
   "sort": 900000,

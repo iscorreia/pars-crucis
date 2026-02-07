@@ -1,7 +1,7 @@
 {
   "name": "Chakram",
   "type": "weapon",
-  "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(39).png",
+  "img": "icon%20library/weapons/exotic%20weapons/exotic%20(39).png",
   "system": {
     "info": {
       "subtype": "melee",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "dZ1ZjUsEYGKuCefu": {
-        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(39).png",
+        "img": "icon%20library/weapons/exotic%20weapons/exotic%20(39).png",
         "name": "Golpear",
         "type": "attack",
         "_id": "dZ1ZjUsEYGKuCefu",
@@ -39,7 +39,7 @@
         "subtype": "melee"
       },
       "EhfTkbGS8612Apbs": {
-        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(39).png",
+        "img": "icon%20library/weapons/exotic%20weapons/exotic%20(39).png",
         "name": "Arremessar",
         "type": "attack",
         "_id": "EhfTkbGS8612Apbs",
@@ -112,8 +112,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770487770877,
-    "modifiedTime": 1770488119720,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1770498064897,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "avu80Ugl1Iy6Aq6v",
   "sort": 700000,

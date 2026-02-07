@@ -1,7 +1,7 @@
 {
   "name": "Manriki",
   "type": "weapon",
-  "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(41).png",
+  "img": "icon%20library/weapons/exotic%20weapons/exotic%20(9).png",
   "system": {
     "info": {
       "subtype": "melee",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "YHW05UShA0AdsgfN": {
-        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(41).png",
+        "img": "icon%20library/weapons/exotic%20weapons/exotic%20(9).png",
         "name": "Golpear",
         "type": "attack",
         "_id": "YHW05UShA0AdsgfN",
@@ -85,8 +85,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770489357294,
-    "modifiedTime": 1770489357294,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1770498391349,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "owBDxLhLWim2D2g6",
   "sort": 0,

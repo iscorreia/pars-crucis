@@ -1,7 +1,7 @@
 {
   "name": "Tanto",
   "type": "weapon",
-  "img": "icon%20library/icon%20library/weapons/daggers/undead%20(30).png",
+  "img": "icon%20library/weapons/daggers/undead%20(30).png",
   "system": {
     "info": {
       "subtype": "melee",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "dZ1ZjUsEYGKuCefu": {
-        "img": "icon%20library/icon%20library/weapons/daggers/undead%20(30).png",
+        "img": "icon%20library/weapons/daggers/undead%20(30).png",
         "name": "Golpear",
         "type": "attack",
         "_id": "dZ1ZjUsEYGKuCefu",
@@ -39,7 +39,7 @@
         "subtype": "melee"
       },
       "EhfTkbGS8612Apbs": {
-        "img": "icon%20library/icon%20library/weapons/daggers/undead%20(30).png",
+        "img": "icon%20library/weapons/daggers/undead%20(30).png",
         "name": "Arremessar",
         "type": "attack",
         "_id": "EhfTkbGS8612Apbs",
@@ -112,8 +112,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770488308574,
-    "modifiedTime": 1770488308574,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1770498277717,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "zSzikhexfbmZU7Sn",
   "sort": 0,

@@ -1,7 +1,7 @@
 {
   "name": "Bumerangue",
   "type": "weapon",
-  "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(10).png",
+  "img": "icon%20library/weapons/exotic%20weapons/exotic%20(10).png",
   "system": {
     "info": {
       "subtype": "melee",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "HKbX8GohpJZ8f6RR": {
-        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(10).png",
+        "img": "icon%20library/weapons/exotic%20weapons/exotic%20(10).png",
         "name": "Arremessar",
         "type": "attack",
         "_id": "HKbX8GohpJZ8f6RR",
@@ -84,8 +84,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770486834630,
-    "modifiedTime": 1770486925622,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1770497806999,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "UE39wuwmUjFptFMI",
   "sort": 0,

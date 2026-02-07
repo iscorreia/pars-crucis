@@ -1,7 +1,7 @@
 {
   "name": "Zarabatana",
   "type": "weapon",
-  "img": "icons/commodities/wood/bamboo-brown.webp",
+  "img": "icon%20library/weapons/exotic%20weapons/exotic%20(15).png",
   "system": {
     "info": {
       "subtype": "ranged",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "S9T5IJdnIYUGec5P": {
-        "img": "icons/commodities/wood/bamboo-brown.webp",
+        "img": "icon%20library/weapons/exotic%20weapons/exotic%20(15).png",
         "name": "Disparar",
         "type": "attack",
         "_id": "S9T5IJdnIYUGec5P",
@@ -81,7 +81,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770088428305,
-    "modifiedTime": 1770090309770,
+    "modifiedTime": 1770498469683,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "fG9RW5V0XDs20eth",
