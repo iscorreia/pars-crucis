@@ -1,0 +1,94 @@
+{
+  "name": "Mangual",
+  "type": "weapon",
+  "img": "icons/weapons/maces/flail-studded-grey.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "flail",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "eYnek4d67HXqsRZj": {
+        "img": "icons/weapons/maces/flail-studded-grey.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "eYnek4d67HXqsRZj",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [
+            "fis"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "malha",
+        "effect": "Se um ataque com Ⓐ for defendido ainda é considerado sucesso.",
+        "usesAmmo": false,
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 4,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "blunt": "",
+      "handling": "-1",
+      "bypass": null
+    },
+    "description": {
+      "description": "<p>Alcance: 1m</p><p>Dano: 8+FIS</p><p>Obs: Manuseio (-1), Embotada, Ignora bônus DEF, Se um ataque com Ⓐ for defendido ainda é considerado sucesso.</p><p>Espaço: 1</p><p>Preço: 4p</p><p>Req: FIS1</p><p>Ofício: Arm N5</p><p>Mts: 4</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "ooE9n2ESYWvrRUnY",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770489150254,
+    "modifiedTime": 1770489150254,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "TD3x00l8jWHcKLkU",
+  "sort": 0,
+  "_key": "!items!TD3x00l8jWHcKLkU"
+}

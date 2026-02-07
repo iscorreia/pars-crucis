@@ -1,0 +1,95 @@
+{
+  "name": "Martelo de guerra",
+  "type": "weapon",
+  "img": "icons/weapons/hammers/hammer-double-engraved-gold.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "hammer",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "ZgDqPCnUZGjjF0vI": {
+        "img": "icons/weapons/hammers/hammer-double-engraved-gold.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "ZgDqPCnUZGjjF0vI",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 12,
+          "dmgAttributes": [
+            "fis"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "malha",
+        "effect": "Causa Ⓐ de dano destrutivo",
+        "usesAmmo": false,
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 16,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "twoHanded": "",
+      "handling": "-1",
+      "blunt": "",
+      "impact": "6"
+    },
+    "description": {
+      "description": "<p>Alcance: 1m</p><p>Dano: 12+FIS</p><p>Obs: 2 mãos, Manuseio (-1), Embotada, Impacto (6), Causa Ⓐ de dano destrutivo.</p><p>Espaço: 2</p><p>Preço: 4p</p><p>Req: FIS4</p><p>Ofício: Arm N5</p><p>Mts: 9</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "ooE9n2ESYWvrRUnY",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770489517447,
+    "modifiedTime": 1770489517447,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "Z5lDM1EG5IO4wnej",
+  "sort": 0,
+  "_key": "!items!Z5lDM1EG5IO4wnej"
+}

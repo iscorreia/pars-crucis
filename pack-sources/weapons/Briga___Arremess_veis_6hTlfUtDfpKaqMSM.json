@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Briga - Arremessáveis",
+  "color": null,
+  "sorting": "a",
+  "_id": "6hTlfUtDfpKaqMSM",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770486825667,
+    "modifiedTime": 1770486825667,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_key": "!folders!6hTlfUtDfpKaqMSM"
+}

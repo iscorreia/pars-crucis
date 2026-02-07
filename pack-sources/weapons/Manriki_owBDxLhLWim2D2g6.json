@@ -1,0 +1,94 @@
+{
+  "name": "Manriki",
+  "type": "weapon",
+  "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(41).png",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "flail",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "YHW05UShA0AdsgfN": {
+        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(41).png",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "YHW05UShA0AdsgfN",
+        "damaging": true,
+        "range": "3m",
+        "damage": {
+          "dmgBase": 12,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "malha",
+        "effect": "Se um ataque com Ⓐ for defendido ainda é considerado sucesso.",
+        "usesAmmo": false,
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 5,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "lethality": "/2",
+      "bypass": null
+    },
+    "description": {
+      "description": "<p>Alcance: 3m</p><p>Dano: 12+FIS|DES/2</p><p>Obs: Fatalidade/2. Ignora bônus de DEF de escudos. Se um ataque com Ⓐ for defendido ainda é considerado sucesso.</p><p>Espaço: 1</p><p>Preço: 5p</p><p>Req: DES3</p><p>Ofício: Arm N6</p><p>Mts: 5</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "ooE9n2ESYWvrRUnY",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770489357294,
+    "modifiedTime": 1770489357294,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "owBDxLhLWim2D2g6",
+  "sort": 0,
+  "_key": "!items!owBDxLhLWim2D2g6"
+}

@@ -1,0 +1,92 @@
+{
+  "name": "Kunai",
+  "type": "weapon",
+  "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(1).png",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "throwing",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "na1em73HrxmhYjHM": {
+        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(1).png",
+        "name": "Atacar",
+        "type": "attack",
+        "_id": "na1em73HrxmhYjHM",
+        "damaging": true,
+        "range": "7/21m",
+        "damage": {
+          "dmgBase": 7,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "subtype": "throw",
+        "usesAmmo": false,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "briga"
+      }
+    },
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 6,
+      "stackable": true,
+      "equippable": true,
+      "equipped": false,
+      "effect": "<p>Ocultar (+4)</p><p>Não precisam de uma ação para trocar de arma ou mirar.</p>",
+      "penalty": ""
+    },
+    "keywords": {
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Alcance: 7/21m</p><p>Dano: 7+DES</p><p>Obs: Ocultar (+4)</p><p>Efeito: são leves e aerodinâmicas, ideais para arremessos rápidos e não precisam de uma ação para trocar de arma ou mirar.</p><p>Quantidade carregável: 6</p><p>Espaço: 1</p><p>Preço: 1p</p><p>Req: DES2</p><p>Ofício: Arm N4</p><p>Mts: 1</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "pebble",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "6hTlfUtDfpKaqMSM",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770487022820,
+    "modifiedTime": 1770487022820,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "I15P4wH4pZWo793t",
+  "sort": 0,
+  "_key": "!items!I15P4wH4pZWo793t"
+}

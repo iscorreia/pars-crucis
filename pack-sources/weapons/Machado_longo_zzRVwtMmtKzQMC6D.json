@@ -1,0 +1,94 @@
+{
+  "name": "Machado longo",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-broad-engraved-black-grey.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "ax",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "vyiyvEd0eeeF249Y": {
+        "img": "icons/weapons/axes/axe-broad-engraved-black-grey.webp",
+        "name": "Atacar",
+        "type": "attack",
+        "_id": "vyiyvEd0eeeF249Y",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 14,
+          "dmgAttributes": [
+            "fis"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "malha",
+        "usesAmmo": false,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 17,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "twoHanded": "",
+      "impact": "8",
+      "handling": "-1"
+    },
+    "description": {
+      "description": "<p>Alcance: 1m</p><p>Dano: 14+FIS</p><p>Obs: 2 mãos, Manuseio (-1), Impacto (8)</p><p>Espaço: 2</p><p>Preço: 17p</p><p>Req: FIS4</p><p>Ofício: Arm N6</p><p>Mts: 10</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "ooE9n2ESYWvrRUnY",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770489103527,
+    "modifiedTime": 1770489103527,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "zzRVwtMmtKzQMC6D",
+  "sort": 0,
+  "_key": "!items!zzRVwtMmtKzQMC6D"
+}
