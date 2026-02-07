@@ -1,0 +1,121 @@
+{
+  "name": "Chakram",
+  "type": "weapon",
+  "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(39).png",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "light",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "dZ1ZjUsEYGKuCefu": {
+        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(39).png",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "dZ1ZjUsEYGKuCefu",
+        "damaging": true,
+        "range": "0m",
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "briga",
+        "subtype": "melee"
+      },
+      "EhfTkbGS8612Apbs": {
+        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(39).png",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "EhfTkbGS8612Apbs",
+        "damaging": true,
+        "range": "10/30m",
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "briga",
+        "subtype": "throw"
+      }
+    },
+    "cost": {
+      "price": 3,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 3,
+      "stackable": true,
+      "equippable": true,
+      "equipped": false,
+      "effect": "<p>Possui uma câmara no cabo que armazena uma carga de veneno ou outra solução, e quando o gatilho no cabo é pressionado, a solução é liberada rapidamente, aumentando a dificuldade dos testes causados em 2.</p>",
+      "penalty": ""
+    },
+    "keywords": {
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Alcance: 0m</p><p>Alcande do arremesso: 10/30m</p><p>Dano: 8+FIS|DES</p><p>Efeito: possui uma câmara no cabo que armazena uma carga de veneno ou outra solução, e quando o gatilho no cabo é pressionado, a solução é liberada rapidamente, aumentando a dificuldade dos testes causados em 2.</p><p>Quantidade carregável: 3</p><p>Espaço: 1</p><p>Preço: 3p</p><p>Requisitos: DES3</p><p>Ofício: Arm N6</p><p>Mts: 2</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "aosQkwjSW7FZ2dGA",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770487770877,
+    "modifiedTime": 1770488119720,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "avu80Ugl1Iy6Aq6v",
+  "sort": 700000,
+  "_key": "!items!avu80Ugl1Iy6Aq6v"
+}

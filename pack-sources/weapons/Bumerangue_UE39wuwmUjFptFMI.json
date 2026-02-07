@@ -1,0 +1,93 @@
+{
+  "name": "Bumerangue",
+  "type": "weapon",
+  "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(10).png",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "throwing",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "HKbX8GohpJZ8f6RR": {
+        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(10).png",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "HKbX8GohpJZ8f6RR",
+        "damaging": true,
+        "range": "10/30m",
+        "damage": {
+          "dmgBase": 6,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "Com Ⓐ ou MS4 o bumerangue retorna",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "briga",
+        "subtype": "throw"
+      }
+    },
+    "cost": {
+      "price": 60,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 4,
+      "stackable": true,
+      "equippable": true,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Alcance: 10/30m</p><p>Dano: 6+FIS|DES</p><p>Obs: Com Ⓐ ou MS4 o bumerangue retorna</p><p>Quantidade carregável: 4</p><p>Espaço: 1</p><p>Preço: 60c</p><p>Req: DES2</p><p>Ofício: Art N3</p><p>Mts: 1</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "pebble",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "6hTlfUtDfpKaqMSM",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770486834630,
+    "modifiedTime": 1770486925622,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "UE39wuwmUjFptFMI",
+  "sort": 0,
+  "_key": "!items!UE39wuwmUjFptFMI"
+}

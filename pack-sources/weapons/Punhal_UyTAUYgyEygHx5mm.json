@@ -1,0 +1,94 @@
+{
+  "name": "Punhal",
+  "type": "weapon",
+  "img": "icon%20library/icon%20library/weapons/daggers/34.png",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "light",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "dZ1ZjUsEYGKuCefu": {
+        "img": "icon%20library/icon%20library/weapons/daggers/34.png",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "dZ1ZjUsEYGKuCefu",
+        "damaging": true,
+        "range": "0",
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "briga",
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 2,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "<p>Ocultar+2</p>",
+      "penalty": ""
+    },
+    "keywords": {
+      "lethality": "+1",
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Alcance: 0m</p><p>Dano: 5+FIS|DES</p><p>Obs: Ocultar+2, Fatalidade+1</p><p>Espaço: 1</p><p>Preço: 2p</p><p>Ofício: Arm N4</p><p>Mts: 2</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "aosQkwjSW7FZ2dGA",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770488259061,
+    "modifiedTime": 1770488259061,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "UyTAUYgyEygHx5mm",
+  "sort": 0,
+  "_key": "!items!UyTAUYgyEygHx5mm"
+}

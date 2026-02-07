@@ -1,0 +1,122 @@
+{
+  "name": "Clava",
+  "type": "weapon",
+  "img": "icons/weapons/clubs/club-banded-barbed-black.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "mace",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "r9m4UTfuGYOqbfvK": {
+        "img": "icons/weapons/clubs/club-banded-barbed-black.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "r9m4UTfuGYOqbfvK",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 5,
+          "scalable": true,
+          "dmgAttributes": [
+            "fis"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "malha",
+        "effect": "",
+        "usesAmmo": false,
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee"
+      },
+      "kcXkqjLYBPwdJz24": {
+        "img": "icons/weapons/clubs/club-banded-barbed-black.webp",
+        "name": "Golpear²",
+        "type": "attack",
+        "_id": "kcXkqjLYBPwdJz24",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 7,
+          "dmgAttributes": [
+            "fis"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "malha",
+        "keywords": {
+          "twoHanded": null
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 40,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "blunt": "",
+      "impact": "8"
+    },
+    "description": {
+      "description": "<p>Alcance: 1m</p><p>Dano: 5+FIS</p><p>Obs: Embotada, Impacto (8). Com 2 mãos Dano+2</p><p>Espaço: 1</p><p>Preço: 40c</p><p>Req: FIS2</p><p>Ofício: Arm N2</p><p>Mts: 2</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "ooE9n2ESYWvrRUnY",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770488541606,
+    "modifiedTime": 1770488964661,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "ALORImqa2zzldkeo",
+  "sort": 100000,
+  "_key": "!items!ALORImqa2zzldkeo"
+}

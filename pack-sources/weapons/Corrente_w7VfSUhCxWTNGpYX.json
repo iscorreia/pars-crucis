@@ -1,0 +1,94 @@
+{
+  "name": "Corrente",
+  "type": "weapon",
+  "img": "icons/tools/fasteners/chain-steel-grey.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "flail",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "YHW05UShA0AdsgfN": {
+        "img": "icons/tools/fasteners/chain-steel-grey.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "YHW05UShA0AdsgfN",
+        "damaging": true,
+        "range": "3m",
+        "damage": {
+          "dmgBase": 12,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "Se um ataque com Ⓐ for defendido ainda é considerado sucesso",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "malha",
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 5,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "<p>Se um ataque com Ⓐ for defendido ainda é considerado sucesso</p>",
+      "penalty": ""
+    },
+    "keywords": {
+      "lethality": "/2",
+      "bypass": null
+    },
+    "description": {
+      "description": "<p>Alcance: 3m</p><p>Dano: 12+FIS|DES/2</p><p>Obs: Fatalidade/2. Ignora bônus de DEF de escudos. Se um ataque com Ⓐ for defendido ainda é considerado sucesso.</p><p>Espaço: 1</p><p>Preço: 5p</p><p>Req: DES3</p><p>Ofício: Arm N6</p><p>Mts: 5</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "ooE9n2ESYWvrRUnY",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770488717502,
+    "modifiedTime": 1770489367090,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "w7VfSUhCxWTNGpYX",
+  "sort": 200000,
+  "_key": "!items!w7VfSUhCxWTNGpYX"
+}

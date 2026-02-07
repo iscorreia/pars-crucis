@@ -1,0 +1,92 @@
+{
+  "name": "Chicote de metal",
+  "type": "weapon",
+  "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(33).png",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "light",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "fzVwGJrrZqk2zb13": {
+        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(33).png",
+        "name": "Atacar",
+        "type": "attack",
+        "_id": "fzVwGJrrZqk2zb13",
+        "damaging": true,
+        "range": "2m",
+        "damage": {
+          "dmgBase": 10,
+          "dmgAttributes": [
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "briga",
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 13,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "lethality": "/2"
+    },
+    "description": {
+      "description": "<p>Alcance: 2m</p><p>Dano: 10+DES</p><p>Obs: Fatalidade/2</p><p>Espaço: 1</p><p>Preço: 13p</p><p>Requisito: DES5</p><p>Ofício: Arm N7</p><p>Mts: 3</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "aosQkwjSW7FZ2dGA",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770487837485,
+    "modifiedTime": 1770488119720,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "I1gr1bEhHEXEUe9C",
+  "sort": 900000,
+  "_key": "!items!I1gr1bEhHEXEUe9C"
+}

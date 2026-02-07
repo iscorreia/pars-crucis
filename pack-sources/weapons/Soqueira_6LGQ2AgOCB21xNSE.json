@@ -1,0 +1,93 @@
+{
+  "name": "Soqueira",
+  "type": "weapon",
+  "img": "icons/weapons/fist/fist-knuckles-spiked-blue.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "light",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "dZ1ZjUsEYGKuCefu": {
+        "img": "icons/weapons/fist/fist-knuckles-spiked-blue.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "dZ1ZjUsEYGKuCefu",
+        "damaging": true,
+        "range": "0",
+        "damage": {
+          "dmgBase": 6,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "briga",
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 50,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "<p>Ocultar+4</p>",
+      "penalty": ""
+    },
+    "keywords": {
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Alcance: 0</p><p>Dano: 6+FIS|DES</p><p>Obs: Ocultar (+4)</p><p>Espaço: 1</p><p>Preço: 50c</p><p>Ofício: Arm N2</p><p>Mts: 1</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "aosQkwjSW7FZ2dGA",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770488286693,
+    "modifiedTime": 1770488286693,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "6LGQ2AgOCB21xNSE",
+  "sort": 0,
+  "_key": "!items!6LGQ2AgOCB21xNSE"
+}

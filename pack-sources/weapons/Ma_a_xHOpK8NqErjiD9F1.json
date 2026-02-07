@@ -1,0 +1,120 @@
+{
+  "name": "Maça",
+  "type": "weapon",
+  "img": "icons/weapons/maces/mace-flanged-steel.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "mace",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "sFPzB7t5IJqQrv3h": {
+        "img": "icons/weapons/maces/mace-flanged-steel.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "sFPzB7t5IJqQrv3h",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [
+            "fis"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "malha",
+        "effect": "",
+        "usesAmmo": false,
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee"
+      },
+      "3Jr70zMr8iVRWKKG": {
+        "img": "icons/weapons/maces/mace-flanged-steel.webp",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "3Jr70zMr8iVRWKKG",
+        "damaging": true,
+        "range": "5/10m",
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [
+            "fis"
+          ],
+          "scalable": true,
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "malha",
+        "subtype": "throw",
+        "usesAmmo": false,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {}
+      }
+    },
+    "cost": {
+      "price": 4,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "blunt": "",
+      "impact": "8"
+    },
+    "description": {
+      "description": "<p>Alcance: 1m</p><p>Dano: 8+FIS</p><p>Obs: Embotada, Impacto (8)</p><p>Arremesso: 5/10m</p><p>Espaço: 1</p><p>Preço: 4p</p><p>Req: FIS1</p><p>Ofício: Arm N4</p><p>Mts: 3</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "ooE9n2ESYWvrRUnY",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770488733269,
+    "modifiedTime": 1770488964661,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "xHOpK8NqErjiD9F1",
+  "sort": 300000,
+  "_key": "!items!xHOpK8NqErjiD9F1"
+}

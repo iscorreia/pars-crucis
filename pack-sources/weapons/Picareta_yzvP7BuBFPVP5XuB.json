@@ -1,0 +1,95 @@
+{
+  "name": "Picareta",
+  "type": "weapon",
+  "img": "icons/weapons/axes/pickaxe-gray.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "hammer",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "aDjtA6JPbBUx1Uc8": {
+        "img": "icons/weapons/axes/pickaxe-gray.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "aDjtA6JPbBUx1Uc8",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 10,
+          "dmgAttributes": [
+            "fis"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skill": "malha",
+        "effect": "Causa Ⓐ de dano Destrutivo",
+        "usesAmmo": false,
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 4,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "twoHanded": "",
+      "handling": "-2",
+      "blunt": "",
+      "impact": "5"
+    },
+    "description": {
+      "description": "<p>Alcance: 1m</p><p>Dano: 10+FIS</p><p>Obs: 2 mãos, Manuseio (-2), Embotada, Impacto (5), Causa Ⓐ de dano Destrutivo</p><p>Espaço: 1</p><p>Preço: 4p</p><p>Req: FIS1</p><p>Ofício: Arm N3</p><p>Mts: 5</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "ooE9n2ESYWvrRUnY",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770489629286,
+    "modifiedTime": 1770489629286,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "yzvP7BuBFPVP5XuB",
+  "sort": 0,
+  "_key": "!items!yzvP7BuBFPVP5XuB"
+}

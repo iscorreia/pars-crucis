@@ -1,0 +1,93 @@
+{
+  "name": "Katar",
+  "type": "weapon",
+  "img": "icons/weapons/fist/fist-katar-gold.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "light",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "IneFmQBj8lABS3eo": {
+        "img": "icons/weapons/fist/fist-katar-gold.webp",
+        "name": "Atacar",
+        "type": "attack",
+        "_id": "IneFmQBj8lABS3eo",
+        "damaging": true,
+        "range": "0",
+        "damage": {
+          "dmgBase": 9,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "effort": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": "briga",
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 12,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "penetrating": null
+    },
+    "description": {
+      "description": "<p>Alcance: 0</p><p>Dano: 9+FIS|DES</p><p>Obs: Penetrante</p><p>Espaço: 1</p><p>Preço: 12p</p><p>Requisito: DES2</p><p>Ofício: Arm N6</p><p>Mts: 3</p>",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "aosQkwjSW7FZ2dGA",
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770488053021,
+    "modifiedTime": 1770488119720,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "QekXui42apf6Byrk",
+  "sort": 1100000,
+  "_key": "!items!QekXui42apf6Byrk"
+}
