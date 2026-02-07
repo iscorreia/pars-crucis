@@ -1,7 +1,7 @@
 {
   "name": "Adaga de aparo",
   "type": "weapon",
-  "img": "icon%20library/icon%20library/weapons/daggers/dagger%20(25).png",
+  "img": "icon%20library/weapons/daggers/dagger%20(25).png",
   "system": {
     "info": {
       "subtype": "melee",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "dZ1ZjUsEYGKuCefu": {
-        "img": "icon%20library/icon%20library/weapons/daggers/dagger%20(25).png",
+        "img": "icon%20library/weapons/daggers/dagger%20(25).png",
         "name": "Golpear",
         "type": "attack",
         "_id": "dZ1ZjUsEYGKuCefu",
@@ -84,8 +84,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770487339788,
-    "modifiedTime": 1770488119720,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1770497997463,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "29nJZ90IwqSAYrRP",
   "sort": 200000,

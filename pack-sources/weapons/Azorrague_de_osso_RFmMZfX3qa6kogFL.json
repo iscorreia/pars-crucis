@@ -1,7 +1,7 @@
 {
   "name": "Azorrague de osso",
   "type": "weapon",
-  "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(42).png",
+  "img": "icon%20library/weapons/exotic%20weapons/exotic%20(42).png",
   "system": {
     "info": {
       "subtype": "melee",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "dZ1ZjUsEYGKuCefu": {
-        "img": "icon%20library/icon%20library/weapons/exotic%20weapons/exotic%20(42).png",
+        "img": "icon%20library/weapons/exotic%20weapons/exotic%20(42).png",
         "name": "Golpear",
         "type": "attack",
         "_id": "dZ1ZjUsEYGKuCefu",
@@ -82,8 +82,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770487729596,
-    "modifiedTime": 1770488119720,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1770497914950,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "RFmMZfX3qa6kogFL",
   "sort": 500000,
