@@ -48,7 +48,8 @@
       "stackMax": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>pode ser carregada e manuseada por um personagem com FIS 6 ou maior, aplicando MV-1 e MOD-4 a DES.</p>"
     },
     "keywords": {
       "twoHanded": "",
@@ -87,7 +88,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770036522494,
-    "modifiedTime": 1770261645421,
+    "modifiedTime": 1770398765406,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "ydG7TMx5TQvxngSf",

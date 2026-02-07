@@ -18,10 +18,13 @@
       "stackable": false,
       "equippable": true,
       "equipped": false,
-      "slots": 2
+      "slots": 2,
+      "stackMax": 1,
+      "effect": "<p>Furtividade tem MOD+2.</p>",
+      "penalty": ""
     },
     "description": {
-      "description": "<p>Armadura: 3</p><p>Obs: Furtividade tem MOD+2.</p><p>Espaço: 2</p><p>Preço: 5p</p><p>Req: DES2</p><p>Ofício: Art N4</p><p>Mts: 8</p>",
+      "description": "<p>Armadura: 3</p><p>Obs: Furtividade tem MOD+2.</p><p>Preço: 5p</p><p>Espaço: 2</p><p>Requerimento: DES2</p><p>Ofício: Art N4</p><p>Materiais: 8</p>",
       "notes": "",
       "summary": ""
     },
@@ -46,10 +49,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769736364604,
-    "modifiedTime": 1769736364604,
+    "modifiedTime": 1770431254620,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "lBEDMnh09FuhSDmY",
-  "sort": 0,
+  "sort": 2100000,
   "_key": "!items!lBEDMnh09FuhSDmY"
 }

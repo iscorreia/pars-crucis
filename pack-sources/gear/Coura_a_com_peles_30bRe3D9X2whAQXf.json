@@ -1,0 +1,59 @@
+{
+  "name": "Couraça com peles",
+  "type": "gear",
+  "img": "icons/equipment/chest/breastplate-layered-leather-green.webp",
+  "system": {
+    "info": {
+      "subtype": "wear",
+      "group": "vest",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "cost": {
+      "price": 60,
+      "currency": "silver"
+    },
+    "details": {
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "slots": 3,
+      "stackMax": 1,
+      "effect": "<p>ESP tem MOD+1.<br>É geralmente utilizada pelo representante ou guia de uma cultura, como os guias astraios e sabak, sacerdotes aoistas e pajés anama. Por ter esse caráter, essa vestimenta dá ao personagem certa autoridade, concedendo MOD+2 a todos os testes sociais em personagens da cultura. Além disso, em um campo de batalha, ter um representante é inspirador, assim aliados que compartilhem de sua fé tem MOD+2 para Vontade, e tem MOD+2 em DEF para defender o personagem com as vestes.</p>",
+      "penalty": "<p>Reflexo têm MOD-4. MV-1.</p>"
+    },
+    "description": {
+      "description": "<p>Armadura: 11</p><p>Obs: Reflexo têm MOD-4, MV-1. Isolante (+3).</p><p>Preço: 60p</p><p>Espaço: 3</p><p>Requerimento: FIS6</p><p>Ofício: Arm N7</p><p>Materiais: 32</p>",
+      "notes": "",
+      "summary": ""
+    },
+    "keywords": {
+      "armor": "11",
+      "insulant": "+3",
+      "penalty": null
+    },
+    "actions": {}
+  },
+  "effects": [],
+  "folder": "0rAC4l78SHKQWFlp",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770430920588,
+    "modifiedTime": 1770435853213,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "30bRe3D9X2whAQXf",
+  "sort": 200000,
+  "_key": "!items!30bRe3D9X2whAQXf"
+}

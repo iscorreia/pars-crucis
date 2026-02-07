@@ -16,7 +16,8 @@
       "stackMax": 10,
       "stackable": true,
       "equippable": false,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>No contato estoura causando 7+COG de dano Biológico: Tóxico no raio de 1m.</p>"
     },
     "damage": {
       "dmgBase": 0,
@@ -32,7 +33,9 @@
       "price": 30,
       "currency": "copper"
     },
-    "keywords": {},
+    "keywords": {
+      "effect": null
+    },
     "description": {
       "description": "<p>O calhau passa por um tratamento alquímico especial que o deixa poroso e fragilizado para que se despedace e sublime em gás tóxico e corrosivo ao chocar com seu alvo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> o projétil tem Dano/2 Elemental: Cáustico, e no contato estoura causando 7+COG de dano Biológico: Tóxico no raio de 1m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 30 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 horas, pode fabricar até 10 calhaus por vez.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 1 Pedra e 1 Reagente para fabricar 2 calhaus.</p>",
       "summary": "",
@@ -53,7 +56,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770241457619,
-    "modifiedTime": 1770312200482,
+    "modifiedTime": 1770392765099,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "fSk4mUdMjW6t1d2k",

@@ -48,7 +48,8 @@
       "stackMax": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>Ocultar +4.</p>"
     },
     "keywords": {
       "rateOfFire": "1/1",
@@ -83,7 +84,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770254506415,
-    "modifiedTime": 1770254564477,
+    "modifiedTime": 1770398591740,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "czMrf44vi9E4jice",

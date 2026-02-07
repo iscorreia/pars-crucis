@@ -18,10 +18,13 @@
       "stackable": false,
       "equippable": true,
       "equipped": false,
-      "slots": 2
+      "slots": 2,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": "<p>Reflexo têm MOD-1</p>"
     },
     "description": {
-      "description": "<p>Armadura: 3</p><p>Obs: DES e Reflexo têm MOD-1. Robustez (+7). Sob medida.</p><p>Espaço: 2</p><p>Preço: 25p</p><p>Req: COG5</p><p>Ofício: Eng N8</p><p>Mts: 18</p>",
+      "description": "<p>Armadura: 3</p><p>Obs: Reflexo têm MOD-1. Robustez (+7). Sob medida.</p><p>Preço: 25p</p><p>Espaço: 2</p><p>Requerimento: COG5</p><p>Ofício: Eng N8</p><p>Materiais: 18</p>",
       "notes": "",
       "summary": ""
     },
@@ -48,10 +51,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769736551481,
-    "modifiedTime": 1769736551481,
+    "modifiedTime": 1770435894364,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "FCOI0JGxGbvsajq9",
-  "sort": 0,
+  "sort": 1800000,
   "_key": "!items!FCOI0JGxGbvsajq9"
 }

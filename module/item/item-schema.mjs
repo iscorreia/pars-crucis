@@ -124,6 +124,8 @@ export class AmmoModel extends TypeDataModel {
   }
   prepareDerivedData() {
     const { details, keywords } = this;
+    details.effect;
+    details.penalty;
     clearEffectPenalty(details, keywords);
   }
 }
@@ -158,6 +160,8 @@ export class AbilityModel extends TypeDataModel {
     } else if (!(info.category in PC.ability.arts[art].categories)) {
       info.category = "unknown";
     }
+    details.effect;
+    details.penalty;
     clearEffectPenalty(details, keywords);
   }
 }
@@ -175,6 +179,8 @@ export class GearModel extends TypeDataModel {
   }
   prepareDerivedData() {
     const { details, keywords } = this;
+    details.effect;
+    details.penalty;
     clearEffectPenalty(details, keywords);
   }
 }
@@ -200,6 +206,8 @@ export class PassiveModel extends TypeDataModel {
   }
   prepareDerivedData() {
     const { details, keywords } = this;
+    details.effect;
+    details.penalty;
     clearEffectPenalty(details, keywords);
   }
 }
@@ -242,6 +250,8 @@ export class WeaponModel extends TypeDataModel {
       details.equippable = false;
       details.equipped = true;
     }
+    details.effect;
+    details.penalty;
     clearEffectPenalty(details, keywords);
   }
 }

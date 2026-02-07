@@ -18,10 +18,13 @@
       "stackable": false,
       "equippable": true,
       "equipped": false,
-      "slots": 1
+      "slots": 1,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": ""
     },
     "description": {
-      "description": "<p>Obs: Isolante (+1). Não tem custo como vestimenta inicial.</p><p>Espaço: 1</p><p>Preço: 50c</p><p>Ofício: Art N3</p><p>Mts: 2</p>",
+      "description": "<p>Armadura: 0</p><p>Obs: Isolante (+1). Não tem custo como vestimenta inicial.</p><p>Preço: 50c</p><p>Espaço: 1</p><p>Requerimento: —</p><p>Ofício: Art N3</p><p>Materiais: 2</p>",
       "notes": "",
       "summary": ""
     },
@@ -45,10 +48,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769735185075,
-    "modifiedTime": 1769736083707,
+    "modifiedTime": 1770431254620,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "lkIkDC1xRoGJ6pdt",
-  "sort": 800000,
+  "sort": 3400000,
   "_key": "!items!lkIkDC1xRoGJ6pdt"
 }

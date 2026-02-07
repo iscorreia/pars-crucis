@@ -1,0 +1,59 @@
+{
+  "name": "Couro enrijecido",
+  "type": "gear",
+  "img": "icons/equipment/chest/breastplate-layered-leather-studded-brown.webp",
+  "system": {
+    "info": {
+      "subtype": "wear",
+      "group": "vest",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "cost": {
+      "price": 19,
+      "currency": "silver"
+    },
+    "details": {
+      "stack": 1,
+      "stackable": false,
+      "equippable": true,
+      "equipped": false,
+      "slots": 2,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "description": {
+      "description": "<p>Armadura: 6</p><p>Obs: Robustez (+2). Sob medida.</p><p>Preço: 19p</p><p>Espaço: 1</p><p>Requerimento: FIS3</p><p>Ofício: Art N6</p><p>Materiais: 20</p>",
+      "notes": "",
+      "summary": ""
+    },
+    "keywords": {
+      "armor": "6",
+      "robust": "+2",
+      "custom": ""
+    },
+    "actions": {}
+  },
+  "effects": [],
+  "folder": "0rAC4l78SHKQWFlp",
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1770429018696,
+    "modifiedTime": 1770431254620,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "HwbSg9qqeJU0jYc2",
+  "sort": 600000,
+  "_key": "!items!HwbSg9qqeJU0jYc2"
+}

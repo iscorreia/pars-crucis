@@ -18,10 +18,13 @@
       "stackable": false,
       "equippable": true,
       "equipped": false,
-      "slots": 1
+      "slots": 1,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": ""
     },
     "description": {
-      "description": "<p>Armadura: 3</p><p>Obs: Isolante (+2). Frágil (5).</p><p>Espaço: 1</p><p>Preço: 3p</p><p>Ofício: Art N3</p><p>Mts: 5</p>",
+      "description": "<p>Armadura: 3</p><p>Obs: Isolante (+2). Frágil (5).</p><p>Preço: 3p</p><p>Espaço: 1</p><p>Requerimento: —</p><p>Ofício: Art N3</p><p>Materiais: 5</p>",
       "notes": "",
       "summary": ""
     },
@@ -47,10 +50,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769735864890,
-    "modifiedTime": 1769737081263,
+    "modifiedTime": 1770431254620,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "UDtGeDcko2U63iPb",
-  "sort": 50000,
+  "sort": 2600000,
   "_key": "!items!UDtGeDcko2U63iPb"
 }

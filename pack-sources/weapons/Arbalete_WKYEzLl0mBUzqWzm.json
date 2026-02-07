@@ -48,7 +48,8 @@
       "stackMax": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>Funciona na água.</p>"
     },
     "keywords": {
       "twoHanded": "",
@@ -84,7 +85,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770255234309,
-    "modifiedTime": 1770306683143,
+    "modifiedTime": 1770398661091,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "WKYEzLl0mBUzqWzm",

@@ -20,7 +20,8 @@
       "stackMax": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "effect": "<p>pode utilizar 1 ação rápida para plantar o escudo pavise, que concede Meia cobertura ao personagem e até 1 metro atrás do escudo, e Cobertura se este não declarar nenhuma ação que o exponha.</p>"
     },
     "keywords": {
       "defense": "+1",
@@ -55,7 +56,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770323004590,
-    "modifiedTime": 1770324619950,
+    "modifiedTime": 1770393188190,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "z1igKv2aYL85SLGD",

@@ -102,12 +102,13 @@
       "stackable": false,
       "equippable": true,
       "equipped": false,
-      "stackMax": 1
+      "stackMax": 1,
+      "penalty": "<p>Não pode ser aprimorada.</p>"
     },
     "keywords": {
       "twoHanded": "",
       "handling": "-1",
-      "penalty": ""
+      "penalty": null
     },
     "description": {
       "description": "<p>Alcance: 2m</p><p>Dano: 13+FIS|DES</p><p>Obs: 2 mãos. Não pode ser aprimorada. Efeito #.</p><p>Espaço: 2</p><p>Preço: 26p</p><p>Req: FIS3</p><p>Ofício: Arm N7</p><p>Mts: 12</p><p><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito #Lançarma:</span> pode disparar a arma de fogo embutida usando a perícia <em>Hasta-2</em> ou <em>Balística</em> com ataque: Projétil, Dano 19+DES/2, alcance 5/10m, CT 1, Recarga (2) Cartucho. Adicionalmente é possível como uma técnica disparar durante um ataque CaC para ter Dano+10.</p>",
@@ -133,7 +134,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769994754845,
-    "modifiedTime": 1770053106555,
+    "modifiedTime": 1770393204931,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "ownership": {
