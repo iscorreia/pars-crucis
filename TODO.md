@@ -2,28 +2,26 @@
 
 # HIGH PRIORITY
 
-- Improved overall #Item config tab **_logic hbs style/css_**
 - Create a prompt for last roll action adjustment on pressing ALT **_feature_**
 
 ## IMPORTANT
 
-- Further improve Ability Technique data handling and presentation **_logic hbs_**
-- PDM sheet having Attributes and Skills grayed out and not rollable when null **_feature hbs style/css_**
-- Make item `#effect`, `#penalty` properties have their custom description that can be set on the item config
-
-## NECESSARY
-
-- Review Overrides **_logic_**
-- Final touches on the PDM config app **_hbs/css_**
-- Add Inventory sorting **_qol feature_**
 - Tooltips / Information on hover **_feature_** or;
 - Information icon: on click: pops a window with origin/skills/etc description **_feature_**
+- Further improve #Item config tab **hbs style/css\_**
+- PDM sheet having Attributes and Skills grayed out and not rollable when null **_feature hbs style/css_**
 
-## LOW PRIORITY
+## NECESSARY
 
 - Weapons Compendium **_pack_**
 - Items Compendium **_pack_**
 - Abilities Compendium **_pack_**
+- Final touches on the PDM config app **_hbs/css_**
+- Add Inventory sorting **_qol feature_**
+- Make it possible to add custom keywords or some special keywords such as: FIS, DES, ..., Health, Reflex, Will, and also Skills.
+
+## LOW PRIORITY
+
 - Add Abilities (art) sorting **_qol_**
 - Persona/PDM image picked from config instead of the sheet **_qol_**
 
@@ -57,13 +55,35 @@
 
 ### COMPLETE COMPENDIUM PACKS
 
-- SWORDS
-- JAVELINS
-- SPEARS
-- ARCHERY (does not include siege)
-- BALISTICS (does not include siege)
-- AMMO (does not include battery, and ionic projectiles)
+- swords
+- javelins
+- spears
+- archery (does not include siege)
+- balistics (does not include siege)
+- ammunitions (does not include battery, and ionic projectiles)
+- vests
 
 ### PARTIAL PACKS
 
-- VESTS
+### PENDING PACKS
+
+- light weapons
+- throwing
+- accessories
+- gadgets
+- matrixes
+- herbals
+- alchemicals
+- war artifacts
+- utils
+- melee techs
+- ranged techs
+- alternative techs
+- styles
+- aoist powers
+- arcane powers
+- bardic powers
+- cronocientific powers
+- druidic powers
+- elemental powers
+- sabak powers

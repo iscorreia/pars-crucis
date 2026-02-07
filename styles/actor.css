@@ -1023,6 +1023,17 @@ h4.movement {
     font-family: "Amiri";
     color: var(--color-light-3);
   }
+  .inline-value {
+    display: inline;
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      display: inline;
+    }
+  }
   .inline-skill {
     font-size: 12px;
     color: var(--pc-color-light-3);

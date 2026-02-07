@@ -351,6 +351,43 @@
       }
     }
   }
+  .medium-block {
+    min-height: 90px;
+    height: unset;
+    border-radius: 5px;
+    background: linear-gradient(
+      to bottom,
+      var(--pc-fade-bg-0) 28px,
+      transparent 90%
+    );
+    /* input {
+      min-height: 21px;
+      height: unset;
+      white-space: wrap;
+    } */
+    .prosemirror {
+      width: 100%;
+      gap: 2px 0;
+      min-height: 90px;
+      .editor-menu {
+        justify-content: center;
+        padding: 0;
+        background-color: var(--pc-fade-bg-0);
+        button {
+          padding: 0 5px;
+        }
+      }
+      .editor-container {
+        min-height: unset;
+        height: 60px;
+        .editor-content {
+          min-height: unset;
+          height: 60px;
+          padding-left: 8px;
+        }
+      }
+    }
+  }
   .item-name-block {
     flex: 3 1 0;
     input {
