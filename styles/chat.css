@@ -82,6 +82,8 @@
     min-height: 17px;
     line-height: 15px;
     font-size: 13.5px;
+    text-align: justify;
+    color: var(--pc-color-light-3);
     .info-label {
       font-family: "Amiri";
       margin-right: 3px;

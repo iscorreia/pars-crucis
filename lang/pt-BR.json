@@ -209,6 +209,8 @@
       }
     },
     "type": "Tipo",
+    "art": "Arte",
+    "category": "Categoria",
     "ability": {
       "label": "Habilidade",
       "subtypes": {
@@ -365,6 +367,7 @@
     "effort": { "label": "Esforço", "abv": "Esf" },
     "difficulty": { "label": "Dificuldade", "abv": "Dif" },
     "range": { "label": "Alcance", "abv": "Alc" },
+    "area": { "label": "Área" },
     "prepTime": { "label": "Tempo de preparo", "abv": "TP" },
     "duration": { "label": "Duração" },
     "weaponry": "Armamentos",

@@ -72,6 +72,10 @@
     <span class="inline-label">{{localize "PC.range.label"}}</span>
     <span class="inline-value">{{this.range}}</span>
   {{/if}}
+  {{#if this.area}}
+    <span class="inline-label">{{localize "PC.area.label"}}</span>
+    <span class="inline-value">{{this.area}}</span>
+  {{/if}}
   {{#if this.damaging}}
     <span class="inline-label">{{localize "PC.damage"}}</span>
     <span class="inline-value">{{this.damage.dmgTxt}}</span>
