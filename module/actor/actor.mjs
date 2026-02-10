@@ -244,6 +244,7 @@ export class PCActor extends foundry.documents.Actor {
       effect: action.effect,
       keywords,
       range: action.range,
+      area: action.area,
       prepTime: action.prepTime,
     };
     // Important options passed to the roll
@@ -294,6 +295,7 @@ export class PCActor extends foundry.documents.Actor {
       effect: action.effect,
       keywords,
       range: action.range,
+      area: action.area,
       prepTime: action.prepTime,
     };
     const html = await handlebars.renderTemplate(

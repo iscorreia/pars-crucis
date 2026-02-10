@@ -5,7 +5,8 @@
 .pc-item-tab,
 .item-header,
 .keyword-picker,
-.action-picker {
+.action-picker,
+.damage-settings {
   h1,
   h2,
   h3,
@@ -1025,6 +1026,7 @@ h4.movement {
   }
   .inline-value {
     display: inline;
+    color: var(--pc-color-light-3);
     p,
     h1,
     h2,
@@ -1036,7 +1038,7 @@ h4.movement {
   }
   .inline-skill {
     font-size: 12px;
-    color: var(--pc-color-light-3);
+    color: var(--pc-color-light-4);
   }
   .inline-button {
     display: inline-block;

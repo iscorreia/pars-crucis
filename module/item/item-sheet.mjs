@@ -1,7 +1,7 @@
 const { api, sheets } = foundry.applications;
 import ActionKeywordPicker from "../apps/ac-keyword-picker.mjs";
 import KeywordPicker from "../apps/keyword-picker.mjs";
-import { PC } from "../config.mjs";
+import SetDamage from "../apps/set-damage.mjs";
 
 // Defining default information for created actions based on its type
 const ACTION_DEFAULTS = {
@@ -19,8 +19,8 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
       submitOnChange: true,
     },
     position: {
-      width: 500,
-      height: 540,
+      width: 600,
+      height: 600,
     },
     tag: "form",
     window: {
@@ -29,12 +29,11 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     actions: {
       keywordPicker: this.keywordPicker,
       actionKeywordPicker: this.actionKeywordPicker,
-      addDmgAttribute: this.addDmgAttributeOnClick,
       cutKeyword: this.cutKeywordOnClick,
       cutActionKeyword: this.cutActionKeywordOnClick,
-      cutDmgAttribute: this.cutDmgAttributeOnClick,
       createAction: this.createActionOnClick,
       deleteAction: this.deleteActionOnClick,
+      setDamage: this.setDamageOnClick,
     },
   };
 
@@ -71,39 +70,6 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     new ActionKeywordPicker({ document: this.item, acId: acId })?.render(true);
   }
 
-  static async addDmgAttributeOnClick(_, target) {
-    const item = this.document;
-    const acId = target.dataset.acId;
-    let attributes = PC.attributes;
-
-    const attributeButtons = Object.entries(attributes).map(([key, data]) => ({
-      action: key,
-      label: game.i18n.localize(data.abv),
-      callback: async () => {
-        const currentArray =
-          foundry.utils.getProperty(
-            item.system,
-            `actions.${acId}.damage.dmgAttributes`,
-          ) ?? [];
-        const updatedArray = currentArray.includes(key)
-          ? currentArray
-          : [...currentArray, key];
-        await item.update({
-          [`system.actions.${acId}.damage.dmgAttributes`]: updatedArray,
-        });
-      },
-    }));
-
-    await api.Dialog.wait({
-      classes: ["attribute-picker"],
-      window: {
-        title: "Selecione um attributo de dano",
-      },
-      content: `<p>Clique para adicionar um atributo de dano a ação</p>`,
-      buttons: attributeButtons,
-    });
-  }
-
   static async cutKeywordOnClick(_, target) {
     const item = this.document;
     const keywordKey = target.dataset.keyword;
@@ -115,20 +81,6 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     const { acId } = target.dataset;
     const keywordKey = target.dataset.keyword;
     item.update({ [`system.actions.${acId}.keywords.-=${keywordKey}`]: null });
-  }
-
-  static async cutDmgAttributeOnClick(_, target) {
-    const item = this.document;
-    const { acId, att } = target.dataset;
-    const currentArray =
-      foundry.utils.getProperty(
-        item.system,
-        `actions.${acId}.damage.dmgAttributes`,
-      ) ?? [];
-    const updatedArray = currentArray.filter((i) => i !== att);
-    item.update({
-      [`system.actions.${acId}.damage.dmgAttributes`]: updatedArray,
-    });
   }
 
   static async createActionOnClick(_, target) {
@@ -153,5 +105,10 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     const { acId } = target.dataset;
     const item = this.document;
     item.update({ [`system.actions.-=${acId}`]: null });
+  }
+
+  static async setDamageOnClick(_, target) {
+    const { acId } = target.dataset;
+    new SetDamage({ document: this.item, acId: acId })?.render(true);
   }
 }

@@ -34,12 +34,13 @@ export default class AbilitySheet extends ParsCrucisItemSheet {
     },
     config: {
       template: "systems/pars-crucis/templates/item/ability/config.hbs",
+      classes: ["pc-item-tab"],
     },
   };
 
   static TABS = {
     primary: {
-      initial: "config", // Change to simplify testing
+      initial: "actions", // Change to simplify testing
       tabs: [
         { id: "description", label: "PC.description" },
         { id: "actions", label: "PC.actions" },

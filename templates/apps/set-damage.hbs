@@ -1,0 +1,100 @@
+{{! Set damage window }}
+
+<section class="damage-settings">
+  <p class="info-desc">Configure o dano</p>
+
+  <div class="item-info-config">
+    <div class="item-info-block">
+      <h5>{{localize "PC.base"}}</h5>
+      <input
+        name="system.actions.{{action._id}}.damage.dmgBase"
+        value="{{action.damage.dmgBase}}"
+        type="number"
+        data-dtype="Number"
+      />
+    </div>
+
+    <div class="item-info-block">
+      <h5>
+        {{localize "PC.attributes.label"}}
+        <a data-action="addDmgAttribute" data-ac-id="{{action._id}}">
+          <i class="fa-regular fa-plus"></i>
+        </a>
+      </h5>
+      <div class="flexrow">
+        {{#each action.damage.dmgAttributes as |dmgAtt|}}
+          <a
+            data-action="cutDmgAttribute"
+            data-ac-id="{{../action._id}}"
+            data-att="{{dmgAtt}}"
+          >
+            {{localize (concat "PC.attributes." dmgAtt ".abv")}}
+          </a>
+        {{/each}}
+      </div>
+    </div>
+    {{#if (not (eq action.type "tech"))}}
+      <div class="item-info-block">
+        <h5>{{localize "PC.multiplier.label"}}</h5>
+        <select name="system.actions.{{@key}}.damage.dmgAttMultiplier">
+          {{selectOptions
+            config.multiplier
+            selected=action.damage.dmgAttMultiplier
+            localize=true
+          }}
+        </select>
+      </div>
+    {{/if}}
+  </div>
+
+  <div class="item-info-config">
+    {{#if (not (eq action.type "tech"))}}
+      <div class="item-info-block">
+        <h5>{{localize "PC.type"}}</h5>
+        <select name="system.actions.{{@key}}.damage.dmgType">
+          {{selectOptions
+            config.dmgType
+            selected=action.damage.dmgType
+            localize=true
+          }}
+        </select>
+      </div>
+    {{else}}
+      <div class="item-info-block">
+        <h5>{{localize "PC.type"}}</h5>
+        <select name="system.actions.{{@key}}.damage.dmgType">
+          {{selectOptions
+            config.techDmgType
+            selected=action.damage.dmgType
+            localize=true
+          }}
+        </select>
+      </div>
+    {{/if}}
+    <div class="item-info-block">
+      <h5>{{localize "PC.subtype"}}</h5>
+      <input
+        name="system.actions.{{@key}}.damage.dmgSubtype"
+        value="{{action.damage.dmgSubtype}}"
+        type="text"
+        data-dtype="String"
+      />
+    </div>
+  </div>
+
+  <div class="item-info-config">
+    <div class="item-info-block">
+      <input
+        id="scalable-toggle-{{action._id}}"
+        type="checkbox"
+        data-dtype="Boolean"
+        name="system.actions.{{action._id}}.damage.scalable"
+        {{checked action.damage.scalable}}
+        hidden
+      />
+      <label for="scalable-toggle-{{action._id}}" class="name-tag">
+        {{localize "PC.scalable"}}?
+      </label>
+    </div>
+  </div>
+</section>

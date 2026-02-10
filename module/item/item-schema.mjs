@@ -41,6 +41,7 @@ export class ActionModel extends DataModel {
       usesAmmo: new BooleanField({ initial: false }),
       effect: new StringField({ initial: "" }),
       range: new StringField({ initial: "" }),
+      area: new StringField({ initial: "" }),
       effort: new StringField({ initial: "" }),
       prepTime: new StringField({ initial: "" }),
       duration: new StringField({ initial: "" }),

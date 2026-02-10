@@ -49,7 +49,17 @@
 
   <div class="item-info-config">
     <div class="item-info-block">
-      <h5> {{localize "PC.skill"}}</h5>
+      <h5>{{localize "PC.xp"}}</h5>
+      <input
+        class="xp-cost"
+        name="system.details.experience"
+        type="Number"
+        value="{{system.details.experience}}"
+        data-dtype="Number"
+      />
+    </div>
+    <div class="item-info-block">
+      <h5>{{localize "PC.skill"}}</h5>
       <select name="system.details.coreSkill">
         {{selectOptions
           config.skillsNone

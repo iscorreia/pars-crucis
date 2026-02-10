@@ -112,11 +112,11 @@
                 >{{localize "PC.keywords"}}
                   <i class="fa-regular fa-plus"></i>
                 </a>
-                {{#each action.keywords as |keyword obj|}}
+                {{#each action.keywords}}
                   <div class="keyword-block">
                     <div class="pc-keyword">
-                      {{localize (concat "PC.keyword." obj)}}{{#if keyword}}
-                        ({{keyword}}){{/if}}
+                      {{localize (concat "PC.keyword." @key)}}{{#if this}}
+                        ({{this}}){{/if}}
                     <a 
                       data-action="cutActionKeyword"
                       data-keyword="{{@key}}"
@@ -131,8 +131,52 @@
             </div>
           </div>
           
-          <div class="flexrow">
-            <div class="flexcol">
+          <div class="item-info-config">
+            <div class="item-info-block">
+              <input
+                id="damaging-toggle-{{action._id}}"
+                type="checkbox"
+                data-dtype="Boolean"
+                name="system.actions.{{@key}}.damaging"
+                {{checked action.damaging}}
+                hidden
+              />
+              <label for="damaging-toggle-{{action._id}}" class="name-tag">
+                {{localize "PC.damaging"}}?
+              </label>
+            </div>
+
+            {{#if action.damaging}}
+              <div class="item-info-block show-damage">
+                <div
+                  data-action="setDamage"
+                  data-ac-id="{{action._id}}"
+                >
+                  {{#unless action.damage.scalable}}[{{/unless}}
+                  {{action.damage.dmgBase}}
+                  {{#if action.damage.dmgAttributes}}
+                    +{{#each action.damage.dmgAttributes as |dmgAtt obj|}}
+                      {{localize (concat "PC.attributes." dmgAtt ".abv")}}              
+                      {{#unless @last}}
+                        |
+                      {{/unless}}
+                    {{/each}}
+                    {{#unless (eq action.damage.dmgAttMultiplier 1)}}
+                      {{localize (lookup (lookup ../config.multiplier action.damage.dmgAttMultiplier) "label")}}
+                    {{/unless}}
+                  {{/if}}
+                  {{#unless action.damage.scalable}}]{{/unless}}
+                  {{localize (concat "PC.dmgType." action.damage.dmgType ".label")}}
+                </div>
+              </div>
+              {{#if action.damage.dmgTxt}}
+                <div class="item-info-block">
+                  => {{action.damage.dmgTxt}}
+                </div>
+              {{/if}}
+            {{/if}}
+
+            <div class="item-info-block">
               <input
                 id="usesAmmo-toggle-{{this._id}}"
                 type="checkbox"
@@ -146,163 +190,52 @@
               </label>
             </div>
           </div>
-          
-          <div class="show-damage flexrow">
-            <div class="flexcol">
-              <input
-                id="damaging-toggle-{{action._id}}"
-                type="checkbox"
-                data-dtype="Boolean"
-                name="system.actions.{{@key}}.damaging"
-                {{checked action.damaging}}
-                hidden
-              />
-              <label for="damaging-toggle-{{action._id}}" class="name-tag">
-                {{localize "PC.damaging"}}?
-              </label>
-            </div>
-            <div class="flexcol">
-              <input
-                id="scalable-toggle-{{action._id}}"
-                type="checkbox"
-                data-dtype="Boolean"
-                name="system.actions.{{@key}}.damage.scalable"
-                {{checked action.damage.scalable}}
-                hidden
-              />
-              <label for="scalable-toggle-{{action._id}}" class="name-tag">
-                {{localize "PC.scalable"}}?
-              </label>
-            </div> 
-            <div>
-              {{#unless action.damage.scalable}}[{{/unless}}
-              {{action.damage.dmgBase}}
-              {{#if action.damage.dmgAttributes}}
-                +{{#each action.damage.dmgAttributes as |dmgAtt obj|}}
-                  {{localize (concat "PC.attributes." dmgAtt ".abv")}}              
-                  {{#unless @last}}
-                    |
-                  {{/unless}}
-                {{/each}}
-                {{#unless (eq action.damage.dmgAttMultiplier 1)}}
-                  {{localize (lookup (lookup ../config.multiplier action.damage.dmgAttMultiplier) "label")}}
-                {{/unless}}
-              {{/if}}
-              {{#unless action.damage.scalable}}]{{/unless}}
-              {{localize (concat "PC.dmgType." action.damage.dmgType ".label")}}
-            </div>
-            {{#if action.damage.dmgTxt}}
-              => {{action.damage.dmgTxt}}
-            {{/if}}
-          </div>
-          <div class="flexrow action-damage">
-            <div class="flexcol">
-              {{localize "PC.base"}}
-              <input
-                name="system.actions.{{@key}}.damage.dmgBase"
-                type="Number"
-                value="{{action.damage.dmgBase}}"
-                data-dtype="Number"
-              />
-            </div>
-            <div class="flexcol">
-              <div class="flexrow">
-                {{localize "PC.attributes.label"}}
-                <a data-action="addDmgAttribute" data-ac-id="{{action._id}}">
-                  <i class="fa-regular fa-plus"></i>
-                </a>
-              </div>
-              <div class="flexrow">
-                {{#each action.damage.dmgAttributes as |dmgAtt|}}
-                  <a
-                    data-action="cutDmgAttribute"
-                    data-ac-id="{{action._id}}"
-                    data-att="{{dmgAtt}}"
-                  >
-                    {{localize (concat "PC.attributes." dmgAtt ".abv" )}}
-                  </a>
-                {{/each}}
-              </div>
-            </div>
-            {{#if (not (eq action.type "tech"))}}
-              <div class="flexcol">
-                {{localize "PC.multiplier.label"}}
-                <select name="system.actions.{{@key}}.damage.dmgAttMultiplier">
-                  {{selectOptions
-                    ../config.multiplier
-                    selected=action.damage.dmgAttMultiplier
-                    localize=true
-                  }}
-                </select>
-              </div>
-              <div class="flexcol">
-                {{localize "PC.type"}}
-                <select name="system.actions.{{@key}}.damage.dmgType">
-                  {{selectOptions
-                    ../config.dmgType
-                    selected=action.damage.dmgType
-                    localize=true
-                  }}
-                </select>
-              </div>
-            {{else}}
-              <div class="flexcol">
-                {{localize "PC.type"}}
-                <select name="system.actions.{{@key}}.damage.dmgType">
-                  {{selectOptions
-                    ../config.techDmgType
-                    selected=action.damage.dmgType
-                    localize=true
-                  }}
-                </select>
-              </div>
-            {{/if}}
-            <div class="flexcol">
-              {{localize "PC.subtype"}}
-              <input
-                name="system.actions.{{@key}}.damage.dmgSubtype"
-                type="String"
-                value="{{action.damage.dmgSubtype}}"
-                data-dtype="String"
-              />
-            </div>
-          </div>
 
           <div class="action-details">
             {{localize "PC.effort.label"}}
             <input
               name="system.actions.{{@key}}.effort"
-              type="String"
               value="{{action.effort}}"
-              data-dtype="String"
-            />
-            {{localize "PC.range.label"}}
-            <input
-              name="system.actions.{{@key}}.range"
-              type="String"
-              value="{{action.range}}"
+              type="text"
               data-dtype="String"
             />
             {{localize "PC.prepTime.abv"}}
             <input
               name="system.actions.{{@key}}.prepTime"
-              type="String"
               value="{{action.prepTime}}"
+              type="text"
+              data-dtype="String"
+            />
+          </div>
+
+          <div class="action-details">
+            {{localize "PC.range.label"}}
+            <input
+              name="system.actions.{{@key}}.range"
+              value="{{action.range}}"
+              type="text"
+              data-dtype="String"
+            />
+            {{localize "PC.area.label"}}
+            <input
+              name="system.actions.{{@key}}.area"
+              value="{{action.area}}"
+              type="text"
               data-dtype="String"
             />
             {{localize "PC.duration.label"}}
             <input
               name="system.actions.{{@key}}.duration"
-              type="String"
               value="{{action.duration}}"
+              type="text"
               data-dtype="String"
             />
           </div>
           <div class="action-effect">
             <input 
               name="system.actions.{{@key}}.effect"
-              type="String"
               value="{{action.effect}}"
+              type="text"
               data-dtype="String"
             />
           </div>
