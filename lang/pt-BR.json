@@ -146,6 +146,8 @@
       "espirituais": "Espirituais"
     },
     "skills": {
+      "label": "Perícias",
+
       "atlet": "Atletismo",
       "briga": "Briga",
       "esgri": "Esgrima",

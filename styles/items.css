@@ -182,7 +182,8 @@
     flex-direction: column;
     min-height: 160px;
     padding-bottom: 1px;
-    border-color: var(--color-scrollbar);
+    /* border-color: var(--color-scrollbar); */
+    border-color: var(--pc-color-dark-1);
     border-width: 0 0 1px 0;
     border-style: dashed;
     input,
@@ -263,6 +264,7 @@
             height: 16px;
           }
         }
+        .action-skills-line,
         .action-keyword-line {
           display: flex;
           flex-direction: row;
@@ -270,6 +272,7 @@
           align-items: center;
           width: 100%;
           height: 18px;
+          column-gap: 3px;
           .add-keyword {
             display: inline-flex;
             height: 18px;
@@ -299,6 +302,10 @@
       input {
         width: 100%;
       }
+    }
+    .item-info-config {
+      border-style: dashed;
+      border-color: var(--color-dark-3);
     }
   }
   .action-block:last-child {

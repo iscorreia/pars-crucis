@@ -34,17 +34,6 @@
                   data-dtype="String"
                 />
 
-                {{#if (or (eq action.type "attack") (eq action.type "test"))}}
-                  <select 
-                    class="action-skill"
-                    name="system.actions.{{@key}}.skill">
-                    {{selectOptions
-                      ../config.skills
-                      selected=action.skill
-                      localize=true
-                    }}
-                  </select>
-                {{/if}}
                 {{#if (eq action.type "attack")}}
                   <select
                     class="action-subtype"
@@ -103,6 +92,22 @@
                   <i class="fa-regular fa-trash-can"></i>
                 </a>
               </div>
+
+              {{#if (or (eq action.type "attack") (eq action.type "tech") (eq action.type "test"))}}
+                <div class="action-skills-line">
+                  <a
+                    class="add-skill"
+                    data-action="actionSkillPicker"
+                    data-ac-id="{{action._id}}"
+                  >
+                    {{localize "PC.skills.label"}}
+                    <i class="fa-regular fa-plus"></i>
+                  </a>
+                    {{#each action.skills}}
+                      {{localize (concat "PC.skills." @key)}}{{#unless @last}},{{/unless}}
+                    {{/each}}
+                </div>
+              {{/if}}   
 
               <div class="action-keyword-line">
                 <a
@@ -231,7 +236,8 @@
               data-dtype="String"
             />
           </div>
-          <div class="action-effect">
+          <div class="action-effect flexrow">
+            {{localize "PC.effect"}}
             <input 
               name="system.actions.{{@key}}.effect"
               value="{{action.effect}}"

@@ -240,3 +240,22 @@ section.pdm-config {
     filter: brightness(0.7) saturate(0.4);
   }
 }
+
+.cut:hover {
+  color: var(--pc-color-negative);
+  text-shadow: 0 0 3px var(--pc-color-negative);
+}
+
+/* SKILL PICKER */
+.skill-picker {
+  li {
+    list-style: none;
+    height: 21.5px;
+  }
+  .skill-label {
+    width: 100%;
+  }
+  .skills-picked {
+    text-align: center;
+  }
+}

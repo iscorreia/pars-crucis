@@ -56,10 +56,12 @@ export class AttackActionModel extends ActionModel {
     const parentSchema = super.defineSchema();
     return {
       ...parentSchema,
-      skill: new StringField({
-        initial: "briga",
-        choices: () => Object.keys(PC.skills),
-      }),
+      skills: new TypedObjectField(
+        new NumberField({ initial: 0, integer: true }),
+        {
+          initial: { briga: 0 },
+        },
+      ),
       subtype: new StringField({
         initial: "melee",
         choices: () => Object.keys(PC.action.types.attack.subtypes),
@@ -73,10 +75,12 @@ export class TestActionModel extends ActionModel {
     const parentSchema = super.defineSchema();
     return {
       ...parentSchema,
-      skill: new StringField({
-        initial: "briga",
-        choices: () => Object.keys(PC.skills),
-      }),
+      skills: new TypedObjectField(
+        new NumberField({ initial: 0, integer: true }),
+        {
+          initial: { briga: 0 },
+        },
+      ),
       difficulty: new NumberField({ initial: 10, integer: true }),
     };
   }
@@ -98,10 +102,12 @@ export class TechActionModel extends ActionModel {
     return {
       ...parentSchema,
       damage: damage({ damageType: "inherit" }),
-      skill: new StringField({
-        initial: "inherit",
-        choices: () => Object.keys(PC.techSkills),
-      }),
+      skills: new TypedObjectField(
+        new NumberField({ initial: 0, integer: true }),
+        {
+          initial: { briga: 0 },
+        },
+      ),
       subtype: new StringField({
         initial: "inherit",
         choices: () => Object.keys(PC.techSubtypes),

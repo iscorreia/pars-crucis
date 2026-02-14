@@ -24,12 +24,16 @@
       <div class="flexrow">
         {{#each action.damage.dmgAttributes as |dmgAtt|}}
           <a
+            class="cut"
             data-action="cutDmgAttribute"
             data-ac-id="{{../action._id}}"
             data-att="{{dmgAtt}}"
           >
             {{localize (concat "PC.attributes." dmgAtt ".abv")}}
           </a>
+          {{#unless @last}}
+            |
+          {{/unless}}
         {{/each}}
       </div>
     </div>

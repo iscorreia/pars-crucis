@@ -2,6 +2,7 @@ const { api, sheets } = foundry.applications;
 import ActionKeywordPicker from "../apps/ac-keyword-picker.mjs";
 import KeywordPicker from "../apps/keyword-picker.mjs";
 import SetDamage from "../apps/set-damage.mjs";
+import SkillPicker from "../apps/skill-picker.mjs";
 
 // Defining default information for created actions based on its type
 const ACTION_DEFAULTS = {
@@ -19,7 +20,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
       submitOnChange: true,
     },
     position: {
-      width: 600,
+      width: 560,
       height: 600,
     },
     tag: "form",
@@ -31,6 +32,7 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
       actionKeywordPicker: this.actionKeywordPicker,
       cutKeyword: this.cutKeywordOnClick,
       cutActionKeyword: this.cutActionKeywordOnClick,
+      actionSkillPicker: this.actionSkillPicker,
       createAction: this.createActionOnClick,
       deleteAction: this.deleteActionOnClick,
       setDamage: this.setDamageOnClick,
@@ -59,6 +61,11 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     };
 
     return context;
+  }
+
+  static async actionSkillPicker(_, target) {
+    const { acId } = target.dataset;
+    new SkillPicker({ document: this.item, acId: acId })?.render(true);
   }
 
   static async keywordPicker() {
