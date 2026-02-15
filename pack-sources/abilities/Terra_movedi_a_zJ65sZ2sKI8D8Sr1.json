@@ -1,0 +1,74 @@
+{
+  "name": "Terra movediça",
+  "type": "ability",
+  "img": "icon%20library/powers/geomancer%20skills/earth%20(33).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "earth"
+    },
+    "actions": {
+      "yAS21cK9wziQ6P04": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(33).png",
+        "name": "Tornar movediça",
+        "type": "use",
+        "_id": "yAS21cK9wziQ6P04",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "aplica MV-2m e MOD-2 a Reflexo cumulativo para cada rodada que um personagem permanecer nela. Além disso, não é possível correr enquanto na terra movediça e poderes de movimento são impossibilitados. O próprio personagem não é afetado pelas penalidades da terra movediça, mas seus aliados são.",
+        "range": "20m",
+        "effort": "6, mantém por 4",
+        "prepTime": "3AP",
+        "duration": "2 rodadas",
+        "keywords": {},
+        "usage": "",
+        "area": "raio de 5m"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Fazendo alguns movimentos manuais e tocando o chão torna uma área em terra movediça.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 6, mantém por 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 20m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Observações:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> aplica MV-2m e MOD-2 a Reflexo cumulativo para cada rodada que um personagem permanecer nela. Além disso, não é possível correr enquanto na terra movediça e poderes de movimento são impossibilitados.</span></p><p class=\"MsoNormal\">O próprio personagem não é afetado pelas penalidades da terra movediça, mas seus aliados são.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 rodadas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Moldar terra </em>e Elementalismo N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "iWWRvj2lod4fJ6a7",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.EGDL6CVE9Usq9iG8",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771120758688,
+    "modifiedTime": 1771120758688,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "zJ65sZ2sKI8D8Sr1",
+  "sort": 0,
+  "_key": "!items!zJ65sZ2sKI8D8Sr1"
+}

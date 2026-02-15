@@ -36,7 +36,10 @@
         "duration": "",
         "keywords": {},
         "skill": "briga",
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "briga": 0
+        }
       },
       "EhfTkbGS8612Apbs": {
         "img": "icon%20library/weapons/daggers/undead%20(30).png",
@@ -64,7 +67,10 @@
         "duration": "",
         "keywords": {},
         "skill": "briga",
-        "subtype": "throw"
+        "subtype": "throw",
+        "skills": {
+          "briga": 0
+        }
       }
     },
     "cost": {
@@ -112,7 +118,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770488308574,
-    "modifiedTime": 1770498277717,
+    "modifiedTime": 1771121894221,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "zSzikhexfbmZU7Sn",

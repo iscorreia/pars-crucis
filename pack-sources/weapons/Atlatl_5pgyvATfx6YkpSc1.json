@@ -35,7 +35,10 @@
         "duration": "",
         "keywords": {},
         "skill": "hasta",
-        "usesAmmo": false
+        "usesAmmo": false,
+        "skills": {
+          "hasta": 0
+        }
       }
     },
     "cost": {
@@ -79,7 +82,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769951224925,
-    "modifiedTime": 1770035355471,
+    "modifiedTime": 1771122026037,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "5pgyvATfx6YkpSc1",

@@ -1,0 +1,87 @@
+{
+  "name": "Pilar de terra",
+  "type": "ability",
+  "img": "icons/environment/wilderness/terrain-stone-stalagtite.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "earth"
+    },
+    "actions": {
+      "kpLzyJn2oKreQbn6": {
+        "img": "icons/environment/wilderness/terrain-stone-stalagtite.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "kpLzyJn2oKreQbn6",
+        "damaging": true,
+        "range": "5m",
+        "damage": {
+          "dmgBase": 17,
+          "dmgAttributes": [
+            "fis",
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "O pilar pode ter até 1m de altura.",
+        "effort": "3",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "subtype": "melee",
+        "area": "",
+        "skills": {
+          "eleme": 0,
+          "briga": 0,
+          "malha": 0
+        },
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 2,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "melee": "",
+      "blunt": "",
+      "impact": "8"
+    },
+    "description": {
+      "description": "<p>Corpo a corpo</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Da uma pisada ou golpe contra o solo, ou superfície de terra ou pedra, projetando sua essência para gerar um impacto violento ou formar um pilar de terra.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 17+FIS/ESP.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Observações:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Impacto (8), Embotada. O pilar pode ter até 1m de altura. Poder ser realizado com <em>Briga</em> ou <em>Malha</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Moldar terra </em>e Elementalismo N2.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "iWWRvj2lod4fJ6a7",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.g0vNX8TydA9zhLwg",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771120758688,
+    "modifiedTime": 1771120758688,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "tsvaMxagDYjPvBEZ",
+  "sort": 0,
+  "_key": "!items!tsvaMxagDYjPvBEZ"
+}

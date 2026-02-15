@@ -35,7 +35,10 @@
         "duration": "",
         "keywords": {},
         "skill": "balis",
-        "subtype": "projectile"
+        "subtype": "projectile",
+        "skills": {
+          "balis": 0
+        }
       }
     },
     "cost": {
@@ -85,7 +88,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770133982293,
-    "modifiedTime": 1770306716553,
+    "modifiedTime": 1771121744119,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "vltMqpd0pBUzLDEA",

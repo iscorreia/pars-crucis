@@ -36,7 +36,10 @@
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "malha": 0
+        }
       },
       "KoBlMLi1JcLiDZJJ": {
         "img": "icons/weapons/axes/axe-crooked-blackened.webp",
@@ -64,7 +67,10 @@
         "effort": "",
         "prepTime": "",
         "duration": "",
-        "keywords": {}
+        "keywords": {},
+        "skills": {
+          "malha": 0
+        }
       }
     },
     "cost": {
@@ -110,8 +116,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770488875534,
-    "modifiedTime": 1770488964661,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771122090499,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "CkNX0ZWUjyVikxd5",
   "sort": 600000,

@@ -1,24 +1,24 @@
 {
-  "name": "Foice",
+  "name": "Sabre",
   "type": "weapon",
-  "img": "icons/weapons/sickles/sickle-curved.webp",
+  "img": "icons/weapons/swords/sword-guard-gold-red.webp",
   "system": {
     "info": {
       "subtype": "melee",
       "group": "sword",
-      "subgroup": "Foice",
+      "subgroup": "",
       "quality": "common"
     },
     "actions": {
       "NCrq5eJO4xAQtODL": {
-        "img": "icons/weapons/sickles/sickle-curved.webp",
+        "img": "icons/weapons/swords/sword-guard-gold-red.webp",
         "name": "Golpear",
         "type": "attack",
         "_id": "NCrq5eJO4xAQtODL",
         "damaging": true,
-        "range": "1m",
+        "range": "2m",
         "damage": {
-          "dmgBase": 8,
+          "dmgBase": 7,
           "dmgAttributes": [
             "fis",
             "des"
@@ -29,17 +29,22 @@
           "dmgType": "phy",
           "dmgSubtype": ""
         },
-        "skill": "esgri",
         "effect": "",
         "effort": "",
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "subtype": "melee"
+        "subtype": "melee",
+        "usesAmmo": false,
+        "area": "",
+        "skills": {
+          "esgri": 0
+        },
+        "skill": null
       }
     },
     "cost": {
-      "price": 3,
+      "price": 9,
       "currency": "silver"
     },
     "details": {
@@ -47,23 +52,29 @@
       "stack": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": ""
     },
     "keywords": {
-      "bypass": null
+      "lethality": "+1"
     },
     "description": {
-      "description": "<p>Alcance: 1m</p><p>Dano: 8+FIS|DES</p><p>Obs: Indireto.</p><p>Preço: 3p</p><p>Ofício: Arm N4</p><p>Mts: 3</p>",
+      "description": "<p>Alcance: 2m</p><p>Dano: 7+FIS|DES</p><p>Obs: Fatalidade (+1).</p><p>Preço: 9p</p><p>Ofício: Arm N6</p><p>Mts: 4</p>",
       "notes": "",
       "summary": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
     }
   },
   "effects": [],
-  "folder": "UJMi2v8hWvQ7WSkK",
-  "ownership": {
-    "default": 0,
-    "BWDFQ9zEwkAXpvLu": 3
-  },
+  "folder": "14I6WuYHWvBXver9",
   "flags": {},
   "_stats": {
     "compendiumSource": null,
@@ -72,11 +83,15 @@
     "coreVersion": "13.351",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
-    "createdTime": 1769706838181,
-    "modifiedTime": 1769708265630,
+    "createdTime": 1771088528510,
+    "modifiedTime": 1771088528510,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
-  "_id": "51hm65szdIZGMz06",
-  "sort": 200000,
-  "_key": "!items!51hm65szdIZGMz06"
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "lGBPXeVMWBaxWGM1",
+  "sort": 0,
+  "_key": "!items!lGBPXeVMWBaxWGM1"
 }

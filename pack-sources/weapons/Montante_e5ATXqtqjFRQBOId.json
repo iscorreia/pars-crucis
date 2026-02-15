@@ -1,24 +1,24 @@
 {
-  "name": "Gladio",
+  "name": "Montante",
   "type": "weapon",
-  "img": "icons/weapons/swords/sword-ringed-engraved.webp",
+  "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
   "system": {
     "info": {
       "subtype": "melee",
       "group": "sword",
-      "subgroup": "Espada curta",
+      "subgroup": "Espadão",
       "quality": "common"
     },
     "actions": {
       "NCrq5eJO4xAQtODL": {
-        "img": "icons/weapons/swords/sword-ringed-engraved.webp",
+        "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
         "name": "Golpear",
         "type": "attack",
         "_id": "NCrq5eJO4xAQtODL",
         "damaging": true,
-        "range": "1m",
+        "range": "2m",
         "damage": {
-          "dmgBase": 9,
+          "dmgBase": 13,
           "dmgAttributes": [
             "fis",
             "des"
@@ -29,39 +29,52 @@
           "dmgType": "phy",
           "dmgSubtype": ""
         },
-        "skill": "esgri",
         "effect": "",
         "effort": "",
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "subtype": "melee"
+        "subtype": "melee",
+        "usesAmmo": false,
+        "area": "",
+        "skills": {
+          "esgri": 0
+        },
+        "skill": null
       }
     },
     "cost": {
-      "price": 5,
+      "price": 12,
       "currency": "silver"
     },
     "details": {
-      "slots": 1,
+      "slots": 2,
       "stack": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": ""
     },
-    "keywords": {},
+    "keywords": {
+      "twoHanded": null
+    },
     "description": {
-      "description": "<p>Alcance: 1m</p><p>Dano: 9+FIS|DES</p><p>Preço: 5p</p><p>Ofício: Arm N4</p><p>Mts: 3</p>",
+      "description": "<p>Alcance: 2m</p><p>Dano: 13+FIS|DES</p><p>Obs: 2 mãos.</p><p>Preço: 12p</p><p>Req: FIS2</p><p>Ofício: Arm N6</p><p>Mts: 6</p>",
       "notes": "",
       "summary": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
     }
   },
   "effects": [],
-  "folder": "UJMi2v8hWvQ7WSkK",
-  "ownership": {
-    "default": 0,
-    "BWDFQ9zEwkAXpvLu": 3
-  },
+  "folder": "14I6WuYHWvBXver9",
   "flags": {},
   "_stats": {
     "compendiumSource": null,
@@ -70,11 +83,15 @@
     "coreVersion": "13.351",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
-    "createdTime": 1769707089674,
-    "modifiedTime": 1769708265630,
+    "createdTime": 1771088526215,
+    "modifiedTime": 1771088526237,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
-  "_id": "AlDuaVLi3OoPXE85",
-  "sort": 1000000,
-  "_key": "!items!AlDuaVLi3OoPXE85"
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "e5ATXqtqjFRQBOId",
+  "sort": 200000,
+  "_key": "!items!e5ATXqtqjFRQBOId"
 }

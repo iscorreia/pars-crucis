@@ -35,7 +35,10 @@
         "effort": "",
         "prepTime": "",
         "duration": "",
-        "keywords": {}
+        "keywords": {},
+        "skills": {
+          "balis": 0
+        }
       }
     },
     "cost": {
@@ -82,7 +85,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770037137699,
-    "modifiedTime": 1770135925090,
+    "modifiedTime": 1771121806234,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "WquQAT6orgxxaOPC",

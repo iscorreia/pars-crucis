@@ -1,0 +1,80 @@
+{
+  "name": "Deslizamento",
+  "type": "ability",
+  "img": "icon%20library/powers/geomancer%20skills/earth%20(47).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "earth"
+    },
+    "actions": {
+      "HX9rzAKFD5U3XyyO": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(47).png",
+        "name": "Deslize",
+        "type": "attack",
+        "_id": "HX9rzAKFD5U3XyyO",
+        "damaging": false,
+        "range": "",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "empurra tudo até [3+FIS|ESP/2] metros, causando Dano de colisão +4.",
+        "area": "",
+        "effort": "5",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "subtype": "jet",
+        "skills": {
+          "eleme": 0
+        },
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "jet": null
+    },
+    "description": {
+      "description": "<p>Jato</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com punhos, ou arma, bate contra o chão gerando uma onda de impacto que causa um pequeno deslizamento.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Observações:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> empurra tudo até [3+FIS|ESP/2] metros, causando Dano de colisão +4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Terra movediça</em> e Elementalismo N5.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "iWWRvj2lod4fJ6a7",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.F9E14GjfFOpJotly",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771120758688,
+    "modifiedTime": 1771120758688,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "XJmKcA3Q9KCZxCsw",
+  "sort": 0,
+  "_key": "!items!XJmKcA3Q9KCZxCsw"
+}

@@ -1,0 +1,76 @@
+{
+  "name": "Abalo sísmico",
+  "type": "ability",
+  "img": "icon%20library/powers/geomancer%20skills/earth%20(1).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "earth"
+    },
+    "actions": {
+      "YHvyzzySl0sbQyeC": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(1).png",
+        "name": "Abalar",
+        "type": "use",
+        "_id": "YHvyzzySl0sbQyeC",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 10,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "dano apenas em estruturas. Aplica MOD-4 as ações. Móveis e objetos podem cair, causando dano de acordo com seu peso (a decisão do Narrador). Para evitar a penalidade um personagem deve passar um teste de Reflexo, Atletismo ou Agilidade com dificuldade 12+Elementalismo.",
+        "range": "30m",
+        "area": "raio de 10m",
+        "effort": "9",
+        "prepTime": "2AP",
+        "duration": "1 rodada",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Batendo contra o solo ou dando fortes pisadas, faz a terra ao seu redor, ou em um local específico tremer intensamente.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 9.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 30m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10+ESP</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">×</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">5 apenas em estruturas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Observações:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> aplica MOD-4 as ações. Móveis e objetos podem cair, causando dano de acordo com seu peso (a decisão do Narrador).</span></p><p class=\"MsoNormal\">Para evitar a penalidade um personagem deve passar um teste de Reflexo, Atletismo ou Agilidade com dificuldade 12+Elementalismo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Senso sísmico </em>e Elementalismo N5.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "iWWRvj2lod4fJ6a7",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.BtBcvuaR8Lkvgewt",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771120758688,
+    "modifiedTime": 1771120758688,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "ZcJXufQ68yVxAfZm",
+  "sort": 0,
+  "_key": "!items!ZcJXufQ68yVxAfZm"
+}

@@ -36,7 +36,10 @@
         "keywords": {},
         "skill": "hasta",
         "subtype": "melee",
-        "usesAmmo": false
+        "usesAmmo": false,
+        "skills": {
+          "hasta": 0
+        }
       },
       "bAOE4VYfqiWTjBox": {
         "img": "icons/weapons/polearms/javelin-flared.webp",
@@ -64,7 +67,10 @@
         "keywords": {},
         "skill": "hasta",
         "subtype": "throw",
-        "usesAmmo": false
+        "usesAmmo": false,
+        "skills": {
+          "hasta": 0
+        }
       }
     },
     "cost": {
@@ -108,7 +114,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769952903276,
-    "modifiedTime": 1770035357980,
+    "modifiedTime": 1771122034021,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "PFc5LzQJQGJl1JgC",

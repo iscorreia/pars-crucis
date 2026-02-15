@@ -36,7 +36,10 @@
         "duration": "",
         "keywords": {},
         "skill": "briga",
-        "subtype": "throw"
+        "subtype": "throw",
+        "skills": {
+          "briga": 0
+        }
       }
     },
     "cost": {
@@ -84,7 +87,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770486834630,
-    "modifiedTime": 1770497806999,
+    "modifiedTime": 1771121904836,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "UE39wuwmUjFptFMI",

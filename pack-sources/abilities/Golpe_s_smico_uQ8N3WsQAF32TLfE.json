@@ -1,0 +1,141 @@
+{
+  "name": "Golpe sísmico",
+  "type": "ability",
+  "img": "icon%20library/powers/geomancer%20skills/earth%20(24).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "earth"
+    },
+    "actions": {
+      "8VwLSmXIlldmBNRM": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(24).png",
+        "name": "Golpear",
+        "type": "tech",
+        "_id": "8VwLSmXIlldmBNRM",
+        "damaging": true,
+        "duration": "1atq/1min",
+        "effort": "5",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "effect": "[3] de dano Destrutivo.",
+        "keywords": {
+          "melee": null
+        },
+        "usesAmmo": false,
+        "range": "",
+        "prepTime": "",
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null,
+        "area": "",
+        "skills": {
+          "inherit": 0
+        },
+        "skill": null
+      },
+      "kOHZBFbz9JatBN6L": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(15).png",
+        "name": "Disparar",
+        "type": "tech",
+        "_id": "kOHZBFbz9JatBN6L",
+        "damaging": true,
+        "effort": "5",
+        "effect": "[3] de dano Destrutivo.",
+        "keywords": {
+          "projectile": null,
+          "penetrating": null
+        },
+        "usesAmmo": true,
+        "duration": "1atq/1min",
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "range": "",
+        "prepTime": "",
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null,
+        "area": "",
+        "skills": {
+          "inherit": 0
+        },
+        "skill": null
+      },
+      "Ah18Q2JAH9wTxuMt": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(24).png",
+        "name": "Imbuir",
+        "type": "use",
+        "_id": "Ah18Q2JAH9wTxuMt",
+        "range": "10m",
+        "effort": "5",
+        "usage": "imbui arma ou municão.",
+        "effect": "Armas corpo a corpo têm Dano+3 Físico e causam [3] de dano Destrutivo. Munições têm Penetrante causam [3] de dano Destrutivo.",
+        "duration": "1atq/1min",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "prepTime": "",
+        "keywords": {},
+        "area": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Carrega uma arma ou munição com essência sísmica, que é liberado ao conectar com seu alvo de ataque.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Armas corpo a corpo:</span> Dano+3 Físico e causam [3] de dano Destrutivo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Munições:</span> têm Penetrante causam [3] de dano Destrutivo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 10m para usar na arma de aliados.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto ou 1 ataque.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Observações:</span> o personagem pode encantar sua arma enquanto ataca, nesse caso utilizando a perícia de combate da arma empunhada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Senso sísmico</em> e Elementalismo N4.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "iWWRvj2lod4fJ6a7",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.tiTvLMG84T7HnVsP",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771120758688,
+    "modifiedTime": 1771120758688,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "uQ8N3WsQAF32TLfE",
+  "sort": 0,
+  "_key": "!items!uQ8N3WsQAF32TLfE"
+}

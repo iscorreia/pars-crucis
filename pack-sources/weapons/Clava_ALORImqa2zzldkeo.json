@@ -35,7 +35,10 @@
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "malha": 0
+        }
       },
       "kcXkqjLYBPwdJz24": {
         "img": "icons/weapons/clubs/club-banded-barbed-black.webp",
@@ -64,7 +67,10 @@
         "effort": "",
         "prepTime": "",
         "duration": "",
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "malha": 0
+        }
       }
     },
     "cost": {
@@ -113,8 +119,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770488541606,
-    "modifiedTime": 1770488964661,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771122052758,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "ALORImqa2zzldkeo",
   "sort": 100000,

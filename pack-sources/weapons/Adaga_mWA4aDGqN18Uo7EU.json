@@ -36,7 +36,10 @@
         "duration": "",
         "keywords": {},
         "skill": "briga",
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "briga": 0
+        }
       },
       "EhfTkbGS8612Apbs": {
         "img": "icons/weapons/daggers/dagger-straight-blue.webp",
@@ -64,7 +67,10 @@
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "skill": "briga"
+        "skill": "briga",
+        "skills": {
+          "briga": 0
+        }
       }
     },
     "cost": {
@@ -112,8 +118,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770487262124,
-    "modifiedTime": 1770488119720,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771121834285,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "mWA4aDGqN18Uo7EU",
   "sort": 100000,

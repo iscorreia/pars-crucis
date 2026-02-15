@@ -29,13 +29,18 @@
           "dmgType": "phy",
           "dmgSubtype": ""
         },
-        "skill": "esgri",
         "effect": "",
         "effort": "",
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "subtype": "melee"
+        "subtype": "melee",
+        "usesAmmo": false,
+        "area": "",
+        "skills": {
+          "esgri": 0
+        },
+        "skill": null
       },
       "xhiIMQTIxrGdtUEQ": {
         "img": "icons/weapons/swords/sword-katana.webp",
@@ -63,8 +68,13 @@
         "keywords": {
           "twoHanded": null
         },
-        "skill": "esgri",
-        "subtype": "melee"
+        "subtype": "melee",
+        "usesAmmo": false,
+        "area": "",
+        "skills": {
+          "esgri": 0
+        },
+        "skill": null
       }
     },
     "cost": {
@@ -76,21 +86,27 @@
       "stack": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": ""
     },
     "keywords": {},
     "description": {
       "description": "<p>Alcance: 1m</p><p>Dano: 9+FIS|DES</p><p>Obs: Com 2 mãos Dano+3.</p><p>Preço: 7p</p><p>Req: FIS0</p><p>Ofício: Arm N5</p><p>Mts: 4</p>",
       "notes": "",
       "summary": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
     }
   },
   "effects": [],
-  "folder": "UJMi2v8hWvQ7WSkK",
-  "ownership": {
-    "default": 0,
-    "BWDFQ9zEwkAXpvLu": 3
-  },
+  "folder": "14I6WuYHWvBXver9",
   "flags": {},
   "_stats": {
     "compendiumSource": null,
@@ -99,11 +115,15 @@
     "coreVersion": "13.351",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
-    "createdTime": 1769707671287,
-    "modifiedTime": 1769708265630,
+    "createdTime": 1771088521646,
+    "modifiedTime": 1771088526237,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
-  "_id": "jtxtIRYdeaczwUCL",
-  "sort": 300000,
-  "_key": "!items!jtxtIRYdeaczwUCL"
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "Xu783nKcyeOHKy9K",
+  "sort": 600000,
+  "_key": "!items!Xu783nKcyeOHKy9K"
 }

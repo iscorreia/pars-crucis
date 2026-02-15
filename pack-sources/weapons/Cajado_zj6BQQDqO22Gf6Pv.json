@@ -36,7 +36,10 @@
         "keywords": {},
         "skill": "hasta",
         "subtype": "melee",
-        "usesAmmo": true
+        "usesAmmo": true,
+        "skills": {
+          "hasta": 0
+        }
       }
     },
     "cost": {
@@ -79,7 +82,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769954327270,
-    "modifiedTime": 1769954327270,
+    "modifiedTime": 1771121951628,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "ownership": {

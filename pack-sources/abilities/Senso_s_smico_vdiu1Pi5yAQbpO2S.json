@@ -1,0 +1,110 @@
+{
+  "name": "Senso sísmico",
+  "type": "ability",
+  "img": "icon%20library/powers/geomancer%20skills/earth%20(20).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "earth"
+    },
+    "actions": {
+      "Rkx4RuGvsz6tYKfH": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(20).png",
+        "name": "Longínquo",
+        "type": "test",
+        "_id": "Rkx4RuGvsz6tYKfH",
+        "effort": "3",
+        "effect": "emite vibrações longas que detectam movimentos dentro do alcance de 30m e mapeia estruturas e grandes objetos em um alcance estendido de 100*MS metros.",
+        "duration": "",
+        "range": "30m/100*MS metros",
+        "prepTime": "",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "keywords": {},
+        "difficulty": 10,
+        "area": "",
+        "skills": {
+          "eleme": 0
+        },
+        "skill": null
+      },
+      "JBH6l62gpfe3HeUo": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(20).png",
+        "name": "Posicional",
+        "type": "test",
+        "_id": "JBH6l62gpfe3HeUo",
+        "range": "7m",
+        "effort": "3",
+        "duration": "1 minutos",
+        "effect": "emite curtas vibrações contínuas que dão retorno imediato de quaisquer movimentos no alcance de 7m, é independente dos sentidos, removendo penalidades sensoriais. Duração de 1 minuto.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "prepTime": "",
+        "keywords": {},
+        "difficulty": 10,
+        "area": "",
+        "skills": {
+          "eleme": 0
+        },
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null,
+      "quick": null
+    },
+    "description": {
+      "description": "<p>Inicial, Rápida</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Estando em contato com o solo envia uma suave vibração que detecta movimentos ou estruturas pela reverberação, algo imóvel será detectado como uma estrutura qualquer.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Longínquo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> emite vibrações longas que detectam movimentos dentro do alcance de 30m e mapeia estruturas e grandes objetos em um alcance estendido de 100*MS metros.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Posicional:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> emite curtas vibrações contínuas que dão retorno imediato de quaisquer movimentos no alcance de 7m, é independente dos sentidos, removendo penalidades sensoriais. Duração de 1 minuto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Elementalismo N1.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "iWWRvj2lod4fJ6a7",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.R7NeCJZhJa1a4LFy",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771120758688,
+    "modifiedTime": 1771120758688,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "vdiu1Pi5yAQbpO2S",
+  "sort": 0,
+  "_key": "!items!vdiu1Pi5yAQbpO2S"
+}

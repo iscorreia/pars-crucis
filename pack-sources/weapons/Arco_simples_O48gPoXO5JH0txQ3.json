@@ -35,7 +35,10 @@
         "duration": "",
         "keywords": {},
         "skill": "arque",
-        "subtype": "projectile"
+        "subtype": "projectile",
+        "skills": {
+          "arque": 0
+        }
       }
     },
     "cost": {
@@ -79,7 +82,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770088709711,
-    "modifiedTime": 1770089272646,
+    "modifiedTime": 1771121635230,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "O48gPoXO5JH0txQ3",
