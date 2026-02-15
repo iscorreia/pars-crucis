@@ -35,7 +35,10 @@
         "effort": "",
         "prepTime": "",
         "duration": "",
-        "keywords": {}
+        "keywords": {},
+        "skills": {
+          "arque": 0
+        }
       }
     },
     "cost": {
@@ -82,7 +85,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770088624838,
-    "modifiedTime": 1770089272646,
+    "modifiedTime": 1771121646199,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "T9VIk5FFZhsiRcPa",

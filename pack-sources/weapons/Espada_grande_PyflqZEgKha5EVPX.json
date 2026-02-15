@@ -1,7 +1,7 @@
 {
-  "name": "Ootachi",
+  "name": "Espada grande",
   "type": "weapon",
-  "img": "icons/weapons/swords/sword-katana-purple.webp",
+  "img": "icons/weapons/swords/sword-guard.webp",
   "system": {
     "info": {
       "subtype": "melee",
@@ -11,14 +11,14 @@
     },
     "actions": {
       "NCrq5eJO4xAQtODL": {
-        "img": "icons/weapons/swords/sword-katana-purple.webp",
+        "img": "icons/weapons/swords/sword-guard.webp",
         "name": "Golpear",
         "type": "attack",
         "_id": "NCrq5eJO4xAQtODL",
         "damaging": true,
         "range": "2m",
         "damage": {
-          "dmgBase": 13,
+          "dmgBase": 15,
           "dmgAttributes": [
             "fis",
             "des"
@@ -29,41 +29,54 @@
           "dmgType": "phy",
           "dmgSubtype": ""
         },
-        "skill": "esgri",
         "effect": "",
         "effort": "",
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "subtype": "melee"
+        "subtype": "melee",
+        "usesAmmo": false,
+        "area": "",
+        "skills": {
+          "esgri": 0
+        },
+        "skill": null
       }
     },
     "cost": {
-      "price": 12,
+      "price": 20,
       "currency": "silver"
     },
     "details": {
-      "slots": 2,
+      "slots": 3,
       "stack": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": ""
     },
     "keywords": {
-      "twoHanded": null
+      "twoHanded": "",
+      "handling": "-1",
+      "impact": "8"
     },
     "description": {
-      "description": "<p>Alcance: 2m</p><p>Dano: 13+FIS|DES</p><p>Obs: 2 mãos.</p><p>Preço: 12p</p><p>Req: FIS2</p><p>Ofício: Arm N6</p><p>Mts: 6</p>",
+      "description": "<p>Alcance: 2m</p><p>Dano: 15+FIS|DES</p><p>Obs: 2 mãos. Manuseio (-1). Impacto (8).</p><p>Preço: 20p</p><p>Req: FIS5</p><p>Ofício: Arm N6</p><p>Mts: 9</p>",
       "notes": "",
       "summary": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
     }
   },
   "effects": [],
-  "folder": "UJMi2v8hWvQ7WSkK",
-  "ownership": {
-    "default": 0,
-    "BWDFQ9zEwkAXpvLu": 3
-  },
+  "folder": "14I6WuYHWvBXver9",
   "flags": {},
   "_stats": {
     "compendiumSource": null,
@@ -72,11 +85,15 @@
     "coreVersion": "13.351",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
-    "createdTime": 1769708486241,
-    "modifiedTime": 1769708666277,
+    "createdTime": 1771088517366,
+    "modifiedTime": 1771088526237,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
-  "_id": "LXcCgVbN1mkqnDAt",
-  "sort": 0,
-  "_key": "!items!LXcCgVbN1mkqnDAt"
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "PyflqZEgKha5EVPX",
+  "sort": 1000000,
+  "_key": "!items!PyflqZEgKha5EVPX"
 }

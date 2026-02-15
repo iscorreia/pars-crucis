@@ -36,7 +36,10 @@
         "duration": "",
         "keywords": {},
         "skill": "briga",
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "briga": 0
+        }
       },
       "EhfTkbGS8612Apbs": {
         "img": "icon%20library/weapons/exotic%20weapons/exotic%20(39).png",
@@ -64,7 +67,10 @@
         "duration": "",
         "keywords": {},
         "skill": "briga",
-        "subtype": "throw"
+        "subtype": "throw",
+        "skills": {
+          "briga": 0
+        }
       }
     },
     "cost": {
@@ -112,7 +118,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770487770877,
-    "modifiedTime": 1770498064897,
+    "modifiedTime": 1771121858036,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "avu80Ugl1Iy6Aq6v",

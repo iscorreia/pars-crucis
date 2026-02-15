@@ -1,7 +1,7 @@
 {
-  "name": "Espada perfurante",
+  "name": "Espada de madeira",
   "type": "weapon",
-  "img": "icons/weapons/swords/sword-hilt-steel-green.webp",
+  "img": "icons/weapons/thrown/dagger-simple-wood.webp",
   "system": {
     "info": {
       "subtype": "melee",
@@ -11,14 +11,14 @@
     },
     "actions": {
       "NCrq5eJO4xAQtODL": {
-        "img": "icons/weapons/swords/sword-hilt-steel-green.webp",
+        "img": "icons/weapons/thrown/dagger-simple-wood.webp",
         "name": "Golpear",
         "type": "attack",
         "_id": "NCrq5eJO4xAQtODL",
         "damaging": true,
         "range": "1m",
         "damage": {
-          "dmgBase": 9,
+          "dmgBase": 6,
           "dmgAttributes": [
             "fis",
             "des"
@@ -29,23 +29,28 @@
           "dmgType": "phy",
           "dmgSubtype": ""
         },
-        "skill": "esgri",
         "effect": "",
         "effort": "",
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "subtype": "melee"
+        "subtype": "melee",
+        "usesAmmo": false,
+        "area": "",
+        "skills": {
+          "esgri": 0
+        },
+        "skill": null
       },
       "dPkelQBbwfmD4QYB": {
-        "img": "icons/weapons/swords/sword-hilt-steel-green.webp",
+        "img": "icons/weapons/thrown/dagger-simple-wood.webp",
         "name": "Golpear²",
         "type": "attack",
         "_id": "dPkelQBbwfmD4QYB",
         "damaging": true,
         "range": "1m",
         "damage": {
-          "dmgBase": 11,
+          "dmgBase": 8,
           "dmgAttributes": [
             "fis",
             "des"
@@ -59,40 +64,51 @@
         "keywords": {
           "twoHanded": null
         },
-        "skill": "esgri",
         "effect": "",
         "effort": "",
         "prepTime": "",
         "duration": "",
-        "subtype": "melee"
+        "subtype": "melee",
+        "usesAmmo": false,
+        "area": "",
+        "skills": {
+          "esgri": 0
+        },
+        "skill": null
       }
     },
     "cost": {
-      "price": 15,
-      "currency": "silver"
+      "price": 80,
+      "currency": "copper"
     },
     "details": {
       "slots": 1,
       "stack": 1,
       "stackable": false,
       "equippable": true,
-      "equipped": false
+      "equipped": false,
+      "stackMax": 1,
+      "effect": "",
+      "penalty": ""
     },
     "keywords": {
-      "penetrating": null
+      "lethality": "/2"
     },
     "description": {
-      "description": "<p>Alcance: 1m</p><p>Dano: 9+FIS|DES</p><p>Obs: Penetrante. Com 2 mãos Dano+2.</p><p>Preço: 15p</p><p>Req: FIS0</p><p>Ofício: Arm N7</p><p>Mts: 5</p>",
+      "description": "<p>Alcance: 1m</p><p>Dano: 6+FIS|DES</p><p>Obs: Fatalidade/2. Com 2 mãos Dano+2.</p><p>Preço: 80c</p><p>Ofício: Arm N2</p><p>Mts: 2</p>",
       "notes": "",
       "summary": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
     }
   },
   "effects": [],
-  "folder": "UJMi2v8hWvQ7WSkK",
-  "ownership": {
-    "default": 0,
-    "BWDFQ9zEwkAXpvLu": 3
-  },
+  "folder": "14I6WuYHWvBXver9",
   "flags": {},
   "_stats": {
     "compendiumSource": null,
@@ -101,11 +117,15 @@
     "coreVersion": "13.351",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
-    "createdTime": 1769705728997,
-    "modifiedTime": 1769708265630,
+    "createdTime": 1771088515966,
+    "modifiedTime": 1771088526237,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
-  "_id": "173lawFJqcxTOcE2",
-  "sort": 900000,
-  "_key": "!items!173lawFJqcxTOcE2"
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "gomalO9aY9ATuqGh",
+  "sort": 1100000,
+  "_key": "!items!gomalO9aY9ATuqGh"
 }

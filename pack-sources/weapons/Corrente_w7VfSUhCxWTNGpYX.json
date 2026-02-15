@@ -36,7 +36,10 @@
         "duration": "",
         "keywords": {},
         "skill": "malha",
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "malha": 0
+        }
       }
     },
     "cost": {
@@ -85,8 +88,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770488717502,
-    "modifiedTime": 1770489367090,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771122057790,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "w7VfSUhCxWTNGpYX",
   "sort": 200000,

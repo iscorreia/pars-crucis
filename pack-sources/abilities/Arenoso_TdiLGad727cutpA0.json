@@ -1,0 +1,76 @@
+{
+  "name": "Arenoso",
+  "type": "ability",
+  "img": "icon%20library/powers/geomancer%20skills/earth%20(31).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "earth"
+    },
+    "actions": {
+      "Vp33cgvbSEi8k14S": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(31).png",
+        "name": "Mutar",
+        "type": "use",
+        "_id": "Vp33cgvbSEi8k14S",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "ao fim de cada rodada cure PV igual à metade dos danos físicos recebidos na rodada. Imune a dano Biológico, venenos e doenças. Não pode ser derrubado, empurrado ou movido caso não queira. Poderes da Força da Terra tem esforço reduzido em 1. Pode se mover junto a deslizamento. Petrificar a si mesmo cura [7] PV.",
+        "range": "",
+        "area": "",
+        "effort": "10",
+        "prepTime": "3AP",
+        "duration": "30 minutos",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 3,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 8,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "mutation": null
+    },
+    "description": {
+      "description": "<p>Mutação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com um breve ritual sua pele e músculos tem sua estrutura alterada, tendo um aspecto arenoso robusto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 30 minutos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Observações:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> ao fim de cada rodada cure PV igual à metade dos danos físicos recebidos na rodada. Imune a dano Biológico, venenos e doenças. Não pode ser derrubado, empurrado ou movido caso não queira. Poderes da Força da Terra tem esforço reduzido em 1.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Pode se mover junto a <em>deslizamento</em>.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Petrificar a si mesmo cura [7] PV.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Rijeza da pedra </em>e Elementalismo N8.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "iWWRvj2lod4fJ6a7",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.7HXtRl39MlGDZcuY",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771120758688,
+    "modifiedTime": 1771121363115,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "TdiLGad727cutpA0",
+  "sort": 0,
+  "_key": "!items!TdiLGad727cutpA0"
+}

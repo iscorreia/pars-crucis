@@ -36,7 +36,10 @@
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "skill": "briga"
+        "skill": "briga",
+        "skills": {
+          "briga": 0
+        }
       }
     },
     "cost": {
@@ -82,8 +85,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770487097380,
-    "modifiedTime": 1770487097380,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771121920940,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "irQvlxXSXkAiW6RQ",
   "sort": 0,

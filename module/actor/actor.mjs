@@ -96,9 +96,8 @@ export class PCActor extends foundry.documents.Actor {
     if (!item) return;
     const action = item.system.actions[acId];
     if (!action) return;
-    const { techSkill, techSubtype, type } = action;
-    if (!techSkill || !techSubtype || !type) return;
-    const { category, modGroup, level, mod } = this.system.skills[techSkill];
+    const { skill, techSubtype, type } = action;
+    if (!skill || !techSubtype || !type) return;
     const techKeywords = keywordResolver(item.system.keywords, action.keywords);
     const { selectedAction, selectedItem } = action;
     if (!selectedAction || !selectedItem) return;
@@ -127,17 +126,20 @@ export class PCActor extends foundry.documents.Actor {
     if (ammunition) {
       keywords = keywordResolver(keywords, ammunition.system.keywords);
     }
-    const catMod = this.system.categoryModifiers[category];
-    const groupMod = modGroup ? this.system.groupModifiers[modGroup].mod : 0;
-    const modifiers =
-      mod +
-      catMod +
-      groupMod +
+    const { category, modGroup, level, mod } = this.system.skills[skill];
+    const categoryMod = this.system.categoryModifiers?.[category] ?? 0;
+    const groupMod = modGroup
+      ? (this.system.groupModifiers?.[modGroup]?.mod ?? 0)
+      : 0;
+    const modifiers = categoryMod + groupMod + mod;
+
+    const compiledModifiers =
+      modifiers +
       (Number(keywords?.handling) || 0) +
       (Number(keywords?.modifier) || 0);
-    const formula = `${dice} + ${level || 0} + ${modifiers || 0}`;
+    const formula = `${dice} + ${level ?? 0} + ${compiledModifiers ?? 0}`;
     const flavor = craftFlavor({
-      skill: techSkill,
+      skill,
       acSubtype: techSubtype,
       acType: type,
     });
@@ -160,6 +162,7 @@ export class PCActor extends foundry.documents.Actor {
       subtype: action.techSubtype,
       damaging: action.damaging,
       damage: action.damage?.dmgTxt,
+      limit: action.limit,
       effort: action.effort,
       duration: action.duration,
       effect: action.effect,
@@ -211,20 +214,21 @@ export class PCActor extends foundry.documents.Actor {
         return;
       consumeAmmo(ammoInfo, ammunition, item);
     }
-    const { category, modGroup, level, mod } = this.system.skills[skill];
     let keywords = keywordResolver(item.system.keywords, action.keywords);
     if (ammunition) {
       keywords = keywordResolver(keywords, ammunition.system.keywords);
     }
-    const catMod = this.system.categoryModifiers[category];
-    const groupMod = modGroup ? this.system.groupModifiers[modGroup].mod : 0;
-    const modifiers =
-      mod +
-      catMod +
-      groupMod +
+    const { category, modGroup, level, mod } = this.system.skills[skill];
+    const categoryMod = this.system.categoryModifiers?.[category] ?? 0;
+    const groupMod = modGroup
+      ? (this.system.groupModifiers?.[modGroup]?.mod ?? 0)
+      : 0;
+    const modifiers = categoryMod + groupMod + (mod ?? 0);
+    const compiledModifiers =
+      modifiers +
       (Number(keywords?.handling) || 0) +
       (Number(keywords?.modifier) || 0);
-    const formula = `${dice} + ${level || 0} + ${modifiers || 0}`;
+    const formula = `${dice} + ${level || 0} + ${compiledModifiers || 0}`;
     const flavor = craftFlavor({
       skill,
       acType: type,
@@ -239,6 +243,7 @@ export class PCActor extends foundry.documents.Actor {
       subtype: action.subtype,
       damaging: action.damaging,
       damage: action.damage?.dmgTxt,
+      limit: action.limit,
       effort: action.effort,
       duration: action.duration,
       effect: action.effect,
@@ -290,6 +295,7 @@ export class PCActor extends foundry.documents.Actor {
       usage: action.usage,
       damaging: action.damaging,
       damage: action.damage?.dmgTxt,
+      limit: action.limit,
       effort: action.effort,
       duration: action.duration,
       effect: action.effect,
@@ -320,9 +326,12 @@ function expectedActorLinkForType(type) {
 }
 
 function craftFlavor({ skill, acType, difficulty, acSubtype }) {
-  const testLabel = `${game.i18n.localize("PC.testOf")}`;
-  const skillLabel = `${game.i18n.localize(PC.skills[skill].label)}`;
-  let flavor = `${testLabel} ${skillLabel}`;
+  let flavor = `${game.i18n.localize("PC.test")}`;
+  if (skill) {
+    const testLabel = `${game.i18n.localize("PC.testOf")}`;
+    const skillLabel = `${game.i18n.localize(PC.skills[skill].label)}`;
+    flavor = `${testLabel} ${skillLabel}`;
+  }
   if (acType === "test") {
     const difLabel = `${game.i18n.localize("PC.difficulty.label")}`;
     flavor += ` — ${difLabel} ${difficulty || 0}`;

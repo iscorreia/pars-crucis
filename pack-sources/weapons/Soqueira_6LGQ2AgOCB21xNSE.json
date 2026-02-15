@@ -36,7 +36,10 @@
         "duration": "",
         "keywords": {},
         "skill": "briga",
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "briga": 0
+        }
       }
     },
     "cost": {
@@ -84,8 +87,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770488286693,
-    "modifiedTime": 1770488286693,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771121887771,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "6LGQ2AgOCB21xNSE",
   "sort": 0,

@@ -64,6 +64,12 @@
         {{info.desc}}
       </div>
     {{/if}}
+    {{#if info.limit}}
+      <div class="info-line">
+        <span class="info-label">
+          {{localize "PC.limit"}}:</span>{{info.limit}}
+      </div>
+    {{/if}}
     {{#if info.effort}}
       <div class="info-line">
         <span class="info-label">

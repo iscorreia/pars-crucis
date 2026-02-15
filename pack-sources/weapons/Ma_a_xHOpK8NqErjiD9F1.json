@@ -35,7 +35,10 @@
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "malha": 0
+        }
       },
       "3Jr70zMr8iVRWKKG": {
         "img": "icons/weapons/maces/mace-flanged-steel.webp",
@@ -62,7 +65,10 @@
         "effort": "",
         "prepTime": "",
         "duration": "",
-        "keywords": {}
+        "keywords": {},
+        "skills": {
+          "malha": 0
+        }
       }
     },
     "cost": {
@@ -111,8 +117,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770488733269,
-    "modifiedTime": 1770488964661,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771122074146,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "xHOpK8NqErjiD9F1",
   "sort": 300000,

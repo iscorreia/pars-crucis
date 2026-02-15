@@ -35,7 +35,10 @@
         "duration": "",
         "keywords": {},
         "skill": "balis",
-        "subtype": "jet"
+        "subtype": "jet",
+        "skills": {
+          "balis": 0
+        }
       }
     },
     "cost": {
@@ -84,7 +87,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770256770160,
-    "modifiedTime": 1770306639473,
+    "modifiedTime": 1771121786332,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "wTjvq8wKUqHfln8z",

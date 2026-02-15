@@ -146,6 +146,8 @@
       "espirituais": "Espirituais"
     },
     "skills": {
+      "label": "Perícias",
+
       "atlet": "Atletismo",
       "briga": "Briga",
       "esgri": "Esgrima",
@@ -364,6 +366,7 @@
     "createTech": "Criar técnica",
     "createTest": "Criar teste",
     "createUse": "Criar uso",
+    "limit": "Limite",
     "effort": { "label": "Esforço", "abv": "Esf" },
     "difficulty": { "label": "Dificuldade", "abv": "Dif" },
     "range": { "label": "Alcance", "abv": "Alc" },

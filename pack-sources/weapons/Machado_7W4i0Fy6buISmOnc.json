@@ -35,7 +35,10 @@
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "malha": 0
+        }
       },
       "F6XF0vYB91m8CCex": {
         "img": "icons/weapons/axes/axe-broad-worn-blue.webp",
@@ -64,7 +67,10 @@
         "effort": "",
         "prepTime": "",
         "duration": "",
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "malha": 0
+        }
       },
       "9L0apJAukynMb0f1": {
         "img": "icons/weapons/axes/axe-broad-worn-blue.webp",
@@ -91,7 +97,10 @@
         "effort": "",
         "prepTime": "",
         "duration": "",
-        "keywords": {}
+        "keywords": {},
+        "skills": {
+          "malha": 0
+        }
       }
     },
     "cost": {
@@ -137,8 +146,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770488941798,
-    "modifiedTime": 1770488964661,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771122100667,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "7W4i0Fy6buISmOnc",
   "sort": 700000,

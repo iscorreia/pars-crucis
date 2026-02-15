@@ -1,7 +1,7 @@
 import { PC } from "../config.mjs";
 import { ORIGINS } from "../data/origins.mjs";
 import { CULTURES } from "../data/cultures.mjs";
-import { keywordResolver } from "../utils.mjs";
+import { getBestSkillData, keywordResolver, skillsMerger } from "../utils.mjs";
 
 const {
   ArrayField,
@@ -309,7 +309,7 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     xpData.ptsSum = passivesPts.reduce((acc, value) => acc + value, 0);
 
     // ABILITIES and GEAR derived calculations
-    handleGearAbilities(itemGroup, attributesData, parent.items);
+    handleGearAbilities(itemGroup, this, parent.items);
 
     // MITIGATION derived calculations
     handleMitigation(wearData, mitigationData);
@@ -499,7 +499,7 @@ function ammoReady(action, item, items) {
   }
 }
 
-export function handleGearAbilities(itemGroup, attributesData, items) {
+export function handleGearAbilities(itemGroup, systemData, items) {
   for (let [_, item] of Object.entries(itemGroup)) {
     const { actions } = item.system;
     if (item.type === "ammo") {
@@ -509,10 +509,13 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
       for (let [_, action] of Object.entries(actions)) {
         action.ready = true;
         const isTech = action.type === "tech";
+        const hasSkill = Object.keys(action.skills ?? {}).length > 0;
         if (!isTech) {
           if (action.usesAmmo) {
             ammoReady(action, item, items);
           }
+          if (hasSkill)
+            action.skill = getBestSkillData(systemData, action.skills).skillId;
           // Calculates action damage
           if (action.damaging) {
             const ammoSet = item.selectedAmmo ? true : false;
@@ -520,7 +523,7 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
               ? (item.selectedAmmo?.system.damage ?? null)
               : null;
             const damage = action.damage ?? {};
-            calcDmg(damage, attributesData, { ammoDmg: ammoDamage });
+            calcDmg(damage, systemData.attributes, { ammoDmg: ammoDamage });
             craftDmgTxt(damage, { ammoDmg: ammoDamage });
           }
         } else if (isTech) {
@@ -532,12 +535,16 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
           const actionSet = selectedItem && selectedAction ? true : false;
           action.set = actionSet;
           action.techKeywords = action.keywords;
+          const inherits = "inherit" in (action.skills ?? {});
           // Once an item attack action is selected, handles necessary data
           if (actionSet) {
-            action.techSkill = action.skill;
-            action.techSubtype = action.skill;
-            if (action.skill === "inherit")
-              action.techSkill = selectedAction.skill;
+            // action.techSkill = action.skill;
+            action.techSubtype = action.subtype;
+            let techSkills = action.skills;
+            if (inherits)
+              techSkills = skillsMerger(action.skills, selectedAction.skills);
+            if (hasSkill)
+              action.skill = getBestSkillData(systemData, techSkills).skillId;
             if (action.subtype === "inherit")
               action.techSubtype = selectedAction.subtype;
             const srcKeywords = keywordResolver(
@@ -559,7 +566,7 @@ export function handleGearAbilities(itemGroup, attributesData, items) {
             const ammoDamage = ammoSet
               ? (selectedItem.selectedAmmo?.system.damage ?? null)
               : null;
-            calcDmg(damage, attributesData, {
+            calcDmg(damage, systemData.attributes, {
               srcDmg: srcDamage,
               ammoDmg: ammoDamage,
             });

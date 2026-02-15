@@ -87,14 +87,12 @@ export default class SetDamage extends api.HandlebarsApplicationMixin(
   static async cutDmgAttributeOnClick(_, target) {
     const item = this.document;
     const { acId, att } = target.dataset;
-    console.log(target.dataset);
     const currentArray =
       foundry.utils.getProperty(
         item.system,
         `actions.${acId}.damage.dmgAttributes`,
       ) ?? [];
     const actions = foundry.utils.getProperty(item.system, `actions`) ?? [];
-    console.log(actions);
     const updatedArray = currentArray.filter((i) => i !== att);
     item.update({
       [`system.actions.${acId}.damage.dmgAttributes`]: updatedArray,

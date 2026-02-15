@@ -43,6 +43,7 @@ export class ActionModel extends DataModel {
       range: new StringField({ initial: "" }),
       area: new StringField({ initial: "" }),
       effort: new StringField({ initial: "" }),
+      limit: new StringField({ initial: "" }),
       prepTime: new StringField({ initial: "" }),
       duration: new StringField({ initial: "" }),
       keywords: keywords(),
@@ -56,10 +57,11 @@ export class AttackActionModel extends ActionModel {
     const parentSchema = super.defineSchema();
     return {
       ...parentSchema,
-      skill: new StringField({
-        initial: "briga",
-        choices: () => Object.keys(PC.skills),
-      }),
+      skill: new StringField({ initial: null, nullable: true }),
+      skills: new TypedObjectField(
+        new NumberField({ initial: 0, integer: true }),
+        {},
+      ),
       subtype: new StringField({
         initial: "melee",
         choices: () => Object.keys(PC.action.types.attack.subtypes),
@@ -73,10 +75,11 @@ export class TestActionModel extends ActionModel {
     const parentSchema = super.defineSchema();
     return {
       ...parentSchema,
-      skill: new StringField({
-        initial: "briga",
-        choices: () => Object.keys(PC.skills),
-      }),
+      skill: new StringField({ initial: null, nullable: true }),
+      skills: new TypedObjectField(
+        new NumberField({ initial: 0, integer: true }),
+        {},
+      ),
       difficulty: new NumberField({ initial: 10, integer: true }),
     };
   }
@@ -98,10 +101,11 @@ export class TechActionModel extends ActionModel {
     return {
       ...parentSchema,
       damage: damage({ damageType: "inherit" }),
-      skill: new StringField({
-        initial: "inherit",
-        choices: () => Object.keys(PC.techSkills),
-      }),
+      skill: new StringField({ initial: null, nullable: true }),
+      skills: new TypedObjectField(
+        new NumberField({ initial: 0, integer: true }),
+        {},
+      ),
       subtype: new StringField({
         initial: "inherit",
         choices: () => Object.keys(PC.techSubtypes),

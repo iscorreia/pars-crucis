@@ -1,0 +1,34 @@
+{{! Skill picker window }}
+
+<section class="skill-picker">
+  <p class="info-desc">Selecione as perícias que podem realizar a ação</p>
+  <div class="favor-block">
+    {{#each config.categories as |category objs|}}
+      <ul class="favor-col">
+        {{#each (lookup @root.config objs)}}
+          <li
+            class="skill-label"
+            data-action="addSkill"
+            data-skill="{{@key}}"
+          >{{localize this.label}}</li>
+        {{/each}}
+      </ul>
+      {{#unless @last}}
+        <div class="separator"></div>
+      {{/unless}}
+    {{/each}}
+  </div>
+  {{#if (eq action.type "tech")}}
+    <div data-action="addSkill" data-skill="inherit">
+      {{localize "PC.skills.inherit"}}
+    </div>
+  {{/if}}
+  <p class="info-desc">Perícias da ação</p>
+  <div class="skills-picked">
+    {{#each action.skills}}
+      <a data-action="cutSkill" data-skill="{{@key}}">
+        {{localize (concat "PC.skills." @key)}}
+      </a>
+    {{/each}}
+  </div>
+</section>

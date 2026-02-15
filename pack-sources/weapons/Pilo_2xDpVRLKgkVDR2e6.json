@@ -36,7 +36,10 @@
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "usesAmmo": false
+        "usesAmmo": false,
+        "skills": {
+          "hasta": 0
+        }
       }
     },
     "cost": {
@@ -82,7 +85,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769952725335,
-    "modifiedTime": 1770035359876,
+    "modifiedTime": 1771122038065,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "2xDpVRLKgkVDR2e6",

@@ -24,19 +24,23 @@
       <div class="flexrow">
         {{#each action.damage.dmgAttributes as |dmgAtt|}}
           <a
+            class="cut"
             data-action="cutDmgAttribute"
             data-ac-id="{{../action._id}}"
             data-att="{{dmgAtt}}"
           >
             {{localize (concat "PC.attributes." dmgAtt ".abv")}}
           </a>
+          {{#unless @last}}
+            |
+          {{/unless}}
         {{/each}}
       </div>
     </div>
     {{#if (not (eq action.type "tech"))}}
       <div class="item-info-block">
         <h5>{{localize "PC.multiplier.label"}}</h5>
-        <select name="system.actions.{{@key}}.damage.dmgAttMultiplier">
+        <select name="system.actions.{{action._id}}.damage.dmgAttMultiplier">
           {{selectOptions
             config.multiplier
             selected=action.damage.dmgAttMultiplier
@@ -51,7 +55,7 @@
     {{#if (not (eq action.type "tech"))}}
       <div class="item-info-block">
         <h5>{{localize "PC.type"}}</h5>
-        <select name="system.actions.{{@key}}.damage.dmgType">
+        <select name="system.actions.{{action._id}}.damage.dmgType">
           {{selectOptions
             config.dmgType
             selected=action.damage.dmgType
@@ -62,7 +66,7 @@
     {{else}}
       <div class="item-info-block">
         <h5>{{localize "PC.type"}}</h5>
-        <select name="system.actions.{{@key}}.damage.dmgType">
+        <select name="system.actions.{{action._id}}.damage.dmgType">
           {{selectOptions
             config.techDmgType
             selected=action.damage.dmgType
@@ -74,7 +78,7 @@
     <div class="item-info-block">
       <h5>{{localize "PC.subtype"}}</h5>
       <input
-        name="system.actions.{{@key}}.damage.dmgSubtype"
+        name="system.actions.{{action._id}}.damage.dmgSubtype"
         value="{{action.damage.dmgSubtype}}"
         type="text"
         data-dtype="String"

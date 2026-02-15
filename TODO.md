@@ -43,6 +43,7 @@
 ### KNOWN BUGS
 
 - _mitigation_.adjust can be deleted in the persona config, resulting in `NaN`
+- Having no skills set for test is making so it roll Athletics, this is unwanted, it should roll a skilless test
 
 ### PONDER ABOUT
 

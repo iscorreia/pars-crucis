@@ -1,0 +1,107 @@
+{
+  "name": "Petrificar",
+  "type": "ability",
+  "img": "icon%20library/powers/geomancer%20skills/earth%20(4).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "earth"
+    },
+    "actions": {
+      "Tfd8BlkSCNbo0Cd5": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(4).png",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "Tfd8BlkSCNbo0Cd5",
+        "damaging": false,
+        "range": "10/15m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "verificar regras de Petrificar.",
+        "area": "",
+        "effort": "8",
+        "prepTime": "2AP",
+        "duration": "1 minuto",
+        "keywords": {
+          "affliction": null
+        },
+        "subtype": "affliction",
+        "skills": {
+          "eleme": 0
+        },
+        "skill": null
+      },
+      "owANNl1NMGNlFioC": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(4).png",
+        "name": "Auto petrificar",
+        "type": "use",
+        "_id": "owANNl1NMGNlFioC",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "tem os efeitos de Petrificado.",
+        "range": "",
+        "area": "",
+        "effort": "8",
+        "prepTime": "",
+        "duration": "1 rodada",
+        "keywords": {
+          "reaction": null
+        },
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Aflição</p><p class=\"MsoNormal\">Com alguns movimentos manuais e entoando algumas palavras começa a petrificar a superfície do corpo de um personagem. As consequências da petrificação, duração e o tempo necessários para totalmente petrificar varia com o tamanho.</p><p class=\"MsoNormal\">Um personagem é capaz de sobreviver muitos anos enquanto for mantido no estado de petrificação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pequeno:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> imediatamente petrificado, efeito permanente.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Médio:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> tem MV/2 e MOD-4 nas ações por 2 rodadas, na segunda vez estende o efeito na rodada atual e o personagem é petrificado no fim da rodada. Use uma terceira vez para tornar o efeito permanente.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Grande:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> aplica MOD-2 as ações por 2 rodadas, na segunda vez aumente para MOD-4 e MV/2 pelas próximas 2 rodadas, na terceira vez estende o efeito na rodada atual e petrifica no fim da rodada. Use uma quarta vez para tornar o efeito permanente.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Auto petrificar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> como reação, petrifica a si mesmo até o fim da rodada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10/15m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Observações:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> se totalmente petrificado tem AR 24 e MOD+10 contra <em>aflições,</em> poderes <em>sociais </em>e <em>cognitivos</em>, fica em um estado de descanso profundo, mas ainda é capaz de ouvir. Os batimentos cardíacos e respiração continuam em ritmo extremamente reduzido.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Rijeza da pedra </em>e Elementalismo N7.</span></p><p></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "iWWRvj2lod4fJ6a7",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.m51OKtTZGPsvyWT7",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771120758688,
+    "modifiedTime": 1771120758688,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "_id": "AmCJuIDo7PDTUSy3",
+  "sort": 0,
+  "_key": "!items!AmCJuIDo7PDTUSy3"
+}
