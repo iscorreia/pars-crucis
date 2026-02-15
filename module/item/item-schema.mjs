@@ -56,11 +56,10 @@ export class AttackActionModel extends ActionModel {
     const parentSchema = super.defineSchema();
     return {
       ...parentSchema,
+      skill: new StringField({ initial: null, nullable: true }),
       skills: new TypedObjectField(
         new NumberField({ initial: 0, integer: true }),
-        {
-          initial: { briga: 0 },
-        },
+        {},
       ),
       subtype: new StringField({
         initial: "melee",
@@ -75,11 +74,10 @@ export class TestActionModel extends ActionModel {
     const parentSchema = super.defineSchema();
     return {
       ...parentSchema,
+      skill: new StringField({ initial: null, nullable: true }),
       skills: new TypedObjectField(
         new NumberField({ initial: 0, integer: true }),
-        {
-          initial: { briga: 0 },
-        },
+        {},
       ),
       difficulty: new NumberField({ initial: 10, integer: true }),
     };
@@ -102,11 +100,10 @@ export class TechActionModel extends ActionModel {
     return {
       ...parentSchema,
       damage: damage({ damageType: "inherit" }),
+      skill: new StringField({ initial: null, nullable: true }),
       skills: new TypedObjectField(
         new NumberField({ initial: 0, integer: true }),
-        {
-          initial: { briga: 0 },
-        },
+        {},
       ),
       subtype: new StringField({
         initial: "inherit",

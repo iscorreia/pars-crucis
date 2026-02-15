@@ -49,7 +49,7 @@
   {{/if}}
 
   {{#if this.set}}
-    {{#if (and this.skill (not this.subtype))}}
+    {{#if (and this.skills (not this.subtype))}}
       <span class="inline-value inline-skill">
         {{#if (eq this.skill "inherit")}}
           ({{localize (concat "PC.skills." this.action.skill)}})
@@ -58,14 +58,14 @@
         {{/if}}
       </span>
     {{/if}}
-    {{#if (and (not this.skill) this.subtype)}}
+    {{#if (and (not this.skills) this.subtype)}}
       <span class="inline-value inline-skill">
         ({{localize (concat "PC.action.types.attack.subtype." this.subtype)}})
       </span>
     {{/if}}
-    {{#if (and this.skill this.subtype)}}
+    {{#if (and this.skills this.subtype)}}
       <span class="inline-value inline-skill">
-        ({{localize (concat "PC.skills." this.techSkill)}}      
+        ({{localize (concat "PC.skills." this.skill)}}      
         | {{localize (concat "PC.action.types.attack.subtype." this.techSubtype)}})
       </span>
     {{/if}}

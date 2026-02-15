@@ -18,6 +18,11 @@
       {{/unless}}
     {{/each}}
   </div>
+  {{#if (eq action.type "tech")}}
+    <div data-action="addSkill" data-skill="inherit">
+      {{localize "PC.skills.inherit"}}
+    </div>
+  {{/if}}
   <p class="info-desc">Perícias da ação</p>
   <div class="skills-picked">
     {{#each action.skills}}

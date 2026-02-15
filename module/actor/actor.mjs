@@ -96,8 +96,8 @@ export class PCActor extends foundry.documents.Actor {
     if (!item) return;
     const action = item.system.actions[acId];
     if (!action) return;
-    const { skills, techSubtype, type } = action;
-    if (!skills || !techSubtype || !type) return;
+    const { skill, techSubtype, type } = action;
+    if (!skill || !techSubtype || !type) return;
     const techKeywords = keywordResolver(item.system.keywords, action.keywords);
     const { selectedAction, selectedItem } = action;
     if (!selectedAction || !selectedItem) return;
@@ -126,14 +126,20 @@ export class PCActor extends foundry.documents.Actor {
     if (ammunition) {
       keywords = keywordResolver(keywords, ammunition.system.keywords);
     }
-    const bestSkill = await getBestSkillData(this.system, skills);
+    const { category, modGroup, level, mod } = this.system.skills[skill];
+    const categoryMod = this.system.categoryModifiers?.[category] ?? 0;
+    const groupMod = modGroup
+      ? (this.system.groupModifiers?.[modGroup]?.mod ?? 0)
+      : 0;
+    const modifiers = categoryMod + groupMod + mod;
+
     const compiledModifiers =
-      bestSkill.modifiers +
+      modifiers +
       (Number(keywords?.handling) || 0) +
       (Number(keywords?.modifier) || 0);
-    const formula = `${dice} + ${bestSkill.level || 0} + ${compiledModifiers || 0}`;
+    const formula = `${dice} + ${level ?? 0} + ${compiledModifiers ?? 0}`;
     const flavor = craftFlavor({
-      skill: bestSkill.skillId,
+      skill,
       acSubtype: techSubtype,
       acType: type,
     });
@@ -187,7 +193,7 @@ export class PCActor extends foundry.documents.Actor {
     if (!item) return;
     const action = item.system.actions[acId];
     if (!action) return;
-    const { difficulty, skills, subtype, type, usesAmmo } = action;
+    const { difficulty, skill, subtype, type, usesAmmo } = action;
     const { hasAmmo, ammoInfo } = item.system;
     // If action requires ammo but item doesn't accept ammo, return
     if (usesAmmo && !hasAmmo) return;
@@ -207,18 +213,23 @@ export class PCActor extends foundry.documents.Actor {
         return;
       consumeAmmo(ammoInfo, ammunition, item);
     }
-    const bestSkill = await getBestSkillData(this.system, skills);
     let keywords = keywordResolver(item.system.keywords, action.keywords);
     if (ammunition) {
       keywords = keywordResolver(keywords, ammunition.system.keywords);
     }
+    const { category, modGroup, level, mod } = this.system.skills[skill];
+    const categoryMod = this.system.categoryModifiers?.[category] ?? 0;
+    const groupMod = modGroup
+      ? (this.system.groupModifiers?.[modGroup]?.mod ?? 0)
+      : 0;
+    const modifiers = categoryMod + groupMod + (mod ?? 0);
     const compiledModifiers =
-      bestSkill.modifiers +
+      modifiers +
       (Number(keywords?.handling) || 0) +
       (Number(keywords?.modifier) || 0);
-    const formula = `${dice} + ${bestSkill.level || 0} + ${compiledModifiers || 0}`;
+    const formula = `${dice} + ${level || 0} + ${compiledModifiers || 0}`;
     const flavor = craftFlavor({
-      skill: bestSkill.skillId,
+      skill,
       acType: type,
       acSubtype: subtype,
       difficulty,
@@ -341,37 +352,4 @@ async function consumeAmmo(ammoInfo, ammunition, item) {
     await item.update({ ["system.ammoInfo.loaded"]: itemLoad });
     await ammunition.update({ ["system.details.stack"]: ammoStack });
   }
-}
-
-async function getBestSkillData(system, skills) {
-  if (!skills || Object.keys(skills).length === 0) {
-    return {
-      skillId: null,
-      level: 0,
-      modifiers: 0,
-      total: 0,
-    };
-  }
-  let best = null;
-  for (const skillId of Object.keys(skills)) {
-    const skill = system.skills[skillId];
-    if (!skill) continue;
-    const { category, modGroup, level, mod } = skill;
-    const categoryMod = system.categoryModifiers?.[category] ?? 0;
-    const groupMod = modGroup
-      ? (system.groupModifiers?.[modGroup]?.mod ?? 0)
-      : 0;
-    const modifiers = categoryMod + groupMod + mod;
-    const total = level + modifiers;
-    if (!best || total > best.total)
-      best = { skillId, level, modifiers, total };
-  }
-  return (
-    best ?? {
-      skillId: null,
-      level: 0,
-      modifiers: 0,
-      total: 0,
-    }
-  );
 }

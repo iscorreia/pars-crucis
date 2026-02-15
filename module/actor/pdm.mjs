@@ -160,7 +160,7 @@ export class PDMModel extends foundry.abstract.TypeDataModel {
     ];
 
     // ABILITIES and GEAR derived calculations
-    handleGearAbilities(itemGroup, attributesData, parent.items);
+    handleGearAbilities(itemGroup, this, parent.items);
 
     // LUCK handling!
     const luckData = this.luck;

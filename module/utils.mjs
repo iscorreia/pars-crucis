@@ -75,3 +75,49 @@ export function keywordResolver(kwSetA, kwSetB) {
 
   return keywords;
 }
+
+export function getBestSkillData(system, skills) {
+  if (!skills || Object.keys(skills).length === 0) {
+    return {
+      skillId: null,
+      level: 0,
+      modifiers: 0,
+      total: 0,
+    };
+  }
+  let best = null;
+  for (const skillId of Object.keys(skills)) {
+    const skill = system.skills[skillId];
+    if (!skill) continue;
+    const { category, modGroup, level, mod } = skill;
+    const categoryMod = system.categoryModifiers?.[category] ?? 0;
+    const groupMod = modGroup
+      ? (system.groupModifiers?.[modGroup]?.mod ?? 0)
+      : 0;
+    const modifiers = categoryMod + groupMod + mod;
+    const total = level + modifiers;
+    if (!best || total > best.total)
+      best = { skillId, level, modifiers, total };
+  }
+  return (
+    best ?? {
+      skillId: null,
+      level: 0,
+      modifiers: 0,
+      total: 0,
+    }
+  );
+}
+
+export function skillsMerger(skillsObjA = {}, skillsObjB = {}) {
+  const result = {};
+  for (const [key, value] of Object.entries(skillsObjA)) {
+    if (key === "inherit") continue;
+    result[key] = value ?? 0;
+  }
+  for (const [key, value] of Object.entries(skillsObjB)) {
+    if (key === "inherit") continue;
+    result[key] = (result[key] ?? 0) + value ?? 0;
+  }
+  return result;
+}
