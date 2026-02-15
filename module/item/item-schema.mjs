@@ -43,6 +43,7 @@ export class ActionModel extends DataModel {
       range: new StringField({ initial: "" }),
       area: new StringField({ initial: "" }),
       effort: new StringField({ initial: "" }),
+      limit: new StringField({ initial: "" }),
       prepTime: new StringField({ initial: "" }),
       duration: new StringField({ initial: "" }),
       keywords: keywords(),

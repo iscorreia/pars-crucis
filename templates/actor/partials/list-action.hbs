@@ -56,6 +56,10 @@
     <span class="inline-label">{{localize "PC.action.types.use.label"}}</span>
     <span class="inline-value">{{this.usage}}</span>
   {{/if}}
+  {{#if this.limit}}
+    <span class="inline-label">{{localize "PC.limit"}}</span>
+    <span class="inline-value">{{this.limit}}</span>
+  {{/if}}
   {{#if this.effort}}
     <span class="inline-label">{{localize "PC.effort.abv"}}</span>
     <span class="inline-value">{{this.effort}}</span>
