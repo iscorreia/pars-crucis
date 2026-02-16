@@ -97,6 +97,8 @@ export class PCActor extends foundry.documents.Actor {
     const action = item.system.actions[acId];
     if (!action) return;
     const { skill, techSubtype, type } = action;
+    const suppliesAmmo = !action.usesAmmo;
+    console.log(suppliesAmmo);
     if (!skill || !techSubtype || !type) return;
     const techKeywords = keywordResolver(item.system.keywords, action.keywords);
     const { selectedAction, selectedItem } = action;
@@ -107,10 +109,10 @@ export class PCActor extends foundry.documents.Actor {
       ? this.items.get(ammoInfo._ammoId)
       : null;
     // If tech is executed with action that uses ammo
-    // And either of the following statements fail, return
-    // Else, consumes ammo an reduces loaded ammo (if loaded)
-    if (usesAmmo && !ammunition) return;
-    if (usesAmmo && hasAmmo && ammunition) {
+    // And either of the following statements fail, return unless tech supplies ammo
+    // Is action uses Ammo and tech does not supply ammo, consumes ammo an reduces loaded ammo (if loaded)
+    if (usesAmmo && !ammunition && !suppliesAmmo) return;
+    if (usesAmmo && hasAmmo && ammunition && !suppliesAmmo) {
       if (
         (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
         ammunition.system.details.stack === 0
