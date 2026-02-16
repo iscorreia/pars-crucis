@@ -29,6 +29,13 @@
       <a data-action="cutSkill" data-skill="{{@key}}">
         {{localize (concat "PC.skills." @key)}}
       </a>
+      <input
+        class="skill-specific-mod"
+        name="system.actions.{{@root.action._id}}.skills.{{@key}}"
+        value="{{this}}"
+        type="number"
+        data-dtype="Number"
+      />
     {{/each}}
   </div>
 </section>

@@ -2,7 +2,7 @@ const { handlebars } = foundry.applications;
 import { PC } from "../config.mjs";
 import PCRoll from "../rolls/basic-roll.mjs";
 import TestRoll from "../rolls/test-roll.mjs";
-import { keywordResolver } from "../utils.mjs";
+import { keywordResolver, skillsMerger } from "../utils.mjs";
 
 const defaultSight = {
   enabled: true,
@@ -98,7 +98,6 @@ export class PCActor extends foundry.documents.Actor {
     if (!action) return;
     const { skill, techSubtype, type } = action;
     const suppliesAmmo = !action.usesAmmo;
-    console.log(suppliesAmmo);
     if (!skill || !techSubtype || !type) return;
     const techKeywords = keywordResolver(item.system.keywords, action.keywords);
     const { selectedAction, selectedItem } = action;
@@ -133,8 +132,12 @@ export class PCActor extends foundry.documents.Actor {
     const groupMod = modGroup
       ? (this.system.groupModifiers?.[modGroup]?.mod ?? 0)
       : 0;
-    const modifiers = categoryMod + groupMod + mod;
-
+    const skills = skillsMerger(
+      action?.skills ?? {},
+      selectedAction?.skills ?? {},
+    );
+    const skillSpecificMod = skills?.[skill] ?? 0;
+    const modifiers = categoryMod + groupMod + (mod ?? 0) + skillSpecificMod;
     const compiledModifiers =
       modifiers +
       (Number(keywords?.handling) || 0) +
@@ -196,7 +199,7 @@ export class PCActor extends foundry.documents.Actor {
     if (!item) return;
     const action = item.system.actions[acId];
     if (!action) return;
-    const { difficulty, skill, subtype, type, usesAmmo } = action;
+    const { difficulty, skill, skills, subtype, type, usesAmmo } = action;
     const { hasAmmo, ammoInfo } = item.system;
     // If action requires ammo but item doesn't accept ammo, return
     if (usesAmmo && !hasAmmo) return;
@@ -225,7 +228,8 @@ export class PCActor extends foundry.documents.Actor {
     const groupMod = modGroup
       ? (this.system.groupModifiers?.[modGroup]?.mod ?? 0)
       : 0;
-    const modifiers = categoryMod + groupMod + (mod ?? 0);
+    const skillSpecificMod = skills?.[skill] ?? 0;
+    const modifiers = categoryMod + groupMod + (mod ?? 0) + skillSpecificMod;
     const compiledModifiers =
       modifiers +
       (Number(keywords?.handling) || 0) +

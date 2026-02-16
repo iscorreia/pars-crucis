@@ -29,8 +29,9 @@
   {{/if}}
 
   {{#if (and this.skill (not this.subtype))}}
+    {{log this.skills}}
     <span class="inline-value inline-skill">
-      ({{localize (concat "PC.skills." this.skill)}})
+      ({{localize (concat "PC.skills." this.skill)}}{{#if (gt (lookup this.skills this.skill) 0)}}+{{/if}}{{#if (not (eq (lookup this.skills this.skill) 0))}}{{lookup this.skills this.skill}}{{/if}})
     </span>
   {{/if}}
   {{#if (and (not this.skill) this.subtype)}}
@@ -40,7 +41,7 @@
   {{/if}}
   {{#if (and this.skill this.subtype)}}
     <span class="inline-value inline-skill">
-      ({{localize (concat "PC.skills." this.skill)}} | {{localize (concat "PC.action.types.attack.subtype." this.subtype)}})
+      ({{localize (concat "PC.skills." this.skill)}}{{#if (gt (lookup this.skills this.skill) 0)}}+{{/if}}{{#if (not (eq (lookup this.skills this.skill) 0))}}{{lookup this.skills this.skill}}{{/if}} | {{localize (concat "PC.action.types.attack.subtype." this.subtype)}})
     </span>
   {{/if}}
 

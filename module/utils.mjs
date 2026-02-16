@@ -86,7 +86,8 @@ export function getBestSkillData(system, skills) {
     };
   }
   let best = null;
-  for (const skillId of Object.keys(skills)) {
+  for (const [skillId, skillSpecificMod] of Object.entries(skills)) {
+    if (skillId === "inherit") continue;
     const skill = system.skills[skillId];
     if (!skill) continue;
     const { category, modGroup, level, mod } = skill;
@@ -94,7 +95,7 @@ export function getBestSkillData(system, skills) {
     const groupMod = modGroup
       ? (system.groupModifiers?.[modGroup]?.mod ?? 0)
       : 0;
-    const modifiers = categoryMod + groupMod + mod;
+    const modifiers = categoryMod + groupMod + mod + skillSpecificMod;
     const total = level + modifiers;
     if (!best || total > best.total)
       best = { skillId, level, modifiers, total };

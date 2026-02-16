@@ -258,4 +258,8 @@ section.pdm-config {
   .skills-picked {
     text-align: center;
   }
+  .skill-specific-mod {
+    width: 30px;
+    height: 17px;
+  }
 }
