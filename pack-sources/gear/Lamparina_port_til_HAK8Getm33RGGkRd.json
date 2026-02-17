@@ -1,0 +1,57 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Lamparina portátil",
+  "type": "gear",
+  "img": "icons/sundries/lights/lantern-bullseye-signal-copper.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 3,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "reload": "2"
+    },
+    "description": {
+      "description": "<p>Versão menor da lamparina portátil que pode ser pendurada no cinto ou alça da roupa como um acessório, tirando a necessidade de carregar com a mão, mas com menos iluminação e duração. Sucessora as tradicionais e simples tochas, a lamparina é uma ótima ferramenta de iluminação, com maior autonomia e usando um composto químico como combustível</p><p>Uso: É preciso 3 ações para acender. É considerada um acessório</p><p>Efeitos: Iluminação (raio/5m) por até 3 horas por Gasóleo, carrega apenas 1 de Gasóleo por vez. Recarga (2)</p><p>Preço: 3 pratas</p><p>Ofício: Armeiro ou Engenharia N4</p><p>Tempo para fabricar: 6 horas</p><p>Materiais: 1 Metal e 1 de Vidro</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361166130,
+    "modifiedTime": 1771361166151,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "HAK8Getm33RGGkRd",
+  "sort": 200000,
+  "_key": "!items!HAK8Getm33RGGkRd"
+}

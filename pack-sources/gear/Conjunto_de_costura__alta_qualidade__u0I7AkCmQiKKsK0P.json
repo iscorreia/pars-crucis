@@ -1,0 +1,55 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Conjunto de costura (alta qualidade)",
+  "type": "gear",
+  "img": "icon%20library/profession/tannery%20skills/tanner%20(16).png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "high"
+    },
+    "actions": {},
+    "cost": {
+      "price": 20,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Um conjunto com agulhas de costura e crochê, dedais, fita de medição e outros utensílios de costura compatíveis com a tecnologia. Se um costureiro possuir um conjunto desses ele poderá costurar mesmo sem acesso a um ateliê</p><p>Efeito: permite costurar e arrumar maior parte das vestimentas e alguns itens de Artesão e Engenharia. Possui MOD+1 para fabricar e reparar itens de costura</p><p>Uso: Fabricar e reparar itens de costura. Para alguns dos itens o Narrador pode exigir aparatos adicionais e aumentar o tempo para fabricar, ou aplicar uma penalidade adicional para fabricar.</p><p>Requisitos: Artesão N2</p><p>Preço: 20 pratas</p><p>Ofício: Artesão ou Engenharia N7</p><p>Tempo para fabricar: 24 horas</p><p>Materiais: 2 Metal; ou 2 de Madeira e 2 de Ossos.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361107969,
+    "modifiedTime": 1771361166151,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "u0I7AkCmQiKKsK0P",
+  "sort": 1100000,
+  "_key": "!items!u0I7AkCmQiKKsK0P"
+}

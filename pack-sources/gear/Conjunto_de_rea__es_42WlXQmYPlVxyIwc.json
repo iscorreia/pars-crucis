@@ -1,0 +1,55 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Conjunto de reações",
+  "type": "gear",
+  "img": "icons/tools/laboratory/vials-blue-pink.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 5,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Maleta ou pequena mochila contendo diversos aparatos de uso frequente de alquimistas, herbalistas e praticantes do venefício. Seu conteúdo depende da cultura e tecnologia local, mas em geral possui tubos de ensaio, pipetas, termômetro, filtro, acendedor, amassador etc.</p><p>Efeitos: permite fabricar itens alquímicos, herbais, coletar água e amostras de materiais. Utilizando o conjunto pode-se fabricar até 5 unidades do mesmo item por vez. O conjunto torna possível identificar certos itens alquímicos, herbais e venenos. Um conjunto de reações de alta qualidade concede MOD+1 aos testes para fabricar e identificar.</p><p>Uso: fabricar alquímico, herbais e venenos sem necessidade de um laboratório ou oficina. Para certos itens o Narrador pode exigir aparatos adicionais, aumentar o tempo para fabricar ou aplicar penalidades.</p><p>Requisitos: Alquimia ou Medicina N2</p><p>Preço: 5 pratas, e 25 pratas para alta qualidade</p><p>Ofício: Artesão ou Engenharia N4, N7 para alta qualidade</p><p>Tempo para fabricar: 48 horas</p><p>Materiais: 1 Metal, 4 de Vidro ou 4 de Madeira</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361108970,
+    "modifiedTime": 1771361166151,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "42WlXQmYPlVxyIwc",
+  "sort": 1200000,
+  "_key": "!items!42WlXQmYPlVxyIwc"
+}

@@ -1,0 +1,57 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Ábaco",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "<p>Testes de perícia numéricos e de cálculos têm MOD+2, reduz o tempo necessário para fazer contagens e permite o personagem fazer cálculos muito mais complexos.</p>",
+      "penalty": ""
+    },
+    "keywords": {
+      "effect": null
+    },
+    "description": {
+      "description": "<p>É um instrumento de contagem que agiliza muito os cálculos se manuseado com alguém que saiba utilizar</p><p>Efeito: quaisquer testes de perícia numéricos e de cálculos têm MOD+2, reduz o tempo necessário para fazer contagens e permite o personagem fazer cálculos muito mais complexos</p><p>Preço: 1 prata</p><p>Requisitos: COG 3</p><p>Ofício: Artesão N4</p><p>Tempo para fabricar: 2 horas</p><p>Mts: 1 de Madeira</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361093083,
+    "modifiedTime": 1771361166151,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "atT6gbjR83FXXxz7",
+  "sort": 2100000,
+  "_key": "!items!atT6gbjR83FXXxz7"
+}

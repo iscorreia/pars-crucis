@@ -1,0 +1,55 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Rede",
+  "type": "gear",
+  "img": "icons/tools/fishing/net-gold.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Rede ideal para utilizar na pesca e na confecção de armadilhas. Também pode ser usada em combate, arremessando para prender o adversário ou criatura por um breve período</p><p>Uso: Com a perícia Sobrevivência tem Arremesso com alcance de 5/10m para pescar ou prender uma criatura, e pode fazer armadilhas</p><p>Efeitos: Prende animais e personagens, para se soltar é necessário ter uma faca ou instrumento cortante e demora 3 rodadas, ou vencer num teste de FIS com dificuldade 24. Quando arremessada em combate deixa o personagem Vulnerável até que se solte, nesse caso é possível se soltar também com um teste de Reflexo com dificuldade 12</p><p>Preço: 1 prata por m² de rede</p><p>Ofício: Artesão N3 ou Sobrevivência N4</p><p>Tempo para fabricar: 6 horas por m² de rede</p><p>Materiais: 3 Tecido por m² de rede.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361176386,
+    "modifiedTime": 1771361176386,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "unDAKkjB4YfsJoDf",
+  "sort": 0,
+  "_key": "!items!unDAKkjB4YfsJoDf"
+}

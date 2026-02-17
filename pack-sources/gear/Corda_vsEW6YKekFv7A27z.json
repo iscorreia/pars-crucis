@@ -1,0 +1,84 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Corda",
+  "type": "gear",
+  "img": "icon%20library/sundries/survival/pirate%20(13).png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "yNbCwPdJgFFmLSyZ": {
+        "img": "icon%20library/sundries/survival/pirate%20(13).png",
+        "name": "Amarrar",
+        "type": "test",
+        "_id": "yNbCwPdJgFFmLSyZ",
+        "skill": "sobre",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skills": {},
+        "difficulty": 10
+      }
+    },
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Corda espessa que pode ser utilizada em escalada, para amarrar alguém, laçar um animal, puxar ou levantar carga etc. Pode se amarrar um gancho ou outro objeto na ponta da corda</p><p>Uso: arremesso com alcance 5/25, limitado ao comprimento da corda (usa a perícia relativa à finalidade do arremesso). Amarra fazendo teste de Sobrevivência (dificuldade 10, MS define a qualidade da amarração)</p><p>Efeitos: uma corda suporta até 750 quilos. Fornece MOD+2 a Atletismo para escalar se estiver posicionada</p><p>Preço: 1 prata para cada 3m de corda</p><p>Ofício: Artesão N4</p><p>Tempo para fabricar: 2 horas para cada 3m</p><p>Materiais: 1 Tecido para cada 3m de corda</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361158130,
+    "modifiedTime": 1771361166151,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "vsEW6YKekFv7A27z",
+  "sort": 900000,
+  "_key": "!items!vsEW6YKekFv7A27z"
+}

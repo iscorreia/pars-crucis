@@ -1,0 +1,55 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Bandagem",
+  "type": "gear",
+  "img": "icon%20library/profession/tannery%20skills/tanner%20(48).png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 10,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Bandagens podem ser feitas de tecido ou folhas. Com tecido se faz um rolo de pano fino para envolver as feridas, já folhas são colocadas sobre a ferida e presas com algum tipo de fio. Ambos os tipos aceleram o processo na recuperação de ferimentos, curando um pouco de vida</p><p>Efeito: aplicar no ferimento cura o personagem em [Dezena] PV, mas é limitado a usar 1 bandagem ou bálsamo por dia</p><p>Uso: Ter um conhecimento mínimo para poder cobrir o local ferido</p><p>Preço: 10 cobres</p><p>Ofício: Artesão N2, Medicina ou Sobrevivência N3</p><p>Tempo para fabricar: 30 minutos</p><p>Materiais: 1 Tecido ou 1 de Folhas para fabricar 2 Bandagens.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361097874,
+    "modifiedTime": 1771361166151,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "WsvjRL2v8TOkCrG8",
+  "sort": 1500000,
+  "_key": "!items!WsvjRL2v8TOkCrG8"
+}

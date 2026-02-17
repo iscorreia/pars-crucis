@@ -1,0 +1,55 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Gazua (comum)",
+  "type": "gear",
+  "img": "icons/tools/hand/lockpicks-steel-grey.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 3,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Ferramenta muito utilizada no arrombamento de fechaduras e cadeados. A gazua também serve para lixar, enganchar, engastar</p><p>Efeitos: necessário para abrir fechaduras. Fornece MOD+1 para Ladinagem</p><p>Uso: Com a perícia Ladinagem</p><p>Preço: 3 pratas</p><p>Pré-requisitos: Ladinagem N1</p><p>Ofício: Armeiro, Artesão ou Engenharia N5</p><p>Tempo para fabricar: 6 horas</p><p>Materiais: 1 Metal</p><p></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361164018,
+    "modifiedTime": 1771361166151,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "hf6g51w2cVJmwCGt",
+  "sort": 600000,
+  "_key": "!items!hf6g51w2cVJmwCGt"
+}
