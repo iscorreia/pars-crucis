@@ -63,6 +63,7 @@
 - balistics (does not include siege)
 - ammunitions (does not include battery, and ionic projectiles)
 - vests
+- aoist powers
 
 ### PARTIAL PACKS
 
@@ -81,7 +82,6 @@
 - ranged techs
 - alternative techs
 - styles
-- aoist powers
 - arcane powers
 - bardic powers
 - cronocientific powers

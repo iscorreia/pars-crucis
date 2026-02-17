@@ -1,0 +1,83 @@
+{
+  "folder": "XWLHQF4loXO0MsGs",
+  "name": "Toque inverso",
+  "type": "ability",
+  "img": "icon%20library/powers/dark%20skills/warlock%20(4).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "macculate"
+    },
+    "actions": {
+      "YkKkgQgbp1Y2uOqv": {
+        "img": "icon%20library/powers/dark%20skills/warlock%20(4).png",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "YkKkgQgbp1Y2uOqv",
+        "damaging": true,
+        "range": "toque",
+        "damage": {
+          "dmgBase": 5,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "es",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "o dano é causado no decorrer de alguns segundos, cura em PE equivalente ao dano causado.",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "aoism": 0
+        },
+        "subtype": "affliction"
+      }
+    },
+    "details": {
+      "experience": 0,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 8,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "quick": null
+    },
+    "description": {
+      "description": "<p>Aflição</p><p class=\"MsoNormal\">O personagem pode alimentar o seu espírito com a essência que emana do corpo de outros ao tocá-los.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> [5+ESP] Essencial.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> o dano é causado no decorrer de alguns segundos, cura em PE equivalente ao dano causado.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos: </span><em>Graça de Sordos.</em></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 700000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.9yVT3FVb0h8t6P0M",
+    "duplicateSource": "Item.InurcksN5C5o1Yi2",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206813814,
+    "modifiedTime": 1771206813814,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "FohVcDiYsZwMfK1j",
+  "_key": "!items!FohVcDiYsZwMfK1j"
+}

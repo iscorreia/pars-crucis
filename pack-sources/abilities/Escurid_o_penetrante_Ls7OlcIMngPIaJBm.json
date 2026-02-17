@@ -1,0 +1,117 @@
+{
+  "folder": "XWLHQF4loXO0MsGs",
+  "name": "Escuridão penetrante",
+  "type": "ability",
+  "img": "icons/magic/unholy/beam-ringed-impact-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "macculate"
+    },
+    "actions": {
+      "XlkRuxcYdcgYLLln": {
+        "img": "icons/magic/unholy/beam-ringed-impact-purple.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "XlkRuxcYdcgYLLln",
+        "damaging": true,
+        "range": "15/45m",
+        "damage": {
+          "dmgBase": 18,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgType": "ele",
+          "dmgSubtype": "Arcano",
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true
+        },
+        "skills": {
+          "aoism": 0
+        },
+        "effort": "7",
+        "prepTime": "2AP",
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "melee"
+      },
+      "7foOUWhFyjWUf72b": {
+        "img": "icons/magic/unholy/beam-ringed-impact-purple.webp",
+        "name": "Munição escura",
+        "type": "tech",
+        "_id": "7foOUWhFyjWUf72b",
+        "damaging": true,
+        "skills": {
+          "balis": 0
+        },
+        "effort": "7",
+        "prepTime": "2AP",
+        "damage": {
+          "dmgBase": 8,
+          "dmgType": "ele",
+          "dmgSubtype": "Arcano",
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true
+        },
+        "range": "15/45m",
+        "effect": "supre munição",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "projectile": "",
+      "penetrating": "",
+      "lethality": "+1"
+    },
+    "description": {
+      "description": "<p>Projétil</p><p class=\"MsoNormal\">Fazendo alguns movimentos manuais em rotação cria um pequeno ponto de escuridão do qual é disparado um feixe de luz sombria em velocidade surpreendente, que ao atingir o alvo penetra e ramifica pelo corpo o dilacerando.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-family:Arial\"> 7.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-family:Arial\"> 15/45m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-family:Arial\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-family:Arial\"> 18+ESP Elemental: Arcano.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-family:Arial\"> Penetrante, Fatalidade (+1).</span></p><p class=\"SubTtulo2\">Bestas, Pistolas e Rifles</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> +4 Elemental: Arcano.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-family:Arial\"> Penetrante, Fatalidade (+1). Supre munição. Usa <em>Balística</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-family:Arial\"> <em>Troca existencial</em> e Aoismo N6.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.9yVT3FVb0h8t6P0M",
+    "duplicateSource": "Item.KpgiYxUSc2J628EM",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206813814,
+    "modifiedTime": 1771206813814,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Ls7OlcIMngPIaJBm",
+  "_key": "!items!Ls7OlcIMngPIaJBm"
+}

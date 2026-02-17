@@ -1,0 +1,51 @@
+{
+  "folder": "EpS2indLbgZvHEqP",
+  "name": "Graça de Λuxai",
+  "type": "passive",
+  "img": "icons/magic/symbols/star-rising-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 4,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "attribute": null,
+      "skill": null,
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Passiva</p><p class=\"MsoNormal\">O rito de comunhão com Luxai ilumina o caminho daquele que tem a determinação e pureza em seu propósito.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> em um local sagrado ou de poder, o personagem realiza um ritual onde confia seu propósito a Luxai, que se julgá-lo puro e nobre, vai iluminar o caminho e dar força a sua chama enquanto manter-se fiel a si.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> EGO+2, MOD+4 para Orientação. Os poderes <em>Luz sacra, Chama etérea</em>, <em>Flecha de luz </em>e <em>Martírio </em>têm Dano+4. </span>Os olhos do personagem têm um brilho prateado distinto principalmente na escuridão e o garante Visão diurna (10) e Visão noturna (30m).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> item com propriedade etérea ou relíquia.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Luz guia </em>e Aoismo N7.</span></p>",
+      "summary": "EGO+2, Orientação MOD+4. ~ Outros efeitos",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.GhKMw3KhTGJq3xhA",
+    "duplicateSource": "Item.rnJP47i85cKVK2O0",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771283408389,
+    "modifiedTime": 1771283408389,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "UIWMoJ6P5duAVOJG",
+  "_key": "!items!UIWMoJ6P5duAVOJG"
+}

@@ -1,0 +1,52 @@
+{
+  "folder": "1PdLhmZtWN48jY9W",
+  "name": "Graça de Aura",
+  "type": "passive",
+  "img": "icons/magic/holy/chalice-glowing-yellow-blue.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 4,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "attribute": null,
+      "skill": null,
+      "conditional": null,
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Passiva</p><p class=\"MsoNormal\">Rito de comunhão com Aura, reflete força de espírito e intuição.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">em um local sagrado ou de poder, o personagem realiza um ritual demonstrando sua devoção ao serviço de Aura entregando-lhe um objeto de valor, então deve aceitar a condição de não mentir ou enganar, em troca é agraciado com a <em>Graça de Aura</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> ESP+2, Vontade+2, AB+2, MOD+2 para e Percepção, resistir a uma aflição cura [4] PV e [4] PE.</span></p><p class=\"MsoNormal\">Diminui em 2 o esforço de retenção dos poderes <em>Sinal de Aura</em>,<em> Sinal de proteção</em>, <em>Sinal de invocação</em> e <em>Sinal de paz</em>.</p><p class=\"MsoNormal\">Uma vez por semana se seu PV ou PE chegar 0, ao fim da rodada o cure em [8] se passar no teste de Abalo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> item com propriedade etérea ou relíquia.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Sinal de aura </em>e Aoismo N6.</span></p>",
+      "summary": "ESP+2, Vontade+2, AB+2, Percepção MOD+2. Outros efeitos.",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.GhKMw3KhTGJq3xhA",
+    "duplicateSource": "Item.GhKMw3KhTGJq3xhA",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206068445,
+    "modifiedTime": 1771206068445,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "5o0SWfBWOGwNY9kJ",
+  "_key": "!items!5o0SWfBWOGwNY9kJ"
+}

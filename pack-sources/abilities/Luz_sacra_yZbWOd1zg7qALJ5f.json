@@ -1,0 +1,83 @@
+{
+  "folder": "EpS2indLbgZvHEqP",
+  "name": "Luz sacra",
+  "type": "ability",
+  "img": "icon%20library/powers/holy%20skills/priest%20(4).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "retribuition"
+    },
+    "actions": {
+      "wAoZsn9OBUDmUNjz": {
+        "img": "icon%20library/powers/holy%20skills/priest%20(4).png",
+        "name": "Lumiar",
+        "type": "attack",
+        "_id": "wAoZsn9OBUDmUNjz",
+        "damaging": true,
+        "range": "20m",
+        "damage": {
+          "dmgBase": 5,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgType": "ex",
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgSubtype": ""
+        },
+        "effort": "6",
+        "skills": {
+          "aoism": 0
+        },
+        "prepTime": "1AP",
+        "duration": "1+Ⓐ rodadas, 1 minuto para a iluminação.",
+        "effect": "dano apenas contra àqueles de índole contrária à sua e a mortos-vivos. Mantém Iluminação (linha/20m).",
+        "subtype": "jet",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 2,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "jet": null
+    },
+    "description": {
+      "description": "<p>Jato</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Concentra um feixe de luz que cega todos os inimigos e deixa partículas luminosas no ar</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">6.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 20m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5+ESP/2 Existencial.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> dano apenas contra àqueles de índole contrária à sua e a mortos-vivos. Mantém Iluminação (linha/20m).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1+</span><span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span><span lang=\"JA\"> </span>rodadas<span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">, 1 minuto para a iluminação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"><em>Luz guia </em>e Aoismo N2.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1000000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.i6ztYOsYBTi1QPVA",
+    "duplicateSource": "Item.i6ztYOsYBTi1QPVA",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771283408389,
+    "modifiedTime": 1771283408389,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "yZbWOd1zg7qALJ5f",
+  "_key": "!items!yZbWOd1zg7qALJ5f"
+}

@@ -1,0 +1,77 @@
+{
+  "folder": "EpS2indLbgZvHEqP",
+  "name": "Luz guia",
+  "type": "ability",
+  "_id": "i6ztYOsYBTi1QPVA",
+  "img": "icon%20library/powers/holy%20skills/priest%20(48).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "retribuition"
+    },
+    "actions": {
+      "9KkKQcirftUs469V": {
+        "img": "icon%20library/powers/holy%20skills/priest%20(48).png",
+        "name": "Guiar",
+        "type": "use",
+        "_id": "9KkKQcirftUs469V",
+        "effect": "MOD+1 no próximo teste de perícia.",
+        "limit": "1 vez por dia por personagem.",
+        "effort": "3",
+        "prepTime": "2AP",
+        "duration": "6 horas ou até realizar o teste com bônus.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null
+    },
+    "description": {
+      "description": "<p>Inicial</p><p class=\"MsoNormal\">Prostrando-se e realizando uma breve súplica faz surgir entre as mãos do personagem uma pequena chama pálida, aqueles que olharem para a chama tendo um propósito claro em mente são guiados.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 vez por dia por personagem.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 2 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> MOD+1 no próximo teste de perícia.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 6 horas ou até realizar o teste com bônus.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Aoismo N1.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 900000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771283408389,
+    "modifiedTime": 1771283408389,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!i6ztYOsYBTi1QPVA"
+}

@@ -1,0 +1,78 @@
+{
+  "folder": "nOWoikCLNJoghB9z",
+  "name": "Passagem etérea",
+  "type": "ability",
+  "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "summon"
+    },
+    "actions": {
+      "HwpaadQWYW4KIepe": {
+        "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+        "name": "Invocar",
+        "type": "use",
+        "_id": "HwpaadQWYW4KIepe",
+        "effort": "16, +2 por personagem adicional",
+        "prepTime": "5AP",
+        "area": "raio de 3m",
+        "effect": "transporta a si e aliados através da Fase para outro local.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 3,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 8,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "summon": null,
+      "sigil": null
+    },
+    "description": {
+      "description": "<p>Invocação, Sigilo</p><p class=\"MsoNormal\">O personagem entoa um verso enquanto faz um pequeno ritual para criar ao entorno de si um sigilo que da permissão a um espírito de sua confidência invocar ao personagem, e aliados para a Fase e guiá-los até outro local em um plano a alcance do espírito.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 16, +2 por personagem adicional.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span> raio de 3m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 5 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> transporta a si e aliados através da Fase para outro local.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Espírito vigia</em> e Aoismo N8.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 800000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.89eNQjndPZLbA0S0",
+    "duplicateSource": "Item.JpFWr1WH1ztK3p67",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206070202,
+    "modifiedTime": 1771206070202,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "1OG7l42842WoduXO",
+  "_key": "!items!1OG7l42842WoduXO"
+}

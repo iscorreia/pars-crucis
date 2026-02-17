@@ -1,0 +1,83 @@
+{
+  "folder": "EpS2indLbgZvHEqP",
+  "name": "Condenação",
+  "type": "ability",
+  "img": "icon%20library/powers/holy%20skills/paladin%20(32).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "retribuition"
+    },
+    "actions": {
+      "IUtAmCQiJH0IInN2": {
+        "img": "icon%20library/powers/holy%20skills/paladin%20(32).png",
+        "name": "Condenar",
+        "type": "attack",
+        "_id": "IUtAmCQiJH0IInN2",
+        "damaging": true,
+        "range": "10/15m",
+        "damage": {
+          "dmgBase": 1,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgType": "pain",
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgSubtype": ""
+        },
+        "subtype": "affliction",
+        "effort": "11",
+        "prepTime": "2AP",
+        "limit": "1 vez por personagem por dia",
+        "duration": "até passar no teste.",
+        "effect": "causa metade da Dor em dano Essencial. Priva o alvo de suas ações durante a próxima rodada. Ao fim da rodada o alvo faz um teste de Vontade (dif12+Aoismo) ou recebe os danos novamente e o efeito se renova. Se o personagem for abalado o efeito cessa.",
+        "skills": {
+          "aoism": 0
+        },
+        "usesAmmo": false,
+        "area": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 9,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "affliction": null
+    },
+    "description": {
+      "description": "<p>Aflição</p><p class=\"MsoNormal\">Com algumas palavras e gestos impõe a um personagem no que possua mal intento, o pesar e o sofrimento da condenação de seu espírito por um breve momento.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span><span style=\"mso-bidi-font-family:Arial\"> 1 vez por personagem por dia.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-family:Arial\"> 11.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-family:Arial\"> 10/15m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-family:Arial\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-family:Arial\"> </span>1+ESP<span style=\"mso-bidi-font-family:Arial\">×2 de Dor</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-family:Arial\"> causa metade da Dor em dano Essencial. Priva o alvo de suas ações durante a próxima rodada. Ao fim da rodada o alvo faz um teste de Vontade (dif12+Aoismo) ou recebe os danos novamente e o efeito se renova. Se o personagem for abalado o efeito cessa.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-family:Arial\"> até que o alvo passe no teste de Vontade.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-family:Arial\"> <em>Olhos justos </em>e Aoismo N9.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 700000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.i6ztYOsYBTi1QPVA",
+    "duplicateSource": "Item.jmciYeiEeUkqObxs",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771283408389,
+    "modifiedTime": 1771283408389,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "lA9L3wYdkI0q88i4",
+  "_key": "!items!lA9L3wYdkI0q88i4"
+}

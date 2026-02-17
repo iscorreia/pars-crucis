@@ -1,0 +1,81 @@
+{
+  "folder": "nOWoikCLNJoghB9z",
+  "name": "Milagre",
+  "type": "ability",
+  "img": "icons/magic/defensive/shield-barrier-flaming-pentagon-blue.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "summon"
+    },
+    "actions": {
+      "Y8XUzKVyknJpvSXy": {
+        "img": "icons/magic/defensive/shield-barrier-flaming-pentagon-blue.webp",
+        "name": "Invocar",
+        "type": "test",
+        "_id": "Y8XUzKVyknJpvSXy",
+        "skill": "atlet",
+        "difficulty": 13,
+        "effect": "retorna o alvo a vida com [ESP×2] PV e PE. Através do milagre membros decepados e sentidos perdidos são restaurados.",
+        "limit": "1 vez na semana.",
+        "effort": "30",
+        "prepTime": "1 minuto",
+        "range": "10m",
+        "skills": {
+          "aoism": 0
+        },
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "duration": "",
+        "keywords": {}
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 8,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "summon": null
+    },
+    "description": {
+      "description": "<p>Invocação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">O personagem oferta uma relíquia para conjurar um espírito de alta hierarquia, ou o Áziro com o qual comungou, que em um breve ritual restaura o corpo e espírito de um personagem morto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 vez na semana.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 30.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 13.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retorna o alvo a vida com [ESP</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">×</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">2] PV e PE. Através do milagre membros decepados e sentidos perdidos são restaurados.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Espírito musicista</em>, ter uma comunhão e Aoismo N8.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 600000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.89eNQjndPZLbA0S0",
+    "duplicateSource": "Item.8agtDJkgUAHJK7H9",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206070202,
+    "modifiedTime": 1771206070202,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "oVktqZRdAzfesvL5",
+  "_key": "!items!oVktqZRdAzfesvL5"
+}
