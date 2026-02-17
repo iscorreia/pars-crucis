@@ -1,0 +1,84 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Pé de cabra",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "Hz34U2RnAsqYxfzu": {
+        "img": "icons/svg/item-bag.svg",
+        "name": "Usar",
+        "type": "use",
+        "_id": "Hz34U2RnAsqYxfzu",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 18,
+          "dmgAttributes": [
+            "fis"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "range": "0",
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "cost": {
+      "price": 3,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>É uma ferramenta usada para abrir portas, baús e caixas de maneira forçosa</p><p>Efeito: com 1 ação de preparo e 1 Ação principal causa [18+FIS×2] de dano a uma porta, caixa, baú, cadeado ou estrutura com fechadura</p><p>Uso: Coloca a alavanca em um vão e aplica a força, não requer nenhum teste de perícia</p><p>Requisitos: FIS 2</p><p>Preço: 3 pratas</p><p>Ofício: Armeiro N3</p><p>Tempo para fabricar: 2 horas</p><p>Materiais: 2 Metal</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361174026,
+    "modifiedTime": 1771361174026,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "vVfxWqAv11NTly2b",
+  "sort": 0,
+  "_key": "!items!vVfxWqAv11NTly2b"
+}

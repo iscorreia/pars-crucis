@@ -1,0 +1,55 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Pergaminho",
+  "type": "gear",
+  "img": "icons/sundries/documents/paper-plain-white.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Por muitos séculos o principal meio de armazenar conhecimento, e ainda usado em muitas culturas, os pergaminhos são feitos com couro tratado com uma das extremidades presas a um pequeno rolo. Esses pergaminhos são especialmente úteis para se guardar mapas e manter conhecimento sobre artes de combate, ofício e sobrenaturais</p><p>Uso: Pode se fazer anotações usando tinta ou queimando o couro</p><p>Tempo para fabricar: 3 horas por metro de pergaminho</p><p>Preço: 1 prata por metro de pergaminho</p><p>Ofício: Artesão N4</p><p>Materiais: 1 de Madeira, e 1 de Pele (por metro de pergaminho)</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361175346,
+    "modifiedTime": 1771361175346,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "S4M5YPKA9l0FfNTJ",
+  "sort": 0,
+  "_key": "!items!S4M5YPKA9l0FfNTJ"
+}

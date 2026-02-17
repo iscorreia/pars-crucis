@@ -1,0 +1,55 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Caieb",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 2,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Instrumento cosmológico em forma de cobra com marcações que representam algumas constelações e os movimentos do sol e luas. É usado por tribos Anama como ferramenta de orientação cardinal, para identificar o horário do dia e a estação conforme a posição dos astros</p><p>Efeito: fazendo um teste de orientação pode encontrar o Norte, o horário do dia e a estação atual, Orientação tem MOD+2 ao usar o caieb</p><p>Uso: segurar na mão e apontar em direção ao céu</p><p>Requisitos: Orientação N3</p><p>Preço: 2 pratas</p><p>Ofício: Artesão N4 e Orientação N4</p><p>Tempo para fabricar: 4 horas</p><p>Material: 1 de Madeira</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361103442,
+    "modifiedTime": 1771361166151,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "86z6vxSP59Q5UmAp",
+  "sort": 2000000,
+  "_key": "!items!86z6vxSP59Q5UmAp"
+}

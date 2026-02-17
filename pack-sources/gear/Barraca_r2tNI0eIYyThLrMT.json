@@ -1,0 +1,84 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Barraca",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "uTiPXuIPiPRV6p9g": {
+        "img": "icons/svg/item-bag.svg",
+        "name": "Teste",
+        "type": "test",
+        "_id": "uTiPXuIPiPRV6p9g",
+        "skill": "sobre",
+        "prepTime": "1 hora",
+        "range": "0",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skills": {},
+        "difficulty": 10
+      }
+    },
+    "cost": {
+      "price": 6,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 2,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Com um toldo feito de tecido ou pele animal, apoios de madeira, cordas e pinos, a barraca é uma estrutura portátil obrigatória para os que desejam se aventurar, dormir em segurança e longe dos insetos</p><p>Uso: A barraca é armada com a perícia sobrevivência, sendo a MS em um teste de dificuldade 10 a medida de proteção oferecida e qualidade da montagem da barraca. Obter um Ⓐ ou MS 7 garante uma noite sem perturbações noturnas de insetos, pequenos animais, vento e poeira. Em uma barraca de tamanho comum cabem 3 personagens de tamanho médio com espaço justo. A barraca pode ser fabricada para comportar até 6 personagens, mas tem maior Preço</p><p>Tempo de preparo: 1 hora</p><p>Preço: 6 pratas, +2 prata por espaço extra</p><p>Ofício: Artesão N5</p><p>Tempo para fabricar: 8 horas</p><p>Materiais: 2 de Madeira, 9 de Pele ou de Tecido (+3 por espaço extra).</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361099619,
+    "modifiedTime": 1771361166151,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "r2tNI0eIYyThLrMT",
+  "sort": 1600000,
+  "_key": "!items!r2tNI0eIYyThLrMT"
+}

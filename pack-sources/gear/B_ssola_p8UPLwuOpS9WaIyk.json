@@ -1,0 +1,57 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Bússola",
+  "type": "gear",
+  "img": "icon%20library/sundries/survival/20.png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 3,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "<p>Indica o norte e Orientação tem MOD+2. Permite se orientar sem auxílio de outras ferramentas</p>",
+      "penalty": ""
+    },
+    "keywords": {
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Instrumento de localização que possui uma agulha metálica que se orienta para o norte-sul, muito usada em complemento com mapas. É um aparato muito valioso para viajantes e navegadores</p><p>Efeito: indica o norte e Orientação tem MOD+2. Permite se orientar sem auxílio de outras ferramentas</p><p>Uso: segurar na mão ou colocar horizontalmente em uma superfície</p><p>Requisitos: COG 1</p><p>Preço: 3 pratas</p><p>Ofício: Engenharia N4</p><p>Tempo para fabricar: 1 hora</p><p>Material: 1 Metal e 1 de Vidro.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361101257,
+    "modifiedTime": 1771361166151,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "p8UPLwuOpS9WaIyk",
+  "sort": 1800000,
+  "_key": "!items!p8UPLwuOpS9WaIyk"
+}
