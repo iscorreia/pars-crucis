@@ -1,0 +1,55 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Cabaça",
+  "type": "gear",
+  "img": "icon%20library/sundries/containers/pirate%20(10).png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>A cabaça é feita com uma planta seca e tratada para armazenar líquido. Carregar uma cabaça é essencial para viajar longas distâncias em locais com escassez de água</p><p>Efeito: permite carregar até 5 unidades de líquido, geralmente água, o recipiente impede que o líquido evapora ou vase e o conserva</p><p>Preço: 1 prata</p><p>Ofício: Artesão N3</p><p>Tempo para fabricar: 6 horas</p><p>Materiais: 1 de Madeira</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361102426,
+    "modifiedTime": 1771361166151,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "5SJbXH7q4JmhISJr",
+  "sort": 1900000,
+  "_key": "!items!5SJbXH7q4JmhISJr"
+}

@@ -1,0 +1,55 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Livro",
+  "type": "gear",
+  "img": "icons/sundries/books/book-worn-brown.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 4,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Coleção de folhas de papel reunidas em um caderno com dorso colado ou costurado com uma capa resistente. Utilizado para armazenar informações de forma escrita ou impressa</p><p>Efeitos: Informações anotadas em um livro são facilmente revisadas ao lê-lo, permitindo ao personagem relembrar das informações sem precisar de um teste de COG. Ter livros sobre um determinado assunto concede MOD+2 até MOD+4 a Erudição</p><p>Uso: Ler, escrever ou desenhar</p><p>Pré-requisitos: Precisa saber ler</p><p>Preço: 4 pratas a cada 50 folhas</p><p>Tempo para fabricar: 24 horas</p><p>Ofício: Artesão N4</p><p>Materiais: 3 de Madeira e 1 Reagente para cerca de 50 folhas</p><p></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361168443,
+    "modifiedTime": 1771361168443,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "DMblUNcgwARLocfB",
+  "sort": 0,
+  "_key": "!items!DMblUNcgwARLocfB"
+}

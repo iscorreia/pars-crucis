@@ -1,0 +1,55 @@
+{
+  "folder": "B7hjQHZ1Qd71IXpg",
+  "name": "Luneta",
+  "type": "gear",
+  "img": "icon%20library/sundries/survival/22.png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "utility",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 8,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Aparato utilizado para aumenta o alcance de visão</p><p>Efeitos: Aumenta o alcance de visão, reduzindo em 8 as penalidades de visão pela distância para Orientação, Percepção, Sobrevivência e os testes de outras perícias para fins de reconhecimento</p><p>Preço: 4 pratas</p><p>Ofício: Engenharia N4</p><p>Tempo para fabricar: 12 horas</p><p>Materiais: 1 Metal, 1 Vidro.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771361169466,
+    "modifiedTime": 1771361169466,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_id": "ygJ4pOAogy4A4KW1",
+  "sort": 0,
+  "_key": "!items!ygJ4pOAogy4A4KW1"
+}
