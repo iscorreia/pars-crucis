@@ -1,0 +1,78 @@
+{
+  "folder": "grMiZDEC7Pu1unWa",
+  "name": "Brilho lunar",
+  "type": "ability",
+  "img": "icon%20library/powers/astral%20skills/astral%20(9).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "sidereal"
+    },
+    "actions": {
+      "JAFR6l6BhGjppv4G": {
+        "img": "icon%20library/powers/astral%20skills/astral%20(9).png",
+        "name": "Banhar",
+        "type": "use",
+        "_id": "JAFR6l6BhGjppv4G",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "cura [8] PE em luas minguante e crescente ou [12] PE em lua cheia, e tem MOD+4 para resistir a ações do tipo Aflição, Mental e Social.",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "1 vez por dia",
+        "prepTime": "",
+        "duration": "1 minuto",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "bonus": null,
+      "reaction": null
+    },
+    "description": {
+      "description": "<p>Bônus, Reação</p><p class=\"MsoNormal\">Estando na presença de uma das luas o personagem é então banhado com a essência de seu brilho.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Condição:</span> estar na presença de uma lua.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 vez por dia.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 0.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> cura [8] PE em luas minguante e crescente ou [12] PE em lua cheia, e tem MOD+4 para resistir a ações do tipo Aflição, Mental e Social.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Sincronia</em> e Cronociência N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771522480351,
+    "modifiedTime": 1771522509610,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "P8KDLc4VTgOVwd5D",
+  "sort": 1700000,
+  "_key": "!items!P8KDLc4VTgOVwd5D"
+}

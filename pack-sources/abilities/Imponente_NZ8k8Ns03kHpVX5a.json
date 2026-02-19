@@ -1,0 +1,79 @@
+{
+  "folder": "nOWoikCLNJoghB9z",
+  "name": "Imponente",
+  "type": "ability",
+  "img": "icons/magic/symbols/runes-star-pentagon-orange-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "summon"
+    },
+    "actions": {
+      "VY9MBDp27dWtS0c5": {
+        "img": "icons/magic/symbols/runes-star-pentagon-orange-purple.webp",
+        "name": "Invocar",
+        "type": "use",
+        "_id": "VY9MBDp27dWtS0c5",
+        "damaging": true,
+        "effect": "adversários não podem se mover ou atacar, apenas defender. Se o personagem estiver com 10 PV ou menos, o espírito ataca o adversário mais forte dentro da área, sendo um ataque garantido com o dano descrito.",
+        "damage": {
+          "scalable": false,
+          "dmgBase": 30,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "effort": "14",
+        "prepTime": "3AP",
+        "area": "raio de 30m",
+        "duration": "1 rodada",
+        "limit": "1 vez na semana.",
+        "usesAmmo": false,
+        "range": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "summon": null
+    },
+    "description": {
+      "description": "<p>Invocação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Conjura um espírito de alta hierarquia, ou o Áziro com o qual o personagem tenha comungado, que vem em toda sua imponência e poder, impedindo todos os adversários de atacar. Avançando contra a maior ameaça presente caso o invocador esteja muito ferido.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 vez na semana.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 14.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 30m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> [30+ESP</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">×</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">2</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">].</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> adversários não podem se mover ou atacar, apenas defender. Se o personagem estiver com 10 PV ou menos, o espírito ataca o adversário mais forte dentro da área, sendo um ataque garantido com o dano descrito.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 rodada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Espírito protetor</em>, ter uma comunhão e Aoismo N7.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 800000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.89eNQjndPZLbA0S0",
+    "duplicateSource": "Item.JpFWr1WH1ztK3p67",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206070202,
+    "modifiedTime": 1771206070202,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "NZ8k8Ns03kHpVX5a",
+  "_key": "!items!NZ8k8Ns03kHpVX5a"
+}

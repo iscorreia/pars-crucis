@@ -1,0 +1,81 @@
+{
+  "folder": "grMiZDEC7Pu1unWa",
+  "name": "Astrovalia",
+  "type": "ability",
+  "img": "icon%20library/powers/astral%20skills/astral%20(25).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "sidereal"
+    },
+    "actions": {
+      "hHBRv8OZgVbFBQoa": {
+        "img": "icon%20library/powers/astral%20skills/astral%20(25).png",
+        "name": "Astrovaliar",
+        "type": "test",
+        "_id": "hHBRv8OZgVbFBQoa",
+        "skill": "atlet",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "consegue informações sobre os ventos, maré, clima, e posição relativo a um astro em particular de acordo com a MS. Testes que se beneficiem dessas informações terão MOD+2.",
+        "range": "",
+        "area": "",
+        "effort": "2",
+        "limit": "",
+        "prepTime": "1 minuto",
+        "duration": "",
+        "keywords": {},
+        "skills": {
+          "crono": 0
+        },
+        "difficulty": 10
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null
+    },
+    "description": {
+      "description": "<p>Inicial</p><p class=\"MsoNormal\">Estendendo seus braços o personagem capta nuances do fluxo essencial de acordo com o posicionamento de alguns astros. Isso pode informar a ele a direção dos ventos e maré, mudanças climáticas próximas, e sua posição relativa a um astro em particular.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Condição:</span> estar em um local de céu aberto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> consegue informações sobre os ventos, maré, clima, e posição relativo a um astro em particular de acordo com a MS. Testes que se beneficiem dessas informações terão MOD+2.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10 (pode variar).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Cronociência N1.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771522478106,
+    "modifiedTime": 1771522509610,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "kIA7yVeoOgOXhskL",
+  "sort": 1500000,
+  "_key": "!items!kIA7yVeoOgOXhskL"
+}

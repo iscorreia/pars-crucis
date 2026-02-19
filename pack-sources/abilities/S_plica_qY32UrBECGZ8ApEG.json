@@ -1,0 +1,75 @@
+{
+  "folder": "1PdLhmZtWN48jY9W",
+  "name": "Súplica",
+  "type": "ability",
+  "img": "icon%20library/powers/holy%20skills/priest%20(39).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "favor"
+    },
+    "actions": {
+      "IbISDHpq9l4Ahtiq": {
+        "img": "icon%20library/powers/holy%20skills/priest%20(39).png",
+        "name": "Curar",
+        "type": "use",
+        "_id": "IbISDHpq9l4Ahtiq",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "cura até 4 personagem em [8] PV.",
+        "range": "",
+        "area": "raio 10m",
+        "effort": "13",
+        "prepTime": "5 minutos",
+        "duration": "",
+        "keywords": {},
+        "usage": "",
+        "limit": "1 vez por dia"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Tomando postura característica e entoando palavras de súplica contínua emana essência para curar a si e aliados.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 vez por dia.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 13.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span> raio de 10m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 5 minutos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> cura até 4 personagem em [8] PV.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Impor mãos</em> e Aoismo N6.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.dTv2Hbr49CGT3gSv",
+    "duplicateSource": "Item.Tgr108g8gzRO7Nsn",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206068445,
+    "modifiedTime": 1771206068445,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "qY32UrBECGZ8ApEG",
+  "_key": "!items!qY32UrBECGZ8ApEG"
+}

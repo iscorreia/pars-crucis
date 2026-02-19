@@ -1,0 +1,85 @@
+{
+  "folder": "grMiZDEC7Pu1unWa",
+  "name": "Radiação Ω",
+  "type": "ability",
+  "img": "icons/magic/light/beam-rays-teal-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "sidereal"
+    },
+    "actions": {
+      "QMoRgjsX8sne0nxP": {
+        "img": "icons/magic/light/beam-rays-teal-purple.webp",
+        "name": "Jatear",
+        "type": "attack",
+        "_id": "QMoRgjsX8sne0nxP",
+        "damaging": true,
+        "range": "10m",
+        "damage": {
+          "dmgBase": 10,
+          "dmgAttributes": [
+            "cog",
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "bio",
+          "dmgSubtype": "Vital"
+        },
+        "usesAmmo": false,
+        "effect": "anterior ao dano, causa [2] de dano Destrutivo. Com Ⓐ causa o Trauma Feridas internas em todos os atingidos. Transpassa quaisquer obstáculos.",
+        "area": "",
+        "effort": "72",
+        "limit": "",
+        "prepTime": "2AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "crono": 0
+        },
+        "subtype": "jet"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "jet": null,
+      "bypass": null
+    },
+    "description": {
+      "description": "<p>Jato</p><p class=\"MsoNormal\" style=\"margin-bottom:0cm\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Com alguns movimentos manuais direcionados aumenta as vibrações moleculares a uma intensidade altíssima projetando um feixe de radiação destrutiva.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">que causa de dano Biológico: Podre em uma linha de 7m. Indireto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">15+COG|ESP Biológico: Vital.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> anterior ao dano, causa [2] de dano Destrutivo. Indireto. </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Com </span><span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span><span lang=\"JA\" style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"><em> </em></span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">causa o Trauma <em>Feridas internas </em>em todos os atingidos. Transpassa quaisquer obstáculos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span><em>Raios x </em>e Cronociência<span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> N7.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771522500512,
+    "modifiedTime": 1771522509610,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "8GlFHGKVwNKTUooX",
+  "sort": 200000,
+  "_key": "!items!8GlFHGKVwNKTUooX"
+}

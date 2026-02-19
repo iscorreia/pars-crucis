@@ -1,0 +1,108 @@
+{
+  "folder": "1PdLhmZtWN48jY9W",
+  "name": "Badalo curador",
+  "type": "ability",
+  "img": "icon%20library/powers/holy%20skills/paladin%20(46).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "favor"
+    },
+    "actions": {
+      "IbISDHpq9l4Ahtiq": {
+        "img": "icon%20library/powers/holy%20skills/paladin%20(46).png",
+        "name": "Curar",
+        "type": "use",
+        "_id": "IbISDHpq9l4Ahtiq",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "cura 18+ESP|EGO] PV distribuídos conforme desejado entre si e os aliados.",
+        "range": "",
+        "area": "raio de 5m",
+        "effort": "20",
+        "prepTime": "2AP",
+        "duration": "",
+        "keywords": {},
+        "usage": "",
+        "limit": "1 vez por semana."
+      },
+      "H3TJbjAXdol5HKTG": {
+        "img": "icon%20library/powers/holy%20skills/paladin%20(24).png",
+        "name": "Admoestar",
+        "type": "attack",
+        "_id": "H3TJbjAXdol5HKTG",
+        "damaging": true,
+        "range": "",
+        "damage": {
+          "dmgBase": 36,
+          "dmgAttributes": [
+            "ego",
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgType": "ex",
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgSubtype": ""
+        },
+        "subtype": "affliction",
+        "effort": "20",
+        "prepTime": "2AP",
+        "area": "raio de 5m",
+        "skills": {
+          "aoism": 0
+        },
+        "effect": "dano pode ser distribuído como desejado entre mortos-vivos. Teste de Vontade (dif12+Aoismo) reduz o dano à metade.",
+        "limit": "1 vez por semana.",
+        "usesAmmo": false,
+        "duration": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Rotacionando </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">seu corpo enquanto toca um sino, ou usa algo para fazer vibrações similares, faz repercutir em seu entorno ondas sonoras com grande poder de cura ou de admoestação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 vez por semana.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 20.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (cura):</span> cura <span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">18+ESP|EGO] PV distribuídos conforme</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> desejado entre si e os aliados.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (admoestação):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 36+ESP|EGO</span><span style=\"mso-bidi-font-family:Arial\">×</span>2 Existencial.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (admoestação):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> dano pode ser distribuído como desejado entre mortos-vivos. Teste de Vontade (dif12+Aoismo) reduz o dano à metade.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Súplica </em>e Aoismo N7.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.dTv2Hbr49CGT3gSv",
+    "duplicateSource": "Item.qY32UrBECGZ8ApEG",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206068445,
+    "modifiedTime": 1771206068445,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "eaU4IkV2x67OnYF3",
+  "_key": "!items!eaU4IkV2x67OnYF3"
+}

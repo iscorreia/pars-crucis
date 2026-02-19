@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Dádivas de retribuição",
+  "color": "#8a9400",
+  "sorting": "a",
+  "_id": "EpS2indLbgZvHEqP",
+  "description": "",
+  "sort": 400000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771283408371,
+    "modifiedTime": 1771433668736,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!folders!EpS2indLbgZvHEqP"
+}

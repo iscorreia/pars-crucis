@@ -1,0 +1,79 @@
+{
+  "folder": "JKkE5OuyJl3hCR0W",
+  "name": "Salto fásico",
+  "type": "ability",
+  "img": "icons/magic/movement/trail-streak-impact-blue.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "phase"
+    },
+    "actions": {
+      "rhkGU8lzocfHmXYP": {
+        "img": "icons/magic/movement/trail-streak-impact-blue.webp",
+        "name": "Saltar pela Fase",
+        "type": "test",
+        "_id": "rhkGU8lzocfHmXYP",
+        "skill": "atlet",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "a alcance em um mesmo plano é de 500km + 500km para cada +2 de esforço. Se possuir um item de outro plano material que ainda retenha essência desse plano, é possível realizar um salto para esse plano, indo para uma localização coincidente dentro do alcance.",
+        "range": "indeterminado",
+        "area": "",
+        "effort": "9+",
+        "limit": "",
+        "prepTime": "4AP",
+        "duration": "",
+        "keywords": {},
+        "skills": {
+          "crono": 0
+        },
+        "difficulty": 12
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Salta para a interseção dos planos por uma fração de segundo, então reaparece em outro local conhecido de um plano material.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 9.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> indeterminado.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-family:Arial\"> a alcance em um mesmo plano é de 500km + 500km para cada +2 de esforço. </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Se possuir um item de outro plano material que ainda retenha essência desse plano, é possível realizar um salto para esse plano, indo para uma localização coincidente dentro do alcance.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 12.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"> <em>Estase</em> e Cronociência N7.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771470937100,
+    "modifiedTime": 1771470940885,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "VAdXDkZVaYMoK1cV",
+  "sort": 500000,
+  "_key": "!items!VAdXDkZVaYMoK1cV"
+}

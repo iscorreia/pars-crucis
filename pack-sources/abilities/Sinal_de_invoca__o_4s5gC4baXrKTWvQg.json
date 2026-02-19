@@ -1,0 +1,77 @@
+{
+  "folder": "nOWoikCLNJoghB9z",
+  "name": "Sinal de invocação",
+  "type": "ability",
+  "img": "icons/magic/defensive/shield-barrier-blades-teal.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "summon"
+    },
+    "actions": {
+      "o4kZIiM7WH2IYbEN": {
+        "img": "icons/magic/defensive/shield-barrier-blades-teal.webp",
+        "name": "Sigilar",
+        "type": "use",
+        "_id": "o4kZIiM7WH2IYbEN",
+        "effort": "R7",
+        "prepTime": "2AP",
+        "area": "raio de 5m",
+        "effect": "invocações tem esforço reduzido em 2, invocações de dano escalável tem Dano+2. Espírito protetor tem DEF+1.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "sigil": null
+    },
+    "description": {
+      "description": "<p>Sigilo</p><p class=\"MsoNormal\">Movendo os braços faz em torno de si o sigilo de invocação, com sinais que facilitam a conexão com a fase e os espíritos, tornando as suas invocações mais poderosas e eficientes.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> retém 7.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span> raio de 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 2 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> invocações tem esforço reduzido em 2, invocações de dano escalável tem Dano+2. Espírito protetor tem DEF+1.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Tato espiritual </em>e Aoismo N6.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.89eNQjndPZLbA0S0",
+    "duplicateSource": "Item.RJe9Bu58sd3JvNrj",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206070202,
+    "modifiedTime": 1771206070202,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "4s5gC4baXrKTWvQg",
+  "_key": "!items!4s5gC4baXrKTWvQg"
+}

@@ -1,0 +1,77 @@
+{
+  "folder": "7yedWurpXJGRIW0D",
+  "name": "Hipótese",
+  "type": "ability",
+  "img": "icon%20library/powers/illusionist%20skills/illusion%20(7).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "crono"
+    },
+    "actions": {
+      "SHXMpyf7zamQ0wWM": {
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(7).png",
+        "name": "Hipotizar",
+        "type": "use",
+        "_id": "SHXMpyf7zamQ0wWM",
+        "damaging": false,
+        "effort": "4, mantém 3.",
+        "effect": "realizar a ação de sua rodada ou de alguns segundos (quando fora de combate) em um cenário hipotético de conhecimento apenas para o personagem. Tendo visto a hipótese, o personagem escolhe se mantém o que viu, incluindo os valores rolados para testes que tenham acontecido, ou se realiza uma ação diferente da hipotisada.  É um poder imediato que pode ser feito antes de declarar suas ações na etapa de declarações. Manter a hipótese permite ir segundos ou rodada além, tudo dentro da mesma hipótese.",
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "bonus": null
+    },
+    "description": {
+      "description": "<p>Bônus</p><p class=\"MsoNormal\" style=\"margin-bottom:0cm\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">A compreensão do tempo permite ao personagem, num piscar de olhos, vivenciar suas próximas ações em uma realidade hipotética, revelando informações importantes.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4, mantém por 3.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> realizar a ação de sua rodada ou de alguns segundos (quando fora de combate) em um cenário hipotético de conhecimento apenas para o personagem. Tendo visto a hipótese, o personagem escolhe se mantém o que viu, incluindo os valores rolados para testes que tenham acontecido, ou se realiza uma ação diferente da hipotisada.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">É um poder imediato que pode ser feito antes de declarar suas ações na etapa de declarações.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Manter a hipótese permite ir segundos ou rodada além, tudo dentro da mesma hipótese.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Datar </em>e Cronociência N5.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771441572459,
+    "modifiedTime": 1771441580147,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "VNKr8MFLNWCHJ1df",
+  "sort": 1200000,
+  "_key": "!items!VNKr8MFLNWCHJ1df"
+}

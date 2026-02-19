@@ -21,7 +21,7 @@
         "area": "7m",
         "duration": "1 minuto",
         "prepTime": "1 ação",
-        "effect": "O personagem e aliados em um raio de 7 metros têm AB+4, e MOD+2 para ESP e Vontade.",
+        "effect": "o personagem e aliados têm AB+4, e MOD+2 para ESP e Vontade. Quando é usado, personagens podem refazer testes de medo, fobia e autocontrole",
         "damaging": false,
         "damage": {
           "dmgBase": 0,
@@ -73,10 +73,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361179746,
-    "modifiedTime": 1771361179746,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771363161383,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "mLpzltCDS7FO68Jb",
-  "sort": 0,
+  "sort": 700000,
   "_key": "!items!mLpzltCDS7FO68Jb"
 }

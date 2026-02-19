@@ -1,0 +1,81 @@
+{
+  "folder": "5kroOQsZ3TjDSiMm",
+  "name": "Eixo gravitacional",
+  "type": "ability",
+  "img": "icon%20library/powers/astral%20skills/fairy%20(4).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "gravitational"
+    },
+    "actions": {
+      "Dist5EsFy5fZBaaG": {
+        "img": "icon%20library/powers/astral%20skills/fairy%20(4).png",
+        "name": "Área de efeito",
+        "type": "attack",
+        "_id": "Dist5EsFy5fZBaaG",
+        "damaging": false,
+        "range": "21m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "subtype": "aoe",
+        "skills": {
+          "crono": 0
+        },
+        "effort": "11",
+        "prepTime": "2AP",
+        "area": "raio de [3+COG|ESP/2] metros.",
+        "effect": "Dano de colisão é causado apenas uma vez pelo puxão, sendo na instância onde seria causado o maior dano.",
+        "usesAmmo": false,
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "aoe": null
+    },
+    "description": {
+      "description": "<p>Área</p><p class=\"MsoNormal\">Fazendo movimentos espiralados com as mãos cria em um ponto uma espiral de força escura que puxa a tudo na área.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 11.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 21m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span>raio de [3+COG|ESP/2] metros.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Dano de colisão é causado apenas uma vez pelo puxão, sendo na instância onde seria causado o maior dano.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Puxão gravitacional </em>e Cronociência N5.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771519063894,
+    "modifiedTime": 1771519078537,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "CcvSPE3ugAc1phm9",
+  "sort": 1300000,
+  "_key": "!items!CcvSPE3ugAc1phm9"
+}

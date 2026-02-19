@@ -1,0 +1,75 @@
+{
+  "folder": "5kroOQsZ3TjDSiMm",
+  "name": "Mão distante",
+  "type": "ability",
+  "img": "icon%20library/powers/astral%20skills/astral%20(33).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "gravitational"
+    },
+    "actions": {
+      "cgp1fM0lNQX7ijqX": {
+        "img": "icon%20library/powers/astral%20skills/astral%20(33).png",
+        "name": "Manipular",
+        "type": "use",
+        "_id": "cgp1fM0lNQX7ijqX",
+        "effort": "1 para objetos muito leves. 3 para 1kg; 6 para 20kg; 12 para 100kg; e +12 para cada múltiplo de 10 adicionado ao peso.",
+        "range": "10m",
+        "prepTime": "1AP",
+        "effect": "move um objeto a distância. Não permite mover com velocidade o suficiente para causar danos, acertar alvos em combate ou que estejam em movimento. Pode ser realizado em conjunto com testes de Ladinagem, trazendo diversas possibilidades e aplicando MOD+2 a ação.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Gesticulando cuidadosamente com as mãos cria uma mão, garras ou pequena nuvem de força escura capaz de fazer moção de um objeto como se o personagem o pegasse com as próprias mãos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 para objetos muito leves. 3 para 1kg; 6 para 20kg; 12 para 100kg; e +12 para cada múltiplo de 10 adicionado ao peso.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10m.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> move um objeto a distância. </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Não permite mover com velocidade o suficiente para causar danos, acertar alvos em combate ou que estejam em movimento. Pode ser realizado em conjunto com testes de <em>Ladinagem</em>, trazendo diversas possibilidades e aplicando MOD+2 a ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Força escura </em>e Cronociência N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771519076358,
+    "modifiedTime": 1771519078537,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "BmCs2dj8g8NfcMlv",
+  "sort": 500000,
+  "_key": "!items!BmCs2dj8g8NfcMlv"
+}

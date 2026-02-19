@@ -1,0 +1,85 @@
+{
+  "folder": "grMiZDEC7Pu1unWa",
+  "name": "Meteorito",
+  "type": "ability",
+  "img": "icons/magic/fire/projectile-fireball-orange-yellow.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "sidereal"
+    },
+    "actions": {
+      "mirDOa28uMdXrOWy": {
+        "img": "icons/magic/fire/projectile-fireball-orange-yellow.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "mirDOa28uMdXrOWy",
+        "damaging": true,
+        "range": "20/40m",
+        "damage": {
+          "dmgBase": 40,
+          "dmgAttributes": [
+            "cog",
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "effort": "13",
+        "limit": "",
+        "prepTime": "5AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "crono": 0
+        },
+        "subtype": "projectile"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "projectile": "",
+      "blunt": null
+    },
+    "description": {
+      "description": "<p>Projétil</p><p class=\"MsoNormal\">Fazendo alguns movimentos braçais o personagem abre uma pequena fenda no espaço próximo a si trazendo por ela um diminuto meteorito para atingir o seu alvo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 13.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 5 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 20/40m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 40+COG|ESP<span style=\"mso-bidi-font-family:Arial\">×</span>2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Embotada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Astrovalia</em> e Cronociência N7.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771522496975,
+    "modifiedTime": 1771522509610,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "pZDmNM6bamqNcGpX",
+  "sort": 1000000,
+  "_key": "!items!pZDmNM6bamqNcGpX"
+}

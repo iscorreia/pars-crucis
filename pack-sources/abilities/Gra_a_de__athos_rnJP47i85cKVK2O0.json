@@ -1,0 +1,51 @@
+{
+  "folder": "EpS2indLbgZvHEqP",
+  "name": "Graça de Πathos",
+  "type": "passive",
+  "img": "icons/skills/social/trading-justice-scale-yellow.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 4,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "attribute": null,
+      "skill": null,
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Passiva</p><p class=\"MsoNormal\">O rito de comunhão com Pathos torna rancor e arrependimento no peso que equilibra as balanças do poder.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span><span style=\"mso-bidi-font-family:Arial\"> em um local sagrado ou de poder, o personagem realiza um ritual demonstrando o seu desejo pela justiça, e jurando não fechar os olhos para aqueles que buscarem devida retribuição receberá de Pathos a sua graça.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> COG+2, MOD+2 para Imposição e Percepção.</span></p><p class=\"MsoNormal\" style=\"text-indent:35.4pt\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Os poderes <em>Tribulação, Fardo </em>e <em>Pesar de atos </em>têm MOD+2, esforço reduzido em 2, e os seus efeitos são intensificados em 1.</span></p><p class=\"MsoNormal\">Tem acesso ao poder <em>Badalo justificado</em> enquanto estiver sob a Graça de Pathos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> item com propriedade etérea ou relíquia.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Tribulação </em>e Aoismo N6.</span></p>",
+      "summary": "COG+2, Percepção e Imposição MOD+2. ~ Outros efeitos",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.GhKMw3KhTGJq3xhA",
+    "duplicateSource": "Item.QvFj6sA8LaqoMe9X",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771283408389,
+    "modifiedTime": 1771283408389,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "rnJP47i85cKVK2O0",
+  "_key": "!items!rnJP47i85cKVK2O0"
+}

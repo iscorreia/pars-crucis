@@ -1,0 +1,50 @@
+{
+  "folder": "XWLHQF4loXO0MsGs",
+  "name": "Graça de Zoa",
+  "type": "passive",
+  "img": "icons/consumables/plants/leaf-maple-green-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 4,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "attribute": null,
+      "effect": null
+    },
+    "description": {
+      "description": "<p>O rito de comunhão com Zoa recompensa aqueles dispostos a pagar qualquer custo para salvar aquilo que lhe é valioso.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> em um local maculado, de essência reversa ou de poder, o personagem realiza um ritual que demonstra sua determinação para preservar o que ou aqueles que são importantes para ele, deixando a essência de seu espírito se inverter, e assim seu corpo, para que tenha o poder para tal, assim recebendo de Zoa a sua graça.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> FIS+2, PV+8 e Saúde+3.</p><p class=\"MsoNormal\">Os seus Poderes aoistas de cura podem com a sua essência inversa curar os mortos-vivos. Os Poderes de cura podem se tornar Aflições para causar dano Biológico: Podre equivalente ao que seria curado. Os poderes de Dadivas da retribuição e de Dádivas maculadas podem causar um adicional de [2] de dano Biológico: Podre.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> item com propriedade etérea ou relíquia.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Ideais turvados </em>e Aoismo N6.</span></p>",
+      "summary": "FIS+2, PV+8, Saúde+3; Outros efeitos.",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.GhKMw3KhTGJq3xhA",
+    "duplicateSource": "Item.cGLv0Y7eZTqD70ZX",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206813814,
+    "modifiedTime": 1771206813814,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "ZFB16pttiLjCzEkw",
+  "_key": "!items!ZFB16pttiLjCzEkw"
+}

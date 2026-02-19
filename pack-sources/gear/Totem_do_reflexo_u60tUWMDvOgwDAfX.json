@@ -2,7 +2,7 @@
   "folder": "B7hjQHZ1Qd71IXpg",
   "name": "Totem do reflexo",
   "type": "gear",
-  "img": "icons/commodities/treasure/totem-wooden-glowing-yellow.webp",
+  "img": "icons/commodities/treasure/figurine-rabbit.webp",
   "system": {
     "info": {
       "subtype": "item",
@@ -12,13 +12,13 @@
     },
     "actions": {
       "vQheLk2iDCngdzQm": {
-        "img": "icons/commodities/treasure/totem-wooden-glowing-yellow.webp",
-        "name": "Usar",
+        "img": "icons/commodities/treasure/figurine-rabbit.webp",
+        "name": "Liberar",
         "type": "use",
         "_id": "vQheLk2iDCngdzQm",
         "effort": "2",
         "prepTime": "1 ação",
-        "range": "Pessoal",
+        "range": "",
         "area": "7m",
         "duration": "1 minuto",
         "damaging": false,
@@ -32,7 +32,7 @@
           "dmgSubtype": ""
         },
         "usesAmmo": false,
-        "effect": "",
+        "effect": "o personagem e aliados tem MOD+1 para Reflexo. No uso, personagens podem refazer testes de Iniciativa e sensoriais",
         "limit": "",
         "keywords": {},
         "usage": ""
@@ -52,9 +52,7 @@
       "effect": "<p>Por 1 minuto, o personagem e aliados em um raio de 7 metros têm MOD+1 para Reflexo. Materiais raros melhoram o efeito para MOD+2 para Reflexo. No uso, personagens podem refazer testes de Iniciativa e sensoriais.</p>",
       "penalty": ""
     },
-    "keywords": {
-      "effect": null
-    },
+    "keywords": {},
     "description": {
       "description": "<p>Peça de madeira esculpida e com entalhos que simbolizam atenção e perspicácia, imbuída com a essência de uma matriz. Pode ser quebrado para liberar o poder contido</p><p>Esforço: 2</p><p>Uso: utiliza 1 ação para concentrar sua essência, partindo o totem e liberando o poder imbuído nele</p><p>Efeitos: por 1 minuto, o personagem e aliados em um raio de 7 metros têm MOD+1 para Reflexo. Materiais raros melhoram o efeito para MOD+2 para Reflexo. No uso, personagens podem refazer testes de Iniciativa e sensoriais</p><p>Requisitos: ESP 2, ou perícia sobrenatural N2</p><p>Tempo para fabricar: 6 horas</p><p>Preço: 3 pratas</p><p>Ofício: Artesão N5</p><p>Materiais: 3 de Essência e 1 de Madeira</p>",
       "summary": "",
@@ -75,10 +73,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361180930,
-    "modifiedTime": 1771361180930,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771363098649,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "u60tUWMDvOgwDAfX",
-  "sort": 0,
+  "sort": 800000,
   "_key": "!items!u60tUWMDvOgwDAfX"
 }

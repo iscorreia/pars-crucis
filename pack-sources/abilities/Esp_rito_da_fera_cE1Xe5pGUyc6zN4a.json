@@ -1,0 +1,84 @@
+{
+  "folder": "JKkE5OuyJl3hCR0W",
+  "name": "Espírito da fera",
+  "type": "ability",
+  "img": "icons/creatures/mammals/wolf-shadow-black.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "phase"
+    },
+    "actions": {
+      "QLZroD1Jpp5CZpmo": {
+        "img": "icons/creatures/mammals/wolf-shadow-black.webp",
+        "name": "Invocar",
+        "type": "attack",
+        "_id": "QLZroD1Jpp5CZpmo",
+        "damaging": true,
+        "range": "10m",
+        "damage": {
+          "dmgBase": 10,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "crono": 0
+        },
+        "effort": "7",
+        "prepTime": "1AP",
+        "effect": "a fera surge perto do invocador, que pode se segurar nela para mover-se junto até o destino. Após terminar seu movimento e atacar o espírito da fera dissipa.",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "melee"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "summon": null,
+      "melee": null
+    },
+    "description": {
+      "description": "<p>Corpo a corpo, Invocação</p><p class=\"MsoNormal\">Com um berro feroz e alguns movimentos corporais invoca um espírito de tigre, lobo, ou fera da fase que avança para atacar um alvo designado pelo invocador, que pode inclusive agarrar-se a fera para mover-se com ela.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 7.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 10+ESP<span style=\"mso-bidi-font-family:Arial\">×</span>2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> a fera surge perto do invocador, que pode se segurar nela para mover-se junto até o destino. Após terminar seu movimento e atacar o espírito da fera dissipa.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Alento</em> e Cronociência N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771470927684,
+    "modifiedTime": 1771470940885,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "cE1Xe5pGUyc6zN4a",
+  "sort": 800000,
+  "_key": "!items!cE1Xe5pGUyc6zN4a"
+}

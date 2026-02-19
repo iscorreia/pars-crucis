@@ -1,0 +1,84 @@
+{
+  "folder": "EpS2indLbgZvHEqP",
+  "name": "Tribulação",
+  "type": "ability",
+  "img": "icon%20library/powers/holy%20skills/priest%20(8).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "retribuition"
+    },
+    "actions": {
+      "LnAtkc7aKKpv6fqh": {
+        "img": "icon%20library/powers/holy%20skills/priest%20(8).png",
+        "name": "Atribular",
+        "type": "attack",
+        "_id": "LnAtkc7aKKpv6fqh",
+        "damaging": false,
+        "range": "vocal",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "effort": "7",
+        "skills": {
+          "aoism": 0,
+          "expre": 0,
+          "impos": 0
+        },
+        "effect": "MOD-2 a um conjunto de ações a escolha como ataques, DEF ou manipulações.",
+        "duration": "1 minuto",
+        "prepTime": "1AP",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "melee"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null,
+      "affliction": null
+    },
+    "description": {
+      "description": "<p>Inicial, Aflição</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Pronúncia algumas palavras que trazem sobre a mente de um alvo uma profunda sensação de fracasso.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> vocal.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> MOD-2 a um conjunto de ações a escolha como ataques, DEF ou manipulações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Aoismo N1.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1400000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.i6ztYOsYBTi1QPVA",
+    "duplicateSource": "Item.i6ztYOsYBTi1QPVA",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771283408389,
+    "modifiedTime": 1771283408389,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Q8YkaERHCIqSrDG2",
+  "_key": "!items!Q8YkaERHCIqSrDG2"
+}

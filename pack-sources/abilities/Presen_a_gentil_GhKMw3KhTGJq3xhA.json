@@ -1,0 +1,48 @@
+{
+  "folder": "1PdLhmZtWN48jY9W",
+  "name": "Presença gentil",
+  "type": "passive",
+  "_id": "GhKMw3KhTGJq3xhA",
+  "img": "icon%20library/powers/holy%20skills/priest%20(25).png",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 3,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "narrative": null
+    },
+    "description": {
+      "description": "<p>Passiva</p><p class=\"MsoNormal\">A presença do personagem é tranquila e não transpassa más intenções, fazendo com que encrenqueiros e inimigos lhe deem menor atenção, priorizando outros personagens.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> evitar violência mesmo em situações necessárias.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> adversários vão priorizar outros alvos, diminui as chances de arrumarem encrenca com o personagem. Realizar ataques ou ações que de algum modo aflijam outros personagens suprime o efeito dessa passiva por alguns minutos, até que o personagem retome sua paz.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Sinal de aura</em> e Aoismo N4.</p>",
+      "summary": "Adversários priorizam outros alvos. Realizar ataques suprime o efeito da passiva.",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206068445,
+    "modifiedTime": 1771206068445,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!GhKMw3KhTGJq3xhA"
+}

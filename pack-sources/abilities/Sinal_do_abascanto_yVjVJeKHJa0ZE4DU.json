@@ -1,0 +1,77 @@
+{
+  "folder": "1PdLhmZtWN48jY9W",
+  "name": "Sinal do abascanto",
+  "type": "ability",
+  "img": "icon%20library/powers/holy%20skills/priest%20(34).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "favor"
+    },
+    "actions": {
+      "sMbeFgM2xkjaQgsZ": {
+        "img": "icon%20library/powers/holy%20skills/priest%20(34).png",
+        "name": "Sigilar",
+        "type": "use",
+        "_id": "sMbeFgM2xkjaQgsZ",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "o personagem e aliados na área têm AB+5.",
+        "range": "",
+        "area": "raio 10m / cômodo",
+        "effort": "R9",
+        "prepTime": "5AP",
+        "duration": "",
+        "keywords": {},
+        "usage": "",
+        "limit": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "sigil": null
+    },
+    "description": {
+      "description": "<p>Sigilo</p><p class=\"MsoNormal\">Fazendo movimentos manuais e citando um verso faz ao seu entorno um sigilo com sinais de proteção espiritual.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> retém 9.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span> raio 10m, ou limites do cômodo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> o personagem e aliados na área têm AB+5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 5 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Sinal de aura </em>e Aoismo N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.dTv2Hbr49CGT3gSv",
+    "duplicateSource": "Item.PCRgbt0Ioiy4V7cZ",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206068445,
+    "modifiedTime": 1771206068445,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "yVjVJeKHJa0ZE4DU",
+  "_key": "!items!yVjVJeKHJa0ZE4DU"
+}

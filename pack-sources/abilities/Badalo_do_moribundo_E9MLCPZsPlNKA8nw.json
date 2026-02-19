@@ -1,0 +1,82 @@
+{
+  "folder": "XWLHQF4loXO0MsGs",
+  "name": "Badalo do moribundo",
+  "type": "ability",
+  "img": "icons/magic/sonic/bell-alarm-red-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "macculate"
+    },
+    "actions": {
+      "Tl4qf6xiPlF7WDIP": {
+        "img": "icons/magic/sonic/bell-alarm-red-purple.webp",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "Tl4qf6xiPlF7WDIP",
+        "damaging": true,
+        "range": "15/30m",
+        "damage": {
+          "dmgBase": 14,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgType": "bio",
+          "dmgSubtype": "Podre",
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true
+        },
+        "effort": "6",
+        "prepTime": "1AP",
+        "subtype": "affliction",
+        "effect": "Condição: alvo ferido.",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {}
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "affliction": "",
+      "plague": "3"
+    },
+    "description": {
+      "description": "<p>Aflição</p><p class=\"MsoNormal\">Badalando um sino, ou fazendo som com vibrações similares, e concentrando-se em um personagem alvo ferido faz cair sobre ele um male que aumenta e apodrece os seus ferimentos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Condição:</span> alvo ferido.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 15/30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 14+ESP Biológico: Podre.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Peste (3).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos: </span><em>Ideais turvados</em> e Aoismo N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.9yVT3FVb0h8t6P0M",
+    "duplicateSource": "Item.IgayAtcWMT7x9QFg",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206813814,
+    "modifiedTime": 1771206813814,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "E9MLCPZsPlNKA8nw",
+  "_key": "!items!E9MLCPZsPlNKA8nw"
+}

@@ -2,7 +2,7 @@
   "folder": "B7hjQHZ1Qd71IXpg",
   "name": "Caieb",
   "type": "gear",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/commodities/treasure/statue-carved-figurehead.webp",
   "system": {
     "info": {
       "subtype": "item",
@@ -46,10 +46,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361103442,
-    "modifiedTime": 1771361166151,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771363001906,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "86z6vxSP59Q5UmAp",
-  "sort": 2000000,
+  "sort": 3300000,
   "_key": "!items!86z6vxSP59Q5UmAp"
 }

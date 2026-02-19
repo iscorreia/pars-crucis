@@ -1,0 +1,84 @@
+{
+  "folder": "nOWoikCLNJoghB9z",
+  "name": "Espírito arqueiro",
+  "type": "ability",
+  "img": "icons/magic/symbols/runes-star-blue.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "aoist",
+      "category": "summon"
+    },
+    "actions": {
+      "R4jPQOyG6pQpBUjX": {
+        "img": "icons/magic/symbols/runes-star-blue.webp",
+        "name": "Invocar",
+        "type": "attack",
+        "_id": "R4jPQOyG6pQpBUjX",
+        "damaging": true,
+        "range": "20/80m",
+        "damage": {
+          "dmgBase": 13,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "em mortos vivos causa dano Existencial. Após o ataque, o espírito remanesce até o início da próxima rodada, tendo esforço reduzido para mantê-lo.",
+        "area": "",
+        "effort": "10, 7 ao repetir",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "aoism": 0
+        },
+        "subtype": "projectile",
+        "limit": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "aoism",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "summon": null,
+      "projectile": null
+    },
+    "description": {
+      "description": "<p>Invocação, Projétil</p><p class=\"MsoNormal\">Conjura um espírito arqueiro que com seu arco atira uma longa flecha de luz.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10, 7 quando reduzido.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 20/80m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span>13+ESP<span style=\"mso-bidi-font-family:Arial\">×</span>2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> em mortos vivos causa dano Existencial. <span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Após o ataque, o espírito remanesce até o início da próxima rodada, tendo esforço reduzido para mantê-lo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Espírito soldado</em> e Aoismo N6.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 800000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.89eNQjndPZLbA0S0",
+    "duplicateSource": "Item.vcnc8KRKVWtcbOBP",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206070202,
+    "modifiedTime": 1771206070202,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "JpFWr1WH1ztK3p67",
+  "_key": "!items!JpFWr1WH1ztK3p67"
+}

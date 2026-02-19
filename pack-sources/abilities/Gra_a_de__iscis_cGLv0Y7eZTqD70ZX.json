@@ -1,0 +1,51 @@
+{
+  "folder": "nOWoikCLNJoghB9z",
+  "name": "Graça de ∆iscis",
+  "type": "passive",
+  "img": "icons/magic/symbols/circle-ouroboros.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 4,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "attribute": null,
+      "skill": null,
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Passiva</p><p class=\"MsoNormal\">O rito de comunhão com Discis abre os horizontes da mente e dá acesso a conhecimentos além da compreensão mortal.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">em um local sagrado ou de poder, o personagem realiza um ritual demonstrando sua avidez por conhecimento, entregando de sua parte o seu mais bem guardado segredo, para em retorno ser declarado sob a </span><em>Graça de Discis</em>.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> DES+1, COG+1, MOD+2 para Erudição, Engenharia, Ontologia, Sobrevivência e um adicional de +5 para todos os idiomas existentes.</span></p><p class=\"MsoNormal\">O personagem não fica <em>vulnerável </em>a ataques de oportunidade de adversários furtivos ou por desatenção.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> item com propriedade etérea ou relíquia.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos: </span><em>Espírito vigia</em><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Aoismo N6.</span></p>",
+      "summary": "DES+1, COG+1, MOD+2 Engenharia, Ontologia e Sobrevivência. ~Efeitos",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.GhKMw3KhTGJq3xhA",
+    "duplicateSource": "Item.dJWRquxaFJcUVw1d",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771206070202,
+    "modifiedTime": 1771206070202,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "cGLv0Y7eZTqD70ZX",
+  "_key": "!items!cGLv0Y7eZTqD70ZX"
+}

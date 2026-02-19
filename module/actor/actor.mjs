@@ -2,7 +2,7 @@ const { handlebars } = foundry.applications;
 import { PC } from "../config.mjs";
 import PCRoll from "../rolls/basic-roll.mjs";
 import TestRoll from "../rolls/test-roll.mjs";
-import { keywordResolver } from "../utils.mjs";
+import { keywordResolver, skillsMerger } from "../utils.mjs";
 
 const defaultSight = {
   enabled: true,
@@ -97,6 +97,7 @@ export class PCActor extends foundry.documents.Actor {
     const action = item.system.actions[acId];
     if (!action) return;
     const { skill, techSubtype, type } = action;
+    const suppliesAmmo = !action.usesAmmo;
     if (!skill || !techSubtype || !type) return;
     const techKeywords = keywordResolver(item.system.keywords, action.keywords);
     const { selectedAction, selectedItem } = action;
@@ -107,10 +108,10 @@ export class PCActor extends foundry.documents.Actor {
       ? this.items.get(ammoInfo._ammoId)
       : null;
     // If tech is executed with action that uses ammo
-    // And either of the following statements fail, return
-    // Else, consumes ammo an reduces loaded ammo (if loaded)
-    if (usesAmmo && !ammunition) return;
-    if (usesAmmo && hasAmmo && ammunition) {
+    // And either of the following statements fail, return unless tech supplies ammo
+    // Is action uses Ammo and tech does not supply ammo, consumes ammo an reduces loaded ammo (if loaded)
+    if (usesAmmo && !ammunition && !suppliesAmmo) return;
+    if (usesAmmo && hasAmmo && ammunition && !suppliesAmmo) {
       if (
         (ammoInfo.loaded === 0 && ammoInfo.capacity > 0) ||
         ammunition.system.details.stack === 0
@@ -131,8 +132,12 @@ export class PCActor extends foundry.documents.Actor {
     const groupMod = modGroup
       ? (this.system.groupModifiers?.[modGroup]?.mod ?? 0)
       : 0;
-    const modifiers = categoryMod + groupMod + mod;
-
+    const skills = skillsMerger(
+      action?.skills ?? {},
+      selectedAction?.skills ?? {},
+    );
+    const skillSpecificMod = skills?.[skill] ?? 0;
+    const modifiers = categoryMod + groupMod + (mod ?? 0) + skillSpecificMod;
     const compiledModifiers =
       modifiers +
       (Number(keywords?.handling) || 0) +
@@ -194,7 +199,7 @@ export class PCActor extends foundry.documents.Actor {
     if (!item) return;
     const action = item.system.actions[acId];
     if (!action) return;
-    const { difficulty, skill, subtype, type, usesAmmo } = action;
+    const { difficulty, skill, skills, subtype, type, usesAmmo } = action;
     const { hasAmmo, ammoInfo } = item.system;
     // If action requires ammo but item doesn't accept ammo, return
     if (usesAmmo && !hasAmmo) return;
@@ -223,7 +228,8 @@ export class PCActor extends foundry.documents.Actor {
     const groupMod = modGroup
       ? (this.system.groupModifiers?.[modGroup]?.mod ?? 0)
       : 0;
-    const modifiers = categoryMod + groupMod + (mod ?? 0);
+    const skillSpecificMod = skills?.[skill] ?? 0;
+    const modifiers = categoryMod + groupMod + (mod ?? 0) + skillSpecificMod;
     const compiledModifiers =
       modifiers +
       (Number(keywords?.handling) || 0) +
