@@ -10,7 +10,29 @@
       "subgroup": "",
       "quality": "common"
     },
-    "actions": {},
+    "actions": {
+      "1pYU2wSriKJcgL3J": {
+        "img": "icons/sundries/survival/razor.webp",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "1pYU2wSriKJcgL3J",
+        "damaging": true,
+        "range": "0",
+        "damage": {
+          "dmgBase": 5,
+          "dmgAttributes": [
+            "des"
+          ]
+        },
+        "effect": "",
+        "skills": {
+          "briga": 0
+        },
+        "keywords": {
+          "modifier": "-2"
+        }
+      }
+    },
     "cost": {
       "price": 50,
       "currency": "copper"
@@ -27,7 +49,7 @@
     },
     "keywords": {},
     "description": {
-      "description": "<p>Uma pequena lâmina retrátil bem afiada e fácil de esconder. Ainda que seja próximo a inútil em combate, a navalha pode ser usada para escapar de amarras ou como arma emergencial</p><p>Efeitos: Ataque corpo a corpo com perícia Briga e MOD-2, alcance 0 e 7+DES de dano. Possui Ocultar+6</p><p>Preço: 50 cobres</p><p>Ofício: Armeiro N3</p><p>Tempo para fabricar: 3 horas</p><p>Materiais: 1 Metal.</p>",
+      "description": "<p>Uma pequena lâmina retrátil bem afiada e fácil de esconder. Ainda que seja próximo a inútil em combate, a navalha pode ser usada para escapar de amarras ou como arma emergencial</p><p>Efeitos: Ataque corpo a corpo com perícia Briga e MOD-2, alcance 0 e 5+DES de dano. Possui Ocultar+6</p><p>Preço: 50 cobres</p><p>Ofício: Armeiro N3</p><p>Tempo para fabricar: 3 horas</p><p>Materiais: 1 Metal.</p>",
       "summary": "",
       "notes": ""
     }
@@ -46,10 +68,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361170905,
-    "modifiedTime": 1771361170905,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771363469665,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "2479gCbqylza5hEk",
-  "sort": 0,
+  "sort": 100000,
   "_key": "!items!2479gCbqylza5hEk"
 }

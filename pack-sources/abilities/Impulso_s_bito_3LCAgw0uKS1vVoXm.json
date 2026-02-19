@@ -1,0 +1,107 @@
+{
+  "folder": "5kroOQsZ3TjDSiMm",
+  "name": "Impulso súbito",
+  "type": "ability",
+  "img": "icons/magic/movement/trail-streak-zigzag-teal.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "gravitational"
+    },
+    "actions": {
+      "FoHKBOBYuf8ykw5f": {
+        "img": "icons/magic/movement/trail-streak-zigzag-teal.webp",
+        "name": "Impulsionar",
+        "type": "use",
+        "_id": "FoHKBOBYuf8ykw5f",
+        "effort": "4",
+        "effect": "tem MV+4m para se mover e saltar em linha reta.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "Zt47uEQenQYbhnMF": {
+        "img": "icons/magic/movement/trail-streak-zigzag-teal.webp",
+        "name": "Auxiliar",
+        "type": "test",
+        "_id": "Zt47uEQenQYbhnMF",
+        "skill": "atlet",
+        "effort": "4",
+        "effect": "tem MV+4m para se mover e saltar em linha reta.",
+        "range": "15m",
+        "skills": {
+          "crono": 0
+        },
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "difficulty": 10
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "quick": null
+    },
+    "description": {
+      "description": "<p>Rápida</p><p class=\"MsoNormal\">O personagem cria uma força invisível que o impulsiona para uma direção. Se coordenado com um aliado, impulso súbito pode ser utilizado para impulsioná-lo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade (aliados):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> tem MV+4m para se mover e saltar em linha reta.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Força escura </em>e Cronociência N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771519073078,
+    "modifiedTime": 1771519078537,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "3LCAgw0uKS1vVoXm",
+  "sort": 100000,
+  "_key": "!items!3LCAgw0uKS1vVoXm"
+}

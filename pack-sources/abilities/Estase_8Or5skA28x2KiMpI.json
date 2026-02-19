@@ -1,0 +1,101 @@
+{
+  "folder": "JKkE5OuyJl3hCR0W",
+  "name": "Estase",
+  "type": "ability",
+  "img": "icons/magic/light/explosion-star-glow-blue-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "phase"
+    },
+    "actions": {
+      "EpBw3esvMx4k1ws4": {
+        "img": "icons/magic/light/explosion-star-glow-blue-purple.webp",
+        "name": "Estasiar brecha",
+        "type": "use",
+        "_id": "EpBw3esvMx4k1ws4",
+        "effect": "cura até [10+ESP×2] PE e temporariamente estabiliza a brecha.",
+        "prepTime": "1 minuto.",
+        "range": "30m.",
+        "limit": "1 vez por brecha/fonte essencial por semana.",
+        "duration": "estabiliza a brecha por 1 dia.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "effort": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "ew33qQ2CrOnhUJn0": {
+        "img": "icons/magic/light/explosion-star-glow-blue-purple.webp",
+        "name": "Estasiar objeto",
+        "type": "use",
+        "_id": "ew33qQ2CrOnhUJn0",
+        "effect": "em objetos instáveis provindos da fase e outros planos, se cura em até [6] PE e torna o objeto estável.",
+        "prepTime": "1 minuto.",
+        "range": "0",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Realizando alguns movimentos manuais e direcionando a mão a uma brecha ou fonte essencial o personagem absorve parte da essência emanada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 vez por brecha/fonte essencial por semana.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 30m.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (brecha/fonte):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> cura até </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">[10+ESP×2] PE e temporariamente estabiliza a brecha.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (objeto):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"> em objetos instáveis provindos da fase e outros planos, se cura em até [6] PE e torna o objeto estável.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> estabiliza a brecha por 1 dia.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm;text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"> <em>Senso fásico</em> e Cronociência N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771470932612,
+    "modifiedTime": 1771470940885,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "8Or5skA28x2KiMpI",
+  "sort": 1000000,
+  "_key": "!items!8Or5skA28x2KiMpI"
+}

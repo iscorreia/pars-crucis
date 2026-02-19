@@ -2,7 +2,7 @@
   "type": "Item",
   "folder": null,
   "name": "Dádivas de invocação",
-  "color": "#243c7f",
+  "color": "#0d6296",
   "sorting": "a",
   "_id": "nOWoikCLNJoghB9z",
   "description": "",
@@ -16,7 +16,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771206070191,
-    "modifiedTime": 1771206947362,
+    "modifiedTime": 1771433778898,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!folders!nOWoikCLNJoghB9z"

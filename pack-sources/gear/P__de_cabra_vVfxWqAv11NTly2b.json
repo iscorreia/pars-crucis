@@ -2,7 +2,7 @@
   "folder": "B7hjQHZ1Qd71IXpg",
   "name": "Pé de cabra",
   "type": "gear",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/commodities/tech/metal-claws.webp",
   "system": {
     "info": {
       "subtype": "item",
@@ -75,10 +75,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361174026,
-    "modifiedTime": 1771361174026,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771363001906,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "vVfxWqAv11NTly2b",
-  "sort": 0,
+  "sort": 1200000,
   "_key": "!items!vVfxWqAv11NTly2b"
 }

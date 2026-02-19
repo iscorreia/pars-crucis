@@ -1,0 +1,81 @@
+{
+  "folder": "5kroOQsZ3TjDSiMm",
+  "name": "Puxão gravitacional",
+  "type": "ability",
+  "img": "icon%20library/powers/illusionist%20skills/illusion%20(3).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "gravitational"
+    },
+    "actions": {
+      "DnNdHqmW5pFYI7gV": {
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(3).png",
+        "name": "Puxar",
+        "type": "attack",
+        "_id": "DnNdHqmW5pFYI7gV",
+        "damaging": false,
+        "range": "10m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "crono": 0
+        },
+        "effort": "4, e 10 para criaturas e objetos grandes.",
+        "prepTime": "1AP",
+        "effect": "puxa 2+COG|ESP metros. Um personagem puxado pode fazer um teste de FIS, Atletismo ou Agilidade (dif12+Cronociência) reduzindo a distância pela metade, se não teve Ⓐ no puxão. Personagens no trajeto de um personagem ou objeto puxado podem fazer um teste de DEF (dif12+Cronociência) para desviar, ou Resistência para absorver metade do Dano de colisão. Não afeta criaturas enormes e grandes estruturas.",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "melee"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "melee": null
+    },
+    "description": {
+      "description": "<p>Corpo a corpo</p><p class=\"MsoNormal\">Após um momento de concentração o personagem realiza um movimento brusco com seu braço e cria um gancho, garras, ou nuvem de massa escura na proximidade ou ao lado de um personagem alvo ou objeto, dando então um puxão violento o jogando da direção desejada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4, e 10 para criaturas e objetos grandes.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> puxa </span>2+COG|ESP metros. Um personagem puxado pode fazer um teste de FIS, Atletismo ou Agilidade (dif12+Cronociência) reduzindo a distância pela metade, se não teve <span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span> no puxão.</p><p class=\"MsoNormal\">Personagens no trajeto de um personagem ou objeto puxado podem fazer um teste de DEF (dif12+Cronociência) para desviar, ou Resistência para absorver metade do Dano de colisão.</p><p class=\"MsoNormal\" style=\"margin-bottom:0cm\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Não afeta criaturas enormes e grandes estruturas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Força escura </em>e Cronociência N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771519080462,
+    "modifiedTime": 1771519080462,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "eyzE1sG6baY01vac",
+  "sort": 0,
+  "_key": "!items!eyzE1sG6baY01vac"
+}

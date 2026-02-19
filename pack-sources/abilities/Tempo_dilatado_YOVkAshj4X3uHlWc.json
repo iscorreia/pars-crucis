@@ -1,0 +1,103 @@
+{
+  "folder": "7yedWurpXJGRIW0D",
+  "name": "Tempo dilatado",
+  "type": "ability",
+  "img": "icon%20library/powers/illusionist%20skills/illusion%20(48).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "crono"
+    },
+    "actions": {
+      "KlBve3So4vaWMyC0": {
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(48).png",
+        "name": "Dilatar tempo",
+        "type": "use",
+        "_id": "KlBve3So4vaWMyC0",
+        "effort": "10",
+        "prepTime": "1AP",
+        "range": "10m",
+        "effect": "tem 1 Ação rápida, 2 Ações principais e Iniciativa+8 na rodada. Pode abdicar de 1 Ação principal tendo MOD+4 em um ataque ou defesa.",
+        "duration": "1 rodada",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "5VNk0OvSUhtUh3hw": {
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(48).png",
+        "name": "Dilatar para si",
+        "type": "use",
+        "_id": "5VNk0OvSUhtUh3hw",
+        "keywords": {
+          "bonus": null
+        },
+        "effect": "tem 1 Ação rápida, 2 Ações principais e Iniciativa+8 na rodada. Pode abdicar de 1 Ação principal tendo MOD+4 em um ataque ou defesa.",
+        "effort": "10",
+        "duration": "1 rodada",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Mental</p><p class=\"MsoNormal\">Com alguns movimentos manuais priva um personagem no de alguns instantes de seu tempo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 15/30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> tira uma das ações rápidas do alvo na sua próxima rodada. Com <span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span> ou MS 5 passa a tirar a ação principal. Com <span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">ⒶⒶ</span> o personagem perde sua rodada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Retardar</em> e Cronociência N4.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771441579091,
+    "modifiedTime": 1771441580147,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "YOVkAshj4X3uHlWc",
+  "sort": 700000,
+  "_key": "!items!YOVkAshj4X3uHlWc"
+}

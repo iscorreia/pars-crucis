@@ -1,0 +1,171 @@
+{
+  "folder": "5kroOQsZ3TjDSiMm",
+  "name": "Pesar",
+  "type": "ability",
+  "img": "icon%20library/powers/debuff%20skills/debuff%20(45).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "gravitational"
+    },
+    "actions": {
+      "feqtc5zu2tzudLat": {
+        "img": "icon%20library/powers/debuff%20skills/debuff%20(45).png",
+        "name": "Objeto",
+        "type": "test",
+        "_id": "feqtc5zu2tzudLat",
+        "skill": "atlet",
+        "difficulty": 12,
+        "effort": "5",
+        "prepTime": "1AP",
+        "range": "15/30",
+        "effect": "aumenta significativamente o seu peso.",
+        "duration": "1 minuto",
+        "skills": {
+          "crono": 0
+        },
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {}
+      },
+      "hW2VcXvYu3D0w1Pm": {
+        "img": "icon%20library/powers/debuff%20skills/debuff%20(2).png",
+        "name": "Arma",
+        "type": "attack",
+        "_id": "hW2VcXvYu3D0w1Pm",
+        "damaging": false,
+        "range": "15/30m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "duration": "1 minuto",
+        "prepTime": "1AP",
+        "effort": "5",
+        "effect": "ataques têm MOD-2.",
+        "skills": {
+          "crono": 0
+        },
+        "subtype": "affliction",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "skill": null
+      },
+      "U3JNDgdi8mMwFVJk": {
+        "img": "icon%20library/powers/debuff%20skills/debuff%20(45).png",
+        "name": "Escudo",
+        "type": "attack",
+        "_id": "U3JNDgdi8mMwFVJk",
+        "damaging": false,
+        "range": "15/30m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "duration": "1 minuto",
+        "prepTime": "1AP",
+        "effort": "5",
+        "effect": "ataques têm MOD-1 e o bônus de DEF é nulo.",
+        "skills": {
+          "crono": 0
+        },
+        "subtype": "affliction",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "skill": null
+      },
+      "QYbzaMXRGP1akFdm": {
+        "img": "icon%20library/powers/debuff%20skills/debuff%20(23).png",
+        "name": "Veste",
+        "type": "attack",
+        "_id": "QYbzaMXRGP1akFdm",
+        "damaging": false,
+        "range": "15/30m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "duration": "1 minuto",
+        "prepTime": "1AP",
+        "effort": "5",
+        "effect": "Reflexo tem MOD-2, MV-1m. O personagem refaz o teste de Iniciativa.",
+        "skills": {
+          "crono": 0
+        },
+        "subtype": "affliction",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null
+    },
+    "description": {
+      "description": "<p>Inicial</p><p class=\"MsoNormal\">Fazendo um movimento manual de cima para baixo enquanto aponta na direção de um objeto aumenta significativamente o efeito da força gravitacional sobre ele, o tornando mais pesado. O aumento da carga é relativo ao objetivo e o sucesso no teste. Itens portados por outros personagens podem ser alvo deste poder, aumentar o peso de itens causa penalidades conforme o tipo entre armamento, escudo ou vestimenta.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço: </span>5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 15/30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade (objetos):</span> 12.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (objetos):</span> aumenta significativamente o seu peso.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (armamento):</span> ataques têm MOD-2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (escudo):</span> ataques têm MOD-1 e o bônus de DEF é nulo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (vestimenta):</span> Reflexo tem MOD-2, MV-1m. O personagem refaz o teste de Iniciativa.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Cronociência N1.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771519078519,
+    "modifiedTime": 1771519078537,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "m0fncoiCvVUtGZbu",
+  "sort": 200000,
+  "_key": "!items!m0fncoiCvVUtGZbu"
+}

@@ -1,0 +1,84 @@
+{
+  "folder": "7yedWurpXJGRIW0D",
+  "name": "Deteriorar",
+  "type": "ability",
+  "img": "icon%20library/powers/illusionist%20skills/illusion%20(8).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "crono"
+    },
+    "actions": {
+      "w3sjRLJNFDQuzXRo": {
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(8).png",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "w3sjRLJNFDQuzXRo",
+        "damaging": true,
+        "range": "21m",
+        "damage": {
+          "dmgBase": 22,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "subtype": "projectile",
+        "effort": "6",
+        "prepTime": "3AP",
+        "effect": "anterior ao Dano causa [4+COG/2] de dano Destrutivo. Apenas em equipamentos e objetos.",
+        "skills": {
+          "crono": 0
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 4,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 9,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "projectile": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Projétil</p><p class=\"MsoNormal\">Em uma sequência de movimentos o personagem lança uma faixa de essência temporal sobre uma peça de equipamento ou objeto forçando a sua deterioração acelerada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo: </span>3 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 21m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 22+COG<span style=\"mso-bidi-font-family:Arial\">×</span>2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> anterior ao Dano causa [4+COG/2] de dano Destrutivo. Apenas em equipamentos e objetos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Decair </em>e Cronociência N9.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771441571371,
+    "modifiedTime": 1771450049082,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "d2rSH7Stb3APCP1D",
+  "sort": 1100000,
+  "_key": "!items!d2rSH7Stb3APCP1D"
+}

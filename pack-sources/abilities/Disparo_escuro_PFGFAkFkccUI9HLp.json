@@ -1,0 +1,118 @@
+{
+  "folder": "5kroOQsZ3TjDSiMm",
+  "name": "Disparo escuro",
+  "type": "ability",
+  "img": "icons/magic/unholy/projectile-bullet-orb-pink.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "gravitational"
+    },
+    "actions": {
+      "ZW9vsZbqe0hGc5za": {
+        "img": "icons/magic/unholy/projectile-bullet-orb-pink.webp",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "ZW9vsZbqe0hGc5za",
+        "damaging": true,
+        "range": "12/40m",
+        "damage": {
+          "dmgBase": 14,
+          "dmgAttributes": [
+            "cog",
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "crono": 0
+        },
+        "subtype": "projectile"
+      },
+      "9ilrHg2IAETfc2Xd": {
+        "img": "icons/magic/unholy/projectile-bullet-orb-pink.webp",
+        "name": "Disparo imbuído",
+        "type": "tech",
+        "_id": "9ilrHg2IAETfc2Xd",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 2,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "",
+        "range": "",
+        "area": "",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "inherit": 0
+        },
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "projectile": "",
+      "bypass": "",
+      "modifier": "+1"
+    },
+    "description": {
+      "description": "<p>Projétil</p><p class=\"MsoNormal\">Tendo uma pedra ou outro pequeno objeto esférico em mão, o personagem manipula sua essência para criar força escura precisa, forte e momentânea, suficiente para disparar o objeto em mãos em altíssima velocidade deixando um rastro escuro. Os efeitos da força escura sobre o disparo permitem trajetórias curvas e difíceis de prever.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance (disparo):</span> 12/40m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (disparo):</span> 14+COG|ESP.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (imbuir):</span> +2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> MOD+1. Indireto</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Lançar objeto </em>e Cronociência N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771519061895,
+    "modifiedTime": 1771519078537,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "PFGFAkFkccUI9HLp",
+  "sort": 1400000,
+  "_key": "!items!PFGFAkFkccUI9HLp"
+}

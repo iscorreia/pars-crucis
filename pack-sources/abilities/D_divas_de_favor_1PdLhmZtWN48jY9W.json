@@ -2,7 +2,7 @@
   "type": "Item",
   "folder": null,
   "name": "Dádivas de favor",
-  "color": "#747263",
+  "color": "#a1a989",
   "sorting": "a",
   "_id": "1PdLhmZtWN48jY9W",
   "description": "",
@@ -16,7 +16,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771206068432,
-    "modifiedTime": 1771206920137,
+    "modifiedTime": 1771433811851,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!folders!1PdLhmZtWN48jY9W"

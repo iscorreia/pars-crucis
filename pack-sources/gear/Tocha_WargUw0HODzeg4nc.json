@@ -10,7 +10,52 @@
       "subgroup": "",
       "quality": "common"
     },
-    "actions": {},
+    "actions": {
+      "dmjVJSbDa7plyhZq": {
+        "img": "icon%20library/sundries/lights/goblin%20(16).png",
+        "name": "Golpear",
+        "type": "attack",
+        "_id": "dmjVJSbDa7plyhZq",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 6,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgType": "ele",
+          "dmgSubtype": "Ígneo"
+        },
+        "skills": {
+          "briga": 0,
+          "esgri": 0,
+          "malha": 0
+        }
+      },
+      "H4xCfg3XiI9RLJ1O": {
+        "img": "icon%20library/sundries/lights/goblin%20(16).png",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "H4xCfg3XiI9RLJ1O",
+        "damaging": true,
+        "range": "5/10m",
+        "damage": {
+          "dmgBase": 6,
+          "dmgType": "ele",
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgSubtype": "Ígneo"
+        },
+        "skills": {
+          "briga": 0,
+          "esgri": 0,
+          "malha": 0
+        }
+      }
+    },
     "cost": {
       "price": 20,
       "currency": "copper"
@@ -46,10 +91,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361177842,
-    "modifiedTime": 1771361177842,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771363315633,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "WargUw0HODzeg4nc",
-  "sort": 0,
+  "sort": 500000,
   "_key": "!items!WargUw0HODzeg4nc"
 }

@@ -10,7 +10,24 @@
       "subgroup": "",
       "quality": "common"
     },
-    "actions": {},
+    "actions": {
+      "jKzWBGHX4W11HNmJ": {
+        "img": "icons/tools/fishing/net-gold.webp",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "jKzWBGHX4W11HNmJ",
+        "damaging": false,
+        "range": "5/10m",
+        "damage": {
+          "dmgBase": 3
+        },
+        "subtype": "throw",
+        "effect": "prende animais e personagens, para se soltar é necessário ter uma faca ou instrumento cortante e demora 3 rodadas, ou vencer num teste de FIS com dificuldade 24. Quando arremessada em combate deixa o personagem Vulnerável até que se solte, nesse caso é possível se soltar também com um teste de Reflexo com dificuldade 12.",
+        "skills": {
+          "sobre": 0
+        }
+      }
+    },
     "cost": {
       "price": 1,
       "currency": "silver"
@@ -27,7 +44,7 @@
     },
     "keywords": {},
     "description": {
-      "description": "<p>Rede ideal para utilizar na pesca e na confecção de armadilhas. Também pode ser usada em combate, arremessando para prender o adversário ou criatura por um breve período</p><p>Uso: Com a perícia Sobrevivência tem Arremesso com alcance de 5/10m para pescar ou prender uma criatura, e pode fazer armadilhas</p><p>Efeitos: Prende animais e personagens, para se soltar é necessário ter uma faca ou instrumento cortante e demora 3 rodadas, ou vencer num teste de FIS com dificuldade 24. Quando arremessada em combate deixa o personagem Vulnerável até que se solte, nesse caso é possível se soltar também com um teste de Reflexo com dificuldade 12</p><p>Preço: 1 prata por m² de rede</p><p>Ofício: Artesão N3 ou Sobrevivência N4</p><p>Tempo para fabricar: 6 horas por m² de rede</p><p>Materiais: 3 Tecido por m² de rede.</p>",
+      "description": "<p>Rede ideal para utilizar na pesca e na confecção de armadilhas. Também pode ser usada em combate, arremessando para prender o adversário ou criatura por um breve período</p><p>Uso: Com a perícia Sobrevivência tem Arremesso com alcance de 5/10m para pescar ou prender uma criatura, e pode fazer armadilhas</p><p>Efeitos: Prende animais e personagens, para se soltar é necessário ter uma faca ou instrumento cortante e demora 3 rodadas, ou vencer num teste de FIS com dificuldade 24. Quando arremessada em combate deixa o personagem Vulnerável até que se solte, nesse caso é possível se soltar também com um teste de Reflexo com dificuldade 12.</p><p>Preço: 1 prata por m² de rede</p><p>Ofício: Artesão N3 ou Sobrevivência N4</p><p>Tempo para fabricar: 6 horas por m² de rede</p><p>Materiais: 3 Tecido por m² de rede.</p>",
       "summary": "",
       "notes": ""
     }
@@ -46,10 +63,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361176386,
-    "modifiedTime": 1771361176386,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771363396227,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "unDAKkjB4YfsJoDf",
-  "sort": 0,
+  "sort": 1100000,
   "_key": "!items!unDAKkjB4YfsJoDf"
 }

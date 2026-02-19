@@ -1,0 +1,85 @@
+{
+  "folder": "5kroOQsZ3TjDSiMm",
+  "name": "Esfera negra",
+  "type": "ability",
+  "img": "icon%20library/powers/illusionist%20skills/illusion%20(22).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "gravitational"
+    },
+    "actions": {
+      "VwAg911rzHKkdVvy": {
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(22).png",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "VwAg911rzHKkdVvy",
+        "damaging": true,
+        "range": "10/30m",
+        "damage": {
+          "dmgBase": 15,
+          "dmgAttributes": [
+            "cog",
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "anterior ao Dano causa [5] de dano Destrutivo.",
+        "area": "",
+        "effort": "10",
+        "limit": "",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "crono": 0
+        },
+        "subtype": "throw"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 8,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "throw": null
+    },
+    "description": {
+      "description": "<p>Arremesso, Esotérica</p><p class=\"MsoNormal\" style=\"margin-bottom:0cm\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">Esmaga o ar criando uma pequena esfera de energia negra de forte campo gravitacional e a arremessa.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10/30m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">15+COG|ESP×2.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"> anterior ao Dano causa [5] de dano Destrutivo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Golpe gravitacional </em>e Cronociência N8.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771519066142,
+    "modifiedTime": 1771519078537,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "HSMOrw3n1m1mkWmK",
+  "sort": 700000,
+  "_key": "!items!HSMOrw3n1m1mkWmK"
+}

@@ -1,0 +1,85 @@
+{
+  "folder": "grMiZDEC7Pu1unWa",
+  "name": "Cometa",
+  "type": "ability",
+  "img": "icon%20library/powers/outworld%20skills/monstruous%20(12).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "sidereal"
+    },
+    "actions": {
+      "gnpgOustKCt8pfBQ": {
+        "img": "icon%20library/powers/outworld%20skills/monstruous%20(12).png",
+        "name": "Área de efeito",
+        "type": "attack",
+        "_id": "gnpgOustKCt8pfBQ",
+        "damaging": true,
+        "range": "30/120m",
+        "damage": {
+          "dmgBase": 60,
+          "dmgAttributes": [
+            "cog",
+            "esp"
+          ],
+          "dmgAttMultiplier": 3,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "metade do dano em um raio de 6m.",
+        "area": "",
+        "effort": "18",
+        "limit": "",
+        "prepTime": "7AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "crono": 0
+        },
+        "subtype": "aoe"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 9,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "aoe": "",
+      "impact": "4"
+    },
+    "description": {
+      "description": "<p>Área</p><p class=\"MsoNormal\">Fazendo uma sequência de movimentos corporais como uma dança o personagem abre uma fenda a cerca de 30m do chão pela qual vem um fragmento de cometa que se choca violentamente contra o alvo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 18.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 7 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 30/120m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 60+COG|ESP<span style=\"mso-bidi-font-family:Arial\">×</span>3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> metade do dano em um raio de 6m. Impacto (4).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Meteorito</em> e Cronociência N9.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771522485319,
+    "modifiedTime": 1771522509610,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "fZaT7wHzrx8opaD2",
+  "sort": 900000,
+  "_key": "!items!fZaT7wHzrx8opaD2"
+}

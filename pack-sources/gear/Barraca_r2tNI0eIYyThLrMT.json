@@ -2,7 +2,7 @@
   "folder": "B7hjQHZ1Qd71IXpg",
   "name": "Barraca",
   "type": "gear",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/survival/bedroll-worn-brown.webp",
   "system": {
     "info": {
       "subtype": "item",
@@ -12,13 +12,13 @@
     },
     "actions": {
       "uTiPXuIPiPRV6p9g": {
-        "img": "icons/svg/item-bag.svg",
-        "name": "Teste",
+        "img": "icons/sundries/survival/bedroll-worn-brown.webp",
+        "name": "Armar",
         "type": "test",
         "_id": "uTiPXuIPiPRV6p9g",
         "skill": "sobre",
         "prepTime": "1 hora",
-        "range": "0",
+        "range": "",
         "damaging": false,
         "damage": {
           "dmgBase": 0,
@@ -30,7 +30,7 @@
           "dmgSubtype": ""
         },
         "usesAmmo": false,
-        "effect": "",
+        "effect": "Obter um Ⓐ ou MS 7 garante uma noite sem perturbações noturnas de insetos, pequenos animais, vento e poeira.",
         "area": "",
         "effort": "",
         "limit": "",
@@ -75,10 +75,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361099619,
-    "modifiedTime": 1771361166151,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771363001906,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "r2tNI0eIYyThLrMT",
-  "sort": 1600000,
+  "sort": 2900000,
   "_key": "!items!r2tNI0eIYyThLrMT"
 }

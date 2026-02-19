@@ -1,0 +1,81 @@
+{
+  "folder": "7yedWurpXJGRIW0D",
+  "name": "Decair",
+  "type": "ability",
+  "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "crono"
+    },
+    "actions": {
+      "AVhUH8Z6k2D2xW6J": {
+        "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "AVhUH8Z6k2D2xW6J",
+        "damaging": true,
+        "range": "15/30m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgType": "ex",
+          "scalable": false,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "dmgSubtype": ""
+        },
+        "subtype": "affliction",
+        "skills": {
+          "crono": 0
+        },
+        "effort": "5",
+        "prepTime": "2AP",
+        "effect": "enquanto estiver aflito, ao fim de cada rodada o alvo recebe [1] de dano Existencial e sua vestimenta recebe [1] de dano Destrutivo (não mitigável). Ao fim da primeira rodada todo o seu equipamento têm Frágil (7) a não ser que seja de alta qualidade ou superior.",
+        "duration": "1 minuto",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "affliction": null
+    },
+    "description": {
+      "description": "<p>Aflição</p><p class=\"MsoNormal\">Fazendo uma série de movimentos aflige um personagem alvo com uma aceleração intensa dos efeitos do tempo sobre o seu corpo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 2 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 15/30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> [3] Existencial.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> enquanto estiver aflito, ao fim de cada rodada o alvo recebe [1] de dano Existencial e sua vestimenta recebe [1] de dano Destrutivo (não mitigável). Ao fim da primeira rodada todo o seu equipamento têm Frágil (7) a não ser que seja de alta qualidade ou superior.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Acelerar variáveis </em>e Cronociência N7.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771441570092,
+    "modifiedTime": 1771441580147,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "yB1KhvuFS04bnnsy",
+  "sort": 1000000,
+  "_key": "!items!yB1KhvuFS04bnnsy"
+}

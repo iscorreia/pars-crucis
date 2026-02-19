@@ -1,0 +1,85 @@
+{
+  "folder": "5kroOQsZ3TjDSiMm",
+  "name": "Esmagar",
+  "type": "ability",
+  "img": "icon%20library/powers/dark%20skills/warlock%20(13).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "gravitational"
+    },
+    "actions": {
+      "5gj8GLdHebFWD5bO": {
+        "img": "icon%20library/powers/dark%20skills/warlock%20(13).png",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "5gj8GLdHebFWD5bO",
+        "damaging": true,
+        "range": "15/30m",
+        "damage": {
+          "dmgBase": 14,
+          "dmgAttributes": [
+            "cog",
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "subtype": "affliction",
+        "skills": {
+          "crono": 0
+        },
+        "effort": "6",
+        "prepTime": "2AP",
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "affliction": null,
+      "blunt": null
+    },
+    "description": {
+      "description": "<p>Área</p><p class=\"MsoNormal\">Fazendo movimentos espiralados com as mãos cria em um ponto uma espiral de força escura que puxa a tudo na área.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 11.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 21m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span>raio de [3+COG|ESP/2] metros.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Dano de colisão é causado apenas uma vez pelo puxão, sendo na instância onde seria causado o maior dano.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Puxão gravitacional </em>e Cronociência N5.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771519067718,
+    "modifiedTime": 1771519078537,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "qCFAYxNvgkqMwjHZ",
+  "sort": 900000,
+  "_key": "!items!qCFAYxNvgkqMwjHZ"
+}

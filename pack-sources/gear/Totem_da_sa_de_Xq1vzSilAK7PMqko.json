@@ -22,7 +22,7 @@
         "duration": "1 minuto",
         "range": "",
         "prepTime": "1 ação",
-        "effect": "O personagem e aliados em um raio de 7 metros têm AR+2, e MOD+2 para Saúde.",
+        "effect": "o personagem e aliados têm AR+2, e MOD+2 para Saúde. Quando é usado, personagens podem refazer testes de veneno, doenças, frio e calor e congelado",
         "damage": {
           "dmgBase": 0,
           "dmgAttributes": [],
@@ -54,7 +54,7 @@
     },
     "keywords": {},
     "description": {
-      "description": "<p>Peça de madeira esculpida com entalhos que significam boa saúde, cuidado e fertilidade, então imbuída com um pouco de essência de uma matriz. Pode ser quebrado para liberar o poder contido</p><p>Esforço: 2</p><p>Uso: utiliza 1 ação para concentrar sua essência, partindo o totem e liberando o poder imbuído nele</p><p>Efeitos: por 1 minuto, o personagem e aliados em um raio de 7 metros têm AR+2, e MOD+2 para Saúde. Materiais raros melhoram o efeito para AR+3 e MOD+3 para Saúde. Quando é usado, personagens podem refazer testes de veneno, doenças, frio e calor e congelado</p><p>Requisitos: ESP 2, ou perícia sobrenatural N2</p><p>Preço: 3 pratas</p><p>Ofício: Artesão N4</p><p>Tempo para fabricar: 6 horas</p><p>Materiais: 3 de Essência e 1 de Madeira.</p>",
+      "description": "<p>Peça de madeira esculpida com entalhos que significam boa saúde, cuidado e fertilidade, então imbuída com um pouco de essência de uma matriz. Pode ser quebrado para liberar o poder contido</p><p>Esforço: 2</p><p>Uso: utiliza 1 ação para concentrar sua essência, partindo o totem e liberando o poder imbuído nele</p><p>Efeitos: por 1 minuto, o personagem e aliados em um raio de 7 metros têm AR+2, e MOD+2 para Saúde. Materiais raros melhoram o efeito para AR+3 e MOD+3 para Saúde. Quando é usado, personagens podem refazer testes de veneno, doenças, frio e calor e congelado.</p><p>Requisitos: ESP 2, ou perícia sobrenatural N2</p><p>Preço: 3 pratas</p><p>Ofício: Artesão N4</p><p>Tempo para fabricar: 6 horas</p><p>Materiais: 3 de Essência e 1 de Madeira.</p>",
       "summary": "",
       "notes": ""
     }
@@ -73,10 +73,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361178867,
-    "modifiedTime": 1771361178867,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771363130638,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "Xq1vzSilAK7PMqko",
-  "sort": 0,
+  "sort": 600000,
   "_key": "!items!Xq1vzSilAK7PMqko"
 }

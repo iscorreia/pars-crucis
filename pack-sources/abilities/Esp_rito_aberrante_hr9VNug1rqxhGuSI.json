@@ -1,0 +1,113 @@
+{
+  "folder": "JKkE5OuyJl3hCR0W",
+  "name": "Espírito aberrante",
+  "type": "ability",
+  "img": "icons/creatures/magical/spirit-fear-energy-pink.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "phase"
+    },
+    "actions": {
+      "8eS4SlvtDfNHZLOn": {
+        "img": "icons/creatures/magical/spirit-fear-energy-pink.webp",
+        "name": "Invocar",
+        "type": "attack",
+        "_id": "8eS4SlvtDfNHZLOn",
+        "damaging": true,
+        "range": "15m",
+        "damage": {
+          "dmgBase": 20,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "após o ataque berra tendo Amedrontar (16) e forçando todos os personagens no raio de 10m a fazer um teste de Medo. Se o ataque inicial teve sucesso, continue com o ataque Sequência.",
+        "area": "",
+        "effort": "15",
+        "limit": "1 vez por batalha.",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "crono": 0
+        },
+        "subtype": "melee"
+      },
+      "t7n5zcLq7pIvqWhX": {
+        "img": "icons/creatures/magical/spirit-fear-energy-pink.webp",
+        "name": "Sequência",
+        "type": "use",
+        "_id": "t7n5zcLq7pIvqWhX",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 12,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": false,
+          "dmgType": "ex",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "quantia equivalente em Dano Essencial.",
+        "range": "10m.",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 4,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 8,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "melee": null,
+      "summon": null
+    },
+    "description": {
+      "description": "<p>Corpo a corpo, Esotérica, Invocação</p><p class=\"MsoNormal\">Fazendo uma sequência de movimentos e entoando palavras estranhas o personagem invoca o espírito de uma aberração de um plano distante, que se materializa enquanto avança em direção a um personagem alvo para atacá-lo com seus membros distorcidos. Então berrando pavorosamente para aterrorizar aqueles ao entorno.</p><p class=\"MsoNormal\"><em>“E disse o professor cronocientista a seus aprendizes – ‘Alguns planos são lar de terríveis aberrações, mas até mesmo uma aberração pode ser invocada para servir um propósito.’ antes de trazer a este plano uma criatura esguia, sem olhos, de larga boca repleta de dentes curtos e pontiagudos, dois pares de braços e em cada mão seis dedos com longas garras curvas, três longos tentáculos em suas costas, e pernas como um homem. Porém antes mesmo que aprendizes ou professor pudessem entender, a aberração berrava e dilacerava com suas garras os aprendizes, e em seus últimos momentos agarrando com seus tentáculos o professor aterrorizado, lhe morde o rosto e retorna ao seu plano de origem.”</em></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 vez por batalha.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 15.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 3 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 21m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 20+COG.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> após o ataque berra tendo Amedrontar (16) e forçando todos os personagens no raio de 10m a fazer um teste de Medo. Se o ataque inicial teve sucesso, continue com o ataque Sequência.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Espírito da fera</em>, <em>Espírito soldado</em> ou <em>Espíritos da revoada</em>, e Cronociência N8.</p><p class=\"SubNome1\">Sequência</p><p class=\"SubNome2\">Corpo a corpo</p><p class=\"MsoNormal\">Adquirindo forças para se sustentar por mais alguns instantes, a criatura aberrante realiza um segundo ataque ao mesmo alvo ou outro que esteja próximo, deslocando-se em velocidade absurda.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 10m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> [10+ESP] Existencial.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> é garantido. Causa quantia equivalente em Dano Essencial.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771470926437,
+    "modifiedTime": 1771470940885,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "hr9VNug1rqxhGuSI",
+  "sort": 1500000,
+  "_key": "!items!hr9VNug1rqxhGuSI"
+}

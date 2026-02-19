@@ -1,0 +1,81 @@
+{
+  "folder": "7yedWurpXJGRIW0D",
+  "name": "Resquício atemporal",
+  "type": "ability",
+  "img": "icons/magic/time/hourglass-tilted-glowing-gold.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "crono"
+    },
+    "actions": {
+      "o1d6iIrDXdtbcybG": {
+        "img": "icons/magic/time/hourglass-tilted-glowing-gold.webp",
+        "name": "Sigilar",
+        "type": "test",
+        "_id": "o1d6iIrDXdtbcybG",
+        "skill": "atlet",
+        "difficulty": 12,
+        "skills": {
+          "crono": 0
+        },
+        "effort": "7",
+        "prepTime": "1 minuto",
+        "effect": "verifica eventos passados. A dificuldade desse teste pode aumentar e as informações na visão assim como a sua qualidade dependem da MS. Um resquício de visão atemporal só pode ser visto se alguma peça central ao evento ainda permanece no local.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {}
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "sigil": null
+    },
+    "description": {
+      "description": "<p>Sigilo</p><p class=\"MsoNormal\">Fazendo um sigilo no chão, então entoando algumas palavras o personagem traz a sua visão quaisquer eventos passados no e que de alguma maneira se conectem aos objetivos e vontades que teve em mente quando fez o sigilo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 7.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> a dificuldade desse teste pode aumentar e as informações na visão assim como a sua qualidade dependem da MS. Um resquício de visão atemporal só pode ser visto se alguma peça central ao evento ainda permanece no local.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span> 12.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><em>Por exemplo: se uma mansão foi completamente demolida, não será possível ver eventos passados de um de seus quartos, já se um quarto mantiver sua fundação e ao menos um objeto de importância será possível rever os eventos relevantes que aconteceram nesse quarto.</em></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Datar e Cronociência N4.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771441575491,
+    "modifiedTime": 1771441580147,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "MXAqywUBrrwi9EbL",
+  "sort": 200000,
+  "_key": "!items!MXAqywUBrrwi9EbL"
+}

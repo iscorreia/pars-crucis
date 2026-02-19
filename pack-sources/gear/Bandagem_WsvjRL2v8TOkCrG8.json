@@ -10,7 +10,15 @@
       "subgroup": "",
       "quality": "common"
     },
-    "actions": {},
+    "actions": {
+      "AMXyeCVAi9p4LrMd": {
+        "img": "icon%20library/profession/tannery%20skills/tanner%20(48).png",
+        "name": "Curar",
+        "type": "use",
+        "_id": "AMXyeCVAi9p4LrMd",
+        "effect": "cura o alvo em [Decimal] PV, mas é limitado a usar 1 bandagem ou bálsamo por dia."
+      }
+    },
     "cost": {
       "price": 10,
       "currency": "copper"
@@ -46,10 +54,10 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361097874,
-    "modifiedTime": 1771361166151,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1771363001906,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "WsvjRL2v8TOkCrG8",
-  "sort": 1500000,
+  "sort": 2800000,
   "_key": "!items!WsvjRL2v8TOkCrG8"
 }

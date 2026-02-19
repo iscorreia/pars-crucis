@@ -1,0 +1,85 @@
+{
+  "folder": "JKkE5OuyJl3hCR0W",
+  "name": "Distúrbio de fase",
+  "type": "ability",
+  "img": "icon%20library/powers/outworld%20skills/monstruous%20(6).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "cronocientific",
+      "category": "phase"
+    },
+    "actions": {
+      "4xn6GhnxvGUg5QWM": {
+        "img": "icon%20library/powers/outworld%20skills/monstruous%20(6).png",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "4xn6GhnxvGUg5QWM",
+        "damaging": true,
+        "range": "15/30m",
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttMultiplier": 0.5,
+          "dmgType": "ex",
+          "dmgAttributes": [
+            "cog",
+            "esp"
+          ],
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgSubtype": ""
+        },
+        "subtype": "affliction",
+        "skills": {
+          "crono": 0
+        },
+        "effect": "a próxima habilidade do alvo tem Esforço+7. Se for um Poder tem MOD-2.",
+        "effort": "7",
+        "prepTime": "1AP",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 4,
+      "preRequisites": "",
+      "coreSkill": "crono",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "affliction": null
+    },
+    "description": {
+      "description": "<p>Aflição, Esotérica</p><p class=\"MsoNormal\">Entoando firmemente algumas palavras e movendo seu braço para a direção do personagem alvo projeta a sua essência para gerar instabilidade no espaço ao entorno dele.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 7.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 15/30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 8+COG|ESP/2 Existencial.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> a próxima habilidade do alvo tem Esforço+7. Se for um Poder tem MOD-2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto ou ao realizar 1 poder.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Cronociência N3.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771470925132,
+    "modifiedTime": 1771470940885,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "wVTXcq1Bth0yoWKE",
+  "sort": 1600000,
+  "_key": "!items!wVTXcq1Bth0yoWKE"
+}
