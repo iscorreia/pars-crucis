@@ -1,0 +1,87 @@
+{
+  "folder": "fNCA17UJb2o1x6j8",
+  "name": "Cria flamejante",
+  "type": "ability",
+  "img": "icon%20library/powers/pyromancer%20skills/fire%20(48).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "fire"
+    },
+    "actions": {
+      "cBJH0oaQPbiBc84j": {
+        "img": "icon%20library/powers/pyromancer%20skills/fire%20(48).png",
+        "name": "Invocar",
+        "type": "attack",
+        "_id": "cBJH0oaQPbiBc84j",
+        "damaging": true,
+        "range": "trajeto de 10m",
+        "damage": {
+          "dmgBase": 32,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Ígneo"
+        },
+        "usesAmmo": false,
+        "effect": "causa o Dano a todos pelo trajeto.",
+        "area": "",
+        "effort": "15",
+        "limit": "1 vez por batalha",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "eleme": 0,
+          "druid": 0
+        },
+        "subtype": "melee"
+      }
+    },
+    "details": {
+      "experience": 4,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "melee": "",
+      "esoteric": "",
+      "summon": "",
+      "lethality": "/2"
+    },
+    "description": {
+      "description": "<p>Corpo a corpo, Esotérica, Invocação</p><p class=\"MsoNormal\">Com um grito furioso junto de movimentos corporais invoca um espírito do fogo expresso em forma de cavalo, alguns cães, bando de ratos, grupo de andorinhas (se voador) ou cobra (na água) que se materializa durante o trajeto incinerando tudo que tocar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\">1 vez por batalha.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 15.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 3 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> trajeto de 10m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 32+ESP<span style=\"mso-bidi-font-family:Arial\">×2 Elemental: Ígneo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-family:Arial\"> causa o Dano a todos pelo trajeto. Fatalidade/2.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Inflamar</em> e Elementalismo N7.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.6t5490ZPGjx96qDI",
+    "duplicateSource": "Item.e8e4896lYSYuB6lu",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771984232993,
+    "modifiedTime": 1771984232993,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "u0wIMyA5eqTgghSd",
+  "_key": "!items!u0wIMyA5eqTgghSd"
+}

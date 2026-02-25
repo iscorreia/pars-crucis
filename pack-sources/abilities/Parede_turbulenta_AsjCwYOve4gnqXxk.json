@@ -1,0 +1,103 @@
+{
+  "folder": "mcEAk8e6MWE77riw",
+  "name": "Parede turbulenta",
+  "type": "ability",
+  "img": "icon%20library/powers/aeromancer%20skills/aero%20(6).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "wind"
+    },
+    "actions": {
+      "OE1wjFWIg6sPWtkd": {
+        "img": "icon%20library/powers/aeromancer%20skills/aero%20(6).png",
+        "name": "Parede",
+        "type": "use",
+        "_id": "OE1wjFWIg6sPWtkd",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "devia projéteis com DEF 3+Elementalismo. Empurra em 1m criaturas de tamanho pequeno ou menor que se aproximarem. no início de cada rodada, como Ação bônus, pode prolongar o efeito em 1 rodada pelo esforço de manutenção.",
+        "range": "10m",
+        "area": "",
+        "effort": "5; 2 para manter",
+        "limit": "",
+        "prepTime": "",
+        "duration": "1 rodada",
+        "keywords": {},
+        "usage": ""
+      },
+      "jIkNkIzMjxIu5alx": {
+        "img": "icon%20library/powers/aeromancer%20skills/aero%20(6).png",
+        "name": "Turbilhão",
+        "type": "use",
+        "_id": "jIkNkIzMjxIu5alx",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "aplica MOD-2 as ações de personagem que entrem no raio de 1m. no início de cada rodada, como Ação bônus, pode prolongar o efeito em 1 rodada pelo esforço de manutenção.",
+        "range": "",
+        "area": "",
+        "effort": "5; 2 para manter",
+        "limit": "",
+        "prepTime": "",
+        "duration": "1 rodada",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "reaction": null
+    },
+    "description": {
+      "description": "<p>(Reação)</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com uma série de movimentos o personagem cria uma parede de vento turbulento, ou faz um turbilhão ao próprio derredor.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5; 2 para manter.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (parede):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> devia projéteis com DEF 3+Elementalismo. Empurra em 1m criaturas de tamanho pequeno ou menor que se aproximarem.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (turbilhão):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> aplica MOD-2 as ações de personagem que entrem no raio de 1m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> no início de cada rodada, como Ação bônus, pode prolongar o efeito em 1 rodada pelo esforço de manutenção.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 rodada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Rajada</em> e Elementalismo N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.EwhoIbt64BwLMq0k",
+    "duplicateSource": "Item.iYY2LpmMSn8mvlZO",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772032667793,
+    "modifiedTime": 1772032667793,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "AsjCwYOve4gnqXxk",
+  "_key": "!items!AsjCwYOve4gnqXxk"
+}

@@ -2,7 +2,7 @@
   "type": "Item",
   "folder": null,
   "name": "Força da terra",
-  "color": "#985d0b",
+  "color": "#c57d11",
   "sorting": "a",
   "_id": "iWWRvj2lod4fJ6a7",
   "description": "",
@@ -16,7 +16,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771120758674,
-    "modifiedTime": 1771120758717,
+    "modifiedTime": 1771959368794,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!folders!iWWRvj2lod4fJ6a7"

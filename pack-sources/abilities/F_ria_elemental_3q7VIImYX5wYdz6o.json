@@ -1,0 +1,221 @@
+{
+  "folder": "mcEAk8e6MWE77riw",
+  "name": "Fúria elemental",
+  "type": "ability",
+  "img": "icon%20library/powers/aeromancer%20skills/aero%20(15).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "wind"
+    },
+    "actions": {
+      "NdxUqvHshnvxErYB": {
+        "img": "icon%20library/powers/aeromancer%20skills/aero%20(15).png",
+        "name": "Vento",
+        "type": "attack",
+        "_id": "NdxUqvHshnvxErYB",
+        "damaging": true,
+        "range": "10m",
+        "damage": {
+          "dmgBase": 20,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "os atingidos têm MOD-2 nos ataques até o fim da rodada.",
+        "area": "",
+        "effort": "6",
+        "limit": "",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {
+          "modifier": "+1"
+        },
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "jet"
+      },
+      "046e6PzhsS88fz8X": {
+        "img": "icon%20library/powers/cryomancer%20skills/cryo%20(45).png",
+        "name": "Água",
+        "type": "attack",
+        "_id": "046e6PzhsS88fz8X",
+        "damaging": true,
+        "range": "7m",
+        "damage": {
+          "dmgBase": 22,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Glacial"
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "effort": "6",
+        "limit": "",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {
+          "freezing": "0"
+        },
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "jet"
+      },
+      "Gq0ScqSCpSt9qDa2": {
+        "img": "icon%20library/powers/pyromancer%20skills/flame%20(1).png",
+        "name": "Fogo",
+        "type": "attack",
+        "_id": "Gq0ScqSCpSt9qDa2",
+        "damaging": true,
+        "range": "7m",
+        "damage": {
+          "dmgBase": 33,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Ígneo"
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "effort": "6",
+        "limit": "",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {
+          "lethality": "/2"
+        },
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "jet"
+      },
+      "giDrDWEPPxAInWrJ": {
+        "img": "icon%20library/powers/lightning%20skills/lightning%20(36).png",
+        "name": "Raio",
+        "type": "attack",
+        "_id": "giDrDWEPPxAInWrJ",
+        "damaging": true,
+        "range": "7m",
+        "damage": {
+          "dmgBase": 20,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Voltaico"
+        },
+        "usesAmmo": false,
+        "effect": "Ignora AR",
+        "area": "",
+        "effort": "6",
+        "limit": "",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {
+          "lethality": "+1"
+        },
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "jet"
+      },
+      "KA4BztDTywrcBud9": {
+        "img": "icon%20library/powers/geomancer%20skills/earth%20(48).png",
+        "name": "Terra",
+        "type": "attack",
+        "_id": "KA4BztDTywrcBud9",
+        "damaging": true,
+        "range": "7m",
+        "damage": {
+          "dmgBase": 20,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "anterior ao Dano, causa [2] de dano Destrutivo",
+        "area": "",
+        "effort": "6",
+        "limit": "",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {
+          "blunt": null
+        },
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "jet"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "jet": null
+    },
+    "description": {
+      "description": "<p>Jato</p><p class=\"MsoNormal\">Com uma breve dança adaptativa o personagem canaliza a força elemental do vento e a une com outras forças elementais para projetar uma rajada furiosa de forças elementais.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Condição:</span> ter realizado ao menos um poder elemental na batalha.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> a fúria elemental expressa uma das forças elementais do qual o personagem tenha realizado poderes na batalha.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Fúria da água:</span> projeta um turbilhão de ar gélido. Alcance 7m, Dano 22+ESP/2 Elemental: Glacial, Congelante (0).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Fúria do fogo:</span> projeta um turbilhão flamejante. Alcance 7m, Dano 33+ESP Elemental: Ígneo, Fatalidade/2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Fúria do raio:</span> projeta um turbilhão com raios e trovejos. Alcance 7m, Dano 21+ESP Elemental: Voltaico, Ignora AR, Fatalidade (+1).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Fúria da terra:</span> projeta um turbilhão repleto de areia, pedras e/ou escombros. Alcance 7m, causa [2] de dano Destrutivo, Dano 20+ESP, Embotada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Fúria do vento:</span> projeta um turbilhão de vento cortante de longo alcance e que atrapalha aos atingidos. Alcance 10m, Dano 20+ESP, MOD+1, os atingidos têm MOD-2 nos ataques até o fim da rodada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 6.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Rajada</em>, conhecer 1 poder de uma força elemental que não seja vento e Elementalismo N7.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.EwhoIbt64BwLMq0k",
+    "duplicateSource": "Item.O2ilWroHgqKg9gff",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772032667793,
+    "modifiedTime": 1772032667793,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "3q7VIImYX5wYdz6o",
+  "_key": "!items!3q7VIImYX5wYdz6o"
+}

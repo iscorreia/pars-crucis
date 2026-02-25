@@ -1,0 +1,84 @@
+{
+  "folder": "7VPAF87Ogc48PLDo",
+  "name": "Estrondo",
+  "type": "ability",
+  "img": "icon%20library/powers/lightning%20skills/lightning%20(50).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "lightning"
+    },
+    "actions": {
+      "8mJCSjROBMAyV9Ua": {
+        "img": "icon%20library/powers/lightning%20skills/lightning%20(50).png",
+        "name": "Golpear",
+        "type": "tech",
+        "_id": "8mJCSjROBMAyV9Ua",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "Quando o ataque conecta, causa [9+ESP/2] de dano Elemental: Voltaico que ignora AR base ao alvo e todos na área atrás a partir dele.",
+        "range": "",
+        "area": "3x3m",
+        "effort": "5",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "inherit": 0,
+          "eleme": -1
+        },
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "melee": null
+    },
+    "description": {
+      "description": "<p>Sigilo</p><p class=\"MsoNormal\">Com a mão, o personagem faz os sinais do raio e da armadilha no chão ou em um objeto, o imbuindo com essência para que cause uma descarga elétrica de baixa intensidade, ou um trovão violento.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (curto):</span> [1] Elemental: Voltaico.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (curto):</span> Abala o alvo. Pode fazer um teste de FIS ou Resistência (dif14+Elementalismo) para prevenir Abalo e ficar <em>vulnerável</em>.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área (trovão):</span> raio de 3m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (trovão):</span> 20+ESP Elemental: Voltaico.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (trovão):</span> ignora AR. Os atingidos podem fazer um teste de FIS ou Resistência (dif14+Elementalismo) para reduzir o dano à metade. O barulho é estrondoso e audível de muito longe.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> ativa quando um personagem entrar no raio de 1m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Raio </em>e Elementalismo N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.Db7Zb7Ee0qKBENEC",
+    "duplicateSource": "Item.AunH6fRy583oztF3",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771990059892,
+    "modifiedTime": 1771990059892,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "7cnEW2uEXRaOoov8",
+  "_key": "!items!7cnEW2uEXRaOoov8"
+}

@@ -1,0 +1,107 @@
+{
+  "folder": "mcEAk8e6MWE77riw",
+  "name": "Pilar de vento",
+  "type": "ability",
+  "img": "icon%20library/powers/aeromancer%20skills/aero%20(41).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "wind"
+    },
+    "actions": {
+      "yEwzYhmgLWApLbgQ": {
+        "img": "icon%20library/powers/aeromancer%20skills/aero%20(41).png",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "yEwzYhmgLWApLbgQ",
+        "damaging": false,
+        "range": "7/14m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "o alvo é lançado para cima até [3+ESP/2] metros. o alvo perde a sua ação se for atingido antes de ter tido sua ação na rodada. Ao fim da rodada despenca, recebendo Dano de queda. Teste de Agilidade ou Atletismo (dif12+Elementalismo) para reduzir o dano pela metade.",
+        "area": "",
+        "effort": "7",
+        "limit": "",
+        "prepTime": "2AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "affliction"
+      },
+      "m3BFr6MOUjxOfAt8": {
+        "img": "icon%20library/powers/aeromancer%20skills/aero%20(30).png",
+        "name": "Auxiliar",
+        "type": "use",
+        "_id": "m3BFr6MOUjxOfAt8",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "o alvo é lançado para cima até [3+ESP/2] metros. em aliados o dano de queda é reduzido pela metade, deve fazer um teste de Agilidade ou Atletismo (dif12) para manter a sua ação e prevenir todo o dano de queda ao fim da rodada.",
+        "range": "7/14m",
+        "area": "",
+        "effort": "7",
+        "limit": "",
+        "prepTime": "2AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "affliction": null
+    },
+    "description": {
+      "description": "<p>(Aflição)</p><p class=\"MsoNormal\">Com rápida dança de braços e curtas palavras faz surgir no entorno de um personagem alvo um forte vento que o lança para cima.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 7.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 2 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 7/14m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> o alvo é lançado para cima até [3+ESP/2] metros.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (aflição):</span> o alvo perde a sua ação se for atingido antes de ter tido sua ação na rodada. Ao fim da rodada despenca, recebendo Dano de queda. Teste de Agilidade ou Atletismo (dif12+Elementalismo) para reduzir o dano pela metade.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (auxílio):</span> em aliados o dano de queda é reduzido pela metade, deve fazer um teste de Agilidade ou Atletismo (dif12) para manter a sua ação e prevenir todo o dano de queda ao fim da rodada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisito:</span> <em>Aero salto</em> e Elementalismo N6.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.EwhoIbt64BwLMq0k",
+    "duplicateSource": "Item.4sCDScMPyp6Ykqw4",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772032667793,
+    "modifiedTime": 1772032667793,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "vCeZRbWc483zwG8H",
+  "_key": "!items!vCeZRbWc483zwG8H"
+}

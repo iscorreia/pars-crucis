@@ -1,0 +1,86 @@
+{
+  "folder": "fNCA17UJb2o1x6j8",
+  "name": "Pilar de chamas",
+  "type": "ability",
+  "img": "icon%20library/powers/pyromancer%20skills/fire%20(10).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "fire"
+    },
+    "actions": {
+      "8omATYuVJuSFwoJ9": {
+        "img": "icon%20library/powers/pyromancer%20skills/fire%20(10).png",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "8omATYuVJuSFwoJ9",
+        "damaging": true,
+        "range": "7/14m",
+        "damage": {
+          "dmgBase": 21,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Ígneo"
+        },
+        "usesAmmo": false,
+        "effect": "Atinge altura de até ESP metros. Pode ser feito dentro da água.",
+        "area": "",
+        "effort": "8",
+        "limit": "",
+        "prepTime": "2AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "throw"
+      }
+    },
+    "details": {
+      "experience": 4,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": "",
+      "throw": "",
+      "bypass": "",
+      "lethality": "/2"
+    },
+    "description": {
+      "description": "<p>Esotérica, Arremesso</p><p class=\"MsoNormal\">O personagem realiza alguns movimentos manuais enquanto concentra sua essência, então ao levantar os braços faz surgir do solo um pilar de lava, chamas e fumaça.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7/14m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span>21+ESP<span style=\"mso-bidi-font-family:Arial\">×</span>2 Elemental: Ígneo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade/2. Indireto. Atinge altura de até ESP metros. </span>Pode ser feito dentro da água.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Lança chamas </em>e Elementalismo N7.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.6t5490ZPGjx96qDI",
+    "duplicateSource": "Item.1MsK8uUEt08N6alM",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771984232993,
+    "modifiedTime": 1771984232993,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "e8e4896lYSYuB6lu",
+  "_key": "!items!e8e4896lYSYuB6lu"
+}

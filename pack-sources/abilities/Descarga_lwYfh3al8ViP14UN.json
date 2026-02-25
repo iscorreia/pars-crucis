@@ -1,0 +1,84 @@
+{
+  "folder": "7VPAF87Ogc48PLDo",
+  "name": "Descarga",
+  "type": "ability",
+  "img": "icon%20library/powers/lightning%20skills/lightning%20(49).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "lightning"
+    },
+    "actions": {
+      "bvV9M8pMJcjcsxAi": {
+        "img": "icon%20library/powers/lightning%20skills/lightning%20(49).png",
+        "name": "Área de efeito",
+        "type": "attack",
+        "_id": "bvV9M8pMJcjcsxAi",
+        "damaging": true,
+        "range": "visual",
+        "damage": {
+          "dmgBase": 10,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Voltaico"
+        },
+        "usesAmmo": false,
+        "effect": "Ignora AR",
+        "area": "raio de 2m",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "aoe"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "aoe": "",
+      "lethality": "+1"
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">Área</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Realiza uma descarga elétrica a partir de si, de um alvo que tenha sido atingido por munição eletrizada ou objeto eletrizado.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> visual.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 2m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10+ESP Elemental: Voltaico.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade (+1). Ignora AR.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Eletrizar </em>e Elementalismo N5<em>.</em></span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.Db7Zb7Ee0qKBENEC",
+    "duplicateSource": "Item.prJZXDHl5wlHtM70",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771990059892,
+    "modifiedTime": 1771990059892,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "lwYfh3al8ViP14UN",
+  "_key": "!items!lwYfh3al8ViP14UN"
+}

@@ -15,7 +15,7 @@
         "type": "tech",
         "_id": "8VwLSmXIlldmBNRM",
         "damaging": true,
-        "duration": "1atq/1min",
+        "duration": "",
         "effort": "5",
         "damage": {
           "dmgBase": 3,
@@ -55,7 +55,7 @@
           "penetrating": null
         },
         "usesAmmo": true,
-        "duration": "1atq/1min",
+        "duration": "",
         "damage": {
           "dmgBase": 0,
           "dmgAttributes": [],
@@ -128,7 +128,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771120758688,
-    "modifiedTime": 1771120758688,
+    "modifiedTime": 1771968681575,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "ownership": {

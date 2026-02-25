@@ -1,0 +1,116 @@
+{
+  "folder": "fNCA17UJb2o1x6j8",
+  "name": "Labareda",
+  "type": "ability",
+  "img": "icon%20library/powers/pyromancer%20skills/fire%20(7).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "fire"
+    },
+    "actions": {
+      "sVZ8XcNuJoGrflQL": {
+        "img": "icon%20library/powers/pyromancer%20skills/fire%20(7).png",
+        "name": "Coluna",
+        "type": "attack",
+        "_id": "sVZ8XcNuJoGrflQL",
+        "damaging": true,
+        "range": "7m",
+        "damage": {
+          "dmgBase": 12,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Ígneo"
+        },
+        "usesAmmo": false,
+        "effect": "cruzar pelas chamas causa [12+ESP] de dano Elemental: Ígneo. Ao fim da rodada, estar a 1m do lado intenso causa [12+ESP] de dano Elemental: Ígneo. No início de cada rodada, como uma Ação bônus pode decidir por manter a labareda por esforço reduzido.",
+        "area": "1x5m (ou 1xESPm).",
+        "effort": "7, mantém por 2",
+        "limit": "",
+        "prepTime": "",
+        "duration": "2 rodadas",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "aoe"
+      },
+      "Yqn6flyAP6YHEqgb": {
+        "img": "icon%20library/powers/pyromancer%20skills/fire%20(46).png",
+        "name": "Círculo",
+        "type": "attack",
+        "_id": "Yqn6flyAP6YHEqgb",
+        "damaging": true,
+        "range": "7m",
+        "damage": {
+          "dmgBase": 12,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Ígneo"
+        },
+        "usesAmmo": false,
+        "effect": "cruzar pelas chamas causa [12+ESP] de dano Elemental: Ígneo. Ao fim da rodada, estar a 1m do lado intenso causa [12+ESP] de dano Elemental: Ígneo. No início de cada rodada, como uma Ação bônus pode decidir por manter a labareda por esforço reduzido.",
+        "area": "raio de 3m.",
+        "effort": "7, mantém por 2",
+        "limit": "",
+        "prepTime": "",
+        "duration": "2 rodadas",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "melee"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "aoe": "",
+      "lethality": "/2"
+    },
+    "description": {
+      "description": "<p>Área</p><p class=\"MsoNormal\">Com um movimento de erguer braços o personagem levanta a sua frente uma coluna de chamas ou faz um círculo de chamas, queimando os que estiverem no caminho. Aqueles que cruzarem as chamas ou ficarem próximos ao lado mais intenso são queimados.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 7, mantém por 2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 2 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 7m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área (coluna):</span> 1x5m (ou 1xESPm).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área (círculo):</span> raio de 3m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 12+ESP Elemental: Ígneo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Fatalidade/2. cruzar pelas chamas causa [12+ESP] de dano Elemental: Ígneo. Ao fim da rodada, estar a 1m do lado intenso causa [12+ESP] de dano Elemental: Ígneo.<span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> No início de cada rodada, como uma Ação bônus pode decidir por manter a labareda por esforço reduzido.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 2 rodadas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Lança chamas </em>e Elementalismo N6.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.6t5490ZPGjx96qDI",
+    "duplicateSource": "Item.dcdWoaM8xbhmAeAJ",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771984232993,
+    "modifiedTime": 1771984232993,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "1MsK8uUEt08N6alM",
+  "_key": "!items!1MsK8uUEt08N6alM"
+}

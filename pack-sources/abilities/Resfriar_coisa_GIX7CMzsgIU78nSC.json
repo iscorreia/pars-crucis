@@ -1,0 +1,139 @@
+{
+  "folder": "eUswpZxgLkoVmcG6",
+  "name": "Resfriar coisa",
+  "type": "ability",
+  "img": "icon%20library/powers/cryomancer%20skills/cryo%20(24).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "water"
+    },
+    "actions": {
+      "mHcAC4VEtUmoDwWv": {
+        "img": "icon%20library/powers/cryomancer%20skills/cryo%20(24).png",
+        "name": "Imbuir",
+        "type": "use",
+        "_id": "mHcAC4VEtUmoDwWv",
+        "effort": "4",
+        "range": "5m",
+        "effect": "tem Frágil (4), Dano+2 e propriedade Elemental: Glacial por 1 minuto. Se o personagem não tiver algum tipo de proteção na palma de sua mão, recebe [4+COG] de dano Ele: Glacial.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "AH067xngGROR4ATB": {
+        "img": "icon%20library/powers/cryomancer%20skills/cryo%20(24).png",
+        "name": "Arma|Objeto",
+        "type": "attack",
+        "_id": "AH067xngGROR4ATB",
+        "damaging": false,
+        "range": "5m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "subtype": "affliction",
+        "skills": {
+          "eleme": 0
+        },
+        "effort": "4",
+        "effect": "tem Frágil (4), Dano+2 e propriedade Elemental: Glacial por 1 minuto. Se o personagem não tiver algum tipo de proteção na palma de sua mão, recebe [4+COG] de dano Ele: Glacial.",
+        "keywords": {},
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "skill": null
+      },
+      "eonenmFJ53Gy9990": {
+        "img": "icon%20library/powers/cryomancer%20skills/cryo%20(42).png",
+        "name": "Vestimenta",
+        "type": "attack",
+        "_id": "eonenmFJ53Gy9990",
+        "damaging": true,
+        "range": "5m",
+        "damage": {
+          "dmgBase": 1,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgType": "ele",
+          "dmgSubtype": "Glacial",
+          "dmgAddition": "",
+          "scalable": true
+        },
+        "subtype": "affliction",
+        "skills": {
+          "eleme": 0
+        },
+        "effort": "4",
+        "effect": "ignora AR. Deve fazer um teste de Frio extremo (efeitos tem duração de 1 minuto).",
+        "keywords": {
+          "freezing": "4"
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>(Aflição)</p><p class=\"MsoNormal\">Com uma palavra e movimento manual o personagem resfria subitamente uma peça de equipamento de um personagem, ou objeto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (vestimenta):</span> 1+COG/2 Elemental: Glacial</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (vestimenta):</span> ignora AR, Congelante (4). Deve fazer um teste de Frio extremo (efeitos tem duração de 1 minuto).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (armamento ou objeto):</span> tem Frágil (4), Dano+2 e propriedade Elemental: Glacial por 1 minuto. Se o personagem não tiver algum tipo de proteção na palma de sua mão, recebe [4+COG] de dano Ele: Glacial.</p><p class=\"MsoNormal\"><em>Se adquirido por elementalismo, o dano escala com base em ESP e a dificuldade com Elementalismo.</em> </p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisito:</span> Elementalismo N3.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.nOIdOOE2ddamAmn6",
+    "duplicateSource": "Item.P2vYiMmWrvcupOoM",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771968014559,
+    "modifiedTime": 1771968839670,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "GIX7CMzsgIU78nSC",
+  "_key": "!items!GIX7CMzsgIU78nSC"
+}

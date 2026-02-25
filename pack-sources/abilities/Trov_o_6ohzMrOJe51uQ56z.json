@@ -1,0 +1,84 @@
+{
+  "folder": "7VPAF87Ogc48PLDo",
+  "name": "Trovão",
+  "type": "ability",
+  "img": "icon%20library/powers/lightning%20skills/lightning%20(9).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "lightning"
+    },
+    "actions": {
+      "bEdDE5i26HB8RljS": {
+        "img": "icon%20library/powers/lightning%20skills/lightning%20(9).png",
+        "name": "Disparar",
+        "type": "attack",
+        "_id": "bEdDE5i26HB8RljS",
+        "damaging": true,
+        "range": "30/120m",
+        "damage": {
+          "dmgBase": 26,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Voltaico"
+        },
+        "usesAmmo": false,
+        "effect": "Ignora AR. Começa a chover se estiver propício.",
+        "area": "",
+        "effort": "8",
+        "limit": "",
+        "prepTime": "4AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "projectile"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "projectile": "",
+      "lethality": "+2"
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">Projétil</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Se energiza e então lança um raio para o céu o tornando mais forte e em seguida o puxando para um alvo terrestre.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 30/120m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 26+ESP Elemental: Voltaico.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade (+2). Ignora AR. Começa a chover se estiver propício.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Raio voltaico </em>e Elementalismo N7<em>.</em></span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.Db7Zb7Ee0qKBENEC",
+    "duplicateSource": "Item.JTeoO13S3UqTF1Ng",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771990059892,
+    "modifiedTime": 1771990059892,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "6ohzMrOJe51uQ56z",
+  "_key": "!items!6ohzMrOJe51uQ56z"
+}

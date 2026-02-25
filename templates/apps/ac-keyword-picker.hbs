@@ -30,13 +30,14 @@
   <p class="info-desc">Configura as propriedades da ação</p>
   <div>
     {{#each action.keywords}}
-      <div class="item-info-block">
+      <div class="keyword-block">
         <div class="pc-keyword">
           {{localize (concat "PC.keyword." @key)}}
         </div>
         <a data-action="cutActionKeyword" data-keyword="{{@key}}">
           <i class="fa-regular fa-eraser"></i></a>
         <input
+          class="keyword-value"
           name="system.actions.{{../action._id}}.keywords.{{@key}}"
           value="{{this}}"
           data-dtype="String"

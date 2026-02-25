@@ -1,0 +1,145 @@
+{
+  "folder": "fNCA17UJb2o1x6j8",
+  "name": "Aquecer coisa",
+  "type": "ability",
+  "img": "icon%20library/powers/pyromancer%20skills/fire%20(16).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "fire"
+    },
+    "actions": {
+      "qtaT4IcB9iDHTyco": {
+        "img": "icon%20library/powers/pyromancer%20skills/fire%20(16).png",
+        "name": "Vestimenta",
+        "type": "attack",
+        "_id": "qtaT4IcB9iDHTyco",
+        "damaging": true,
+        "range": "5m",
+        "damage": {
+          "dmgBase": 4,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgType": "ele",
+          "dmgSubtype": "Ígneo",
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true
+        },
+        "keywords": {
+          "affliction": null
+        },
+        "effort": "4",
+        "effect": "ignora AR, Dano+4 se a vestimenta tiver metal.",
+        "skills": {
+          "eleme": 0,
+          "arcan": 0
+        },
+        "subtype": "affliction",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "skill": null
+      },
+      "TX8P0f1UCPaveBEt": {
+        "img": "icon%20library/powers/pyromancer%20skills/fire%20(16).png",
+        "name": "Armamento",
+        "type": "attack",
+        "_id": "TX8P0f1UCPaveBEt",
+        "damaging": false,
+        "range": "5m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "subtype": "affliction",
+        "skills": {
+          "eleme": 0,
+          "arcan": 0
+        },
+        "keywords": {
+          "affliction": null
+        },
+        "effort": "4",
+        "effect": "deve passar em um teste de Vontade com (dif10+Perícia) ou a larga o que está segurando. Se passar no teste, ele pode optar por continuar segurando o que tem em mãos, mas recebe 4+COG de dano Elemental: Ígneo, Dano+4 no caso de a empunhadura ser metal. Ao aquecer um armamento de metal concede a este Dano+4 e propriedade Elemental: Ígneo por 1 rodada.",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "skill": null
+      },
+      "dggUTM1XkkaMYglp": {
+        "img": "icon%20library/powers/pyromancer%20skills/fire%20(16).png",
+        "name": "Objeto",
+        "type": "use",
+        "_id": "dggUTM1XkkaMYglp",
+        "effect": "pode aquecer continuamente, cumulando dano a cada 5 segundos até 10×.",
+        "effort": "4",
+        "range": "5m",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 4,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgType": "ele",
+          "dmgSubtype": "Ígneo",
+          "scalable": false,
+          "dmgAttMultiplier": 1,
+          "dmgAddition": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>(Aflição)</p><p class=\"MsoNormal\">Com uma palavra e movimento manual o personagem aquece subitamente uma peça de equipamento de um personagem, ou objeto, no alcance de 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 4+COG Elemental: Ígneo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (vestimenta):</span> ignora AR, Dano+4 se a vestimenta tiver metal.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (armamento):</span> deve passar em um teste de Vontade com (dif10+<em>Perícia</em>) ou a larga o que está segurando. Se passar no teste, ele pode optar por continuar segurando o que tem em mãos, mas recebe 4+COG de dano Elemental: Ígneo, Dano+4 no caso de a empunhadura ser metal. Ao aquecer um armamento de metal concede a este Dano+4 e propriedade Elemental: Ígneo por 1 rodada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (objeto):</span> pode aquecer continuamente, cumulando dano a cada 5 segundos até 10<span style=\"mso-bidi-font-family:Arial\">×</span>. </p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisito:</span> <em>Flamejar</em>.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.6t5490ZPGjx96qDI",
+    "duplicateSource": "Item.5bD5JfA7kd8IHNNJ",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771984232993,
+    "modifiedTime": 1771984232993,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "pdMKi1TQIjozQGlO",
+  "_key": "!items!pdMKi1TQIjozQGlO"
+}

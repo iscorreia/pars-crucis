@@ -1,0 +1,77 @@
+{
+  "folder": "mcEAk8e6MWE77riw",
+  "name": "Cama de ar",
+  "type": "ability",
+  "img": "icon%20library/powers/aeromancer%20skills/aero%20(8).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "wind"
+    },
+    "actions": {
+      "6VOktfUn51AG5cyc": {
+        "img": "icon%20library/powers/aeromancer%20skills/aero%20(8).png",
+        "name": "Reagir",
+        "type": "use",
+        "_id": "6VOktfUn51AG5cyc",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "criar uma camada de ar densa que mitiga 60+10×Elementalismo de Dano de queda por personagem e reduz o excedente pela metade.",
+        "range": "20m",
+        "area": "raio de 3m",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "",
+        "duration": "3 rodadas",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "reaction": null
+    },
+    "description": {
+      "description": "<p>Reação</p><p class=\"MsoNormal\">Com uma palavra ou rápido movimento de mãos ou pernas o personagem cria abaixo de si ou em um local uma densa massa de ar que reduz o impacto causado por uma queda.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 20m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span> raio de 3m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> criar uma camada de ar densa que mitiga 60+10<span style=\"mso-bidi-font-family:Arial\">×<em>E</em></span><em>lementalismo </em>de Dano de queda por personagem e reduz o excedente pela metade.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> até 3 rodadas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Aero manipular </em>e Elementalismo N3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:9.0pt;mso-bidi-font-size:11.0pt;line-height:105%\"><em>Curiosidade:</em></span><em> a cama de vento absorve o dano de uma queda de pelo menos 30 metros altura.</em></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.EwhoIbt64BwLMq0k",
+    "duplicateSource": "Item.7rlZ2tLP2xLgOcTc",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772032667793,
+    "modifiedTime": 1772032667793,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Dfdm0psBjwLDsykr",
+  "_key": "!items!Dfdm0psBjwLDsykr"
+}

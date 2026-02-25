@@ -1,0 +1,48 @@
+{
+  "folder": "7VPAF87Ogc48PLDo",
+  "name": "Essência estática",
+  "type": "passive",
+  "_id": "KdQCjWSs6cdcmWgv",
+  "img": "icons/magic/lightning/bolt-cloud-sky-white.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 4,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p>Passiva</p><p class=\"MsoNormal\">Frequente em manipular essência elemental através de seu corpo o personagem aprende a explorar melhorar o fluxo em si mesmo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> usar sobrecarga uma quantia considerável de vezes.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Isolante (+2). Aumenta o PE em 5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Sobrecarga </em>e Elementalismo N6.</p>",
+      "summary": "Isolante (+2). Aumenta o PE em 5.",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.KdQCjWSs6cdcmWgv",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771990059892,
+    "modifiedTime": 1771990059892,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!KdQCjWSs6cdcmWgv"
+}

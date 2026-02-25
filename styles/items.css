@@ -486,6 +486,14 @@ input[type="checkbox"]:checked ~ .name-tag {
       margin-bottom: 3px;
     }
   }
+  .keyword-block {
+    display: flex;
+    flex-direction: row;
+    .keyword-value {
+      height: 21px;
+      width: 100%;
+    }
+  }
 }
 .in-ac-keyword-picker {
   filter: brightness(0.65);
