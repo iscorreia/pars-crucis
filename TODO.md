@@ -56,6 +56,8 @@
 
 ### COMPLETE COMPENDIUM PACKS
 
+- light weapons
+- throwing
 - swords
 - javelins
 - spears
@@ -63,28 +65,26 @@
 - balistics (does not include siege)
 - ammunitions (does not include battery, and ionic projectiles)
 - vests
+- utils
 - aoist powers
+- cronocientific powers
 
 ### PARTIAL PACKS
 
 ### PENDING PACKS
 
-- light weapons
-- throwing
 - accessories
 - gadgets
 - matrixes
 - herbals
 - alchemicals
 - war artifacts
-- utils
 - melee techs
 - ranged techs
 - alternative techs
 - styles
 - arcane powers
 - bardic powers
-- cronocientific powers
 - druidic powers
 - elemental powers
 - sabak powers
