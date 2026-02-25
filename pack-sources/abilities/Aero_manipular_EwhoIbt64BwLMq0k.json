@@ -1,0 +1,141 @@
+{
+  "folder": "mcEAk8e6MWE77riw",
+  "name": "Aero manipular",
+  "type": "ability",
+  "_id": "EwhoIbt64BwLMq0k",
+  "img": "icon%20library/powers/aeromancer%20skills/aero%20(1).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "wind"
+    },
+    "actions": {
+      "Yt53fkkgckzTBsbu": {
+        "img": "icon%20library/powers/aeromancer%20skills/aero%20(1).png",
+        "name": "Manipular",
+        "type": "test",
+        "_id": "Yt53fkkgckzTBsbu",
+        "skill": "atlet",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "altera o cheiro do ar e alguns elementos de sua composição, podendo dissipar névoa e fumaça, mas não os criar.",
+        "range": "5m",
+        "area": "",
+        "effort": "2 por 10m³",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skills": {
+          "eleme": 0
+        },
+        "difficulty": 12
+      },
+      "BaStXCBjIcIx8lz7": {
+        "img": "icon%20library/powers/aeromancer%20skills/aero%20(1).png",
+        "name": "Potencializar",
+        "type": "test",
+        "_id": "BaStXCBjIcIx8lz7",
+        "skill": "atlet",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "aumenta a condução, flamabilidade ou outra propriedade do ar, concedendo Dano+2 a ataques elementais.",
+        "range": "5m",
+        "area": "",
+        "effort": "2 por 10m³",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skills": {
+          "eleme": 0
+        },
+        "difficulty": 12
+      },
+      "Fh4XbwzVm8k9SPa3": {
+        "img": "icon%20library/powers/aeromancer%20skills/aero%20(1).png",
+        "name": "Purificar",
+        "type": "test",
+        "_id": "Fh4XbwzVm8k9SPa3",
+        "skill": "atlet",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "anula efeitos nocivos de gases no ar.",
+        "range": "5m",
+        "area": "",
+        "effort": "2 por 10m³",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skills": {
+          "eleme": 0
+        },
+        "difficulty": 12
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null
+    },
+    "description": {
+      "description": "<p>Inicial</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com alguns movimentos o personagem cria, altera ou purifica o ar em sua proximidade, podendo dispersar um cheiro característica ou a concentração de oxigênio.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 por metro de raio ou m³.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (manipular):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> altera o cheiro do ar e alguns elementos de sua composição, podendo dissipar névoa e fumaça, mas não os criar.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (potencializar):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> aumenta a condução, flamabilidade ou outra propriedade do ar, concedendo Dano+2 a ataques elementais.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (purificar):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> anula efeitos nocivos de gases no ar.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 12.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Elementalismo N1.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.EwhoIbt64BwLMq0k",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772032667793,
+    "modifiedTime": 1772032667793,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!EwhoIbt64BwLMq0k"
+}

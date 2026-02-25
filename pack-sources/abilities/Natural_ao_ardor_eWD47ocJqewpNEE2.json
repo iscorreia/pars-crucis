@@ -1,0 +1,48 @@
+{
+  "folder": "fNCA17UJb2o1x6j8",
+  "name": "Natural ao ardor",
+  "type": "passive",
+  "_id": "eWD47ocJqewpNEE2",
+  "img": "icons/magic/fire/projectile-fireball-red-yellow.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 2,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "attribute": null
+    },
+    "description": {
+      "description": "<p>Passiva</p><p class=\"MsoNormal\">O personagem torna seu corpo habituado ao ardor do calor extremo, elevando a sua resistência as intempéries elementais.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> se expor a calor extremo pelo período de 6 horas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Isolante (+2), MOD+6 em testes contra calor.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Elementalismo N4.</p>",
+      "summary": "Isolante (+2), MOD+6 em testes contra calor.",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771984232993,
+    "modifiedTime": 1771984232993,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!eWD47ocJqewpNEE2"
+}

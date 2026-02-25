@@ -1,0 +1,84 @@
+{
+  "folder": "mcEAk8e6MWE77riw",
+  "name": "Pressurizar",
+  "type": "ability",
+  "img": "icon%20library/powers/aeromancer%20skills/aero%20(46).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "wind"
+    },
+    "actions": {
+      "iq8iaL5kCEYwWfwM": {
+        "img": "icon%20library/powers/aeromancer%20skills/aero%20(46).png",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "iq8iaL5kCEYwWfwM",
+        "damaging": true,
+        "range": "15/30m",
+        "damage": {
+          "dmgBase": 6,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "bio",
+          "dmgSubtype": "Vital"
+        },
+        "usesAmmo": false,
+        "effect": "Se causar Impacto ensurdece o alvo por 1 minuto. Se o alvo estiver submerso na água a ação tem Fatalidade (+1).",
+        "area": "",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "eleme": 0
+        },
+        "subtype": "affliction"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "affliction": "",
+      "impact": "4"
+    },
+    "description": {
+      "description": "<p>Aflição</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Realizando uma série de movimentos manuais cria ao entorno do personagem alvo uma diferença abrupta de pressão que faz o ar esmagá-lo. É ainda mais forte em um alvo submerso.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 15/30m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 6+ESP/2 Biológico: Vital.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Impacto (4). Se causar <em>Impacto</em> ensurdece o alvo por 1 minuto. Se o alvo estiver submerso na água a ação tem Fatalidade (+1).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Aero manipular </em>e Elementalismo N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.EwhoIbt64BwLMq0k",
+    "duplicateSource": "Item.12HydVvBNz7j4qGb",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772032667793,
+    "modifiedTime": 1772032667793,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "fIwQ0mNt9cJPowx5",
+  "_key": "!items!fIwQ0mNt9cJPowx5"
+}

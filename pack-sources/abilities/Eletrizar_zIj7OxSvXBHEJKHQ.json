@@ -1,0 +1,147 @@
+{
+  "folder": "7VPAF87Ogc48PLDo",
+  "name": "Eletrizar",
+  "type": "ability",
+  "img": "icon%20library/powers/lightning%20skills/lightning%20(45).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "elemental",
+      "category": "lightning"
+    },
+    "actions": {
+      "N9x5X9LkHYXPsyEy": {
+        "img": "icon%20library/powers/lightning%20skills/lightning%20(45).png",
+        "name": "Golpear",
+        "type": "tech",
+        "_id": "N9x5X9LkHYXPsyEy",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Voltaico"
+        },
+        "usesAmmo": false,
+        "effect": "causa até 2 Arcos elétricos.",
+        "range": "",
+        "area": "",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {
+          "impact": "3"
+        },
+        "skill": null,
+        "skills": {
+          "inherit": 0
+        },
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      },
+      "oVlEAbndCAf6KkXt": {
+        "img": "icon%20library/powers/lightning%20skills/lightning%20(40).png",
+        "name": "Disparar",
+        "type": "tech",
+        "_id": "oVlEAbndCAf6KkXt",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Voltaico"
+        },
+        "usesAmmo": true,
+        "effect": "causa 1 Arco elétrico.",
+        "range": "",
+        "area": "",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {
+          "impact": "5"
+        },
+        "skill": null,
+        "skills": {
+          "inherit": 0
+        },
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      },
+      "F3qajRAVhUH3rRmp": {
+        "img": "icon%20library/powers/lightning%20skills/lightning%20(45).png",
+        "name": "Imbuir",
+        "type": "use",
+        "_id": "F3qajRAVhUH3rRmp",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "Dano+3 Elemental, Impacto (3, 5 projétil). Causa 2 arcos elétricos (1 se projétil).",
+        "range": "10m",
+        "area": "",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "eleme",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "effect": null
+    },
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Eletrifica sua arma ou munição, ou de um personagem aliado, dando ao próximo ataque maior dano e a capacidade de gear um arco elétrico que atinge outros adversários próximos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 10m para usar na arma de aliados.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano: </span>+3 Elemental: Voltaico.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (arma):</span> Impacto (3).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (munição):</span> Impacto (5).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Pode ocorrer um arco elétrico para atingir outro personagem no alcance de 5m, causando o mesmo dano que foi causado ao alvo do ataque após a Mitigação. O personagem pode encantar sua arma enquanto ataca, nesse caso utilizando a perícia de combate da arma empunhada e podendo usar ESP como atributo de Dano.</p><p class=\"MsoNormal\">O arco elétrico não pode ser defendido, mas o alvo pode fazer um teste de FIS ou Resistência com dificuldade 14+Elementalismo para reduzir o dano pela metade.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto ou 1 ataque.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Choque </em>e Elementalismo N3<em>.</em></span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.Db7Zb7Ee0qKBENEC",
+    "duplicateSource": "Item.koIh1TYBy032NUym",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1771990059892,
+    "modifiedTime": 1771990059892,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "zIj7OxSvXBHEJKHQ",
+  "_key": "!items!zIj7OxSvXBHEJKHQ"
+}
