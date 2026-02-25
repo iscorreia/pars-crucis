@@ -68,6 +68,7 @@
 - utils
 - aoist powers
 - cronocientific powers
+- elemental powers
 
 ### PARTIAL PACKS
 
@@ -86,5 +87,4 @@
 - arcane powers
 - bardic powers
 - druidic powers
-- elemental powers
 - sabak powers
