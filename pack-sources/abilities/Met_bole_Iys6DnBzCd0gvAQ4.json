@@ -1,0 +1,107 @@
+{
+  "folder": "fdPmORw6qpgIBI2A",
+  "name": "Metábole",
+  "type": "ability",
+  "img": "icons/skills/wounds/blood-cells-vessel-red.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "alchemical"
+    },
+    "actions": {
+      "5XL6xWXdRuM0XH25": {
+        "img": "icons/skills/wounds/blood-cells-vessel-red.webp",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "5XL6xWXdRuM0XH25",
+        "damaging": true,
+        "range": "5m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "cura PV equivalente a recuperação diária do personagem alvo, Saúde tem MOD+4 pela duração. Se o personagem estiver doente ou envenenado, pode refazer o teste de Saúde. Se o personagem estiver com Peste, dobra os acúmulos.",
+        "area": "",
+        "effort": "5",
+        "limit": "1 vez por dia por personagem.",
+        "prepTime": "2AP",
+        "duration": "1 hora",
+        "keywords": {
+          "affliction": null
+        },
+        "skill": null,
+        "skills": {
+          "arcan": 0
+        },
+        "subtype": "affliction"
+      },
+      "WC6jbVHfFRZcHjs0": {
+        "img": "icons/skills/wounds/blood-cells-vessel-red.webp",
+        "name": "Usar",
+        "type": "use",
+        "_id": "WC6jbVHfFRZcHjs0",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "cura PV equivalente a recuperação diária do personagem alvo, Saúde tem MOD+4 pela duração. Se o personagem estiver doente ou envenenado, pode refazer o teste de Saúde. Se o personagem estiver com Peste, dobra os acúmulos.",
+        "range": "5m",
+        "area": "",
+        "effort": "5",
+        "limit": "1 vez por dia por personagem.",
+        "prepTime": "2AP",
+        "duration": "1 hora",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>(Aflição)</p><p class=\"MsoNormal\">Direciona a sua essência para alterar a composição de certos químicos no corpo para hiper acelerar o seu metabolismo ou o de um personagem o curando e melhorando a saúde.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 vez por dia por personagem.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 2 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> cura PV equivalente a recuperação diária do personagem alvo, Saúde tem MOD+4 pela duração. Se o personagem estiver doente ou envenenado, pode refazer o teste de Saúde. Se o personagem estiver com Peste, dobra os acúmulos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 hora.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Termorregulação</em> e Arcanismo N4.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1500000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.LPgXQbPGVCsvsbuh",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772050488974,
+    "modifiedTime": 1772050488974,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Iys6DnBzCd0gvAQ4",
+  "_key": "!items!Iys6DnBzCd0gvAQ4"
+}

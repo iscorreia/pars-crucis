@@ -1,0 +1,78 @@
+{
+  "folder": "rrn08czygtKZ1Wm8",
+  "name": "Velar sigilos",
+  "type": "ability",
+  "img": "icons/sundries/lights/candle-pillar-lit-yellow.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "scribing"
+    },
+    "actions": {
+      "bs3GDUqfkpsOJ5tR": {
+        "img": "icons/sundries/lights/candle-pillar-lit-yellow.webp",
+        "name": "Sigilar",
+        "type": "use",
+        "_id": "bs3GDUqfkpsOJ5tR",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "revela sigilos dentro da área. Pode ser rastreado dentro do alcance de até 100m. O personagem pode fazer um teste de Arcanismo ou Ontologia para interpretar os sigilos revelados e os seus efeitos.",
+        "range": "10m",
+        "area": "raio de 10m",
+        "effort": "3",
+        "limit": "",
+        "prepTime": "2AP",
+        "duration": "2 horas",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null,
+      "sigil": null
+    },
+    "description": {
+      "description": "<p>Inicial, Sigilo</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Faz um sigilo simples em um objeto ou superfície, com sinais de detecção e conexão, dando ao personagem a capacidade de localizar o seu sigilo para se orientar ou rastrear. Esse sigilo faz outros sigilos em sua proximidade se tornarem visíveis, sendo ele por sua natureza um sigilo claramente visível.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> revela sigilos dentro da área. Pode ser rastreado dentro do alcance de até 100m. O personagem pode fazer um teste de <em>Arcanismo</em> ou <em>Ontologia </em>para interpretar os sigilos revelados e os seus efeitos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Arcanismo N1.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.lmAHA4TCEzWT7jbc",
+    "duplicateSource": "Item.lmAHA4TCEzWT7jbc",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772055340529,
+    "modifiedTime": 1772055340529,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "f5Ey9ASEgBuycmHo",
+  "_key": "!items!f5Ey9ASEgBuycmHo"
+}

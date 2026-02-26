@@ -1,13 +1,13 @@
 {
-  "folder": "eUswpZxgLkoVmcG6",
+  "folder": "fdPmORw6qpgIBI2A",
   "name": "Resfriar coisa",
   "type": "ability",
   "img": "icon%20library/powers/cryomancer%20skills/cryo%20(24).png",
   "system": {
     "info": {
       "subtype": "power",
-      "art": "elemental",
-      "category": "water"
+      "art": "arcane",
+      "category": "alchemical"
     },
     "actions": {
       "mHcAC4VEtUmoDwWv": {
@@ -106,20 +106,20 @@
     "details": {
       "experience": 2,
       "preRequisites": "",
-      "coreSkill": "eleme",
+      "coreSkill": "arcan",
       "coreLevel": 3,
       "effect": "",
       "penalty": ""
     },
     "keywords": {},
     "description": {
-      "description": "<p>(Aflição)</p><p class=\"MsoNormal\">Com uma palavra e movimento manual o personagem resfria subitamente uma peça de equipamento de um personagem, ou objeto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (vestimenta):</span> 1+COG/2 Elemental: Glacial</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (vestimenta):</span> ignora AR, Congelante (4). Deve fazer um teste de Frio extremo (efeitos tem duração de 1 minuto).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (armamento ou objeto):</span> tem Frágil (4), Dano+2 e propriedade Elemental: Glacial por 1 minuto. Se o personagem não tiver algum tipo de proteção na palma de sua mão, recebe [4+COG] de dano Ele: Glacial.</p><p class=\"MsoNormal\"><em>Se adquirido por elementalismo, o dano escala com base em ESP e a dificuldade com Elementalismo.</em> </p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisito:</span> Elementalismo N3.</p>",
+      "description": "<p>(Aflição)</p><p class=\"MsoNormal\">Com uma palavra e movimento manual o personagem resfria subitamente uma peça de equipamento de um personagem, ou objeto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (vestimenta):</span> 1+COG/2 Elemental: Glacial</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (vestimenta):</span> ignora AR, Congelante (4). Deve fazer um teste de Frio extremo (efeitos tem duração de 1 minuto).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (armamento ou objeto):</span> tem Frágil (4), Dano+2 e propriedade Elemental: Glacial por 1 minuto. Se o personagem não tiver algum tipo de proteção na palma de sua mão, recebe [4+COG] de dano Ele: Glacial.</p><p class=\"MsoNormal\"><em>Se adquirido por elementalismo, o dano escala com base em ESP e a dificuldade com Elementalismo.</em> <em> </em></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisito:</span> <em>Identificar matéria </em>e Arcanismo N3.</p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 500000,
+  "sort": 800000,
   "ownership": {
     "default": 0,
     "BWDFQ9zEwkAXpvLu": 3
@@ -132,10 +132,10 @@
     "coreVersion": "13.351",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
-    "createdTime": 1771968014559,
-    "modifiedTime": 1772043084955,
+    "createdTime": 1772050488974,
+    "modifiedTime": 1772050488974,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
-  "_id": "GIX7CMzsgIU78nSC",
-  "_key": "!items!GIX7CMzsgIU78nSC"
+  "_id": "FQ6dGpcQqKWy9Ero",
+  "_key": "!items!FQ6dGpcQqKWy9Ero"
 }

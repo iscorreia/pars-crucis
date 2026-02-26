@@ -94,12 +94,20 @@ export class ParsCrucisItemSheet extends api.HandlebarsApplicationMixin(
     const item = this.document;
     const acType = target.dataset.acType;
     const acId = foundry.utils.randomID();
+    let skill = null;
+    if (
+      ["attack", "tech", "test"].includes(acType) &&
+      item.type === "ability"
+    ) {
+      skill = item.system.details.coreSkill;
+    }
     const newAction = {
       img: item.img,
       name: game.i18n.localize(`PC.${acType}`),
       type: acType,
       _id: acId,
       ...(ACTION_DEFAULTS[acType] ?? {}),
+      ...(skill && { skills: { [skill]: 0 } }),
     };
 
     await item.update({

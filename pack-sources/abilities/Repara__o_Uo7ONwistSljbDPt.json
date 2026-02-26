@@ -1,0 +1,79 @@
+{
+  "folder": "fdPmORw6qpgIBI2A",
+  "name": "Reparação",
+  "type": "ability",
+  "img": "icon%20library/profession/alchemist%20skills/alchemy%20(46).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "alchemical"
+    },
+    "actions": {
+      "PG73L68aGaSXX13B": {
+        "img": "icon%20library/profession/alchemist%20skills/alchemy%20(46).png",
+        "name": "Reparar",
+        "type": "test",
+        "_id": "PG73L68aGaSXX13B",
+        "skill": "atlet",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "repara o item, falhar no teste o repara com Frágil (7), se o item já possui Frágil, reduz a fragilidade tem 3.  Para itens muito danificados pode ser necessário 1 unidade do material utilizado na fabricação do item. Não é capaz de reparar um item ao seu estado de mais alta qualidade, como na perda de Aprimoramentos. Dificuldade: 8+Nível de perícia para fabricar, +2 para reparar itens de materiais raros ou com propriedades sobrenaturais.",
+        "range": "",
+        "area": "",
+        "effort": "3 para itens e armas, 5 para armas grandes, 9 para vestimentas, +3 para equipamentos de materiais raros.",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "1 minuto",
+        "keywords": {},
+        "skills": {
+          "arcan": 0
+        },
+        "difficulty": 10
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Ao tocar em um item ou uma peça de equipamento e fazer uma sequência de gestos repara danos superficiais, retornando uma arma ou vestimenta danificada para o seu estado normal e um item para o seu funcionamento padrão.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 para itens e armas, 5 para armas grandes, 9 para vestimentas, +3 para equipamentos de materiais raros.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> repara o item, falhar no teste o repara com Frágil (7), se o item já possui Frágil, reduz a fragilidade tem 3.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Para itens muito danificados pode ser necessário 1 unidade do material utilizado na fabricação do item.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Não é capaz de reparar um item ao seu estado de mais alta qualidade, como na perda de Aprimoramentos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8+Nível de perícia para fabricar, +2 para reparar itens de materiais raros ou com propriedades sobrenaturais.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Reforço material ou Revestir material, </em>e Arcanismo N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.6S9mqR0BfJgwqGal",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772050488974,
+    "modifiedTime": 1772050488974,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Uo7ONwistSljbDPt",
+  "_key": "!items!Uo7ONwistSljbDPt"
+}

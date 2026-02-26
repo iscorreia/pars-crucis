@@ -1,0 +1,82 @@
+{
+  "folder": "OanGth0fG6CTAk0r",
+  "name": "Alucinação",
+  "type": "ability",
+  "img": "icon%20library/powers/illusionist%20skills/illusion%20(19).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "psycognitive"
+    },
+    "actions": {
+      "Pl0ZO9FzscdOTmoM": {
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(19).png",
+        "name": "Mentalizar",
+        "type": "attack",
+        "_id": "Pl0ZO9FzscdOTmoM",
+        "damaging": false,
+        "range": "visual",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "arcan": 0
+        },
+        "usesAmmo": false,
+        "effect": "cria uma ilusão crível para o alvo. A ilusão se mantém enquanto estiver se concentrando. Mudanças drásticas a ilusão pode tirar o personagem da alucinação, o Narrador do jogo pode pedir um teste de Reflexo ou apenas cessá-la.",
+        "area": "",
+        "effort": "7",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "1 minuto",
+        "keywords": {},
+        "skill": null,
+        "subtype": "mind"
+      }
+    },
+    "details": {
+      "experience": 4,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "mental": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Mental</p><p class=\"MsoNormal\"><em>“As alucinações sabak tem tamanho poder que um indivíduo pode se ver sozinho na floresta enquanto em meio a uma rua lotada. Os arcanistas fizeram bem em aprender com eles.”</em></p><p class=\"MsoNormal\">Entoando algumas palavras e fazendo gestos manuais ludibria os sentidos de um personagem criando uma ilusão crível, alterando a percepção do ambiente, sons, sensações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> visual.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> cria uma ilusão crível para o alvo. </span>A ilusão se mantém enquanto estiver se concentrando. Mudanças drásticas a ilusão pode tirar o personagem da alucinação, o Narrador do jogo pode pedir um teste de Reflexo ou apenas cessá-la.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Devaneio </em>e Arcanismo N6.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.wy7S6rsiSxd58n6j",
+    "duplicateSource": "Item.KLaNKDC5KR82Wlow",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772113232225,
+    "modifiedTime": 1772113232225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "sort": 300000,
+  "_id": "yMwWpZ0JR4o0WTnd",
+  "_key": "!items!yMwWpZ0JR4o0WTnd"
+}

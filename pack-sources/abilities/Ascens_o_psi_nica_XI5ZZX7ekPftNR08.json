@@ -1,0 +1,50 @@
+{
+  "folder": "OanGth0fG6CTAk0r",
+  "name": "Ascensão psiônica",
+  "type": "passive",
+  "_id": "XI5ZZX7ekPftNR08",
+  "img": "icons/magic/control/control-influence-crown-yellow.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 4,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "attribute": null,
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Passiva, Sigilo</p><p class=\"MsoNormal\">O personagem passa pelo processo de ascensão arcana no qual faz sigilos pelo corpo e em sua nuca e cabeça, elevando o seu potencial mental, dando mais alcance aos seus poderes mentais.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> uso frequente de poderes da escola psicognitiva.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> EGO+1, COG+1, os seus poderes Mentais têm o esforço diminuído em 1 (nunca podendo se tornar menor que 1) e o alcance aumentado em 50%.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> cristais de lágrima totalizando 20 de essência.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7 poderes da Escola psicognitiva e Arcanismo N8.</span></p>",
+      "summary": "EGO+1, COG+1. ~ Outros efeitos",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.XI5ZZX7ekPftNR08",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772113232225,
+    "modifiedTime": 1772113232225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!XI5ZZX7ekPftNR08"
+}

@@ -1,0 +1,85 @@
+{
+  "folder": "OanGth0fG6CTAk0r",
+  "name": "Mentalizar",
+  "type": "ability",
+  "img": "icon%20library/powers/outworld%20skills/outworldly%20(17).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "psycognitive"
+    },
+    "actions": {
+      "JANjG1li3Vw5XPZg": {
+        "img": "icon%20library/powers/outworld%20skills/outworldly%20(17).png",
+        "name": "Mentalizar",
+        "type": "attack",
+        "_id": "JANjG1li3Vw5XPZg",
+        "damaging": true,
+        "range": "",
+        "damage": {
+          "dmgBase": 5,
+          "dmgAttributes": [
+            "ego",
+            "cog"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "bio",
+          "dmgSubtype": "Vital"
+        },
+        "skills": {
+          "arcan": 0
+        },
+        "usesAmmo": false,
+        "effect": "o personagem escolhe a quem atingir. Os alvos recebem o Dano e Impacto (4). Outros personagens na área recebem [1] Biológico: Vital. Criaturas com processos cognitivos simples demais, como por exemplo pequenos insetos, não são afetados.",
+        "area": "raio de 5m",
+        "effort": "5",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "mind"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "mental": "",
+      "impact": "4"
+    },
+    "description": {
+      "description": "<p>Colocando uma mão na cabeça libera sua essência na forma de um pulso psiônico violento que atinge todos os personagens desejados ao entorno, sobrecarregando tanto suas mentes que fere o cérebro.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span> raio de 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 5+EGO|COG Biológico: Vital</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> o personagem escolhe a quem atingir. Os alvos recebem o dano e Impacto (4). Outros personagens na área recebem [1] Biológico: Vital.</p><p class=\"MsoNormal\">Os alvos fazem teste de COG (dif12+Arcanismo) para reduzir o dano e evitar impacto. Criaturas com processos cognitivos simples demais, como por exemplo pequenos insetos, não são afetados.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Afligir dor </em>e Arcanismo N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.wy7S6rsiSxd58n6j",
+    "duplicateSource": "Item.glKpSY53y6xi4RQc",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772113232225,
+    "modifiedTime": 1772113232225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "sort": 300000,
+  "_id": "Hn7vXtxg9TD6wlsR",
+  "_key": "!items!Hn7vXtxg9TD6wlsR"
+}

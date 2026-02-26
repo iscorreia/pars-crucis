@@ -1,0 +1,77 @@
+{
+  "folder": "fdPmORw6qpgIBI2A",
+  "name": "Revestir material",
+  "type": "ability",
+  "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "alchemical"
+    },
+    "actions": {
+      "5t05D6MHvLPC9fge": {
+        "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
+        "name": "Revestir",
+        "type": "use",
+        "_id": "5t05D6MHvLPC9fge",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "vestimenta tem Isolante (+4) e previne danos Destrutivos.",
+        "range": "5m",
+        "area": "",
+        "effort": "6",
+        "limit": "",
+        "prepTime": "2AP",
+        "duration": "10 minutos",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 2,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "sigil": null
+    },
+    "description": {
+      "description": "<p>Sigilo</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Ao fazer alguns gestos manuais põe um sigilo que reveste a vestimenta de um personagem com proteção alquímica.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">6.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> vestimenta tem Isolante (+4) e previne danos Destrutivos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10 minutos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Identificar matéria </em>e Arcanismo N2.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 600000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.6S9mqR0BfJgwqGal",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772050488974,
+    "modifiedTime": 1772050488974,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "5KVxO0C5N9DGsBa0",
+  "_key": "!items!5KVxO0C5N9DGsBa0"
+}

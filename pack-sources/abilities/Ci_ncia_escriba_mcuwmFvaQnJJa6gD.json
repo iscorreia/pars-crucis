@@ -1,0 +1,46 @@
+{
+  "folder": "rrn08czygtKZ1Wm8",
+  "name": "Ciência escriba",
+  "type": "passive",
+  "_id": "mcuwmFvaQnJJa6gD",
+  "img": "icons/sundries/scrolls/scroll-yellow-teal.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 4,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Passiva</p><p class=\"MsoNormal\">O entendimento dos sigilos permite ao personagem utilizar a sua essência com maior eficiência para retê-los.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> dedicar um longo tempo de estudo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> reduz o esforço de retenção de sigilos em 2, mínimo de 1.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> conhecer 5 sigilos arcanos e Arcanismo N5.</p>",
+      "summary": "reduz o esforço de retenção de sigilos em 2, até o mínimo de 1.",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.mcuwmFvaQnJJa6gD",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772055340529,
+    "modifiedTime": 1772055340529,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!mcuwmFvaQnJJa6gD"
+}

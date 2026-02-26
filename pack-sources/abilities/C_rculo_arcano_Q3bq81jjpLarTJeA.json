@@ -1,0 +1,77 @@
+{
+  "folder": "rrn08czygtKZ1Wm8",
+  "name": "Círculo arcano",
+  "type": "ability",
+  "img": "icons/magic/symbols/rune-sigil-horned-blue.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "scribing"
+    },
+    "actions": {
+      "0kFUJcnOHDHYlNsb": {
+        "img": "icons/magic/symbols/rune-sigil-horned-blue.webp",
+        "name": "Sigilar",
+        "type": "use",
+        "_id": "0kFUJcnOHDHYlNsb",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "poderes de ataque tem Dano+1. Arcanismo tem MOD+1. Armas sigiladas são imbuídas no início de cada rodada.",
+        "range": "",
+        "area": "raio de 5m",
+        "effort": "R6",
+        "limit": "",
+        "prepTime": "2AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "sigil": null
+    },
+    "description": {
+      "description": "<p>Sigilo</p><p class=\"MsoNormal\">Fazendo gestos manuais para três direções distintas faz sigilos especiais que potencializam o poder sobrenatural de todos na área.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 6.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> poderes de ataque tem Dano+1. Arcanismo tem MOD+1. Armas sigiladas são imbuídas no início de cada rodada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Velar sigilos </em>e Arcanismo N6.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.lmAHA4TCEzWT7jbc",
+    "duplicateSource": "Item.F59V8rbIAoxjv3Ft",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772055340529,
+    "modifiedTime": 1772055340529,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Q3bq81jjpLarTJeA",
+  "_key": "!items!Q3bq81jjpLarTJeA"
+}

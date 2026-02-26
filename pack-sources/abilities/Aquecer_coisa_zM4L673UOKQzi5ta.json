@@ -1,13 +1,13 @@
 {
-  "folder": "fNCA17UJb2o1x6j8",
+  "folder": "fdPmORw6qpgIBI2A",
   "name": "Aquecer coisa",
   "type": "ability",
   "img": "icon%20library/powers/pyromancer%20skills/fire%20(16).png",
   "system": {
     "info": {
       "subtype": "power",
-      "art": "elemental",
-      "category": "fire"
+      "art": "arcane",
+      "category": "alchemical"
     },
     "actions": {
       "qtaT4IcB9iDHTyco": {
@@ -110,20 +110,20 @@
     "details": {
       "experience": 2,
       "preRequisites": "",
-      "coreSkill": "eleme",
+      "coreSkill": "arcan",
       "coreLevel": 3,
       "effect": "",
       "penalty": ""
     },
     "keywords": {},
     "description": {
-      "description": "<p>(Aflição)</p><p class=\"MsoNormal\">Com uma palavra e movimento manual o personagem aquece subitamente uma peça de equipamento de um personagem, ou objeto, no alcance de 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 4+COG Elemental: Ígneo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (vestimenta):</span> ignora AR, Dano+4 se a vestimenta tiver metal.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (armamento):</span> deve passar em um teste de Vontade com (dif10+<em>Perícia</em>) ou a larga o que está segurando. Se passar no teste, ele pode optar por continuar segurando o que tem em mãos, mas recebe 4+COG de dano Elemental: Ígneo, Dano+4 no caso de a empunhadura ser metal. Ao aquecer um armamento de metal concede a este Dano+4 e propriedade Elemental: Ígneo por 1 rodada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (objeto):</span> pode aquecer continuamente, cumulando dano a cada 5 segundos até 10<span style=\"mso-bidi-font-family:Arial\">×</span>. </p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisito:</span> <em>Flamejar</em>.</p>",
+      "description": "<p>(Aflição)</p><p class=\"MsoNormal\">Com uma palavra e movimento manual o personagem aquece subitamente uma peça de equipamento de um personagem, ou objeto, no alcance de 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 4+COG Elemental: Ígneo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (vestimenta):</span> ignora AR, Dano+4 se a vestimenta tiver metal.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (armamento):</span> deve passar em um teste de Vontade com (dif10+<em>Perícia</em>) ou a larga o que está segurando. Se passar no teste, ele pode optar por continuar segurando o que tem em mãos, mas recebe 4+COG de dano Elemental: Ígneo, Dano+4 no caso de a empunhadura ser metal. Ao aquecer um armamento de metal concede a este Dano+4 e propriedade Elemental: Ígneo por 1 rodada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (objeto):</span> pode aquecer continuamente, cumulando dano a cada 5 segundos até 10<span style=\"mso-bidi-font-family:Arial\">×</span>.  </p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisito:</span> <em>Identificar matéria </em>e Arcanismo N3.</p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 700000,
   "ownership": {
     "default": 0,
     "BWDFQ9zEwkAXpvLu": 3
@@ -136,10 +136,10 @@
     "coreVersion": "13.351",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
-    "createdTime": 1771984232993,
-    "modifiedTime": 1772042743057,
+    "createdTime": 1772050488974,
+    "modifiedTime": 1772050488974,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
-  "_id": "pdMKi1TQIjozQGlO",
-  "_key": "!items!pdMKi1TQIjozQGlO"
+  "_id": "zM4L673UOKQzi5ta",
+  "_key": "!items!zM4L673UOKQzi5ta"
 }

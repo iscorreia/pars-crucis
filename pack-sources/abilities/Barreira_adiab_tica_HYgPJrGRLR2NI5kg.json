@@ -1,0 +1,77 @@
+{
+  "folder": "85HKQfE3WuayjEcK",
+  "name": "Barreira adiabática",
+  "type": "ability",
+  "img": "icon%20library/powers/dark%20skills/warlock%20(14).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "metaessential"
+    },
+    "actions": {
+      "zuWPYof6noNDOBiE": {
+        "img": "icon%20library/powers/dark%20skills/warlock%20(14).png",
+        "name": "Reagir",
+        "type": "use",
+        "_id": "zuWPYof6noNDOBiE",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "faz uma barreira com 24+COG|ESP×2 PV. Personagens dentro da barreira não podem ser atingidos por poderes de ataque e ataques elementais de arremesso, jato ou projétil enquanto a barreira não for destruída. Aflições são barradas por completo enquanto a barreira permanecer. Se a barreira for destruída o excesso de dano é repassado para seu alvo dentro da barreira. Se múltiplos personagens ajudarem a criar a barreira ela tem 24+(COG|ESP dos Personagens) ×2 PV. O PV da barreira pode ser renovado no início de cada rodada por qualquer personagem que tenha Arcanismo N3 ou maior pelo seu esforço de renovar. A barreira pode ser levantada como uma reação interrompendo qualquer outra ação que o personagem declarou.",
+        "range": "5m",
+        "area": "raio de até 4m",
+        "effort": "8, 4 para renovar",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "reaction": null
+    },
+    "description": {
+      "description": "<p>(reação)</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Levantando e mantendo o braço posicionado com a mão aberta faz uma barreira de isolamento sobrenatural.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8, renovar 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de até 4m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> faz uma barreira com 24+COG|ESP<span style=\"mso-bidi-font-family:Arial\">×</span>2 PV. Personagens dentro da barreira não podem ser atingidos por poderes de ataque e ataques elementais de arremesso, jato ou projétil enquanto a barreira não for destruída. Aflições são barradas por completo enquanto a barreira permanecer.</p><p class=\"MsoNormal\">Se a barreira for destruída o excesso de dano é repassado para seu alvo dentro da barreira.</p><p class=\"MsoNormal\">Se múltiplos personagens ajudarem a criar a barreira ela tem 24+(COG|ESP dos Personagens) ×2 PV. O PV da barreira pode ser renovado no início de cada rodada por qualquer personagem que tenha Arcanismo N3 ou maior pelo seu esforço de renovar.</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">A barreira pode ser levantada como uma reação interrompendo qualquer outra ação que o personagem declarou.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Rastro essencial </em>e Arcanismo N6.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.o5qixMWqe5gYtL8J",
+    "duplicateSource": "Item.Sckthk2mz2NpmZYN",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772069700466,
+    "modifiedTime": 1772069700466,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "HYgPJrGRLR2NI5kg",
+  "_key": "!items!HYgPJrGRLR2NI5kg"
+}

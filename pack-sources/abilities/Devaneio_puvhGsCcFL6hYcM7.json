@@ -1,0 +1,81 @@
+{
+  "folder": "OanGth0fG6CTAk0r",
+  "name": "Devaneio",
+  "type": "ability",
+  "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "psycognitive"
+    },
+    "actions": {
+      "plKY4dcCTXVn4DWq": {
+        "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
+        "name": "Mentalizar",
+        "type": "attack",
+        "_id": "plKY4dcCTXVn4DWq",
+        "damaging": false,
+        "range": "visual",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "arcan": 0
+        },
+        "subtype": "mind",
+        "effort": "4",
+        "effect": "envia um fragmento de ideia que faz o alvo ver uma imagem ou vulto por um breve momento.",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "mental": null
+    },
+    "description": {
+      "description": "<p>Mental</p><p class=\"MsoNormal\">Com uma mão em sua cabeça e a outra direcionada a um personagem alvo envia um fragmento de ideia que é injetado em sua mente o forçando a ver uma imagem ou vulto por um breve momento.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> visual.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> envia um fragmento de ideia que faz o alvo ver uma imagem ou vulto por um breve momento.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Sondar mente e Arcanismo N3.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 800000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.ByrgP9DopwruKHiF",
+    "duplicateSource": "Item.GCovu7dJgbxuOnc8",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772113232225,
+    "modifiedTime": 1772113232225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "puvhGsCcFL6hYcM7",
+  "_key": "!items!puvhGsCcFL6hYcM7"
+}

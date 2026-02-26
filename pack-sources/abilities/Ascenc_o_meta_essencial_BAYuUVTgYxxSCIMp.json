@@ -1,0 +1,51 @@
+{
+  "folder": "85HKQfE3WuayjEcK",
+  "name": "Ascencão meta essencial",
+  "type": "passive",
+  "_id": "BAYuUVTgYxxSCIMp",
+  "img": "icons/magic/symbols/rune-sigil-white-pink.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 4,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "sense": null,
+      "narrative": null,
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Passiva, Sigilo</p><p class=\"MsoNormal\">O personagem passa pelo processo de ascensão arcana e faz alguns sigilos em seu corpo e rosto, que servem para despertar os seus sentidos para o sobrenatural, dando aos olhos um leve brilho distinto, geralmente em tons azuis ou roxos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> ter feito uso de absorção essencial para exceder seu limite natural de essência ao menos uma vez.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Visão noturna (12m), vê coisas ocultas sobrenaturalmente, consegue ver o fluxo de essência nos seres vivos e coisas. Podem saber quanta essência possui e qual é o estado emocional de um personagem. MOD+4 para testes de Percepção quando relacionados.</p><p class=\"MsoNormal\">A visão concedida não é afetada por danos convencionais a visão, nem cegueira, permitindo que um personagem seja capaz de ver através do fluxo essencial desde que ainda possua olhos ou um objeto capaz de conduzir essência e que simule os seus olhos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> cristais de lágrima totalizando 30 de essência.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Absorção essencial, Refluxo de mana </em>e Arcanismo N8.</p>",
+      "summary": "Visão noturna (12). ~ Outros efeitos",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.BAYuUVTgYxxSCIMp",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772069700466,
+    "modifiedTime": 1772070651920,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!BAYuUVTgYxxSCIMp"
+}
