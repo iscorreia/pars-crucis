@@ -1,0 +1,81 @@
+{
+  "folder": "85HKQfE3WuayjEcK",
+  "name": "Grilhões de estresse",
+  "type": "ability",
+  "img": "icon%20library/powers/debuff%20skills/debuff%20(25).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "metaessential"
+    },
+    "actions": {
+      "4epvRlxbpC7Gzd5H": {
+        "img": "icon%20library/powers/debuff%20skills/debuff%20(25).png",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "4epvRlxbpC7Gzd5H",
+        "damaging": true,
+        "range": "10/15m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "arcan": 0
+        },
+        "subtype": "affliction",
+        "effort": "8",
+        "prepTime": "1AP",
+        "effect": "alvo tem MOD-2 e esforço aumentando em 2 para realizar Poderes. Poderes de dano escalável tem Dano-2. Cada Ⓐ impede que o alvo use poderes por 1 rodada, interrompendo poderes em preparo.",
+        "duration": "1 minuto",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "affliction": null
+    },
+    "description": {
+      "description": "<p>Aflição</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Fazendo alguns movimentos manuais, faz surgir ao entorno de um personagem alvo faixas de essência reversa quase imperceptíveis que o atam o espírito, limitando suas capacidades sobrenaturais.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10/15m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> alvo tem MOD-2 e esforço aumentando em 2 para realizar Poderes. Poderes de dano escalável tem Dano-2. Cada </span><span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span> impede<span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> que o alvo use poderes por 1 rodada, interrompendo poderes em preparo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Corte de mana </em>e Arcanismo N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.o5qixMWqe5gYtL8J",
+    "duplicateSource": "Item.2YtxQ2LAbNbxBq6m",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772069700466,
+    "modifiedTime": 1772069700466,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "h8W98BKL5cZ3VCdr",
+  "_key": "!items!h8W98BKL5cZ3VCdr"
+}

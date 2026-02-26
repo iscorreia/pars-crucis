@@ -1,0 +1,106 @@
+{
+  "folder": "85HKQfE3WuayjEcK",
+  "name": "Fluorescência",
+  "type": "ability",
+  "_id": "o5qixMWqe5gYtL8J",
+  "img": "icon%20library/powers/astral%20skills/fairy%20(10).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "metaessential"
+    },
+    "actions": {
+      "qtsLd8TtBM4dfvKG": {
+        "img": "icon%20library/powers/astral%20skills/fairy%20(10).png",
+        "name": "Criar",
+        "type": "use",
+        "_id": "qtsLd8TtBM4dfvKG",
+        "effort": "R2",
+        "effect": "cria uma fonte de luz ou energiza um objeto o tornando luminoso, tendo Iluminação (raio/7m).",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "CYypvOz9a0einShI": {
+        "img": "icon%20library/powers/astral%20skills/fairy%20(10).png",
+        "name": "Mover",
+        "type": "use",
+        "_id": "CYypvOz9a0einShI",
+        "damaging": false,
+        "keywords": {
+          "quick": null
+        },
+        "effect": "movea a esfera até 20m, a esfera pode ficar a uma distância de até 100m antes de se apagar.",
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null,
+      "bonus": null
+    },
+    "description": {
+      "description": "<p>Inicial, Bônus</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Cria uma pequena esfera de energia fluorescente ou energiza um objeto sólido o deixando fluorescente.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 2.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> cria uma fonte de luz ou energiza um objeto o tornando luminoso, tendo Iluminação (raio/7m). Com 1 Ação rápida pode mover a esfera 20m, a esfera pode ficar a uma distância de até 100m antes de se apagar.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Arcanismo N1.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772069700466,
+    "modifiedTime": 1772069700466,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!o5qixMWqe5gYtL8J"
+}

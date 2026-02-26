@@ -2,7 +2,7 @@
   "folder": "7VPAF87Ogc48PLDo",
   "name": "Choque atordoante",
   "type": "ability",
-  "img": "icon%20library/powers/lightning%20skills/lightning%20(17).png",
+  "img": "icon%20library/powers/debuff%20skills/debuff%20(47).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "SxYJoMY2adtxeWkF": {
-        "img": "icon%20library/powers/lightning%20skills/lightning%20(17).png",
+        "img": "icon%20library/powers/debuff%20skills/debuff%20(47).png",
         "name": "Disparar",
         "type": "attack",
         "_id": "SxYJoMY2adtxeWkF",
@@ -75,7 +75,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771990059892,
-    "modifiedTime": 1771990059892,
+    "modifiedTime": 1772065681984,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "Byd6Wu4ajSJNx55x",

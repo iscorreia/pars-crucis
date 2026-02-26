@@ -1,0 +1,77 @@
+{
+  "folder": "rrn08czygtKZ1Wm8",
+  "name": "Contra sigilo",
+  "type": "ability",
+  "img": "icons/equipment/head/crown-thorns-gold.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "scribing"
+    },
+    "actions": {
+      "ha0zMXqX7uNeAtlP": {
+        "img": "icons/equipment/head/crown-thorns-gold.webp",
+        "name": "Sigilar",
+        "type": "use",
+        "_id": "ha0zMXqX7uNeAtlP",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "sigilos em equipamentos ou personagens são suprimidos ao fim da rodada após entrarem na área. Mutações e alterações físicas causadas por sigilos não são retornadas, mas fixadas. O contra sigilo pode ser criado para que tenha efeito apenas em seus próprios sigilos, nesse caso o esforço é reduzido.",
+        "range": "",
+        "area": "raio de 10m ou limites do cômodo.",
+        "effort": "7, 4 quando apenas para os próprios sigilos.",
+        "limit": "",
+        "prepTime": "5AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "sigil": null
+    },
+    "description": {
+      "description": "<p>Sigilo</p><p class=\"MsoNormal\">Fazendo alguns movimentos manuais cria um sigilo ao seu entorno com os símbolos de supressão e ocultação que torna inativos e indetectáveis todos os sigilos na área. Aqueles com sigilos em seus equipamentos ou corpo têm os seus efeitos suprimidos após entrarem na área do contra sigilo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 7, 4 quando apenas para os próprios sigilos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 5 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span> raio de 10m ou limites do cômodo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> sigilos em equipamentos ou personagens são suprimidos ao fim da rodada após entrarem na área. Mutações e alterações físicas causadas por sigilos não são retornadas, mas fixadas. O contra sigilo pode ser criado para que tenha efeito apenas em seus próprios sigilos, nesse caso o esforço é reduzido.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Sigilo de supressão </em>e Arcanismo N7.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.lmAHA4TCEzWT7jbc",
+    "duplicateSource": "Item.sR5ukmBDyzHg9QMQ",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772055340529,
+    "modifiedTime": 1772055340529,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "4oXtlWwPAJiZvZ42",
+  "_key": "!items!4oXtlWwPAJiZvZ42"
+}

@@ -1,0 +1,105 @@
+{
+  "folder": "rrn08czygtKZ1Wm8",
+  "name": "Sigilo armadilha",
+  "type": "ability",
+  "img": "icons/magic/symbols/cog-orange-red.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "scribing"
+    },
+    "actions": {
+      "jnjN2H4xTJ9FNKfi": {
+        "img": "icons/magic/symbols/cog-orange-red.webp",
+        "name": "Descarga",
+        "type": "use",
+        "_id": "jnjN2H4xTJ9FNKfi",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 26,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "scalable": false,
+          "dmgType": "ele",
+          "dmgSubtype": "Arcano"
+        },
+        "usesAmmo": false,
+        "effect": "ativa ao entrarem no raio de 1m.",
+        "range": "",
+        "area": "raio de 2m",
+        "effort": "R8",
+        "limit": "",
+        "prepTime": "5AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "qV7Z3e2x8ShplSQn": {
+        "img": "icons/tools/instruments/harp-yellow-teal.webp",
+        "name": "Impacto sônico",
+        "type": "use",
+        "_id": "qV7Z3e2x8ShplSQn",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "ativa ao entrarem no raio de 1m. Abala o personagem por 1 minuto. Teste de FIS ou Resistência (dif15+Arcanismo) para ficar vulnerável ao invés de ser abalado.",
+        "range": "",
+        "area": "raio de 2m",
+        "effort": "R8",
+        "limit": "",
+        "prepTime": "5AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "sigil": null
+    },
+    "description": {
+      "description": "<p>Sigilo</p><p class=\"MsoNormal\">Cria um sigilo de armadilha que ativa assim que alguém entrar em sua proximidade, liberando uma descarga violenta de energia ou um impacto sônico que nocauteia.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 8.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 2m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (descarga):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span>26+COG<span style=\"mso-bidi-font-family:Arial\">×</span>2 Elemental: Arcano.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> ativa ao entrarem no raio de 1m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (impacto sônico):</span> abala o personagem por 1 minuto. Teste de FIS ou Resistência (dif15+Arcanismo) para ficar <em>vulnerável</em> ao invés de ser abalado.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Sigilo lança </em>e Arcanismo N5.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.lmAHA4TCEzWT7jbc",
+    "duplicateSource": "Item.BcczAfUwIZ6N9Fc1",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772055340529,
+    "modifiedTime": 1772055340529,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "8aRapdbsAxQJERh1",
+  "_key": "!items!8aRapdbsAxQJERh1"
+}

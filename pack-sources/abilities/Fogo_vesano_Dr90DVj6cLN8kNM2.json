@@ -1,0 +1,83 @@
+{
+  "folder": "fdPmORw6qpgIBI2A",
+  "name": "Fogo vesano",
+  "type": "ability",
+  "img": "icon%20library/powers/pyromancer%20skills/flame%20(8).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "alchemical"
+    },
+    "actions": {
+      "Q6WlyPUDn24TfWGp": {
+        "img": "icon%20library/powers/pyromancer%20skills/flame%20(8).png",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "Q6WlyPUDn24TfWGp",
+        "damaging": true,
+        "range": "7/21m",
+        "damage": {
+          "dmgBase": 9,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Ígneo"
+        },
+        "usesAmmo": false,
+        "effect": "após o dano do impacto, causa [4+COG/2] de dano Destrutivo e faz com que o próximo ataque de dano Elemental dentro de 1 minuto realizado contra o alvo tenha Dano+9.",
+        "area": "",
+        "effort": "8",
+        "limit": "",
+        "prepTime": "2AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "arcan": 0
+        },
+        "subtype": "throw"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "alqui",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "throw": null
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">Arremesso</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Fazendo alguns movimentos manuais cria entre as mãos uma esfera de graxa corrosiva e flamejante e a arremessa.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7/21m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 9+COG Elemental: Ígneo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> após o dano do impacto, causa [4+COG/2] de dano Destrutivo e faz com que o próximo ataque de dano Elemental dentro de 1 minuto realizado contra o alvo tenha Dano+9.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Jato caustico </em>e Arcanismo N7.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.Db7Zb7Ee0qKBENEC",
+    "duplicateSource": "Item.dLi82h6Zymf9bXu8",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772050488974,
+    "modifiedTime": 1772050488974,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Dr90DVj6cLN8kNM2",
+  "_key": "!items!Dr90DVj6cLN8kNM2"
+}

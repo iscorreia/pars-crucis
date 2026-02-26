@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Escola psicognitiva",
+  "color": "#2400b3",
+  "sorting": "a",
+  "_id": "OanGth0fG6CTAk0r",
+  "description": "",
+  "sort": 1300000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772113232199,
+    "modifiedTime": 1772113232251,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!folders!OanGth0fG6CTAk0r"
+}

@@ -1,0 +1,75 @@
+{
+  "folder": "OanGth0fG6CTAk0r",
+  "name": "Projetar pensamento",
+  "type": "ability",
+  "img": "icon%20library/powers/illusionist%20skills/illusion%20(18).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "psycognitive"
+    },
+    "actions": {
+      "ZiBph8sOy1ml8dmx": {
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(18).png",
+        "name": "Usar",
+        "type": "use",
+        "_id": "ZiBph8sOy1ml8dmx",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "cria uma projeção de um pensamento que é mantida enquanto se concentrar e pode ser deslocada livremente dentro do alcance. A projeção é ligeiramente luminescente, formada por essência.",
+        "range": "30m",
+        "area": "",
+        "effort": "6, 6 para manter",
+        "limit": "",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>O personagem coloca a mão em sua cabeça e se concentra enquanto com a outra mão aponta para a direção onde uma projeção de seu pensamento se forma. A projeção é mantida enquanto continuar se concentrando nela e ela é deslocada para onde apontar com a mão.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 6, 6 para cada minuto mantendo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 3 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> cria uma projeção de um pensamento que é mantida enquanto se concentrar e pode ser deslocada livremente dentro do alcance.</p><p class=\"MsoNormal\">A projeção é ligeiramente luminescente, formada por essência.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> enquanto concentrar, esforço a cada minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Devaneio </em>e Arcanismo N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.wy7S6rsiSxd58n6j",
+    "duplicateSource": "Item.Hn7vXtxg9TD6wlsR",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772113232225,
+    "modifiedTime": 1772113232225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "sort": 300000,
+  "_id": "FdIHm76qYsG87fNJ",
+  "_key": "!items!FdIHm76qYsG87fNJ"
+}

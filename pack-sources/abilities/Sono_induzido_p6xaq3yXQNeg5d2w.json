@@ -1,0 +1,75 @@
+{
+  "folder": "fdPmORw6qpgIBI2A",
+  "name": "Sono induzido",
+  "type": "ability",
+  "img": "icons/skills/wounds/blood-cells-vessel-blue.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "alchemical"
+    },
+    "actions": {
+      "LUfdDrsALLJdYc01": {
+        "img": "icons/skills/wounds/blood-cells-vessel-blue.webp",
+        "name": "Usar",
+        "type": "use",
+        "_id": "LUfdDrsALLJdYc01",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "o personagem fica exposto ao dormir, mas tem recuperação de PE×3 e ao fim da terceira hora seu PV é curado de acordo com a recuperação natural e o PE remanescente é totalmente curado. É muito difícil de acordar o personagem durante o sono induzido, e se for acordado dentro das 3 primeiras horas, terá MOD-4 em todos os atributos, ações e DEF até que possa ter um descanso apropriado.",
+        "range": "5m",
+        "area": "",
+        "effort": "0, 6 em outros",
+        "limit": "1 vez por semana por personagem",
+        "prepTime": "",
+        "duration": "1 minuto",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 2,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Ao fazer alguns gestos manuais o personagem manipula o fluxo de essencial no corpo para acalmar o corpo e estimular os hormônios do sono, induzindo a si ou um personagem que esteja disposto a descansar com um sono pesado e profundo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 vez por semana por personagem.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 0, em outros personagens 6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 5m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> o personagem fica <em>exposto </em>ao dormir, mas tem recuperação de PE<span style=\"mso-bidi-font-family:Arial\">×</span>3 e ao fim da terceira hora seu PV é curado de acordo com a recuperação natural e o PE remanescente é totalmente curado.</p><p class=\"MsoNormal\">É muito difícil de acordar o personagem durante o sono induzido, e se for acordado dentro das 3 primeiras horas, terá MOD-4 em todos os atributos, ações e DEF até que possa ter um descanso apropriado.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Termorregulação</em> e Arcanismo N2.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1100000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.5KVxO0C5N9DGsBa0",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772050488974,
+    "modifiedTime": 1772050488974,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "p6xaq3yXQNeg5d2w",
+  "_key": "!items!p6xaq3yXQNeg5d2w"
+}

@@ -1,0 +1,83 @@
+{
+  "folder": "fdPmORw6qpgIBI2A",
+  "name": "Esfera dúplice",
+  "type": "ability",
+  "img": "icon%20library/powers/dark%20skills/warlock%20(11).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "alchemical"
+    },
+    "actions": {
+      "6St6tDMXIN2oXxwi": {
+        "img": "icon%20library/powers/dark%20skills/warlock%20(11).png",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "6St6tDMXIN2oXxwi",
+        "damaging": true,
+        "range": "7/21m",
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Glacial"
+        },
+        "usesAmmo": false,
+        "effect": "após o impacto, explode causando o Dano novamente, com propriedade Elemental: Ígneo no raio de 2m do ponto de impacto.",
+        "area": "",
+        "effort": "5",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "arcan": 0
+        },
+        "subtype": "throw"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "throw": null
+    },
+    "description": {
+      "description": "<p>Arremesso</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Cria e arremessa uma esfera de essência elemental instável contendo um núcleo gélido envolto em chamas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7/21m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">8+COG Elemental: Glacial.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">após o impacto, explode causando o Dano novamente, com propriedade Elemental: Ígneo no raio de 2m do ponto de impacto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Tri potência</em> e Arcanismo N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 900000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.nOIdOOE2ddamAmn6",
+    "duplicateSource": "Item.FQ6dGpcQqKWy9Ero",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772050488974,
+    "modifiedTime": 1772050488974,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "kTZJ6HgTqmd2ipLi",
+  "_key": "!items!kTZJ6HgTqmd2ipLi"
+}

@@ -1,0 +1,77 @@
+{
+  "folder": "85HKQfE3WuayjEcK",
+  "name": "Absorção essencial",
+  "type": "ability",
+  "img": "icon%20library/powers/buff%20skills/buff%20(47).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "metaessential"
+    },
+    "actions": {
+      "jEQE1MMOMDF1ywg5": {
+        "img": "icon%20library/powers/buff%20skills/buff%20(47).png",
+        "name": "Usar",
+        "type": "use",
+        "_id": "jEQE1MMOMDF1ywg5",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "pode curar seus PE em até COG|ESP×2 PE. Absorver PE além de seu máximo o deixa com um excesso de até COG|ESP×2 PE. Enquanto estiver com PE excedente poderes escaláveis tem Dano+4.",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "1 vez por hora",
+        "prepTime": "",
+        "duration": "1 hora",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "quick": null
+    },
+    "description": {
+      "description": "<p>Rápida</p><p class=\"MsoNormal\">Tendo uma matriz em mãos, o personagem faz um breve movimento para extrair a essência contida na matriz e a converter em essência livre para si.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 vez por hora.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 0.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 hora.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> pode curar seus PE em até </span>COG|ESP<span style=\"mso-bidi-font-family:Arial\">×</span>2 PE. Absorver PE além de seu máximo o deixa com um excesso de até COG|ESP<span style=\"mso-bidi-font-family:Arial\">×</span>2 PE. Enquanto estiver com PE excedente poderes escaláveis tem Dano+4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Rastro essencial </em>e Arcanismo N6.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.o5qixMWqe5gYtL8J",
+    "duplicateSource": "Item.TyrgrHaGVdgXg4Bn",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772069700466,
+    "modifiedTime": 1772069700466,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Sckthk2mz2NpmZYN",
+  "_key": "!items!Sckthk2mz2NpmZYN"
+}

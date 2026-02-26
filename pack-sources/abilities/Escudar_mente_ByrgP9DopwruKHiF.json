@@ -1,0 +1,79 @@
+{
+  "folder": "OanGth0fG6CTAk0r",
+  "name": "Escudar mente",
+  "type": "ability",
+  "_id": "ByrgP9DopwruKHiF",
+  "img": "icon%20library/powers/buff%20skills/buff%20(43).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "psycognitive"
+    },
+    "actions": {
+      "I0rTtKjCkAC1nd4h": {
+        "img": "icon%20library/powers/buff%20skills/buff%20(43).png",
+        "name": "Usar",
+        "type": "use",
+        "_id": "I0rTtKjCkAC1nd4h",
+        "effort": "2",
+        "range": "30m",
+        "effect": "concede MOD+4 contra ações Mentais e se torna capaz de barras pensamentos indesejados.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null,
+      "bonus": null,
+      "reaction": null
+    },
+    "description": {
+      "description": "<p>Bônus/Reação, Inicial</p><p class=\"MsoNormal\">O personagem aprende a arte de proteger mentes, bloqueando pensamentos indesejados e influências externas. Ao fazer um breve gesto manual pode sondar a própria mente ou a mente de outro.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> concede MOD+4 contra ações Mentais e se torna capaz de barras pensamentos indesejados.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Arcanismo N1.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772113232225,
+    "modifiedTime": 1772113232225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!ByrgP9DopwruKHiF"
+}

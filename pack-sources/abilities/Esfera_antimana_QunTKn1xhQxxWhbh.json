@@ -1,0 +1,84 @@
+{
+  "folder": "85HKQfE3WuayjEcK",
+  "name": "Esfera antimana",
+  "type": "ability",
+  "img": "icon%20library/powers/astral%20skills/astral%20(17).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "metaessential"
+    },
+    "actions": {
+      "vPfMEEaQenOIMsY0": {
+        "img": "icon%20library/powers/astral%20skills/astral%20(17).png",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "vPfMEEaQenOIMsY0",
+        "damaging": true,
+        "range": "7/21m",
+        "damage": {
+          "dmgBase": 5,
+          "dmgAttributes": [
+            "cog",
+            "esp"
+          ],
+          "dmgType": "ele",
+          "dmgSubtype": "Arcano",
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true
+        },
+        "skills": {
+          "arcan": 0
+        },
+        "subtype": "throw",
+        "effort": "4",
+        "prepTime": "1AP",
+        "area": "raio de 1m",
+        "effect": "mesma quantia em dano Essencial. Os atingidos têm MOD-2 em todos os poderes até o fim da rodada.",
+        "usesAmmo": false,
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "throw": null
+    },
+    "description": {
+      "description": "<p>Arremesso</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com alguns movimentos cria em suas mãos uma esfera de essência reversa e a arremessa causando aos atingidos ferimentos por energia elemental arcana e essencial, também causando disrupção em suas capacidades sobrenaturais.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7/21m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Área: raio de 1m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5+COG|ESP Elemental: Arcano.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> mesma quantia em dano Essencial. Os atingidos têm MOD-2 em todos os poderes até o fim da rodada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Corte de mana</em> e Arcanismo N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.o5qixMWqe5gYtL8J",
+    "duplicateSource": "Item.NpmSRqFB6rSAej3U",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772069700466,
+    "modifiedTime": 1772069700466,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "QunTKn1xhQxxWhbh",
+  "_key": "!items!QunTKn1xhQxxWhbh"
+}

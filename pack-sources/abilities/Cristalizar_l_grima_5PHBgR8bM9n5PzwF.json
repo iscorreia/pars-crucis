@@ -1,0 +1,80 @@
+{
+  "folder": "fdPmORw6qpgIBI2A",
+  "name": "Cristalizar lágrima",
+  "type": "ability",
+  "img": "icon%20library/profession/jeweler%20skills/jeweler%20(27).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "alchemical"
+    },
+    "actions": {
+      "1zy5MnlXtw3JRG1X": {
+        "img": "icon%20library/profession/jeweler%20skills/jeweler%20(27).png",
+        "name": "Fabricar",
+        "type": "test",
+        "_id": "1zy5MnlXtw3JRG1X",
+        "skill": "atlet",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "cria uma Lágrima de acordo com o esforço realizado. Ter ⒹⒹ ao criar lágrima resulta numa explosão causando [20] de dano Existencial e Essencial em um raio de 5m. Com Ⓐ ou MS 8 o cristal de lágrima é estável e não se dissipa ao passar do tempo.",
+        "range": "",
+        "area": "",
+        "effort": "1/Es de lágrima; Escasso 2/Es; Abundante 1/2Es",
+        "limit": "",
+        "prepTime": "5 minutos",
+        "duration": "1 dia, então se dissipa",
+        "keywords": {},
+        "skills": {
+          "arcan": 0,
+          "alqui": 0
+        },
+        "difficulty": 12
+      }
+    },
+    "details": {
+      "experience": 3,
+      "preRequisites": "",
+      "coreSkill": "alqui",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p class=\"SubNome2\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">O personagem concentra sua essência nas mãos criando um cristal de lágrima em forma esférica quase perfeita.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\"> por</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Essência de lágrima;</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço (escasso):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 por Essência de lágrima.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço (abundante):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 por 2 de Essência de lágrima.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5 minutos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 12.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> cria uma Lágrima de acordo com o esforço realizado. Ter </span><span lang=\"JA\" style=\"mso-bidi-font-size:9.0pt;line-height:105%;font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">ⒹⒹ</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> ao criar lágrima resulta numa explosão causando [20] de dano Existencial e Essencial em um raio de 5m. Com </span><span lang=\"JA\" style=\"mso-bidi-font-size:9.0pt;line-height:105%;font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> ou MS 8 o cristal de lágrima é estável e não se dissipa ao passar do tempo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 dia, então se dissipa.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Perícias:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Arcanismo </em>ou <em>Alquimia</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Identificar matéria </em>e Arcanismo N7.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.Db7Zb7Ee0qKBENEC",
+    "duplicateSource": "Item.Dr90DVj6cLN8kNM2",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772050488974,
+    "modifiedTime": 1772050488974,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "5PHBgR8bM9n5PzwF",
+  "_key": "!items!5PHBgR8bM9n5PzwF"
+}

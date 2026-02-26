@@ -1,0 +1,81 @@
+{
+  "folder": "OanGth0fG6CTAk0r",
+  "name": "Miragem",
+  "type": "ability",
+  "img": "icon%20library/powers/illusionist%20skills/illusion%20(44).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "arcane",
+      "category": "psycognitive"
+    },
+    "actions": {
+      "W4RJeZUamKY647A4": {
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(44).png",
+        "name": "Mentalizar",
+        "type": "attack",
+        "_id": "W4RJeZUamKY647A4",
+        "damaging": false,
+        "range": "",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "arcan": 0
+        },
+        "subtype": "mind",
+        "effort": "6",
+        "area": "raio de 10m",
+        "prepTime": "1AP",
+        "duration": "1 minuto",
+        "effect": "ataques têm MOD-2 contra o personagem desde que o atacante dependa ao menos um pouco de sua visão para atacar.",
+        "usesAmmo": false,
+        "limit": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 3,
+      "preRequisites": "",
+      "coreSkill": "arcan",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "mental": null
+    },
+    "description": {
+      "description": "<p>Mental</p><p class=\"MsoNormal\">Colocando uma mão na fronte libera um pulso psiônico que faz com que os personagens ao seu entorno tenham a percepção visual sobre o próprio personagem ou um aliado, distorcida com uma miragem.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span> raio de 10m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> ataques têm MOD-2 contra o personagem desde que o atacante dependa ao menos um pouco de sua visão para atacar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Mente factual</em> e Arcanismo N4.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1100000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.ByrgP9DopwruKHiF",
+    "duplicateSource": "Item.U2MfDfeApX9wF22m",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772113232225,
+    "modifiedTime": 1772113232225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "s3Pb2LKRk2eWgI8s",
+  "_key": "!items!s3Pb2LKRk2eWgI8s"
+}
