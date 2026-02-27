@@ -18,7 +18,7 @@
         "effort": "2",
         "range": "visual ou sonoro",
         "effect": "faz sua voz audível na mente do alvo e se desejado, também aos outros personagens ao seu entorno. Aqueles ouvindo podem fazer um teste de COG (dif10+Arcanismo) para ignorar suas palavras.",
-        "damaging": true,
+        "damaging": false,
         "damage": {
           "dmgBase": 1,
           "dmgType": "ex",
@@ -70,7 +70,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772113232225,
-    "modifiedTime": 1772113232225,
+    "modifiedTime": 1772133842009,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "5kmrODpIdYgyF5kl",

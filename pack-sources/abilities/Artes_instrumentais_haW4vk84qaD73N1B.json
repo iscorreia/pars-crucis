@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Artes instrumentais",
+  "color": "#0e8672",
+  "sorting": "a",
+  "_id": "haW4vk84qaD73N1B",
+  "description": "",
+  "sort": 1500000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772126214349,
+    "modifiedTime": 1772126214394,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!folders!haW4vk84qaD73N1B"
+}

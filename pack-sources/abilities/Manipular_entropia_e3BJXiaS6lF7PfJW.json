@@ -1,0 +1,78 @@
+{
+  "folder": "ldp2bWH9vV4tN8Pi",
+  "name": "Manipular entropia",
+  "type": "ability",
+  "_id": "e3BJXiaS6lF7PfJW",
+  "img": "icon%20library/powers/illusionist%20skills/illusion%20(5).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "fortune"
+    },
+    "actions": {
+      "GnXxqnGtfqYrjPm3": {
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(5).png",
+        "name": "Usar",
+        "type": "use",
+        "_id": "GnXxqnGtfqYrjPm3",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "tem MOD+2 em testes relacionados a jogos e apostas.",
+        "range": "",
+        "area": "",
+        "effort": "3",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null,
+      "bonus": null
+    },
+    "description": {
+      "description": "<p>Inicial, Bônus</p><p class=\"MsoNormal\">Empenhando um pouco de essência no rolar de dados, ou no distribuir de cartas o personagem pende a balança entrópica para si.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> tem MOD+2 em testes relacionados a jogos e apostas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Bardismo N1.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.e3BJXiaS6lF7PfJW",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772123549225,
+    "modifiedTime": 1772123549225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!e3BJXiaS6lF7PfJW"
+}

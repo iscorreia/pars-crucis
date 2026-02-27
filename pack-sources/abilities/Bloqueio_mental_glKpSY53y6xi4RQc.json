@@ -27,7 +27,8 @@
           "dmgSubtype": ""
         },
         "skills": {
-          "arcan": 0
+          "arcan": 0,
+          "bardi": 0
         },
         "usesAmmo": false,
         "effect": "priva o alvo de utilizar a habilidade declarada pelo personagem, caso já tenha sido vista. A perícia da habilidade tem MOD-1. Uma habilidade bloqueada já em efeito continuará em efeito, mas o alvo será incapaz de renovar o efeito. Da mesma maneira uma habilidade em retenção continua em retenção. Conforme a interpretação, o Narrador pode julgar que ao ter o conhecimento de uma habilidade em efeito bloqueado o personagem seja incapaz de desfazer esse efeito.",
@@ -72,7 +73,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772113232225,
-    "modifiedTime": 1772113232225,
+    "modifiedTime": 1772149391106,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "sort": 300000,

@@ -1,0 +1,75 @@
+{
+  "folder": "ldp2bWH9vV4tN8Pi",
+  "name": "Canalizar sorte",
+  "type": "ability",
+  "img": "icons/commodities/currency/coin-embossed-ruby-gold.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "fortune"
+    },
+    "actions": {
+      "USRrs1prFsJTA5K4": {
+        "img": "icons/commodities/currency/coin-embossed-ruby-gold.webp",
+        "name": "Usar",
+        "type": "use",
+        "_id": "USRrs1prFsJTA5K4",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "recupera 1 de Sorte do alvo. Usar uma matriz com 20 de essência recupera 2 de Sorte. Materiais: matriz com 7 ou mais de essência.",
+        "range": "10m",
+        "area": "",
+        "effort": "7",
+        "limit": "1 vez por dia por personagem.",
+        "prepTime": "2AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Utilizando uma matriz que tenha essência suficiente o bardo é capaz de converter tal essência em Sorte.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 vez por dia por personagem.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> matriz com 7 ou mais de essência.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 10m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> recupera 1 de Sorte do alvo. Usar uma matriz com 20 de essência recupera 2 de Sorte.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Entropia essencial</em> e </span>Bardismo<span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> N5.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.e3BJXiaS6lF7PfJW",
+    "duplicateSource": "Item.ZPHAtU4HI2wi7NmH",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772123549225,
+    "modifiedTime": 1772123549225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "3zriyt970NfEqytd",
+  "_key": "!items!3zriyt970NfEqytd"
+}

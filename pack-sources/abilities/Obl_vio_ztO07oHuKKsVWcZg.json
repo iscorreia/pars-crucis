@@ -30,7 +30,8 @@
           "dmgSubtype": ""
         },
         "skills": {
-          "arcan": 0
+          "arcan": 0,
+          "bardi": 0
         },
         "usesAmmo": false,
         "effect": "o dano é opcional. Apaga a memória da última hora, ou uma memória específica. As memórias ficam num estado fragmentado e incompreensível, mas podem ser reconstituídas com ajuda, teste de COG (dif16+Perícia) para reconstituir a memória. Com Ⓐ causa o malefício Amnésia tornando as memórias perdidas irrecuperáveis, senão por métodos especiais.",
@@ -75,7 +76,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772113232225,
-    "modifiedTime": 1772113232225,
+    "modifiedTime": 1772152379730,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "sort": 300000,

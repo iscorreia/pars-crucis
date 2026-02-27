@@ -27,7 +27,8 @@
           "dmgSubtype": ""
         },
         "skills": {
-          "arcan": 0
+          "arcan": 0,
+          "bardi": 0
         },
         "usesAmmo": false,
         "effect": "o alvo tem sua memória manipulada. Se a memória fabricada for fortemente questionada ou gerar paradoxos o alvo faz um teste de COG (dif13+Perícia) para retificar parcialmente a memória.",
@@ -72,7 +73,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772113232225,
-    "modifiedTime": 1772113232225,
+    "modifiedTime": 1772152432162,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "sort": 300000,

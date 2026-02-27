@@ -1,0 +1,75 @@
+{
+  "folder": "haW4vk84qaD73N1B",
+  "name": "Ranger",
+  "type": "ability",
+  "img": "icon%20library/powers/bard%20skills/bard%20(8).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "instrumental"
+    },
+    "actions": {
+      "ZoGBgrzM4YVcytCZ": {
+        "img": "icon%20library/powers/bard%20skills/bard%20(8).png",
+        "name": "Tocar",
+        "type": "use",
+        "_id": "ZoGBgrzM4YVcytCZ",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": false,
+          "dmgType": "pain",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "causa surdez temporária. Teste de Resistência ou Saúde (dif12+Bardismo) para reduzir a Dor pela metade e prevenir surdez. Efeitos (grupos): imobiliza pequenas criaturas e Grupos.",
+        "range": "raio de 10m",
+        "area": "",
+        "effort": "7",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "1 minuto, 2 rodadas de imobilização em grupos de criaturas.",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p class=\"MsoNormal\">Com seu instrumento produz um som que machuca os ouvidos dos adversários ao seu entorno.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> [8] Dor.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> causa surdez temporária. Teste de Resistência ou Saúde (dif12+Bardismo) para reduzir a Dor pela metade e prevenir surdez.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (grupos):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> imobiliza pequenas criaturas e Grupos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto, 2 rodadas de imobilização em grupos de criaturas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Cacofonia </em>e Bardismo N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.6uabpQ6ksMrvkAMK",
+    "duplicateSource": "Item.AQvYKqJtz6lrAMTb",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772126214374,
+    "modifiedTime": 1772126214374,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "huZDNzHtfA1K80dh",
+  "_key": "!items!huZDNzHtfA1K80dh"
+}

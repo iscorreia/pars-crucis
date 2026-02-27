@@ -1,0 +1,77 @@
+{
+  "folder": "rm5yCeCGbxOsIyjB",
+  "name": "Incógnito",
+  "type": "ability",
+  "img": "icon%20library/powers/illusionist%20skills/illusion%20(41).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "psycovocal"
+    },
+    "actions": {
+      "s8PnkMFa1fqmR9vV": {
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(41).png",
+        "name": "Usar",
+        "type": "use",
+        "_id": "s8PnkMFa1fqmR9vV",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "altera sua voz e aspecto visual. Notável apenas por um ótimo observador ou conhecedor, deve fazer um teste de Percepção ou Reflexo (dif13+Perícia) para perceber. Existem limitações quanto a portes físicos e nuances originais.",
+        "range": "",
+        "area": "",
+        "effort": "10, mantém por 7",
+        "limit": "",
+        "prepTime": "4AP",
+        "duration": "1 hora",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 4,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 8,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Poder</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Pela constante prática o personagem tomou domínio de sua voz e apresentação a ponto de moldá-las com sua essência uma vez que mentalize um aspecto crível.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10, mantém por 7.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> altera sua voz e aspecto visual. Notável apenas por um ótimo observador ou conhecedor, deve fazer um teste de Percepção ou Reflexo (dif13+Perícia) para perceber. Existem limitações quanto a portes físicos e nuances originais.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 hora.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 poderes entre <em>Atrabílis, Cólera, Fleuma </em>e<em> Sanguíneo</em>, e Bardismo N8.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.wy7S6rsiSxd58n6j",
+    "duplicateSource": "Item.YhoNQqExHhkx3l4A",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772156596685,
+    "modifiedTime": 1772156596685,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "sort": 1100000,
+  "_id": "lxq3dzXmrhhVOPNq",
+  "_key": "!items!lxq3dzXmrhhVOPNq"
+}
