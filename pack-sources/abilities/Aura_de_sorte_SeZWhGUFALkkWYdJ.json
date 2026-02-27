@@ -1,0 +1,48 @@
+{
+  "folder": "ldp2bWH9vV4tN8Pi",
+  "name": "Aura de sorte",
+  "type": "passive",
+  "img": "icons/magic/control/buff-luck-fortune-clover-green.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 2,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "conditional": null
+    },
+    "description": {
+      "description": "<p>Passiva</p><p class=\"MsoNormal\">A sorte do bardo afeta aqueles ao seu entorno, tornando-os um pouco mais favorecidos pelo destino.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> vencer uma boa aposta ou conseguir um ótimo resultado após usar Sorte na presença ao menos um bom amigo ou aliados.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> o personagem e todos os seus aliados no alcance de 30m têm MOD+1 em rolagens feitas com Sorte.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Sorte em aposta</em> e Bardismo N6.</p>",
+      "summary": "MOD+1 em testes feitos com Sorte para si e aliados em 30m",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.kUz6B26ieN9puCT9",
+    "duplicateSource": "Item.bazxLZUYYdbq12AG",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772123549225,
+    "modifiedTime": 1772123549225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "SeZWhGUFALkkWYdJ",
+  "_key": "!items!SeZWhGUFALkkWYdJ"
+}

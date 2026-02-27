@@ -1,0 +1,75 @@
+{
+  "folder": "RUQ3JIy0TdLQ93P6",
+  "name": "Lábia afinada",
+  "type": "ability",
+  "img": "icons/magic/control/mouth-smile-deception-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "psycovocal"
+    },
+    "actions": {
+      "6oOtZTLHgqcHvwuV": {
+        "img": "icons/magic/control/mouth-smile-deception-purple.webp",
+        "name": "Influenciar",
+        "type": "use",
+        "_id": "6oOtZTLHgqcHvwuV",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "tem MOD+2 no próximo teste de perícia social.",
+        "range": "",
+        "area": "",
+        "effort": "6",
+        "limit": "",
+        "prepTime": "4AP ou 6s de conversa",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Com prática o personagem se torna capaz de entrelaçar a sua essência ao longo de uma conversa para favorecer os resultados.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 4 ações ou 6s de conversa.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> tem MOD+2 no próximo teste de perícia social.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Voz confortante</em> e Bardismo N3.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.ByrgP9DopwruKHiF",
+    "duplicateSource": "Item.gOLN1u78oHgpXeiM",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772152908251,
+    "modifiedTime": 1772152908251,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "r9tdSIOiUu322lJe",
+  "_key": "!items!r9tdSIOiUu322lJe"
+}

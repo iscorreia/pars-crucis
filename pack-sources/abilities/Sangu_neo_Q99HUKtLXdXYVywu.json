@@ -1,0 +1,75 @@
+{
+  "folder": "rm5yCeCGbxOsIyjB",
+  "name": "Sanguíneo",
+  "type": "ability",
+  "img": "icons/poderes/Avatar_of_Lyssa_(large).jpg",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "theatrical"
+    },
+    "actions": {
+      "feIrkPc6MnCIwVjc": {
+        "img": "icons/poderes/Avatar_of_Lyssa_(large).jpg",
+        "name": "Usar",
+        "type": "use",
+        "_id": "feIrkPc6MnCIwVjc",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "MOD+4 para Saúde e contra Aflições, MOD+2 para todas as perícias Sociais com exceção de Bardismo, mas MOD-4 contra todas as ações Mentais e Sociais. A soma de Nível+MOD das perícias beneficiadas não pode superar o Nível+MOD+2 de Bardismo.",
+        "range": "",
+        "area": "",
+        "effort": "3",
+        "limit": "1 vez por dia.",
+        "prepTime": "1AP",
+        "duration": "1 hora",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>O personagem usa a sua essência e habilidades teatrais para manipular seu próprio ego e assumir uma persona extrovertida, agitada e simpática, mas instável e explosiva.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 vez por dia.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> MOD+4 para Saúde e contra Aflições, MOD+2 para todas as perícias Sociais com exceção de Bardismo, mas MOD-4 contra todas as ações Mentais e Sociais. A soma de Nível+MOD das perícias beneficiadas não pode superar o Nível+MOD+2 de Bardismo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Penalidades:</span> ir contra a persona cessa o efeito, mas resulta no trauma <em>Animo abalado</em>.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 hora.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Encenação </em>e Bardismo N4.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 900000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.9kh9ubDV9rrA4fXg",
+    "duplicateSource": "Item.PaHIicmDWz6tHb6k",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772156596685,
+    "modifiedTime": 1772156596685,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Q99HUKtLXdXYVywu",
+  "_key": "!items!Q99HUKtLXdXYVywu"
+}

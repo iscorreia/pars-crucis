@@ -1,0 +1,77 @@
+{
+  "folder": "rm5yCeCGbxOsIyjB",
+  "name": "Encenação",
+  "type": "ability",
+  "img": "icon%20library/powers/bard%20skills/bard%20(2).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "theatrical"
+    },
+    "actions": {
+      "1OgCVGCOwjxCVKoN": {
+        "img": "icon%20library/powers/bard%20skills/bard%20(2).png",
+        "name": "Influenciar",
+        "type": "use",
+        "_id": "1OgCVGCOwjxCVKoN",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "têm MOD+2 em testes para distrair e conseguir atenção.",
+        "range": "",
+        "area": "",
+        "effort": "3",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null
+    },
+    "description": {
+      "description": "<p>Inicial</p><p class=\"MsoNormal\">Faz uma cena empenhando um pouco de essência em seus movimentos para os tornar mais cativantes para distrair um indivíduo ou um pequeno grupo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> têm MOD+2 em testes para distrair e conseguir atenção.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><em>Por exemplo: malabarismos usando Ladinagem, uma conversa intelectual encenada usando Erudição, fingir-se de entendedor de um certo nicho usando Artimanha, gabar-se muito de sua origem e status familiar usando Expressão ou Artimanha.</em></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Bardismo N1.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.9kh9ubDV9rrA4fXg",
+    "duplicateSource": "Item.9kh9ubDV9rrA4fXg",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772156596685,
+    "modifiedTime": 1772156596685,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "CU8mSpTORbn254Ry",
+  "_key": "!items!CU8mSpTORbn254Ry"
+}

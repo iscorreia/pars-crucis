@@ -1,0 +1,82 @@
+{
+  "folder": "haW4vk84qaD73N1B",
+  "name": "Cacofonia",
+  "type": "ability",
+  "_id": "6uabpQ6ksMrvkAMK",
+  "img": "icon%20library/powers/bard%20skills/bard%20(36).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "instrumental"
+    },
+    "actions": {
+      "gXIGhl4xplV4G37M": {
+        "img": "icon%20library/powers/bard%20skills/bard%20(36).png",
+        "name": "Influenciar",
+        "type": "attack",
+        "_id": "gXIGhl4xplV4G37M",
+        "damaging": false,
+        "range": "sonoro",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "bardi": 0
+        },
+        "usesAmmo": false,
+        "effect": "alvo tem MOD-4 para Reflexo e Vontade, devem refazer o teste de Iniciativa se estiver em combate.",
+        "area": "",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "",
+        "duration": "1 minuto.",
+        "keywords": {},
+        "skill": null,
+        "subtype": "social"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null,
+      "social": null
+    },
+    "description": {
+      "description": "<p>Inicial, Social</p><p class=\"MsoNormal\">Com seu instrumento faz sons em ritmo desconcertante que distraem e confundem seu alvo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> sonoro.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> alvo tem MOD-4 para Reflexo e Vontade, devem refazer o teste de Iniciativa se estiver em combate.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Bardismo N1.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.6uabpQ6ksMrvkAMK",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772126214374,
+    "modifiedTime": 1772126214374,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!6uabpQ6ksMrvkAMK"
+}

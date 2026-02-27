@@ -1,0 +1,83 @@
+{
+  "folder": "RUQ3JIy0TdLQ93P6",
+  "name": "Palavras de comando",
+  "type": "ability",
+  "img": "icon%20library/powers/bard%20skills/bard%20(39).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "psycovocal"
+    },
+    "actions": {
+      "qwZlKtbHvheOftEI": {
+        "img": "icon%20library/powers/bard%20skills/bard%20(39).png",
+        "name": "Influenciar",
+        "type": "attack",
+        "_id": "qwZlKtbHvheOftEI",
+        "damaging": false,
+        "range": "vocal",
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "bardi": 0,
+          "seduc": 0
+        },
+        "usesAmmo": false,
+        "effect": "o alvo tem o período de 1 dia para cumprir com o comando. Teste de Vontade (dif15+Perícia) para rejeitar o comando.",
+        "area": "",
+        "effort": "9",
+        "limit": "1 vez por dia, Sedução ou Bardismo N9 tira esse limite.",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "mind"
+      }
+    },
+    "details": {
+      "experience": 4,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "social": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Poder, Social</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Falando de modo enfático e persuasivo ou impositivo enquanto mantém contato visual as suas palavras são tidas pelo personagem alvo como uma ordem absoluta e esse se dispõe sem questionamentos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 vez por dia, Sedução ou Bardismo N9 tira esse limite.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 9.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> o alvo tem o período de 1 dia para cumprir com o comando. Teste de Vontade (dif15+Perícia) para rejeitar o comando.<em> </em></span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Lábia afinada </em>e Bardismo N7.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.wy7S6rsiSxd58n6j",
+    "duplicateSource": "Item.vtvLc0NimYgijdvU",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772152908251,
+    "modifiedTime": 1772152908251,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "sort": 1250000,
+  "_id": "YhoNQqExHhkx3l4A",
+  "_key": "!items!YhoNQqExHhkx3l4A"
+}

@@ -1,0 +1,77 @@
+{
+  "folder": "rm5yCeCGbxOsIyjB",
+  "name": "Morte fingida",
+  "type": "ability",
+  "img": "icons/magic/death/hand-withered-gray.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "theatrical"
+    },
+    "actions": {
+      "Zqxvm2tKjzthtMk6": {
+        "img": "icons/magic/death/hand-withered-gray.webp",
+        "name": "Usar",
+        "type": "use",
+        "_id": "Zqxvm2tKjzthtMk6",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "fica inanimado, podendo manter esse estado enquanto tiver essência. É possível sair do estado inanimado utilizando 1 Ação principal, na próxima rodada tem MOD-4 em todas as suas ações e DEF, a não ser que possua algum meio de auxiliar o despertar.",
+        "range": "",
+        "area": "",
+        "effort": "3, 3 para manter",
+        "limit": "",
+        "prepTime": "",
+        "duration": "até 1 hora",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "bonus": null
+    },
+    "description": {
+      "description": "<p>Bônus</p><p class=\"MsoNormal\">O personagem encena sua morte após sofrer um ferimento, ou até mesmo subitamente, usando sua essência para colocar seu corpo em um estado inanimado símile ao de morte.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 3, 3 para manter.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> fica inanimado, podendo manter esse estado enquanto tiver essência. É possível sair do estado inanimado utilizando 1 Ação principal, na próxima rodada tem MOD-4 em todas as suas ações e DEF, a não ser que possua algum meio de auxiliar o despertar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> até 1 hora.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Encenação </em>e Bardismo N3.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.9kh9ubDV9rrA4fXg",
+    "duplicateSource": "Item.9kh9ubDV9rrA4fXg",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772156596685,
+    "modifiedTime": 1772156596685,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "ehaOYvxRVpmjCq4M",
+  "_key": "!items!ehaOYvxRVpmjCq4M"
+}

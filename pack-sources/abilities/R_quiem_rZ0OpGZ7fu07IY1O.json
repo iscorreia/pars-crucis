@@ -1,0 +1,84 @@
+{
+  "folder": "haW4vk84qaD73N1B",
+  "name": "Réquiem",
+  "type": "ability",
+  "img": "icon%20library/powers/bard%20skills/bard%20(49).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "instrumental"
+    },
+    "actions": {
+      "3mlvpflbnsQM8p2o": {
+        "img": "icon%20library/powers/bard%20skills/bard%20(49).png",
+        "name": "Área de efeito",
+        "type": "attack",
+        "_id": "3mlvpflbnsQM8p2o",
+        "damaging": true,
+        "range": "sonoro até 30m",
+        "damage": {
+          "dmgBase": 12,
+          "dmgAttributes": [
+            "ego",
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "bio",
+          "dmgSubtype": "Vital"
+        },
+        "skills": {
+          "bardi": 0
+        },
+        "usesAmmo": false,
+        "effect": "o alvo principal sofre o Dano declarado. Outros no alcance sonoro sofrem [4] de dano Biológico: Vital.",
+        "area": "",
+        "effort": "8",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "aoe"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "aoe": null
+    },
+    "description": {
+      "description": "<p class=\"MsoNormal\">Área</p><p class=\"MsoNormal\">Toca com seu instrumento uma sequência de notas que ressoa e reverbera no corpo de todas as criaturas vivas do qual o bardo saiba da presença, sendo um seu alvo prioritário.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> sonoro até 30m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span>12+EGO|ESP Biológico: Vital.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> o alvo principal sofre o dano declarado. Outros no alcance sonoro sofrem [4] de dano Biológico: Vital.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Ranger </em>e Bardismo N7.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.6uabpQ6ksMrvkAMK",
+    "duplicateSource": "Item.mvqfkYPv2Ncd0tjW",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772126214374,
+    "modifiedTime": 1772126214374,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "rZ0OpGZ7fu07IY1O",
+  "_key": "!items!rZ0OpGZ7fu07IY1O"
+}

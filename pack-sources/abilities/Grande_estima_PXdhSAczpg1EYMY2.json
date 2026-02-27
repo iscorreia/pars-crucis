@@ -1,0 +1,79 @@
+{
+  "folder": "RUQ3JIy0TdLQ93P6",
+  "name": "Grande estima",
+  "type": "ability",
+  "img": "icons/magic/life/heart-cross-strong-flame-purple-orange.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "psycovocal"
+    },
+    "actions": {
+      "MEvsEF1NKNfFjrk0": {
+        "img": "icons/magic/life/heart-cross-strong-flame-purple-orange.webp",
+        "name": "Influenciar",
+        "type": "test",
+        "_id": "MEvsEF1NKNfFjrk0",
+        "skill": "atlet",
+        "skills": {
+          "bardi": 0
+        },
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "o alvo é liberto de aflições e sigilos que considere prejudiciais.",
+        "range": "vocal",
+        "area": "",
+        "effort": "7",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "difficulty": 12
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Profere palavras que trazem à tona a força espiritual de um personagem alvo o permitindo libertar-se de mazelas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 7.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> vocal.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span> 12.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> o alvo é liberto de aflições e sigilos que considere prejudiciais.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Palavra de incentivo </em>e Bardismo N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1600000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.ByrgP9DopwruKHiF",
+    "duplicateSource": "Item.DsrzKxeiuBEZ66Wh",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772152908251,
+    "modifiedTime": 1772152908251,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "PXdhSAczpg1EYMY2",
+  "_key": "!items!PXdhSAczpg1EYMY2"
+}

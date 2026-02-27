@@ -1,0 +1,75 @@
+{
+  "folder": "haW4vk84qaD73N1B",
+  "name": "Alarde",
+  "type": "ability",
+  "img": "icon%20library/powers/bard%20skills/bard%20(4).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "instrumental"
+    },
+    "actions": {
+      "ZoGBgrzM4YVcytCZ": {
+        "img": "icon%20library/powers/bard%20skills/bard%20(4).png",
+        "name": "Tocar",
+        "type": "use",
+        "_id": "ZoGBgrzM4YVcytCZ",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 8,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": false,
+          "dmgType": "pain",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "deixa ondas sonoras em estase no local, se se aproximar da área gera o som de alarde. O som pode ser audível a todos ou apenas por bardos (qualquer um com Bardismo N1 ou maior)",
+        "range": "",
+        "area": "raio de 3m",
+        "effort": "R4",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p class=\"MsoNormal\">Toca ondas sonoras que ficam em estase num local, liberando um som alto e longínquo quando algo se aproxima.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de até 3m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> deixa ondas sonoras em estase no local, se se aproximar da área gera o som de alarde. O som pode ser audível a todos ou apenas por bardos (qualquer um com Bardismo N1 ou maior)</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Espasmo </em>e Bardismo N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.6uabpQ6ksMrvkAMK",
+    "duplicateSource": "Item.WCMqRHfgxq0AEWuh",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772126214374,
+    "modifiedTime": 1772126214374,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "yj6dOkL3Ui1UDW77",
+  "_key": "!items!yj6dOkL3Ui1UDW77"
+}

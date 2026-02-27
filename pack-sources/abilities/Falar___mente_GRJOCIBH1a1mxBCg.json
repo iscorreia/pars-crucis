@@ -1,0 +1,78 @@
+{
+  "folder": "RUQ3JIy0TdLQ93P6",
+  "name": "Falar à mente",
+  "type": "ability",
+  "img": "icons/magic/movement/trail-streak-pink.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "psycovocal"
+    },
+    "actions": {
+      "yFElNCdia3pYV32z": {
+        "img": "icons/magic/movement/trail-streak-pink.webp",
+        "name": "Usar",
+        "type": "use",
+        "_id": "yFElNCdia3pYV32z",
+        "effort": "2",
+        "range": "visual ou sonoro",
+        "effect": "faz sua voz audível na mente do alvo e se desejado, também aos outros personagens ao seu entorno. Aqueles ouvindo podem fazer um teste de COG (dif10+Bardismo) para ignorar suas palavras.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 1,
+          "dmgType": "ex",
+          "scalable": false,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "dmgSubtype": ""
+        },
+        "prepTime": "",
+        "duration": "",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "starter": null,
+      "bonus": null
+    },
+    "description": {
+      "description": "<p>Inicial, Bônus</p><p class=\"MsoNormal\">O personagem se concentra e enquanto move os lábios faz sem fazer nenhum som faz as suas palavras audíveis na mente de alguém conhecido que tenha em mente e esteja em sua proximidade.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> visual ou sonoro.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> faz sua voz audível na mente do alvo e se desejado, também aos outros personagens ao seu entorno. Aqueles ouvindo podem fazer um teste de COG (dif10+Bardismo) para ignorar suas palavras.<span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"><em> </em></span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Bardismo N1.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 900000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.ByrgP9DopwruKHiF",
+    "duplicateSource": "Item.ByrgP9DopwruKHiF",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772152908251,
+    "modifiedTime": 1772152908251,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "GRJOCIBH1a1mxBCg",
+  "_key": "!items!GRJOCIBH1a1mxBCg"
+}

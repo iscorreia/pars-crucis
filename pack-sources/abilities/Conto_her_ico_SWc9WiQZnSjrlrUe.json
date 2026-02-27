@@ -1,0 +1,103 @@
+{
+  "folder": "ldp2bWH9vV4tN8Pi",
+  "name": "Conto heróico",
+  "type": "ability",
+  "img": "icons/commodities/currency/coin-embossed-gold-stag.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "bardic",
+      "category": "fortune"
+    },
+    "actions": {
+      "gloaggQPqmJXe9Op": {
+        "img": "icons/commodities/currency/coin-embossed-gold-stag.webp",
+        "name": "Outros",
+        "type": "use",
+        "_id": "gloaggQPqmJXe9Op",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "ter Ⓐ ou rolar 14 natural ou maior em um teste resulta em ⒶⒶ. Se o valor rolado for ⒶⒶ, o efeito não é consumido. Pode usar 1 Sorte para diminuir o esforço.",
+        "range": "sonoro",
+        "area": "",
+        "effort": "12 (1 ao usar 1 Sorte)",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "1 hora, ao ativar o efeito, ou ter ⒹⒹ.",
+        "keywords": {},
+        "usage": ""
+      },
+      "0LRIDYsR40emAY1G": {
+        "img": "icons/commodities/currency/coin-embossed-gold-stag.webp",
+        "name": "Em si",
+        "type": "use",
+        "_id": "0LRIDYsR40emAY1G",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "ter Ⓐ ou rolar 14 natural ou maior em um teste resulta em ⒶⒶ. Se o valor rolado for ⒶⒶ, o efeito não é consumido. Pode usar 1 Sorte para diminuir o esforço.",
+        "range": "",
+        "area": "",
+        "effort": "12 (1 ao usar 1 Sorte)",
+        "limit": "",
+        "prepTime": "",
+        "duration": "1 hora, ao ativar o efeito, ou ter ⒹⒹ.",
+        "keywords": {
+          "quick": null
+        },
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "bardi",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>(Rápida)</p><p class=\"MsoNormal\">O bardo profere palavras de virtude e incentivo que faz ele ou um personagem que possa ouvi-lo ser favorecido pelo destino.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 12 (1 ao usar 1 Sorte).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo (outros):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance (outros):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> sonoro.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo (em si):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 0.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (em si):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> é uma Ação rápida.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> ter </span><span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span> ou rolar 14 natural ou maior em um teste resulta em <span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">ⒶⒶ</span>. Se o valor rolado for <span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">ⒶⒶ</span>, o efeito não é consumido. Pode usar 1 Sorte para diminuir o esforço.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">hora, ao ativar o efeito, o</span>u ter <span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">ⒹⒹ</span>.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Boaventura </em>e </span>Bardismo<span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> N6.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.e3BJXiaS6lF7PfJW",
+    "duplicateSource": "Item.TPDGnQ89m827grbC",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772123549225,
+    "modifiedTime": 1772123549225,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "SWc9WiQZnSjrlrUe",
+  "_key": "!items!SWc9WiQZnSjrlrUe"
+}
