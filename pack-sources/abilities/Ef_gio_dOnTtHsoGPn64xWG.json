@@ -1,0 +1,103 @@
+{
+  "folder": "fPT1SQzhB4LfZIQy",
+  "name": "Efúgio",
+  "type": "ability",
+  "img": "icon%20library/powers/druid%20skills/werewolf%20(13).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "animal"
+    },
+    "actions": {
+      "0ysD2sJUcKoXmdxd": {
+        "img": "icon%20library/powers/druid%20skills/werewolf%20(13).png",
+        "name": "Ágil",
+        "type": "use",
+        "_id": "0ysD2sJUcKoXmdxd",
+        "effect": "DEF+2, para fugir tem MV+2m.",
+        "effort": "5",
+        "duration": "1 rodada",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "PFsZ8GymXsJcU4nA": {
+        "img": "icon%20library/powers/druid%20skills/werewolf%20(46).png",
+        "name": "Forte",
+        "type": "use",
+        "_id": "PFsZ8GymXsJcU4nA",
+        "effect": "AR+6, reduz dano biológico em 6.",
+        "effort": "5",
+        "duration": "1 rodada",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "reaction": null
+    },
+    "description": {
+      "description": "<p>Reação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Enquanto transformado em animal ou em transformação parcial canaliza os instintos de sobrevivência para suportar ataques ou fugir, conforme o tipo de animal assumido entre ágil ou forte.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Condição:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> estar sob uma mutação parcial.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (ágil):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> DEF+2, para fugir tem MV+2m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (forte):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> AR+6, reduz dano biológico em 6.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 rodada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> mutação parcial e Druidismo N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.66ZfIWz5C3UzARj3",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772252610026,
+    "modifiedTime": 1772252610026,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "dOnTtHsoGPn64xWG",
+  "_key": "!items!dOnTtHsoGPn64xWG"
+}

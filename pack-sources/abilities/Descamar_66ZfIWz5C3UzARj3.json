@@ -1,0 +1,77 @@
+{
+  "folder": "fPT1SQzhB4LfZIQy",
+  "name": "Descamar",
+  "type": "ability",
+  "img": "icon%20library/powers/druid%20skills/druid%20(7).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "animal"
+    },
+    "actions": {
+      "muThIu2t8t1zaORI": {
+        "img": "icon%20library/powers/druid%20skills/druid%20(7).png",
+        "name": "Curar",
+        "type": "use",
+        "_id": "muThIu2t8t1zaORI",
+        "effect": "danos físicos e elementais recebidos aumentam 50%. Ao fim da rodada se cura [7+ESP] PV.",
+        "duration": "1 rodada",
+        "effort": "8",
+        "limit": "1 vez por dia",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "prepTime": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "quick": null
+    },
+    "description": {
+      "description": "<p>Rápida</p><p class=\"MsoNormal\">Concentrando essência na superfície de um local ferido, inicia um processo regenerativo acelerado que o faz descamar a pele e trocar fios de cabelo, curando os ferimentos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 vez por dia.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 8.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> danos físicos e elementais recebidos aumentam 50%. Ao fim da rodada se cura [7+ESP] PV.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 rodada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Regeneração </em>ou <em>Identificar animal </em>e Druidismo N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.lEYigQAPgBLVDJ0H",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772252610026,
+    "modifiedTime": 1772252610026,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "66ZfIWz5C3UzARj3",
+  "_key": "!items!66ZfIWz5C3UzARj3"
+}

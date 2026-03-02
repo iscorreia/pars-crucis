@@ -1,0 +1,155 @@
+{
+  "folder": "fPT1SQzhB4LfZIQy",
+  "name": "Olhos selvagens",
+  "type": "ability",
+  "img": "icon%20library/powers/druid%20skills/druid%20(9).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "animal"
+    },
+    "actions": {
+      "ZiFgxC9dNV6cZfqO": {
+        "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+        "name": "Noturna",
+        "type": "use",
+        "_id": "ZiFgxC9dNV6cZfqO",
+        "effort": "R6",
+        "effect": "Visão noturna (+10m).",
+        "prepTime": "1AP",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "b4WwbtOIwLDhsKh2": {
+        "img": "icons/creatures/eyes/slime-single-red.webp",
+        "name": "Longínqua",
+        "type": "use",
+        "_id": "b4WwbtOIwLDhsKh2",
+        "prepTime": "1AP",
+        "effort": "R6",
+        "effect": "pode ver até 4 vezes mais longe. MOD+2 em Percepção e Sobrevivência. Ações de Arremesso e Projétil têm alcance ×1,2.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "ERZS3nYfAhvfDZzy": {
+        "img": "icons/creatures/eyes/lizard-single-slit-pink.webp",
+        "name": "Periférica",
+        "type": "use",
+        "_id": "ERZS3nYfAhvfDZzy",
+        "prepTime": "1AP",
+        "effort": "R6",
+        "effect": "aumenta o campo de visão, o personagem não é pego de surpresa, Reflexo tem MOD+1.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "6Bi1whUZCLanfvli": {
+        "img": "icons/creatures/eyes/humanoid-single-red-brown.webp",
+        "name": "Infra",
+        "type": "use",
+        "_id": "6Bi1whUZCLanfvli",
+        "prepTime": "1AP",
+        "effort": "R8",
+        "effect": "adquire visão infravermelho e reduz as penalidades por neblina, fumaça ou escuridão em 4.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "mutation": null
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">Mutação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com um alongado piscar os seus olhos são mutados para adquirir as capacidades especiais de visão noturna, longínqua, periférica ou infravermelho de acordo com um animal de seu conhecimento.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> varia com o tipo de visão.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (visão noturna):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 6, concede Visão noturna (+10m).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (visão longínqua):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 6, pode ver até 4 vezes mais longe. MOD+2 em Percepção e Sobrevivência. Ações de Arremesso e Projétil têm alcance </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">×</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">1,2.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (visão periférica):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 6, aumenta o campo de visão, o personagem não é pego de surpresa, Reflexo tem MOD+1.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (visão infravermelho):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 8, adquire visão infravermelho e reduz as penalidades por neblina, fumaça ou escuridão em 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Regeneração </em>ou <em>Identificar animal </em>e Druidismo N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.jUboFjCVbeuybgB6",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772252610026,
+    "modifiedTime": 1772252610026,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "8rwcuFVLeh8oJIeF",
+  "_key": "!items!8rwcuFVLeh8oJIeF"
+}

@@ -1,0 +1,101 @@
+{
+  "folder": "xKoXpUvXuR9NBSve",
+  "name": "Cultivar",
+  "type": "ability",
+  "img": "icon%20library/powers/nature%20skills/fairy%20(14).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "vegetal"
+    },
+    "actions": {
+      "MEsAqLYDZ08tiDmV": {
+        "img": "icon%20library/powers/nature%20skills/fairy%20(14).png",
+        "name": "Crescer",
+        "type": "use",
+        "_id": "MEsAqLYDZ08tiDmV",
+        "prepTime": "4AP",
+        "effort": "3",
+        "effect": "dentro do próximo minuto a planta cresce o equivalente a 2 meses de cultivo. Dificuldade: 14 em solo pouco fértil.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "h6wdZqGlwtpL0JSV": {
+        "img": "icon%20library/powers/nature%20skills/nature%20(15).png",
+        "name": "Frutificar",
+        "type": "use",
+        "_id": "h6wdZqGlwtpL0JSV",
+        "prepTime": "4AP",
+        "effort": "7",
+        "effect": "dentro do próximo minuto a planta produz [1+ESP] Frutos essenciais. Dificuldade: 14 em solo pouco fértil.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Criando uma semente em suas mãos, ou tocando uma planta, a faz crescer ou florescer. Uma semente ou planta em solo pouco fértil tem maior dificuldade para cultivar.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> depende do cultivo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (crescimento):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> esforço 3, dentro do próximo minuto a planta cresce o equivalente a 2 meses de cultivo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (frutificar):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> esforço 7, dentro do próximo minuto a planta produz [1+ESP] Frutos essenciais.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 14 em solo pouco fértil.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Identificar flora</em> e Druidismo N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 600000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.a0vEr1zGCsMjY4wR",
+    "duplicateSource": "Item.6nys5YpWSgedAVtz",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772475465542,
+    "modifiedTime": 1772475465542,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "fjf3GBlvrdcNZcc4",
+  "_key": "!items!fjf3GBlvrdcNZcc4"
+}

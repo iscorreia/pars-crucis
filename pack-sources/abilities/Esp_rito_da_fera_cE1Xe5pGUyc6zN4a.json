@@ -29,7 +29,8 @@
           "dmgSubtype": ""
         },
         "skills": {
-          "crono": 0
+          "crono": 0,
+          "druid": 0
         },
         "effort": "7",
         "prepTime": "1AP",
@@ -75,7 +76,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771470927684,
-    "modifiedTime": 1771470940885,
+    "modifiedTime": 1772460158939,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "cE1Xe5pGUyc6zN4a",

@@ -1,0 +1,79 @@
+{
+  "folder": "xKoXpUvXuR9NBSve",
+  "name": "Foliação",
+  "type": "ability",
+  "img": "icon%20library/powers/druid%20skills/werewolf%20(41).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "vegetal"
+    },
+    "actions": {
+      "n13xfLIhViwT0o4j": {
+        "img": "icon%20library/powers/druid%20skills/werewolf%20(41).png",
+        "name": "Curar",
+        "type": "test",
+        "_id": "n13xfLIhViwT0o4j",
+        "skill": "atlet",
+        "skills": {
+          "druid": 0
+        },
+        "difficulty": 11,
+        "effort": "11",
+        "prepTime": "3AP",
+        "range": "5m",
+        "effect": "cura o alvo em [6+ESP/2+2Ⓐ] PV e o Trauma Queimadura. A cura pode ser a partir de uma planta no alcance visual.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {}
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p class=\"MsoNormal\">Envolve uma ferida com folhas lívidas que secam para curar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 11.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 11.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> cura o alvo em </span>[6+ESP<span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial;color:black\">/2</span>+2<span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span>] PV e o Trauma <em>Queimadura</em>. A cura pode ser a partir de uma planta no alcance visual.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Cultivar </em>e Druidismo N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 600000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.a0vEr1zGCsMjY4wR",
+    "duplicateSource": "Item.1vN8PloD92yrDPtX",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772475465542,
+    "modifiedTime": 1772475465542,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "HlFJglYTsVaqCSJi",
+  "_key": "!items!HlFJglYTsVaqCSJi"
+}

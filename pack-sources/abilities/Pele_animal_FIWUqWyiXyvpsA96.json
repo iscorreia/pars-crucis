@@ -1,0 +1,129 @@
+{
+  "folder": "fPT1SQzhB4LfZIQy",
+  "name": "Pele animal",
+  "type": "ability",
+  "img": "icon%20library/powers/druid%20skills/druid%20(8).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "animal"
+    },
+    "actions": {
+      "f2EUkJ3c6qjPG32A": {
+        "img": "icon%20library/commodities/leather/spider%20(11).png",
+        "name": "Espessa",
+        "type": "use",
+        "_id": "f2EUkJ3c6qjPG32A",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "AR+4.",
+        "range": "",
+        "area": "",
+        "effort": "R9",
+        "limit": "",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "FRClf7B2lEwGfZ9B": {
+        "img": "icon%20library/commodities/leather/sea%20(37).png",
+        "name": "Escamada",
+        "type": "use",
+        "_id": "FRClf7B2lEwGfZ9B",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "AR+2 e Robustez (+4).",
+        "range": "",
+        "area": "",
+        "effort": "R9",
+        "limit": "",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "afAh1VOp3ccn7Z3m": {
+        "img": "icon%20library/commodities/leather/leather%20(6).png",
+        "name": "Plumada",
+        "type": "use",
+        "_id": "afAh1VOp3ccn7Z3m",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "Isolante (+4), MOD+4 em testes de frio extremo, MOD+2 para Furtividade.",
+        "range": "",
+        "area": "",
+        "effort": "R9",
+        "limit": "",
+        "prepTime": "3AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 3,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "mutation": null
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">Mutação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Empenhando essência na superfície de sua pele, inicia um processo de mutação que enrijece e espessa a pele a tornando como de touro ou rinoceronte; a torna coberta por rijas escamas como em um crocodilo; ou se reveste por uma camada de penas curtas e densas ou longas, como em um grande pássaro.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 9.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (espessa):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> AR+4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (escamada):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> AR+2 e Robustez (+4).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (plumada):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Isolante (+4), MOD+4 em testes de frio extremo, MOD+2 para Furtividade.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Regeneração </em>ou <em>Identificar animal </em>e Druidismo N5.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.Fz9HKeix9nTtvdkL",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772252610026,
+    "modifiedTime": 1772252610026,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "FIWUqWyiXyvpsA96",
+  "_key": "!items!FIWUqWyiXyvpsA96"
+}

@@ -67,7 +67,10 @@
 - vests
 - utils
 - aoist powers
+- arcane powers
+- bardic powers
 - cronocientific powers
+- druidic powers
 - elemental powers
 
 ### PARTIAL PACKS
@@ -84,7 +87,4 @@
 - ranged techs
 - alternative techs
 - styles
-- arcane powers
-- bardic powers
-- druidic powers
 - sabak powers

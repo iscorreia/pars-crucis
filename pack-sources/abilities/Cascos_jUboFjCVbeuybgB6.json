@@ -1,0 +1,140 @@
+{
+  "folder": "fPT1SQzhB4LfZIQy",
+  "name": "Cascos",
+  "type": "ability",
+  "img": "icons/commodities/bones/hooves-cloven-grey.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "animal"
+    },
+    "actions": {
+      "dAXR2utt14l45ckm": {
+        "img": "icons/commodities/bones/hooves-cloven-grey.webp",
+        "name": "Equino",
+        "type": "use",
+        "_id": "dAXR2utt14l45ckm",
+        "effort": "R7",
+        "prepTime": "2AP",
+        "effect": "MV+1m, Atletismo tem MOD+2. Testes para carregar peso têm MOD+4. Tem acesso ao ataque Coice.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "xw6QI3tGXpscjlwk": {
+        "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+        "name": "Caprino",
+        "type": "use",
+        "_id": "xw6QI3tGXpscjlwk",
+        "effort": "R7",
+        "area": "",
+        "prepTime": "2AP",
+        "effect": "testes de escalar tem MOD+4, não sofre penalidade por terreno íngreme ou inclinado. Tem acesso ao ataque Coice.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "QzdkR6luQLztQMyc": {
+        "img": "icons/skills/melee/shield-damaged-broken-brown.webp",
+        "name": "Coice",
+        "type": "attack",
+        "_id": "QzdkR6luQLztQMyc",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 13,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "druid": -2,
+          "briga": -1
+        },
+        "keywords": {
+          "blunt": "",
+          "impact": "7"
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "skill": null,
+        "subtype": "melee"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "mutation": null
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">(Corpo a corpo), Mutação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Transforma parcialmente as pernas para de um animal equino, caprino ou similar e aumenta a musculatura dos membros inferiores.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 7.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (equinos):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> MV+1m, Atletismo tem MOD+2. Testes para carregar peso têm MOD+4. Tem acesso ao ataque <em>Coice</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (caprinos):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> testes de escalar tem MOD+4, não sofre penalidade por terreno íngreme ou inclinado. Tem acesso ao ataque <em>Coice</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Regeneração </em>ou <em>Identificar animal </em>e Druidismo N4.</span></p><p class=\"SubNome1\">Coice</p><p class=\"SubNome2\">corpo a corpo</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 1m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 13+FIS|DES.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Embotada, Impacto (7).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Perícias:</span> Briga-1 ou Druidismo-2.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.l5eqtrvwto6WJMv5",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772252610026,
+    "modifiedTime": 1772252610026,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "jUboFjCVbeuybgB6",
+  "_key": "!items!jUboFjCVbeuybgB6"
+}

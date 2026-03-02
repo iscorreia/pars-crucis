@@ -1,0 +1,75 @@
+{
+  "folder": "xKoXpUvXuR9NBSve",
+  "name": "Cadeia emaranhada",
+  "type": "ability",
+  "img": "icon%20library/powers/nature%20skills/plant%20(15).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "vegetal"
+    },
+    "actions": {
+      "nZqR7cggGQPxgMc3": {
+        "img": "icon%20library/powers/nature%20skills/plant%20(15).png",
+        "name": "Restringir",
+        "type": "use",
+        "_id": "nZqR7cggGQPxgMc3",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "se realizado a partir de si fica com MV 0, pode ser realizado a partir de uma árvore no alcance de até 12m. Alvos devem fazer um teste de DEF (dif12+Druidismo) ou sofrem Restrição. As raízes e vinhas têm DR 14 e PV Druidismo×2. A cadeia emaranhada ativamente protege o personagem, qualquer um que entre na área, ou faça um movimento dentro da área pela primeira vez na rodada deve fazer o teste de DEF.",
+        "range": "",
+        "area": "raio de 5m",
+        "effort": "15, mantém por 6",
+        "limit": "",
+        "prepTime": "2AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 8,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p class=\"SubNome2\">O personagem se enraíza ao chão, ou utiliza uma árvore em sua proximidade, fazendo crescer abruptamente um amontoado de raízes e vinhas que se agarram aos adversários ao entorno.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 15, mantém por 6.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> se realizado a partir de si fica com MV 0, pode ser realizado a partir de uma árvore no alcance de até 12m. Alvos devem fazer um teste de DEF (dif12+Druidismo) ou sofrem Restrição. As raízes e vinhas têm </span>DR 14 e PV Druidismo<span style=\"mso-bidi-font-family:Arial\">×</span>2. A cadeia emaranhada ativamente protege o personagem, qualquer um que entre na área, ou faça um movimento dentro da área pela primeira vez na rodada deve fazer o teste de DEF.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Emaranhado</em> e Druidismo N8.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.a0vEr1zGCsMjY4wR",
+    "duplicateSource": "Item.LSUwaz316U7QPS9r",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772475465542,
+    "modifiedTime": 1772475465542,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "q3OSzw5OHodrYFj0",
+  "_key": "!items!q3OSzw5OHodrYFj0"
+}

@@ -1,0 +1,101 @@
+{
+  "folder": "xKoXpUvXuR9NBSve",
+  "name": "Lumipólen",
+  "type": "ability",
+  "img": "icon%20library/powers/nature%20skills/plant%20(12).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "vegetal"
+    },
+    "actions": {
+      "AudJkOWKvXNiunw1": {
+        "img": "icon%20library/powers/nature%20skills/plant%20(12).png",
+        "name": "Lumiar",
+        "type": "use",
+        "_id": "AudJkOWKvXNiunw1",
+        "effect": "Iluminação (raio/20m).",
+        "effort": "5",
+        "prepTime": "2AP",
+        "duration": "1 hora",
+        "range": "10m",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "u1Gr5X5nLlqO6jER": {
+        "img": "icon%20library/powers/nature%20skills/plant%20(12).png",
+        "name": "Curar",
+        "type": "use",
+        "_id": "u1Gr5X5nLlqO6jER",
+        "limit": "cura 1 vez por semana.",
+        "effort": "18",
+        "prepTime": "5 minutos",
+        "effect": "cura [10] PV de todos em um raio de 5m que forem expostos ao pólen.",
+        "range": "10m",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p class=\"SubNome2\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com alguns movimentos manuais libera de suas mãos ou flor dentro do alcance de até 10m pólen luminescente que se espalha em uma grande área para iluminar ou cobre aliados próximos para curar.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Luminescência:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> esforço 5, 2AP, espalha tendo Iluminação (raio/20m).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\">cura 1 vez por semana.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> conforme o efeito.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> varia de acordo com o efeito.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (luminescência):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> esforço 5, 2AP, Iluminação (raio/20m).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (cura):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> esforço 18, preparo 5 minutos, cura [10] PV de todos em um raio de 5m que forem expostos ao pólen.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 hora para a luminescência.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Naturalizar </em>e Druidismo N5.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.a0vEr1zGCsMjY4wR",
+    "duplicateSource": "Item.zOVO5TB2S7dTJhdS",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772475465542,
+    "modifiedTime": 1772475465542,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Qm5qgtIs7J2zsdit",
+  "_key": "!items!Qm5qgtIs7J2zsdit"
+}
