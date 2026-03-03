@@ -1,0 +1,57 @@
+{
+  "name": "Pequena ornaria",
+  "type": "gear",
+  "img": "icons/equipment/finger/ring-band-engraved-scrolls-silver.webp",
+  "system": {
+    "details": {
+      "equippable": true,
+      "stackable": false,
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "info": {
+      "subtype": "wear",
+      "group": "accessory",
+      "subgroup": "",
+      "quality": "rare"
+    },
+    "cost": {
+      "currency": "silver",
+      "price": 4
+    },
+    "keywords": {
+      "abascant": "+1"
+    },
+    "actions": {},
+    "description": {
+      "description": "<p>Pequena peça de ornaria como um brinco, botão ou anel de metal ou madeira que foi fabricada com intento de proteger o usuário.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> Abascanto (+1).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 4 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Armeiro ou Artesão N4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span> 6 horas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 3 de Essência, e 1 de Madeira, Metal, Osso ou Pedra.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "AZn7YYhXeWoJ3iel",
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.XhmKZrd1uuDo9jIs",
+    "duplicateSource": "Item.F1UjSXaMOiLthLD4",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772496751569,
+    "modifiedTime": 1772496751569,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "YiBAr3J9RvcDz3ZD",
+  "_key": "!items!YiBAr3J9RvcDz3ZD"
+}

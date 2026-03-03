@@ -65,6 +65,8 @@
 - balistics (does not include siege)
 - ammunitions (does not include battery, and ionic projectiles)
 - vests
+- accessories
+- war artifacts
 - utils
 - aoist powers
 - arcane powers
@@ -77,12 +79,10 @@
 
 ### PENDING PACKS
 
-- accessories
 - gadgets
 - matrixes
 - herbals
 - alchemicals
-- war artifacts
 - melee techs
 - ranged techs
 - alternative techs

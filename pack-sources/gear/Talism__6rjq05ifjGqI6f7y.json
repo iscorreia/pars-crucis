@@ -1,0 +1,57 @@
+{
+  "name": "Talismã",
+  "type": "gear",
+  "img": "icons/equipment/neck/amulet-engraved-wood.webp",
+  "system": {
+    "details": {
+      "equippable": true,
+      "stackable": false,
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "equipped": false,
+      "effect": "<p>Concede MOD+2 ao ESP, mas tem Abascanto (-1).</p>",
+      "penalty": ""
+    },
+    "info": {
+      "subtype": "wear",
+      "group": "accessory",
+      "subgroup": "",
+      "quality": "rare"
+    },
+    "cost": {
+      "currency": "silver",
+      "price": 25
+    },
+    "keywords": {
+      "effect": null
+    },
+    "actions": {},
+    "description": {
+      "description": "<p>Um acessório ou objeto feito com a madeira de uma árvore que possui afinidade essencial, ou material tocado pela fase. Diz aumentar o poder de seu usuário em troca de suscetibilizar sua essência.</p><p class=\"MsoNormal\">O talismã pode ser um colar, bracelete etc. ou um pequeno objeto evidente que o personagem carregue consigo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> concede MOD+2 ao ESP, mas tem Abascanto (-1).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Requisitos:</span> ESP 2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 25 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Artesão N7.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span> 18 horas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 9 de Essência e 2 de Material raro.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "AZn7YYhXeWoJ3iel",
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.XhmKZrd1uuDo9jIs",
+    "duplicateSource": "Item.1F7btXyUR5GwTyYN",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772496751569,
+    "modifiedTime": 1772496751569,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "6rjq05ifjGqI6f7y",
+  "_key": "!items!6rjq05ifjGqI6f7y"
+}

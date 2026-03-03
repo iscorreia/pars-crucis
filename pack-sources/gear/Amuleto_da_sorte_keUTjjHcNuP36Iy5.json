@@ -1,0 +1,57 @@
+{
+  "name": "Amuleto da sorte",
+  "type": "gear",
+  "img": "icons/equipment/neck/necklace-carved-stone-wood.webp",
+  "system": {
+    "details": {
+      "equippable": true,
+      "stackable": false,
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "equipped": false,
+      "effect": "<p>Testes realizados com o uso de Sorte têm MOD+1.</p>",
+      "penalty": ""
+    },
+    "info": {
+      "subtype": "wear",
+      "group": "accessory",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "cost": {
+      "currency": "silver",
+      "price": 4
+    },
+    "keywords": {
+      "effect": null
+    },
+    "actions": {},
+    "description": {
+      "description": "<p>Joia confeccionada com diferentes materiais que carregam certo valor simbólico para uma certa cultura.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> testes realizados com o uso de Sorte têm MOD+1.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 4 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Artesão N4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span> 18 horas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 3 de Essência, e 2 de Pedra, Ossos, Tecido ou Pele.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "AZn7YYhXeWoJ3iel",
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.XhmKZrd1uuDo9jIs",
+    "duplicateSource": "Item.d9p5dV4GDEdNHBoI",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772496751569,
+    "modifiedTime": 1772496751569,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "keUTjjHcNuP36Iy5",
+  "_key": "!items!keUTjjHcNuP36Iy5"
+}
