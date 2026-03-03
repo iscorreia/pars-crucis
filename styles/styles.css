@@ -1,3 +1,6 @@
+ol.directory-list header.folder-header {
+  padding: 3px 6px;
+}
 ol.directory-list li.actor,
 ol.directory-list li.item {
   height: 24px;

@@ -1,0 +1,83 @@
+{
+  "folder": "e6H3NExx3bP1GogH",
+  "name": "Luta suja",
+  "type": "ability",
+  "img": "icon%20library/skills/utility%20skills/utility%20(9).png",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "meleeTech",
+      "category": null
+    },
+    "actions": {
+      "LhCcgW2ipwffPUOQ": {
+        "img": "icon%20library/skills/utility%20skills/utility%20(9).png",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "LhCcgW2ipwffPUOQ",
+        "damaging": true,
+        "range": "5/10m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "ladin": 0,
+          "briga": 0
+        },
+        "effort": "1",
+        "subtype": "throw",
+        "effect": "aplica MOD-4 a todas as ações do alvo. Com Ⓐ ou ao rolar um 10 natural garante o sucesso. O personagem alvo pode dedicar sua ação para limpar o rosto e se recuperar, mas fica Vulnerável.",
+        "duration": "1+Ⓐ rodada.",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "ladin",
+      "coreLevel": 1,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "throw": null,
+      "aim": null
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">Arremesso/Corpo a corpo</p><p class=\"MsoNormal\">Nesse ataque desonesto o personagem faz uso de um artifício de distração como malabarismo, dança, piada etc. para roubar a atenção de seu adversário e aproveitar esse momento para um atacá-lo com um golpe corpo a corpo desarmado, de arma leve ou arremesso.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Fatalidade (+1). Na primeira que realizado contra um adversário tem MOD+2. Fora de combate, ou contra alguém desatento tem MOD+2. O ataque é usa as perícias Artimanha, Expressão ou Ladinagem.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Artimanha, Expressão ou Ladinagem N4.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.YaePMNbm5Ai0rG6L",
+    "duplicateSource": "Item.vm3UXtzfDSibNGYZ",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772551811108,
+    "modifiedTime": 1772551811108,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "c22d4EdmLeUqGm68",
+  "_key": "!items!c22d4EdmLeUqGm68"
+}

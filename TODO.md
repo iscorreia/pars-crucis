@@ -44,6 +44,7 @@
 
 - _mitigation_.adjust can be deleted in the persona config, resulting in `NaN`
 - Having no skills set for test is making so it roll Athletics, this is unwanted, it should roll a skilless test
+- capriacos origin sprint penalty not applying (has -1m to sprint)
 
 ### PONDER ABOUT
 
@@ -68,6 +69,8 @@
 - accessories
 - war artifacts
 - utils
+- melee techs
+- ranged techs
 - aoist powers
 - arcane powers
 - bardic powers
@@ -83,8 +86,6 @@
 - matrixes
 - herbals
 - alchemicals
-- melee techs
-- ranged techs
 - alternative techs
 - styles
 - sabak powers

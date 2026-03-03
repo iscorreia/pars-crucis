@@ -1,0 +1,85 @@
+{
+  "folder": "e6H3NExx3bP1GogH",
+  "name": "Golpe brutal",
+  "type": "ability",
+  "img": "icon%20library/skills/mace%20skills/mace%20(1).png",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "meleeTech",
+      "category": null
+    },
+    "actions": {
+      "74mymqUY2fNgR7Tm": {
+        "img": "icon%20library/skills/mace%20skills/mace%20(1).png",
+        "name": "Técnica",
+        "type": "tech",
+        "_id": "74mymqUY2fNgR7Tm",
+        "damaging": true,
+        "skills": {
+          "inherit": 0
+        },
+        "effort": "5",
+        "prepTime": "1AP",
+        "damage": {
+          "dmgBase": 9,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "range": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "briga",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "melee": "",
+      "modifier": "-2",
+      "impact": "7"
+    },
+    "description": {
+      "description": "<p>Corpo a corpo</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">O personagem desfere um poderoso golpe telegrafado.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> +9.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> MOD-2, Impacto (7). Armas de Impacto tem a MS -3 para ativar.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> FIS 3 e Esgrima, Hasta ou Malha N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.YaePMNbm5Ai0rG6L",
+    "duplicateSource": "Item.LjqLNhzRgCTy7JAL",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772551811108,
+    "modifiedTime": 1772551811108,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "EfqpBemDwOGYsP3N",
+  "_key": "!items!EfqpBemDwOGYsP3N"
+}

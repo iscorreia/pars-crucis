@@ -1,0 +1,83 @@
+{
+  "folder": "e6H3NExx3bP1GogH",
+  "name": "Justa",
+  "type": "ability",
+  "img": "icon%20library/skills/spearman%20skills/spear%20skill%20(38).png",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "meleeTech",
+      "category": null
+    },
+    "actions": {
+      "XTYNa516EdkEUBaU": {
+        "img": "icon%20library/skills/spearman%20skills/spear%20skill%20(38).png",
+        "name": "Técnica",
+        "type": "tech",
+        "_id": "XTYNa516EdkEUBaU",
+        "damaging": true,
+        "skills": {
+          "hasta": 0
+        },
+        "damage": {
+          "dmgBase": 7,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "effort": "4",
+        "effect": "na etapa de preparo, o personagem em sua montaria, se se move pela trajetória até seu alvo. Na etapa de ação realiza um ataque Corpo a corpo, e a seguir continua o movimento para um destino declarado dentro do limite de MV. Personagens que estiverem pelo trajeto, se tiverem declarado, podem atacar o personagem ou sua montaria, mas tem Desvantagem. Se um dos ataques acertar com Ⓐ, o personagem cai da montaria e recebe 6+MV de dano. Personagens no trajeto fazem um teste de DEF (dif10+perícia de combate/2) ou sofrem Colisão-4 com base na MV da montaria.",
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "hasta",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "melee": null
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">Corpo a corpo</p><p class=\"MsoNormal\">Enquanto montado, o personagem incita sua montaria para dar um ataque poderoso de carga com um adversário.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Condição:</span> estar montado.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> +7.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> na etapa de preparo, o personagem em sua montaria, se se move pela trajetória até seu alvo.</p><p class=\"MsoNormal\">Na etapa de ação realiza um ataque Corpo a corpo, e a seguir continua o movimento para um destino declarado dentro do limite de MV.</p><p class=\"MsoNormal\">Personagens que estiverem pelo trajeto, se tiverem declarado, podem atacar o personagem ou sua montaria, mas tem Desvantagem. Se um dos ataques acertar com <span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span>, o personagem cai da montaria e recebe 6+MV de dano.</p><p class=\"MsoNormal\">Personagens no trajeto fazem um teste de DEF (dif10+<em>perícia de combate/2</em>) ou sofrem Colisão-4 com base na MV da montaria.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Condução N4 e Esgrima, Hasta ou Malha N4.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.YaePMNbm5Ai0rG6L",
+    "duplicateSource": "Item.q1OknuuGpxQ5sbKz",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772551811108,
+    "modifiedTime": 1772551811108,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Vm7ipdhhNi2q2fxc",
+  "_key": "!items!Vm7ipdhhNi2q2fxc"
+}

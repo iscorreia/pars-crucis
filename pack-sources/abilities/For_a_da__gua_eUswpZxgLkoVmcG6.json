@@ -1,12 +1,12 @@
 {
   "type": "Item",
-  "folder": null,
+  "folder": "GsXIg4BzrinlxlEE",
   "name": "Força da água",
   "color": "#00738a",
   "sorting": "a",
   "_id": "eUswpZxgLkoVmcG6",
   "description": "",
-  "sort": 600000,
+  "sort": 500000,
   "flags": {},
   "_stats": {
     "compendiumSource": null,
@@ -16,7 +16,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771968014541,
-    "modifiedTime": 1771968014585,
+    "modifiedTime": 1772551871173,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!folders!eUswpZxgLkoVmcG6"

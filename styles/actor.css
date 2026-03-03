@@ -582,7 +582,7 @@ h4.movement {
       flex-direction: row;
       align-items: center;
       width: calc(
-        100% - 70px - var(--skill-value-width) - var(--skill-value-width)
+        100% - 55px - var(--skill-value-width) - var(--skill-value-width)
       );
       .skill-exp {
         margin: 0 0 3px 3px;
@@ -592,7 +592,7 @@ h4.movement {
       }
     }
     .skill-att {
-      width: 70px;
+      width: 55px;
       text-align: center;
       color: var(--color-light-4);
     }

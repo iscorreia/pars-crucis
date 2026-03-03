@@ -1,0 +1,121 @@
+{
+  "folder": "e6H3NExx3bP1GogH",
+  "name": "Ataque travesso",
+  "type": "ability",
+  "img": "icon%20library/skills/dagger%20skills/dagger%20skill%20(2).png",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "meleeTech",
+      "category": null
+    },
+    "actions": {
+      "Y1nKicxOqXXR6SFz": {
+        "img": "icon%20library/skills/dagger%20skills/dagger%20skill%20(2).png",
+        "name": "Inesperado",
+        "type": "tech",
+        "_id": "Y1nKicxOqXXR6SFz",
+        "damaging": true,
+        "skills": {
+          "ladin": 0,
+          "artim": 0,
+          "expre": 0
+        },
+        "keywords": {
+          "modifier": "+2"
+        },
+        "effort": "5",
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "range": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      },
+      "fJb33cUPXAq8cKjg": {
+        "img": "icon%20library/skills/dagger%20skills/dagger%20skill%20(2).png",
+        "name": "Realizar",
+        "type": "tech",
+        "_id": "fJb33cUPXAq8cKjg",
+        "damaging": true,
+        "skills": {
+          "ladin": 0,
+          "artim": 0,
+          "expre": 0
+        },
+        "range": "",
+        "effort": "5",
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "ladin",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "lethality": "+1"
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">Arremesso/Corpo a corpo</p><p class=\"MsoNormal\">Nesse ataque desonesto o personagem faz uso de um artifício de distração como malabarismo, dança, piada etc. para roubar a atenção de seu adversário e aproveitar esse momento para um atacá-lo com um golpe corpo a corpo desarmado, de arma leve ou arremesso.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Fatalidade (+1). Na primeira que realizado contra um adversário tem MOD+2. Fora de combate, ou contra alguém desatento tem MOD+2. O ataque é usa as perícias Artimanha, Expressão ou Ladinagem.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Artimanha, Expressão ou Ladinagem N4.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.YaePMNbm5Ai0rG6L",
+    "duplicateSource": "Item.BeQbl2OMSBPdoFbx",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772551811108,
+    "modifiedTime": 1772551811108,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "vm3UXtzfDSibNGYZ",
+  "_key": "!items!vm3UXtzfDSibNGYZ"
+}

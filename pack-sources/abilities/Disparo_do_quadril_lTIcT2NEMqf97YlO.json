@@ -1,0 +1,84 @@
+{
+  "folder": "PWUZpGMiGJPe5Hd9",
+  "name": "Disparo do quadril",
+  "type": "ability",
+  "img": "icon%20library/skills/artillery%20skills/artillery%20(14).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "meleeTech",
+      "category": null
+    },
+    "actions": {
+      "pkiP13Qr2ilTARyS": {
+        "img": "icon%20library/skills/artillery%20skills/artillery%20(14).png",
+        "name": "Técnica",
+        "type": "tech",
+        "_id": "pkiP13Qr2ilTARyS",
+        "damaging": true,
+        "skills": {
+          "balis": 0
+        },
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "remove penalidades por estar Engajado.",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "balis",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "projectile": "",
+      "modifier": "-1"
+    },
+    "description": {
+      "description": "<p>Projétil</p><p class=\"MsoNormal\">Dispara com besta, rifle ou escopeta a partir do quadril.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 0.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> não mira, reduz a penalidade por não mirar para MOD-1 (ao invés de MOD-4) e remove penalidades por estar Engajado.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">perícia de Combate a distância N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.CwEehjaJwfbi3qb2",
+    "duplicateSource": "Item.CwEehjaJwfbi3qb2",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772557300385,
+    "modifiedTime": 1772557300385,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "lTIcT2NEMqf97YlO",
+  "_key": "!items!lTIcT2NEMqf97YlO"
+}
