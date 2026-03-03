@@ -1,0 +1,57 @@
+{
+  "name": "Medalhão da sorte",
+  "type": "gear",
+  "img": "icons/equipment/neck/necklace-charm-clover.webp",
+  "system": {
+    "details": {
+      "equippable": true,
+      "stackable": false,
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "equipped": false,
+      "effect": "<p>Testes realizados com o uso de Sorte têm MOD+2.</p>",
+      "penalty": ""
+    },
+    "info": {
+      "subtype": "wear",
+      "group": "accessory",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "cost": {
+      "currency": "silver",
+      "price": 15
+    },
+    "keywords": {
+      "effect": null
+    },
+    "actions": {},
+    "description": {
+      "description": "<p>Joia ornamentada feita com materiais valiosos, os símbolos são entalhados enquanto essência entrópica é imbuída a joia. Aquele que veste o medalhão é favorecido em seu momento de sorte.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> testes realizados com o uso de Sorte têm MOD+2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 15 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Artesão N6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span> 18 horas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 6 de Essência, e 2 de Material raro.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "AZn7YYhXeWoJ3iel",
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.XhmKZrd1uuDo9jIs",
+    "duplicateSource": "Item.keUTjjHcNuP36Iy5",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772496751569,
+    "modifiedTime": 1772496751569,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "cJIkyUOr26efqdZU",
+  "_key": "!items!cJIkyUOr26efqdZU"
+}

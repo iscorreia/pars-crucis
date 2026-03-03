@@ -1,0 +1,78 @@
+{
+  "folder": "fPT1SQzhB4LfZIQy",
+  "name": "Tornar \"animal\"",
+  "type": "ability",
+  "img": "icon%20library/powers/druid%20skills/druid%20(14).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "animal"
+    },
+    "actions": {
+      "cDlN6wP2TnwzdV97": {
+        "img": "icon%20library/powers/druid%20skills/druid%20(14).png",
+        "name": "Mutar",
+        "type": "use",
+        "_id": "cDlN6wP2TnwzdV97",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "transforma-se no animal especificado. ~ Verificar efeitos.",
+        "range": "",
+        "area": "",
+        "effort": "R12",
+        "limit": "N/2 vezes por dia",
+        "prepTime": "4AP",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "mutation": null,
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Mutação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com alguns movimentos o personagem começa um processo de mutação, transformando-se em um animal.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> N/2 vezes por dia.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 12.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> transforma-se no animal, tendo os seus atributos de FIS, DES, DEF, PV, AR, Robustez, Isolante, Saúde e Reflexo; têm suas Passivas e Habilidades, e as suas perícias Física, de Subterfúgios e de Ofício.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">As perícias: Sociais e Sobrenaturais ficam com o Nível mais alto entre o do personagem e da criatura em que está se mutando.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Os atributos: EGO, COG, ESP, PE, AB e Vontade; e as perícias de Conhecimento do personagem são mantidos. As suas passivas mantidas podem variar. Cicatrizes e membros perdidos são levados em consideração e a idade aparente do animal é relativa.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">O PV se mantém proporcional ao mutar. Danos sofridos durante o tempo de preparo da mutação são reduzidos pela metade.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Equipamentos são absorvidos durante a mutação com exceção de itens de vidro e metálicos maiores que o punho do personagem. As moedas e pequenos objetos quando colocados dentro de uma pequena bolsa de couro também podem ser absorvidos. Esses itens não mutados, ao invés disso estão dentro do corpo do animal.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">É possível reverter de uma mutação para sua forma original e manter uma parte mutada.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"><em>Exemplo: Um personagem mutado em tigre retorna a sua forma original, mas mantém as patas ferais fazendo 7 de esforço e mantendo a retenção referente a “pata feral”</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (primeira vez):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Ao se tornar em animal pela primeira vez adquire a passiva <em>Entendimento animal</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> mutação parcial e Druidismo N5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Observações:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> o poder deve ser aprendido para cada forma animal, e só é possível para fauna do tipo Besta ou Inseto, não morto-vivo e não espiritual, que seja de tamanho pequeno-médio a médio-grande, e que possua faixa de Desafio no máximo 30 a mais que sua Experiência.</span></p><p class=\"MsoNormal\">Formas animais muito semelhantes como por exemplo diferentes espécies de cachorro de porte médio não seriam consideradas mutações diferentes, mas a mesma mutação com diferenças estéticas.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.0LfmkP008C2X5PHM",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772252610026,
+    "modifiedTime": 1772252610026,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "ted7VMXm5p1h9KRA",
+  "_key": "!items!ted7VMXm5p1h9KRA"
+}

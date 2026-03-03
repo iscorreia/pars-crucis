@@ -1,0 +1,137 @@
+{
+  "folder": "xKoXpUvXuR9NBSve",
+  "name": "Cipó",
+  "type": "ability",
+  "img": "icons/magic/nature/root-vine-coiled-crook.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "vegetal"
+    },
+    "actions": {
+      "j2MCkNLIF0Yx6yei": {
+        "img": "icons/magic/nature/root-vine-entwined-thorns.webp",
+        "name": "Corda",
+        "type": "use",
+        "_id": "j2MCkNLIF0Yx6yei",
+        "effort": "1 para cada 6m",
+        "effect": "cria uma corda que suporta até 200kg, pode criar até 18m de corda por vez.",
+        "prepTime": "1AP",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "7KZEWM0ZmeyUDc2t": {
+        "img": "icons/magic/nature/root-vine-coiled-crook.webp",
+        "name": "Chicote",
+        "type": "use",
+        "_id": "7KZEWM0ZmeyUDc2t",
+        "effort": "R3",
+        "effect": "cria um versátil chicote de cipó com ação de Chicotear. Pode Chicotear ao ser criado.",
+        "prepTime": "1AP",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "6c3lOPZCj6m5V7yP": {
+        "img": "icons/magic/nature/root-vine-wood-blue.webp",
+        "name": "Chicotear",
+        "type": "attack",
+        "_id": "6c3lOPZCj6m5V7yP",
+        "damaging": true,
+        "range": "3m",
+        "damage": {
+          "dmgBase": 10,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "druid": -1,
+          "briga": 0
+        },
+        "keywords": {
+          "bypass": null
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "skill": null,
+        "subtype": "melee"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 2,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p class=\"MsoNormal\">Com algumas breves palavras e gestos manuais contínuos cria um cipó leve e resistente a partir de si, suas vestes ou planta propícia. O cipó pode ser gerado como corda ou consigo como um chicote.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço (chicote):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 3.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço (corda):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 para cada 6m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> visual*.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span>quando distante do personagem que o criou, o cipó leva 1h para deteriorar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (chicote):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> cria um versátil chicote de cipó com ação de Chicotear. Pode Chicotear ao ser criado.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (corda):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> cria uma corda que suporta até 200kg, pode criar até 18m de corda por vez.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Druidismo N2.</span></p><p class=\"SubNome1\">Chicotear</p><p class=\"SubNome2\">Corpo a corpo</p><p class=\"MsoNormal\">Cipó forte, maleável e leve, mantido por essência.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 3m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> <span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">10+FIS|DES/2.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Indireto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Perícias:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Briga ou Druidismo-1.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.a0vEr1zGCsMjY4wR",
+    "duplicateSource": "Item.9TxdCKmjlVw2MNeT",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772475465542,
+    "modifiedTime": 1772475465542,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "6nys5YpWSgedAVtz",
+  "_key": "!items!6nys5YpWSgedAVtz"
+}

@@ -1,0 +1,84 @@
+{
+  "folder": "t23eVwqeVgBDxzDR",
+  "name": "Espírito bruto",
+  "type": "ability",
+  "img": "icons/creatures/mammals/ox-bull-horned-glowing-orange.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "astral"
+    },
+    "actions": {
+      "JkAIu4NprY1T38DG": {
+        "img": "icons/creatures/mammals/ox-bull-horned-glowing-orange.webp",
+        "name": "Invocar",
+        "type": "attack",
+        "_id": "JkAIu4NprY1T38DG",
+        "damaging": true,
+        "range": "3m",
+        "damage": {
+          "dmgBase": 15,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "druid": 0
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "area": "",
+        "effort": "8",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "melee"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "summon": null,
+      "melee": null
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">Corpo a corpo, Invocação</p><p class=\"MsoNormal\">Com um brado agressivo e movimentos corporais invoca um espírito de urso, gorila ou besta bruta que avança para atacar o alvo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 8.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span>15+ESP<span style=\"mso-bidi-font-family:Arial\">×</span>2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Espírito indômito</em> e Druidismo N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.pars-crucis.abilities.Item.kIA7yVeoOgOXhskL",
+    "duplicateSource": "Item.xeXhSC24yrVDBeBM",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772461692344,
+    "modifiedTime": 1772461692344,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "sort": 1400000,
+  "_id": "pzgl4brF7yq8sRDL",
+  "_key": "!items!pzgl4brF7yq8sRDL"
+}

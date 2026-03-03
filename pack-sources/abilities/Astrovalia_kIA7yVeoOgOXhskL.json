@@ -36,7 +36,8 @@
         "duration": "",
         "keywords": {},
         "skills": {
-          "crono": 0
+          "crono": 0,
+          "druid": 0
         },
         "difficulty": 10
       }
@@ -72,7 +73,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771522478106,
-    "modifiedTime": 1771522509610,
+    "modifiedTime": 1772315016392,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "kIA7yVeoOgOXhskL",

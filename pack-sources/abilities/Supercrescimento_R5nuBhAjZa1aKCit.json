@@ -1,0 +1,75 @@
+{
+  "folder": "xKoXpUvXuR9NBSve",
+  "name": "Supercrescimento",
+  "type": "ability",
+  "img": "icons/magic/nature/root-vine-beanstalk-moon.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "vegetal"
+    },
+    "actions": {
+      "7tkKnZeyGwFCHRJZ": {
+        "img": "icons/magic/nature/root-vine-beanstalk-moon.webp",
+        "name": "Usar",
+        "type": "use",
+        "_id": "7tkKnZeyGwFCHRJZ",
+        "effort": "7",
+        "prepTime": "2AP",
+        "range": "3m",
+        "effect": "faz crescer um emaranhado de raízes ou galhos fortes, tendo DR 26 e PV×2 Druidismo, tendo até 3m de comprimento. Repetir o poder incrementa o crescimento. Conhecer o poder pau-aço aumenta a DR para 40.",
+        "duration": "1 hora após cessar a concentração",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p class=\"MsoNormal\">Com uma palavra de comando ou movimento telegrafado o personagem faz uma planta de galhos fortes crescer abruptamente a partir de suas vestes, bastão ou do solo. A planta pode estar enraizada e pode ter seus galhos trançados como um único ou ramificar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 7.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 2 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 3m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> faz crescer um emaranhado de raízes ou galhos fortes, tendo DR 26 e PV<span style=\"mso-bidi-font-family:Arial\">×</span>2 Druidismo, tendo até 3m de comprimento. Repetir o poder incrementa o crescimento. Conhecer o poder <em>pau-aço </em>aumenta a DR para 40.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 hora após cessar a concentração.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Cultivar e Druidismo N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 600000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.a0vEr1zGCsMjY4wR",
+    "duplicateSource": "Item.fjf3GBlvrdcNZcc4",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772475465542,
+    "modifiedTime": 1772475465542,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "R5nuBhAjZa1aKCit",
+  "_key": "!items!R5nuBhAjZa1aKCit"
+}

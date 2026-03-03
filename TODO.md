@@ -65,26 +65,26 @@
 - balistics (does not include siege)
 - ammunitions (does not include battery, and ionic projectiles)
 - vests
+- accessories
+- war artifacts
 - utils
 - aoist powers
+- arcane powers
+- bardic powers
 - cronocientific powers
+- druidic powers
 - elemental powers
 
 ### PARTIAL PACKS
 
 ### PENDING PACKS
 
-- accessories
 - gadgets
 - matrixes
 - herbals
 - alchemicals
-- war artifacts
 - melee techs
 - ranged techs
 - alternative techs
 - styles
-- arcane powers
-- bardic powers
-- druidic powers
 - sabak powers

@@ -1,0 +1,81 @@
+{
+  "folder": "fPT1SQzhB4LfZIQy",
+  "name": "Visão animal",
+  "type": "ability",
+  "img": "icon%20library/powers/druid%20skills/druid%20(12).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "animal"
+    },
+    "actions": {
+      "UeeAm1yoWhZmdU0a": {
+        "img": "icon%20library/powers/druid%20skills/druid%20(12).png",
+        "name": "Mentalizar",
+        "type": "attack",
+        "_id": "UeeAm1yoWhZmdU0a",
+        "damaging": false,
+        "range": "visão ou Senso animal",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "druid": 0
+        },
+        "usesAmmo": false,
+        "effect": "têm ciência do que o animal alvo está vendo. Pode direcionar a atenção do animal se este não estiver fixado em outra coisa. Para um animal domesticado ou que tenha afinidade o poder não requer teste.",
+        "area": "",
+        "effort": "R6",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "mind"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "mental": null
+    },
+    "description": {
+      "description": "<p>Mental</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-weight:bold\">Vê através dos olhos de um animal inicialmente em sua vista, mantendo total ciência de si e hábil a agir normalmente. Enquanto esse poder não concede controle sobre o animal, é possível direcionar sua visão e o induzir a um caminho caso ele não possua algo em particular que chame sua atenção.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 6.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> visual ou <em>Senso animal</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> têm ciência do que o animal alvo está vendo. Pode direcionar a atenção do animal se este não estiver fixado em outra coisa. Para um animal domesticado ou que tenha afinidade o poder não requer teste.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Senso animal </em>e Druidismo N6.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 900000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.M9ToosSqlnasspgc",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772252610026,
+    "modifiedTime": 1772252610026,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "fWlawSvnD4y80KAV",
+  "_key": "!items!fWlawSvnD4y80KAV"
+}

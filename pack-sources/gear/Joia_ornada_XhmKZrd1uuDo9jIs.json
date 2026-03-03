@@ -1,0 +1,57 @@
+{
+  "name": "Joia ornada",
+  "type": "gear",
+  "_id": "XhmKZrd1uuDo9jIs",
+  "img": "icons/equipment/finger/ring-band-engraved-spirals-gold.webp",
+  "system": {
+    "details": {
+      "equippable": true,
+      "stackable": false,
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "info": {
+      "subtype": "wear",
+      "group": "accessory",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "cost": {
+      "currency": "silver",
+      "price": 15
+    },
+    "keywords": {
+      "abascant": "+2"
+    },
+    "actions": {},
+    "description": {
+      "description": "<p>Joia de metal ornamentado ou madeira marchetada. Quando o ferreiro ou carpinteiro entalha suas joias ele empenha sua essência, isso dá a peça propriedades protetoras.</p><p class=\"MsoNormal\">A joia pode ser um amuleto, tornozeleira, bracelete, pulseira, colar, gargantilha, brinco, cinto etc.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> Abascanto (+2).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 15 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Artesão ou Armeiro N6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span> 12 horas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 5 de Essência, e 1 de Madeira, Metal, Osso ou Pedra.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "folder": "AZn7YYhXeWoJ3iel",
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.XhmKZrd1uuDo9jIs",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772496751569,
+    "modifiedTime": 1772496751569,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!XhmKZrd1uuDo9jIs"
+}

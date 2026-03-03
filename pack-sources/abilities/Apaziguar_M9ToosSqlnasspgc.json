@@ -1,0 +1,81 @@
+{
+  "folder": "fPT1SQzhB4LfZIQy",
+  "name": "Apaziguar",
+  "type": "ability",
+  "img": "icon%20library/powers/druid%20skills/druid%20(10).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "druidic",
+      "category": "animal"
+    },
+    "actions": {
+      "9npUhNodFKxtEIlQ": {
+        "img": "icon%20library/powers/druid%20skills/druid%20(10).png",
+        "name": "Influenciar",
+        "type": "attack",
+        "_id": "9npUhNodFKxtEIlQ",
+        "damaging": false,
+        "range": "visual",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "druid": 0
+        },
+        "subtype": "social",
+        "effort": "3, +1 para cada animal a mais",
+        "limit": "1 tentativa por animal",
+        "prepTime": "1AP",
+        "effect": "o animal fica tranquilo e evita combate senão forçado. Têm MOD-6 contra animais de natureza muito agressiva. Ter Ⓐ garante que o animal ficará calmo e amigável.",
+        "usesAmmo": false,
+        "area": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "druid",
+      "coreLevel": 2,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "social": null
+    },
+    "description": {
+      "description": "<p>Social</p><p class=\"MsoNormal\">Fixando o seu olhar em um animal por um breve momento, reduz a sua agressividade enquanto este não for perturbado. Vários animais podem ser apaziguados simultaneamente.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 tentativa por animal.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3, +1 para cada animal a mais.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> visual.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> o animal fica tranquilo e evita combate senão forçado. Têm MOD-6 contra animais de natureza muito agressiva. </span><span style=\"mso-bidi-font-family:Arial\">Ter</span> <span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span><span lang=\"JA\" style=\"mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\"> </span><span style=\"mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\">garante que o animal ficará calmo e amigável.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Empatia animal </em>e Druidismo N2.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 900000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.U4xQOhXFa5gvXBBy",
+    "duplicateSource": "Item.HehhzATsjnlXNZQi",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772252610026,
+    "modifiedTime": 1772461021137,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "M9ToosSqlnasspgc",
+  "_key": "!items!M9ToosSqlnasspgc"
+}
