@@ -1,0 +1,84 @@
+{
+  "folder": "MU9Xr1b6NN0keHed",
+  "name": "Mandrágora",
+  "type": "gear",
+  "img": "icon%20library/consumables/alchemical%20herbs/undead%20(48).png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "herbal",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "A0DPyGsE3pdovUo3": {
+        "img": "icon%20library/consumables/alchemical%20herbs/undead%20(48).png",
+        "name": "Usar",
+        "type": "use",
+        "_id": "A0DPyGsE3pdovUo3",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "ao fim da rodada o usuário deve passar um teste de FIS (dif20) ou adormece, com sucesso pode optar por se acalmar. Para projéteis embebidos o alvo deve passar um teste de FIS (dif14) ou adormece, tendo dificuldade +3 por acúmulo, até 20.",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": "Mastigável, ou Óleo para flechas, virotes e dardos (3 projéteis)."
+      }
+    },
+    "cost": {
+      "price": 50,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 5,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "recipe": null
+    },
+    "description": {
+      "description": "<p>Receita</p><p class=\"MsoNormal\">Raiz de efeito calmante, quando seu óleo é extraído e reduzido se torna um potente sonífero. Quando usado em baixas quantidades é um bom medicamento para dormir.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> Mastigável, ou Óleo para flechas, virotes e dardos (3 projéteis).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> ao fim da rodada o usuário deve passar um teste de FIS (dif20) ou adormece, com sucesso pode optar por se acalmar. Para projéteis embebidos o alvo deve passar um teste de FIS (dif14) ou adormece, tendo dificuldade +3 por acúmulo, até 20.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 50 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N3 ou Sobrevivência N4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 hora.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> <span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">2 Plantas.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.aqxejzHH2Rla1y4S",
+    "duplicateSource": "Item.ezUGeGXEtYsubM69",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772590029592,
+    "modifiedTime": 1772590029592,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "BR3O9shZmBVIKN2o",
+  "_key": "!items!BR3O9shZmBVIKN2o"
+}

@@ -12,7 +12,7 @@
     "actions": {
       "vyiyvEd0eeeF249Y": {
         "img": "icons/weapons/axes/axe-broad-engraved-black-grey.webp",
-        "name": "Atacar",
+        "name": "Golpear",
         "type": "attack",
         "_id": "vyiyvEd0eeeF249Y",
         "damaging": true,
@@ -35,7 +35,10 @@
         "prepTime": "",
         "duration": "",
         "keywords": {},
-        "subtype": "melee"
+        "subtype": "melee",
+        "skills": {
+          "malha": 0
+        }
       }
     },
     "cost": {
@@ -85,8 +88,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770489103527,
-    "modifiedTime": 1770489103527,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772571907584,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "zzRVwtMmtKzQMC6D",
   "sort": 0,

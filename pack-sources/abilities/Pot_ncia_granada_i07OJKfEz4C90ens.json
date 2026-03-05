@@ -5,8 +5,8 @@
   "img": "icons/skills/ranged/bomb-grenade-thrown-yellow.webp",
   "system": {
     "info": {
-      "subtype": "power",
-      "art": "meleeTech",
+      "subtype": "technique",
+      "art": "rangedTech",
       "category": null
     },
     "actions": {
@@ -76,7 +76,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772557300385,
-    "modifiedTime": 1772557300385,
+    "modifiedTime": 1772569642267,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "i07OJKfEz4C90ens",

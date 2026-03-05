@@ -2,7 +2,7 @@
   "folder": "B7hjQHZ1Qd71IXpg",
   "name": "Lamparina",
   "type": "gear",
-  "img": "icon%20library/sundries/lights/mining%20(3).png",
+  "img": "icons/sundries/lights/lantern-iron-yellow.webp",
   "system": {
     "info": {
       "subtype": "item",
@@ -48,7 +48,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361165081,
-    "modifiedTime": 1771363001906,
+    "modifiedTime": 1772644862126,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "Sc0L4A4Y3JzCgQV3",

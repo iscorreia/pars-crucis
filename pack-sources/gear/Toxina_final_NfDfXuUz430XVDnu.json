@@ -1,0 +1,116 @@
+{
+  "folder": "YxqDbDqQPHFL0RXo",
+  "name": "Toxina final",
+  "type": "gear",
+  "img": "icon%20library/consumables/alchemical%20potions/poison%20(11).png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "alchemical",
+      "subgroup": "",
+      "quality": "rare"
+    },
+    "actions": {
+      "6LTSFQ7HZRDA7dWI": {
+        "img": "icon%20library/consumables/alchemical%20potions/poison%20(11).png",
+        "name": "Agente",
+        "type": "use",
+        "_id": "6LTSFQ7HZRDA7dWI",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "aumenta a dificuldade de um veneno em 10.",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {
+          "agent": null
+        },
+        "usage": "Agente"
+      },
+      "eqaB3mK0sK01FuJq": {
+        "img": "icon%20library/consumables/alchemical%20potions/poison%20(11).png",
+        "name": "Veneno",
+        "type": "use",
+        "_id": "eqaB3mK0sK01FuJq",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 16,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "scalable": false,
+          "dmgType": "bio",
+          "dmgSubtype": "Tóxico"
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {
+          "poison": null
+        },
+        "usage": "Líquido, ou Óleo para armas (1 ataque ou projétil)."
+      }
+    },
+    "cost": {
+      "price": 25,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 5,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "recipe": null
+    },
+    "description": {
+      "description": "<p>Agente/Veneno, Receita</p><p class=\"MsoNormal\">Apenas os mais experientes praticantes de venefício são capazes de sintetizar essa toxina. Quando misturada a um veneno, este tem sua toxicidade imensamente aprimorada, manusear essa toxina requer muito cuidado. Essa é uma substância controlada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> Agente, Líquido, ou Óleo para armas (1 ataque ou projétil).</p><p class=\"SubTtulo2\"><span style=\"font-variant:normal !important;font-weight:normal\">Agente</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> aumenta a dificuldade de um veneno em 10.</p><p class=\"SubTtulo2\"><span style=\"font-variant:normal !important;font-weight:normal\">Líquido ou Óleo</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano: </span>[16+COG<span style=\"mso-bidi-font-family:Arial\">×</span>2] Biológico: Tóxico.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 25 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N8.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 24 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 1 Omegatoxina<span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial;color:black\">.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.zIAeWtHdNxio0Ge6",
+    "duplicateSource": "Item.sgFUGwvC9LSZOsY1",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772661095579,
+    "modifiedTime": 1772661095579,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "NfDfXuUz430XVDnu",
+  "_key": "!items!NfDfXuUz430XVDnu"
+}

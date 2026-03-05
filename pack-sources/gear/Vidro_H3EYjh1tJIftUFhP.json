@@ -1,0 +1,55 @@
+{
+  "folder": "uvWzzTBJhVqiDOB4",
+  "name": "Vidro",
+  "type": "gear",
+  "img": "icons/commodities/materials/glass-orb.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "material",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 10,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 10,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Líquido transparente de aspecto sólido, o vidro é feito com alguns dos componentes encontrados na areia elevados a altíssima temperatura. Tendo cores variadas conforme a sua composição, é um material extremamente útil e amplamente utilizado.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> fabricado com alguns tipos de areia e outros componentes.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Origem:</span> Derivada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Artesão ou Engenharia N4.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": "Item.U8eDjVpZ3JqPjN41",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772644586593,
+    "modifiedTime": 1772644586593,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "H3EYjh1tJIftUFhP",
+  "_key": "!items!H3EYjh1tJIftUFhP"
+}

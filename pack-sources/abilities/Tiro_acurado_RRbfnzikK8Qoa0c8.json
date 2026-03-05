@@ -5,8 +5,8 @@
   "img": "icon%20library/powers/undead%20skills/undead%20(23).png",
   "system": {
     "info": {
-      "subtype": "power",
-      "art": "meleeTech",
+      "subtype": "technique",
+      "art": "rangedTech",
       "category": null
     },
     "actions": {
@@ -71,7 +71,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772557300385,
-    "modifiedTime": 1772557300385,
+    "modifiedTime": 1772569640434,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "RRbfnzikK8Qoa0c8",

@@ -1,0 +1,55 @@
+{
+  "folder": "0fTY46agc8L1KbpY",
+  "name": "Aço astral",
+  "type": "gear",
+  "img": "icons/commodities/metal/ingot-stamped-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "material",
+      "subgroup": "",
+      "quality": "rare"
+    },
+    "actions": {},
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 10,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Feito com minérios extraídos de astros celestiais que caíram, o aço astral tem coloração azul escura, as vezes quase preta. Depois de refinado se torna quase indestrutível em condições normais, um material extremamente valorizado por armeiros e engenheiros.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> armas e munições têm Dano+2; vestimentas têm AR+3 e se tiverem Robustez aumente a propriedade em 1. Os equipamentos têm DR 48.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> extraído de minérios vindos dos céus.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Origem:</span> Mineral (celestial).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Armeiro, Engenharia ou Extração N7.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.at77xTIz6eGgips5",
+    "duplicateSource": "Item.at77xTIz6eGgips5",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772644588361,
+    "modifiedTime": 1772644588361,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "4Eg8MpnOevT607EK",
+  "_key": "!items!4Eg8MpnOevT607EK"
+}

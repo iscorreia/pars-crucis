@@ -1,0 +1,55 @@
+{
+  "folder": "uvWzzTBJhVqiDOB4",
+  "name": "Reagentes",
+  "type": "gear",
+  "img": "icons/tools/laboratory/mortar-powder-green.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "material",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 10,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 10,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Conjunto de compostos químicos que podem ser utilizados para fabricar alquímicos ácidos, inflamáveis, medicamentos e muitos outros itens, são encontrados das mais diversas maneiras.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> podem ser depurados de compostos encontrados em minas e jazidas, extraídos de plantas, ou feitos com misturas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Origem:</span> Química ou Derivada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N2, Extração N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": "Item.tcWaXF4t3fWKH0hI",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772644586593,
+    "modifiedTime": 1772644586593,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "8BkGuPm8s359SHPE",
+  "_key": "!items!8BkGuPm8s359SHPE"
+}

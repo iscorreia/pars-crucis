@@ -12,7 +12,6 @@ ol.directory-list li.item {
     line-height: 24px;
     object-position: 0 45%;
   }
-
   a {
     height: inherit;
     line-height: 20px;
@@ -22,4 +21,7 @@ ol.directory-list li.item {
 }
 ol.directory-list li.compendium {
   height: 72px;
+}
+li.directory-item li.folder {
+  --folder-padding: 3px;
 }

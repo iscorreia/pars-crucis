@@ -1,0 +1,55 @@
+{
+  "folder": "0fTY46agc8L1KbpY",
+  "name": "Aço artífice",
+  "type": "gear",
+  "img": "icons/commodities/metal/ingot-stamped-silver.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "material",
+      "subgroup": "",
+      "quality": "rare"
+    },
+    "actions": {},
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 10,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Liga metálica criada pelos artífices, é muito mais leve que o ferro ou aço e permite excelente acabamento. Por sua raridade e dificuldade em ser trabalho poucos se arriscam utilizar esse material.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> armas têm Manuseio (+1); escudos têm DEF+1 e a penalidade de Manuseio diminuída em 1; vestimentas têm AR+2 e as penalidades para DES, Reflexo e MV são diminuídas em 1. Os equipamentos têm DR 35. Os armamentos não podem ser aprimorados com Equilibrar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> o segredo para fabricar essa liga metálica foi perdido a séculos, mas armeiros e artesões podem desmantelar itens desse material, assim utilizando-o para outras criações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Origem:</span> Derivada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Armeiro, Engenharia ou Extração N6.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": "Item.bU7m9cx4CV8ps6Bm",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772644588361,
+    "modifiedTime": 1772644588361,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "at77xTIz6eGgips5",
+  "_key": "!items!at77xTIz6eGgips5"
+}

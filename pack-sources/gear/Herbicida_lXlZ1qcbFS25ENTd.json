@@ -1,0 +1,114 @@
+{
+  "folder": "YxqDbDqQPHFL0RXo",
+  "name": "Herbicida",
+  "type": "gear",
+  "img": "icon%20library/consumables/alchemical%20potions/poison%20(3).png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "alchemical",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "8MeOvWen0dHOuw3n": {
+        "img": "icon%20library/consumables/alchemical%20potions/poison%20(3).png",
+        "name": "Líquido",
+        "type": "use",
+        "_id": "8MeOvWen0dHOuw3n",
+        "usage": "Líquido",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 18,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgType": "bio",
+          "dmgSubtype": "Tóxico",
+          "scalable": false,
+          "dmgAttMultiplier": 1,
+          "dmgAddition": ""
+        },
+        "effect": "afeta apenas plantas, incluso Lignos e Labris. Teste de Saúde (dif22) reduz o dano pela metade. Adicionalmente impede crescimento, florescer e frutificar de uma planta por 1 ano.",
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {}
+      },
+      "M9J7CRCy9eZHhCby": {
+        "img": "icon%20library/consumables/alchemical%20potions/poison%20(3).png",
+        "name": "Óleo",
+        "type": "use",
+        "_id": "M9J7CRCy9eZHhCby",
+        "usage": "Óleo (3 ataques ou projéteis).",
+        "duration": "3 ataques ou projéteis",
+        "damaging": true,
+        "damage": {
+          "dmgBase": 6,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgType": "bio",
+          "dmgSubtype": "Tóxico",
+          "scalable": false,
+          "dmgAttMultiplier": 1,
+          "dmgAddition": ""
+        },
+        "effect": "afeta apenas plantas, incluso Lignos e Labris. Teste de Saúde (dif22) reduz o dano pela metade. Adicionalmente impede crescimento, florescer e frutificar de uma planta por 1 ano.",
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "keywords": {}
+      }
+    },
+    "cost": {
+      "price": 3,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 5,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "poison": null
+    },
+    "description": {
+      "description": "<p>Veneno</p><p class=\"MsoNormal\">Veneno eficiente contra plantas, efeito mínimo em animais. Usar herbicida contra Lignos é considerado um crime hediondo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> Líquido ou óleo para armas (3 ataques ou projéteis).</p><p class=\"SubTtulo2\">Líquido</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> [18+COG+MF] Biológico: Tóxico.</p><p class=\"SubTtulo2\">Óleo</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> [6+COG] Biológico: Tóxico.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> afeta apenas plantas, incluso Lignos e Labris. Teste de Saúde (dif22) reduz o dano pela metade. Adicionalmente impede crescimento, florescer e frutificar de uma planta por 1 ano.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 3 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 2 Toxinas<span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.zIAeWtHdNxio0Ge6",
+    "duplicateSource": "Item.B33VZSvWkAlP1JjB",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772661095579,
+    "modifiedTime": 1772661095579,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "lXlZ1qcbFS25ENTd",
+  "_key": "!items!lXlZ1qcbFS25ENTd"
+}

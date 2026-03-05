@@ -6,8 +6,8 @@
   "img": "icon%20library/skills/dagger%20skills/dagger%20skill%20(34).png",
   "system": {
     "info": {
-      "subtype": "power",
-      "art": "meleeTech",
+      "subtype": "technique",
+      "art": "rangedTech",
       "category": null
     },
     "actions": {
@@ -72,7 +72,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772557300385,
-    "modifiedTime": 1772557300385,
+    "modifiedTime": 1772569570168,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!CwEehjaJwfbi3qb2"

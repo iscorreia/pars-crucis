@@ -1,0 +1,86 @@
+{
+  "folder": "YxqDbDqQPHFL0RXo",
+  "name": "Gasóleo",
+  "type": "gear",
+  "img": "icons/containers/barrels/barrel-reinforced-chestnut-brown.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "alchemical",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "ai715eVQjxi5UMd4": {
+        "img": "icons/containers/barrels/barrel-reinforced-chestnut-brown.webp",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "ai715eVQjxi5UMd4",
+        "damaging": false,
+        "range": "3/6m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "alqui": 0
+        },
+        "subtype": "throw",
+        "effect": "se for inflamado concede Dano+10 a ataques Elementais: Ígneo e Voltaico.",
+        "usesAmmo": false,
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "cost": {
+      "price": 10,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 20,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p class=\"SubNome2\">Arremesso</p><p class=\"MsoNormal\">Líquido combustível utilizado como fonte de energia para luminárias e maquinário, se colocado em reservatório apropriados pode ser utilizado por armamentos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> Líquido, ou Arremesso.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 3/6m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Se for inflamado concede Dano+10 a ataques Elementais: Ígneo e Voltaico. É carregado em Montes de 10.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Monte:</span> 20.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 10 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> Extraído, ou <span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">1 Reagente para fabricar 2 unidades.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.zIAeWtHdNxio0Ge6",
+    "duplicateSource": "Item.5QGOwODUrQaHBUMZ",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772661095579,
+    "modifiedTime": 1772661095579,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "IZ95mD3bHVPr1uNa",
+  "_key": "!items!IZ95mD3bHVPr1uNa"
+}

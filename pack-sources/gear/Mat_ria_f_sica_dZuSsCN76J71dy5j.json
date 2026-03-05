@@ -1,0 +1,55 @@
+{
+  "folder": "0fTY46agc8L1KbpY",
+  "name": "Matéria fásica",
+  "type": "gear",
+  "img": "icons/commodities/stone/ore-pile-white.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "material",
+      "subgroup": "",
+      "quality": "phasic"
+    },
+    "actions": {},
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 10,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\">Materiais provenientes da fase, impossíveis de se trabalhar nos planos materiais. Os equipamentos desse material são altamente valorizados e possuem propriedades especiais que os tornam eficientes contra os seres etéreos. Têm o sufixo “fásico”.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\"> armas têm adicional de [3] de dano essencial, e contra criaturas etéreas muda a propriedade de dano para existencial; vestimentas têm AB+4; acessórios têm AB+1.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\"> armas, vestes e itens desse material são encontrados sobre a posse de lordes e mercenários, são guardados como relíquias, ou são portadas por seres etéreos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Origem:</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\"> Desconhecida.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%\"> Nenhum.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 900000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.45I6P6osuH2xwnir",
+    "duplicateSource": "Item.45I6P6osuH2xwnir",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772644588361,
+    "modifiedTime": 1772644588361,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "dZuSsCN76J71dy5j",
+  "_key": "!items!dZuSsCN76J71dy5j"
+}

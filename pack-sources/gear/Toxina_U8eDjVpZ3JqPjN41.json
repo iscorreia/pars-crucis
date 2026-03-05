@@ -1,0 +1,55 @@
+{
+  "folder": "uvWzzTBJhVqiDOB4",
+  "name": "Toxina",
+  "type": "gear",
+  "img": "icons/skills/toxins/poison-skull-herbs-bottle-pink.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "material",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {},
+    "cost": {
+      "price": 10,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 10,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>São compostos com propriedades tóxicas extraídos de plantas, fungos ou animais peçonhentos. As toxinas podem ser depuradas em diversos tipos de venenos ou agentes tóxicos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> Extraído de plantas e frutos venenos, fungos tóxicos, da presa ou bolsa de veneno de animais peçonhentos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Origem:</span> Animal, Botânica ou Química.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia ou Medicina N3, Sobrevivência N5.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": "Item.QxNTK2GKm4YrTZhH",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772644586593,
+    "modifiedTime": 1772644586593,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "U8eDjVpZ3JqPjN41",
+  "_key": "!items!U8eDjVpZ3JqPjN41"
+}
