@@ -13,7 +13,7 @@
     "actions": {
       "RmAUUhdu3t6fTX5D": {
         "img": "icon%20library/powers/dark%20skills/warlock%20(48).png",
-        "name": "Reanimar",
+        "name": "Sigilar",
         "type": "test",
         "_id": "RmAUUhdu3t6fTX5D",
         "skill": "atlet",
@@ -54,13 +54,13 @@
       "sigil": null
     },
     "description": {
-      "description": "<p>Reanima um ser morto fazendo em seu corpo marcas que invocam, invertem e prendem o seu espírito de volta ao corpo e o colocando em estado Morto-vivo.</p><p>Esforço: 18.</p><p>Tempo de preparo: 6 ações.</p><p>Dificuldade: 20.</p><p>Efeitos: cura [4+ESP×2] PV e [2+ESP] PE. O morto-vivo não recupera PV naturalmente, não pode ser curado por medicina comum e a maioria dos poderes de cura, não recebe danos biológicos e não sofre os efeitos de venenos e doenças. Se o personagem ficou morto por muito tempo, muitas de suas memórias e personalidade podem ter se perdido. Morrer novamente simplesmente desanima o corpo. O personagem reanimado tem uma sensação inevitável de dívida para com quem o reanimou, tornando muito difícil agir contra ele.</p><p>Pré-requisitos: Sifonar e Sabakismo N8.</p>",
+      "description": "<p>Sigilo</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Reanima um ser morto fazendo em seu corpo marcas que invocam, invertem e prendem o seu espírito de volta ao corpo e o colocando em estado Morto-vivo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 18.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 6 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 20.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> cura [4+ESP×2] PV e [2+ESP] PE. O morto-vivo não recupera PV naturalmente, não pode ser curado por medicina comum e a maioria dos poderes de cura, não recebe danos biológicos e não sofre os efeitos de venenos e doenças.</span></p><p class=\"MsoNormal\">Se o personagem ficou morto por muito tempo, muitas de suas memórias e personalidade podem ter se perdido. Morrer novamente simplesmente desanima o corpo.</p><p class=\"MsoNormal\">O personagem reanimado tem uma sensação inevitável de dívida para com quem o reanimou, tornando muito difícil agir contra ele.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Sifonar </em>e Sabakismo N8.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1500000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -74,8 +74,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766235825,
-    "modifiedTime": 1772766235825,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772817734256,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!UXiNd72KL4rhKOXQ"
 }

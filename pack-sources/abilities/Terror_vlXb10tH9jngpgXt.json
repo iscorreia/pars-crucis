@@ -3,7 +3,7 @@
   "name": "Terror",
   "type": "ability",
   "_id": "vlXb10tH9jngpgXt",
-  "img": "icons/magic/control/fear-fright-shadow-monster-purple.webp",
+  "img": "icon%20library/powers/outworld%20skills/outworldly%20(41).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,8 +12,8 @@
     },
     "actions": {
       "beuQMnqs3g4mzZYB": {
-        "img": "icons/magic/control/fear-fright-shadow-monster-purple.webp",
-        "name": "Aterrorizar",
+        "img": "icon%20library/powers/outworld%20skills/outworldly%20(41).png",
+        "name": "Mentalizar",
         "type": "attack",
         "_id": "beuQMnqs3g4mzZYB",
         "damaging": false,
@@ -60,7 +60,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1900000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -74,8 +74,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772808408281,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!vlXb10tH9jngpgXt"
 }

@@ -1,9 +1,9 @@
 {
   "folder": "kvk3OZi8TghBH7be",
-  "name": "Adnamia",
+  "name": "Adinamia",
   "type": "ability",
   "_id": "QzG55YoQvzGSUpAW",
-  "img": "icon%20library/powers/debuff%20skills/debuff%20(22).png",
+  "img": "icon%20library/powers/debuff%20skills/debuff%20(51).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,12 +12,12 @@
     },
     "actions": {
       "tobMnEagmk7cvqfS": {
-        "img": "icon%20library/powers/debuff%20skills/debuff%20(22).png",
-        "name": "Afligir",
+        "img": "icon%20library/powers/debuff%20skills/debuff%20(51).png",
+        "name": "Mentalizar",
         "type": "attack",
         "_id": "tobMnEagmk7cvqfS",
         "damaging": true,
-        "range": "Visual",
+        "range": "vVisual",
         "damage": {
           "dmgBase": null,
           "dmgType": "es",
@@ -37,7 +37,7 @@
         "effort": "6",
         "prepTime": "1AP",
         "duration": "1 minuto",
-        "effect": "ataques escaláveis tem Dano-5",
+        "effect": "ataques escaláveis tem Dano-5.",
         "usesAmmo": false,
         "area": "",
         "limit": "",
@@ -63,7 +63,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1000000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -77,8 +77,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772807823039,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!QzG55YoQvzGSUpAW"
 }

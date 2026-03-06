@@ -13,7 +13,7 @@
     "actions": {
       "ajNlh8zahOjv2nmK": {
         "img": "icon%20library/powers/outworld%20skills/outworldly%20(31).png",
-        "name": "Marcar",
+        "name": "Sigilar",
         "type": "use",
         "_id": "ajNlh8zahOjv2nmK",
         "usage": "Sigilo",
@@ -22,7 +22,7 @@
         "prepTime": "6AP",
         "duration": "qualquer quantia de tempo superior a 1 hora.",
         "effect": "O personagem marcado pode fazer um teste de Vontade (dif12+Sabakismo) para resistir a ordem imposta, mas recebe [10+COG|ESP] de quem o marcou] de dano Existencial e Essencial. Se o personagem falhar em cumprir com a ordem dentro do tempo estipulado ele recebe dano como se tivesse resistido a ordem. Se um personagem por algum motivo aceitar o sigilo do lacaio intencionalmente, a dificuldade do teste para discordar aumenta em 5, porém ele tem MOD+2 em todas as suas ações para fins de cumprir a ordem que lhe foi imposta. A morte de quem fez o sigilo não tem influência sobre seu efeito no personagem marcado, que continuará a seguir a ordem.",
-        "range": "0m",
+        "range": "",
         "damaging": false,
         "damage": {
           "dmgBase": 0,
@@ -56,7 +56,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 900000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -70,8 +70,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772814490584,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!PF3PLOF0wA2oN10J"
 }

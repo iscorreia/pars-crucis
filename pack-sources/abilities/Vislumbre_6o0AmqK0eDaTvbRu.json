@@ -3,7 +3,7 @@
   "name": "Vislumbre",
   "type": "ability",
   "_id": "6o0AmqK0eDaTvbRu",
-  "img": "icon%20library/powers/dark%20skills/warlock%20(42).png",
+  "img": "icon%20library/powers/illusionist%20skills/illusion%20(7).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,8 +12,8 @@
     },
     "actions": {
       "FDAupaI4UqbLVvqE": {
-        "img": "icon%20library/powers/dark%20skills/warlock%20(42).png",
-        "name": "Vislumbrar",
+        "img": "icon%20library/powers/illusionist%20skills/illusion%20(7).png",
+        "name": "Analisar",
         "type": "test",
         "_id": "FDAupaI4UqbLVvqE",
         "skill": "atlet",
@@ -23,7 +23,7 @@
         "difficulty": 11,
         "effort": "3",
         "limit": "1 tentativa por personagem",
-        "range": "0m",
+        "range": "",
         "prepTime": "1AP",
         "effect": "vislumbra parte da memória que tenha relação consigo ou algo que esteja buscando. A MS aumenta a qualidade da lembrança.",
         "damaging": false,
@@ -58,7 +58,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 300000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -72,8 +72,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772808512692,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!6o0AmqK0eDaTvbRu"
 }

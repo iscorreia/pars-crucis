@@ -3,7 +3,7 @@
   "name": "Espírito adepto",
   "type": "ability",
   "_id": "beqzvbTF1lJWTlbh",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/magic/symbols/runes-triangle-magenta.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,11 +12,11 @@
     },
     "actions": {
       "ZLoHaCsGy0Zrg6D2": {
-        "img": "icons/svg/item-bag.svg",
+        "img": "icons/magic/symbols/runes-triangle-magenta.webp",
         "name": "Invocar",
         "type": "use",
         "_id": "ZLoHaCsGy0Zrg6D2",
-        "effect": "Invoca um espírito reverso próximo a um personagem e potencializa seu próximo poder reduzindo 1AP e concedendo MOD+5 para ESP. O espírito pode se recusar a potencializar alguns poderes, especialmente de cura e auxílio.",
+        "effect": "o próximo poder realizado tem o preparo reduzido em 1AP e o personagem tem MOD+5 para ESP ao realizá-lo.",
         "effort": "7",
         "range": "10m",
         "prepTime": "1AP",
@@ -50,13 +50,13 @@
       "summon": null
     },
     "description": {
-      "description": "<p>Invoca um espírito reverso que permanece próximo de um personagem no alcance de 10m e potencializa seu próximo poder reduzindo 1AP e concedendo MOD+5 para ESP. O espírito pode se recusar a potencializar alguns poderes, especialmente de cura e auxílio.</p><p>Esforço: 7.</p><p>Tempo de preparo: 1 ação.</p><p>Pré-requisitos: Sifonar e Sabakismo N5.</p>",
+      "description": "<p>Invocação</p><p class=\"MsoNormal\">Invoca um espírito reverso que permanece próximo de um personagem e potencializa um de seus poderes. O espírito pode se recusar a potencializar alguns poderes, especialmente de cura e auxílio.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7</span>.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 10m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> o próximo poder realizado tem o preparo reduzido em 1AP e o personagem tem MOD+5 para ESP ao realizá-lo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Sifonar </em>e Sabakismo N5.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1600000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -70,8 +70,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766235825,
-    "modifiedTime": 1772766235825,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772817690244,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!beqzvbTF1lJWTlbh"
 }

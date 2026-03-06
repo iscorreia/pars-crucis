@@ -1,20 +1,20 @@
 {
-  "folder": "dqNtFtYJYIp1FKQh",
+  "folder": "YxqDbDqQPHFL0RXo",
   "name": "Accelerato",
   "type": "gear",
   "_id": "PgwZTF27DFhqjt6F",
-  "img": "icon%20library/consumables/alchemical%20potions/wing%20(5).png",
+  "img": "icon%20library/consumables/elixir/16.png",
   "system": {
     "info": {
       "subtype": "item",
       "group": "alchemical",
       "subgroup": "",
-      "quality": "common"
+      "quality": "rare"
     },
     "actions": {
       "DHLf3YwXRsMk5Ai3": {
-        "img": "icon%20library/consumables/alchemical%20potions/wing%20(5).png",
-        "name": "Beber ou injetar",
+        "img": "icon%20library/consumables/elixir/16.png",
+        "name": "Usar",
         "type": "use",
         "_id": "DHLf3YwXRsMk5Ai3",
         "effect": "tem MV+2m, e MOD+2 para DES, Reflexo, Furtividade, Percepção e Ladinagem por 5 minutos.",
@@ -46,8 +46,8 @@
     "details": {
       "slots": 1,
       "stack": 1,
-      "stackMax": 1,
-      "stackable": false,
+      "stackMax": 5,
+      "stackable": true,
       "equippable": false,
       "equipped": false,
       "effect": "",
@@ -58,13 +58,13 @@
       "recipe": null
     },
     "description": {
-      "description": "<p>Reagentes estimulantes em conjunto com matéria fásica, essa poção aumenta a velocidade de ação e reação do personagem.</p><p>Uso: líquido para Beber ou Injetar.</p><p>Efeitos: tem MV+2m, e MOD+2 para DES, Reflexo, Furtividade, Percepção e Ladinagem por 5 minutos.</p><p>Preço: 5 pratas.</p><p>Ofício: Alquimia N6.</p><p>Tempo para fabricar: 12 horas.</p><p>Materiais: 1 Lágrima e 2 Reagentes.</p>",
+      "description": "<p>Reagentes estimulantes em conjunto com matéria fásica, essa poção aumenta a velocidade de ação e reação do personagem.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> líquido para Beber ou Injetar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> tem MV+2m, e MOD+2 para DES, Reflexo, Furtividade, Percepção e Ladinagem por 5 minutos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 5 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 12 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 1 Lágrima e <span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">2 Reagentes.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 2600000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -78,8 +78,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772766252718,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772807333588,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!PgwZTF27DFhqjt6F"
 }

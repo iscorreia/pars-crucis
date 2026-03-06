@@ -29,12 +29,10 @@
           "dmgType": "phy",
           "dmgSubtype": ""
         },
-        "keywords": {
-          "lethality": "+1"
-        },
+        "keywords": {},
         "effort": "8, 5 ao repetir",
         "prepTime": "1AP",
-        "effect": "após o ataque, o espírito remanesce até o início da próxima rodada, tendo esforço reduzido para mantê-lo.",
+        "effect": "Na penumbra ignora a Visão noturna do alvo. Após o ataque, o espírito remanesce até o início da próxima rodada, tendo esforço reduzido para mantê-lo.",
         "skills": {
           "sabak": 0
         },
@@ -55,17 +53,18 @@
       "penalty": ""
     },
     "keywords": {
-      "melee": null,
-      "summon": null
+      "melee": "",
+      "summon": "",
+      "lethality": "+1"
     },
     "description": {
-      "description": "<p>Realizando um movimento e proferindo uma palavra invoca um espírito reverso ou criatura extraplanar que avança das sombras até um adversário dentro de um alcance de 5m e golpeia rasgando a carne do alvo, causando 11+ESP de dano e Fatalidade (+1). Se for noite ou escuro dilacerador ignora bônus de visão noturna. Após atacar o aspecto do dilacerador remanesce no lugar até o início da próxima rodada, esse poder tem esforço reduzido se for realizado de novo antes do fim da próxima rodada se o soldado atacar o mesmo alvo ou um outro alvo no alcance de até 5m de sua posição.</p><p>Esforço: 8, 5 quando reduzido.</p><p>Tempo de preparo: 1 ação.</p><p>Pré-requisitos: Sabakismo N5.</p>",
+      "description": "<p>Corpo a corpo, Invocação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Realizando um movimento e proferindo uma palavra invoca um espírito reverso ou criatura extraplanar que avança das sombras até um adversário e golpeia rasgando a sua carne.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8, 5 quando reduzido.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 11+ESP.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade (+1). Na penumbra ignora a Visão noturna do alvo. Após o ataque, o espírito remanesce até o início da próxima rodada, tendo esforço reduzido para mantê-lo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Sabakismo N5.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1100000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -79,8 +78,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766235825,
-    "modifiedTime": 1772766235825,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772817690244,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!2BDVjuDXi03b2bWV"
 }

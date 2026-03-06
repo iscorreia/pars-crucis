@@ -1,19 +1,19 @@
 {
-  "folder": "dqNtFtYJYIp1FKQh",
+  "folder": "YxqDbDqQPHFL0RXo",
   "name": "Alta-Gelida",
   "type": "gear",
   "_id": "3XcsM4sAj8Y6sIZs",
-  "img": "icon%20library/consumables/alchemical%20potions/potion%20(30).png",
+  "img": "icon%20library/consumables/alchemical%20potions/potion%20(59).png",
   "system": {
     "info": {
       "subtype": "item",
       "group": "alchemical",
       "subgroup": "",
-      "quality": "common"
+      "quality": "rare"
     },
     "actions": {
       "Zgoul8x5zD9nrpEZ": {
-        "img": "icon%20library/consumables/alchemical%20potions/potion%20(30).png",
+        "img": "icon%20library/consumables/alchemical%20potions/potion%20(59).png",
         "name": "Arremessar",
         "type": "attack",
         "_id": "Zgoul8x5zD9nrpEZ",
@@ -31,9 +31,7 @@
           "scalable": true
         },
         "subtype": "throw",
-        "keywords": {
-          "freezing": "0"
-        },
+        "keywords": {},
         "effort": "3",
         "usesAmmo": false,
         "effect": "",
@@ -42,7 +40,9 @@
         "prepTime": "",
         "duration": "",
         "skill": null,
-        "skills": {}
+        "skills": {
+          "alqui": 0
+        }
       }
     },
     "cost": {
@@ -52,24 +52,26 @@
     "details": {
       "slots": 1,
       "stack": 1,
-      "stackMax": 1,
-      "stackable": false,
+      "stackMax": 5,
+      "stackable": true,
       "equippable": false,
       "equipped": false,
       "effect": "",
       "penalty": ""
     },
     "keywords": {
-      "recipe": null
+      "throw": "",
+      "recipe": "",
+      "freezing": "0"
     },
     "description": {
-      "description": "<p>Gelida aprimorada com matéria essencial, tem a potência e o efeito congelante amplificados, capaz de congelar quase qualquer coisa. Para ativar e usar o personagem deve entender o princípio químico da reação e injetar um pouco de sua própria essência.</p><p>Esforço: 3.</p><p>Uso: Arremesso (7/21m).</p><p>Dano: 10+COG×2 Elemental: Glacial.</p><p>Efeitos: Congelante (0).</p><p>Preço: 4 pratas.</p><p>Requisitos: Alquimia N4.</p><p>Ofício: Alquimia N6.</p><p>Tempo para fabricar: 12 horas.</p><p>Materiais: 1 Lágrima e 2 Reagentes.</p><p>Pré-requisitos: conhecer a receita para Gelida.</p>",
+      "description": "<p>Gelida aprimorada com matéria essencial, tem a potência e o efeito congelante amplificados, capaz de congelar quase qualquer coisa. Para ativar e usar o personagem deve entender o princípio químico da reação e injetar um pouco de sua própria essência.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> Arremesso.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 7/21m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 10+COG<span style=\"mso-bidi-font-family:Arial\">×</span>2 Elemental: Glacial.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Congelante (0).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 4 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Requisitos:</span> Alquimia N4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 12 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 1 Lágrima e <span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">2 Reagentes.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> conhecer a receita para <em>Gelida</em>.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 275000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -83,8 +85,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772766252718,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772767816273,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!3XcsM4sAj8Y6sIZs"
 }

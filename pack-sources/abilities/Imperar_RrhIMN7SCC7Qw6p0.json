@@ -3,7 +3,7 @@
   "name": "Imperar",
   "type": "ability",
   "_id": "RrhIMN7SCC7Qw6p0",
-  "img": "icons/magic/control/control-influence-puppet.webp",
+  "img": "icons/poderes/alternativas/purple%20(2).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,8 +12,8 @@
     },
     "actions": {
       "mgJOkHg3Triuh2YI": {
-        "img": "icons/magic/control/control-influence-puppet.webp",
-        "name": "Imperium",
+        "img": "icons/poderes/alternativas/purple%20(2).png",
+        "name": "Mentalizar",
         "type": "attack",
         "_id": "mgJOkHg3Triuh2YI",
         "damaging": true,
@@ -60,7 +60,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1100000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -74,8 +74,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772814314895,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!RrhIMN7SCC7Qw6p0"
 }

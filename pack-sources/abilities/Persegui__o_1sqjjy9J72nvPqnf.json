@@ -3,7 +3,7 @@
   "name": "Perseguição",
   "type": "ability",
   "_id": "1sqjjy9J72nvPqnf",
-  "img": "icon%20library/powers/outworld%20skills/monstruous%20(5).png",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-small-red.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,8 +12,8 @@
     },
     "actions": {
       "NNoajSNMmEKj8B9Z": {
-        "img": "icon%20library/powers/outworld%20skills/monstruous%20(5).png",
-        "name": "Afligir",
+        "img": "icons/magic/perception/eye-ringed-glow-angry-small-red.webp",
+        "name": "Mentalizar",
         "type": "attack",
         "_id": "NNoajSNMmEKj8B9Z",
         "damaging": false,
@@ -60,7 +60,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 100000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -74,8 +74,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772808350304,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!1sqjjy9J72nvPqnf"
 }

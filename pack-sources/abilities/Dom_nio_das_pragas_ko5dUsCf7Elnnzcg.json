@@ -1,12 +1,12 @@
 {
   "type": "Item",
-  "folder": null,
+  "folder": "bti0bR2rJQZUAM9z",
   "name": "Domínio das pragas",
-  "color": "#211ec8",
+  "color": "#7f8108",
   "sorting": "a",
   "_id": "ko5dUsCf7Elnnzcg",
   "description": "",
-  "sort": 2300000,
+  "sort": 400000,
   "flags": {},
   "_stats": {
     "compendiumSource": null,
@@ -16,8 +16,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238769,
-    "modifiedTime": 1772766238812,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772821214821,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!folders!ko5dUsCf7Elnnzcg"
 }

@@ -1,12 +1,12 @@
 {
   "type": "Item",
-  "folder": null,
+  "folder": "bti0bR2rJQZUAM9z",
   "name": "Dominio do exicio",
-  "color": null,
+  "color": "#27211b",
   "sorting": "a",
   "_id": "0Ng89ZbC268KQyrm",
   "description": "",
-  "sort": 2200000,
+  "sort": 300000,
   "flags": {},
   "_stats": {
     "compendiumSource": null,
@@ -16,8 +16,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766235800,
-    "modifiedTime": 1772766235841,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772817897632,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!folders!0Ng89ZbC268KQyrm"
 }

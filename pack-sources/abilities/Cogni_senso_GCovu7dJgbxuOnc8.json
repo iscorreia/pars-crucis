@@ -17,7 +17,8 @@
         "_id": "9MjPtAK88O2D3tml",
         "skill": "atlet",
         "skills": {
-          "arcan": 0
+          "arcan": 0,
+          "sabak": 0
         },
         "difficulty": 11,
         "duration": "1 minuto",
@@ -71,7 +72,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772113232225,
-    "modifiedTime": 1772113232225,
+    "modifiedTime": 1772808079250,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "GCovu7dJgbxuOnc8",

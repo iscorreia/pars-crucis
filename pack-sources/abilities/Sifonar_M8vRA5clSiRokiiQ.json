@@ -3,7 +3,7 @@
   "name": "Sifonar",
   "type": "ability",
   "_id": "M8vRA5clSiRokiiQ",
-  "img": "icon%20library/powers/dark%20skills/warlock%20(28).png",
+  "img": "icon%20library/powers/summoner%20skills/summon%20(6).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,8 +12,8 @@
     },
     "actions": {
       "rn3HFHzVNRGv9fRO": {
-        "img": "icon%20library/powers/dark%20skills/warlock%20(28).png",
-        "name": "Sifonar",
+        "img": "icon%20library/powers/summoner%20skills/summon%20(6).png",
+        "name": "Usar",
         "type": "use",
         "_id": "rn3HFHzVNRGv9fRO",
         "prepTime": "2AP",
@@ -32,7 +32,7 @@
         },
         "usesAmmo": false,
         "area": "",
-        "limit": "",
+        "limit": "1 vez por minuto ou batalha.",
         "duration": "",
         "keywords": {},
         "usage": ""
@@ -48,13 +48,13 @@
     },
     "keywords": {},
     "description": {
-      "description": "<p>Fazendo alguns movimentos o personagem sifona para si parte da essência remanescente de uma criatura morta no alcance de 10m, curando PE equivalente a 33% do PE atual da criatura. Pode ser realizado em até 1 minuto após a morte. Uma criatura sifonada não pode ser ressuscitada, para mortos vivos e etéreos o tempo de retorno será significativamente atrasado.</p><p>Limite: 1 vez por minuto ou batalha.</p><p>Esforço: 0.</p><p>Tempo de preparo: 2 ações.</p><p>Pré-requisitos: Sabakismo N2.</p>",
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Fazendo alguns movimentos o personagem sifona para si parte da essência remanescente no corpo de uma criatura morta.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">1 vez por minuto ou batalha.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 0.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> cura PE equivalente a 33% do PE atual da criatura. Pode ser realizado em até 1 minuto após a morte. Uma criatura sifonada não pode ser ressuscitada, para mortos-vivos e etéreos o tempo de retorno será significativamente atrasado.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Sabakismo N2.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1400000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -68,8 +68,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766235825,
-    "modifiedTime": 1772766235825,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772817690244,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!M8vRA5clSiRokiiQ"
 }

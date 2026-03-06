@@ -3,7 +3,7 @@
   "name": "Morbo",
   "type": "ability",
   "_id": "sbL5rU4La71QDQB6",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icon%20library/powers/undead%20skills/undead%20(21).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,7 +12,7 @@
     },
     "actions": {
       "rXeEgn19QuB8bKMg": {
-        "img": "icons/svg/item-bag.svg",
+        "img": "icon%20library/powers/undead%20skills/undead%20(21).png",
         "name": "Afligir",
         "type": "attack",
         "_id": "rXeEgn19QuB8bKMg",
@@ -54,13 +54,13 @@
       "affliction": null
     },
     "description": {
-      "description": "<p>Fazendo movimentos manuais e entoando algumas palavras aflige um personagem alvo com a morbidez.</p><p>Esforço: 4.</p><p>Tempo de preparo: 1 ação.</p><p>Alcance: 15/30m.</p><p>Dano: 2 Biológico: Podre.</p><p>Efeitos: aplica MOD-6 a Saúde e dobra a Peste causada.</p><p>Duração: 1 hora.</p><p>Pré-requisitos: Pestilência e Sabakismo N2.</p>",
+      "description": "<p>Aflição</p><p class=\"MsoNormal\">Fazendo movimentos manuais e entoando algumas palavras aflige um personagem alvo com a morbidez.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 15/30m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 Biológico: Podre.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> aplica MOD-6 a Saúde e dobra a Peste causada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 hora.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Pestilência</em> e Sabakismo N2.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1600000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -74,8 +74,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772819121554,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!sbL5rU4La71QDQB6"
 }

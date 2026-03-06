@@ -3,7 +3,7 @@
   "name": "Canalizar sombrio",
   "type": "ability",
   "_id": "tkNIgXROEncdJPmM",
-  "img": "icon%20library/powers/dark%20skills/warlock%20(43).png",
+  "img": "icon%20library/powers/outworld%20skills/outworldly%20(4).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,15 +12,15 @@
     },
     "actions": {
       "n0VsaxCR49S4UaaQ": {
-        "img": "icon%20library/powers/dark%20skills/warlock%20(43).png",
-        "name": "Canalizar",
+        "img": "icon%20library/powers/outworld%20skills/outworldly%20(4).png",
+        "name": "Invocar",
         "type": "use",
         "_id": "n0VsaxCR49S4UaaQ",
         "effort": "17",
         "prepTime": "4AP",
         "duration": "30 minutos",
-        "range": "0m",
-        "effect": "recebe sobrevida de 20PV. DEF pode ser Sabakismo-2, MV+1m. Fazendo uma sequência de movimentos o personagem passa a concentrar escuridão em si e canaliza uma das formas etéreas sombrias deixando-a temporariamente unirem-se ao seu corpo em um transe para expressar força tremenda.",
+        "range": "",
+        "effect": "sobrevida de 20PV. DEF pode ser Sabakismo-2, MV+1m. Os braços do personagem são enclausurados nas sombras que originam 2 braços de sombras. Durante a sua ação da rodada pode realizar uma quantia de ataques equivalente ao número de braços que possuir, podendo ter até Sabakismo/2 braços de sombras simultaneamente, e tendo acesso ao ataque Rasgo sombrio. Receber um ataque ⒶⒶ ou ter uma Ⓓ ao atacar resulta na perda de um dos braços de sombras, sendo o mínimo de 1 braço. Durante o transe o personagem só tem acesso as Habilidades Acoite sombrio, Aura sombria e Excrucio.",
         "damaging": false,
         "damage": {
           "dmgBase": 0,
@@ -38,7 +38,7 @@
         "usage": ""
       },
       "XAUFdd2L4zTKDHo2": {
-        "img": "icon%20library/powers/dark%20skills/warlock%20(43).png",
+        "img": "icon%20library/powers/outworld%20skills/outworldly%20(33).png",
         "name": "Rasgo Sombrio",
         "type": "attack",
         "_id": "XAUFdd2L4zTKDHo2",
@@ -89,7 +89,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 2000000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -103,8 +103,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766235825,
-    "modifiedTime": 1772766235825,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772817832088,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!tkNIgXROEncdJPmM"
 }

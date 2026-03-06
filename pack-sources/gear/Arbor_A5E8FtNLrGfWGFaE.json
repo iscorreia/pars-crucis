@@ -1,9 +1,9 @@
 {
-  "folder": "dqNtFtYJYIp1FKQh",
+  "folder": "YxqDbDqQPHFL0RXo",
   "name": "Arbor",
   "type": "gear",
   "_id": "A5E8FtNLrGfWGFaE",
-  "img": "icon%20library/consumables/alchemical%20potions/dwarf%20loot%20(14).png",
+  "img": "icon%20library/consumables/elixir/26.png",
   "system": {
     "info": {
       "subtype": "item",
@@ -13,11 +13,11 @@
     },
     "actions": {
       "E4eXY1BMeTNs9DmF": {
-        "img": "icon%20library/consumables/alchemical%20potions/dwarf%20loot%20(14).png",
-        "name": "Aplicar arbor",
+        "img": "icon%20library/consumables/elixir/26.png",
+        "name": "Usar",
         "type": "use",
         "_id": "E4eXY1BMeTNs9DmF",
-        "effect": "cura uma planta de doenças e venenos e a torna resistente a eles por 1 semana. Um ligno ou criatura tipo planta é curado em [6] PV ou 3 acúmulos de peste, Saúde tem MOD+5 por 5 minutos, e no fim da rodada em que consumiu pode fazer um teste para curar venenos ou parar por 1 dia os efeitos de uma doença.",
+        "effect": "cura uma planta de doenças e venenos e a torna resistente a eles por 1 semana. Um ligno ou criatura tipo planta é curado em [7] PV ou curado de Peste, e Saúde tem MOD+5 por 5 minutos, e no fim da rodada em que consumiu pode fazer um teste para curar venenos ou parar por 1 dia os efeitos de uma doença.",
         "usage": "líquido para Irrigar o solo, Beber ou Injetar.",
         "damaging": false,
         "damage": {
@@ -46,8 +46,8 @@
     "details": {
       "slots": 1,
       "stack": 1,
-      "stackMax": 1,
-      "stackable": false,
+      "stackMax": 5,
+      "stackable": true,
       "equippable": false,
       "equipped": false,
       "effect": "",
@@ -58,13 +58,13 @@
       "recipe": null
     },
     "description": {
-      "description": "<p>Reagentes ricos em antitoxinas e de fácil absorção por plantas compõe essa solução utilizada para tratar plantas doentes. A natureza dessa solução a tornou muito popular na medicina dos lignos.</p><p>Uso: líquido para Irrigar o solo, Beber ou Injetar.</p><p>Efeitos: cura uma planta de doenças e venenos e a torna resistente a eles por 1 semana. Um ligno ou criatura tipo planta é curado em [6] PV ou 3 acúmulos de peste, Saúde tem MOD+5 por 5 minutos, e no fim da rodada em que consumiu pode fazer um teste para curar venenos ou parar por 1 dia os efeitos de uma doença.</p><p>Preço: 5 pratas.</p><p>Requisitos: ligno ou ser criatura tipo planta.</p><p>Ofício: Alquimia N4.</p><p>Tempo para fabricar: 3 horas.</p><p>Materiais: 3 Reagentes.</p>",
+      "description": "<p>Poção, Receita</p><p class=\"MsoNormal\">Reagentes ricos em antitoxinas e de fácil absorção por plantas compõe essa solução utilizada para tratar plantas doentes. A natureza dessa solução a tornou muito popular na medicina dos lignos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> líquido para Irrigar o solo, Beber ou Injetar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> cura uma planta de doenças e venenos e a torna resistente a eles por 1 semana. Um ligno ou criatura tipo planta é curado em [7] PV ou curado de Peste, e Saúde tem MOD+5 por 5 minutos, e no fim da rodada em que consumiu pode fazer um teste para curar venenos ou parar por 1 dia os efeitos de uma doença.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 5 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Requisitos:</span> ligno ou ser criatura tipo planta.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 3 Reagentes.</p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 262500,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -78,8 +78,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772766252718,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772768094067,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!A5E8FtNLrGfWGFaE"
 }

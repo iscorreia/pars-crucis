@@ -3,7 +3,7 @@
   "name": "Irritação",
   "type": "ability",
   "_id": "DA3E6mGxm1BWtzfL",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/magic/acid/dissolve-arm-flesh.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,7 +12,7 @@
     },
     "actions": {
       "lHoagfZAaUECn4Sd": {
-        "img": "icons/svg/item-bag.svg",
+        "img": "icons/magic/acid/dissolve-arm-flesh.webp",
         "name": "Afligir",
         "type": "attack",
         "_id": "lHoagfZAaUECn4Sd",
@@ -54,13 +54,13 @@
       "affliction": null
     },
     "description": {
-      "description": "<p>Faz um breve movimento manual que aflige um personagem alvo com uma irritação ou ardência intensa na pele.</p><p>Esforço: 4.</p><p>Dano: 3 Dor.</p><p>Alcance: 15/30m.</p><p>Efeitos: a irritação não passa mesmo que o alvo se coce ou faça algo.</p><p>Duração: 1 minuto.</p><p>Pré-requisitos: Pestilência e Sabakismo N2.</p>",
+      "description": "<p>Aflição</p><p class=\"MsoNormal\">Faz um breve movimento manual que aflige um personagem alvo com uma irritação ou ardência intensa na pele.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 3 Dor.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 15/30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> a irritação não passa mesmo que o alvo se coce ou faça algo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Pestilência </em>e Sabakismo N2.</p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 500000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -74,8 +74,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772819121554,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!DA3E6mGxm1BWtzfL"
 }

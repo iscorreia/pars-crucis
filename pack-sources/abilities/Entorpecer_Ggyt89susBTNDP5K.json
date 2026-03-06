@@ -3,7 +3,7 @@
   "name": "Entorpecer",
   "type": "ability",
   "_id": "Ggyt89susBTNDP5K",
-  "img": "icon%20library/powers/undead%20skills/undead%20(34).png",
+  "img": "icons/poderes/alternativas/purple%20(9).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,12 +12,12 @@
     },
     "actions": {
       "puUnzCKcj85bpqAY": {
-        "img": "icon%20library/powers/undead%20skills/undead%20(34).png",
-        "name": "Entorpecer",
+        "img": "icons/poderes/alternativas/purple%20(9).png",
+        "name": "Mentalizar",
         "type": "attack",
         "_id": "puUnzCKcj85bpqAY",
         "damaging": false,
-        "range": "Visual",
+        "range": "visual",
         "damage": {
           "dmgBase": 3,
           "dmgAttributes": [],
@@ -30,7 +30,7 @@
         "skills": {
           "sabak": 0
         },
-        "subtype": "affliction",
+        "subtype": "mind",
         "effort": "4",
         "prepTime": "1AP",
         "duration": "1 hora",
@@ -51,8 +51,7 @@
       "penalty": ""
     },
     "keywords": {
-      "mental": null,
-      "affliction": null
+      "mental": null
     },
     "description": {
       "description": "<p>Entoando algumas palavras ou fazendo gestos manuais faz a mente de um personagem ser tomada por frustração embotando os seus sentidos.</p><p>Esforço: 4.</p><p>Tempo de preparo: 1 ação.</p><p>Alcance: visual.</p><p>Efeitos: alvo tem MOD-4 a Reflexo e refaz o teste de Iniciativa.</p><p>Duração: 1 hora.</p><p>Pré-requisitos: Falar à mente e Sabakismo N2.</p>",
@@ -61,7 +60,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 500000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -75,8 +74,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772807974223,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!Ggyt89susBTNDP5K"
 }

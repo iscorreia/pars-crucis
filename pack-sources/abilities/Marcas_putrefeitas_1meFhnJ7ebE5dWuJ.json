@@ -1,9 +1,9 @@
 {
   "folder": "ko5dUsCf7Elnnzcg",
-  "name": "Marcas Putrefatas",
+  "name": "Marcas putrefeitas",
   "type": "ability",
   "_id": "1meFhnJ7ebE5dWuJ",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/magic/death/skeleton-snake-skull-pink.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,11 +12,11 @@
     },
     "actions": {
       "gt5WtrFjoPIg9R2U": {
-        "img": "icons/svg/item-bag.svg",
-        "name": "Marcar",
+        "img": "icons/magic/death/skeleton-snake-skull-pink.webp",
+        "name": "Sigilar",
         "type": "use",
         "_id": "gt5WtrFjoPIg9R2U",
-        "effort": "retém 7",
+        "effort": "R7",
         "area": "raio de 10m, ou limites do cômodo.",
         "effect": "reduz em 2 a AR de todos os adversários na área, e personagem que sofrerem danos Físicos têm o ferimento agravado recebendo um adicional de [2] de dano Biológico: Podre.",
         "damaging": false,
@@ -56,7 +56,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 200000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -70,8 +70,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772820469037,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!1meFhnJ7ebE5dWuJ"
 }

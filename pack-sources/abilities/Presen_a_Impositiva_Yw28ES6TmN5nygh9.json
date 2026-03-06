@@ -1,9 +1,9 @@
 {
   "folder": "kvk3OZi8TghBH7be",
-  "name": "Presença Impositiva",
+  "name": "Presença impositiva",
   "type": "ability",
   "_id": "Yw28ES6TmN5nygh9",
-  "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
+  "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,13 +12,13 @@
     },
     "actions": {
       "an84dZ3maV6xLyOo": {
-        "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
-        "name": "Impor presença",
+        "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
+        "name": "Impor",
         "type": "use",
         "_id": "an84dZ3maV6xLyOo",
         "effort": "6",
         "prepTime": "3AP",
-        "range": "0m",
+        "range": "",
         "duration": "5 minutos",
         "area": "raio de 50m",
         "effect": "Impõe sua presença a todos em um raio de 50m em torno de si. Qualquer personagem nessa área tem a presença revelada e pode ser alvo de seus poderes sabakistas do tipo Aflição, Mental, ou que tenham interação com a mente. Adicionalmente o esforço para realizar esses poderes é reduzido em 1, não afeta o esforço para manutenção.",
@@ -54,7 +54,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1300000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -68,8 +68,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772814461728,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!Yw28ES6TmN5nygh9"
 }

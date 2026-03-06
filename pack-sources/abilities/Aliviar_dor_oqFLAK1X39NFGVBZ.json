@@ -3,7 +3,7 @@
   "name": "Aliviar dor",
   "type": "ability",
   "_id": "oqFLAK1X39NFGVBZ",
-  "img": "icon%20library/powers/buff%20skills/buff%20(15).png",
+  "img": "icons/magic/life/cross-embers-glow-yellow-purple.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,8 +12,8 @@
     },
     "actions": {
       "GHsqvoS4lKaNNpvP": {
-        "img": "icon%20library/powers/buff%20skills/buff%20(15).png",
-        "name": "Aliviar a dor",
+        "img": "icons/magic/life/cross-embers-glow-yellow-purple.webp",
+        "name": "Usar",
         "type": "test",
         "_id": "GHsqvoS4lKaNNpvP",
         "skill": "atlet",
@@ -35,7 +35,7 @@
           "dmgAttMultiplier": 2,
           "dmgBase": 6,
           "dmgAddition": "",
-          "scalable": true,
+          "scalable": false,
           "dmgSubtype": ""
         },
         "usesAmmo": false,
@@ -61,7 +61,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1700000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -75,8 +75,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772808293399,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!oqFLAK1X39NFGVBZ"
 }

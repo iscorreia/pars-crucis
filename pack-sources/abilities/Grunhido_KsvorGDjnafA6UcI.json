@@ -3,7 +3,7 @@
   "name": "Grunhido",
   "type": "ability",
   "_id": "KsvorGDjnafA6UcI",
-  "img": "icons/magic/sonic/scream-wail-shout-teal.webp",
+  "img": "icons/poderes/alternativas/purple%20(4).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,12 +12,12 @@
     },
     "actions": {
       "4D6v15SYcgEMcdAm": {
-        "img": "icons/magic/sonic/scream-wail-shout-teal.webp",
+        "img": "icons/poderes/alternativas/purple%20(4).png",
         "name": "Grunhir",
         "type": "attack",
         "_id": "4D6v15SYcgEMcdAm",
         "damaging": true,
-        "range": "0m",
+        "range": "",
         "damage": {
           "dmgBase": 5,
           "dmgAttributes": [
@@ -38,9 +38,7 @@
         "prepTime": "1AP",
         "area": "raio de 7m",
         "effect": "Metade do dano causado também é causado como dano Essencial.",
-        "keywords": {
-          "impact": "4"
-        },
+        "keywords": {},
         "usesAmmo": false,
         "limit": "",
         "duration": "",
@@ -56,7 +54,8 @@
       "penalty": ""
     },
     "keywords": {
-      "mental": null
+      "mental": "",
+      "impact": "4"
     },
     "description": {
       "description": "<p>Através de um grunhido horrendo o personagem descarrega essência psiônica estilhaçando a mente dos inimigos na área.</p><p>Esforço: 8.</p><p>Tempo de preparo: 1 ação.</p><p>Área: raio de 7m.</p><p>Dano: 5+COG|ESP/2 Existencial.</p><p>Efeitos: Impacto (4). Metade do dano causado também é causado como dano Essencial.</p><p>Pré-requisitos: Afligir dor e Sabakismo N6.</p>",
@@ -65,7 +64,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 600000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -79,8 +78,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772813621977,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!KsvorGDjnafA6UcI"
 }

@@ -2,7 +2,7 @@
   "folder": "a81Kv7IGiXG960do",
   "name": "Sombra",
   "type": "ability",
-  "img": "icon%20library/skills/dagger%20skills/dagger%20skill%20(32).png",
+  "img": "icon%20library/powers/outworld%20skills/monstruous%20(10).png",
   "system": {
     "info": {
       "subtype": "technique",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "Q8atoh10oMmJPFm1": {
-        "img": "icon%20library/skills/dagger%20skills/dagger%20skill%20(32).png",
+        "img": "icon%20library/powers/outworld%20skills/monstruous%20(10).png",
         "name": "Usar",
         "type": "use",
         "_id": "Q8atoh10oMmJPFm1",
@@ -56,7 +56,7 @@
     }
   },
   "effects": [],
-  "sort": 100000,
+  "sort": 1800000,
   "ownership": {
     "default": 0,
     "BWDFQ9zEwkAXpvLu": 3
@@ -70,7 +70,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772571469023,
-    "modifiedTime": 1772571469023,
+    "modifiedTime": 1772817352605,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "dpApbW3oX34LPn2f",

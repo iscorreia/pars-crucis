@@ -3,7 +3,7 @@
   "name": "Ruína",
   "type": "ability",
   "_id": "3wWskxqSzJR7UWGQ",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icon%20library/powers/summoner%20skills/summon%20(24).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,8 +12,8 @@
     },
     "actions": {
       "B9jFLwnWWKc305tx": {
-        "img": "icons/svg/item-bag.svg",
-        "name": "Arruinar",
+        "img": "icon%20library/powers/summoner%20skills/summon%20(24).png",
+        "name": "Invocar",
         "type": "attack",
         "_id": "B9jFLwnWWKc305tx",
         "damaging": true,
@@ -33,7 +33,7 @@
         "subtype": "affliction",
         "effect": "aplica a redução de AR-6-2Ⓐ ao alvo.",
         "effort": "8",
-        "prepTime": "1PA",
+        "prepTime": "1AP",
         "duration": "1 minuto",
         "usesAmmo": false,
         "area": "",
@@ -62,7 +62,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 300000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -76,8 +76,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772820659401,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!3wWskxqSzJR7UWGQ"
 }

@@ -1,5 +1,5 @@
 {
-  "folder": "dqNtFtYJYIp1FKQh",
+  "folder": "YxqDbDqQPHFL0RXo",
   "name": "Firme",
   "type": "gear",
   "_id": "kV5dOPTOVGam1HNS",
@@ -14,7 +14,7 @@
     "actions": {
       "gaoS7Gy62F97aEuV": {
         "img": "icon%20library/consumables/alchemical%20potions/potion%20(54).png",
-        "name": "Aplicar",
+        "name": "Usar",
         "type": "use",
         "_id": "gaoS7Gy62F97aEuV",
         "limit": "1x por dia",
@@ -46,8 +46,8 @@
     "details": {
       "slots": 1,
       "stack": 1,
-      "stackMax": 1,
-      "stackable": false,
+      "stackMax": 5,
+      "stackable": true,
       "equippable": false,
       "equipped": false,
       "effect": "",
@@ -61,7 +61,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 276563,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -75,8 +75,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772766252718,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772807208641,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!kV5dOPTOVGam1HNS"
 }

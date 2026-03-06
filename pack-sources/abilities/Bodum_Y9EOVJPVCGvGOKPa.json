@@ -3,7 +3,7 @@
   "name": "Bodum",
   "type": "ability",
   "_id": "Y9EOVJPVCGvGOKPa",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icon%20library/powers/undead%20skills/undead%20(22).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,7 +12,7 @@
     },
     "actions": {
       "1KOzwKI96sghYxFv": {
-        "img": "icons/svg/item-bag.svg",
+        "img": "icon%20library/powers/undead%20skills/undead%20(22).png",
         "name": "Afligir",
         "type": "attack",
         "_id": "1KOzwKI96sghYxFv",
@@ -54,13 +54,13 @@
       "affliction": null
     },
     "description": {
-      "description": "<p>Fazendo alguns movimentos o ar ao seu entorno ou ao entorno de um personagem passa a ter um odor pungente de carniça que atrai animais carniceiros e insetos, enquanto gera incomodo a maioria dos humanoides (exceto carneadores).</p><p>Esforço: 5.</p><p>Tempo de preparo: 2 ações.</p><p>Alcance: 15/30m.</p><p>Efeitos: o alvo tem MOD-1 em todas as suas ações defensivas e DEF. O cheiro o torna facilmente rastreado. Ataques e Poderes escaláveis de insetos e animais carniceiros têm Dano+3 e não escaláveis Dano+1. Os poderes como Gafanhotos, Enxame, Ruína e Chagas necróticas tem MOD+1.</p><p>Duração: 1 minuto.</p><p>Pré-requisitos: Fétido e Sabakismo N4.</p>",
+      "description": "<p>(Aflição)</p><p class=\"MsoNormal\">Fazendo alguns movimentos o ar ao seu entorno ou ao entorno de um personagem passa a ter um odor pungente de carniça que atrai animais carniceiros e insetos, enquanto gera incomodo a maioria dos humanoides (exceto carneadores).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 2 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 15/30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> o alvo tem MOD-1 em todas as suas ações defensivas e DEF. O cheiro o torna facilmente rastreado. Ataques e Poderes escaláveis de insetos e animais carniceiros têm Dano+3 e não escaláveis Dano+1.</p><p class=\"MsoNormal\">Os poderes como <em>Gafanhotos, Enxame, Ruína</em> e <em>Chagas necróticas</em> tem MOD+1.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Fétido</em> e Sabakismo N4.</p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1100000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -74,8 +74,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772819917539,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!Y9EOVJPVCGvGOKPa"
 }

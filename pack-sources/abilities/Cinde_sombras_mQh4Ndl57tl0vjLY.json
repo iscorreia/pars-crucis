@@ -39,7 +39,8 @@
         "skill": null,
         "skills": {
           "aoism": 0,
-          "esgri": 0
+          "esgri": 0,
+          "sabak": 0
         },
         "subtype": "melee"
       },
@@ -66,7 +67,8 @@
         "area": "3x3m a frente",
         "skills": {
           "esgri": 0,
-          "aoism": 0
+          "aoism": 0,
+          "sabak": 0
         },
         "usesAmmo": false,
         "effect": "",
@@ -90,7 +92,7 @@
       "lethality": "+1"
     },
     "description": {
-      "description": "<p>Corpo a corpo</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-family:Arial\">Entoando uma palavra e realizando um movimento de braço faz irromper sombras que cortam como uma espada, cindindo na vertical ou horizontal.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\"> 5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance (vertical):</span><span style=\"mso-bidi-font-family:Arial\"> 3m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área (horizontal):</span><span style=\"mso-bidi-font-family:Arial\"> 3x3m a frente.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (vertical):</span><span style=\"mso-bidi-font-family:Arial\"> 10+ESP×2 Elemental: Arcano.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (horizontal):</span><span style=\"mso-bidi-font-family:Arial\"> </span><span style=\"mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\">5+ESP</span><span style=\"mso-bidi-font-family:Arial\">×2 Elemental: Arcano.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-family:Arial\"> Fatalidade (+1).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\"> <em>Açoite sombrio</em> e Aoismo N3.</span></p>",
+      "description": "<p>Corpo a corpo</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-family:Arial\">Entoando uma palavra e realizando um movimento de braço faz irromper sombras que cortam como uma espada, cindindo na vertical ou horizontal.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\"> 5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance (vertical):</span><span style=\"mso-bidi-font-family:Arial\"> 3m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área (horizontal):</span><span style=\"mso-bidi-font-family:Arial\"> 3x3m a frente.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (vertical):</span><span style=\"mso-bidi-font-family:Arial\"> 10+ESP×2 Elemental: Arcano.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (horizontal):</span><span style=\"mso-bidi-font-family:Arial\"> </span><span style=\"mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\">5+ESP</span><span style=\"mso-bidi-font-family:Arial\">×2 Elemental: Arcano.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-family:Arial\"> Fatalidade (+1).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Perícias:</span><span style=\"mso-bidi-font-family:Arial\"> Aoismo, Esgrima ou Sabakismo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\"> <em>Açoite sombrio</em> e Aoismo N3.</span></p>",
       "summary": "",
       "notes": ""
     }
@@ -110,7 +112,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771206813814,
-    "modifiedTime": 1771206813814,
+    "modifiedTime": 1772816439939,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "mQh4Ndl57tl0vjLY",

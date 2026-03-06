@@ -3,7 +3,7 @@
   "name": "Adoecer",
   "type": "ability",
   "_id": "MpH3Ndas1mo1ewxB",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icon%20library/powers/undead%20skills/undead%20(38).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,13 +12,13 @@
     },
     "actions": {
       "HQUjcukY0X0rx6FD": {
-        "img": "icons/svg/item-bag.svg",
+        "img": "icon%20library/powers/undead%20skills/undead%20(38).png",
         "name": "Adoecer",
         "type": "use",
         "_id": "HQUjcukY0X0rx6FD",
         "effort": "5",
         "range": "21m",
-        "prepTime": "1 minuto",
+        "prepTime": "1AP",
         "effect": "o alvo deve passar um teste de Saúde (dif14+Sabakismo) ou recebe [1] de dano Biológico, é acometido por Peste, e uma doença a escolha do disseminador dentro das opções pela MF: Gripe MF0+; Pestilência MF2+; Virulência MF5+; ou Indolência MF8+. Os efeitos da doença são aplicados imediatamente.",
         "damaging": false,
         "damage": {
@@ -48,13 +48,13 @@
     },
     "keywords": {},
     "description": {
-      "description": "<p>Com alguns movimentos direciona uns poucos insetos ou uma corrente de ar carregado de pestes até um personagem, que é atacado pelos insetos ou envolto no ar pestífero.</p><p>Esforço: 5.</p><p>Tempo de preparo: 1 minuto, alternativamente 1 ação.</p><p>Alcance: 21m.</p><p>Efeitos: o alvo deve passar um teste de Saúde (dif14+Sabakismo) ou recebe [1] de dano Biológico, é acometido por Peste, e uma doença a escolha do disseminador dentro das opções pela MF: Gripe MF0+; Pestilência MF2+; Virulência MF5+; ou Indolência MF8+. Os efeitos da doença são aplicados imediatamente.</p><p>Pré-requisitos: Gafanhotos ou Pestilência e Sabakismo N4.</p>",
+      "description": "<p>Com alguns movimentos direciona uns poucos insetos ou uma corrente de ar carregado de pestes até um personagem, que é atacado pelos insetos ou envolto no ar pestífero.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 21m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span>o alvo deve passar um teste de Saúde (dif14+Sabakismo) ou recebe [1] de dano Biológico, é acometido por Peste, e uma doença a escolha do disseminador dentro das opções pela MF: Gripe MF0+; Pestilência MF2+; Virulência MF5+; ou Indolência MF8+. Os efeitos da doença são aplicados imediatamente.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Gafanhotos </em>ou <em>Pestilência </em>e Sabakismo N4.</p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 800000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -68,8 +68,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772819343090,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!MpH3Ndas1mo1ewxB"
 }

@@ -1,9 +1,9 @@
 {
-  "folder": "dqNtFtYJYIp1FKQh",
+  "folder": "YxqDbDqQPHFL0RXo",
   "name": "Citotoxina",
   "type": "gear",
   "_id": "YBVw3CfDqlTiOV0P",
-  "img": "icon%20library/consumables/alchemical%20potions/poison%20(10).png",
+  "img": "icon%20library/consumables/alchemical%20potions/50.png",
   "system": {
     "info": {
       "subtype": "item",
@@ -12,41 +12,15 @@
       "quality": "common"
     },
     "actions": {
-      "GKQyonDI7IhKOtql": {
-        "img": "icon%20library/consumables/alchemical%20potions/poison%20(10).png",
-        "name": "Potencializador",
-        "type": "use",
-        "_id": "GKQyonDI7IhKOtql",
-        "usage": "agente",
-        "effect": "teste de Saúde tem dificuldade +4, adiciona Peste (3).",
-        "damaging": false,
-        "damage": {
-          "dmgBase": 0,
-          "dmgAttributes": [],
-          "dmgAttMultiplier": 1,
-          "dmgAddition": "",
-          "scalable": true,
-          "dmgType": "phy",
-          "dmgSubtype": ""
-        },
-        "usesAmmo": false,
-        "range": "",
-        "area": "",
-        "effort": "",
-        "limit": "",
-        "prepTime": "",
-        "duration": "",
-        "keywords": {}
-      },
       "ZQk6uZXP6mv27Ny7": {
-        "img": "icon%20library/consumables/alchemical%20potions/poison%20(10).png",
+        "img": "icon%20library/consumables/alchemical%20potions/50.png",
         "name": "Ingestão",
         "type": "use",
         "_id": "ZQk6uZXP6mv27Ny7",
         "usage": "líquido",
         "damaging": true,
         "damage": {
-          "dmgBase": 10,
+          "dmgBase": 11,
           "dmgType": "bio",
           "dmgSubtype": "Tóxico",
           "scalable": false,
@@ -67,8 +41,8 @@
         "duration": ""
       },
       "KIU3vlsghj7rpl26": {
-        "img": "icon%20library/consumables/alchemical%20potions/poison%20(10).png",
-        "name": "Aplicar em armas",
+        "img": "icon%20library/consumables/alchemical%20potions/50.png",
+        "name": "Imbuir",
         "type": "use",
         "_id": "KIU3vlsghj7rpl26",
         "usage": "óleo",
@@ -77,15 +51,15 @@
           "plague": "2"
         },
         "duration": "3 ataques ou projéteis",
-        "damaging": false,
+        "damaging": true,
         "damage": {
-          "dmgBase": 0,
+          "dmgBase": 3,
           "dmgAttributes": [],
           "dmgAttMultiplier": 1,
           "dmgAddition": "",
-          "scalable": true,
-          "dmgType": "phy",
-          "dmgSubtype": ""
+          "scalable": false,
+          "dmgType": "bio",
+          "dmgSubtype": "Tóxico"
         },
         "usesAmmo": false,
         "range": "",
@@ -102,8 +76,8 @@
     "details": {
       "slots": 1,
       "stack": 1,
-      "stackMax": 1,
-      "stackable": false,
+      "stackMax": 5,
+      "stackable": true,
       "equippable": false,
       "equipped": false,
       "effect": "",
@@ -121,7 +95,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 287500,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -135,8 +109,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772766252718,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772806874697,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!YBVw3CfDqlTiOV0P"
 }

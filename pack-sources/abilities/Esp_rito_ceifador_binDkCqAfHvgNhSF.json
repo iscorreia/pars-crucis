@@ -3,7 +3,7 @@
   "name": "Espírito ceifador",
   "type": "ability",
   "_id": "binDkCqAfHvgNhSF",
-  "img": "icon%20library/powers/outworld%20skills/outworldly%20(28).png",
+  "img": "icons/magic/symbols/runes-star-pentagon-magenta.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,7 +12,7 @@
     },
     "actions": {
       "dQ6LFJ6eK0y2s1wW": {
-        "img": "icon%20library/powers/outworld%20skills/outworldly%20(28).png",
+        "img": "icons/magic/symbols/runes-star-pentagon-magenta.webp",
         "name": "Invocar e ceifar",
         "type": "attack",
         "_id": "dQ6LFJ6eK0y2s1wW",
@@ -33,9 +33,7 @@
           "sabak": 0
         },
         "subtype": "affliction",
-        "keywords": {
-          "lethality": "+1"
-        },
+        "keywords": {},
         "effort": "12",
         "prepTime": "3AP",
         "limit": "1x por personagem",
@@ -55,17 +53,18 @@
       "penalty": ""
     },
     "keywords": {
-      "affliction": null,
-      "summon": null
+      "affliction": "",
+      "summon": "",
+      "lethality": "+1"
     },
     "description": {
-      "description": "<p>Com uma série de movimentos e uma palavra enfática conjura um espírito reverso poderoso que em um abraço tenta arrancar o espírito do corpo de um personagem.</p><p>Limite: 1 vez por personagem.</p><p>Esforço: 12.</p><p>Tempo de preparo: 3 ações.</p><p>Alcance: visual.</p><p>Dano: 20+ESP×2 Essencial.</p><p>Efeitos: Fatalidade (+1). Se o alvo ficar ou está com PE 0 ele é morto, tendo seu espírito obliterado impossibilitando ressurreição. Se não for fatal, cure o dano causado.</p><p>Pré-requisitos: Espírito esfolador e Sabakismo N8.</p>",
+      "description": "<p>Aflição, Invocação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com uma série de movimentos e uma palavra enfática conjura um espírito reverso poderoso que em um abraço tenta arrancar o espírito do corpo de um personagem.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 vez por personagem.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 12.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> visual.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 20+ESP×2 Essencial.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade (+1). Se o alvo ficar ou está com PE 0 ele é morto, tendo seu espírito obliterado impossibilitando ressurreição. Se não for fatal, cure o dano causado.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Espírito esfolador </em>e Sabakismo N8.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1800000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -79,8 +78,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766235825,
-    "modifiedTime": 1772766235825,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772817690244,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!binDkCqAfHvgNhSF"
 }
