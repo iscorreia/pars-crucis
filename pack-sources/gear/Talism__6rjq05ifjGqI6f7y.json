@@ -1,7 +1,7 @@
 {
   "name": "Talismã",
   "type": "gear",
-  "img": "icons/equipment/neck/amulet-engraved-wood.webp",
+  "img": "icons/equipment/neck/necklace-simple-carved-spiral-blue.webp",
   "system": {
     "details": {
       "equippable": true,
@@ -49,7 +49,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772496751569,
-    "modifiedTime": 1772496751569,
+    "modifiedTime": 1772679195894,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "6rjq05ifjGqI6f7y",
