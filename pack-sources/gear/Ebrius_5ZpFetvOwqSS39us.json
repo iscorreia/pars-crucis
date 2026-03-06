@@ -1,0 +1,82 @@
+{
+  "folder": "dqNtFtYJYIp1FKQh",
+  "name": "Ebrius",
+  "type": "gear",
+  "_id": "5ZpFetvOwqSS39us",
+  "img": "icon%20library/consumables/elixir/43.png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "alchemical",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "TydVlRwEWQpn85Iv": {
+        "img": "icon%20library/consumables/elixir/43.png",
+        "name": "Aplicar",
+        "type": "use",
+        "_id": "TydVlRwEWQpn85Iv",
+        "usage": "beber ou injetar",
+        "effect": "retira [15] de dor e cura [3] PE, a cura de PE só acontece uma vez por dia. Ao fim da 3ª rodada passe em um teste de Saúde com dificuldade 20 ou sofra MOD-MF/2 em todas as ações por 10 minutos.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {}
+      }
+    },
+    "cost": {
+      "price": 20,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Conhecimentos alquímicos aplicados para criar um destilado concentrado que tem o único propósito de alcoolizar quem bebe.</p><p>Uso: Líquido para beber ou injetar.</p><p>Efeitos: retira [15] de dor e cura [3] PE, a cura de PE só acontece uma vez por dia. Ao fim da 3ª rodada passe em um teste de Saúde com dificuldade 20 ou sofra MOD-MF/2 em todas as ações por 10 minutos.</p><p>Preço: 20 cobres.</p><p>Ofício: Alquimia N3.</p><p>Tempo para fabricar: 3 horas.</p><p>Materiais: 1 Reagente.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772766252718,
+    "modifiedTime": 1772766252718,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_key": "!items!5ZpFetvOwqSS39us"
+}
