@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Domínio mental",
+  "color": "#1dd799",
+  "sorting": "a",
+  "_id": "kvk3OZi8TghBH7be",
+  "description": "",
+  "sort": 2100000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772766231322,
+    "modifiedTime": 1772766231381,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_key": "!folders!kvk3OZi8TghBH7be"
+}

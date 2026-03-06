@@ -1,0 +1,110 @@
+{
+  "folder": "0Ng89ZbC268KQyrm",
+  "name": "Canalizar sombrio",
+  "type": "ability",
+  "_id": "tkNIgXROEncdJPmM",
+  "img": "icon%20library/powers/dark%20skills/warlock%20(43).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "sabak",
+      "category": "death"
+    },
+    "actions": {
+      "n0VsaxCR49S4UaaQ": {
+        "img": "icon%20library/powers/dark%20skills/warlock%20(43).png",
+        "name": "Canalizar",
+        "type": "use",
+        "_id": "n0VsaxCR49S4UaaQ",
+        "effort": "17",
+        "prepTime": "4AP",
+        "duration": "30 minutos",
+        "range": "0m",
+        "effect": "recebe sobrevida de 20PV. DEF pode ser Sabakismo-2, MV+1m. Fazendo uma sequência de movimentos o personagem passa a concentrar escuridão em si e canaliza uma das formas etéreas sombrias deixando-a temporariamente unirem-se ao seu corpo em um transe para expressar força tremenda.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "usage": ""
+      },
+      "XAUFdd2L4zTKDHo2": {
+        "img": "icon%20library/powers/dark%20skills/warlock%20(43).png",
+        "name": "Rasgo Sombrio",
+        "type": "attack",
+        "_id": "XAUFdd2L4zTKDHo2",
+        "damaging": true,
+        "range": "1m",
+        "damage": {
+          "dmgBase": 4,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "sabak": 0,
+          "briga": 0
+        },
+        "effect": "com Ⓐ gera um novo braço de sombras hábil a atacar na mesma rodada.",
+        "usesAmmo": false,
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "melee"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "sabak",
+      "coreLevel": 9,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "summon": null
+    },
+    "description": {
+      "description": "<p>Fazendo uma sequência de movimentos o personagem passa a concentrar escuridão em si e canaliza uma das formas etéreas sombrias deixando-a temporariamente unirem-se ao seu corpo em um transe para expressar força tremenda.</p><p>Esforço: 17.</p><p>Tempo de preparo: 4 ações.</p><p>Efeitos: sobrevida de 20PV. DEF pode ser Sabakismo-2, MV+1m. Os braços do personagem são enclausurados nas sombras que originam 2 braços de sombras. Durante a sua ação da rodada pode realizar uma quantia de ataques equivalente ao número de braços que possuir, podendo ter até Sabakismo/2 braços de sombras simultaneamente, e tendo acesso ao ataque Rasgo sombrio. Receber um ataque ⒶⒶ ou ter uma Ⓓ ao atacar resulta na perda de um dos braços de sombras, sendo o mínimo de 1 braço. Durante o transe o personagem só tem acesso as Habilidades Acoite sombrio, Aura sombria e Excrucio.</p><p>Rasgo sombrio Alcance: 1m. Dano: 4+ESP×2 Efeitos: com Ⓐ gera um novo braço de sombras hábil a atacar na mesma rodada. Perícias: Briga ou Sabakismo.</p><p>Duração: 30 minutos.</p><p>Pré-requisitos: Mortalha sombria e Sabakismo N9.</p><p></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772766235825,
+    "modifiedTime": 1772766235825,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_key": "!items!tkNIgXROEncdJPmM"
+}
