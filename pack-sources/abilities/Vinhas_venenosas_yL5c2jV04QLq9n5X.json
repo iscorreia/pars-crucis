@@ -2,7 +2,7 @@
   "folder": "xKoXpUvXuR9NBSve",
   "name": "Vinhas venenosas",
   "type": "ability",
-  "img": "icons/magic/nature/root-vine-thorned-coil-green.webp",
+  "img": "icons/consumables/plants/thorned-curled-vine-green.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "mK4NQTVqRp3mZABZ": {
-        "img": "icons/magic/nature/root-vine-thorned-coil-green.webp",
+        "img": "icons/consumables/plants/thorned-curled-vine-green.webp",
         "name": "Criar",
         "type": "use",
         "_id": "mK4NQTVqRp3mZABZ",
@@ -37,7 +37,7 @@
         "usage": ""
       },
       "tcAaneDBWPWNsv0e": {
-        "img": "icons/magic/nature/root-vine-spiral-thorns-teal.webp",
+        "img": "icons/magic/nature/root-vine-thorned-coil-green.webp",
         "name": "Golpear",
         "type": "attack",
         "_id": "tcAaneDBWPWNsv0e",
@@ -103,7 +103,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772475465542,
-    "modifiedTime": 1772475465542,
+    "modifiedTime": 1772637259668,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "yL5c2jV04QLq9n5X",

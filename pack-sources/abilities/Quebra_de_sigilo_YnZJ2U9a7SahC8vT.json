@@ -30,7 +30,8 @@
           "dmgSubtype": ""
         },
         "skills": {
-          "arcan": 0
+          "arcan": 0,
+          "sabak": 0
         },
         "effort": "7",
         "prepTime": "1AP",
@@ -50,7 +51,8 @@
         "_id": "BTAqXmQofaWYxXKb",
         "skill": "atlet",
         "skills": {
-          "arcan": 0
+          "arcan": 0,
+          "sabak": 0
         },
         "difficulty": 12,
         "range": "10/15m",
@@ -106,7 +108,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772069700466,
-    "modifiedTime": 1772069700466,
+    "modifiedTime": 1772816670040,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "YnZJ2U9a7SahC8vT",

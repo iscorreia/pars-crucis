@@ -13,17 +13,17 @@
 
 ## NECESSARY
 
-- Weapons Compendium **_pack_**
 - Items Compendium **_pack_**
 - Abilities Compendium **_pack_**
 - Final touches on the PDM config app **_hbs/css_**
 - Add Inventory sorting **_qol feature_**
-- Make it possible to add custom keywords or some special keywords such as: FIS, DES, ..., Health, Reflex, Will, and also Skills.
 
 ## LOW PRIORITY
 
 - Add Abilities (art) sorting **_qol_**
 - Persona/PDM image picked from config instead of the sheet **_qol_**
+- Make unarmed attacks appear on top
+- Make damage subtypes selectable
 
 ### INTERESTING BUT NOT NECESSARY
 
@@ -34,16 +34,19 @@
 - Improved favorable skills on Persona Config **_logic style/css_**
 - Option for Action effort to be automatically deduced when used **_qol_**
 - reroll option on rollable actions (possibility to use luck) **_qol_**
+- Make it possible to add custom keywords or some special keywords such as: FIS, DES, ..., Health, Reflex, Will, and also Skills.
 
 ### MIGHT BE INTERESTING
 
 - Custom effects **_feature_**
 - Implement currency working on items **_feature_**
+- Make shield handling affect weapons when equipped?
 
 ### KNOWN BUGS
 
 - _mitigation_.adjust can be deleted in the persona config, resulting in `NaN`
 - Having no skills set for test is making so it roll Athletics, this is unwanted, it should roll a skilless test
+- capriacos origin sprint penalty not applying (has -1m to sprint)
 
 ### PONDER ABOUT
 
@@ -56,18 +59,16 @@
 
 ### COMPLETE COMPENDIUM PACKS
 
-- light weapons
-- throwing
-- swords
-- javelins
-- spears
-- archery (does not include siege)
-- balistics (does not include siege)
-- ammunitions (does not include battery, and ionic projectiles)
+- basic weapons (doesn't include rare, unique)
 - vests
 - accessories
 - war artifacts
+- herbals
 - utils
+- materials
+- melee techs
+- ranged techs
+- alternative techs
 - aoist powers
 - arcane powers
 - bardic powers
@@ -77,14 +78,11 @@
 
 ### PARTIAL PACKS
 
+- alchemicals (missing from A to Firme)
+
 ### PENDING PACKS
 
-- gadgets
-- matrixes
-- herbals
-- alchemicals
-- melee techs
-- ranged techs
-- alternative techs
+- gadgets (on hold)
+- matrixes (on hold, might create a new item type)
 - styles
 - sabak powers

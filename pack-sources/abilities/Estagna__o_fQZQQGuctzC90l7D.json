@@ -3,17 +3,17 @@
   "name": "Estagnação",
   "type": "ability",
   "_id": "fQZQQGuctzC90l7D",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icon%20library/powers/summoner%20skills/summon%20(48).png",
   "system": {
     "info": {
       "subtype": "power",
-      "art": "meleeTech",
-      "category": null
+      "art": "sabak",
+      "category": "plague"
     },
     "actions": {
       "z1xd2HxsR1aKYsqU": {
-        "img": "icons/svg/item-bag.svg",
-        "name": "Estagnar insetos",
+        "img": "icon%20library/powers/summoner%20skills/summon%20(48).png",
+        "name": "Preparar",
         "type": "use",
         "_id": "z1xd2HxsR1aKYsqU",
         "damaging": true,
@@ -34,9 +34,7 @@
         "area": "raio de até 4m",
         "duration": "8 horas ou até os insetos atacarem",
         "effect": "personagens que entrarem na área são atacados pelos insetos, recebendo dano e Peste (4). chamam os insetos, podem fazer um teste de Reflexo (dif14+Sabakismo) para recuar e evitar o ataque, ou teste de FIS ou Resistência (dif14+Sabakismo) para reduzir o dano pela metade. Os insetos de estagnação podem ficar voando ou à espreita com dificuldade 14+Sabakismo para encontrá-los. O criador da estagnação fica ciente quando os insetos atacam e morrem.",
-        "keywords": {
-          "plague": "4"
-        },
+        "keywords": {},
         "usesAmmo": false,
         "limit": "",
         "usage": ""
@@ -45,20 +43,22 @@
     "details": {
       "experience": 2,
       "preRequisites": "",
-      "coreSkill": "briga",
-      "coreLevel": 1,
+      "coreSkill": "sabak",
+      "coreLevel": 4,
       "effect": "",
       "penalty": ""
     },
-    "keywords": {},
+    "keywords": {
+      "plague": "4"
+    },
     "description": {
-      "description": "<p>Libera alguns insetos pestíferos que permanecem em um local específico, atacando uma vez que um personagem entre em seu campo.</p><p>Esforço: 6.</p><p>Tempo de preparo: 2 ações.</p><p>Alcance: 10m.</p><p>Área: raio de até 4m.</p><p>Dano: [8+ESP] Biológico: Podre.</p><p>Efeitos: personagens que entrarem na área são atacados pelos insetos, recebendo dano e Peste (4). chamam os insetos, podem fazer um teste de Reflexo (dif14+Sabakismo) para recuar e evitar o ataque, ou teste de FIS ou Resistência (dif14+Sabakismo) para reduzir o dano pela metade. Os insetos de estagnação podem ficar voando ou à espreita com dificuldade 14+Sabakismo para encontrá-los. O criador da estagnação fica ciente quando os insetos atacam e morrem.</p><p>Duração: 8 horas ou até atacarem.</p><p>Pré-requisitos: Gafanhotos e Sabakismo N4.</p>",
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Libera alguns insetos pestíferos que permanecem em um local específico, atacando uma vez que um personagem entre em seu campo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 6.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de até 4m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> [8+ESP] Biológico: Podre.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> personagens que entrarem na área são atacados pelos insetos, recebendo dano e Peste (4). chamam os insetos, podem fazer um teste de Reflexo (dif14+Sabakismo) para recuar e evitar o ataque, ou teste de FIS ou Resistência (dif14+Sabakismo) para reduzir o dano pela metade.</span></p><p class=\"MsoNormal\">Os insetos de estagnação podem ficar voando ou à espreita com dificuldade 14+Sabakismo para encontrá-los. O criador da estagnação fica ciente quando os insetos atacam e morrem.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8 horas ou até atacarem.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Gafanhotos </em>e Sabakismo N4.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1200000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -72,8 +72,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772820057920,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!fQZQQGuctzC90l7D"
 }

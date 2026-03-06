@@ -1,0 +1,78 @@
+{
+  "folder": "0Ng89ZbC268KQyrm",
+  "name": "Sombra",
+  "type": "ability",
+  "img": "icon%20library/powers/outworld%20skills/monstruous%20(10).png",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "sabak",
+      "category": "death"
+    },
+    "actions": {
+      "Q8atoh10oMmJPFm1": {
+        "img": "icon%20library/powers/outworld%20skills/monstruous%20(10).png",
+        "name": "Usar",
+        "type": "use",
+        "_id": "Q8atoh10oMmJPFm1",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "Furtividade tem MOD+4, e DEF tem MOD+2. Maior parte dos barulhos feitos pelo personagem são abafados. Atacar e realizar ações bruscas tornam o personagem visível pela rodada, e reduz a duração para 2 rodadas.",
+        "range": "",
+        "area": "",
+        "effort": "9",
+        "limit": "",
+        "prepTime": "2AP",
+        "duration": "1 minuto se permanecer no escuro ou penumbra. Atacar reduz a duração para 2 rodadas.",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 4,
+      "preRequisites": "",
+      "coreSkill": "sabak",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "power": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Poder</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">O personagem se mistura as sombras de maneira sobrenatural se tornando virtualmente invisível mesmo estando frente ao observador.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 9.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Furtividade tem MOD+4, e DEF tem MOD+2. Maior parte dos barulhos feitos pelo personagem são abafados. Atacar e realizar ações bruscas tornam o personagem visível pela rodada, e reduz a duração para 2 rodadas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto se permanecer no escuro ou penumbra. Atacar reduz a duração para 2 rodadas. </span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Mortalha sombria</em> e Sabakismo N6.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772817398232,
+    "modifiedTime": 1772817690244,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "Jx3O7ETabuKKNqUb",
+  "sort": 800000,
+  "_key": "!items!Jx3O7ETabuKKNqUb"
+}

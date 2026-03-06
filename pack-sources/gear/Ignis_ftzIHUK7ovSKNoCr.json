@@ -1,0 +1,91 @@
+{
+  "folder": "YxqDbDqQPHFL0RXo",
+  "name": "Ignis",
+  "type": "gear",
+  "img": "icon%20library/consumables/alchemical%20potions/potion%20(28).png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "alchemical",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "ngId7gVenobvjrqX": {
+        "img": "icon%20library/consumables/alchemical%20potions/potion%20(28).png",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "ngId7gVenobvjrqX",
+        "damaging": true,
+        "range": "7/21m",
+        "damage": {
+          "dmgBase": 16,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ele",
+          "dmgSubtype": "Ígneo"
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "area": "1m",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "alqui": 0
+        },
+        "subtype": "throw"
+      }
+    },
+    "cost": {
+      "price": 40,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 5,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "throw": "",
+      "recipe": ""
+    },
+    "description": {
+      "description": "<p>Arremesso, Receita</p><p class=\"MsoNormal\">Coquetel alquímico preparado com reagentes inflamáveis de alta volatilidade, gera uma pequena explosão ao chocar-se com algo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> Arremesso.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 7/21m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 16+COG Elemental: Ígneo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span> 1m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 40 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 1<span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"> Reagente.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1900000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.zIAeWtHdNxio0Ge6",
+    "duplicateSource": "Item.Hd2Afnz4Z47fv7qy",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772661095579,
+    "modifiedTime": 1772767306437,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "ftzIHUK7ovSKNoCr",
+  "_key": "!items!ftzIHUK7ovSKNoCr"
+}

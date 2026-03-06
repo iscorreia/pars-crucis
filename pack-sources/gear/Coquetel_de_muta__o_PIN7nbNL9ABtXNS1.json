@@ -1,20 +1,20 @@
 {
-  "folder": "dqNtFtYJYIp1FKQh",
+  "folder": "YxqDbDqQPHFL0RXo",
   "name": "Coquetel de mutação",
   "type": "gear",
   "_id": "PIN7nbNL9ABtXNS1",
-  "img": "icon%20library/consumables/alchemical%20potions/loot%20(57).png",
+  "img": "icon%20library/consumables/elixir/41.png",
   "system": {
     "info": {
       "subtype": "item",
       "group": "alchemical",
       "subgroup": "",
-      "quality": "high"
+      "quality": "rare"
     },
     "actions": {
       "7l5kQ3avmO6pOKgp": {
-        "img": "icon%20library/consumables/alchemical%20potions/loot%20(57).png",
-        "name": "Utilizar",
+        "img": "icon%20library/consumables/elixir/41.png",
+        "name": "Usar",
         "type": "use",
         "_id": "7l5kQ3avmO6pOKgp",
         "usage": "Líquido para beber ou injetar.",
@@ -46,8 +46,8 @@
     "details": {
       "slots": 1,
       "stack": 1,
-      "stackMax": 1,
-      "stackable": false,
+      "stackMax": 5,
+      "stackable": true,
       "equippable": false,
       "equipped": false,
       "effect": "",
@@ -63,7 +63,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 281250,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -77,8 +77,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772766252718,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772806919179,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!PIN7nbNL9ABtXNS1"
 }

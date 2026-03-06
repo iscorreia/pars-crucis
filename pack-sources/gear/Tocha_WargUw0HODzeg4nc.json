@@ -2,7 +2,7 @@
   "folder": "B7hjQHZ1Qd71IXpg",
   "name": "Tocha",
   "type": "gear",
-  "img": "icon%20library/sundries/lights/goblin%20(16).png",
+  "img": "icons/sundries/lights/torch-brown-lit.webp",
   "system": {
     "info": {
       "subtype": "item",
@@ -12,7 +12,7 @@
     },
     "actions": {
       "dmjVJSbDa7plyhZq": {
-        "img": "icon%20library/sundries/lights/goblin%20(16).png",
+        "img": "icons/sundries/lights/torch-brown-lit.webp",
         "name": "Golpear",
         "type": "attack",
         "_id": "dmjVJSbDa7plyhZq",
@@ -34,7 +34,7 @@
         }
       },
       "H4xCfg3XiI9RLJ1O": {
-        "img": "icon%20library/sundries/lights/goblin%20(16).png",
+        "img": "icons/sundries/lights/torch-brown-lit.webp",
         "name": "Arremessar",
         "type": "attack",
         "_id": "H4xCfg3XiI9RLJ1O",
@@ -91,7 +91,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771361177842,
-    "modifiedTime": 1771363315633,
+    "modifiedTime": 1772593378450,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "WargUw0HODzeg4nc",

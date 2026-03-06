@@ -1,0 +1,48 @@
+{
+  "folder": "7YkeJNYMBdKs6jAS",
+  "name": "Cura pelo sangue",
+  "type": "passive",
+  "img": "icon%20library/powers/blood%20skills/blood%20(4).png",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "suffered"
+    },
+    "cost": {
+      "experience": null,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "conditional": null
+    },
+    "description": {
+      "description": "<p>Recuperação diária de PV é 0 e tratamentos comuns como aplicar bandagens ou bálsamo não o curam. Pode beber sangue fresco ou banhar-se em sangue para curar até Décimo×2 PV, limitado a 1× por dia. Não cumulativo com Mordida sangradora.</p>",
+      "summary": "Não regenera PV convencionalmente. ~ Cura alternativa",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.RSyvjTrq59Ebcd04",
+    "duplicateSource": "Item.RSyvjTrq59Ebcd04",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772761360122,
+    "modifiedTime": 1772761360122,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "by29KCqVsZbkhozq",
+  "_key": "!items!by29KCqVsZbkhozq"
+}

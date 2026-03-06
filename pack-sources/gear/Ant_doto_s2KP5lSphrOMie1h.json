@@ -1,9 +1,9 @@
 {
-  "folder": "dqNtFtYJYIp1FKQh",
+  "folder": "YxqDbDqQPHFL0RXo",
   "name": "Antídoto",
   "type": "gear",
   "_id": "s2KP5lSphrOMie1h",
-  "img": "icon%20library/consumables/alchemical%20potions/poison%20(3).png",
+  "img": "icon%20library/consumables/elixir/38.png",
   "system": {
     "info": {
       "subtype": "item",
@@ -13,8 +13,8 @@
     },
     "actions": {
       "nD2ObAUunWXJKVFM": {
-        "img": "icon%20library/consumables/alchemical%20potions/poison%20(3).png",
-        "name": "Aplicar antídoto",
+        "img": "icon%20library/consumables/elixir/38.png",
+        "name": "Usar",
         "type": "use",
         "_id": "nD2ObAUunWXJKVFM",
         "effect": "cura 3 acúmulos de Peste, e Saúde tem MOD+8 em testes para resistir venenos por 5 minutos. Ao utilizar antídoto faça um teste para se curar de venenos no fim da rodada antes de sofrer os danos do veneno caso esteja envenenado.",
@@ -46,25 +46,25 @@
     "details": {
       "slots": 1,
       "stack": 1,
-      "stackMax": 1,
-      "stackable": false,
+      "stackMax": 5,
+      "stackable": true,
       "equippable": false,
       "equipped": false,
       "effect": "",
       "penalty": ""
     },
     "keywords": {
-      "recipe": null,
-      "potion": null
+      "potion": null,
+      "recipe": null
     },
     "description": {
-      "description": "<p>Feito a partir do próprio veneno que passar através de diversos processos, o antídoto é a melhor maneira de curar envenenamento.</p><p>Uso: líquido para Beber ou Injetar.</p><p>Efeitos: cura 3 acúmulos de Peste, e Saúde tem MOD+8 em testes para resistir venenos por 5 minutos. Ao utilizar antídoto faça um teste para se curar de venenos no fim da rodada antes de sofrer os danos do veneno caso esteja envenenado.</p><p>Preço: 2 pratas.</p><p>Ofício: Alquimia N3.</p><p>Tempo para fabricar: 3 horas.</p><p>Materiais: 2 Reagentes ou 2 Plantas, e 1 Toxina.</p>",
+      "description": "<p>Feito a partir do próprio veneno que passar através de diversos processos, o antídoto é a melhor maneira de curar envenenamento.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> líquido para Beber ou Injetar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> cura 3 acúmulos de Peste, e Saúde tem MOD+8 em testes para resistir venenos por 5 minutos. Ao utilizar <em>antídoto </em>faça um teste para se curar de venenos no fim da rodada antes de sofrer os danos do veneno caso esteja envenenado.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 2 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais: </span>2 Reagentes ou 2 Plantas, e 1 Toxina.</p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 2500000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -78,8 +78,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772766252718,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772767818261,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!s2KP5lSphrOMie1h"
 }

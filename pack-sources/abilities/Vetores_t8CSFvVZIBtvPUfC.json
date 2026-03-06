@@ -3,7 +3,7 @@
   "name": "Vetores",
   "type": "ability",
   "_id": "t8CSFvVZIBtvPUfC",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icon%20library/powers/nature%20skills/plant%20(29).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,7 +12,7 @@
     },
     "actions": {
       "GrXdG6PV3MQ3ppWS": {
-        "img": "icons/svg/item-bag.svg",
+        "img": "icon%20library/powers/nature%20skills/plant%20(29).png",
         "name": "Disseminar",
         "type": "test",
         "_id": "GrXdG6PV3MQ3ppWS",
@@ -58,7 +58,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1800000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -72,8 +72,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772820752461,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!t8CSFvVZIBtvPUfC"
 }

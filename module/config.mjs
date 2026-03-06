@@ -646,6 +646,7 @@ PC.gear = {
         matrix: { label: "PC.gear.subtypes.item.groups.matrix" },
         herbal: { label: "PC.gear.subtypes.item.groups.herbal" },
         instrument: { label: "PC.gear.subtypes.item.groups.instrument" },
+        material: { label: "PC.gear.subtypes.item.groups.material" },
         utility: { label: "PC.gear.subtypes.item.groups.utility" },
       },
       subgroups: {

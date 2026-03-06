@@ -1,0 +1,52 @@
+{
+  "folder": "7YkeJNYMBdKs6jAS",
+  "name": "Vampirismo",
+  "type": "passive",
+  "img": "icons/magic/symbols/rune-sigil-hook-white-red.webp",
+  "system": {
+    "info": {
+      "subtype": "benefit",
+      "acquirement": "learned"
+    },
+    "cost": {
+      "experience": 4,
+      "points": null
+    },
+    "details": {
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "esoteric": null,
+      "attribute": null,
+      "sense": null,
+      "narrative": null,
+      "effect": null
+    },
+    "description": {
+      "description": "<p>Esotérica, Passiva</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Um personagem acometido pelo sanguivorismo a algum tempo pode agravar essa condição ao ingerir sangue apropriado, despertando propriedades dormentes e tornando-se um vampiro.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> diferentemente da etapa de transformação em sanguívoro, o personagem precisa apenas de 12 horas de repouso para que seu corpo se adapte.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> substitui a passiva <em>Sanguívoro</em>. Tem Reflexo+2, a longevidade é triplicada, fica Imune a Peste e Doenças comuns. Adquire o ataque Corpo a corpo desarmado <em>Mordida vampírica</em>; e as passivas <em>Vida pelo sangue</em> e <em>Notívago.</em></span></p><p class=\"MsoNormal\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Vida pelo sangue:</span> recuperação diária de PV é 0 e tratamentos comuns como aplicar <em>bandagens </em>ou <em>bálsamo</em> não o curam. Pode beber sangue fresco ou banhar-se em sangue para curar até Décimo<span style=\"mso-bidi-font-family:Arial\">×</span>3 PV, limitado a 1<span style=\"mso-bidi-font-family:Arial\">×</span> por dia, podendo rejuvenescer o próprio aspecto visual até o de sua juventude. Não cumulativo com <em>Mordida vampírica</em>.</p><p class=\"MsoNormal\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Notívago:</span> tem Visão noturna (20m), penalidade por excesso de Luz é dobrada. Enquanto estiver na presença do sol não recupera PE e deve fazer 3 de esforço a cada hora que passa exposto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Sanguívoro </em>e Sabakismo N7 ou meios alternativos.</span></p><p class=\"SubNome1\">Mordida vampírica</p><p class=\"SubNome2\">Corpo a corpo</p><p class=\"MsoNormal\">Com as suas várias presas projetadas, avança e morde o alvo, então tomando uma porção de sua vitalidade para si.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 0.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 5+FIS|DES Biológico: Vital.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> pode se curar em até Décimo× (2+<span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span>) PV do dano causado, caso tenha sido ferido recentemente.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Perícias:</span> Briga.</p>",
+      "summary": "Reflexo+2, longevidade triplicada. ~ Outros efeitos",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.dPp9hELzH7jZfMQI",
+    "duplicateSource": "Item.RSyvjTrq59Ebcd04",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772761360122,
+    "modifiedTime": 1772761360122,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "dPp9hELzH7jZfMQI",
+  "_key": "!items!dPp9hELzH7jZfMQI"
+}

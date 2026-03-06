@@ -3,7 +3,7 @@
   "name": "Látego",
   "type": "ability",
   "_id": "r98tNe2J76Q02Wl7",
-  "img": "icon%20library/powers/debuff%20skills/debuff%20(21).png",
+  "img": "icons/magic/unholy/orb-hands-pink.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,23 +11,21 @@
       "category": "death"
     },
     "actions": {
-      "a4LofMdie3yiWDXq": {
-        "img": "icon%20library/powers/debuff%20skills/debuff%20(21).png",
+      "Cu4RPHky88MIx69h": {
+        "img": "icons/magic/unholy/orb-hands-pink.webp",
         "name": "Afligir",
         "type": "attack",
-        "_id": "a4LofMdie3yiWDXq",
+        "_id": "Cu4RPHky88MIx69h",
         "damaging": true,
         "range": "15/30m",
         "damage": {
           "dmgBase": 1,
-          "dmgType": "es",
           "dmgAttributes": [
             "esp"
           ],
           "dmgAttMultiplier": 0.5,
-          "dmgAddition": "",
-          "scalable": true,
-          "dmgSubtype": ""
+          "dmgType": "ex",
+          "scalable": true
         },
         "skills": {
           "sabak": 0
@@ -35,13 +33,8 @@
         "subtype": "affliction",
         "effort": "4",
         "prepTime": "1AP",
-        "duration": "1 minuto",
-        "effect": "Aplica MOD-3 para ESP e AB-3, não cumulativo.",
-        "usesAmmo": false,
-        "area": "",
-        "limit": "",
-        "keywords": {},
-        "skill": null
+        "effect": "aplica MOD-3 para ESP e AB-3, não cumulativo.",
+        "duration": "1 minuto"
       }
     },
     "details": {
@@ -56,13 +49,13 @@
       "affliction": null
     },
     "description": {
-      "description": "<p>Com gestos revoltos e uma sentença aflige um personagem com a sina do látego.</p><p>Esforço: 4.</p><p>Tempo de preparo: 1 ação.</p><p>Alcance: 15/30m.</p><p>Dano: 1+ESP/2 Essencial.</p><p>Efeitos: aplica MOD-3 para ESP e AB-3, não cumulativo.</p><p>Duração: 1 minuto.</p><p>Pré-requisitos: Aflição do exício e Sabakismo N5.</p>",
+      "description": "<p>Aflição</p><p class=\"MsoNormal\">Com gestos revoltos e uma sentença aflige um personagem com a sina do látego.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 15/30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 1+ESP/2 Essencial.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> aplica MOD-3 para ESP e AB-3, não cumulativo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Aflição do exício </em>e Sabakismo N5.</p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1900000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -76,8 +69,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766235825,
-    "modifiedTime": 1772766235825,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772817690244,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!r98tNe2J76Q02Wl7"
 }

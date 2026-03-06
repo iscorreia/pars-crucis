@@ -3,7 +3,7 @@
   "name": "Praga",
   "type": "ability",
   "_id": "wvrOKglOChljJPRx",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icon%20library/powers/nature%20skills/plant%20(23).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,14 +12,14 @@
     },
     "actions": {
       "qWp8DrXOaGdy5psR": {
-        "img": "icons/svg/item-bag.svg",
-        "name": "Afligir",
+        "img": "icon%20library/powers/nature%20skills/plant%20(23).png",
+        "name": "Jatear",
         "type": "attack",
         "_id": "qWp8DrXOaGdy5psR",
         "damaging": true,
         "range": "7m",
         "damage": {
-          "dmgBase": 14,
+          "dmgBase": 13,
           "dmgAttributes": [
             "esp"
           ],
@@ -34,7 +34,7 @@
         },
         "effort": "5",
         "prepTime": "2AP",
-        "effect": "Peste (2+2Ⓐ).",
+        "effect": "",
         "subtype": "jet",
         "usesAmmo": false,
         "area": "",
@@ -53,16 +53,17 @@
       "penalty": ""
     },
     "keywords": {
-      "jet": null
+      "jet": "",
+      "plague": "2+2Ⓐ"
     },
     "description": {
-      "description": "<p>Lança um jato de ar pestífero denso que corrói e apodrece toda coisa orgânica atingida.</p><p>Esforço: 5.</p><p>Tempo de preparo: 2 ações.</p><p>Alcance: 7m.</p><p>Dano: 14+ESP Biológico: Podre.</p><p>Efeitos: Peste (2+2Ⓐ).</p><p>Pré-requisitos: Pestilência e Sabakismo N5.</p>",
+      "description": "<p><span style=\"font-size:10.5pt;mso-bidi-font-size:11.0pt;line-height:107%;font-weight:normal\">Jato</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Lança um jato de ar pestífero denso que corrói e apodrece toda coisa orgânica atingida.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 13+ESP Biológico: Podre.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Peste (2+2</span><span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span>)<span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Pestilência </em>e Sabakismo N5.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1900000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -76,8 +77,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772820312568,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!wvrOKglOChljJPRx"
 }

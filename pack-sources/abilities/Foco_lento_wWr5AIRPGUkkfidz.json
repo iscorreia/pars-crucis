@@ -1,0 +1,77 @@
+{
+  "folder": "a81Kv7IGiXG960do",
+  "name": "Foco lento",
+  "type": "ability",
+  "img": "icons/magic/symbols/chevron-elipse-circle-blue.webp",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "miscTech",
+      "category": null
+    },
+    "actions": {
+      "V4S1t1NsSSVhZV9E": {
+        "img": "icons/magic/symbols/chevron-elipse-circle-blue.webp",
+        "name": "Usar",
+        "type": "use",
+        "_id": "V4S1t1NsSSVhZV9E",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "o poder realizado a seguir tem esforço reduzido em 2 (até o mínimo de 1). Só poder ser usado em combate.",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "amago",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "quick": null
+    },
+    "description": {
+      "description": "<p>Rápida</p><p class=\"MsoNormal\">Durante o calor da batalha o personagem se concentra para poupar de sua essência e aproveitar da essência que emana do combate.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\"> 0.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\"> o poder realizado a seguir tem esforço reduzido em 2 (até o mínimo de 1). Só poder ser usado em combate.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\"> Âmago ou Ontologia N4.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 900000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.i03WzV6lyq5k2VNV",
+    "duplicateSource": "Item.tvZjn9Rz5V1gvP6B",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772571469023,
+    "modifiedTime": 1772817319700,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "wWr5AIRPGUkkfidz",
+  "_key": "!items!wWr5AIRPGUkkfidz"
+}

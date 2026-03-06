@@ -1,9 +1,9 @@
 {
-  "folder": "dqNtFtYJYIp1FKQh",
+  "folder": "YxqDbDqQPHFL0RXo",
   "name": "Bomba cáustica",
   "type": "gear",
   "_id": "5RLqS8faDnOQ367n",
-  "img": "icon%20library/consumables/alchemical%20potions/poison%20(12).png",
+  "img": "icon%20library/consumables/alchemical%20potions/poison%20(4).png",
   "system": {
     "info": {
       "subtype": "item",
@@ -12,33 +12,23 @@
       "quality": "common"
     },
     "actions": {
-      "tRERlSWtaFsKsZeo": {
-        "img": "icon%20library/consumables/alchemical%20potions/poison%20(12).png",
+      "VtLpCuC0LtOUwndn": {
+        "img": "icon%20library/consumables/alchemical%20potions/poison%20(4).png",
         "name": "Arremessar",
-        "type": "attack",
-        "_id": "tRERlSWtaFsKsZeo",
+        "type": "use",
+        "_id": "VtLpCuC0LtOUwndn",
+        "usage": "Arremesso",
+        "range": "15m",
+        "effect": "causa o Dano ao fim de cada rodada.",
+        "area": "raio de 3m",
+        "duration": "5 rodadas",
         "damaging": true,
-        "range": "7/21m",
         "damage": {
           "dmgBase": 9,
-          "scalable": false,
           "dmgType": "bio",
           "dmgSubtype": "Tóxico",
-          "dmgAttributes": [],
-          "dmgAttMultiplier": 1,
-          "dmgAddition": ""
-        },
-        "subtype": "throw",
-        "area": "raio de 3 metros",
-        "duration": "5 rodadas",
-        "effect": "",
-        "usesAmmo": false,
-        "effort": "",
-        "limit": "",
-        "prepTime": "",
-        "keywords": {},
-        "skill": null,
-        "skills": {}
+          "scalable": false
+        }
       }
     },
     "cost": {
@@ -48,8 +38,8 @@
     "details": {
       "slots": 1,
       "stack": 1,
-      "stackMax": 1,
-      "stackable": false,
+      "stackMax": 5,
+      "stackable": true,
       "equippable": false,
       "equipped": false,
       "effect": "",
@@ -63,7 +53,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 256250,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -77,8 +67,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772766252718,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772806867591,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!5RLqS8faDnOQ367n"
 }

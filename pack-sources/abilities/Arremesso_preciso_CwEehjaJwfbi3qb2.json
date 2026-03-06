@@ -1,0 +1,79 @@
+{
+  "folder": "PWUZpGMiGJPe5Hd9",
+  "name": "Arremesso preciso",
+  "type": "ability",
+  "_id": "CwEehjaJwfbi3qb2",
+  "img": "icon%20library/skills/dagger%20skills/dagger%20skill%20(34).png",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "rangedTech",
+      "category": null
+    },
+    "actions": {
+      "GVJp8KdwLSF12AHY": {
+        "img": "icon%20library/skills/dagger%20skills/dagger%20skill%20(34).png",
+        "name": "Preparar",
+        "type": "use",
+        "_id": "GVJp8KdwLSF12AHY",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "o ataque de Arremesso realizado a seguir tem Vantagem.",
+        "range": "",
+        "area": "",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "briga",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "throw": null,
+      "aim": null,
+      "quick": null
+    },
+    "description": {
+      "description": "<p>Arremesso, Mira</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Dar maior atenção ao peso de sua arma e o movimento de seu alvo, garantindo melhor precisão.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> o arremesso a seguir tem Vantagem.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Briga ou Hasta N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.CwEehjaJwfbi3qb2",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772557300385,
+    "modifiedTime": 1772569570168,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!items!CwEehjaJwfbi3qb2"
+}

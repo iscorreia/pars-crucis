@@ -1,0 +1,82 @@
+{
+  "folder": "MU9Xr1b6NN0keHed",
+  "name": "Bálsamo",
+  "type": "gear",
+  "img": "icon%20library/consumables/alchemical%20herbs/20.png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "herbal",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "mvYGxkDZgtibfM20": {
+        "img": "icon%20library/consumables/alchemical%20herbs/20.png",
+        "name": "Usar",
+        "type": "use",
+        "_id": "mvYGxkDZgtibfM20",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "aplicar sobre a região ferida cura o personagem [3+Medicina/2] PV, mas é limitado ao uso de 1 bandagem ou bálsamo por dia. É preciso ter um conhecimento mínimo de como aplicar o bálsamo para que faça efeito.",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": "Pomada"
+      }
+    },
+    "cost": {
+      "price": 40,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 5,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Mistura de plantas medicinais que auxiliam na recuperação de ferimentos superficiais.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> Pomada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> aplicar sobre a região ferida cura o personagem [3+<em>Medicina</em>/2] PV, mas é limitado ao uso de 1 bandagem ou bálsamo por dia.</p><p class=\"MsoNormal\">É preciso ter um conhecimento mínimo de como aplicar o bálsamo para que faça efeito.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 40 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Medicina N2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 30 minutos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> <span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">2 Plantas.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.aqxejzHH2Rla1y4S",
+    "duplicateSource": "Item.sxcnyBfsR0k7W7sr",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772590029592,
+    "modifiedTime": 1772590029592,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "ezUGeGXEtYsubM69",
+  "_key": "!items!ezUGeGXEtYsubM69"
+}

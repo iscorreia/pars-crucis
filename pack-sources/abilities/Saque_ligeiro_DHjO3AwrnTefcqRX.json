@@ -1,0 +1,84 @@
+{
+  "folder": "PWUZpGMiGJPe5Hd9",
+  "name": "Saque ligeiro",
+  "type": "ability",
+  "img": "icon%20library/skills/artillery%20skills/artillery%20(21).png",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "rangedTech",
+      "category": null
+    },
+    "actions": {
+      "pkiP13Qr2ilTARyS": {
+        "img": "icon%20library/skills/artillery%20skills/artillery%20(21).png",
+        "name": "Técnica",
+        "type": "tech",
+        "_id": "pkiP13Qr2ilTARyS",
+        "damaging": true,
+        "skills": {
+          "balis": 0
+        },
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "Dano: +4Ⓐ, ao declarar a ação tem Iniciativa +4 na rodada. Ignora as penalidades por estar Engajado.",
+        "range": "",
+        "area": "",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "balis",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "projectile": "",
+      "aim": null
+    },
+    "description": {
+      "description": "<p>Mira, Projétil</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-weight:bold\">Saca a arma e atira com movimentos ligeiros e imprevisíveis.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Condição:</span> ter pistola ou outra arma balística de uma mão para saque.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span><span style=\"mso-bidi-font-weight:bold\">+4</span><span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span>.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> ao declarar a ação tem Iniciativa +4 na rodada. Ignora as penalidades por estar Engajado.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Balística N5.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.CwEehjaJwfbi3qb2",
+    "duplicateSource": "Item.LgHm2N34D87Sioye",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772557300385,
+    "modifiedTime": 1772569641267,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "DHjO3AwrnTefcqRX",
+  "_key": "!items!DHjO3AwrnTefcqRX"
+}

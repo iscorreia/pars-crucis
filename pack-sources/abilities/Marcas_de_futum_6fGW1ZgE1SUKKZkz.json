@@ -3,7 +3,7 @@
   "name": "Marcas de futum",
   "type": "ability",
   "_id": "6fGW1ZgE1SUKKZkz",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/creatures/invertebrates/beetle-stag-yellow-green.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,11 +12,11 @@
     },
     "actions": {
       "A7ZJzBk0WYiPrxkS": {
-        "img": "icons/svg/item-bag.svg",
+        "img": "icons/creatures/invertebrates/beetle-stag-yellow-green.webp",
         "name": "Marcar",
         "type": "use",
         "_id": "A7ZJzBk0WYiPrxkS",
-        "effort": "retém 8",
+        "effort": "R8",
         "prepTime": "5AP",
         "area": "raio de 10m, ou limites do cômodo.",
         "effect": "personagens que entrem na área sentem seu nariz e olhos arderem, tendo MOD-2 as suas ações de ataque e ações com preparo, não cumulativo com outros efeitos por odor/cheiro. O odor se espalha rapidamente.",
@@ -56,7 +56,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 400000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -70,8 +70,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772820180146,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!6fGW1ZgE1SUKKZkz"
 }

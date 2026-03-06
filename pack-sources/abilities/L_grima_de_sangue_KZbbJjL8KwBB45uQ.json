@@ -1,0 +1,81 @@
+{
+  "folder": "7YkeJNYMBdKs6jAS",
+  "name": "Lágrima de sangue",
+  "type": "ability",
+  "img": "icon%20library/powers/blood%20skills/blood%20(29).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "sabak",
+      "category": "blood"
+    },
+    "actions": {
+      "LUsKFv4xa6H5UUGW": {
+        "img": "icon%20library/powers/blood%20skills/blood%20(29).png",
+        "name": "Fabricar",
+        "type": "test",
+        "_id": "LUsKFv4xa6H5UUGW",
+        "skill": "atlet",
+        "skills": {
+          "sabak": 0,
+          "alqui": 0,
+          "arcan": 0
+        },
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "o cristal pode ter Essência até a quantia de PE atual da criatura divido por 2. Com Ⓐ ou MS 8 o cristal de lágrima é estável e não se dissipa ao passar do tempo. ⒹⒹ resulta numa explosão causando [20] de dano Existencial e Essencial em um raio de 5m.",
+        "range": "",
+        "area": "",
+        "effort": "metade da essência total da lágrima.",
+        "limit": "1 dia, então se dissipa.",
+        "prepTime": "5 minutos",
+        "duration": "",
+        "keywords": {},
+        "difficulty": 12
+      }
+    },
+    "details": {
+      "experience": 3,
+      "preRequisites": "",
+      "coreSkill": "sabak",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Com uma sequência de movimentos o personagem guia a essência remanescente de uma criatura recém morta através de seu sangue o condensando em um cristal de lágrima vermelho.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> metade da essência total da lágrima.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5 minutos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 12.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> o cristal pode ter Essência até a quantia de PE atual da criatura divido por 2. Com </span><span lang=\"JA\" style=\"mso-bidi-font-size:9.0pt;line-height:105%;font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> ou MS 8 o cristal de lágrima é estável e não se dissipa ao passar do tempo. </span><span lang=\"JA\" style=\"mso-bidi-font-size:9.0pt;line-height:105%;font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">ⒹⒹ</span><span lang=\"JA\" style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">resulta numa explosão causando [20] de dano Existencial e Essencial em um raio de 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 dia, então se dissipa.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Perícias:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Sabakismo</em>, <em>Alquimia</em> ou <em>Arcanismo</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Arte do sangue </em>e Sabakismo N7.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.d2ZpcSXlG6yhCGdD",
+    "duplicateSource": "Item.43L6spRghuFkUII6",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772761360122,
+    "modifiedTime": 1772761360122,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "KZbbJjL8KwBB45uQ",
+  "_key": "!items!KZbbJjL8KwBB45uQ"
+}

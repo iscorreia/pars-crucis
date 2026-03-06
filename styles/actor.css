@@ -495,7 +495,7 @@ h4.movement {
   display: block;
   width: 100%;
   height: 1px;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   background: linear-gradient(
     to right,
     transparent 0%,
@@ -508,7 +508,7 @@ h4.movement {
   margin-top: 3px;
 }
 .item-list-block > ol:not(:last-child)::after {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 /* SKILLS TAB */
@@ -582,7 +582,7 @@ h4.movement {
       flex-direction: row;
       align-items: center;
       width: calc(
-        100% - 70px - var(--skill-value-width) - var(--skill-value-width)
+        100% - 55px - var(--skill-value-width) - var(--skill-value-width)
       );
       .skill-exp {
         margin: 0 0 3px 3px;
@@ -592,7 +592,7 @@ h4.movement {
       }
     }
     .skill-att {
-      width: 70px;
+      width: 55px;
       text-align: center;
       color: var(--color-light-4);
     }
@@ -1070,6 +1070,11 @@ h4.movement {
     padding-right: 2px;
     height: 16px;
     border-radius: 5px 0 5px 0;
+  }
+}
+.list-ammo {
+  .inline-label:first-child {
+    margin-left: 0;
   }
 }
 .out-of-stock {

@@ -1,0 +1,115 @@
+{
+  "folder": "e6H3NExx3bP1GogH",
+  "name": "Golpe atordoante",
+  "type": "ability",
+  "img": "icon%20library/powers/debuff%20skills/debuff%20(50).png",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "meleeTech",
+      "category": null
+    },
+    "actions": {
+      "OFEpNEXkFvnZFlLQ": {
+        "img": "icon%20library/powers/debuff%20skills/debuff%20(50).png",
+        "name": "Desarmado",
+        "type": "tech",
+        "_id": "OFEpNEXkFvnZFlLQ",
+        "damaging": true,
+        "skills": {
+          "briga": 0
+        },
+        "effort": "3",
+        "damage": {
+          "dmgBase": 2,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "effect": "com Ⓐ ou MS 4 o alvo fica Vulnerável e tem Desvantagem em ações de ataque até o fim da rodada. Com ⒶⒶ deve fazer um teste de FIS (dif16+perícia de combate corpo a corpo) ou é Abalado.",
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      },
+      "l78wnVYM0v052seT": {
+        "img": "icon%20library/powers/debuff%20skills/debuff%20(50).png",
+        "name": "Armado",
+        "type": "tech",
+        "_id": "l78wnVYM0v052seT",
+        "damaging": true,
+        "skills": {
+          "inherit": 0
+        },
+        "effort": "3",
+        "damage": {
+          "dmgBase": -2,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "effect": "com Ⓐ ou MS 4 o alvo fica Vulnerável e tem Desvantagem em ações de ataque até o fim da rodada. Com ⒶⒶ deve fazer um teste de FIS (dif16+perícia de combate corpo a corpo) ou é Abalado.",
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "briga",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "melee": ""
+    },
+    "description": {
+      "description": "<p>Corpo a corpo</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Ataca a nuca, genitália ou outro ponto frágil de um personagem com punhos ou parte cega.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3.</span></p><p class=\"SubTtulo2\">Punhos</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> +2.</p><p class=\"SubTtulo2\">Arma</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> -2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> com <span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span> ou MS 4 o alvo fica Vulnerável e tem Desvantagem em ações de ataque até o fim da rodada. Com <span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">ⒶⒶ</span> deve fazer um teste de FIS (dif16+<em>perícia de combate corpo a corpo</em>) ou é <em>Abalado</em>.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> perícia de Combate corpo a corpo N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.YaePMNbm5Ai0rG6L",
+    "duplicateSource": "Item.hKrqvEHkMy4O0jCz",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772551811108,
+    "modifiedTime": 1772551811108,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "LjqLNhzRgCTy7JAL",
+  "_key": "!items!LjqLNhzRgCTy7JAL"
+}

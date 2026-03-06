@@ -1,0 +1,114 @@
+{
+  "folder": "MU9Xr1b6NN0keHed",
+  "name": "Repelente",
+  "type": "gear",
+  "img": "icons/commodities/materials/bowl-powder-teal.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "herbal",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "CRQ7QGxtSCpbFFMF": {
+        "img": "icons/commodities/materials/bowl-powder-teal.webp",
+        "name": "Usar",
+        "type": "use",
+        "_id": "CRQ7QGxtSCpbFFMF",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "perfura 1h, espantando insetos e pequenos animais. O odor se prende ao corpo de quem ficar na área, permanecendo por até 6h.",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": "Incenso"
+      },
+      "Q2a2yURy0HURJgyr": {
+        "img": "icons/commodities/materials/bowl-powder-teal.webp",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "Q2a2yURy0HURJgyr",
+        "damaging": true,
+        "range": "5/10m",
+        "damage": {
+          "dmgBase": 11,
+          "dmgAttributes": [
+            "cog"
+          ],
+          "dmgAttMultiplier": 0.5,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "bio",
+          "dmgSubtype": "Tóxico"
+        },
+        "usesAmmo": false,
+        "effect": "causa danos apenas em criaturas em grupo e Insetos.",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "alqui": 0
+        },
+        "subtype": "throw"
+      }
+    },
+    "cost": {
+      "price": 50,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 5,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Um mix de plantas aromáticas, o repelente possui um cheiro que afasta insetos e pequenos animais. Quando lançado sobre insetos o repelente os asfixia.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> Pó de arremesso ou Incenso.</p><p class=\"SubTtulo2\">Pó</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 5/10m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 11+COG/2 Biológico: Tóxico</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> causa danos apenas em criaturas em grupo e Insetos.</p><p class=\"SubTtulo2\">Incenso</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> perfura 1h, espantando insetos e pequenos animais. O odor se prende ao corpo de quem ficar na área, permanecendo por até 6h.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 50 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Medicina ou Sobrevivência N3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> <span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">2 Plantas.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.aqxejzHH2Rla1y4S",
+    "duplicateSource": "Item.sTmweAOYfati98vn",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772590029592,
+    "modifiedTime": 1772590029592,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "z7Hx5p6dKoEBFU9K",
+  "_key": "!items!z7Hx5p6dKoEBFU9K"
+}

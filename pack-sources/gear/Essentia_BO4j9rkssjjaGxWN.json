@@ -1,20 +1,20 @@
 {
-  "folder": "dqNtFtYJYIp1FKQh",
+  "folder": "YxqDbDqQPHFL0RXo",
   "name": "Essentia",
   "type": "gear",
   "_id": "BO4j9rkssjjaGxWN",
-  "img": "icon%20library/consumables/elixir/21.png",
+  "img": "icon%20library/consumables/elixir/39.png",
   "system": {
     "info": {
       "subtype": "item",
       "group": "alchemical",
       "subgroup": "",
-      "quality": "common"
+      "quality": "rare"
     },
     "actions": {
       "vxgi1gkdVjtzKfv5": {
-        "img": "icon%20library/consumables/elixir/21.png",
-        "name": "Aplicar",
+        "img": "icon%20library/consumables/elixir/39.png",
+        "name": "Usar",
         "type": "use",
         "_id": "vxgi1gkdVjtzKfv5",
         "usage": "beber ou injetar",
@@ -46,16 +46,16 @@
     "details": {
       "slots": 1,
       "stack": 1,
-      "stackMax": 1,
-      "stackable": false,
+      "stackMax": 5,
+      "stackable": true,
       "equippable": false,
       "equipped": false,
       "effect": "",
       "penalty": ""
     },
     "keywords": {
-      "recipe": null,
-      "potion": null
+      "potion": null,
+      "recipe": null
     },
     "description": {
       "description": "<p>Líquido composto de reagentes estabilizadores e essência de lágrima que revigora o espírito.</p><p>Uso: Líquido para beber ou Injetar.</p><p>Efeitos: Cura [5+Décimo] PE.</p><p>Preço: 7 pratas.</p><p>Ofício: Alquimia N5.</p><p>Tempo para fabricar: 6 horas.</p><p>Materiais: 2 Lágrima e 2 Reagentes.</p>",
@@ -64,7 +64,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 278125,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -78,8 +78,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772766252718,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772806983893,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!BO4j9rkssjjaGxWN"
 }

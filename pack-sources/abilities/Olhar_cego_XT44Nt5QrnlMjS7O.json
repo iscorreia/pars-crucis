@@ -3,7 +3,7 @@
   "name": "Olhar cego",
   "type": "ability",
   "_id": "XT44Nt5QrnlMjS7O",
-  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "img": "icon%20library/powers/dark%20skills/warlock%20(38).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,31 +11,23 @@
       "category": "mind"
     },
     "actions": {
-      "GV0HSl1p9vm9cNTK": {
-        "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
-        "name": "Ocultar",
-        "type": "use",
-        "_id": "GV0HSl1p9vm9cNTK",
+      "hYwTWaPgD2YTyqET": {
+        "img": "icon%20library/powers/dark%20skills/warlock%20(38).png",
+        "name": "Mentalizar",
+        "type": "attack",
+        "_id": "hYwTWaPgD2YTyqET",
+        "damaging": false,
+        "range": "visual",
+        "damage": {
+          "dmgBase": 3
+        },
+        "skills": {
+          "sabak": 0
+        },
+        "subtype": "mind",
         "effort": "3, 2 para manter.",
         "prepTime": "1AP",
-        "range": "visual",
-        "effect": "sua presença é completamente ocultada do personagem alvo, ou para todos os personagens desejados sobre efeito de Presença impositiva. Quem estiver sobre o efeito de olhar cego não o vê, nem o ouve. Ao interagir com um personagem este faz um teste de COG (dif12+Sabakismo) para sair do efeito de olhar cego.",
-        "duration": "1 rodada",
-        "damaging": false,
-        "damage": {
-          "dmgBase": 0,
-          "dmgAttributes": [],
-          "dmgAttMultiplier": 1,
-          "dmgAddition": "",
-          "scalable": true,
-          "dmgType": "phy",
-          "dmgSubtype": ""
-        },
-        "usesAmmo": false,
-        "area": "",
-        "limit": "",
-        "keywords": {},
-        "usage": ""
+        "effect": "sua presença é completamente ocultada do personagem alvo, ou para todos os personagens desejados sobre efeito de Presença impositiva. Quem estiver sobre o efeito de olhar cego não o vê, nem o ouve. Ao interagir com um personagem este faz um teste de COG (dif12+Sabakismo) para sair do efeito de olhar cego."
       }
     },
     "details": {
@@ -56,7 +48,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1200000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -70,8 +62,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772814581968,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!XT44Nt5QrnlMjS7O"
 }

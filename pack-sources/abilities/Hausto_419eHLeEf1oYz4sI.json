@@ -3,7 +3,7 @@
   "name": "Hausto",
   "type": "ability",
   "_id": "419eHLeEf1oYz4sI",
-  "img": "icon%20library/powers/dark%20skills/warlock%20(15).png",
+  "img": "icon%20library/powers/dark%20skills/warlock%20(32).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,19 +12,21 @@
     },
     "actions": {
       "7qE2ZoiLZqxeZDZ2": {
-        "img": "icon%20library/powers/dark%20skills/warlock%20(15).png",
-        "name": "Atacar",
+        "img": "icon%20library/powers/dark%20skills/warlock%20(32).png",
+        "name": "Jatear",
         "type": "attack",
         "_id": "7qE2ZoiLZqxeZDZ2",
         "damaging": true,
         "range": "7m",
         "damage": {
-          "dmgBase": 3,
-          "dmgAttributes": [],
+          "dmgBase": 6,
+          "dmgAttributes": [
+            "esp"
+          ],
           "dmgAttMultiplier": 1,
           "dmgAddition": "",
           "scalable": true,
-          "dmgType": "phy",
+          "dmgType": "es",
           "dmgSubtype": ""
         },
         "subtype": "jet",
@@ -34,7 +36,7 @@
         "effort": "8",
         "prepTime": "2AP",
         "usesAmmo": false,
-        "effect": "",
+        "effect": "Cura o personagem em PE equivalente a metade de todos o dano Essencial causado.",
         "area": "",
         "limit": "",
         "duration": "",
@@ -51,16 +53,17 @@
       "penalty": ""
     },
     "keywords": {
-      "jet": null
+      "jet": "",
+      "lethality": "/2"
     },
     "description": {
-      "description": "<p>Com as mãos gera um sifão que causa 6+ESP de dano Essencial com Fatalidade/2 a todos em uma linha de 7m curando os PE do personagem em quantia equivalente à metade de todo dano Essencial causado.</p><p>Esforço: 8.</p><p>Tempo de preparo: 2 ações.</p><p>Pré-requisitos: Sifonar e Sabakismo N5.</p>",
+      "description": "<p>Jato</p><p class=\"MsoNormal\">Com as mãos gera um sifão de essência que drena a essência dos alvos atingidos para si.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 6+ESP Essencial.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade/2. Cura o personagem em PE equivalente a metade de todos o dano Essencial causado.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Sifonar </em>e Sabakismo N5.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1200000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -74,8 +77,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766235825,
-    "modifiedTime": 1772766235825,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772817690244,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!419eHLeEf1oYz4sI"
 }

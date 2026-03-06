@@ -3,7 +3,7 @@
   "name": "Aflição do exício",
   "type": "ability",
   "_id": "zRmbwqc1YTlifVAv",
-  "img": "icon%20library/powers/dark%20skills/warlock%20(42).png",
+  "img": "icon%20library/powers/dark%20skills/warlock%20(46).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,7 +12,7 @@
     },
     "actions": {
       "LsNO8eodnksf8k0R": {
-        "img": "icon%20library/powers/dark%20skills/warlock%20(42).png",
+        "img": "icon%20library/powers/dark%20skills/warlock%20(46).png",
         "name": "Afligir",
         "type": "attack",
         "_id": "LsNO8eodnksf8k0R",
@@ -54,13 +54,13 @@
       "affliction": null
     },
     "description": {
-      "description": "<p>Fazendo alguns movimentos aflige um personagem no alcance de 15/30m prenunciando sua morte, causando [1] de dano Existencial. Enquanto estiver aflito o personagem recebe 1 de dano Existencial ao fim de cada rodada e Aflições que causem Dano causam Dano+3 ao afligirem.</p><p>Esforço: 4.</p><p>Tempo de preparo: 1 ação.</p><p>Duração: 1 minuto.</p><p>Pré-requisitos: Sifonar e Sabakismo N4.</p><p></p><p></p>",
+      "description": "<p>Aflição</p><p class=\"MsoNormal\">Fazendo alguns movimentos aflige a um personagem com o prenuncio de sua morte.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 15/30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> [1] Existencial.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> enquanto estiver aflito o personagem recebe 1 de dano Ex ao fim de cada rodada. Aflições de dano tem Dano+3 ao afligirem.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Sifonar </em>e Sabakismo N4.</p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 2100000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -74,8 +74,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766235825,
-    "modifiedTime": 1772766235825,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772817690244,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!zRmbwqc1YTlifVAv"
 }

@@ -3,7 +3,7 @@
   "name": "Perdição",
   "type": "ability",
   "_id": "qbdf9RFZ8l9DVYb1",
-  "img": "icon%20library/powers/illusionist%20skills/illusion%20(4).png",
+  "img": "icon%20library/powers/outworld%20skills/outworldly%20(23).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,8 +12,8 @@
     },
     "actions": {
       "ptcKYtVJJp1unc0l": {
-        "img": "icon%20library/powers/illusionist%20skills/illusion%20(4).png",
-        "name": "Afligir",
+        "img": "icon%20library/powers/outworld%20skills/outworldly%20(23).png",
+        "name": "Mentalizar",
         "type": "attack",
         "_id": "ptcKYtVJJp1unc0l",
         "damaging": false,
@@ -61,7 +61,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1800000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -75,8 +75,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772810957172,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!qbdf9RFZ8l9DVYb1"
 }

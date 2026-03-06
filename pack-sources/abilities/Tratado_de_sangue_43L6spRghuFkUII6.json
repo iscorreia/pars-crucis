@@ -1,0 +1,81 @@
+{
+  "folder": "7YkeJNYMBdKs6jAS",
+  "name": "Tratado de sangue",
+  "type": "ability",
+  "img": "icon%20library/powers/blood%20skills/blood%20(40).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "sabak",
+      "category": "blood"
+    },
+    "actions": {
+      "csBlaoAMwLuwSGMi": {
+        "img": "icon%20library/powers/blood%20skills/blood%20(40).png",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "csBlaoAMwLuwSGMi",
+        "damaging": false,
+        "range": "10/15m",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "sabak": 0
+        },
+        "usesAmmo": false,
+        "effect": "metade dos danos que seriam sofridos por um personagem são redirecionados ao outro como Dano Existencial. Desconsidere decimais.",
+        "area": "",
+        "effort": "R7",
+        "limit": "",
+        "prepTime": "2AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "affliction"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "sabak",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "affliction": null
+    },
+    "description": {
+      "description": "<p>Aflição</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Ao tirar sangue de outro personagem, o ingere ou o põe sobre um ferimento em seu corpo, formando um tratado vital com ele.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> retém 7.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10/15m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> metade dos danos que seriam sofridos por um personagem são redirecionados ao outro como Dano Existencial. Desconsidere decimais.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Sangria </em>e Sabakismo N6.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.d2ZpcSXlG6yhCGdD",
+    "duplicateSource": "Item.ynkOzN3ZD0sJyScy",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772761360122,
+    "modifiedTime": 1772761360122,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "43L6spRghuFkUII6",
+  "_key": "!items!43L6spRghuFkUII6"
+}

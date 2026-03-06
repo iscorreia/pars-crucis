@@ -3,7 +3,7 @@
   "name": "Torpor",
   "type": "ability",
   "_id": "ejMv9DhPaM41ExvC",
-  "img": "icon%20library/powers/debuff%20skills/debuff%20(46).png",
+  "img": "icons/magic/control/sleep-bubble-purple.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,8 +12,8 @@
     },
     "actions": {
       "IB9bpA1hKUwc44lD": {
-        "img": "icon%20library/powers/debuff%20skills/debuff%20(46).png",
-        "name": "Adormecer",
+        "img": "icons/magic/control/sleep-bubble-purple.webp",
+        "name": "Mentalizar",
         "type": "attack",
         "_id": "IB9bpA1hKUwc44lD",
         "damaging": false,
@@ -60,7 +60,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1400000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -74,8 +74,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772808463315,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!ejMv9DhPaM41ExvC"
 }

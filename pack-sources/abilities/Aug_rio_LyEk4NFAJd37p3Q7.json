@@ -3,7 +3,7 @@
   "name": "Augúrio",
   "type": "ability",
   "_id": "LyEk4NFAJd37p3Q7",
-  "img": "icon%20library/powers/undead%20skills/undead%20(23).png",
+  "img": "icons/magic/perception/hand-eye-pink.webp",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,8 +12,8 @@
     },
     "actions": {
       "iCmi09sIpfdXQrfO": {
-        "img": "icon%20library/powers/undead%20skills/undead%20(23).png",
-        "name": "Vislumbrar",
+        "img": "icons/magic/perception/hand-eye-pink.webp",
+        "name": "Analisar",
         "type": "test",
         "_id": "iCmi09sIpfdXQrfO",
         "skill": "atlet",
@@ -58,7 +58,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 800000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -72,8 +72,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766231355,
-    "modifiedTime": 1772766231355,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772808654223,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!LyEk4NFAJd37p3Q7"
 }

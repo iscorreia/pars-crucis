@@ -1,0 +1,108 @@
+{
+  "folder": "MU9Xr1b6NN0keHed",
+  "name": "Angélica",
+  "type": "gear",
+  "img": "icon%20library/consumables/flowers/6.png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "herbal",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "2ohNHXYSdMcpoagf": {
+        "img": "icon%20library/consumables/flowers/6.png",
+        "name": "Pomada",
+        "type": "use",
+        "_id": "2ohNHXYSdMcpoagf",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "cura 3 acúmulos de Peste ao aplicar nas feridas.",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": "Pomada"
+      },
+      "6Dc9oHwO6VqikkSH": {
+        "img": "icon%20library/consumables/flowers/6.png",
+        "name": "Erva",
+        "type": "use",
+        "_id": "6Dc9oHwO6VqikkSH",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "concede MOD+3 para Saúde, e previne 3 acúmulos de Peste pelo período de 1 dia.",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": "Mastigável"
+      }
+    },
+    "cost": {
+      "price": 30,
+      "currency": "copper"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 5,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Planta medicinal que combate peste e outras bactérias. A <em>angélica </em>pode ser manipulada como pasta para tratar ferimentos ou mastigada para aumentar a imunidade.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> erva Mastigável e Pomada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> A pomada cura 3 acúmulos de Peste ao aplicar nas feridas. A erva para mastigar concede MOD+3 para Saúde, e previne 3 acúmulos de Peste pelo período de 1 dia.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 30 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia ou Medicina N2, ou Sobrevivência N4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 hora.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> <span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">1 Planta.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.aqxejzHH2Rla1y4S",
+    "duplicateSource": "Item.jjzYjwex9Nc1yCJu",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772590029592,
+    "modifiedTime": 1772590029592,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "sxcnyBfsR0k7W7sr",
+  "_key": "!items!sxcnyBfsR0k7W7sr"
+}

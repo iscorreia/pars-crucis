@@ -1,0 +1,55 @@
+{
+  "folder": "0fTY46agc8L1KbpY",
+  "name": "Eônio",
+  "type": "gear",
+  "img": "icons/commodities/stone/ore-chunk-purple-brown.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "material",
+      "subgroup": "",
+      "quality": "rare"
+    },
+    "actions": {},
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 10,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Um minério que emana energia estranha, muito valorizado por engenheiros artífices e alquimistas por ser um material versátil e com grande potencial essencial, mas manipular eônio e perigoso e exige experiência para que não haja efeitos colaterais.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeito:</span> Se usado no lugar de pólvora para fabricar itens aumenta o dano causado em 1 e concede adicional de [3] de dano biológico.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> Extraído de jazidas ou extraído de minérios celestiais. Falhar na coleta ou na fabricação com eônio causa [MF<span style=\"mso-bidi-font-family:Arial\">×</span>2] de dano.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Origem:</span> Mineral.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Extração ou Engenharia N6, Alquimia N8.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.at77xTIz6eGgips5",
+    "duplicateSource": "Item.at77xTIz6eGgips5",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772644588361,
+    "modifiedTime": 1772644588361,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "XK6c1vqV9HKLeMy5",
+  "_key": "!items!XK6c1vqV9HKLeMy5"
+}

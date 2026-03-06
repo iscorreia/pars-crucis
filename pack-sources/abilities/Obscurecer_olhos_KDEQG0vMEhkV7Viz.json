@@ -3,7 +3,7 @@
   "name": "Obscurecer olhos",
   "type": "ability",
   "_id": "KDEQG0vMEhkV7Viz",
-  "img": "icon%20library/powers/dark%20skills/warlock%20(38).png",
+  "img": "icon%20library/powers/dark%20skills/warlock%20(42).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,7 +12,7 @@
     },
     "actions": {
       "qoaTDO3xKf4OXMF4": {
-        "img": "icon%20library/powers/dark%20skills/warlock%20(38).png",
+        "img": "icon%20library/powers/dark%20skills/warlock%20(42).png",
         "name": "Afligir",
         "type": "attack",
         "_id": "qoaTDO3xKf4OXMF4",
@@ -54,13 +54,13 @@
       "affliction": null
     },
     "description": {
-      "description": "<p>Com alguns movimento manuais e uma palavra lança sobre um personagem no alcance 15/30m uma aflição que traz as sombras do Abismo sobre sua vista, aplicando MOD-4 a visão por 1 rodada, ou cegando se tiver Ⓐ. Então aplicando MOD-1 a visão, o valor é dobrado (MOD-2) para ataques de Projétil e Arremesso. Ao ver os olhos do personagem com cuidado é possível notar que sombras percorrem pelos olhos.</p><p>Esforço: 6.</p><p>Tempo de preparo: 1 ação.</p><p>Duração: 1 minuto.</p><p>Pré-requisitos: Açoite sombrio e Sabakismo N4.</p>",
+      "description": "<p>Aflição</p><p class=\"MsoNormal\">Com alguns movimentos manuais e uma palavra lança sobre um personagem uma aflição que traz sombras sobre a sua vista.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 15/30m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> MOD-4 a visão na rodada, cegando se tiver <span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span>. Então aplicando MOD-1 a visão, o valor é dobrado (MOD-2) para ataques de Projétil e Arremesso.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Açoite sombrio</em> e Sabakismo N4.</p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1300000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -74,8 +74,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766235825,
-    "modifiedTime": 1772766235825,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772817690244,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!KDEQG0vMEhkV7Viz"
 }

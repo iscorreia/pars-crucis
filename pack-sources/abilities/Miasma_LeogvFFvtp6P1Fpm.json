@@ -3,7 +3,7 @@
   "name": "Miasma",
   "type": "ability",
   "_id": "LeogvFFvtp6P1Fpm",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icon%20library/powers/undead%20skills/undead%20(2).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,12 +12,12 @@
     },
     "actions": {
       "YEoKEqqKWIoUX8QC": {
-        "img": "icons/svg/item-bag.svg",
-        "name": "Miasma",
+        "img": "icon%20library/powers/undead%20skills/undead%20(2).png",
+        "name": "Área de efeito",
         "type": "attack",
         "_id": "YEoKEqqKWIoUX8QC",
         "damaging": true,
-        "range": "a partir de si, ou de um personagem empesteado",
+        "range": "0",
         "damage": {
           "dmgBase": 14,
           "dmgAttributes": [
@@ -36,7 +36,7 @@
         "prepTime": "2AP",
         "effort": "5",
         "area": "raio de 4m",
-        "effect": "Peste (1). Realizável a partir de um personagem no alcance visual afetado por Peste.",
+        "effect": "Realizável a partir de um personagem no alcance visual afetado por Peste.",
         "usesAmmo": false,
         "limit": "",
         "duration": "",
@@ -53,16 +53,17 @@
       "penalty": ""
     },
     "keywords": {
-      "aoe": null
+      "aoe": "",
+      "plague": "1"
     },
     "description": {
-      "description": "<p>A partir de si, ou de um personagem pesteado libera ar pestífero que se espalha contagiando e ferindo a todos no seu entorno.</p><p>Esforço: 5.</p><p>Tempo de preparo: 2 ações.</p><p>Alcance (personagem): visual.</p><p>Área: raio de 4m.</p><p>Danos: 14+ESP Biológico: Podre.</p><p>Efeitos: Peste (1). Realizável a partir de um personagem no alcance visual afetado por Peste.</p><p>Pré-requisitos: Praga e Sabakismo N6.</p>",
+      "description": "<p><span style=\"font-size:10.5pt;mso-bidi-font-size:11.0pt;line-height:107%;font-weight:normal\">Área</span></p><p class=\"MsoNormal\">A partir de si, ou de um personagem pesteado libera ar pestífero que se espalha contagiando e ferindo a todos no seu entorno.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance (personagem):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> visual.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 4m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Danos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 14+ESP Biológico: Podre.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Peste (1). Realizável a partir de um personagem no alcance visual afetado por Peste.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Praga </em>e Sabakismo N6.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 600000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -76,8 +77,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772820607097,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!LeogvFFvtp6P1Fpm"
 }

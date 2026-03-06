@@ -1,0 +1,55 @@
+{
+  "folder": "0fTY46agc8L1KbpY",
+  "name": "Omegatoxina",
+  "type": "gear",
+  "img": "icons/skills/toxins/cauldron-bubbles-overflow-green.webp",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "material",
+      "subgroup": "",
+      "quality": "rare"
+    },
+    "actions": {},
+    "cost": {
+      "price": 1,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 10,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Toxina poderosa e muito rara extraída de plantas especiais e criaturas peçonhentas muitos perigosas. Alguns alquimistas seletos conhecem a receita para sintetizar essa toxina. No seu estado básico a toxina é inerte e precisa ser trabalhada com um ativador.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Aquisição:</span> extraído de criaturas raras ou plantas especiais.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Origem:</span> Animal, Botânica e Química.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N6, Sobrevivência N8.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1300000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": "Item.U8eDjVpZ3JqPjN41",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772644588361,
+    "modifiedTime": 1772644588361,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "s5WSkY1pITd3XS9Z",
+  "_key": "!items!s5WSkY1pITd3XS9Z"
+}

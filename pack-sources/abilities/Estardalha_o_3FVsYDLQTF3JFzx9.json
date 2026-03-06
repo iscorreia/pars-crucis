@@ -1,0 +1,77 @@
+{
+  "folder": "a81Kv7IGiXG960do",
+  "name": "Estardalhaço",
+  "type": "ability",
+  "img": "icon%20library/skills/shield%20skills/shield%20(8).png",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "miscTech",
+      "category": null
+    },
+    "actions": {
+      "fh70eOHg0C8GQBH1": {
+        "img": "icon%20library/skills/shield%20skills/shield%20(8).png",
+        "name": "Usar",
+        "type": "use",
+        "_id": "fh70eOHg0C8GQBH1",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "adversários tem MOD-2 em ataques que não o tiverem o como alvo. Essa penalidade não é cumulativa.",
+        "range": "",
+        "area": "",
+        "effort": "3",
+        "limit": "",
+        "prepTime": "",
+        "duration": "2 rodadas",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "expre",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "quick": null
+    },
+    "description": {
+      "description": "<p>Rápida</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">O personagem bate a arma no escudo, brada ou fala asneiras chamando atenção dos adversários ao redor.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> adversários tem MOD-2 em ataques que não o tiverem o como alvo. Essa penalidade não é cumulativa.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 rodadas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Expressão ou Imposição N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.i03WzV6lyq5k2VNV",
+    "duplicateSource": "Item.i03WzV6lyq5k2VNV",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772571469023,
+    "modifiedTime": 1772817319700,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "3FVsYDLQTF3JFzx9",
+  "_key": "!items!3FVsYDLQTF3JFzx9"
+}

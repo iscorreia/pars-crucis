@@ -27,7 +27,8 @@
           "dmgSubtype": ""
         },
         "skills": {
-          "bardi": 0
+          "bardi": 0,
+          "sabak": 0
         },
         "usesAmmo": false,
         "effect": "tanto o personagem quanto seu alvo têm sua movimentação limitada, podendo mover apenas 1m por rodada. O alvo em específico pode falar balbuciando, com muita dificuldade. Ferir o alvo vai encerrar o efeito. Se o alvo tiver XPtotal ou Desafio menor em 30 ou mais é possível detê-lo sem limitar as ações do próprio personagem.",
@@ -73,7 +74,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772156596685,
-    "modifiedTime": 1772156596685,
+    "modifiedTime": 1772811074901,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "Thq5ZD8lH1erKGtj",

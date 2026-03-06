@@ -1,9 +1,9 @@
 {
-  "folder": "dqNtFtYJYIp1FKQh",
+  "folder": "YxqDbDqQPHFL0RXo",
   "name": "Actio Glutinum",
   "type": "gear",
   "_id": "nwkQSZGX8fo94azi",
-  "img": "icon%20library/consumables/alchemical%20potions/potion%20(33).png",
+  "img": "icon%20library/consumables/elixir/29.png",
   "system": {
     "info": {
       "subtype": "item",
@@ -13,7 +13,7 @@
     },
     "actions": {
       "PqIvOiFFLqmXp2s7": {
-        "img": "icon%20library/consumables/alchemical%20potions/potion%20(33).png",
+        "img": "icon%20library/consumables/elixir/29.png",
         "name": "Arremessar",
         "type": "attack",
         "_id": "PqIvOiFFLqmXp2s7",
@@ -38,10 +38,12 @@
         "duration": "",
         "keywords": {},
         "skill": null,
-        "skills": {}
+        "skills": {
+          "alqui": 0
+        }
       },
       "FDYZcj6xMO2Q5ZBo": {
-        "img": "icon%20library/consumables/alchemical%20potions/potion%20(33).png",
+        "img": "icon%20library/consumables/elixir/29.png",
         "name": "Aplicar",
         "type": "use",
         "_id": "FDYZcj6xMO2Q5ZBo",
@@ -74,24 +76,25 @@
     "details": {
       "slots": 1,
       "stack": 1,
-      "stackMax": 1,
-      "stackable": false,
+      "stackMax": 5,
+      "stackable": true,
       "equippable": false,
       "equipped": false,
       "effect": "",
       "penalty": ""
     },
     "keywords": {
+      "throw": null,
       "recipe": null
     },
     "description": {
-      "description": "<p>Super adesivo químico de cura por fricção.</p><p>Uso: Líquido, ou Arremesso (7/21m).</p><p>Efeitos: quando arremessado, ao chocar se espalha causando Restrição. Deve passar um teste de FIS (dif18) se soltar. O adesivo tem DR 24.</p><p>Preço: 250 cobres.</p><p>Ofício: Alquimia N4.</p><p>Tempo para fabricar: 6 horas.</p><p>Materiais: 4 Reagentes.</p>",
+      "description": "<p>Super adesivo químico de cura por fricção.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> Líquido, ou Arremesso.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 7/21m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> quando arremessado, ao chocar se espalha causando <em>Restrição</em>. Deve passar um teste de FIS (dif18) se soltar. O adesivo tem DR 24.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 250 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 6 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 4<span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"> Reagentes.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 250000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -105,8 +108,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772766252718,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772767619991,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!nwkQSZGX8fo94azi"
 }

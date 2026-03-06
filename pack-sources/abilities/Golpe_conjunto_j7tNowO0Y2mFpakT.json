@@ -1,0 +1,83 @@
+{
+  "folder": "e6H3NExx3bP1GogH",
+  "name": "Golpe conjunto",
+  "type": "ability",
+  "img": "icon%20library/skills/dagger%20skills/dagger%20skill%20(27).png",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "meleeTech",
+      "category": null
+    },
+    "actions": {
+      "hJR5XVULMvmDYWB2": {
+        "img": "icon%20library/skills/dagger%20skills/dagger%20skill%20(27).png",
+        "name": "Técnica",
+        "type": "tech",
+        "_id": "hJR5XVULMvmDYWB2",
+        "damaging": true,
+        "skills": {
+          "briga": 0
+        },
+        "effort": "0+Ⓓ",
+        "effect": "o ataque de sua arma principal tem Dano+ 1/3 do dano da segunda arma. Apenas propriedades da arma principal se aplicam.",
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "range": "",
+        "area": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "briga",
+      "coreLevel": 3,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "melee": null
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">Corpo a corpo</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Brande com duas armas simultaneamente ou em curto intervalo resultando em um único ataque de maior dano.</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Escudos, chicotes, manguais, soqueiras e outros armamentos de mesmo tipo não permitem o uso de <em>golpe conjunto</em>.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 0+</span><span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓓ</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> o ataque de sua arma principal tem Dano+ 1/3 do dano da segunda arma. Apenas propriedades da arma principal se aplicam.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Briga, Esgrima ou Malha N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.YaePMNbm5Ai0rG6L",
+    "duplicateSource": "Item.vm3UXtzfDSibNGYZ",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772551811108,
+    "modifiedTime": 1772551811108,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "j7tNowO0Y2mFpakT",
+  "_key": "!items!j7tNowO0Y2mFpakT"
+}

@@ -1,0 +1,85 @@
+{
+  "folder": "YxqDbDqQPHFL0RXo",
+  "name": "Viribus",
+  "type": "gear",
+  "img": "icon%20library/consumables/elixir/8.png",
+  "system": {
+    "info": {
+      "subtype": "item",
+      "group": "alchemical",
+      "subgroup": "",
+      "quality": "rare"
+    },
+    "actions": {
+      "IfIecu1kzatstQS5": {
+        "img": "icon%20library/consumables/elixir/8.png",
+        "name": "Usar",
+        "type": "use",
+        "_id": "IfIecu1kzatstQS5",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "FIS tem MOD+5 e fica imune ao efeito de Impacto por 5 minutos. É capaz de carregar o dobro de peso pela duração.",
+        "range": "",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": "líquido para Beber ou Injetar."
+      }
+    },
+    "cost": {
+      "price": 9,
+      "currency": "silver"
+    },
+    "details": {
+      "slots": 1,
+      "stack": 1,
+      "stackMax": 5,
+      "stackable": true,
+      "equippable": false,
+      "equipped": false,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "potion": null,
+      "recipe": null
+    },
+    "description": {
+      "description": "<p class=\"SubNome2\">Poção, Receita</p><p class=\"MsoNormal\">A existência de matéria fásica nessa poção faz com que ao ingerir surja um pico de energia que permite o personagem explorar os limites de sua força por um curto período.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> líquido para Beber ou Injetar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> FIS tem MOD+5 e fica imune ao efeito de Impacto por 5 minutos. É capaz de carregar o dobro de peso pela duração.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 9 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 12 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 3 Lágrimas e <span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\">6 Reagentes.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1700000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.zIAeWtHdNxio0Ge6",
+    "duplicateSource": "Item.fBqBJiJySZaG5CPp",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772661095579,
+    "modifiedTime": 1772767306437,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "dpXUCyST7INlx523",
+  "_key": "!items!dpXUCyST7INlx523"
+}

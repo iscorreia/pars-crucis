@@ -1,0 +1,85 @@
+{
+  "folder": "PWUZpGMiGJPe5Hd9",
+  "name": "Mira na mosca",
+  "type": "ability",
+  "img": "icons/skills/ranged/target-bullseye-arrow-glowing.webp",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "rangedTech",
+      "category": null
+    },
+    "actions": {
+      "hvjJl1EMvq1KXzTR": {
+        "img": "icons/skills/ranged/target-bullseye-arrow-glowing.webp",
+        "name": "Técnica",
+        "type": "tech",
+        "_id": "hvjJl1EMvq1KXzTR",
+        "damaging": true,
+        "skills": {
+          "inherit": 0
+        },
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "alcance de A/B para B/B×2. Não pode estar Engajado. E enquanto se prepara o personagem não pode se mover nem realizar qualquer outro tipo de ação.",
+        "range": "aumentado",
+        "area": "",
+        "effort": "6",
+        "limit": "",
+        "prepTime": "4AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "balis",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "projectile": "",
+      "aim": "",
+      "lethality": "+1"
+    },
+    "description": {
+      "description": "<p>Projétil</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-weight:bold\">O personagem mira cuidadosamente antes de disparar, tendo maior precisão a longa distância, e garantindo que um tiro bem colocado cause maior dano.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 6.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade (+1). Alcance de A/B para B/B</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">×</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">2. Não pode estar Engajado. E enquanto se prepara o personagem não pode se mover nem realizar qualquer outro tipo de ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> perícia de Combate a distância N5.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.CwEehjaJwfbi3qb2",
+    "duplicateSource": "Item.LgHm2N34D87Sioye",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772557300385,
+    "modifiedTime": 1772569643084,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "hn87SqAhPYrXL2nS",
+  "_key": "!items!hn87SqAhPYrXL2nS"
+}

@@ -1,0 +1,84 @@
+{
+  "folder": "PWUZpGMiGJPe5Hd9",
+  "name": "Ricochete",
+  "type": "ability",
+  "img": "icons/magic/light/beam-impact-deflect-teal.webp",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "rangedTech",
+      "category": null
+    },
+    "actions": {
+      "tE0tkfxlv5fLolHT": {
+        "img": "icons/magic/light/beam-impact-deflect-teal.webp",
+        "name": "Técnica",
+        "type": "tech",
+        "_id": "tE0tkfxlv5fLolHT",
+        "damaging": true,
+        "skills": {
+          "inherit": 0
+        },
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "inherit",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": true,
+        "effect": "o projétil ricocheteia, podendo atingir alvos de outra maneira impossíveis.",
+        "range": "",
+        "area": "",
+        "effort": "3",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "balis",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "projectile": "",
+      "bypass": null
+    },
+    "description": {
+      "description": "<p>Projétil</p><p class=\"MsoNormal\">O personagem usa sua intuição para disparar contra uma superfície que faça o projétil ricochetear, assim o ataque tem Indireto e pode atingir alvos de outra maneira impossíveis.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Condição:</span> arma utiliza munição do tipo chumbo ou bala.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Balística N6.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.CwEehjaJwfbi3qb2",
+    "duplicateSource": "Item.DHjO3AwrnTefcqRX",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772557300385,
+    "modifiedTime": 1772569641683,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "JoeMRpRrC6PcgoNd",
+  "_key": "!items!JoeMRpRrC6PcgoNd"
+}

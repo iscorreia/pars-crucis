@@ -1,0 +1,85 @@
+{
+  "folder": "e6H3NExx3bP1GogH",
+  "name": "Palma vazia",
+  "type": "ability",
+  "img": "icons/magic/unholy/strike-hand-glow-pink.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "meleeTech",
+      "category": null
+    },
+    "actions": {
+      "yslOIKZ5iU88XnVD": {
+        "img": "icons/magic/unholy/strike-hand-glow-pink.webp",
+        "name": "Técnica",
+        "type": "tech",
+        "_id": "yslOIKZ5iU88XnVD",
+        "damaging": true,
+        "skills": {
+          "briga": 0
+        },
+        "damage": {
+          "dmgBase": 4,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "ex",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "",
+        "range": "",
+        "area": "",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "inherit",
+        "_gearAcId": null,
+        "_gearId": null
+      }
+    },
+    "details": {
+      "experience": 4,
+      "preRequisites": "",
+      "coreSkill": "briga",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "melee": "",
+      "esoteric": null,
+      "power": null
+    },
+    "description": {
+      "description": "<p>Corpo a corpo, Esotérica, Poder</p><p class=\"MsoNormal\">Técnica desenvolvida pelos cruzados ao enfrentar espíritos, o personagem gera um vazio de essência na palma de sua mão e então dá golpe no ar que faz o acúmulo de essência colapsar logo a frente.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-family:Arial\"> 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> +3 Existencial.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-family:Arial\"> Briga N7 e Âmago N1.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.YaePMNbm5Ai0rG6L",
+    "duplicateSource": "Item.ClVcc75y0eTkMLO1",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772551811108,
+    "modifiedTime": 1772551811108,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "wgz7zVsnMHctL3eS",
+  "_key": "!items!wgz7zVsnMHctL3eS"
+}

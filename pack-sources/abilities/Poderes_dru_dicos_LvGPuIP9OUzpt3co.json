@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Poderes druídicos",
+  "color": null,
+  "sorting": "a",
+  "_id": "LvGPuIP9OUzpt3co",
+  "description": "",
+  "sort": 600000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772551851499,
+    "modifiedTime": 1772552216325,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_key": "!folders!LvGPuIP9OUzpt3co"
+}

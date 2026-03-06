@@ -3,7 +3,7 @@
   "name": "Fétido",
   "type": "ability",
   "_id": "1g2CpKTZSvRv9Hrx",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icon%20library/powers/undead%20skills/undead%20(17).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,35 +11,9 @@
       "category": "plague"
     },
     "actions": {
-      "jrbGum3cewqNnfr7": {
-        "img": "icons/svg/item-bag.svg",
-        "name": "Feder",
-        "type": "use",
-        "_id": "jrbGum3cewqNnfr7",
-        "prepTime": "2AP",
-        "effort": "retém 5",
-        "duration": "1 minuto",
-        "area": "3m",
-        "range": "0m",
-        "effect": "o cheiro pútrido espanta animais próximos, e gera incomodo ao personagem afetado, que tem MOD-1 em todas as suas ações não defensivas. Personagens em um raio de 3m dele são incomodados pelo odor e têm MOD-1. A penalidade as ações não se aplicam a quem realizou o poder, mas se aplicam a seus aliados.",
-        "damaging": false,
-        "damage": {
-          "dmgBase": 0,
-          "dmgAttributes": [],
-          "dmgAttMultiplier": 1,
-          "dmgAddition": "",
-          "scalable": true,
-          "dmgType": "phy",
-          "dmgSubtype": ""
-        },
-        "usesAmmo": false,
-        "limit": "",
-        "keywords": {},
-        "usage": ""
-      },
       "IfpBRJhSch92xA0h": {
-        "img": "icons/svg/item-bag.svg",
-        "name": "Feder",
+        "img": "icon%20library/powers/undead%20skills/undead%20(17).png",
+        "name": "Afligir",
         "type": "attack",
         "_id": "IfpBRJhSch92xA0h",
         "damaging": false,
@@ -64,8 +38,21 @@
         "area": "3m",
         "usesAmmo": false,
         "limit": "",
-        "keywords": {},
+        "keywords": {
+          "affliction": null
+        },
         "skill": null
+      },
+      "uksiMqZCerohwtnj": {
+        "img": "icon%20library/powers/undead%20skills/undead%20(17).png",
+        "name": "Feder",
+        "type": "use",
+        "_id": "uksiMqZCerohwtnj",
+        "effort": "R5",
+        "duration": "1 minuto",
+        "prepTime": "2AP",
+        "area": "3m",
+        "effect": "o cheiro pútrido espanta animais próximos, e gera incomodo ao personagem afetado, que tem MOD-1 em todas as suas ações não defensivas. Personagens em um raio de 3m dele são incomodados pelo odor e têm MOD-1. A penalidade as ações não se aplicam a quem realizou o poder, mas se aplicam a seus aliados."
       }
     },
     "details": {
@@ -76,9 +63,7 @@
       "effect": "",
       "penalty": ""
     },
-    "keywords": {
-      "affliction": null
-    },
+    "keywords": {},
     "description": {
       "description": "<p>Com uma fala enfática ou movimentos manuais impõe um odor horrível sobre si ou um personagem alvo.</p><p>Esforço (em si): retém 5. Esforço (personagem alvo): 4.</p><p>Tempo de preparo: 2 ações.</p><p>Alcance: 15/30m.</p><p>Efeitos: o cheiro pútrido espanta animais próximos, e gera incomodo ao personagem afetado, que tem MOD-1 em todas as suas ações não defensivas. Personagens em um raio de 3m dele são incomodados pelo odor e têm MOD-1. A penalidade as ações não se aplicam a quem realizou o poder, mas se aplicam a seus aliados.</p><p>Duração: 1 minuto.</p><p>Pré-requisitos: Pestilência e Sabakismo N3.</p>",
       "summary": "",
@@ -86,7 +71,7 @@
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 100000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -100,8 +85,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772819859466,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!1g2CpKTZSvRv9Hrx"
 }

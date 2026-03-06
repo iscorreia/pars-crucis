@@ -1,12 +1,12 @@
 {
   "type": "Item",
-  "folder": null,
+  "folder": "LvGPuIP9OUzpt3co",
   "name": "Âmbito animal",
   "color": "#c27b00",
   "sorting": "a",
   "_id": "fPT1SQzhB4LfZIQy",
   "description": "",
-  "sort": 1800000,
+  "sort": 100000,
   "flags": {},
   "_stats": {
     "compendiumSource": null,
@@ -16,7 +16,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772252609995,
-    "modifiedTime": 1772252610073,
+    "modifiedTime": 1772552154508,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!folders!fPT1SQzhB4LfZIQy"

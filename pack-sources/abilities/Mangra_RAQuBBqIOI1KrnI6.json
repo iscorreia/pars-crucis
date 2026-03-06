@@ -3,7 +3,7 @@
   "name": "Mangra",
   "type": "ability",
   "_id": "RAQuBBqIOI1KrnI6",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icon%20library/powers/undead%20skills/undead%20(40).png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,8 +12,8 @@
     },
     "actions": {
       "8w4wTZHxQpinmaFr": {
-        "img": "icons/svg/item-bag.svg",
-        "name": "Afligir",
+        "img": "icon%20library/powers/undead%20skills/undead%20(40).png",
+        "name": "Jatear",
         "type": "attack",
         "_id": "8w4wTZHxQpinmaFr",
         "damaging": true,
@@ -41,7 +41,7 @@
         "limit": "",
         "keywords": {},
         "skill": null,
-        "subtype": "melee"
+        "subtype": "jet"
       }
     },
     "details": {
@@ -56,13 +56,13 @@
       "jet": null
     },
     "description": {
-      "description": "<p>Com movimentos manuais lança vento pestilento que afeta plantas, as causando grande sofrimento.</p><p>Esforço: 5.</p><p>Tempo de preparo: 2 ações.</p><p>Alcance: 10m.</p><p>Dano: 5+ESP Biológico: Podre.</p><p>Efeitos: afeta apenas plantas (inclui Lignos e Labrises). Ao fim da rodada, teste de Saúde (dif13+Sabakismo) ou recebem 5+ESP de dano biológico e o efeito perdura por mais uma rodada. Uma planta afetada por mangra se torna infértil por 1 ano caso não seja curada.</p><p>Duração: até que o alvo passe no teste de Saúde.</p><p>Pré-requisitos: Pestilência e Sabakismo N4.</p>",
+      "description": "<p><span style=\"font-size:10.5pt;mso-bidi-font-size:11.0pt;line-height:107%;font-weight:normal\">Jato</span></p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com movimentos manuais lança vento pestilento que afeta plantas, as causando grande sofrimento.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5+ESP Biológico: Podre.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> afeta apenas plantas (inclui Lignos e Labrises). Ao fim da rodada, teste de Saúde (dif13+Sabakismo) ou recebem [5+ESP] de dano biológico e o efeito perdura por mais uma rodada. Uma planta afetada por mangra se torna infértil por 1 ano caso não seja curada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> até que o alvo passe no teste de Saúde.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Pestilência </em>e Sabakismo N4.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 1000000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -76,8 +76,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772820122836,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!RAQuBBqIOI1KrnI6"
 }

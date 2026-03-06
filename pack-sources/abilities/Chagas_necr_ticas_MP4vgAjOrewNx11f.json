@@ -3,14 +3,38 @@
   "name": "Chagas necróticas",
   "type": "ability",
   "_id": "MP4vgAjOrewNx11f",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icon%20library/powers/undead%20skills/undead%20(11).png",
   "system": {
     "info": {
       "subtype": "power",
-      "art": "meleeTech",
-      "category": null
+      "art": "sabak",
+      "category": "plague"
     },
-    "actions": {},
+    "actions": {
+      "6XIXgAuDubLd14WP": {
+        "img": "icon%20library/powers/undead%20skills/undead%20(11).png",
+        "name": "Jatear",
+        "type": "attack",
+        "_id": "6XIXgAuDubLd14WP",
+        "damaging": true,
+        "range": "trajeto de 15m",
+        "damage": {
+          "dmgBase": 1,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgType": "bio",
+          "dmgSubtype": "Podre"
+        },
+        "skills": {
+          "sabak": 0
+        },
+        "subtype": "jet",
+        "effect": "o personagem recebe [1+ESP] Biológico: Vital. Todos no trajeto que forem atingidos recebem dano, Peste (6+2Ⓐ) e uma doença dentro da MS de vetores que tem seus efeitos aplicados de imediato.",
+        "effort": "7",
+        "prepTime": "2AP"
+      }
+    },
     "details": {
       "experience": 2,
       "preRequisites": "",
@@ -20,16 +44,18 @@
       "penalty": ""
     },
     "keywords": {
-      "jet": null
+      "jet": "",
+      "summon": "",
+      "plague": "6+2Ⓐ"
     },
     "description": {
-      "description": "<p>Enquanto entoa algumas palavras insetos pestíferos variados começam a se criar a partir de todo seu corpo o ferindo no processo, os insetos então voam por um caminho atacando a todos.</p><p>Esforço: 7.</p><p>Tempo de preparo: 2 ações.</p><p>Alcance: trajeto de 15m.</p><p>Dano: 1+ESP Biológico: Podre.</p><p>Efeitos: o personagem recebe [1+ESP] Biológico: Vital. Todos no trajeto que forem atingidos recebem dano, Peste (6+2Ⓐ) e uma doença dentro da MS de vetores que tem seus efeitos aplicados de imediato.</p><p>Pré-requisitos: Enxame, Vetores e Sabakismo N8.</p>",
+      "description": "<p>Invocação, Jato</p><p class=\"MsoNormal\">Enquanto entoa algumas palavras insetos pestíferos variados começam a se criar a partir de todo seu corpo o ferindo no processo, os insetos então voam por um caminho atacando a todos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 7.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 2 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> trajeto de 15m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 1+ESP Biológico: Podre.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> o personagem recebe [1+ESP] Biológico: Vital. Todos no trajeto que forem atingidos recebem dano, Peste (6+2<span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span>) e uma doença dentro da MS de <em>vetores </em>que tem seus efeitos aplicados de imediato.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Enxame, Vetores </em>e Sabakismo N8.</p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 700000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -43,8 +69,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766238794,
-    "modifiedTime": 1772766238794,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772820917150,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!MP4vgAjOrewNx11f"
 }

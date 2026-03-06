@@ -30,7 +30,8 @@
           "dmgSubtype": ""
         },
         "skills": {
-          "arcan": 0
+          "arcan": 0,
+          "sabak": 0
         },
         "subtype": "mind",
         "effect": "com ⒶⒶ o alvo perde a rodada.",
@@ -76,7 +77,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772113232225,
-    "modifiedTime": 1772113232225,
+    "modifiedTime": 1772808036152,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "U2MfDfeApX9wF22m",

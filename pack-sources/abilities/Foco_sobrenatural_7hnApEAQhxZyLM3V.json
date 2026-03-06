@@ -1,0 +1,77 @@
+{
+  "folder": "a81Kv7IGiXG960do",
+  "name": "Foco sobrenatural",
+  "type": "ability",
+  "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+  "system": {
+    "info": {
+      "subtype": "technique",
+      "art": "miscTech",
+      "category": null
+    },
+    "actions": {
+      "hMWIBDNJUvNgLAT8": {
+        "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+        "name": "Usar",
+        "type": "use",
+        "_id": "hMWIBDNJUvNgLAT8",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "o poder realizado tem Vantagem.",
+        "range": "",
+        "area": "",
+        "effort": "4",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "ontol",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "bonus": null
+    },
+    "description": {
+      "description": "<p>Bônus</p><p class=\"MsoNormal\">Por entender bem o fluxo de essência por seu próprio corpo, o personagem pode concentrar-se e empenhar mais de sua essência e assim melhorar a execução de um poder.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> o poder realizado tem Vantagem.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> Ontologia N4 e saber pelo menos 3 poderes.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 1000000,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.i03WzV6lyq5k2VNV",
+    "duplicateSource": "Item.wWr5AIRPGUkkfidz",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772571469023,
+    "modifiedTime": 1772817319700,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "7hnApEAQhxZyLM3V",
+  "_key": "!items!7hnApEAQhxZyLM3V"
+}

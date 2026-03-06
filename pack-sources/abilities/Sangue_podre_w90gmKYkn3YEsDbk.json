@@ -1,0 +1,81 @@
+{
+  "folder": "7YkeJNYMBdKs6jAS",
+  "name": "Sangue podre",
+  "type": "ability",
+  "img": "icon%20library/powers/blood%20skills/blood%20(18).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "sabak",
+      "category": "blood"
+    },
+    "actions": {
+      "vbrHJgjuqNCn2xm4": {
+        "img": "icon%20library/powers/blood%20skills/blood%20(18).png",
+        "name": "Arremessar",
+        "type": "attack",
+        "_id": "vbrHJgjuqNCn2xm4",
+        "damaging": true,
+        "range": "10/20m",
+        "damage": {
+          "dmgBase": 6,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "bio",
+          "dmgSubtype": "Podre"
+        },
+        "skills": {
+          "sabak": 0
+        },
+        "usesAmmo": false,
+        "effect": "pode atingir até 2 alvos. Peste (1). Se mirar um único alvo, tem Dano+7.",
+        "area": "",
+        "effort": "6",
+        "limit": "",
+        "prepTime": "1AP",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "subtype": "melee"
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "sabak",
+      "coreLevel": 5,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Arremesso</p><p class=\"MsoNormal\">Com alguns movimentos manipula seu próprio sangue a partir de uma ferida, tornando-o quente, podre e pestilento, então o lança.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 1 ação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 10/20m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 6+ESP Biológico: Podre.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> pode atingir até 2 alvos. Peste (1). Se mirar um único alvo, tem Dano+7.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Arte do sangue</em>.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.d2ZpcSXlG6yhCGdD",
+    "duplicateSource": "Item.xLj8Z2y2RvbHyQaj",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772761360122,
+    "modifiedTime": 1772761360122,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "w90gmKYkn3YEsDbk",
+  "_key": "!items!w90gmKYkn3YEsDbk"
+}

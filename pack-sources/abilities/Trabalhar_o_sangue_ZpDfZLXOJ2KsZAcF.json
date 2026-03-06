@@ -1,0 +1,75 @@
+{
+  "folder": "7YkeJNYMBdKs6jAS",
+  "name": "Trabalhar o sangue",
+  "type": "ability",
+  "img": "icon%20library/powers/blood%20skills/blood%20(36).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "sabak",
+      "category": "blood"
+    },
+    "actions": {
+      "BS6Bk860RBXQFrRv": {
+        "img": "icon%20library/powers/blood%20skills/blood%20(36).png",
+        "name": "Curar",
+        "type": "use",
+        "_id": "BS6Bk860RBXQFrRv",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "effect": "cura Peste, [12+Décimo×2] PV e pode refazer testes de Saúde para se recuperar de doenças tendo MOD+6.",
+        "range": "toque",
+        "area": "",
+        "effort": "12",
+        "limit": "1 vez por dia",
+        "prepTime": "5 minutos",
+        "duration": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 3,
+      "preRequisites": "",
+      "coreSkill": "sabak",
+      "coreLevel": 6,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Fazendo uma pequena ferida em um personagem disposto, e então realizando uma longa série de movimentos manipula o seu fluxo de sangue o trabalhando para que estimule a recuperação.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite:</span> 1 vez por dia.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 12.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> toque.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> cura Peste, [15+Décimo×2] PV e pode refazer testes de Saúde para se recuperar de doenças tendo MOD+6.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 5 minutos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Arte do sangue</em> e Sabakismo N6.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BWDFQ9zEwkAXpvLu": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.d2ZpcSXlG6yhCGdD",
+    "duplicateSource": "Item.43L6spRghuFkUII6",
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772761360122,
+    "modifiedTime": 1772761360122,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+  },
+  "_id": "ZpDfZLXOJ2KsZAcF",
+  "_key": "!items!ZpDfZLXOJ2KsZAcF"
+}

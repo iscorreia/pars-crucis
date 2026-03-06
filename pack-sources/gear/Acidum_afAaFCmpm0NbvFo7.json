@@ -1,9 +1,9 @@
 {
-  "folder": "dqNtFtYJYIp1FKQh",
+  "folder": "YxqDbDqQPHFL0RXo",
   "name": "Acidum",
   "type": "gear",
   "_id": "afAaFCmpm0NbvFo7",
-  "img": "icon%20library/consumables/alchemical%20potions/poison%20(8).png",
+  "img": "icon%20library/consumables/alchemical%20potions/potion%20(32).png",
   "system": {
     "info": {
       "subtype": "item",
@@ -13,7 +13,7 @@
     },
     "actions": {
       "PD5VGIPsqCS0BLDv": {
-        "img": "icon%20library/consumables/alchemical%20potions/poison%20(8).png",
+        "img": "icon%20library/consumables/alchemical%20potions/potion%20(32).png",
         "name": "Arremessar",
         "type": "attack",
         "_id": "PD5VGIPsqCS0BLDv",
@@ -31,7 +31,7 @@
           "scalable": true
         },
         "subtype": "throw",
-        "effect": "prévio ao dano, causa [2+Ⓐ] de dano Destrutivo. prévio ao dano, causa [2+Ⓐ] de dano Destrutivo. Se aplicado sobre uma pequena superfície, causa [2] de dano Destrutivo por minuto no decorrer de 10 minutos.",
+        "effect": "prévio ao dano, causa [2+Ⓐ] de dano Destrutivo.",
         "usesAmmo": false,
         "area": "",
         "effort": "",
@@ -40,15 +40,17 @@
         "duration": "",
         "keywords": {},
         "skill": null,
-        "skills": {}
+        "skills": {
+          "alqui": 0
+        }
       },
       "wTg3z7R3ain7iV8P": {
-        "img": "icon%20library/consumables/alchemical%20potions/poison%20(8).png",
+        "img": "icon%20library/consumables/alchemical%20potions/potion%20(32).png",
         "name": "Aplicar",
         "type": "use",
         "_id": "wTg3z7R3ain7iV8P",
-        "effect": "prévio ao dano, causa [2+Ⓐ] de dano Destrutivo. Se aplicado sobre uma pequena superfície, causa [2] de dano Destrutivo por minuto no decorrer de 10 minutos.",
-        "range": "0m",
+        "effect": "Se aplicado sobre uma pequena superfície, causa [2] de dano Destrutivo por minuto no decorrer de 10 minutos.",
+        "range": "0",
         "usage": "líquido",
         "damaging": false,
         "damage": {
@@ -76,22 +78,24 @@
     "details": {
       "slots": 1,
       "stack": 1,
-      "stackMax": 1,
-      "stackable": false,
+      "stackMax": 5,
+      "stackable": true,
       "equippable": false,
       "equipped": false,
       "effect": "",
       "penalty": ""
     },
-    "keywords": {},
+    "keywords": {
+      "throw": null
+    },
     "description": {
-      "description": "<p>Solução ácida feita com reagentes químicos.</p><p>Uso: Líquido, ou Arremesso (7/21m).</p><p>Dano: 13+COG/2 Elemental: Cáustico.</p><p>Efeitos: prévio ao dano, causa [2+Ⓐ] de dano Destrutivo. Se aplicado sobre uma pequena superfície, causa [2] de dano Destrutivo por minuto no decorrer de 10 minutos.</p><p>Preço: 50 cobres.</p><p>Ofício: Alquimia N2.</p><p>Tempo para fabricar: 1 hora.</p><p>Materiais: 1 Reagente.</p>",
+      "description": "<p>Solução ácida feita com reagentes químicos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> Líquido, ou Arremesso.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 7/21m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 13+COG/2 Elemental: Cáustico.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> prévio ao dano, causa [2+<span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span>] de dano Destrutivo. Se aplicado sobre uma pequena superfície, causa [2] de dano Destrutivo por minuto no decorrer de 10 minutos.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 50 cobres.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 hora.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 1<span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"> Reagente.</span></p>",
       "summary": "",
       "notes": ""
     }
   },
   "effects": [],
-  "sort": 0,
+  "sort": 200000,
   "ownership": {
     "default": 0,
     "JmiXzTZiAVTIe4W1": 3
@@ -105,8 +109,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772766252718,
-    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+    "modifiedTime": 1772767701858,
+    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_key": "!items!afAaFCmpm0NbvFo7"
 }
