@@ -1,0 +1,86 @@
+{
+  "folder": "0Ng89ZbC268KQyrm",
+  "name": "Espírito ceifador",
+  "type": "ability",
+  "_id": "binDkCqAfHvgNhSF",
+  "img": "icon%20library/powers/outworld%20skills/outworldly%20(28).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "sabak",
+      "category": "death"
+    },
+    "actions": {
+      "dQ6LFJ6eK0y2s1wW": {
+        "img": "icon%20library/powers/outworld%20skills/outworldly%20(28).png",
+        "name": "Invocar e ceifar",
+        "type": "attack",
+        "_id": "dQ6LFJ6eK0y2s1wW",
+        "damaging": true,
+        "range": "visual",
+        "damage": {
+          "dmgBase": 20,
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgType": "es",
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "sabak": 0
+        },
+        "subtype": "affliction",
+        "keywords": {
+          "lethality": "+1"
+        },
+        "effort": "12",
+        "prepTime": "3AP",
+        "limit": "1x por personagem",
+        "effect": "Se o alvo ficar ou está com PE 0 ele é morto, tendo seu espírito obliterado impossibilitando ressurreição. Se não for fatal, cure o dano causado.",
+        "usesAmmo": false,
+        "area": "",
+        "duration": "",
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "sabak",
+      "coreLevel": 8,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "affliction": null,
+      "summon": null
+    },
+    "description": {
+      "description": "<p>Com uma série de movimentos e uma palavra enfática conjura um espírito reverso poderoso que em um abraço tenta arrancar o espírito do corpo de um personagem.</p><p>Limite: 1 vez por personagem.</p><p>Esforço: 12.</p><p>Tempo de preparo: 3 ações.</p><p>Alcance: visual.</p><p>Dano: 20+ESP×2 Essencial.</p><p>Efeitos: Fatalidade (+1). Se o alvo ficar ou está com PE 0 ele é morto, tendo seu espírito obliterado impossibilitando ressurreição. Se não for fatal, cure o dano causado.</p><p>Pré-requisitos: Espírito esfolador e Sabakismo N8.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772766235825,
+    "modifiedTime": 1772766235825,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_key": "!items!binDkCqAfHvgNhSF"
+}

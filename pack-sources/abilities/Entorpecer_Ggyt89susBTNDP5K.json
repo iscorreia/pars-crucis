@@ -1,0 +1,82 @@
+{
+  "folder": "kvk3OZi8TghBH7be",
+  "name": "Entorpecer",
+  "type": "ability",
+  "_id": "Ggyt89susBTNDP5K",
+  "img": "icon%20library/powers/undead%20skills/undead%20(34).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "sabak",
+      "category": "mind"
+    },
+    "actions": {
+      "puUnzCKcj85bpqAY": {
+        "img": "icon%20library/powers/undead%20skills/undead%20(34).png",
+        "name": "Entorpecer",
+        "type": "attack",
+        "_id": "puUnzCKcj85bpqAY",
+        "damaging": false,
+        "range": "Visual",
+        "damage": {
+          "dmgBase": 3,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "skills": {
+          "sabak": 0
+        },
+        "subtype": "affliction",
+        "effort": "4",
+        "prepTime": "1AP",
+        "duration": "1 hora",
+        "effect": "alvo tem MOD-4 a Reflexo e refaz o teste de Iniciativa.",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "sabak",
+      "coreLevel": 2,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "mental": null,
+      "affliction": null
+    },
+    "description": {
+      "description": "<p>Entoando algumas palavras ou fazendo gestos manuais faz a mente de um personagem ser tomada por frustração embotando os seus sentidos.</p><p>Esforço: 4.</p><p>Tempo de preparo: 1 ação.</p><p>Alcance: visual.</p><p>Efeitos: alvo tem MOD-4 a Reflexo e refaz o teste de Iniciativa.</p><p>Duração: 1 hora.</p><p>Pré-requisitos: Falar à mente e Sabakismo N2.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772766231355,
+    "modifiedTime": 1772766231355,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_key": "!items!Ggyt89susBTNDP5K"
+}

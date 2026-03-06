@@ -1,0 +1,82 @@
+{
+  "folder": "kvk3OZi8TghBH7be",
+  "name": "Aliviar dor",
+  "type": "ability",
+  "_id": "oqFLAK1X39NFGVBZ",
+  "img": "icon%20library/powers/buff%20skills/buff%20(15).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "sabak",
+      "category": "mind"
+    },
+    "actions": {
+      "GHsqvoS4lKaNNpvP": {
+        "img": "icon%20library/powers/buff%20skills/buff%20(15).png",
+        "name": "Aliviar a dor",
+        "type": "test",
+        "_id": "GHsqvoS4lKaNNpvP",
+        "skill": "atlet",
+        "skills": {
+          "sabak": 0
+        },
+        "effort": "4",
+        "range": "21m",
+        "duration": "1 hora",
+        "prepTime": "1AP",
+        "effect": "Alivia a dor e anula efeitos causados por alguns Traumas e concede MOD+6 em testes de Abalo.",
+        "damaging": true,
+        "damage": {
+          "dmgType": "pain",
+          "dmgAttributes": [
+            "esp",
+            "cog"
+          ],
+          "dmgAttMultiplier": 2,
+          "dmgBase": 6,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "keywords": {},
+        "difficulty": 10
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "sabak",
+      "coreLevel": 2,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Com movimentos manuais na direção de um personagem, alivia a sua dor e o torna capaz de suportar mais dor.</p><p>Esforço: 4.</p><p>Tempo de preparo: 1 ação.</p><p>Alcance: 21m.</p><p>Dificuldade: 10.</p><p>Efeitos: alivia 6+COG|ESP×2 de Dor. Anula efeitos causados por alguns Traumas e concede MOD+6 em testes de Abalo.</p><p>Duração: 1 hora.</p><p>Pré-requisitos: Mente ativa e Sabakismo N2.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.oqFLAK1X39NFGVBZ",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772766231355,
+    "modifiedTime": 1772766231355,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_key": "!items!oqFLAK1X39NFGVBZ"
+}

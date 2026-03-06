@@ -1,0 +1,75 @@
+{
+  "folder": "kvk3OZi8TghBH7be",
+  "name": "Presença Impositiva",
+  "type": "ability",
+  "_id": "Yw28ES6TmN5nygh9",
+  "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "sabak",
+      "category": "mind"
+    },
+    "actions": {
+      "an84dZ3maV6xLyOo": {
+        "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
+        "name": "Impor presença",
+        "type": "use",
+        "_id": "an84dZ3maV6xLyOo",
+        "effort": "6",
+        "prepTime": "3AP",
+        "range": "0m",
+        "duration": "5 minutos",
+        "area": "raio de 50m",
+        "effect": "Impõe sua presença a todos em um raio de 50m em torno de si. Qualquer personagem nessa área tem a presença revelada e pode ser alvo de seus poderes sabakistas do tipo Aflição, Mental, ou que tenham interação com a mente. Adicionalmente o esforço para realizar esses poderes é reduzido em 1, não afeta o esforço para manutenção.",
+        "damaging": false,
+        "damage": {
+          "dmgBase": 0,
+          "dmgAttributes": [],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "phy",
+          "dmgSubtype": ""
+        },
+        "usesAmmo": false,
+        "limit": "",
+        "keywords": {},
+        "usage": ""
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "sabak",
+      "coreLevel": 7,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "<p>Impõe sua presença a todos em um raio de 50m em torno de si. Qualquer personagem nessa área tem a presença revelada e pode ser alvo de seus poderes sabakistas do tipo Aflição, Mental, ou que tenham interação com a mente. Adicionalmente o esforço para realizar esses poderes é reduzido em 1, não afeta o esforço para manutenção.</p><p>Esforço: 6.</p><p>Tempo de preparo: 3 ações.</p><p>Duração: 5 minutos.</p><p>Pré-requisitos: Cogni senso e Sabakismo N7.</p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "JmiXzTZiAVTIe4W1": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772766231355,
+    "modifiedTime": 1772766231355,
+    "lastModifiedBy": "JmiXzTZiAVTIe4W1"
+  },
+  "_key": "!items!Yw28ES6TmN5nygh9"
+}
