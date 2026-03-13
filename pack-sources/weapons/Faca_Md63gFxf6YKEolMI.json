@@ -29,7 +29,7 @@
           "dmgType": "phy",
           "dmgSubtype": ""
         },
-        "usesAmmo": true,
+        "usesAmmo": false,
         "effect": "",
         "effort": "",
         "prepTime": "",
@@ -118,8 +118,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770487873805,
-    "modifiedTime": 1771121873034,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1772935220559,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "Md63gFxf6YKEolMI",
   "sort": 1000000,

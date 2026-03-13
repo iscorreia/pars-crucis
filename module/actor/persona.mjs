@@ -239,12 +239,17 @@ export class PersonaModel extends foundry.abstract.TypeDataModel {
     // Gear|Weapon items are set into their specific groups once equipped
     // Otherwise they're assigned to [gear]
     const accessoryTypes = ["accessory", "gadget"];
+    const weaponryTypes = ["weapon", "gear"];
     const equipmentTypes = ["weapon", "gear", "ammo"];
     this.abilities = parent.itemTypes.ability;
     this.ammo = parent.itemTypes.ammo;
-    this.weaponry = parent.itemTypes.weapon.filter(
+    const equippedWeapons = parent.itemTypes.weapon.filter(
       (i) => i.system.details.equipped || i.system.info.group === "unarmed",
     );
+    const equippedHandGear = parent.itemTypes.gear.filter(
+      (i) => i.system.details.equipped && i.system.info.subtype === "item",
+    );
+    this.weaponry = [...equippedWeapons, ...equippedHandGear];
     this.vest = parent.itemTypes.gear.filter(
       (i) => i.system.details.equipped && i.system.info.group === "vest",
     );

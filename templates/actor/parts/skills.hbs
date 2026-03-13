@@ -30,59 +30,79 @@
         </div>
         {{#each (lookup @root.config objs) as |sk obj|}}
           {{#with (lookup @root.actor.system.skills obj) as |skill|}}
-            <li class="skill skill-line">
-              <div class="skill-title">
-                <a
-                  class="draggable"
-                  data-action="rollSkill"
-                  data-skill="{{@key}}"
-                  data-uuid="{{@root.actor.uuid}}"
-                >
-                  {{localize sk.label}}
-                </a>
-                <div class="skill-exp">{{skill.xpSpent}}{{#if skill.favored}}
-                    ({{skill.xpDiscount}}){{/if}}</div>
-              </div>
-              {{#if (gte skill.learning 2)}}
-                <div class="skill-att skill-hard">
-                  <span class="shrunk-att">
+            {{#if (not (eq skill.level null))}}
+              <li class="skill skill-line">
+                <div class="skill-title">
+                  <a
+                    class="draggable"
+                    data-action="rollSkill"
+                    data-skill="{{@key}}"
+                    data-uuid="{{@root.actor.uuid}}"
+                  >
+                    {{localize sk.label}}
+                  </a>
+                  <div class="skill-exp">{{skill.xpSpent}}{{#if skill.favored}}
+                      ({{skill.xpDiscount}}){{/if}}</div>
+                </div>
+                {{#if (gte skill.learning 2)}}
+                  <div class="skill-att skill-hard">
+                    <span class="shrunk-att">
+                      {{localize
+                        (concat "PC.attributes." skill.attribute ".abv")
+                      }}{{#if (gte skill.growth 2)}}/{{skill.growth}}{{/if}}
+                    </span>
+                    <span>
+                      {{localize "PC.learning.hard"}}
+                    </span>
+                  </div>
+                {{else}}
+                  <div class="skill-att">
                     {{localize
                       (concat "PC.attributes." skill.attribute ".abv")
                     }}{{#if (gte skill.growth 2)}}/{{skill.growth}}{{/if}}
-                  </span>
-                  <span>
-                    {{localize "PC.learning.hard"}}
-                  </span>
+                  </div>
+                {{/if}}
+                <input
+                  class="skill-level"
+                  name="system.skills.{{@key}}.level"
+                  value="{{skill.level}}"
+                  type="number"
+                  min="0"
+                  data-dtype="Number"
+                />
+                <input
+                  class="skill-mod
+                    {{#if (lt skill.mod 0)}}
+                      negative
+                    {{/if}}
+                    {{#if (gt skill.mod 0)}}
+                      positive
+                    {{/if}}"
+                  type="text"
+                  name="system.skills.{{@key}}.mod"
+                  value="{{numberFormat skill.mod sign=true}}"
+                  data-dtype="Number"
+                />
+              </li>
+            {{else}}  
+              <li class="skill skill-line disabled-skill">
+                <div class="skill-title">
+                    {{localize sk.label}}
                 </div>
-              {{else}}
                 <div class="skill-att">
-                  {{localize
-                    (concat "PC.attributes." skill.attribute ".abv")
-                  }}{{#if (gte skill.growth 2)}}/{{skill.growth}}{{/if}}
+                  {{localize (concat "PC.attributes." skill.attribute ".abv")}}
                 </div>
-              {{/if}}
-              <input
-                class="skill-level"
-                name="system.skills.{{@key}}.level"
-                value="{{skill.level}}"
-                type="number"
-                min="0"
-                data-dtype="Number"
-              />
-              <input
-                class="skill-mod
-                  {{#if (lt skill.mod 0)}}
-                    negative
-                  {{/if}}
-                  {{#if (gt skill.mod 0)}}
-                    positive
-                  {{/if}}"
-                type="text"
-                name="system.skills.{{@key}}.mod"
-                value="{{numberFormat skill.mod sign=true}}"
-                data-dtype="Number"
-              />
-            </li>
+                <input
+                  class="skill-level"
+                  name="system.skills.{{@key}}.level"
+                  value="{{skill.level}}"
+                  type="number"
+                  min="0"
+                  data-dtype="Number"
+                />
+                <div class="skill-mod"></div>
+              </li>
+            {{/if}}
           {{/with}}
         {{/each}}
       </ul>

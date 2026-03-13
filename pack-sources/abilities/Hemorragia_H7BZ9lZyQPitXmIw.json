@@ -1,0 +1,84 @@
+{
+  "folder": "7YkeJNYMBdKs6jAS",
+  "name": "Hemorragia",
+  "type": "ability",
+  "img": "icon%20library/powers/blood%20skills/blood%20(51).png",
+  "system": {
+    "info": {
+      "subtype": "power",
+      "art": "sabak",
+      "category": "blood"
+    },
+    "actions": {
+      "rXDSPmmPygCiqJOl": {
+        "img": "icon%20library/powers/blood%20skills/blood%20(51).png",
+        "name": "Afligir",
+        "type": "attack",
+        "_id": "rXDSPmmPygCiqJOl",
+        "damaging": true,
+        "range": "15/30m",
+        "damage": {
+          "dmgBase": 4,
+          "dmgType": "bio",
+          "dmgSubtype": "Vital",
+          "dmgAttributes": [
+            "esp"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true
+        },
+        "skills": {
+          "sabak": 0
+        },
+        "subtype": "affliction",
+        "effort": "4",
+        "prepTime": "1AP",
+        "effect": "causa o trauma Hemorragia (4).",
+        "usesAmmo": false,
+        "area": "",
+        "limit": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null
+      }
+    },
+    "details": {
+      "experience": 2,
+      "preRequisites": "",
+      "coreSkill": "sabak",
+      "coreLevel": 4,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {
+      "affliction": "",
+      "lethality": "/2"
+    },
+    "description": {
+      "description": "<p>Aflição</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"><em>“Pequeno era o corte, mas grande o sangramento”.</em></span></p><p class=\"MsoNormal\">Fazendo alguns movimentos manuais faz uma ferida aberta ou mal curada de um personagem jorrar sangue por um breve momento.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 15/30m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4 Biológico: Vital.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade/2, causa o trauma Hemorragia (4).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Sangria </em>e Sabakismo N3.</span></p>",
+      "summary": "",
+      "notes": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1772850426844,
+    "modifiedTime": 1772850426898,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
+  },
+  "ownership": {
+    "default": 0,
+    "Gi9s8laC772qenHw": 3
+  },
+  "_id": "H7BZ9lZyQPitXmIw",
+  "sort": 1300000,
+  "_key": "!items!H7BZ9lZyQPitXmIw"
+}

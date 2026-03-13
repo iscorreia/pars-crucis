@@ -9,17 +9,12 @@
 - Tooltips / Information on hover **_feature_** or;
 - Information icon: on click: pops a window with origin/skills/etc description **_feature_**
 - Further improve #Item config tab **hbs style/css\_**
-- PDM sheet having Attributes and Skills grayed out and not rollable when null **_feature hbs style/css_**
-
-## NECESSARY
-
-- Items Compendium **_pack_**
-- Abilities Compendium **_pack_**
-- Final touches on the PDM config app **_hbs/css_**
-- Add Inventory sorting **_qol feature_**
+- PDM sheet having Attributes grayed out and not rollable when null **_feature hbs style/css_**
 
 ## LOW PRIORITY
 
+- Final touches on the PDM config app **_hbs/css_**
+- Add Inventory sorting **_qol feature_**
 - Add Abilities (art) sorting **_qol_**
 - Persona/PDM image picked from config instead of the sheet **_qol_**
 - Make unarmed attacks appear on top
@@ -28,6 +23,8 @@
 ### INTERESTING BUT NOT NECESSARY
 
 - Ability and Item use Limits and Conditions
+- Possibility to disable abilities
+- Possibility to disable AND also hide specific ITEM actions
 - Automatic rest on click, with possibility to set an amount of hours to rest, so it recovers PV/PE
 - Implement `enrichHTML` in the item descriptions/effect **_feature_**
 - Usable passives **_feature_**
@@ -57,32 +54,9 @@
 - Show Abilities/Items general description on chat **_feature_**
 - Click on luck title to use one luck? Would this print possible use option?
 
-### COMPLETE COMPENDIUM PACKS
-
-- basic weapons (doesn't include rare, unique)
-- vests
-- accessories
-- war artifacts
-- herbals
-- utils
-- materials
-- melee techs
-- ranged techs
-- alternative techs
-- aoist powers
-- arcane powers
-- bardic powers
-- cronocientific powers
-- druidic powers
-- elemental powers
-
-### PARTIAL PACKS
-
-- alchemicals (missing from A to Firme)
-
 ### PENDING PACKS
 
+- rare and unique equipment
 - gadgets (on hold)
 - matrixes (on hold, might create a new item type)
 - styles
-- sabak powers

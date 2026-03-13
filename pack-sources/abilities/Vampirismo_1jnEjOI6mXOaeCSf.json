@@ -1,0 +1,96 @@
+{
+  "name": "Vampirismo",
+  "type": "weapon",
+  "img": "icons/magic/symbols/rune-sigil-hook-white-red.webp",
+  "system": {
+    "info": {
+      "subtype": "melee",
+      "group": "unarmed",
+      "subgroup": "",
+      "quality": "common"
+    },
+    "actions": {
+      "qwnlimerX7xsRQfE": {
+        "img": "icon%20library/powers/debuff%20skills/debuff%20(38).png",
+        "name": "Mordida vampírica",
+        "type": "attack",
+        "_id": "qwnlimerX7xsRQfE",
+        "damaging": true,
+        "range": "0",
+        "damage": {
+          "dmgBase": 5,
+          "dmgAttributes": [
+            "fis",
+            "des"
+          ],
+          "dmgAttMultiplier": 1,
+          "dmgAddition": "",
+          "scalable": true,
+          "dmgType": "bio",
+          "dmgSubtype": "Vital"
+        },
+        "usesAmmo": false,
+        "effect": "pode se curar em até Décimo× (2+Ⓐ) PV do dano causado, caso tenha sido ferido recentemente.",
+        "area": "",
+        "effort": "",
+        "limit": "",
+        "prepTime": "",
+        "duration": "",
+        "keywords": {},
+        "skill": null,
+        "skills": {
+          "briga": 0
+        },
+        "subtype": "melee"
+      }
+    },
+    "cost": {
+      "price": 0,
+      "currency": "priceless"
+    },
+    "details": {
+      "slots": 0,
+      "stack": 1,
+      "stackMax": 1,
+      "stackable": false,
+      "equippable": false,
+      "equipped": true,
+      "effect": "",
+      "penalty": ""
+    },
+    "keywords": {},
+    "description": {
+      "description": "",
+      "summary": "",
+      "notes": ""
+    },
+    "hasAmmo": false,
+    "ammoInfo": {
+      "type": "arrow",
+      "loaded": 0,
+      "capacity": null,
+      "_ammoId": null
+    }
+  },
+  "effects": [],
+  "folder": "uBH6X7FvVr0AcqGF",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "pars-crucis",
+    "systemVersion": "2.12.0",
+    "createdTime": 1773233025016,
+    "modifiedTime": 1773233025016,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
+  },
+  "ownership": {
+    "default": 0,
+    "Gi9s8laC772qenHw": 3
+  },
+  "_id": "1jnEjOI6mXOaeCSf",
+  "sort": 0,
+  "_key": "!items!1jnEjOI6mXOaeCSf"
+}
