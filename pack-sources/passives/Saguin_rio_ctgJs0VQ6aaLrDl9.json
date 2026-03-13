@@ -9,7 +9,7 @@
     },
     "cost": {
       "experience": null,
-      "points": 3
+      "points": 2
     },
     "keywords": {
       "narrative": null
@@ -35,8 +35,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1769608378333,
-    "modifiedTime": 1769613153008,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1772990351627,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "ctgJs0VQ6aaLrDl9",
   "sort": 1600000,

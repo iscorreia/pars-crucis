@@ -96,6 +96,7 @@ h1.actor-name {
   width: 70%;
   margin-right: 5px;
   .actor-info {
+    height: 14px;
     line-height: 14px;
   }
 }
@@ -1313,5 +1314,16 @@ h3.empty-list-title {
   }
   .challenge-name {
     width: 70%;
+  }
+}
+.disabled-skill {
+  filter: brightness(0.35);
+  .skill-title {
+    font-size: 20px;
+    font-family: "BarlowCondensed Regular", sans-serif;
+    color: var(--pc-color-light-1);
+  }
+  .skill-level {
+    filter: opacity(0.5);
   }
 }

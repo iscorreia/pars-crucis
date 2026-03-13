@@ -11,8 +11,8 @@
     },
     "actions": {},
     "cost": {
-      "price": 60,
-      "currency": "copper"
+      "price": 1,
+      "currency": "silver"
     },
     "details": {
       "slots": 1,
@@ -23,11 +23,10 @@
       "equipped": false
     },
     "keywords": {
-      "defense": "+1",
-      "handling": "-1"
+      "defense": "+1"
     },
     "description": {
-      "description": "<p>DEF: +1</p><p>Obs: Manuseio (-1). DR 25.</p><p>Preço: 60c</p><p>Espaço: 1</p><p>Ofício: Arm | Art N3</p><p>Materiais: 3</p>",
+      "description": "<p>DEF: +1</p><p>Obs: DR 20.</p><p>Preço: 60c</p><p>Espaço: 1</p><p>Ofício: Arm | Art N3</p><p>Materiais: 3</p>",
       "summary": "",
       "notes": ""
     },
@@ -54,8 +53,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770322645312,
-    "modifiedTime": 1770323004611,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1773105634004,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "N2T5qOz2yhbXhJY8",
   "sort": 600000,
