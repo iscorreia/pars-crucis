@@ -40,7 +40,7 @@
         "duration": "",
         "keywords": {},
         "skill": null,
-        "subtype": "melee"
+        "subtype": "affliction"
       }
     },
     "details": {
@@ -75,7 +75,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771283408389,
-    "modifiedTime": 1771283408389,
+    "modifiedTime": 1774995803683,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "8Y9Kqk8TufUsH9RG",

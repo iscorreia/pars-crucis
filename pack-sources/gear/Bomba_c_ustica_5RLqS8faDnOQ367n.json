@@ -47,7 +47,7 @@
     },
     "keywords": {},
     "description": {
-      "description": "<p>Coquetel gasoso compresso extremamente tóxico, no impacto se racha liberando uma nuvem densa numa pequena área.</p><p>Uso: Arremesso (7/21m).</p><p>Efeitos: causa [9] de dano Biológico: Tóxico por rodada em um raio de 3 metros, duração de 5 rodadas (cerca de 15 segundos).</p><p>Preço: 2 pratas.</p><p>Ofício: Alquimia N4.</p><p>Tempo para fabricar: 6 horas.</p><p>Materiais: 3 Reagentes.</p>",
+      "description": "<p>Coquetel gasoso compresso extremamente tóxico, no impacto se racha liberando uma nuvem densa numa pequena área.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Uso:</span> Arremesso.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 15m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span> raio de 3m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> [9] Biológico: Tóxico.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> causa o Dano ao fim de cada rodada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 5 rodadas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Preço:</span> 2 pratas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Ofício:</span> Alquimia N4.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo para fabricar:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 6 horas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Materiais:</span> 3<span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'Times New Roman';mso-bidi-font-family:Arial\"> Reagentes.</span></p>",
       "summary": "",
       "notes": ""
     }
@@ -67,8 +67,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772766252718,
-    "modifiedTime": 1772806867591,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1773447179926,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_key": "!items!5RLqS8faDnOQ367n"
 }
