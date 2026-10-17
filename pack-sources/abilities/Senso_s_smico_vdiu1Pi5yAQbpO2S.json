@@ -1,7 +1,7 @@
 {
   "name": "Senso sísmico",
   "type": "ability",
-  "img": "icon%20library/powers/geomancer%20skills/earth%20(20).png",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/senso-sismico.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -10,7 +10,7 @@
     },
     "actions": {
       "Rkx4RuGvsz6tYKfH": {
-        "img": "icon%20library/powers/geomancer%20skills/earth%20(20).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/senso-sismico.png",
         "name": "Longínquo",
         "type": "test",
         "_id": "Rkx4RuGvsz6tYKfH",
@@ -36,10 +36,11 @@
         "skills": {
           "eleme": 0
         },
-        "skill": null
+        "skill": null,
+        "limit": ""
       },
       "JBH6l62gpfe3HeUo": {
-        "img": "icon%20library/powers/geomancer%20skills/earth%20(20).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/senso-sismico.png",
         "name": "Posicional",
         "type": "test",
         "_id": "JBH6l62gpfe3HeUo",
@@ -65,7 +66,8 @@
         "skills": {
           "eleme": 0
         },
-        "skill": null
+        "skill": null,
+        "limit": ""
       }
     },
     "details": {
@@ -81,7 +83,7 @@
       "quick": null
     },
     "description": {
-      "description": "<p>Inicial, Rápida</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Estando em contato com o solo envia uma suave vibração que detecta movimentos ou estruturas pela reverberação, algo imóvel será detectado como uma estrutura qualquer.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Longínquo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> emite vibrações longas que detectam movimentos dentro do alcance de 30m e mapeia estruturas e grandes objetos em um alcance estendido de 100*MS metros.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Posicional:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> emite curtas vibrações contínuas que dão retorno imediato de quaisquer movimentos no alcance de 7m, é independente dos sentidos, removendo penalidades sensoriais. Duração de 1 minuto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Elementalismo N1.</span></p>",
+      "description": "<p>Inicial, Rápida</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Estando em contato com o solo envia uma suave vibração que detecta movimentos ou estruturas pela reverberação, algo imóvel será detectado como uma estrutura qualquer.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Longínquo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> emite vibrações longas que detectam movimentos dentro do alcance de 30m e mapeia estruturas e grandes objetos em um alcance estendido de 100*MS metros.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Posicional:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> emite curtas vibrações contínuas que dão retorno imediato de quaisquer movimentos no alcance de 7m, é independente dos sentidos, removendo penalidades sensoriais. Duração de 1 minuto.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Dificuldade:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Elementalismo N1.</span></p>",
       "summary": "",
       "notes": ""
     }
@@ -93,12 +95,12 @@
     "compendiumSource": "Compendium.pars-crucis.abilities.Item.R7NeCJZhJa1a4LFy",
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771120758688,
-    "modifiedTime": 1771120758688,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209389235,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "ownership": {
     "default": 0,

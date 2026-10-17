@@ -2,7 +2,7 @@
   "folder": "fNCA17UJb2o1x6j8",
   "name": "Escória",
   "type": "ability",
-  "img": "icon%20library/powers/pyromancer%20skills/fire%20(28).png",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/escoria.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "CMIr6pbgQn0ENVrh": {
-        "img": "icon%20library/powers/pyromancer%20skills/fire%20(28).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/escoria.png",
         "name": "Mutar",
         "type": "use",
         "_id": "CMIr6pbgQn0ENVrh",
@@ -37,7 +37,7 @@
         "usage": ""
       },
       "nr7WL9tkbJYVV8SD": {
-        "img": "icon%20library/powers/pyromancer%20skills/flame%20(4).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/escoria.png",
         "name": "Combustão",
         "type": "attack",
         "_id": "nr7WL9tkbJYVV8SD",
@@ -84,7 +84,7 @@
       "mutation": null
     },
     "description": {
-      "description": "<p>Corpo a corpo, Esotérica, Invocação</p><p class=\"MsoNormal\">Com um grito furioso junto de movimentos corporais invoca um espírito do fogo expresso em forma de cavalo, alguns cães, bando de ratos, grupo de andorinhas (se voador) ou cobra (na água) que se materializa durante o trajeto incinerando tudo que tocar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Limite: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\">1 vez por batalha.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 15.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 3 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> trajeto de 10m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 32+ESP<span style=\"mso-bidi-font-family:Arial\">×2 Elemental: Ígneo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-family:Arial\"> causa o Dano a todos pelo trajeto. Fatalidade/2.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Inflamar</em> e Elementalismo N7.</p>",
+      "description": "<p>Corpo a corpo, Esotérica, Invocação</p><p class=\"MsoNormal\">Com um grito furioso junto de movimentos corporais invoca um espírito do fogo expresso em forma de cavalo, alguns cães, bando de ratos, grupo de andorinhas (se voador) ou cobra (na água) que se materializa durante o trajeto incinerando tudo que tocar.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Limite: </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\">1 vez por batalha.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span> 15.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Tempo de preparo:</span> 3 ações.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Alcance:</span> trajeto de 10m.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Dano:</span> 32+ESP<span style=\"mso-bidi-font-family:Arial\">×2 Elemental: Ígneo.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Efeitos:</span><span style=\"mso-bidi-font-family:Arial\"> causa o Dano a todos pelo trajeto. Fatalidade/2.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span> <em>Inflamar</em> e Elementalismo N7.</p>",
       "summary": "",
       "notes": ""
     }
@@ -100,12 +100,12 @@
     "compendiumSource": "Item.6t5490ZPGjx96qDI",
     "duplicateSource": "Item.u0wIMyA5eqTgghSd",
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771984232993,
-    "modifiedTime": 1771984422711,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209164047,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "mSFl4F0E4rGZxdz7",
   "_key": "!items!mSFl4F0E4rGZxdz7"

@@ -3,7 +3,7 @@
   "name": "Ignição",
   "type": "ability",
   "_id": "6t5490ZPGjx96qDI",
-  "img": "icon%20library/powers/pyromancer%20skills/fire%20(19).png",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/ignicao.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -12,7 +12,7 @@
     },
     "actions": {
       "xR3me4DjjKor08aU": {
-        "img": "icon%20library/powers/pyromancer%20skills/fire%20(19).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/ignicao.png",
         "name": "Arremessar",
         "type": "attack",
         "_id": "xR3me4DjjKor08aU",
@@ -47,7 +47,7 @@
         "skill": null
       },
       "FfcHuZnwn9K7y7at": {
-        "img": "icon%20library/powers/pyromancer%20skills/fire%20(17).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/ignicao.png",
         "name": "Chama",
         "type": "use",
         "_id": "FfcHuZnwn9K7y7at",
@@ -85,7 +85,7 @@
       "starter": null
     },
     "description": {
-      "description": "<p>Inicial, Arremesso</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com um breve movimento cria nas mãos uma chama intensa, mas instável e a arremessa. Alternativamente, cria uma chama estável, mas fraca, iluminando como uma tocha.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5/10m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 16+ESP/2 Elemental: Ígneo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade/2. Não requer Mira.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Elementalismo N1.</span></p><p class=\"SubNome1\">Chama</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> retém 2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Iluminação (raio/5m). Requer que o personagem estava com a mão livre, mas não impede a realização de poderes da Força do fogo.</p>",
+      "description": "<p>Inicial, Arremesso</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com um breve movimento cria nas mãos uma chama intensa, mas instável e a arremessa. Alternativamente, cria uma chama estável, mas fraca, iluminando como uma tocha.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5/10m.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 16+ESP/2 Elemental: Ígneo.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade/2. Não requer Mira.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Elementalismo N1.</span></p><p class=\"SubNome1\">Chama</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span> retém 2.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Efeitos:</span> Iluminação (raio/5m). Requer que o personagem estava com a mão livre, mas não impede a realização de poderes da Força do fogo.</p>",
       "summary": "",
       "notes": ""
     }
@@ -101,12 +101,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771984232993,
-    "modifiedTime": 1771984232993,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209225217,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_key": "!items!6t5490ZPGjx96qDI"
 }

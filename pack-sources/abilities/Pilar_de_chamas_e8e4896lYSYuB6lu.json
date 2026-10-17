@@ -2,7 +2,7 @@
   "folder": "fNCA17UJb2o1x6j8",
   "name": "Pilar de chamas",
   "type": "ability",
-  "img": "icon%20library/powers/pyromancer%20skills/fire%20(10).png",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/pilar-de-chamas.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "8omATYuVJuSFwoJ9": {
-        "img": "icon%20library/powers/pyromancer%20skills/fire%20(10).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/pilar-de-chamas.png",
         "name": "Arremessar",
         "type": "attack",
         "_id": "8omATYuVJuSFwoJ9",
@@ -58,7 +58,7 @@
       "lethality": "/2"
     },
     "description": {
-      "description": "<p>Esotérica, Arremesso</p><p class=\"MsoNormal\">O personagem realiza alguns movimentos manuais enquanto concentra sua essência, então ao levantar os braços faz surgir do solo um pilar de lava, chamas e fumaça.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7/14m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span>21+ESP<span style=\"mso-bidi-font-family:Arial\">×</span>2 Elemental: Ígneo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade/2. Indireto. Atinge altura de até ESP metros. </span>Pode ser feito dentro da água.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Lança chamas </em>e Elementalismo N7.</span></p>",
+      "description": "<p>Esotérica, Arremesso</p><p class=\"MsoNormal\">O personagem realiza alguns movimentos manuais enquanto concentra sua essência, então ao levantar os braços faz surgir do solo um pilar de lava, chamas e fumaça.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 8.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 2 ações.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7/14m.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> </span>21+ESP<span style=\"mso-bidi-font-family:Arial\">×</span>2 Elemental: Ígneo.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade/2. Indireto. Atinge altura de até ESP metros. </span>Pode ser feito dentro da água.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Lança chamas </em>e Elementalismo N7.</span></p>",
       "summary": "",
       "notes": ""
     }
@@ -74,12 +74,12 @@
     "compendiumSource": "Item.6t5490ZPGjx96qDI",
     "duplicateSource": "Item.1MsK8uUEt08N6alM",
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771984232993,
-    "modifiedTime": 1771984232993,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209283644,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "e8e4896lYSYuB6lu",
   "_key": "!items!e8e4896lYSYuB6lu"

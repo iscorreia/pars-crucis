@@ -2,7 +2,7 @@
   "folder": "fNCA17UJb2o1x6j8",
   "name": "Sinal da fogueira",
   "type": "ability",
-  "img": "icon%20library/powers/pyromancer%20skills/fire%20(45).png",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/sinal-da-fogueira-sigilo.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "IFrNA3oN2hMbtUmM": {
-        "img": "icon%20library/powers/pyromancer%20skills/fire%20(45).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/sinal-da-fogueira-sigilo.png",
         "name": "Sigilar",
         "type": "use",
         "_id": "IFrNA3oN2hMbtUmM",
@@ -49,7 +49,7 @@
       "sigil": null
     },
     "description": {
-      "description": "<p>Sigilo</p><p class=\"MsoNormal\">Com uma sequência de movimentos faz os sinais da chama e da luz, cumulando essência que se expressa em uma chama controlada que produz calor agradável e luz, similar a uma fogueira, mas que não precisa de combustível para se sustentar.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> retém 3.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 2 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Iluminação (raio/7m), perdura mesmo que o personagem esteja dormindo ou abalado. Se apagada, reacende em 2 rodadas (5s). Quem estiver no raio de iluminação tem MOD+6 para testes de frio extremo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Ignição</em>.</span></p>",
+      "description": "<p>Sigilo</p><p class=\"MsoNormal\">Com uma sequência de movimentos faz os sinais da chama e da luz, cumulando essência que se expressa em uma chama controlada que produz calor agradável e luz, similar a uma fogueira, mas que não precisa de combustível para se sustentar.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span> retém 3.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Tempo de preparo:</span> 2 ações.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Efeitos:</span> Iluminação (raio/7m), perdura mesmo que o personagem esteja dormindo ou abalado. Se apagada, reacende em 2 rodadas (5s). Quem estiver no raio de iluminação tem MOD+6 para testes de frio extremo.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Ignição</em>.</span></p>",
       "summary": "",
       "notes": ""
     }
@@ -65,12 +65,12 @@
     "compendiumSource": "Item.6t5490ZPGjx96qDI",
     "duplicateSource": "Item.6t5490ZPGjx96qDI",
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771984232993,
-    "modifiedTime": 1771984232993,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209300575,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "iGw0Rv7xEa5pkNUR",
   "_key": "!items!iGw0Rv7xEa5pkNUR"

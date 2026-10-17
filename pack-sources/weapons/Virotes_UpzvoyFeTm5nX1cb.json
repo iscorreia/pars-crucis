@@ -1,5 +1,5 @@
 {
-  "folder": "7NT37BqJobgjvt0L",
+  "folder": "NIxjOB0FVssNlIp3",
   "name": "Virotes",
   "type": "ammo",
   "img": "icons/weapons/ammunition/arrows-broadhead-white.webp",
@@ -49,14 +49,14 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770224794916,
-    "modifiedTime": 1770312200482,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1791661727300,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "UpzvoyFeTm5nX1cb",
-  "sort": 2000000,
+  "sort": 1350000,
   "_key": "!items!UpzvoyFeTm5nX1cb"
 }

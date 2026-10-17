@@ -1,7 +1,7 @@
 {
   "name": "Moldar terra",
   "type": "ability",
-  "img": "icon%20library/powers/geomancer%20skills/earth%20(46).png",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/moldar-terra.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -10,7 +10,7 @@
     },
     "actions": {
       "PaxqYcFFonFyt1dP": {
-        "img": "icon%20library/powers/geomancer%20skills/earth%20(46).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/moldar-terra.png",
         "name": "Moldar",
         "type": "use",
         "_id": "PaxqYcFFonFyt1dP",
@@ -32,7 +32,8 @@
         "duration": "",
         "keywords": {},
         "usage": "",
-        "area": ""
+        "area": "",
+        "limit": ""
       }
     },
     "details": {
@@ -47,7 +48,7 @@
       "starter": null
     },
     "description": {
-      "description": "<p>Inicial</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com alguns movimentos manuais o personagem molda terra, podendo endurecer, fabricar objetos ou simplesmente mudar formas.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 para cada m³.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"font-size:8.5pt;mso-bidi-font-size:10.0pt;line-height:105%\"> </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">2 minutos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Observações:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> endurecimento aumenta a DR para 14+Elementalismo</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">×</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">2.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Elementalismo N1.</span></p>",
+      "description": "<p>Inicial</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com alguns movimentos manuais o personagem molda terra, podendo endurecer, fabricar objetos ou simplesmente mudar formas.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 para cada m³.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%;font-size:8.5pt\"> </span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">2 minutos.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1m.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Observações:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> endurecimento aumenta a DR para 14+Elementalismo</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%;mso-bidi-font-family:Arial\">×</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">2.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Elementalismo N1.</span></p>",
       "summary": "",
       "notes": ""
     }
@@ -59,12 +60,12 @@
     "compendiumSource": "Compendium.pars-crucis.abilities.Item.y4Or0Ni7cOAz3LPW",
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771120758688,
-    "modifiedTime": 1771120758688,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209343489,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "ownership": {
     "default": 0,
