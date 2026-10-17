@@ -2,7 +2,7 @@
   "folder": "fNCA17UJb2o1x6j8",
   "name": "Esfumaçar",
   "type": "ability",
-  "img": "icons/commodities/tech/smoke-spout-blue.webp",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/esfumacar2.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "FHGqtL8Ju3eciHOV": {
-        "img": "icons/commodities/tech/smoke-spout-blue.webp",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/esfumacar2.png",
         "name": "Jatear",
         "type": "attack",
         "_id": "FHGqtL8Ju3eciHOV",
@@ -43,7 +43,7 @@
         "skill": null
       },
       "hdB2cRVX9BaL80Fi": {
-        "img": "icons/commodities/tech/smoke-spout-blue.webp",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/esfumacar2.png",
         "name": "Reagir",
         "type": "use",
         "_id": "hdB2cRVX9BaL80Fi",
@@ -79,7 +79,7 @@
     },
     "keywords": {},
     "description": {
-      "description": "<p>Jato/Reação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com as mãos projeta fumaça para engolir e extinguir chamas, ou canaliza a fumaça em um jato tóxico.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance (jato):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano (jato):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5+ESP/2 Biológico: Tóxico.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos (reação):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> tem DEF 4+Elementalismo contra ataques elementais Ígneos, Glaciais ou Cáusticos.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Ignição</em> e Elementalismo N2.</span></p>",
+      "description": "<p>Jato/Reação</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com as mãos projeta fumaça para engolir e extinguir chamas, ou canaliza a fumaça em um jato tóxico.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Alcance (jato):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4m.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Dano (jato):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5+ESP/2 Biológico: Tóxico.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Efeitos (reação):</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> tem DEF 4+Elementalismo contra ataques elementais Ígneos, Glaciais ou Cáusticos.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Ignição</em> e Elementalismo N2.</span></p>",
       "summary": "",
       "notes": ""
     }
@@ -95,12 +95,12 @@
     "compendiumSource": "Item.6t5490ZPGjx96qDI",
     "duplicateSource": "Item.XB2GqQfrYEQXkfq1",
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771984232993,
-    "modifiedTime": 1771984232993,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209184306,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "oy9XRTPuKTs9rekt",
   "_key": "!items!oy9XRTPuKTs9rekt"

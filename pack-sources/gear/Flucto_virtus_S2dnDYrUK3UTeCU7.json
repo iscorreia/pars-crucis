@@ -27,7 +27,7 @@
           "dmgSubtype": ""
         },
         "usesAmmo": false,
-        "effect": "Cura de Traumas e Doenças espirituais, cura [8] PE ao consumir e [8] PE ao fim da rodada por 2 rodadas. Vontade tem MOD+5 por 1 hora.  Se um personagem morreu sem traumas físicos severos ele pode ser retornado a vida com [3] PV e o trauma Espírito Quebrado.",
+        "effect": "Cura [ESP×2] PE, Perícias sobrenaturais têm MOD+1 por 5 min.",
         "range": "5/10m",
         "area": "",
         "effort": "",
@@ -77,8 +77,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772590029592,
-    "modifiedTime": 1772590029592,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1775930134768,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "S2dnDYrUK3UTeCU7",
   "_key": "!items!S2dnDYrUK3UTeCU7"

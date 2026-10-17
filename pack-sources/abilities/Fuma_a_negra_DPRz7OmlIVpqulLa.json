@@ -2,7 +2,7 @@
   "folder": "fNCA17UJb2o1x6j8",
   "name": "Fumaça negra",
   "type": "ability",
-  "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/fumaca-negra.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "wb0PBwTIAVZxIFKm": {
-        "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/fumaca-negra.png",
         "name": "Arremessar",
         "type": "attack",
         "_id": "wb0PBwTIAVZxIFKm",
@@ -55,7 +55,7 @@
       "throw": null
     },
     "description": {
-      "description": "<p>Arremesso</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Ao realizar alguns movimentos cria uma esfera de fumaça negra condensada e a lança, liberando a espessa cortina de fumaça na área do ponto de impacto.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 9.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 ações.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7/14m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 4m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1+ESP Elemental: Ígneo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> cria fumaça densa na área, bloqueando visão completamente. Anula visão infravermelho. A fumaça pode ser quente, causando dano no impacto contra um alvo, e [2] de dano Biológico: Tóxico a todos na área ao fim de cada rodada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4 rodadas (cerca de 10s).</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Esfumaçar </em>e Elementalismo N4.</span></p>",
+      "description": "<p>Arremesso</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Ao realizar alguns movimentos cria uma esfera de fumaça negra condensada e a lança, liberando a espessa cortina de fumaça na área do ponto de impacto.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 9.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3 ações.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7/14m.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Área:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> raio de 4m.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1+ESP Elemental: Ígneo.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> cria fumaça densa na área, bloqueando visão completamente. Anula visão infravermelho. A fumaça pode ser quente, causando dano no impacto contra um alvo, e [2] de dano Biológico: Tóxico a todos na área ao fim de cada rodada.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 4 rodadas (cerca de 10s).</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Esfumaçar </em>e Elementalismo N4.</span></p>",
       "summary": "",
       "notes": ""
     }
@@ -71,12 +71,12 @@
     "compendiumSource": "Item.6t5490ZPGjx96qDI",
     "duplicateSource": "Item.oy9XRTPuKTs9rekt",
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771984232993,
-    "modifiedTime": 1771984232993,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209212680,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "DPRz7OmlIVpqulLa",
   "_key": "!items!DPRz7OmlIVpqulLa"

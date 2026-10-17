@@ -1,7 +1,7 @@
 {
   "name": "Muro",
   "type": "ability",
-  "img": "icon%20library/powers/geomancer%20skills/earth%20(19).png",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/muro.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -10,7 +10,7 @@
     },
     "actions": {
       "nFQREw1IorxWEzm7": {
-        "img": "icon%20library/powers/geomancer%20skills/earth%20(19).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/muro.png",
         "name": "Levantar muro",
         "type": "use",
         "_id": "nFQREw1IorxWEzm7",
@@ -32,10 +32,11 @@
         },
         "keywords": {},
         "usage": "",
-        "area": ""
+        "area": "",
+        "limit": ""
       },
       "cmChpag9PdZl8vmV": {
-        "img": "icon%20library/powers/geomancer%20skills/earth%20(19).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/muro.png",
         "name": "Efêmero",
         "type": "use",
         "_id": "cmChpag9PdZl8vmV",
@@ -60,7 +61,8 @@
         "usesAmmo": false,
         "prepTime": "",
         "usage": "",
-        "area": ""
+        "area": "",
+        "limit": ""
       }
     },
     "details": {
@@ -73,7 +75,7 @@
     },
     "keywords": {},
     "description": {
-      "description": "<p>(Bônus/Reação)</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com o mover de seu braço eleva um muro de barro endurecido.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efêmero:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> o muro pode ser levantado imediatamente como ação Bônus na etapa de preparo se assim for declarado, ou como Reação, mas se desfaz no fim da rodada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação. Como reação é imediato.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Permanente. De maneira reativa 1 rodada.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Observações:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> DR 16+Elementalismo e largura de até 5m.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Moldar terra </em>e Elementalismo N3.</span></p>",
+      "description": "<p>(Bônus/Reação)</p><p class=\"MsoNormal\"><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Com o mover de seu braço eleva um muro de barro endurecido.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 7.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 5m.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Efêmero:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> o muro pode ser levantado imediatamente como ação Bônus na etapa de preparo se assim for declarado, ou como Reação, mas se desfaz no fim da rodada.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Tempo de preparo:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 ação. Como reação é imediato.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Permanente. De maneira reativa 1 rodada.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Observações:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> DR 16+Elementalismo e largura de até 5m.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Moldar terra </em>e Elementalismo N3.</span></p>",
       "summary": "",
       "notes": ""
     }
@@ -85,12 +87,12 @@
     "compendiumSource": "Compendium.pars-crucis.abilities.Item.FUkXM0MOsu0xYC2l",
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771120758688,
-    "modifiedTime": 1771120758688,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209355370,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "ownership": {
     "default": 0,

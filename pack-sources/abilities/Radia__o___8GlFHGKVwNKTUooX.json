@@ -18,7 +18,7 @@
         "damaging": true,
         "range": "10m",
         "damage": {
-          "dmgBase": 10,
+          "dmgBase": 15,
           "dmgAttributes": [
             "cog",
             "esp"
@@ -32,7 +32,7 @@
         "usesAmmo": false,
         "effect": "anterior ao dano, causa [2] de dano Destrutivo. Com Ⓐ causa o Trauma Feridas internas em todos os atingidos. Transpassa quaisquer obstáculos.",
         "area": "",
-        "effort": "72",
+        "effort": "7",
         "limit": "",
         "prepTime": "2AP",
         "duration": "",
@@ -76,8 +76,8 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771522500512,
-    "modifiedTime": 1771522509610,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1783183387386,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "8GlFHGKVwNKTUooX",
   "sort": 200000,

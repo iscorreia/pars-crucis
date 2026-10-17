@@ -60,7 +60,7 @@
           "dmgType": "inherit",
           "dmgSubtype": ""
         },
-        "effort": "4",
+        "effort": "6",
         "effect": "causar ao menos 1 de dano no ataque causa um adicional de 5+MS de dano Biológico: Vital. Causa Hemorragia (2Ⓐ).",
         "usesAmmo": false,
         "range": "",
@@ -87,7 +87,7 @@
       "lethality": "/2"
     },
     "description": {
-      "description": "<p class=\"SubNome2\">Corpo a corpo</p><p class=\"MsoNormal\">Utilizando uma arma perfurocortante ou garras realiza um ataque no intuito de sangrar seu alvo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 6, 4 para armas leves de briga.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> -2.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade/2. Causar ao menos 1 de dano no ataque causa um adicional de 5+MS de dano Biológico: Vital. Causa Hemorragia </span>(2<span lang=\"JA\" style=\"font-family:'MS Mincho';mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial\">Ⓐ</span>)<span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\">.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos</span><span style=\"font-size:8.5pt;mso-bidi-font-size:10.0pt;line-height:105%\">:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> perícia de Combate corpo a corpo N4.</span></p>",
+      "description": "<p class=\"SubNome2\">Corpo a corpo</p><p class=\"MsoNormal\">Utilizando uma arma perfurocortante ou garras realiza um ataque no intuito de sangrar seu alvo.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 6, 4 para armas leves de briga.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> -2.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> Fatalidade/2. Causar ao menos 1 de dano no ataque causa um adicional de 5+MS de dano Biológico: Vital. Causa Hemorragia </span>(2<span lang=\"JA\" style=\"mso-ascii-font-family:Arial;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Arial;font-family:'MS Mincho'\">Ⓐ</span>)<span style=\"mso-bidi-font-size:8.0pt;line-height:105%;mso-fareast-font-family:'MS Gothic';mso-bidi-font-family:Arial\">.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos</span><span style=\"mso-bidi-font-size:10.0pt;line-height:105%;font-size:8.5pt\">:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> perícia de Combate corpo a corpo N4.</span></p>",
       "summary": "",
       "notes": ""
     }
@@ -103,12 +103,12 @@
     "compendiumSource": "Item.YaePMNbm5Ai0rG6L",
     "duplicateSource": "Item.vm3UXtzfDSibNGYZ",
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1772551811108,
-    "modifiedTime": 1772551811108,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792253745014,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "6NzK2HmbyEsiZJGo",
   "_key": "!items!6NzK2HmbyEsiZJGo"

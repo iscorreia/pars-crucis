@@ -2,7 +2,7 @@
   "folder": "fNCA17UJb2o1x6j8",
   "name": "Flamejar",
   "type": "ability",
-  "img": "icon%20library/powers/pyromancer%20skills/fire%20(36).png",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/flamejar-imbuir.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "VzGZIPrgM9F0VA7f": {
-        "img": "icon%20library/powers/pyromancer%20skills/fire%20(36).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/flamejar.png",
         "name": "Golpear",
         "type": "tech",
         "_id": "VzGZIPrgM9F0VA7f",
@@ -45,7 +45,7 @@
         "_gearId": null
       },
       "ecCTMKSGrPRPscYs": {
-        "img": "icon%20library/powers/pyromancer%20skills/fire%20(18).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/flamejar-projetil.png",
         "name": "Disparar",
         "type": "tech",
         "_id": "ecCTMKSGrPRPscYs",
@@ -79,7 +79,7 @@
         "_gearId": null
       },
       "OT6noAHYjrTWqatv": {
-        "img": "icon%20library/powers/pyromancer%20skills/fire%20(15).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/flamejar-imbuir.png",
         "name": "Imbuir",
         "type": "use",
         "_id": "OT6noAHYjrTWqatv",
@@ -115,7 +115,7 @@
     },
     "keywords": {},
     "description": {
-      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Concentrando a sua essência envolve em chamas os próprios punhos, armamento ou munição, ou armamento de um aliado.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10m para usar em aliados.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> +6 Elemental: Ígneo.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> pode encantar a arma enquanto ataca, usando a perícia de combate da arma empunhada. Pode usar ESP como atributo de dano.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto ou 1 ataque.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Ignição</em> e Elementalismo N3.</span></p>",
+      "description": "<p><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\">Concentrando a sua essência envolve em chamas os próprios punhos, armamento ou munição, ou armamento de um aliado.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 3.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Alcance:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 10m para usar em aliados.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Dano:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> +6 Elemental: Ígneo.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Efeitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> pode encantar a arma enquanto ataca, usando a perícia de combate da arma empunhada. Pode usar ESP como atributo de dano.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Duração:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> 1 minuto ou 1 ataque.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span><span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> <em>Ignição</em> e Elementalismo N3.</span></p>",
       "summary": "",
       "notes": ""
     }
@@ -131,12 +131,12 @@
     "compendiumSource": "Item.6t5490ZPGjx96qDI",
     "duplicateSource": "Item.XB2GqQfrYEQXkfq1",
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771984232993,
-    "modifiedTime": 1771984232993,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209204037,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "5bD5JfA7kd8IHNNJ",
   "_key": "!items!5bD5JfA7kd8IHNNJ"

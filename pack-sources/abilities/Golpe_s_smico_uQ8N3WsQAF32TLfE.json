@@ -1,7 +1,7 @@
 {
   "name": "Golpe sísmico",
   "type": "ability",
-  "img": "icon%20library/powers/geomancer%20skills/earth%20(24).png",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/golpe-sismico.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -10,7 +10,7 @@
     },
     "actions": {
       "8VwLSmXIlldmBNRM": {
-        "img": "icon%20library/powers/geomancer%20skills/earth%20(24).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/golpe-sismico.png",
         "name": "Golpear",
         "type": "tech",
         "_id": "8VwLSmXIlldmBNRM",
@@ -40,7 +40,8 @@
         "skills": {
           "inherit": 0
         },
-        "skill": null
+        "skill": null,
+        "limit": ""
       },
       "kOHZBFbz9JatBN6L": {
         "img": "icon%20library/powers/geomancer%20skills/earth%20(15).png",
@@ -112,7 +113,7 @@
     },
     "keywords": {},
     "description": {
-      "description": "<p>Carrega uma arma ou munição com essência sísmica, que é liberado ao conectar com seu alvo de ataque.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Armas corpo a corpo:</span> Dano+3 Físico e causam [3] de dano Destrutivo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Munições:</span> têm Penetrante causam [3] de dano Destrutivo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 5.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 10m para usar na arma de aliados.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 1 minuto ou 1 ataque.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Observações:</span> o personagem pode encantar sua arma enquanto ataca, nesse caso utilizando a perícia de combate da arma empunhada.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Senso sísmico</em> e Elementalismo N4.</p>",
+      "description": "<p>Carrega uma arma ou munição com essência sísmica, que é liberado ao conectar com seu alvo de ataque.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Armas corpo a corpo:</span> Dano+3 Físico e causam [3] de dano Destrutivo.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Munições:</span> têm Penetrante causam [3] de dano Destrutivo.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span> 5.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Alcance:</span> 10m para usar na arma de aliados.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Duração:</span> 1 minuto ou 1 ataque.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Observações:</span> o personagem pode encantar sua arma enquanto ataca, nesse caso utilizando a perícia de combate da arma empunhada.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span> <em>Senso sísmico</em> e Elementalismo N4.</p>",
       "summary": "",
       "notes": ""
     }
@@ -124,12 +125,12 @@
     "compendiumSource": "Compendium.pars-crucis.abilities.Item.tiTvLMG84T7HnVsP",
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771120758688,
-    "modifiedTime": 1771968681575,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209314689,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "ownership": {
     "default": 0,

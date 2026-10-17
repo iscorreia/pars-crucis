@@ -39,7 +39,7 @@
     }
   },
   "effects": [],
-  "folder": "7NT37BqJobgjvt0L",
+  "folder": "NIxjOB0FVssNlIp3",
   "ownership": {
     "default": 0,
     "BWDFQ9zEwkAXpvLu": 3
@@ -49,14 +49,14 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1770312193976,
-    "modifiedTime": 1770312298255,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1791661735231,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "7EaSRbvi7gvzGuhK",
-  "sort": 400000,
+  "sort": 1125000,
   "_key": "!items!7EaSRbvi7gvzGuhK"
 }

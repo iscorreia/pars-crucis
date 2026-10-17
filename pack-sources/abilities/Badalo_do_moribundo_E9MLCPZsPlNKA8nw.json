@@ -38,7 +38,9 @@
         "duration": "",
         "keywords": {},
         "skill": null,
-        "skills": {}
+        "skills": {
+          "aoism": 0
+        }
       }
     },
     "details": {
@@ -74,7 +76,7 @@
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771206813814,
-    "modifiedTime": 1771206813814,
+    "modifiedTime": 1775337367762,
     "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
   },
   "_id": "E9MLCPZsPlNKA8nw",

@@ -2,7 +2,7 @@
   "folder": "fNCA17UJb2o1x6j8",
   "name": "Labareda",
   "type": "ability",
-  "img": "icon%20library/powers/pyromancer%20skills/fire%20(7).png",
+  "img": "systems/pars-crucis/assets/gen-icons/elementalismo/labareda.png",
   "system": {
     "info": {
       "subtype": "power",
@@ -11,7 +11,7 @@
     },
     "actions": {
       "sVZ8XcNuJoGrflQL": {
-        "img": "icon%20library/powers/pyromancer%20skills/fire%20(7).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/labareda.png",
         "name": "Coluna",
         "type": "attack",
         "_id": "sVZ8XcNuJoGrflQL",
@@ -43,7 +43,7 @@
         "subtype": "aoe"
       },
       "Yqn6flyAP6YHEqgb": {
-        "img": "icon%20library/powers/pyromancer%20skills/fire%20(46).png",
+        "img": "systems/pars-crucis/assets/gen-icons/elementalismo/labareda.png",
         "name": "Círculo",
         "type": "attack",
         "_id": "Yqn6flyAP6YHEqgb",
@@ -88,7 +88,7 @@
       "lethality": "/2"
     },
     "description": {
-      "description": "<p>Área</p><p class=\"MsoNormal\">Com um movimento de erguer braços o personagem levanta a sua frente uma coluna de chamas ou faz um círculo de chamas, queimando os que estiverem no caminho. Aqueles que cruzarem as chamas ou ficarem próximos ao lado mais intenso são queimados.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Esforço:</span> 7, mantém por 2.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Tempo de preparo:</span> 2 ações.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Alcance:</span> 7m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área (coluna):</span> 1x5m (ou 1xESPm).</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Área (círculo):</span> raio de 3m.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Dano:</span> 12+ESP Elemental: Ígneo.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Efeitos:</span> Fatalidade/2. cruzar pelas chamas causa [12+ESP] de dano Elemental: Ígneo. Ao fim da rodada, estar a 1m do lado intenso causa [12+ESP] de dano Elemental: Ígneo.<span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> No início de cada rodada, como uma Ação bônus pode decidir por manter a labareda por esforço reduzido.</span></p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Duração:</span> 2 rodadas.</p><p class=\"MsoNormal\" style=\"text-indent:0cm\"><span style=\"font-size:8.5pt;mso-bidi-font-size:11.0pt;line-height:105%\">Pré-requisitos:</span> <em>Lança chamas </em>e Elementalismo N6.</p>",
+      "description": "<p>Área</p><p class=\"MsoNormal\">Com um movimento de erguer braços o personagem levanta a sua frente uma coluna de chamas ou faz um círculo de chamas, queimando os que estiverem no caminho. Aqueles que cruzarem as chamas ou ficarem próximos ao lado mais intenso são queimados.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Esforço:</span> 7, mantém por 2.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Tempo de preparo:</span> 2 ações.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Alcance:</span> 7m.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Área (coluna):</span> 1x5m (ou 1xESPm).</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Área (círculo):</span> raio de 3m.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Dano:</span> 12+ESP Elemental: Ígneo.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Efeitos:</span> Fatalidade/2. cruzar pelas chamas causa [12+ESP] de dano Elemental: Ígneo. Ao fim da rodada, estar a 1m do lado intenso causa [12+ESP] de dano Elemental: Ígneo.<span style=\"mso-bidi-font-size:9.0pt;line-height:105%\"> No início de cada rodada, como uma Ação bônus pode decidir por manter a labareda por esforço reduzido.</span></p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Duração:</span> 2 rodadas.</p><p style=\"text-indent:0cm\" class=\"MsoNormal\"><span style=\"mso-bidi-font-size:11.0pt;line-height:105%;font-size:8.5pt\">Pré-requisitos:</span> <em>Lança chamas </em>e Elementalismo N6.</p>",
       "summary": "",
       "notes": ""
     }
@@ -104,12 +104,12 @@
     "compendiumSource": "Item.6t5490ZPGjx96qDI",
     "duplicateSource": "Item.dcdWoaM8xbhmAeAJ",
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "pars-crucis",
     "systemVersion": "2.12.0",
     "createdTime": 1771984232993,
-    "modifiedTime": 1771984232993,
-    "lastModifiedBy": "BWDFQ9zEwkAXpvLu"
+    "modifiedTime": 1792209250467,
+    "lastModifiedBy": "Gi9s8laC772qenHw"
   },
   "_id": "1MsK8uUEt08N6alM",
   "_key": "!items!1MsK8uUEt08N6alM"
